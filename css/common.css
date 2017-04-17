@@ -447,17 +447,6 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	폼요소
 ============================================================================================ */
-.chk-box {margin-top:10px;}
-.chk-box label {
-	margin-left:20px;
-	font-size:13px;
-	color:#666;
-	line-height: 20px;
-}
-.chk-box label:first-child {
-	margin-left:0;
-}
-.chk-box label input {margin-right: 6px;}
 /* 체크박스/라디오 */
 input[type=checkbox].styled1,
 input[type=radio].styled1 {
@@ -993,6 +982,27 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list2 .box .btn-list .item .btn-like {border-right:0;}
 
 
+/* ============================================================================================
+	sub
+============================================================================================ */
+/* --------------------------------------------------------------------------------------------
+	조합원가입
+-------------------------------------------------------------------------------------------- */
+.join-info {}
+.join-info .title {
+	color:#666;
+	font-size: 13px;
+}
+.join-info dt {
+	margin-top:20px;
+	color:#333;
+	font-size:14px;
+	font-weight: bold;
+}
+.join-info dd {
+	margin-top:10px;
+}
+
 /* 로그인 */
 .join-section {
 	padding:20px 10px;
@@ -1001,16 +1011,32 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .join-section .form-item:first-child {margin-top:0;}
 
 .login-global {
+	margin-top:10px;
 	text-align: center;
+	line-height: 31px;
 }
 .login-global .login-find {
 	overflow: hidden;
 	display: inline-block;
+	vertical-align: top;
 }
 .login-global .login-find span {
 	position: relative;
 	float:left;
-	margin:0 15px;
+	margin:0 16px 0 15px;
 	font-size:12px;
 	color:#666;
+	font-size: 13px;
+	line-height: 19px;
+}
+.login-global .login-find span:before {
+	content: '';
+	position: absolute;
+	left:-16px; top:50%;
+	width:1px; height:11px;
+	background-color:#ddd;
+	transform: translateY(-50%);
+}
+.login-global .login-find span:first-child:before{
+	display: none;
 }
