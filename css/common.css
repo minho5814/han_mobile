@@ -145,6 +145,7 @@ button {outline:0;vertical-align:top;}
 /* 마진 */
 .mgT0 {margin-top:0px !important;}
 .mgT5 {margin-top:5px !important;}
+.mgT8 {margin-top:8px !important;}
 .mgT10 {margin-top:10px !important;}
 .mgT15 {margin-top:15px !important;}
 .mgT20 {margin-top:20px !important;}
@@ -1388,7 +1389,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .ooriented-box img {width:100%; height:auto; vertical-align:middle;}
 
 /* --------------------------------------------------------------------------------------------
-	사이트 이용약관
+	사이트 이용약관, 개인정보취급방침
 -------------------------------------------------------------------------------------------- */
 .site-terms-infor {}
 .site-terms-infor .terms-tit {
@@ -1464,9 +1465,18 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:18px;
 }
 .site-terms-infor .adden-list .item-adden span {display:block;}
-/* --------------------------------------------------------------------------------------------
-	개인정보취급방침
--------------------------------------------------------------------------------------------- */
+.site-terms-infor .infor-list {}
+.site-terms-infor .infor-list .item-infor {
+	position:relative;
+	padding-left:15px;
+}
+.site-terms-infor .infor-list .item-infor .number {
+	position:absolute;
+	left:0; top:0;
+}
+.site-terms-infor .infor-list .item-infor .terms-list01 {
+	margin-left:-15px;
+}
 
 /* --------------------------------------------------------------------------------------------
 	물품 상세 ()
