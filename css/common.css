@@ -1155,6 +1155,71 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#666;
 	font-size:13px;
 }
+/* --------------------------------------------------------------------------------------------
+	한살림운동과 물품정책/물품이야기
+-------------------------------------------------------------------------------------------- */
+.policy-box {}
+.policy-box .policy-title {
+	font-size:18px;
+	color:#239bd2;
+	line-height:23px;
+}
+.policy-box .policy-txt {
+	margin-top:8px;
+	font-size:13px;
+	color:#666;
+	line-height:19px;
+}
+.policy-box .policy-img {
+	margin-top:11px;
+}
+.policy-box .policy-img img {width:100%; height:auto; vertical-align:top;}
+
+.pdf-box {
+	position:relative;
+	width:100%;
+	margin-top:26px;
+	padding:16px 0 16px 68px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	background:url(../img/img/img_pdf.png) no-repeat 10px center;
+	background-size:50px;
+}
+.pdf-box:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:10px; top:50%;
+	width:6px;
+	height:11px;
+	margin-top:-5.5px;
+	background:url(../img/ico/ico_dire_right.gif) no-repeat 0 0;
+	background-size:6px 11px;
+}
+.pdf-box .pdf-tit {
+	font-size:11px;
+	color:#333;
+	line-height:18px;
+}
+.pdf-box .pdf-txt {
+	margin-top:2px;
+	font-size:13px;
+	color:#60b015;
+	line-height:18px;
+}
+.work-area {}
+.work-area .cTitle01 {margin:25px 0 9px;}
+.work-area .work-img img {width:100%; height:auto; vertical-align:middle;}
+.work-area .box-cont .item {
+	margin-top:11px;
+	font-size:14px;
+	line-height:19px;
+	letter-spacing:-0.5px;
+}
+.work-area .box-cont .item:before {top:8px;}
+/* 한살림운동의 지향 */
+.ooriented-box {margin-top:20px;}
+.ooriented-box img {width:100%; height:auto; vertical-align:middle;}
 
 /* --------------------------------------------------------------------------------------------
 	물품 상세 ()
