@@ -378,6 +378,7 @@ button {outline:0;vertical-align:top;}
 	background-repeat:no-repeat;
 	background-size:50px 500px;
 	font-size:0;
+	vertical-align:top;
 	line-height:0;
 }
 /* 메뉴 열기 */
@@ -411,7 +412,11 @@ button {outline:0;vertical-align:top;}
 }
 
 /* 툴팁 */
-.btn-tooltip {}
+.btn-tooltip {
+	width:14px;
+	height:14px;
+	background-position:0 -280px;
+}
 
 /* --------------------------------------------------------------------------------------------
 	아이콘
@@ -697,6 +702,32 @@ select.styled1 {
 	border-bottom:0;
 	background-color:#fff;
 	color:#333;
+}
+
+/* 탭 02 */
+.tab-list3 {
+	overflow:hidden;
+	background-color:#fff;
+}
+.tab-list3 .item {
+	float:left;
+	width:25%;
+}
+.tab-list3 .item .text {
+	display:block;
+	position:relative;
+	height:45px;
+	box-sizing:border-box;
+	border-bottom:1px solid #bbb;
+	color:#333;
+	font-size:13px;
+	text-align:center;
+	line-height:45px;
+}
+.tab-list3 .item.on .text {
+	border-bottom:2px solid #60b015;
+	color:#60b015;
+	font-weight:bold;
 }
 
 /* ============================================================================================
@@ -1284,8 +1315,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 .view-content .goods-info-box {
-	margin-top:5px;
-	padding:0 10px;
+	padding:5px 10px 13px;
+	border-bottom:8px solid #eee;
 }
 .view-content .goods-info-box .goods-info {
 	position:relative;
@@ -1341,6 +1372,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:90px;
 	color:#333;
 }
+.view-content .goods-info-box .goods-list .item .title .btn-tooltip {margin-left:2px;}
 .view-content .goods-info-box .goods-list .item .text {color:#666;}
 .view-content .goods-info-box .goods-list .item .link {
 	display:inline-block;
