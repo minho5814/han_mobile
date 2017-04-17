@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/login.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">아이디 만들기</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="#" class="btn-image btn-search">통합검색</a>
+	</div>
+
+	<div class="container">
+		<div class="white-content2">
+			<ul class="result-info">
+				<li>
+					<dl>
+						<dt>조합원 번호</dt>
+						<dd>123123</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>조합원 이름</dt>
+						<dd class="name">홍길동</dd>
+					</dl>
+				</li>
+			</ul>
+			<div class="form-list2">
+				<div class="form-item">
+					<h3 class="cTitle02"><label for="Id">아이디</label></h3>
+					<div class="form-button-type1">
+						<input type="text" id="Id" placeholder="영문소문자, 숫자 조합 6~20자" class="text">
+						<button type="button" class="btn-text btn-h35 btn-text-gray1 btn">중복확인</span>
+					</div>
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02"><label for="Pw">비밀번호</label></h3>
+					<input type="password" id="Pw" placeholder="영문,숫자,특수문자 조합 4~12자" class="text">
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02"><label for="Pw2">비밀번호 확인</label></h3>
+					<input type="password" id="Pw2" class="text">
+				</div>
+			</div>
+			<div class="btn-area">
+				<ul class="btn-list1">
+					<li class="item"><button type="button" class="btn-text btn-h45 btn-text-line1">취소</button></li>
+					<li class="item"><button type="button" class="btn-text btn-h45 btn-text-green1">확인</button></li>
+				</ul>
+			</div>
+			<div class="box-content1 mgT20">
+				<h3 class="box-title">한살림 이용에 불편함이 있으신가요 ?</h3>
+				<ul class="box-cont">
+					<li class="item">상담시간 : 평일 오전 9시 ~ 오후 6시 (토/일요일, 법정공휴일 휴무)</li>
+				</ul>
+				<div class="box-btn">
+					<a href="tel:1611-0800" class="btn-call"><span class="text">1611-0800</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="btm-fix-menu">
+		<div class="btn-list">
+			<a href="#" class="btn btn1">홈</a>
+			<button type="button" class="btn btn2">카테고리</button>
+			<a href="#" class="btn btn3">장바구니<span class="len">19</span></a>
+		</div>
+	</div>
+	<div class="floating-btn-area">
+		<a href="#" class="btn btn-image btn-prev">이전</a>
+		<div class="right-area">
+			<a href="#" class="btn btn-link">1:1<br>상담</a>
+			<a href="#" class="btn btn-link">최근<br>이력</a>
+			<button type="button" class="btn btn-top">TOP</button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	$('.login-wrap .tab-list2 li').click(function(){
+		var idx = $(this).index();
+		$(this).addClass('on').siblings('li').removeClass('on');
+		$('.form-area').removeClass('on').eq(idx).addClass('on');
+	});
+});
+</script>
+</body>
+</html>

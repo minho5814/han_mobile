@@ -167,6 +167,11 @@ button {outline:0;vertical-align:top;}
 .mgB35 {margin-bottom:35px !important;}
 .mgB40 {margin-bottom:40px !important;}
 
+/* 텍스트 정렬 */
+.align-left {text-align:left !important;}
+.align-right {text-align:right !important;}
+.align-center {text-align:center !important;}
+
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
@@ -225,16 +230,24 @@ button {outline:0;vertical-align:top;}
 
 .box-cont .item:first-child {margin-top:0;}
 
+.box-content1 .box-btn {
+	padding:0 10px 10px;
+}
+
 .box-cont.gray li {
 	color:#aaa;
 }
 .box-cont.gray .item:before {
 	background-color:#aaa;
 }
-
 /* --------------------------------------------------------------------------------------------
 	타이틀
 -------------------------------------------------------------------------------------------- */
+.title-box .cTitle01 {
+	line-height: 33px;
+	text-align: center;
+}
+
 .cTitle01 {
 	color:#333;
 	font-size:14px;
@@ -348,6 +361,10 @@ button {outline:0;vertical-align:top;}
 /* gray */
 .btn-text-gray1 {
 	background-color:#82828c;
+	color:#fff;
+}
+.btn-text-gray2 {
+	background-color:#999;
 	color:#fff;
 }
 /* line */
@@ -848,6 +865,8 @@ select.styled1 {
 html,
 body,
 .wrapper {
+	overflow-x: hidden;
+	overflow-y: auto;
 	height:100%;
 	box-sizing:border-box;
 }

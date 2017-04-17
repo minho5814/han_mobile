@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/login.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">조합원 정보 찾기</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="#" class="btn-image btn-search">통합검색</a>
+	</div>
+
+	<div class="container">
+		<ul class="tab-list1">
+			<li class="item"><span class="text">조합원번호찾기</span></li>
+			<li class="item on"><span class="text">아이디 찾기</span></li>
+			<li class="item"><span class="text">비밀번호 찾기</span></li>
+		</ul>
+
+		<div class="white-content2">
+			<div class="login-wrap">
+				<ul class="tab-list2">
+					<li class="item on"><span class="text">휴대폰 인증</span></li>
+					<li class="item"><span class="text">이메일 인증</span></li>
+				</ul>
+				<div class="form-area on">
+					<div class="form-list1">
+						<div class="form-item">
+							<input type="tel" placeholder="조합원번호">
+						</div>
+						<div class="form-item">
+							<div class="form-button-type1">
+								<input type="tel" placeholder="휴대폰 번호 ( - 생략)" class="text">
+								<button type="button" class="btn-text btn-h35 btn-text-gray1 btn">인증</span>
+							</div>
+						</div>
+						<div class="form-item">
+							<input type="tel" placeholder="인증번호 6자리 숫자 입력" disabled>
+						</div>
+					</div>
+				</div>
+				<div class="form-area">
+					<div class="form-list1">
+						<div class="form-item">
+							<input type="tel" placeholder="조합원번호">
+						</div>
+						<div class="form-item">
+							<div class="form-button-type1">
+								<input type="tel" placeholder="이메일 주소" class="text">
+								<button type="button" class="btn-text btn-h35 btn-text-gray1 btn">인증</span>
+							</div>
+						</div>
+						<div class="form-item">
+							<input type="tel" placeholder="인증번호 6자리 숫자 입력" disabled>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h45 btn-text-green1">아이디 찾기</button>
+			</div>
+			<div class="box-content1 mgT20">
+				<h3 class="box-title">한살림 이용에 불편함이 있으신가요 ?</h3>
+				<ul class="box-cont">
+					<li class="item">상담시간 : 평일 오전 9시 ~ 오후 6시 (토/일요일, 법정공휴일 휴무)</li>
+				</ul>
+				<div class="box-btn">
+					<a href="tel:1611-0800" class="btn-call"><span class="text">1611-0800</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="btm-fix-menu">
+		<div class="btn-list">
+			<a href="#" class="btn btn1">홈</a>
+			<button type="button" class="btn btn2">카테고리</button>
+			<a href="#" class="btn btn3">장바구니<span class="len">19</span></a>
+		</div>
+	</div>
+	<div class="floating-btn-area">
+		<a href="#" class="btn btn-image btn-prev">이전</a>
+		<div class="right-area">
+			<a href="#" class="btn btn-link">1:1<br>상담</a>
+			<a href="#" class="btn btn-link">최근<br>이력</a>
+			<button type="button" class="btn btn-top">TOP</button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	$('.login-wrap .tab-list2 li').click(function(){
+		var idx = $(this).index();
+		$(this).addClass('on').siblings('li').removeClass('on');
+		$('.form-area').removeClass('on').eq(idx).addClass('on');
+	});
+});
+</script>
+</body>
+</html>
