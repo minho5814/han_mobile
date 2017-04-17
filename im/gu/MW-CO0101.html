@@ -97,7 +97,7 @@
 				</div>
 			</div>
 			<div class="pdf-box">
-				<a href="#">
+				<a href="http://shop.hansalim.or.kr/im/im/cs/IMCS0101FileDownload.do?fileName=hansalim_product_story.pdf">
 					<p class="pdf-tit">더 많은 한살림의 물품 이야기가 궁금하다면?</p>
 					<p class="pdf-txt">한살림 물품이야기  PDF 보기</p>
 				</a>
@@ -109,5 +109,14 @@
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+	$(window).load(function(){
+		$('.tab-list2 li').click(function(){
+			var idx = $(this).index();
+			$('.tab-list2 li').removeClass('on').eq(idx).addClass('on');
+			$('.tab-content').removeClass('on').eq(idx).addClass('on');
+		})
+	});
+</script>
 </body>
 </html>
