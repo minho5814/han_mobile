@@ -983,12 +983,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .join-section .form-item:first-child {margin-top:0;}
 
 .login-global {
-	margin-top:18px;
+	margin-top:10px;
 	text-align: center;
+	line-height: 31px;
 }
 .login-global .login-find {
 	overflow: hidden;
 	display: inline-block;
+	vertical-align: top;
 }
 .login-global .login-find span {
 	position: relative;
