@@ -142,6 +142,13 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	공통
 ============================================================================================ */
+/* 마진 */
+.mgT0 {margin-top:0px !important;}
+.mgT5 {margin-top:5px !important;}
+.mgT10 {margin-top:10px !important;}
+.mgT15 {margin-top:15px !important;}
+
+
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
