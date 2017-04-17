@@ -142,6 +142,9 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	공통
 ============================================================================================ */
+/* 레이아웃 */
+.container {padding-top:47px;}
+
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
@@ -442,6 +445,17 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	폼요소
 ============================================================================================ */
+.chk-box {margin-top:10px;}
+.chk-box label {
+	margin-left:20px;
+	font-size:13px;
+	color:#666;
+	line-height: 20px;
+}
+.chk-box label:first-child {
+	margin-left:0;
+}
+.chk-box label input {margin-right: 6px;}
 /* 체크박스/라디오 */
 input[type=checkbox].styled1,
 input[type=radio].styled1 {
@@ -659,6 +673,20 @@ select.styled1 {
 	text-align:center;
 	line-height:45px;
 	white-space:nowrap;
+}
+
+/* --------------------------------------------------------------------------------------------
+	컨테이너
+-------------------------------------------------------------------------------------------- */
+.container {padding-top:47px;}
+/* 컨텐츠 박스 */
+.white-content1 {
+	padding:10px 10px 20px;
+	background-color:#fff;
+}
+.white-content2 {
+	padding:20px 10px;
+	background-color:#fff;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -939,3 +967,26 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:50%;
 }
 .thumb-list2 .box .btn-list .item .btn-like {border-right:0;}
+
+
+/* 로그인 */
+.join-section {
+	padding:20px 10px;
+}
+.join-section .form-item {margin-top:6px;}
+.join-section .form-item:first-child {margin-top:0;}
+
+.login-global {
+	text-align: center;
+}
+.login-global .login-find {
+	overflow: hidden;
+	display: inline-block;
+}
+.login-global .login-find span {
+	position: relative;
+	float:left;
+	margin:0 15px;
+	font-size:12px;
+	color:#666;
+}
