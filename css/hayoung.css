@@ -98,3 +98,6 @@
 	background-color: #ddd;
 	color: #bbb;
 }
+
+/*주소검색 팝업*/
+.post-area .box {float:left; width:50%; padding-left:4px; box-sizing: border-box;}
