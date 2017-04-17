@@ -72,12 +72,6 @@
 	line-height: 25px;
 	word-break: break-all;
 }
-.result-info dd.id {
-	color:#60b015;
-}
-.result-info dd.name {
-	font-weight: bold;
-}
 .send-select {
 	overflow: hidden;
 	border:1px solid #bbb;
@@ -176,6 +170,59 @@
 	margin:-3px 0 11px;
 }
 
+.joing-step {
+	overflow: hidden;
+}
+.joing-step li {
+	position: relative;
+	float: left;
+	width:33%;
+	padding-top:70px;
+	font-size:11px;
+	color:#666;
+	text-align: center;
+}
+.joing-step li.on {
+	color:#60b015;
+	font-weight: bold;
+}
+.joing-step li:nth-child(2) {width:34%;}
+
+.joing-step li.step01 {
+	background:url(../img/bg/ico_join01_off.png) 50% 0 no-repeat;
+	background-size:60px 60px;
+}
+.joing-step li.step01.on {
+	background:url(../img/bg/ico_join01.png) 50% 0 no-repeat;
+	background-size:60px 60px;
+}
+.joing-step li.step02 {
+	background:url(../img/bg/ico_join02_off.png) 50% 0 no-repeat;
+	background-size:60px 60px;
+}
+.joing-step li.step02.on {
+	background:url(../img/bg/ico_join02.png) 50% 0 no-repeat;
+	background-size:60px 60px;
+}
+.joing-step li.step03 {
+	background:url(../img/bg/ico_join03_off.png) 50% 0 no-repeat;
+	background-size:60px 60px;
+}
+.joing-step li.step03.on {
+	background:url(../img/bg/ico_join03.png) 50% 0 no-repeat;
+	background-size:60px 60px;
+}
+.joing-step li:after {
+	content: '';
+	position: absolute;
+	top:24px; right:-4px;
+	width:8px; height:13px;
+	background:url(../img/ico/ico_16x26_arrow.png) 0 0 no-repeat;
+	background-size: 8px 13px;
+}
+.joing-step li:last-child:after {
+	display: none;
+}
 /* --------------------------------------------------------------------------------------------
 	완료페이지
 -------------------------------------------------------------------------------------------- */
