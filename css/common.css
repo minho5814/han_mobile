@@ -98,6 +98,7 @@ input[type=number]:disabled,
 input[type=password]:disabled {
 	background-color:#eee;
 	color:#aaa;
+	border-color:#ddd;
 }
 input[type=submit] {-webkit-border-radius:0;border:0;border-radius:0;-webkit-appearance:none;}
 textarea {
@@ -239,6 +240,11 @@ button {outline:0;vertical-align:top;}
 }
 .box-cont.gray .item:before {
 	background-color:#aaa;
+}
+
+.box-content2 {
+	position:relative;
+	border:1px solid #ddd;
 }
 /* --------------------------------------------------------------------------------------------
 	타이틀
