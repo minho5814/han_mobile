@@ -4,7 +4,7 @@
 /* --------------------------------------------------------------------------------------------
 	조합원가입
 -------------------------------------------------------------------------------------------- */
-/*조합ㄷ원 가입여부 확인 팝업*/
+/*조합원 가입여부 확인 팝업*/
 .confirm-tit {text-align: center;}
 .confirm-box {
 	overflow:hidden;
@@ -34,4 +34,13 @@
 .confirm-box .confirm.ipin {
 	background-image:url(../img/bg/bg_ipin.png);
 	background-size: 69px 69px;
+}
+
+/*조합원  기회원 알림*/
+.position-area {position:relative;}
+.position-area .btn-call.right-position {
+	position: absolute;
+	top:50%;
+	right:0;
+	margin-top:-14px;
 }
