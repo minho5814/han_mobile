@@ -1141,6 +1141,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#239bd2;
 	font-size:18px;
 	text-align: center;
+	line-height: 21px;
 }
 .join-info .join-bg p span {
 	display: block;
