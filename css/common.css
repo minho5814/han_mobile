@@ -229,6 +229,11 @@ button {outline:0;vertical-align:top;}
 	버튼
 ============================================================================================ */
 /* --------------------------------------------------------------------------------------------
+	정렬
+-------------------------------------------------------------------------------------------- */
+.btn-area {margin-top:20px;}
+
+/* --------------------------------------------------------------------------------------------
 	텍스트
 -------------------------------------------------------------------------------------------- */
 .btn-text {
@@ -539,18 +544,24 @@ select.styled1 {
 	padding-left:0;
 }
 .phone-area .box input {text-align:center;}
-.phone-area {}
-.phone-area {}
+
+/* 체크박스/라디오 리스트 */
+.form-item .check-list {}
+.form-item .check-list label {
+	color:#666;
+	font-size:13px;
+}
 
 /* 폼리스트 01 */
 .form-list1 {}
 .form-list1 .form-item {margin-top:6px;}
 .form-list1 .form-item:first-child {margin-top:0;}
-.form-list1 .btn-area,
 .form-list1 .btn-list1 {margin-top:20px;}
 
 /* 폼리스트 02 */
-.form-list2 {}
+.form-list2 {
+	padding:5px 0;
+}
 .form-list2 .form-item {margin-top:14px;}
 .form-list2 .form-item:first-child {margin-top:0;}
 
@@ -587,8 +598,7 @@ select.styled1 {
 ============================================================================================ */
 html,
 body,
-.wrapper,
-.container {
+.wrapper {
 	height:100%;
 	box-sizing:border-box;
 }
@@ -695,6 +705,14 @@ body,
 	background-color:#fff;
 }
 
+.gray-content1 {
+	padding:10px 10px 20px;
+	background-color:#f7f7f7;
+}
+.gray-content2 {
+	padding:20px 10px;
+	background-color:#f7f7f7;
+}
 /* --------------------------------------------------------------------------------------------
 	하단 고정 메뉴
 -------------------------------------------------------------------------------------------- */
