@@ -161,6 +161,46 @@ button {outline:0;vertical-align:top;}
 }
 .img-area img {width:100%;}
 
+/*box 스타일*/
+.box-content1 {
+	position:relative;
+	border:1px solid #e3e3e3;
+}
+.box-content1 .box-title {
+	padding:10px 10px 10px 27px;
+	color:#666;
+	font-size:12px;
+	font-weight:bold;
+	line-height:11px;
+	background:url(../img/ico/ico_exclamation.png) no-repeat 9px 9px;
+	background-size:13px 13px;
+	box-sizing: border-box;
+}
+.box-content1 .box-cont {
+	padding:10px;
+	border-top:1px solid #ddd;
+}
+
+.box-content1 .box-cont p {
+	position:relative;
+	margin-top:10px;
+	padding-left:5px;
+	color:#666;
+	font-size:11px;
+	line-height:15px;
+}
+.box-content1 .box-cont .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:5px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+
+.box-content1 .box-cont .item:first-child {margin-top:0;}
+.box-content1 .box-cont .item .btn-mini-text {margin-left:14px;}
+
 /* --------------------------------------------------------------------------------------------
 	타이틀
 -------------------------------------------------------------------------------------------- */
@@ -535,11 +575,19 @@ select.styled1 {
 .phone-area .box input {text-align:center;}
 
 /* 체크박스/라디오 리스트 */
-.form-item .check-list {}
+.form-item .check-list {
+	margin-left:-17px;
+	padding-bottom:5px;
+}
 .form-item .check-list label {
+	display:inline-block;
+	margin-left:17px;
+	padding-top:5px;
 	color:#666;
 	font-size:13px;
+	line-height:20px;
 }
+.form-item .check-list label input {margin-right:5px;}
 
 /* 폼리스트 01 */
 .form-list1 {}
@@ -555,7 +603,62 @@ select.styled1 {
 .form-list2 .form-item:first-child {margin-top:0;}
 
 /* ============================================================================================
-	table
+	리스트/탭
+============================================================================================ */
+/* 탭 01 */
+.tab-list1 {
+	overflow:hidden;
+	background-color:#f7f7f7;
+}
+.tab-list1 .item {
+	float:left;
+	width:33%;
+}
+.tab-list1 .item:first-child {width:34%;}
+.tab-list1 .item .text {
+	display:block;
+	position:relative;
+	height:45px;
+	box-sizing:border-box;
+	color:#333;
+	font-size:13px;
+	text-align:center;
+	line-height:45px;
+}
+.tab-list1 .item.on .text {
+	border-bottom:2px solid #60b015;
+	color:#60b015;
+	font-weight:bold;
+}
+
+/* 탭 02 */
+.tab-list2 {
+	overflow:hidden;
+}
+.tab-list2 .item {
+	float:left;
+	width:50%;
+}
+.tab-list2 .item .text {
+	display:block;
+	height:35px;
+	box-sizing:border-box;
+	border-bottom:1px solid #333;
+	background-color:#eee;
+	color:#bbb;
+	font-size:13px;
+	text-align:center;
+	line-height:35px;
+}
+.tab-list2 .item.on .text {
+	border:1px solid #333;
+	border-bottom:0;
+	background-color:#fff;
+	color:#333;
+}
+
+/* ============================================================================================
+	게시판
 ============================================================================================ */
 /* 01 */
 .board1 {}
@@ -1002,3 +1105,62 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .join-info dd {
 	margin-top:10px;
 }
+<<<<<<< HEAD
+=======
+
+.join-info .join-bg {
+	margin-top:20px;
+	padding:122px 0 30px;
+	background:url(../img/img/img_join_bg.png) no-repeat center top;
+	background-size:119px 109px;
+}
+.join-info .join-bg p {
+	color:#239bd2;
+	font-size:18px;
+	text-align: center;
+}
+.join-info .join-bg p span {
+	display: block;
+	color:#666;
+	font-size:13px;
+}
+
+
+/* 로그인 */
+.join-section {
+	padding:20px 10px;
+}
+.join-section .form-item {margin-top:6px;}
+.join-section .form-item:first-child {margin-top:0;}
+
+.login-global {
+	margin-top:10px;
+	text-align: center;
+	line-height: 31px;
+}
+.login-global .login-find {
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+}
+.login-global .login-find span {
+	position: relative;
+	float:left;
+	margin:0 16px 0 15px;
+	font-size:12px;
+	color:#666;
+	font-size: 13px;
+	line-height: 19px;
+}
+.login-global .login-find span:before {
+	content: '';
+	position: absolute;
+	left:-16px; top:50%;
+	width:1px; height:11px;
+	background-color:#ddd;
+	transform: translateY(-50%);
+}
+.login-global .login-find span:first-child:before{
+	display: none;
+}
+>>>>>>> 49b26d69355c6bb0e692b9e88d3d780d6b865ef5
