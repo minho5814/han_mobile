@@ -37,7 +37,7 @@
 				<div class="form-item">
 					<div class="form-button-type1">
 						<input type="tel" class="text">
-						<a href="#" class="btn-text btn-h35 btn-text-gray1 btn">검색</a>
+						<a href="#" class="btn-text btn-h35 btn-text-gray1 btn btn-search-post">검색</a>
 					</div>
 				</div>
 				<ul class="box-cont gray mgT10">
@@ -49,6 +49,71 @@
 			</div>
 
 		</div>
+		<div class="white-content2 borderT">
+			<div class="result-area">
+				<p class="no-result">검색할 주소를 입력해주세요</p>
+				<div class="post-result">
+					<p class="bullet-text2">검색 결과 중 해당 주소를 터치하시면 자동 입력됩니다.</p>
+					<div class="scroll-box">
+						<div class="result-title">
+							<p class="title">우편번호</p>
+							<p class="title">주소</p>
+						</div>
+						<div class="result-list">
+							<a href="#none" class="item">
+								<div class="post-number">13542</div>
+								<div class="address-area">
+									<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+									<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+								</div>
+							</a>
+							<a href="#none" class="item">
+								<div class="post-number">13542</div>
+								<div class="address-area">
+									<p class="address">서울 강남구 봉은사로 634(삼성동,20TOWER)</p>
+									<p class="address">서울 강남구 삼성동 162-11번지 20TOWER</p>
+								</div>
+							</a>
+							<a href="#none" class="item">
+								<div class="post-number">13542</div>
+								<div class="address-area">
+									<p class="address">서울 강남구 봉은사로 613(삼성동, ADT캡스 제1빌딩)</p>
+									<p class="address">서울 강남구 삼성동 108-9번지 ADT캡스 제1빌딩</p>
+								</div>
+							</a>
+							<a href="#none" class="item">
+								<div class="post-number">13542</div>
+								<div class="address-area">
+									<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+									<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+								</div>
+							</a>
+							<a href="#none" class="item">
+								<div class="post-number">13542</div>
+								<div class="address-area">
+									<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+									<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+								</div>
+							</a>
+							<a href="#none" class="item">
+								<div class="post-number">13542</div>
+								<div class="address-area">
+									<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+									<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+								</div>
+							</a>
+							<a href="#none" class="item">
+								<div class="post-number">13542</div>
+								<div class="address-area">
+									<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+									<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="btn-fix-area">
 		<button type="button" class="btn-text btn-h45 btn-text-green1">확인</button>
@@ -58,5 +123,11 @@
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+	$('.btn-search-post').click(function(){
+		$('.post-result').show();
+		$('.no-result').hide();
+	});
+</script>
 </body>
 </html>

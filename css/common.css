@@ -169,6 +169,9 @@ button {outline:0;vertical-align:top;}
 .align-right {text-align:right !important;}
 .align-center {text-align:center !important;}
 
+/*보더 (white-content)*/
+.borderT {border-top:1px solid #ddd}
+
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
@@ -749,6 +752,25 @@ select.styled1 {
 	left:0;top:0;
 }
 
+/* 불릿 텍스트 02 */
+.bullet-text2 {
+	position:relative;
+	margin-bottom:8px;
+	padding-left:18px;
+	color:#666;
+	font-size:11px;
+	line-height:11px;
+}
+.bullet-text2:before {
+	content:'';
+	position:absolute;
+	left:0;top:0;
+	width:13px;
+	height:13px;
+	background:url(../img/ico/ico_exclamation.png) no-repeat;
+	background-size:13px 13px;
+}
+
 /* 탭 01 */
 .tab-list1 {
 	overflow:hidden;
@@ -1058,6 +1080,7 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 	line-height:18px;
 }
 
+/*페이지하단고정*/
 .btn-fix-area {
 	position:fixed;
 	left:0;right:0;bottom:0;
@@ -1069,6 +1092,7 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 	box-sizing: border-box;
 }
 
+/*고정아닐때*/
 .btn-bottom-area {
 	height:65px;
 	padding:10px;
