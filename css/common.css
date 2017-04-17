@@ -221,6 +221,13 @@ button {outline:0;vertical-align:top;}
 
 .box-cont .item:first-child {margin-top:0;}
 
+.box-cont.gray li {
+	color:#aaa;
+}
+.box-cont.gray .item:before {
+	background-color:#aaa;
+}
+
 /* --------------------------------------------------------------------------------------------
 	타이틀
 -------------------------------------------------------------------------------------------- */
@@ -793,6 +800,12 @@ body,
 .head-menu .swiper-button-disabled {display:none;}
 /* //on */
 .header .btn-search {
+	position:absolute;
+	right:0;top:0;
+	z-index:2;
+}
+
+.header .btn-close {
 	position:absolute;
 	right:0;top:0;
 	z-index:2;
