@@ -313,7 +313,7 @@ button {outline:0;vertical-align:top;}
 	정렬
 -------------------------------------------------------------------------------------------- */
 .btn-area {margin-top:20px;}
-.btm-fix-menu.type2 .btn-area {margin:10px 0;} /*하단플로팅버튼에 높이45버튼 들어가는경우*/
+
 
 /* --------------------------------------------------------------------------------------------
 	텍스트
@@ -999,9 +999,7 @@ body,
 	-ms-transition:all .2s;
 	transition:all .2s;
 }
-.btm-fix-menu.type2 {
-	height:65px;
-}
+
 html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 .btm-fix-menu .btn-list {
 	overflow:hidden;
@@ -1059,6 +1057,24 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 	line-height:18px;
 }
 
+.btn-fix-area {
+	position:fixed;
+	left:0;right:0;bottom:0;
+	z-index:100;
+	height:65px;
+	padding:10px;
+	border-top:1px solid #bbb;
+	background-color:#fff;
+	box-sizing: border-box;
+}
+
+.btn-bottom-area {
+	height:65px;
+	padding:10px;
+	border-top:1px solid #bbb;
+	background-color:#fff;
+	box-sizing: border-box;
+}
 /* --------------------------------------------------------------------------------------------
 	플로팅 버튼
 -------------------------------------------------------------------------------------------- */
