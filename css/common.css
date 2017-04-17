@@ -164,6 +164,11 @@ button {outline:0;vertical-align:top;}
 .mgB35 {margin-bottom:35px !important;}
 .mgB40 {margin-bottom:40px !important;}
 
+/* 텍스트 정렬 */
+.align-left {text-align:left !important;}
+.align-right {text-align:right !important;}
+.align-center {text-align:center !important;}
+
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
@@ -203,7 +208,7 @@ button {outline:0;vertical-align:top;}
 	padding:10px;
 }
 
-.box-cont li {
+.box-cont .item {
 	position:relative;
 	margin-top:10px;
 	padding-left:5px;
@@ -222,9 +227,24 @@ button {outline:0;vertical-align:top;}
 
 .box-cont .item:first-child {margin-top:0;}
 
+.box-content1 .box-btn {
+	padding:0 10px 10px;
+}
+
+.box-cont.gray li {
+	color:#aaa;
+}
+.box-cont.gray .item:before {
+	background-color:#aaa;
+}
 /* --------------------------------------------------------------------------------------------
 	타이틀
 -------------------------------------------------------------------------------------------- */
+.title-box .cTitle01 {
+	line-height: 33px;
+	text-align: center;
+}
+
 .cTitle01 {
 	color:#333;
 	font-size:14px;
@@ -340,6 +360,10 @@ button {outline:0;vertical-align:top;}
 	background-color:#82828c;
 	color:#fff;
 }
+.btn-text-gray2 {
+	background-color:#999;
+	color:#fff;
+}
 /* line */
 .btn-text-line1 {
 	border:1px solid #bbb;
@@ -368,6 +392,7 @@ button {outline:0;vertical-align:top;}
 	background-repeat:no-repeat;
 	background-size:50px 500px;
 	font-size:0;
+	vertical-align:top;
 	line-height:0;
 }
 /* 메뉴 열기 */
@@ -398,6 +423,13 @@ button {outline:0;vertical-align:top;}
 	height:45px;
 	background-color:#fff;
 	background-position:0 -234px;
+}
+
+/* 툴팁 */
+.btn-tooltip {
+	width:14px;
+	height:14px;
+	background-position:0 -280px;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -631,8 +663,91 @@ select.styled1 {
 .form-list2 .form-item:first-child {margin-top:0;}
 
 /* ============================================================================================
+	폰트 스타일/컬러
+============================================================================================ */
+.fColor01 {color:#333 !important;} /* 진한 회색 */
+.fColor02 {color:#60b015 !important;} /* 녹색 */
+/* ============================================================================================
 	리스트/탭
 ============================================================================================ */
+/* 불릿 리스트 01 */
+.bullet-list1 {
+	color:#666;
+	font-size:13px;
+	line-height:16px;
+}
+.bullet-list1 .item {
+	position:relative;
+	margin-top:6px;
+	padding-left:6px;
+}
+.bullet-list1 .item:first-child {margin-top:0;}
+.bullet-list1 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:7px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+
+/* 불릿 리스트 02 */
+.bullet-list2 {
+	color:#666;
+	font-size:11px;
+	line-height:15px;
+}
+.bullet-list2 .item {
+	position:relative;
+	margin-top:5px;
+	padding-left:6px;
+}
+.bullet-list2 .item:first-child {margin-top:0;}
+.bullet-list2 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:6px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+
+/* 불릿 리스트 03 */
+.bullet-list3 {
+	color:#aaa;
+	font-size:11px;
+	line-height:15px;
+}
+.bullet-list3 .item {
+	position:relative;
+	margin-top:1px;
+	padding-left:6px;
+}
+.bullet-list3 .item:first-child {margin-top:0;}
+.bullet-list3 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:6px;
+	width:2px;
+	height:2px;
+	background-color:#aaa;
+}
+
+/* 불릿 텍스트 01 */
+.bullet-text1 {
+	position:relative;
+	margin-top:5px;
+	padding-left:13px;
+	color:#aaa;
+	font-size:11px;
+	line-height:15px;
+}
+.bullet-text1:before {
+	content:'※';
+	position:absolute;
+	left:0;top:0;
+}
+
 /* 탭 01 */
 .tab-list1 {
 	overflow:hidden;
@@ -686,6 +801,32 @@ select.styled1 {
 	color:#333;
 }
 
+/* 탭 02 */
+.tab-list3 {
+	overflow:hidden;
+	background-color:#fff;
+}
+.tab-list3 .item {
+	float:left;
+	width:25%;
+}
+.tab-list3 .item .text {
+	display:block;
+	position:relative;
+	height:45px;
+	box-sizing:border-box;
+	border-bottom:1px solid #bbb;
+	color:#333;
+	font-size:13px;
+	text-align:center;
+	line-height:45px;
+}
+.tab-list3 .item.on .text {
+	border-bottom:2px solid #60b015;
+	color:#60b015;
+	font-weight:bold;
+}
+
 /* ============================================================================================
 	게시판
 ============================================================================================ */
@@ -710,16 +851,19 @@ select.styled1 {
 	color:#333;
 	font-weight:bold;
 }
+.board1 th {letter-spacing:-1px;}
 .board1 td {color:#666;}
 .board1 .non-text {padding:7px 10px;}
-.board1 {}
 
+.board1.normal th {font-weight: normal;}
 /* ============================================================================================
 	레이아웃
 ============================================================================================ */
 html,
 body,
 .wrapper {
+	overflow-x: hidden;
+	overflow-y: auto;
 	height:100%;
 	box-sizing:border-box;
 }
@@ -792,6 +936,12 @@ body,
 .head-menu .swiper-button-disabled {display:none;}
 /* //on */
 .header .btn-search {
+	position:absolute;
+	right:0;top:0;
+	z-index:2;
+}
+
+.header .btn-close {
 	position:absolute;
 	right:0;top:0;
 	z-index:2;
@@ -1342,6 +1492,109 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border-bottom:2px solid #bbb;
 	border-right:2px solid #bbb;
 }
-.view-content {}
+
+.view-content .goods-info-box {
+	padding:5px 10px 13px;
+	border-bottom:8px solid #eee;
+}
+.view-content .goods-info-box .goods-info {
+	position:relative;
+	padding-bottom:16px;
+}
+.view-content .goods-info-box .goods-info .goods-name {
+	color:#333;
+	font-size:15px;
+	font-weight:bold;
+	line-height:21px;
+}
+.view-content .goods-info-box .goods-info .price-area {
+	padding-top:10px;
+	color:#333;
+}
+.view-content .goods-info-box .goods-info .price-area .title {
+	font-size:9px;
+	line-height:14px;
+}
+.view-content .goods-info-box .goods-info .price-area .price {font-size:11px;}
+.view-content .goods-info-box .goods-info .price-area .price .number {
+	color:#f04114;
+	font-size:18px;
+	font-weight:bold;
+}
+.view-content .goods-info-box .goods-info .len-area {
+	overflow:hidden;
+	position:absolute;
+	right:0;bottom:16px;
+	color:#666;
+	font-size:11px;
+	line-height:16px;
+}
+.view-content .goods-info-box .goods-info .len-area .text {
+	float:left;
+	margin-left:10px;
+}
+.view-content .goods-info-box .goods-info .len-area .text:first-child {margin-left:0;}
+
+.view-content .goods-info-box .goods-list {
+	padding-top:8px;
+	border-top:1px solid #ddd;
+}
+.view-content .goods-info-box .goods-list .item {
+	position:relative;
+	padding:4px 0 4px 90px;
+	font-size:12px;
+	line-height:16px;
+}
+.view-content .goods-info-box .goods-list .item .title {
+	position:absolute;
+	left:0;top:4px;
+	width:90px;
+	color:#333;
+}
+.view-content .goods-info-box .goods-list .item .title .btn-tooltip {margin-left:2px;}
+.view-content .goods-info-box .goods-list .item .text {color:#666;}
+.view-content .goods-info-box .goods-list .item .link {
+	display:inline-block;
+	position:relative;
+	padding-right:18px;
+}
+.view-content .goods-info-box .goods-list .item .link:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:12px;
+	height:14px;
+	box-sizing:border-box;
+	border:1px solid #bbb;
+}
+.view-content .goods-info-box .goods-list .item .link:after {
+	content:'';
+	position:absolute;
+	right:4px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:4px;
+	height:4px;
+	border-top:1px solid #666;
+	border-right:1px solid #666;
+}
+.view-content .goods-info-box .goods-list .item.brand .text {
+	padding-left:24px;
+	background:url(../img/ico/ico_brand.png) no-repeat 0 0;
+	background-size:20px 14px;
+}
+.view-content .goods-info-box .goods-list .item {}
+.view-content .goods-info-box .goods-list {}
+.view-content .goods-info-box .goods-list {}
+.view-content .goods-info-box .goods-list {}
+.view-content .goods-info-box {}
+.view-content .goods-info-box {}
+.view-content .goods-info-box {}
+.view-content .goods-info-box {}
+.view-content .goods-info-box {}
 .view-content {}
 .view-content {}

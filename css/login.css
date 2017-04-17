@@ -36,6 +36,87 @@
 .login-global .login-find span:first-child:before{
 	display: none;
 }
+
+.login-wrap .form-area {display:none;}
+.login-wrap .form-area.on {display: block;}
+
+.result-info {
+	padding:13px 20px;
+	background-color:#eee;
+}
+.result-info li {
+	overflow: hidden;
+	position:relative;
+}
+.result-info dt {
+	position: absolute;
+	top:0; left:0;
+	width:105px;
+	padding-left:6px;
+	font-size:13px;
+	color:#333;
+	font-weight: bold;
+	line-height: 25px;
+}
+.result-info dt:before {
+	content: '';
+	position: absolute;
+	top:11px; left:0;
+	width:2px; height:2px;
+	background-color:#333;
+}
+.result-info dd {
+	margin-left:105px;
+	font-size:13px;
+	color:#666;
+	line-height: 25px;
+	word-break: break-all;
+}
+.send-select {
+	overflow: hidden;
+	border:1px solid #bbb;
+	border-radius: 5px;
+}
+.send-select li {
+	float:left;
+	width:50%;
+	border-left:1px solid #bbb;
+	box-sizing: border-box;
+}
+.send-select li:first-child {border-left:0;}
+.send-select li .find-btn {
+	display: block;
+	width:100%;
+	margin: 0 auto;
+	padding:105px 0 20px;
+	font-size:13px;
+	color:#333;
+	text-align: center;
+}
+.find-sms {
+	background:url(../img/bg/bg_sms.png) 50% 20px no-repeat;
+	background-size:69px;
+}
+
+.find-email {
+	background:url(../img/bg/bg_email.png) 50% 20px no-repeat;
+	background-size:69px;
+}
+
+.find-ipin {
+	background:url(../img/bg/bg_ipin.png) 50% 20px no-repeat;
+	background-size:69px;
+}
+
+.search-id-link {
+	margin-top:10px;
+}
+.search-id-link .text {
+	margin-left:6px;
+	font-size:12px;
+	color:#333;
+	line-height: 25px;
+}
 /* --------------------------------------------------------------------------------------------
 	체크박스 wrapper
 -------------------------------------------------------------------------------------------- */
@@ -74,4 +155,32 @@
 .text-box .btn-box {
 	margin-top:8px;
 	padding-left:5px;
+}
+
+.top-info {
+	margin:7px 0 16px;
+	text-align: center;
+	font-size:13px;
+	color:#666;
+	line-height: 19px;
+	letter-spacing: -0.5px;
+}
+
+.title-box .cTitle01 + .top-info {
+	margin:-3px 0 11px;
+}
+
+/* --------------------------------------------------------------------------------------------
+	완료페이지
+-------------------------------------------------------------------------------------------- */
+.complete-area {
+	padding-top:124px;
+	background:url(../img/bg/bg_order_complete.png) 50% 10px no-repeat;
+	background-size:75px 96px;
+}
+.complete-area .text-green {
+	font-size:16px;
+	color:#60b015;
+	font-weight: bold;
+	text-align: center;
 }
