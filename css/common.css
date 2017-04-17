@@ -206,7 +206,7 @@ button {outline:0;vertical-align:top;}
 	padding:10px;
 }
 
-.box-cont li {
+.box-cont .item {
 	position:relative;
 	margin-top:10px;
 	padding-left:5px;
@@ -649,8 +649,91 @@ select.styled1 {
 .form-list2 .form-item:first-child {margin-top:0;}
 
 /* ============================================================================================
+	폰트 스타일/컬러
+============================================================================================ */
+.fColor01 {}
+
+/* ============================================================================================
 	리스트/탭
 ============================================================================================ */
+/* 불릿 리스트 01 */
+.bullet-list1 {
+	color:#666;
+	font-size:13px;
+	line-height:16px;
+}
+.bullet-list1 .item {
+	position:relative;
+	margin-top:6px;
+	padding-left:6px;
+}
+.bullet-list1 .item:first-child {margin-top:0;}
+.bullet-list1 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:7px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+
+/* 불릿 리스트 02 */
+.bullet-list2 {
+	color:#666;
+	font-size:11px;
+	line-height:15px;
+}
+.bullet-list2 .item {
+	position:relative;
+	margin-top:5px;
+	padding-left:6px;
+}
+.bullet-list2 .item:first-child {margin-top:0;}
+.bullet-list2 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:6px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+
+/* 불릿 리스트 03 */
+.bullet-list3 {
+	color:#aaa;
+	font-size:11px;
+	line-height:15px;
+}
+.bullet-list3 .item {
+	position:relative;
+	margin-top:1px;
+	padding-left:6px;
+}
+.bullet-list3 .item:first-child {margin-top:0;}
+.bullet-list3 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:6px;
+	width:2px;
+	height:2px;
+	background-color:#aaa;
+}
+
+/* 불릿 텍스트 01 */
+.bullet-text1 {
+	position:relative;
+	margin-top:5px;
+	padding-left:13px;
+	color:#aaa;
+	font-size:11px;
+	line-height:15px;
+}
+.bullet-text1:before {
+	content:'※';
+	position:absolute;
+	left:0;top:0;
+}
+
 /* 탭 01 */
 .tab-list1 {
 	overflow:hidden;
@@ -746,7 +829,6 @@ select.styled1 {
 	font-size:13px;
 	text-align:left;
 	line-height:19px;
-	letter-spacing:-1px;
 }
 .board1 tr:first-child th,
 .board1 tr:first-child td {border-top:0;}
@@ -755,9 +837,9 @@ select.styled1 {
 	color:#333;
 	font-weight:bold;
 }
+.board1 th {letter-spacing:-1px;}
 .board1 td {color:#666;}
 .board1 .non-text {padding:7px 10px;}
-.board1 {}
 
 .board1.normal th {font-weight: normal;}
 /* ============================================================================================
