@@ -1509,14 +1509,84 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background:url(../img/ico/ico_brand.png) no-repeat 0 0;
 	background-size:20px 14px;
 }
-.view-content .goods-info-box .goods-list .item {}
-.view-content .goods-info-box .goods-list {}
-.view-content .goods-info-box .goods-list {}
-.view-content .goods-info-box .goods-list {}
-.view-content .goods-info-box {}
-.view-content .goods-info-box {}
-.view-content .goods-info-box {}
-.view-content .goods-info-box {}
-.view-content .goods-info-box {}
-.view-content {}
-.view-content {}
+
+.view-content .tab-content {
+	display:none;
+	padding:20px 10px;
+}
+.view-content .tab-content.on {display:block;}
+.view-content .tab-content .board1 {
+	margin-top:10px;
+}
+.view-content .tab-content .board1:first-child {margin-top:-10px;}
+.view-content .tab-content .exclamation-box {
+	margin:0 -10px;
+	padding:35px 20px 18px;
+	border-top:1px solid #a69384;
+	background:#f6f6f7 url(../img/ico/ico_exclamation02.png) no-repeat 50% 15px;
+	background-size:12px 12px;
+	color:#333;
+	font-size:11px;
+	text-align:center;
+	line-height:15px;
+}
+.view-content .tab-content .view-img-area {
+	padding:10px 0 37px;
+	font-size:0;
+	line-height:0;
+}
+.view-content .tab-content .view-img-area img {width:100%;}
+
+.view-content .tab-content .detail-info {}
+.view-content .tab-content .detail-info .info-dl {}
+.view-content .tab-content .detail-info .info-dl dt {}
+.view-content .tab-content .detail-info .info-dl dd {}
+.view-content .tab-content .detail-info .info-graybox {}
+.view-content .tab-content .detail-info .info-graybox dt {}
+.view-content .tab-content .detail-info .info-graybox dd {}
+
+.view-content .tab-content .top-gray-box {
+	margin:0 -10px;
+	padding:10px 10px 20px;
+	border-top:8px solid #eee;
+}
+
+.cooking-box {
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.cooking-box .img-area {}
+.cooking-box .text-area {
+	margin-top:8px;
+	padding:0 10px;
+	color:#333;
+}
+.cooking-box .text-area .text {
+	font-size:11px;
+	line-height:16px;
+}
+.cooking-box .text-area .title {
+	font-size:18px;
+	font-weight:bold;
+	line-height:22px;
+}
+.cooking-box .hashtag-area {
+	overflow:hidden;
+	margin:-3px 0 0 -3px;
+	padding:10px;
+}
+.cooking-box .hashtag-area .hashtag {
+	float:left;
+	height:21px;
+	margin:3px 0 0 3px;
+	padding:0 6px;
+	border:1px solid #bbb;
+	color:#666;
+	font-size:11px;
+	line-height:21px;
+}
+.cooking-box {}
+
+.view-content .tab-content {}
+.view-content .tab-content {}
+.view-content .tab-content {}
