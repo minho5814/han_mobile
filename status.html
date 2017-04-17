@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title></title>
+<link rel="stylesheet" href="css/common.css">
+<style>
+	body {
+		padding:20px 0 30px;
+		box-sizing:border-box;
+	}
+	.Head {
+		position:fixed;
+		left:0;right:0;top:20px;
+		z-index:500;
+		height:50px;
+		padding:0 16px;
+		box-sizing:border-box;
+		-webkit-transition:all .3s;
+		-ms-transition:all .3s;
+		transition:all .3s;
+	}
+	.Head.down {
+		top:0;
+		background-color:rgba(255,255,255,.9);
+		border-bottom:1px solid #999;
+	}
+	h1 {
+		font-size:20px;
+		font-weight:500;
+	}
+	h2 {
+		position:relative;
+		height:40px;
+		margin-top:1px;
+		padding:0 0 0 15px;
+		background-color:#969c9c;
+		color:#fff;
+		font-size:16px;
+		line-height:40px;
+		-webkit-transition:all .3s;
+		-ms-transition:all .3s;
+		transition:all .3s;
+	}
+	h2:before {
+		content:'▼';
+		position:absolute;
+		right:20px;top:50%;
+		width:14px;
+		height:14px;
+		margin-top:-7px;
+		text-align:center;
+		line-height:14px;
+		-webkit-transition:all .3s;
+		-ms-transition:all .3s;
+		transition:all .3s;
+	}
+	h2.on {background-color:#33989a;}
+	h2.on:before {
+		-ms-transform:rotate(180deg);
+		-webkit-transform:rotate(180deg);
+		transform:rotate(180deg);
+	}
+	.Layer {margin-bottom:-1px;}
+
+	table {
+		border-top:1px solid #999;
+		border-right:1px solid #999;
+	}
+	table th,
+	table td {
+		padding:4px 10px;
+		font-size:12px;
+		font-weight:normal;
+		text-align:center;
+		border-bottom:1px solid #999;
+		border-left:1px solid #999;
+	}
+	table th {background-color:#eee;}
+	table td {}
+	.Link a {
+		display:block;
+		color:#ff0000;
+		text-align:right;
+	}
+	.Left {text-align:left;}
+	.Link a:hover {text-decoration:underline;}
+	.Link a.on {color:#2a46c1;text-decoration:underline;}
+
+	colgroup .Hide {display:table-column;}
+	colgroup .Dfault {display:none;}
+	.Text {text-align:right;}
+	.Com {color:#999;}
+</style>
+</head>
+
+<body>
+<div class="Head">
+	<h1>한살림 장보기 :: 2017.04.17</h1>
+	<p class="Text"><span class="Com"></span> / <span class="All"></span></p>
+</div>
+
+<h2 class="on" style="margin-top:50px;">Guide</h2>
+<div class="Layer">
+	<table>
+		<colgroup>
+			<col style="width:15%;" class="Hide">
+			<col style="width:15%;" class="Hide">
+			<col style="width:15%;" class="Hide">
+			<col style="width:15%;" class="Hide">
+			<col style="width:5%;" class="Hide">
+			<col style="width:12%;" class="Hide">
+			<col style="width:5%;" class="Hide">
+			<col style="width:35%;" class="Dfault">
+			<col style="width:35%;" class="Dfault">
+			<col style="*">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>2 Depth</th>
+				<th>3 Depth</th>
+				<th class="Hide">4 Depth</th>
+				<th class="Hide">5 Depth</th>
+				<th class="Hide">Path</th>
+				<th>File</th>
+				<th class="Hide">완료</th>
+				<th class="Hide">메모</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="Left" rowspan="2">레이아웃</td>
+				<td class="Left">01</td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">guide/</td>
+				<td class="Link"><a target="_blank" href="im/guide/layout01.html">layout01.html</a></td>
+				<td class="Hide Date"></td>
+				<td class="Hide Left"></td>
+			</tr>
+			<tr>
+				<td class="Left">02</td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">guide/</td>
+				<td class="Link"><a target="_blank" href="im/guide/layout02.html">layout02.html</a></td>
+				<td class="Hide Date"></td>
+				<td class="Hide Left"></td>
+			</tr>
+			<tr>
+				<td class="Left">버튼</td>
+				<td class="Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">guide/</td>
+				<td class="Link"><a target="_blank" href="im/guide/button.html">button.html</a></td>
+				<td class="Hide Date"></td>
+				<td class="Hide Left"></td>
+			</tr>
+			<tr>
+				<td class="Left">폼</td>
+				<td class="Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">guide/</td>
+				<td class="Link"><a target="_blank" href="im/guide/form.html">form.html</a></td>
+				<td class="Hide Date"></td>
+				<td class="Hide Left"></td>
+			</tr>
+			<tr>
+				<td class="Left">썸네일</td>
+				<td class="Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">guide/</td>
+				<td class="Link"><a target="_blank" href="im/guide/thumb.html">thumb.html</a></td>
+				<td class="Hide Date"></td>
+				<td class="Hide Left"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(window).load(function(){
+	$(window).scroll(function(){
+		var winTop = $(window).scrollTop();
+		if(winTop > 10){
+			$('.Head').addClass('down');
+		}else{
+			$('.Head').removeClass('down');
+		}
+	});
+	$(window).scroll();
+
+	var date = $('.Date').length;
+	$('.All').html(date);
+
+	$('.Date').each(function(){
+		var txtLen = $(this).text().length;
+		if(txtLen > 2){
+			$(this).addClass('On');
+		}
+	});
+
+	var com = $('.Date.On').length;
+	$('.Com').html(com);
+
+	$('.Layer').each(function(){
+		var Len = $(this).find('.Date').length;
+		var ComLen = $(this).find('.Date.On').length;
+		$(this).prev('h2').append('<span>(<em class="ComLen">'+ ComLen +'</em> / <em class="AllLen">'+ Len +'</em>)</span>');
+	});
+
+	$('.Link a').click(function(){
+		$('.Link a').removeClass('on');
+		$(this).addClass('on');
+	});
+
+	$('h2').click(function(){
+		$(this).toggleClass('on').next('.Layer').slideToggle(200);
+	});
+
+	function resizeTable(){
+		var winW = $(window).width();
+		if(winW <= 800){
+			$('.Hide').hide();
+			$('colgroup .Dfault').show()
+		}else{
+			$('.Hide').show();
+			$('colgroup .Dfault').hide()
+		}
+	}
+	resizeTable();
+	$(window).resize(resizeTable);
+});
+</script>
+</body>
+</html>
