@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------------------------------------------------------
+	조합원가입
+-------------------------------------------------------------------------------------------- */
+/*조합원 가입여부 확인 팝업*/
+.confirm-tit {text-align: center;}
+.confirm-box {
+	overflow:hidden;
+	margin-top:15px;
+	border:1px solid #bbb;
+	border-radius: 3px;
+}
+.confirm-box a {
+	display: inline-block;
+	float:left;
+	width:50%;
+	border-left:1px solid #bbb;
+	box-sizing:border-box;
+}
+.confirm-box .confirm {
+	width:100%;
+	padding:105px 0 20px;
+	background-repeat:no-repeat;
+	background-position:50% 20px;
+	text-align: center;
+}
+.confirm-box a:first-child {border-left:0;}
+.confirm-box .confirm.phone {
+	background-image:url(../img/bg/bg_phone.png);
+	background-size: 69px 69px;
+}
+.confirm-box .confirm.ipin {
+	background-image:url(../img/bg/bg_ipin.png);
+	background-size: 69px 69px;
+}
+
+/*조합원  기회원 알림*/
+.position-area {position:relative;}
+.position-area .btn-call.right-position {
+	position: absolute;
+	top:50%;
+	right:0;
+	margin-top:-14px;
+}
