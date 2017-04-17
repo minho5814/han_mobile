@@ -109,5 +109,14 @@
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+	$(window).load(function(){
+		$('.tab-list2 li').click(function(){
+			var idx = $(this).index();
+			$('.tab-list2 li').removeClass('on').eq(idx).addClass('on');
+			$('.tab-content').removeClass('on').eq(idx).addClass('on');
+		})
+	});
+</script>
 </body>
 </html>

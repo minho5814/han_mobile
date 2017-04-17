@@ -1399,6 +1399,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#60b015;
 	line-height:18px;
 }
+.tab-content {display:none;}
+.tab-content.on {display:block;}
 .work-area {}
 .work-area .cTitle01 {margin:25px 0 9px;}
 .work-area .work-img img {width:100%; height:auto; vertical-align:middle;}
