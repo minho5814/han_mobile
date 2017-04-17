@@ -612,6 +612,18 @@ select.styled1 {
 	box-sizing:border-box;
 }
 
+/* 셀렉트 리스트 형식 */
+.select-list1 {
+	overflow:hidden;
+	margin:0 -2px;
+}
+.select-list1 .item {
+	float:left;
+	width:50%;
+	box-sizing:border-box;
+	padding:0 2px;
+}
+
 /* 버튼 포합 타입 */
 .form-button-type1 {
 	position:relative;
@@ -867,19 +879,58 @@ select.styled1 {
 	font-size:13px;
 	text-align:left;
 	line-height:19px;
+	font-weight:normal;
 }
 .board1 tr:first-child th,
 .board1 tr:first-child td {border-top:0;}
 .board1 th {
 	background-color:#f7f7f7;
 	color:#333;
-	font-weight:bold;
 }
 .board1 th {letter-spacing:-1px;}
 .board1 td {color:#666;}
 .board1 .non-text {padding:7px 10px;}
 
-.board1.normal th {font-weight: normal;}
+/* 02 */
+.board2 {position:relative;}
+.board2 .top-text {
+	position:absolute;
+	right:0;top:8px;
+	color:#aaa;
+	font-size:11px;
+	line-height:15px;
+}
+.board2 table {
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+.board2 th,
+.board2 td {
+	padding:10px;
+	border-top:1px solid #ddd;
+	font-size:13px;
+	text-align:center;
+	line-height:19px;
+	font-weight:normal;
+}
+.board2 tr:first-child th,
+.board2 tr:first-child td {border-top:0;}
+.board2 th {
+	background-color:#f7f7f7;
+	color:#333;
+	text-align:center;
+}
+.board2 th {letter-spacing:-1px;}
+.board2 thead th {
+	border-bottom:1px solid #bbb;
+}
+.board2 tbody th {
+	text-align:left;
+}
+.board2 td {
+	color:#666;
+}
+
 /* ============================================================================================
 	레이아웃
 ============================================================================================ */
@@ -1758,6 +1809,106 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:12px;
 	line-height:18px;
 }
+
+.bullet-dl1 {
+	padding-bottom:12px;
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+.bullet-dl1 dt {
+	position:relative;
+	margin-top:12px;
+	padding:12px 10px 5px;
+	border-top:1px solid #eee;
+	color:#333;
+	font-size:12px;
+	line-height:15px;
+}
+.bullet-dl1 dt:before {
+	content:'';
+	position:absolute;
+	left:5px;top:18px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+.bullet-dl1 dt:first-child {
+	margin-top:0;
+	border-top:0;
+}
+.bullet-dl1 dd {
+	padding:0 10px;
+	color:#666;
+	font-size:13px;
+	line-height:17px;
+}
+
+/* 방사성물질 검사 결과 */
+.radioactivity-box {
+	margin-top:10px;
+}
+.radioactivity-box .radioactivity-list {
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+.radioactivity-box .radioactivity-list .item {
+	position:relative;
+	padding:15px 0 8px 55px;
+	border-top:1px solid #eee;
+}
+.radioactivity-box .radioactivity-list .item:first-child {border-top:0;}
+.radioactivity-box .radioactivity-list .item .title {
+	position:absolute;
+	left:0;top:33px;
+	color:#333;
+	font-size:12px;
+}
+.radioactivity-box .radioactivity-list .radioactivity {}
+.radioactivity-box .radioactivity-list .radioactivity .gauge-box {
+	position:relative;
+	padding-top:16px;
+}
+.radioactivity-box .radioactivity-list .radioactivity .label {
+	display:inline-block;
+	position:absolute;
+	left:0;top:0;
+	height:14px;
+	padding:0 6px;
+	border-radius:2px 2px 0 2px;
+	border:1px solid #60b015;
+	color:#60b015;
+	font-size:9px;
+	line-height:14px;
+}
+.radioactivity-box .radioactivity-list .radioactivity .label:before {
+	content:'';
+	position:absolute;
+	left:-1px;bottom:-5px;
+	width:5px;
+	height:6px;
+	background:url(../img/bg/bg_radioactivity.png) no-repeat 0 0;
+	background-size:5px 6px;
+}
+.radioactivity-box .radioactivity-list .radioactivity .gauge {
+	display:block;
+	height:4px;
+	margin-top:7px;
+	background:#f56d24 url(../img/bg/bg_gauge.png) no-repeat 0 0;
+	background-size:160px 4px;
+}
+.radioactivity-box .radioactivity-list .radioactivity .text-area {
+	overflow:hidden;
+	color:#333;
+	font-size:9px;
+	line-height:20px;
+}
+.radioactivity-box .radioactivity-list .radioactivity .text-area .text {
+	float:left;
+	margin-left:20px;
+}
+.radioactivity-box .radioactivity-list .radioactivity .text-area .text:first-child {margin-left:0;}
+.radioactivity-box .radioactivity-list .radioactivity .text-area .text:last-child {float:right;}
+.radioactivity-box {}
 
 .view-content .tab-content {}
 .view-content .tab-content {}
