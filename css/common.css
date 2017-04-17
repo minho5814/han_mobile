@@ -142,9 +142,6 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	공통
 ============================================================================================ */
-/* 폰트색상 */
-.black {color:#333 !important;}
-
 /* 마진 */
 .mgT0 {margin-top:0px !important;}
 .mgT5 {margin-top:5px !important;}
@@ -211,7 +208,7 @@ button {outline:0;vertical-align:top;}
 	padding:10px;
 }
 
-.box-cont li {
+.box-cont .item {
 	position:relative;
 	margin-top:10px;
 	padding-left:5px;
@@ -666,8 +663,91 @@ select.styled1 {
 .form-list2 .form-item:first-child {margin-top:0;}
 
 /* ============================================================================================
+	폰트 스타일/컬러
+============================================================================================ */
+.fColor01 {color:#333 !important;} /* 진한 회색 */
+.fColor02 {color:#60b015 !important;} /* 녹색 */
+/* ============================================================================================
 	리스트/탭
 ============================================================================================ */
+/* 불릿 리스트 01 */
+.bullet-list1 {
+	color:#666;
+	font-size:13px;
+	line-height:16px;
+}
+.bullet-list1 .item {
+	position:relative;
+	margin-top:6px;
+	padding-left:6px;
+}
+.bullet-list1 .item:first-child {margin-top:0;}
+.bullet-list1 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:7px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+
+/* 불릿 리스트 02 */
+.bullet-list2 {
+	color:#666;
+	font-size:11px;
+	line-height:15px;
+}
+.bullet-list2 .item {
+	position:relative;
+	margin-top:5px;
+	padding-left:6px;
+}
+.bullet-list2 .item:first-child {margin-top:0;}
+.bullet-list2 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:6px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+
+/* 불릿 리스트 03 */
+.bullet-list3 {
+	color:#aaa;
+	font-size:11px;
+	line-height:15px;
+}
+.bullet-list3 .item {
+	position:relative;
+	margin-top:1px;
+	padding-left:6px;
+}
+.bullet-list3 .item:first-child {margin-top:0;}
+.bullet-list3 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:6px;
+	width:2px;
+	height:2px;
+	background-color:#aaa;
+}
+
+/* 불릿 텍스트 01 */
+.bullet-text1 {
+	position:relative;
+	margin-top:5px;
+	padding-left:13px;
+	color:#aaa;
+	font-size:11px;
+	line-height:15px;
+}
+.bullet-text1:before {
+	content:'※';
+	position:absolute;
+	left:0;top:0;
+}
+
 /* 탭 01 */
 .tab-list1 {
 	overflow:hidden;
@@ -763,7 +843,6 @@ select.styled1 {
 	font-size:13px;
 	text-align:left;
 	line-height:19px;
-	letter-spacing:-1px;
 }
 .board1 tr:first-child th,
 .board1 tr:first-child td {border-top:0;}
@@ -772,9 +851,9 @@ select.styled1 {
 	color:#333;
 	font-weight:bold;
 }
+.board1 th {letter-spacing:-1px;}
 .board1 td {color:#666;}
 .board1 .non-text {padding:7px 10px;}
-.board1 {}
 
 .board1.normal th {font-weight: normal;}
 /* ============================================================================================
@@ -1299,6 +1378,87 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 한살림운동의 지향 */
 .ooriented-box {margin-top:20px;}
 .ooriented-box img {width:100%; height:auto; vertical-align:middle;}
+
+/* --------------------------------------------------------------------------------------------
+	사이트 이용약관
+-------------------------------------------------------------------------------------------- */
+.site-terms-infor {}
+.site-terms-infor .terms-tit {
+	margin:20px 0 8px;
+	font-size:13px;
+	color:#333;
+	line-height:18px;
+}
+.site-terms-infor .terms-text {
+	font-size:12px;
+	color:#666;
+	line-height:18px;
+}
+.site-terms-infor .terms-list01 {}
+.site-terms-infor .terms-list01 .item {
+	position:relative;
+	padding-left:16px;
+	font-size:12px;
+	color:#666;
+	line-height:18px;
+}
+.site-terms-infor .terms-list01 .item .number {
+	display:block;
+	position:absolute;
+	left:0; top:-1px;
+}
+.site-terms-infor .depth-terms {margin:8px 0;}
+.site-terms-infor .depth-terms .item-depth {
+	position:relative;
+	padding-left:13px;
+}
+.site-terms-infor .depth-terms .item-depth .number {
+	position:absolute;
+	left:0; top:0;
+}
+.site-terms-infor .depth-list {margin:8px 0;}
+.site-terms-infor .depth-list .item-list {
+	position:relative;
+	padding-left:16px;
+}
+.site-terms-infor .depth-list .item-list .number {
+	position:absolute;
+	left:0; top:0;
+}
+.site-terms-infor .depth-list02 {}
+.site-terms-infor .depth-list02 .item-list {
+	position:relative;
+	padding-left:6px;
+}
+.site-terms-infor .depth-list02 .item-list:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:8px;
+	width:3px;
+	height:1px;
+	background-color:#666;
+}
+.site-terms-infor .depth-list02 .item-list02 {
+	position:relative;
+	padding-left:6px;
+}
+.site-terms-infor .depth-list02 .item-list02:before {
+	content:'*';
+	display:block;
+	position:absolute;
+	left:0; top:0;
+}
+.site-terms-infor .adden-list {margin-top:17px;}
+.site-terms-infor .adden-list .item-adden {
+	font-size:12px;
+	color:#666;
+	line-height:18px;
+}
+.site-terms-infor .adden-list .item-adden span {display:block;}
+/* --------------------------------------------------------------------------------------------
+	개인정보취급방침
+-------------------------------------------------------------------------------------------- */
 
 /* --------------------------------------------------------------------------------------------
 	물품 상세 ()
