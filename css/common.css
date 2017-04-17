@@ -1377,6 +1377,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background:url(../img/img/img_pdf.png) no-repeat 10px center;
 	background-size:50px;
 }
+.pdf-box a {display:block;}
 .pdf-box:before {
 	content:'';
 	display:block;
