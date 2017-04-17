@@ -1650,6 +1650,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border:1px solid #ddd;
 	background-color:#fff;
 }
+.cooking-box .link {display:block;}
 .cooking-box .img-area {}
 .cooking-box .text-area {
 	margin-top:8px;
@@ -1680,7 +1681,49 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:11px;
 	line-height:21px;
 }
-.cooking-box {}
+
+.card-news-box {
+	padding:0 10px 16px;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.card-news-box .title-area {
+	display:block;
+	padding:13px 0 10px;
+	color:#333;
+}
+.card-news-box .title-area .text {
+	font-size:11px;
+	line-height:14px;
+}
+.card-news-box .title-area .title {
+	font-size:13px;
+	font-weight:bold;
+	line-height:20px;
+}
+.card-news-box .hashtag-area {
+	overflow:hidden;
+	margin:-3px 0 0 -3px;
+	padding:10px 0;
+	border-top:1px solid #ddd;
+	color:#666;
+	font-size:11px;
+}
+.card-news-box .hashtag-area .hashtag {
+	float:left;
+	height:22px;
+	padding:0 7px;
+	margin:3px 0 0 3px;
+	background-color:#f7f7f7;
+	line-height:22px;
+}
+.card-news-box .img-area {}
+.card-news-box .text-area {
+	margin-top:7px;
+	color:#666;
+	font-size:12px;
+	line-height:18px;
+}
 
 .view-content .tab-content {}
 .view-content .tab-content {}
