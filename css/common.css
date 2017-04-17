@@ -535,11 +535,19 @@ select.styled1 {
 .phone-area .box input {text-align:center;}
 
 /* 체크박스/라디오 리스트 */
-.form-item .check-list {}
+.form-item .check-list {
+	margin-left:-17px;
+	padding-bottom:5px;
+}
 .form-item .check-list label {
+	display:inline-block;
+	margin-left:17px;
+	padding-top:5px;
 	color:#666;
 	font-size:13px;
+	line-height:20px;
 }
+.form-item .check-list label input {margin-right:5px;}
 
 /* 폼리스트 01 */
 .form-list1 {}
@@ -555,7 +563,62 @@ select.styled1 {
 .form-list2 .form-item:first-child {margin-top:0;}
 
 /* ============================================================================================
-	table
+	리스트/탭
+============================================================================================ */
+/* 탭 01 */
+.tab-list1 {
+	overflow:hidden;
+	background-color:#f7f7f7;
+}
+.tab-list1 .item {
+	float:left;
+	width:33%;
+}
+.tab-list1 .item:first-child {width:34%;}
+.tab-list1 .item .text {
+	display:block;
+	position:relative;
+	height:45px;
+	box-sizing:border-box;
+	color:#333;
+	font-size:13px;
+	text-align:center;
+	line-height:45px;
+}
+.tab-list1 .item.on .text {
+	border-bottom:2px solid #60b015;
+	color:#60b015;
+	font-weight:bold;
+}
+
+/* 탭 02 */
+.tab-list2 {
+	overflow:hidden;
+}
+.tab-list2 .item {
+	float:left;
+	width:50%;
+}
+.tab-list2 .item .text {
+	display:block;
+	height:35px;
+	box-sizing:border-box;
+	border-bottom:1px solid #333;
+	background-color:#eee;
+	color:#bbb;
+	font-size:13px;
+	text-align:center;
+	line-height:35px;
+}
+.tab-list2 .item.on .text {
+	border:1px solid #333;
+	border-bottom:0;
+	background-color:#fff;
+	color:#333;
+}
+
+/* ============================================================================================
+	게시판
 ============================================================================================ */
 /* 01 */
 .board1 {}
