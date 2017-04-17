@@ -98,6 +98,7 @@ input[type=number]:disabled,
 input[type=password]:disabled {
 	background-color:#eee;
 	color:#aaa;
+	border-color:#ddd;
 }
 input[type=submit] {-webkit-border-radius:0;border:0;border-radius:0;-webkit-appearance:none;}
 textarea {
@@ -240,6 +241,11 @@ button {outline:0;vertical-align:top;}
 }
 .box-cont.gray .item:before {
 	background-color:#aaa;
+}
+
+.box-content2 {
+	position:relative;
+	border:1px solid #ddd;
 }
 /* --------------------------------------------------------------------------------------------
 	타이틀
@@ -1428,6 +1434,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background:url(../img/img/img_pdf.png) no-repeat 10px center;
 	background-size:50px;
 }
+.pdf-box a {display:block;}
 .pdf-box:before {
 	content:'';
 	display:block;
@@ -1450,6 +1457,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#60b015;
 	line-height:18px;
 }
+.tab-content {display:none;}
+.tab-content.on {display:block;}
 .work-area {}
 .work-area .cTitle01 {margin:25px 0 9px;}
 .work-area .work-img img {width:100%; height:auto; vertical-align:middle;}

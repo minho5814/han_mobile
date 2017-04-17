@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 
+/*공통*/
+
+
+
 /* --------------------------------------------------------------------------------------------
 	조합원가입
 -------------------------------------------------------------------------------------------- */
@@ -140,3 +144,67 @@
 	font-size:12px;
 	line-height:18px;
 }
+
+/*조합원가입 - 약관동의*/
+.post-info-area {
+	margin-top:6px;
+	padding:13px 10px;
+	background-color:#eee;
+	border:1px solid #ddd;
+	border-radius: 4px;
+}
+.post-info-area p {
+	margin-top:9px;
+	color:#aaa;
+	font-size: 13px;
+	line-height: 16px;
+}
+.post-info-area p:first-child {margin-top:0; }
+
+.join-area .box-content2 {
+	position: relative;	
+	height:45px;
+	margin-top:6px;
+	box-sizing: border-box;
+}
+.join-area .box-content2 p {
+	position: absolute;
+	top:0; left:9px;
+	height:45px; line-height: 45px;}
+.join-area .box-content2 a {
+	position: absolute;
+	right:9px;
+	top:9px;
+}
+
+.term-list {
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+.term-list li {
+	padding:8px 10px;
+	border-top:1px solid #ddd;
+}
+.term-list li:first-child {border-top:0;}
+.term-list li:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.term-list li label {
+	float: left;
+	display: block;
+	margin:3px 0;
+	line-height: 20px;
+}
+.term-list li label input {margin-right:5px;}
+.term-list li a {
+	float: right;
+}
+
+.tit-wrap {margin-bottom:6px; position: relative;}
+
+.tit-wrap .left {}
+.tit-wrap .right {position: absolute; right:0; bottom:0;}
+.tit-wrap .right.check-list label{line-height: 20px;}
+.tit-wrap .right.check-list label input {margin-right:5px}
