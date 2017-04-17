@@ -161,6 +161,46 @@ button {outline:0;vertical-align:top;}
 }
 .img-area img {width:100%;}
 
+/*box 스타일*/
+.box-content1 {
+	position:relative;
+	border:1px solid #e3e3e3;
+}
+.box-content1 .box-title {
+	padding:10px 10px 10px 27px;
+	color:#666;
+	font-size:12px;
+	font-weight:bold;
+	line-height:11px;
+	background:url(../img/ico/ico_exclamation.png) no-repeat 9px 9px;
+	background-size:13px 13px;
+	box-sizing: border-box;
+}
+.box-content1 .box-cont {
+	padding:10px;
+	border-top:1px solid #ddd;
+}
+
+.box-content1 .box-cont p {
+	position:relative;
+	margin-top:10px;
+	padding-left:5px;
+	color:#666;
+	font-size:11px;
+	line-height:15px;
+}
+.box-content1 .box-cont .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:5px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+
+.box-content1 .box-cont .item:first-child {margin-top:0;}
+.box-content1 .box-cont .item .btn-mini-text {margin-left:14px;}
+
 /* --------------------------------------------------------------------------------------------
 	타이틀
 -------------------------------------------------------------------------------------------- */
@@ -984,6 +1024,24 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .join-info dd {
 	margin-top:10px;
 }
+
+.join-info .join-bg {
+	margin-top:20px;
+	padding:122px 0 30px;
+	background:url(../img/img/img_join_bg.png) no-repeat center top;
+	background-size:119px 109px;
+}
+.join-info .join-bg p {
+	color:#239bd2;
+	font-size:18px;
+	text-align: center;
+}
+.join-info .join-bg p span {
+	display: block;
+	color:#666;
+	font-size:13px;
+}
+
 
 /* 로그인 */
 .join-section {
