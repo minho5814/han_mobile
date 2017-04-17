@@ -78,35 +78,39 @@
 .result-info dd.name {
 	font-weight: bold;
 }
-.pw-result {
+.send-select {
 	overflow: hidden;
 	border:1px solid #bbb;
 	border-radius: 5px;
 }
-.pw-result li {
+.send-select li {
 	float:left;
 	width:50%;
-	padding:20px 0;
 	border-left:1px solid #bbb;
 	box-sizing: border-box;
 }
-.pw-result li:first-child {border-left:0;}
-.pw-result li button {
+.send-select li:first-child {border-left:0;}
+.send-select li .find-btn {
 	display: block;
-	width:69px;
+	width:100%;
 	margin: 0 auto;
-	padding-top:85px;
+	padding:105px 0 20px;
 	font-size:13px;
 	color:#333;
 	text-align: center;
 }
 .find-sms {
-	background:url(../img/bg/bg_sms.png) 50% 0 no-repeat;
+	background:url(../img/bg/bg_sms.png) 50% 20px no-repeat;
 	background-size:69px;
 }
 
 .find-email {
-	background:url(../img/bg/bg_email.png) 50% 0 no-repeat;
+	background:url(../img/bg/bg_email.png) 50% 20px no-repeat;
+	background-size:69px;
+}
+
+.find-ipin {
+	background:url(../img/bg/bg_ipin.png) 50% 20px no-repeat;
 	background-size:69px;
 }
 
@@ -160,10 +164,29 @@
 }
 
 .top-info {
-	padding:7px 0 16px;
+	margin:7px 0 16px;
 	text-align: center;
 	font-size:13px;
 	color:#666;
 	line-height: 19px;
 	letter-spacing: -0.5px;
+}
+
+.title-box .cTitle01 + .top-info {
+	margin:-3px 0 11px;
+}
+
+/* --------------------------------------------------------------------------------------------
+	완료페이지
+-------------------------------------------------------------------------------------------- */
+.complete-area {
+	padding-top:124px;
+	background:url(../img/bg/bg_order_complete.png) 50% 10px no-repeat;
+	background-size:75px 96px;
+}
+.complete-area .text-green {
+	font-size:16px;
+	color:#60b015;
+	font-weight: bold;
+	text-align: center;
 }
