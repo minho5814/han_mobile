@@ -574,6 +574,14 @@ select.styled1 {
 /* ============================================================================================
 	레이아웃
 ============================================================================================ */
+html,
+body,
+.wrapper,
+.container {
+	height:100%;
+	box-sizing:border-box;
+}
+.wrapper.bg-gray {background-color:#f7f7f7;}
 /* --------------------------------------------------------------------------------------------
 	해더
 -------------------------------------------------------------------------------------------- */
@@ -659,6 +667,21 @@ select.styled1 {
 	text-align:center;
 	line-height:45px;
 	white-space:nowrap;
+}
+
+/* --------------------------------------------------------------------------------------------
+	컨테이너
+-------------------------------------------------------------------------------------------- */
+.container {padding-top:47px;}
+
+/* 컨텐츠 박스 */
+.white-content1 {
+	padding:10px 10px 20px;
+	background-color:#fff;
+}
+.white-content2 {
+	padding:20px 10px;
+	background-color:#fff;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -940,6 +963,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list2 .box .btn-list .item .btn-like {border-right:0;}
 
+
 /* ============================================================================================
 	sub
 ============================================================================================ */
@@ -959,7 +983,42 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .join-info dd {
 	margin-top:10px;
+}
+
+/* 로그인 */
+.join-section {
+	padding:20px 10px;
+}
+.join-section .form-item {margin-top:6px;}
+.join-section .form-item:first-child {margin-top:0;}
+
+.login-global {
+	margin-top:10px;
+	text-align: center;
+	line-height: 31px;
+}
+.login-global .login-find {
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+}
+.login-global .login-find span {
+	position: relative;
+	float:left;
+	margin:0 16px 0 15px;
+	font-size:12px;
 	color:#666;
 	font-size: 13px;
 	line-height: 19px;
+}
+.login-global .login-find span:before {
+	content: '';
+	position: absolute;
+	left:-16px; top:50%;
+	width:1px; height:11px;
+	background-color:#ddd;
+	transform: translateY(-50%);
+}
+.login-global .login-find span:first-child:before{
+	display: none;
 }
