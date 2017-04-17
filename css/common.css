@@ -617,9 +617,7 @@ select.styled1 {
 .form-list1 .btn-list1 {margin-top:20px;}
 
 /* 폼리스트 02 */
-.form-list2 {
-	padding:5px 0;
-}
+.form-list2 {padding:5px 0;}
 .form-list2 .form-item {margin-top:14px;}
 .form-list2 .form-item:first-child {margin-top:0;}
 
@@ -1148,3 +1146,47 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#666;
 	font-size:13px;
 }
+
+/* --------------------------------------------------------------------------------------------
+	물품 상세 ()
+-------------------------------------------------------------------------------------------- */
+.view-content {}
+.view-content .visual-slide {}
+.view-content .visual-slide .swiper-slide .img-area {
+	width:253px;
+	height:253px;
+	margin:0 auto;
+}
+.view-content .visual-slide .swiper-pagination {
+	height:32px;
+	color:#aaa;
+	font-size:12px;
+	text-align:center;
+	line-height:32px;
+}
+.view-content .visual-slide .swiper-pagination .swiper-pagination-current {color:#333;}
+.view-content .visual-slide .btn-prev,
+	.view-content .visual-slide .btn-next {
+		position:absolute;
+		top:50%;
+		z-index:1;
+		-webkit-transform:translateY(-50%) rotate(-45deg);
+		-ms-transform:translateY(-50%) rotate(-45deg);
+		transform:translateY(-50%) rotate(-45deg);
+		width:10px;
+		height:10px;
+		margin-top:-16px;
+	}
+.view-content .visual-slide .btn-prev {
+	left:10px;
+	border-top:2px solid #bbb;
+	border-left:2px solid #bbb;
+}
+.view-content .visual-slide .btn-next {
+	right:10px;
+	border-bottom:2px solid #bbb;
+	border-right:2px solid #bbb;
+}
+.view-content {}
+.view-content {}
+.view-content {}
