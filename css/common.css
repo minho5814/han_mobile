@@ -410,6 +410,9 @@ button {outline:0;vertical-align:top;}
 	background-position:0 -234px;
 }
 
+/* 툴팁 */
+.btn-tooltip {}
+
 /* --------------------------------------------------------------------------------------------
 	아이콘
 -------------------------------------------------------------------------------------------- */
@@ -1338,8 +1341,40 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:90px;
 	color:#333;
 }
-.view-content .goods-info-box .goods-list .item .text {
-	color:#666;
+.view-content .goods-info-box .goods-list .item .text {color:#666;}
+.view-content .goods-info-box .goods-list .item .link {
+	display:inline-block;
+	position:relative;
+	padding-right:18px;
+}
+.view-content .goods-info-box .goods-list .item .link:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:12px;
+	height:14px;
+	box-sizing:border-box;
+	border:1px solid #bbb;
+}
+.view-content .goods-info-box .goods-list .item .link:after {
+	content:'';
+	position:absolute;
+	right:4px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:4px;
+	height:4px;
+	border-top:1px solid #666;
+	border-right:1px solid #666;
+}
+.view-content .goods-info-box .goods-list .item.brand .text {
+	padding-left:24px;
+	background:url(../img/ico/ico_brand.png) no-repeat 0 0;
+	background-size:20px 14px;
 }
 .view-content .goods-info-box .goods-list .item {}
 .view-content .goods-info-box .goods-list {}
