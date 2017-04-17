@@ -10,46 +10,49 @@
 </head>
 
 <body>
-<div class="wrapper bg-gray">
+<div class="wrapper">
 	<div class="header">
-		<h1 class="head-title">로그인</h1>
+		<h1 class="head-title">조합원 정보 찾기</h1>
 		<button type="button" class="btn-image btn-back">이전</button>
 		<a href="#" class="btn-image btn-search">통합검색</a>
 	</div>
 
 	<div class="container">
+		<ul class="tab-list1">
+			<li class="item on"><span class="text">조합원번호찾기</span></li>
+			<li class="item"><span class="text">아이디 찾기</span></li>
+			<li class="item"><span class="text">비밀번호 찾기</span></li>
+		</ul>
+
 		<div class="white-content2">
+			<ul class="tab-list2">
+				<li class="item on"><span class="text">휴대폰 인증</span></li>
+				<li class="item"><span class="text">이메일 인증</span></li>
+			</ul>
 			<div class="form-list1">
 				<div class="form-item">
-					<input type="text" placeholder="아이디">
+					<input type="tel" placeholder="조합원번호">
 				</div>
 				<div class="form-item">
-					<input type="password" placeholder="비밀번호">
+					<div class="form-button-type1">
+						<input type="tel" placeholder="휴대폰 번호 ( - 생략)" class="text">
+						<button type="button" class="btn-text btn-h35 btn-text-gray1 btn">인증</span>
+					</div>
 				</div>
-				<div class="check-wrap">
-					<label for="auto"><input type="checkbox" id="auto" class="styled1">자동로그인</label>
-					<label for="save"><input type="checkbox" id="save" class="styled1">아이디저장</label>
+				<div class="form-item">
+					<input type="tel" placeholder="인증번호 6자리 숫자 입력" disabled>
 				</div>
 				<div class="btn-area">
-					<button type="button" class="btn-text btn-h45 btn-text-green1">로그인</button>
+					<button type="button" class="btn-text btn-h45 btn-text-green1">아이디 찾기</button>
 				</div>
-				<div class="login-global">
-					<span class="login-find">
-						<span>조합원번호 찾기</span>
-						<span>아이디 찾기</span>
-						<span>비밀번호 찾기</span>
-					</span>
+				<div class="box-content1">
+					<h3 class="box-title">조합원가입 안내</h3>
+					<ul class="box-cont">
+						<li class="item">한살림운동 취지에 동의하는 생산자와 소비자는 누구나 가입할 수 있습니다.</li>
+						<li class="item">한살림 회원가입을 희망하는 분은 인터넷과 매장을 통해 가입신청을 할 수 있습니다.</li>
+						<li class="item">출자금과 가입비에 대해서는 [각 지역 홈페이지 이용안내/가입안내]를 참고하실 바랍니다.</li>
+					</ul>
 				</div>
-			</div>
-		</div>
-		<div class="gray-content2">
-			<ul class="btn-list1">
-				<li class="item"><a href="#" class="btn-text btn-h35 btn-text-gray1">조합원 가입신청</a></li>
-				<li class="item"><a href="#" class="btn-text btn-h35 btn-text-line1">조합원 가입신청 상태조회</a></li>
-			</ul>
-			<div class="text-box">
-				<p class="text">한살림 매장에서 가입한 조합원 분들은 아이디 만들기 후 바로 인터넷과 모바일에서 한살림 장보기 이용이 가능합니다.</p>
-				<div class="btn-box"><a href="#" class="btn-text btn-h25 btn-text-line1">장보기 아이디 만들기</a></div>
 			</div>
 		</div>
 	</div>

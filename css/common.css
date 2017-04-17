@@ -142,6 +142,27 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	공통
 ============================================================================================ */
+/* 마진 */
+.mgT0 {margin-top:0px !important;}
+.mgT5 {margin-top:5px !important;}
+.mgT10 {margin-top:10px !important;}
+.mgT15 {margin-top:15px !important;}
+.mgT20 {margin-top:20px !important;}
+.mgT25 {margin-top:25px !important;}
+.mgT30 {margin-top:30px !important;}
+.mgT35 {margin-top:35px !important;}
+.mgT40 {margin-top:40px !important;}
+
+.mgB0 {margin-bottom:0px !important;}
+.mgB5 {margin-bottom:5px !important;}
+.mgB10 {margin-bottom:10px !important;}
+.mgB15 {margin-bottom:15px !important;}
+.mgB20 {margin-bottom:20px !important;}
+.mgB25 {margin-bottom:25px !important;}
+.mgB30 {margin-bottom:30px !important;}
+.mgB35 {margin-bottom:35px !important;}
+.mgB40 {margin-bottom:40px !important;}
+
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
@@ -634,6 +655,7 @@ select.styled1 {
 /* 탭 02 */
 .tab-list2 {
 	overflow:hidden;
+	margin-bottom:20px;
 }
 .tab-list2 .item {
 	float:left;
