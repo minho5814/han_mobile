@@ -68,8 +68,75 @@
 }
 
 /*주소검색 팝업*/
-.post-area {overflow: hidden; margin-bottom:5px;}
-.post-area .box {float:left; width:50%; padding-left:4px; box-sizing: border-box;}
+.post-area {
+	overflow: hidden;
+	margin-bottom:5px;
+}
+.post-area .box {
+	float:left;
+	width:50%;
+	padding-left:4px;
+	box-sizing: border-box;}
 .post-area .box:first-child {padding-left:0}
 
-.search-area {padding-bottom:20px; border:1px solid #}
+.search-area {}
+.result-area .no-result {
+	color: #aaa;
+	font-size:13px;
+	text-align: center;
+	line-height: 260px;
+}
+
+.post-result {
+	display: none;
+}
+.post-result .scroll-box {
+	overflow-y:auto;
+	max-height:232px;
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+.post-result .result-title {
+	overflow: hidden;
+	border-bottom:1px solid #bbb;
+	background-color:#f7f7f7;
+}
+.post-result .result-title .title {
+	float:left;
+	width:78%;
+	height:40px;
+	color:#333;
+	font-size:13px;
+	line-height:40px;
+	text-align: center;
+}
+.post-result .result-title .title:first-child {width:22%}
+.post-result .result-list .item {
+	display:block;
+	position:relative;
+	box-sizing:border-box;
+	border-top:1px solid #ddd;
+}
+.post-result .result-list .item:first-child {border-top:0;}
+.post-result .result-list .post-number {
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:22%;
+	color:#666;
+	font-size:14px;
+	text-align:center;
+	line-height:65px;
+}
+.post-result .result-list .address-area {
+	width:100%;
+	padding:14px 7px 14px 64px;
+	box-sizing: border-box;
+}
+.post-result .result-list .address-area .address {
+	color:#666;
+	font-size:12px;
+	line-height:18px;
+}
