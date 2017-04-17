@@ -634,6 +634,7 @@ select.styled1 {
 /* 탭 02 */
 .tab-list2 {
 	overflow:hidden;
+	margin-bottom:20px;
 }
 .tab-list2 .item {
 	float:left;
