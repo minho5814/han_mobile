@@ -1067,6 +1067,14 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 	background-color:#fff;
 	box-sizing: border-box;
 }
+
+.btn-bottom-area {
+	height:65px;
+	padding:10px;
+	border-top:1px solid #bbb;
+	background-color:#fff;
+	box-sizing: border-box;
+}
 /* --------------------------------------------------------------------------------------------
 	플로팅 버튼
 -------------------------------------------------------------------------------------------- */
