@@ -142,6 +142,9 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	공통
 ============================================================================================ */
+/* 폰트색상 */
+.black {color:#333 !important;}
+
 /* 마진 */
 .mgT0 {margin-top:0px !important;}
 .mgT5 {margin-top:5px !important;}
@@ -152,6 +155,7 @@ button {outline:0;vertical-align:top;}
 .mgT30 {margin-top:30px !important;}
 .mgT35 {margin-top:35px !important;}
 .mgT40 {margin-top:40px !important;}
+
 
 .mgB0 {margin-bottom:0px !important;}
 .mgB5 {margin-bottom:5px !important;}
@@ -229,6 +233,13 @@ button {outline:0;vertical-align:top;}
 .box-content1 .box-btn {
 	padding:0 10px 10px;
 }
+
+.box-cont.gray li {
+	color:#aaa;
+}
+.box-cont.gray .item:before {
+	background-color:#aaa;
+}
 /* --------------------------------------------------------------------------------------------
 	타이틀
 -------------------------------------------------------------------------------------------- */
@@ -305,6 +316,7 @@ button {outline:0;vertical-align:top;}
 	정렬
 -------------------------------------------------------------------------------------------- */
 .btn-area {margin-top:20px;}
+.btm-fix-menu.type2 .btn-area {margin:10px 0;} /*하단플로팅버튼에 높이45버튼 들어가는경우*/
 
 /* --------------------------------------------------------------------------------------------
 	텍스트
@@ -383,6 +395,7 @@ button {outline:0;vertical-align:top;}
 	background-repeat:no-repeat;
 	background-size:50px 500px;
 	font-size:0;
+	vertical-align:top;
 	line-height:0;
 }
 /* 메뉴 열기 */
@@ -405,6 +418,21 @@ button {outline:0;vertical-align:top;}
 	height:45px;
 	background-color:#fff;
 	background-position:0 -175px;
+}
+
+/* 팝업 닫기 */
+.btn-close {
+	width:37px;
+	height:45px;
+	background-color:#fff;
+	background-position:0 -234px;
+}
+
+/* 툴팁 */
+.btn-tooltip {
+	width:14px;
+	height:14px;
+	background-position:0 -280px;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -633,9 +661,7 @@ select.styled1 {
 .form-list1 .btn-list1 {margin-top:20px;}
 
 /* 폼리스트 02 */
-.form-list2 {
-	padding:5px 0;
-}
+.form-list2 {padding:5px 0;}
 .form-list2 .form-item {margin-top:14px;}
 .form-list2 .form-item:first-child {margin-top:0;}
 
@@ -695,6 +721,32 @@ select.styled1 {
 	color:#333;
 }
 
+/* 탭 02 */
+.tab-list3 {
+	overflow:hidden;
+	background-color:#fff;
+}
+.tab-list3 .item {
+	float:left;
+	width:25%;
+}
+.tab-list3 .item .text {
+	display:block;
+	position:relative;
+	height:45px;
+	box-sizing:border-box;
+	border-bottom:1px solid #bbb;
+	color:#333;
+	font-size:13px;
+	text-align:center;
+	line-height:45px;
+}
+.tab-list3 .item.on .text {
+	border-bottom:2px solid #60b015;
+	color:#60b015;
+	font-weight:bold;
+}
+
 /* ============================================================================================
 	게시판
 ============================================================================================ */
@@ -711,6 +763,7 @@ select.styled1 {
 	font-size:13px;
 	text-align:left;
 	line-height:19px;
+	letter-spacing:-1px;
 }
 .board1 tr:first-child th,
 .board1 tr:first-child td {border-top:0;}
@@ -723,6 +776,7 @@ select.styled1 {
 .board1 .non-text {padding:7px 10px;}
 .board1 {}
 
+.board1.normal th {font-weight: normal;}
 /* ============================================================================================
 	레이아웃
 ============================================================================================ */
@@ -808,6 +862,12 @@ body,
 	z-index:2;
 }
 
+.header .btn-close {
+	position:absolute;
+	right:0;top:0;
+	z-index:2;
+}
+
 /* 서브 */
 .header .head-title {
 	overflow:hidden;
@@ -859,6 +919,9 @@ body,
 	-webkit-transition:all .2s;
 	-ms-transition:all .2s;
 	transition:all .2s;
+}
+.btm-fix-menu.type2 {
+	height:65px;
 }
 html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 .btm-fix-menu .btn-list {
@@ -1156,9 +1219,222 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#239bd2;
 	font-size:18px;
 	text-align: center;
+	line-height: 21px;
 }
 .join-info .join-bg p span {
 	display: block;
 	color:#666;
 	font-size:13px;
 }
+/* --------------------------------------------------------------------------------------------
+	한살림운동과 물품정책/물품이야기
+-------------------------------------------------------------------------------------------- */
+.policy-box {}
+.policy-box .policy-title {
+	font-size:18px;
+	color:#239bd2;
+	line-height:23px;
+}
+.policy-box .policy-txt {
+	margin-top:8px;
+	font-size:13px;
+	color:#666;
+	line-height:19px;
+}
+.policy-box .policy-img {
+	margin-top:11px;
+}
+.policy-box .policy-img img {width:100%; height:auto; vertical-align:top;}
+
+.pdf-box {
+	position:relative;
+	width:100%;
+	margin-top:26px;
+	padding:16px 0 16px 68px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	background:url(../img/img/img_pdf.png) no-repeat 10px center;
+	background-size:50px;
+}
+.pdf-box:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:10px; top:50%;
+	width:6px;
+	height:11px;
+	margin-top:-5.5px;
+	background:url(../img/ico/ico_dire_right.gif) no-repeat 0 0;
+	background-size:6px 11px;
+}
+.pdf-box .pdf-tit {
+	font-size:11px;
+	color:#333;
+	line-height:18px;
+}
+.pdf-box .pdf-txt {
+	margin-top:2px;
+	font-size:13px;
+	color:#60b015;
+	line-height:18px;
+}
+.work-area {}
+.work-area .cTitle01 {margin:25px 0 9px;}
+.work-area .work-img img {width:100%; height:auto; vertical-align:middle;}
+.work-area .box-cont .item {
+	margin-top:11px;
+	font-size:14px;
+	line-height:19px;
+	letter-spacing:-0.5px;
+}
+.work-area .box-cont .item:before {top:8px;}
+/* 한살림운동의 지향 */
+.ooriented-box {margin-top:20px;}
+.ooriented-box img {width:100%; height:auto; vertical-align:middle;}
+
+/* --------------------------------------------------------------------------------------------
+	물품 상세 ()
+-------------------------------------------------------------------------------------------- */
+.view-content {}
+.view-content .visual-slide {}
+.view-content .visual-slide .swiper-slide .img-area {
+	width:253px;
+	height:253px;
+	margin:0 auto;
+}
+.view-content .visual-slide .swiper-pagination {
+	height:32px;
+	color:#aaa;
+	font-size:12px;
+	text-align:center;
+	line-height:32px;
+}
+.view-content .visual-slide .swiper-pagination .swiper-pagination-current {color:#333;}
+.view-content .visual-slide .btn-prev,
+	.view-content .visual-slide .btn-next {
+		position:absolute;
+		top:50%;
+		z-index:1;
+		-webkit-transform:translateY(-50%) rotate(-45deg);
+		-ms-transform:translateY(-50%) rotate(-45deg);
+		transform:translateY(-50%) rotate(-45deg);
+		width:10px;
+		height:10px;
+		margin-top:-16px;
+	}
+.view-content .visual-slide .btn-prev {
+	left:10px;
+	border-top:2px solid #bbb;
+	border-left:2px solid #bbb;
+}
+.view-content .visual-slide .btn-next {
+	right:10px;
+	border-bottom:2px solid #bbb;
+	border-right:2px solid #bbb;
+}
+
+.view-content .goods-info-box {
+	padding:5px 10px 13px;
+	border-bottom:8px solid #eee;
+}
+.view-content .goods-info-box .goods-info {
+	position:relative;
+	padding-bottom:16px;
+}
+.view-content .goods-info-box .goods-info .goods-name {
+	color:#333;
+	font-size:15px;
+	font-weight:bold;
+	line-height:21px;
+}
+.view-content .goods-info-box .goods-info .price-area {
+	padding-top:10px;
+	color:#333;
+}
+.view-content .goods-info-box .goods-info .price-area .title {
+	font-size:9px;
+	line-height:14px;
+}
+.view-content .goods-info-box .goods-info .price-area .price {font-size:11px;}
+.view-content .goods-info-box .goods-info .price-area .price .number {
+	color:#f04114;
+	font-size:18px;
+	font-weight:bold;
+}
+.view-content .goods-info-box .goods-info .len-area {
+	overflow:hidden;
+	position:absolute;
+	right:0;bottom:16px;
+	color:#666;
+	font-size:11px;
+	line-height:16px;
+}
+.view-content .goods-info-box .goods-info .len-area .text {
+	float:left;
+	margin-left:10px;
+}
+.view-content .goods-info-box .goods-info .len-area .text:first-child {margin-left:0;}
+
+.view-content .goods-info-box .goods-list {
+	padding-top:8px;
+	border-top:1px solid #ddd;
+}
+.view-content .goods-info-box .goods-list .item {
+	position:relative;
+	padding:4px 0 4px 90px;
+	font-size:12px;
+	line-height:16px;
+}
+.view-content .goods-info-box .goods-list .item .title {
+	position:absolute;
+	left:0;top:4px;
+	width:90px;
+	color:#333;
+}
+.view-content .goods-info-box .goods-list .item .title .btn-tooltip {margin-left:2px;}
+.view-content .goods-info-box .goods-list .item .text {color:#666;}
+.view-content .goods-info-box .goods-list .item .link {
+	display:inline-block;
+	position:relative;
+	padding-right:18px;
+}
+.view-content .goods-info-box .goods-list .item .link:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:12px;
+	height:14px;
+	box-sizing:border-box;
+	border:1px solid #bbb;
+}
+.view-content .goods-info-box .goods-list .item .link:after {
+	content:'';
+	position:absolute;
+	right:4px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:4px;
+	height:4px;
+	border-top:1px solid #666;
+	border-right:1px solid #666;
+}
+.view-content .goods-info-box .goods-list .item.brand .text {
+	padding-left:24px;
+	background:url(../img/ico/ico_brand.png) no-repeat 0 0;
+	background-size:20px 14px;
+}
+.view-content .goods-info-box .goods-list .item {}
+.view-content .goods-info-box .goods-list {}
+.view-content .goods-info-box .goods-list {}
+.view-content .goods-info-box .goods-list {}
+.view-content .goods-info-box {}
+.view-content .goods-info-box {}
+.view-content .goods-info-box {}
+.view-content .goods-info-box {}
+.view-content .goods-info-box {}
+.view-content {}
+.view-content {}

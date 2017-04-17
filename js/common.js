@@ -11,6 +11,12 @@ $(window).load(function(){
 		});
 	});
 
+	/* 하단 고정 메뉴가 있을 경우 */
+	$('.btm-fix-menu').each(function(){
+		var menuH = $(this).outerHeight();
+		$('.container').css({'padding-bottom':menuH});
+	});
+
 	/* 버튼 */
 	// 관심물품
 	$('.btn-like').click(function(){
