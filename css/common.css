@@ -1026,6 +1026,13 @@ select.styled1 {
 .board1 td {color:#666;}
 .board1 .non-text {padding:7px 10px;}
 
+.board1 .title01 {
+	font-size:13px;
+	color:#333;
+	line-height:30px;
+}
+.board1 td .txt {margin-bottom:2px;}
+
 /* 02 */
 .board2 {position:relative;}
 .board2 .top-text {
