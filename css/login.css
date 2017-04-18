@@ -188,7 +188,7 @@
 	margin:3px 0 8px;
 }
 .list-box .sub-list li {
-	line-height: 21px;
+	margin-top:3px;
 	font-size:13px;
 	color:#666;
 }
@@ -307,4 +307,13 @@
 }
 .text-btn-wrap .btn-wrap {
 	float: right;
+}
+
+.system-table {
+	padding:15px 10px;
+	background-color:#f7f7f7;
+}
+.system-table img {
+	width:100%; height:auto;
+	vertical-align: top;
 }
