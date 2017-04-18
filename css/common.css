@@ -166,6 +166,9 @@ button {outline:0;vertical-align:top;}
 .mgB35 {margin-bottom:35px !important;}
 .mgB40 {margin-bottom:40px !important;}
 
+.pdT0 {padding-top:0 !important;}
+.pdT5 {padding-top:5px !important;}
+
 /* 텍스트 정렬 */
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
@@ -772,20 +775,26 @@ select.styled1 {
 }
 .email-area .box {
 	float:left;
-	width:34%;
+	width:35%;
 	padding-left:4px;
 	box-sizing:border-box;
 }
-.email-area .box.at {position:relative;}
+.email-area .box:first-child {padding-left:0;}
+.email-area .box.at  {position:relative;}
+.email-area .box.at input {padding: 0 10px 0 25px }
 .email-area .box.at:before {
 	content: '@';
-	
+<<<<<<< HEAD
+
+=======
+	position:absolute;
+	left:15px;top:9px;
+>>>>>>> 3320f6b63c5824d3450ca3ba74ecf9d8d66583d5
 }
-.email-area .box:first-child {
-	width:32%;
-	padding-left:0;
+.email-area .box:last-child {
+	width:30%;
 }
-.email-area .box input {text-align:center;}
+
 
 /* 체크박스/라디오 리스트 */
 .check-list {
@@ -996,7 +1005,8 @@ select.styled1 {
 	border-bottom:2px solid #60b015;
 	color:#60b015;
 	font-weight:bold;
-}
+	line-height:43px;
+}/* on */
 
 /* ============================================================================================
 	게시판
@@ -1076,15 +1086,13 @@ select.styled1 {
 /* ============================================================================================
 	레이아웃
 ============================================================================================ */
-html,
-body,
-.wrapper {
+html {
 	overflow-x: hidden;
 	overflow-y: auto;
 	height:100%;
 	box-sizing:border-box;
 }
-.wrapper.bg-gray {background-color:#f7f7f7;}
+html.bg-gray {background-color:#f7f7f7;}
 /* --------------------------------------------------------------------------------------------
 	해더
 -------------------------------------------------------------------------------------------- */
@@ -1201,9 +1209,6 @@ body,
 	padding:20px 10px;
 	background-color:#f7f7f7;
 }
-
-/* 좌우 여백이 없을 경우 */
-.wide-box {margin:0 -10px;}
 /* --------------------------------------------------------------------------------------------
 	하단 고정 메뉴
 -------------------------------------------------------------------------------------------- */
@@ -1606,6 +1611,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border-right:1px solid #bbb;
 }
 
+.campaign-slide {margin:0 -10px;}
+.campaign-slide .swiper-slide {width:220px;}
+.campaign-slide .swiper-slide:first-child {margin-left:10px;}
+.campaign-slide .swiper-slide:last-child {margin-right:10px;}
+
 /* ============================================================================================
 	sub
 ============================================================================================ */
@@ -1806,6 +1816,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* --------------------------------------------------------------------------------------------
 	물품 상세 ()
 -------------------------------------------------------------------------------------------- */
+/* 탭 영역 고정 */
+.view-content .tab-area {height:45px;}
+.view-content .tab-area .tab-list3.fixed {
+	position:fixed;
+	left:0;right:0;top:47px;
+	z-index:5;
+}
+
 .view-content {}
 .view-content .visual-slide {}
 .view-content .visual-slide .swiper-slide .img-area {
@@ -1974,11 +1992,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .tab-content .detail-info .info-graybox dt {}
 .view-content .tab-content .detail-info .info-graybox dd {}
 
-.view-content .tab-content .top-gray-box {
-	margin:0 -10px;
+.view-content .top-gray-box {
 	padding:10px 10px 20px;
 	border-top:8px solid #eee;
 }
+.view-content .tab-content .top-gray-box {margin:0 -10px;}
 
 .cooking-box {
 	border:1px solid #ddd;

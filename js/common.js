@@ -29,7 +29,7 @@ $(window).load(function(){
 	/* 하단 고정메뉴 */
 	var scrolling = 0;
 	$(window).scroll(function(){
-		var winTop = $(window).scrollTop();
+		var winTop = $(this).scrollTop();
 		if (winTop > scrolling){
 			if(winTop == ($(document).height() - $(window).height())){
 				$('html').removeClass('down');
