@@ -166,6 +166,9 @@ button {outline:0;vertical-align:top;}
 .mgB35 {margin-bottom:35px !important;}
 .mgB40 {margin-bottom:40px !important;}
 
+.pdT0 {padding-top:0 !important;}
+.pdT5 {padding-top:5px !important;}
+
 /* 텍스트 정렬 */
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
@@ -692,20 +695,22 @@ select.styled1 {
 }
 .email-area .box {
 	float:left;
-	width:34%;
+	width:35%;
 	padding-left:4px;
 	box-sizing:border-box;
 }
-.email-area .box.at {position:relative;}
+.email-area .box:first-child {padding-left:0;}
+.email-area .box.at  {position:relative;}
+.email-area .box.at input {padding: 0 10px 0 25px }
 .email-area .box.at:before {
 	content: '@';
-	
+	position:absolute;
+	left:15px;top:9px;
 }
-.email-area .box:first-child {
-	width:32%;
-	padding-left:0;
+.email-area .box:last-child {
+	width:30%;
 }
-.email-area .box input {text-align:center;}
+
 
 /* 체크박스/라디오 리스트 */
 .check-list {
@@ -1114,9 +1119,6 @@ body,
 	padding:20px 10px;
 	background-color:#f7f7f7;
 }
-
-/* 좌우 여백이 없을 경우 */
-.wide-box {margin:0 -10px;}
 /* --------------------------------------------------------------------------------------------
 	하단 고정 메뉴
 -------------------------------------------------------------------------------------------- */
