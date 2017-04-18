@@ -759,7 +759,7 @@ select.styled1 {
 }
 .phone-area .box {
 	float:left;
-	width:34%;
+	width:68%;
 	padding-left:4px;
 	box-sizing:border-box;
 }
@@ -767,7 +767,7 @@ select.styled1 {
 	width:32%;
 	padding-left:0;
 }
-.phone-area .box input {text-align:center;}
+/*.phone-area .box input {text-align:center;}*/
 
 /* 이메일 타입 */
 .email-area {
@@ -784,12 +784,8 @@ select.styled1 {
 .email-area .box.at input {padding: 0 10px 0 25px }
 .email-area .box.at:before {
 	content: '@';
-<<<<<<< HEAD
-
-=======
 	position:absolute;
 	left:15px;top:9px;
->>>>>>> 3320f6b63c5824d3450ca3ba74ecf9d8d66583d5
 }
 .email-area .box:last-child {
 	width:30%;
