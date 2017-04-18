@@ -273,6 +273,14 @@ button {outline:0;vertical-align:top;}
 	text-align: center;
 }
 
+.title-wrap {
+	position: relative;
+}
+.title-wrap .btn-wrap {
+	position: absolute;
+	top:2px; right:0;
+}
+
 .cTitle01 {
 	color:#333;
 	font-size:14px;
