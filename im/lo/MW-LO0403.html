@@ -39,37 +39,11 @@
 			<div class="btn-area">
 				<button type="button" class="btn-text btn-h45 btn-text-green1">로그인</button>
 			</div>
-
-		</div>
-	</div>
-
-	<div class="btm-fix-menu">
-		<div class="btn-list">
-			<a href="#" class="btn btn1">홈</a>
-			<button type="button" class="btn btn2">카테고리</button>
-			<a href="#" class="btn btn3">장바구니<span class="len">19</span></a>
-		</div>
-	</div>
-	<div class="floating-btn-area">
-		<a href="#" class="btn btn-image btn-prev">이전</a>
-		<div class="right-area">
-			<a href="#" class="btn btn-link">1:1<br>상담</a>
-			<a href="#" class="btn btn-link">최근<br>이력</a>
-			<button type="button" class="btn btn-top">TOP</button>
 		</div>
 	</div>
 </div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script>
-$(window).load(function(){
-	$('.login-wrap .tab-list2 li').click(function(){
-		var idx = $(this).index();
-		$(this).addClass('on').siblings('li').removeClass('on');
-		$('.form-area').removeClass('on').eq(idx).addClass('on');
-	});
-});
-</script>
 </body>
 </html>
