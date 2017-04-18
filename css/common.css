@@ -166,6 +166,9 @@ button {outline:0;vertical-align:top;}
 .mgB35 {margin-bottom:35px !important;}
 .mgB40 {margin-bottom:40px !important;}
 
+.pdT0 {padding-top:0 !important;}
+.pdT5 {padding-top:5px !important;}
+
 /* 텍스트 정렬 */
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
@@ -271,6 +274,14 @@ button {outline:0;vertical-align:top;}
 .title-box .cTitle01 {
 	line-height: 33px;
 	text-align: center;
+}
+
+.title-wrap {
+	position: relative;
+}
+.title-wrap .btn-wrap {
+	position: absolute;
+	top:2px; right:0;
 }
 
 .cTitle01 {
@@ -764,20 +775,26 @@ select.styled1 {
 }
 .email-area .box {
 	float:left;
-	width:34%;
+	width:35%;
 	padding-left:4px;
 	box-sizing:border-box;
 }
-.email-area .box.at {position:relative;}
+.email-area .box:first-child {padding-left:0;}
+.email-area .box.at  {position:relative;}
+.email-area .box.at input {padding: 0 10px 0 25px }
 .email-area .box.at:before {
 	content: '@';
+<<<<<<< HEAD
 
+=======
+	position:absolute;
+	left:15px;top:9px;
+>>>>>>> 3320f6b63c5824d3450ca3ba74ecf9d8d66583d5
 }
-.email-area .box:first-child {
-	width:32%;
-	padding-left:0;
+.email-area .box:last-child {
+	width:30%;
 }
-.email-area .box input {text-align:center;}
+
 
 /* 체크박스/라디오 리스트 */
 .check-list {
@@ -1019,6 +1036,13 @@ select.styled1 {
 .board1 td {color:#666;}
 .board1 .non-text {padding:7px 10px;}
 
+.board1 .title01 {
+	font-size:13px;
+	color:#333;
+	line-height:30px;
+}
+.board1 td .txt {margin-bottom:2px;}
+
 /* 02 */
 .board2 {position:relative;}
 .board2 .top-text {
@@ -1185,9 +1209,6 @@ html.bg-gray {background-color:#f7f7f7;}
 	padding:20px 10px;
 	background-color:#f7f7f7;
 }
-
-/* 좌우 여백이 없을 경우 */
-.wide-box {margin:0 -10px;}
 /* --------------------------------------------------------------------------------------------
 	하단 고정 메뉴
 -------------------------------------------------------------------------------------------- */

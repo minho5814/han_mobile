@@ -48,11 +48,11 @@
 				</div>
 				<div class="form-item">
 					<h3 class="cTitle02"><label for="Password">비밀번호</label></h3>
-					<input type="tel" id="Password" placeholder="영문소문자, 숫자 조합 6~20자">
+					<input type="password" id="Password" placeholder="영문,숫자,특수문자 조합 4~12자">
 				</div>
 				<div class="form-item">
 					<h3 class="cTitle02"><label for="Password2">비밀번호 확인</label></h3>
-					<input type="tel" id="Password2">
+					<input type="password" id="Password2">
 				</div>
 				<div class="form-item">
 					<h3 class="cTitle02">휴대전화</h3>
@@ -83,17 +83,17 @@
 					<h3 class="cTitle02">이메일</h3>
 					<div class="email-area">
 						<div class="box">
-							<select class="styled1">
-								<option>직접입력</option>
-								<option>011</option>
-								<option>010</option>
-							</select>
+							<input type="text">
 						</div>
 						<div class="box at">
-							<input type="tel" value="1234">
+							<input type="text" class="transTxt" readonly>
 						</div>
 						<div class="box">
-							<input type="tel" value="5678">
+							<select class="styled1">
+								<option value="">직접입력</option>
+								<option value="gmail.com">gmail.com</option>
+								<option value="naver.com">naver.com</option>
+							</select>
 						</div>
 					</div>
 				</div>
@@ -114,7 +114,7 @@
 				</div>
 				<div class="form-item">
 					<h3 class="cTitle02"><label for="Address3">상세주소</label></h3>
-					<input type="text" id="Address3" value="1110동 601호" disabled>
+					<input type="text" id="Address3" value="1110동 601호">
 				</div>
 				<div class="form-item">
 					<h3 class="cTitle02"><label for="Address3">가입동기</label></h3>
@@ -137,7 +137,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="white-content1">
+		<div class="white-content1 pdT5">
 			<h2 class="cTitle01">기본정보입력(선택)</h2>
 			<div class="form-list2">
 				<div class="form-item">
@@ -149,13 +149,44 @@
 						<label><input type="checkbox" class="styled1">분과모임</label>
 						<label><input type="checkbox" class="styled1">생명학교</label>
 					</div>
+					<ul class="box-cont gray mgT5">
+						<li class="item">지역별 제공사항</li>
+					</ul>
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02"><label for="Person">추천인</label></h3>
+					<input type="text" id="Person" placeholder="추천인조합원번호 또는 휴대폰번호">
 				</div>
 			</div>
 		</div>
-		<div class="btn-bottom-area">
+		<div class="white-content1">
+			<h2 class="cTitle01">출자금 결제</h2>
+			<div class="box-content3 pay-info">
+				<p class="bg-logo fColor02">한살림 서울</p>
+				<ul class="box-cont">
+					<li class="item">출자금 : 30,000원 / 가입비 : 3,000원 <br>(출자금은 탈퇴시 돌려받을 수 있습니다.)</li>
+					<li class="item">출자금은 한살림 운동의 소중한 밑거름입니다.</li>
+					<li class="item">생활협동조합의 주인은 출자금을 낸 조합원입니다.</li>
+				</ul>
+			</div>
+			<div class="form-list2 mgT15">
+				<div class="form-item">
+					<h3 class="cTitle02">출자금/가입비 결제 방법 선택</h3>
+					<div class="check-list">
+						<label><input type="radio" name="payment" class="styled1" checked>신용카드</label>
+						<label><input type="radio" name="payment" class="styled1">무통장입금</label>
+					</div>
+				</div>
+			</div>
+			<ul class="box-cont gray">
+				<li class="item">출자금/가입비 결제 확인 후에 조합원 가입이 완료됩니다.</li>
+				<li class="item">가입 등록은 하루 정도 시간이 소요됩니다.</li>
+			</ul>
+		</div>
+		<div class="btn-bottom-area type2 mgB30">
 			<ul class="btn-list1">
 				<li class="item"><button type="button" class="btn-text btn-h45 btn-text-line1">이전</button></li>
-				<li class="item"><button type="button" class="btn-text btn-h45 btn-text-green1">다음</button></li>
+			<li class="item"><button type="button" class="btn-text btn-h45 btn-text-green1">다음</button></li>
 			</ul>
 		</div>
 	</div>
@@ -163,5 +194,20 @@
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+
+/* 이메일 셀렉트박스 */
+var $sel = $('.email-area .styled1');
+var $etype = $('.email-area .transTxt');
+$sel.change(function(){
+	val = $sel.val();
+	if(val.length < 1){
+		$etype.removeAttr("readonly");
+	}else{
+		$etype.attr("readonly",true);
+	}
+	$etype.val(val);
+});
+</script>
 </body>
 </html>
