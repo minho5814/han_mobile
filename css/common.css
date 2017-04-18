@@ -267,6 +267,12 @@ button {outline:0;vertical-align:top;}
 	line-height:23px;
 }
 
+.cTitle03 {
+	color:#333;
+	font-size:13px;
+	line-height:24px;
+}
+
 /* --------------------------------------------------------------------------------------------
 	슬라이드
 -------------------------------------------------------------------------------------------- */
@@ -528,12 +534,13 @@ button {outline:0;vertical-align:top;}
 /* 전화상담 */
 .btn-call {
 	display:inline-block;
-	width:94px;
 	height:25px;
+	padding:0 11px;
 	box-sizing:border-box;
 	border-radius:4px;
 	border:1px solid #bbb;
 	text-align:center;
+	background-color:#fff;
 }
 .btn-call .text {
 	display:inline-block;
@@ -1917,8 +1924,52 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .radioactivity-box .radioactivity-list .radioactivity .text-area .text:first-child {margin-left:0;}
 .radioactivity-box .radioactivity-list .radioactivity .text-area .text:last-child {float:right;}
-.radioactivity-box {}
 
-.view-content .tab-content {}
-.view-content .tab-content {}
-.view-content .tab-content {}
+.view-content .tab-content .radioactivity-info {
+	overflow:hidden;
+	margin-top:10px;
+	color:#333;
+	font-size:11px;
+	line-height:21px;
+}
+.view-content .tab-content .radioactivity-info .ico-text {
+	position:relative;
+	margin-left:6px;
+	padding-left:11px;
+}
+.view-content .tab-content .radioactivity-info .ico-text:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:6px;
+	height:6px;
+	background-color:#8dc919;
+}
+.view-content .tab-content .radioactivity-info .left-cont dd:last-child:before {background-color:#f6ce05;}
+.view-content .tab-content .radioactivity-info .right-text:before {background-color:#f56d24;}
+.view-content .tab-content .radioactivity-info .left-cont {
+	overflow:hidden;
+	float:left;
+	padding:0 6px;
+	border:1px solid #ddd;
+}
+.view-content .tab-content .radioactivity-info .left-cont dt {
+	float:left;
+	position:relative;
+	padding-right:6px;
+}
+.view-content .tab-content .radioactivity-info .left-cont dt:before {
+	content:'';
+	position:absolute;
+	right:0;top:4px;bottom:4px;
+	width:1px;
+	background-color:#ddd;
+}
+.view-content .tab-content .radioactivity-info .left-cont dd {float:left;}
+.view-content .tab-content .radioactivity-info .right-text {
+	float:left;
+	line-height:21px;
+}
