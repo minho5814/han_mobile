@@ -84,7 +84,7 @@
 						<li class="item"><span class="text">FAQ(00)</span></li>
 					</ul>
 				</div>
-				<div>
+				<div class="tab-scroll">
 					<!-- 상세정보 -->
 					<div class="tab-content on">
 						<div class="exclamation-box">
@@ -691,10 +691,16 @@ $(window).load(function(){
 		$(this).parents('.goods-more-box').find('.thumb-list2').css({'height':'auto'});
 	});
 
+	/* 탭 클릭 */
 	$('.tab-list3 .item').click(function(){
 		var idx = $(this).index();
 		$('.tab-list3 .item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content').removeClass('on').eq(idx).addClass('on');
+
+		// 클릭시 탭 컨텐츠 시작 영역으로 스크롤
+		var tabTop = $('.tab-scroll').offset().top;
+		var scTop = $('.header').outerHeight() + $('.tab-area').outerHeight();
+		$('html, body').animate({scrollTop:tabTop-scTop}, 200);
 	});
 
 	/* 스크롤시 탭 고정 */
@@ -711,7 +717,6 @@ $(window).load(function(){
 		}else{
 			$('.tab-list3').removeClass('fixed');
 		}
-		console.log(tabTop);
 	});
 });
 </script>
