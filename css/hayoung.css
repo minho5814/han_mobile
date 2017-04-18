@@ -208,3 +208,19 @@
 .tit-wrap .right {position: absolute; right:0; bottom:0;}
 .tit-wrap .right.check-list label{line-height: 20px;}
 .tit-wrap .right.check-list label input {margin-right:5px}
+
+/*지역한살림 자세히알기 팝업*/
+.board1 .tit {
+	height:40px;
+	background-color:#f7f7f7;
+	color: #333;
+	border-top:1px solid #bbb;
+	text-align: center;
+}
+.board1 .tit .bg-logo {
+	line-height: 40px;
+	background:url(../img/bg/bg_logo.png) no-repeat left center;
+	background-size:20px 18px;
+	padding-left:26px;
+
+}
