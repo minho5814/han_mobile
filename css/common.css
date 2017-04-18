@@ -61,7 +61,7 @@ blockquote, q {quotes:none}
 blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:0;}
 button {border:0 none;background-color:transparent;cursor:pointer}
-body,th,td,input,select,textarea,button,select {font-family:'NotoSans';font-size:13px;line-height:1.3;color:#666;}
+body,th,td,input,select,textarea,button,select {font-family:'NotoSans';font-size:13px;line-height:1.3;color:#666;letter-spacing:-0.4px;}
 body {overflow-x:hidden;width:100%;-webkit-user-select:none}
 input[type=text],
 input[type=tel],
@@ -511,8 +511,8 @@ button {outline:0;vertical-align:top;}
 
 /* 툴팁 */
 .btn-tooltip {
-	width:14px;
-	height:14px;
+	width:18px;
+	height:18px;
 	background-position:0 -280px;
 }
 
@@ -989,19 +989,19 @@ select.styled1 {
 .tab-list3 .item .text {
 	display:block;
 	position:relative;
-	height:45px;
+	height:55px;
 	box-sizing:border-box;
 	border-bottom:1px solid #bbb;
 	color:#333;
-	font-size:13px;
+	font-size:15px;
 	text-align:center;
-	line-height:45px;
+	line-height:55px;
 }
 .tab-list3 .item.on .text {
 	border-bottom:2px solid #60b015;
 	color:#60b015;
 	font-weight:bold;
-	line-height:43px;
+	line-height:56px;
 }/* on */
 
 /* ============================================================================================
@@ -1028,7 +1028,6 @@ select.styled1 {
 	background-color:#f7f7f7;
 	color:#333;
 }
-.board1 th {letter-spacing:-1px;}
 .board1 td {color:#666;}
 .board1 .non-text {padding:7px 10px;}
 
@@ -1096,13 +1095,15 @@ html.bg-gray {background-color:#f7f7f7;}
 	position:fixed;
 	left:0;right:0;top:0;
 	z-index:100;
-	height:45px;
+	height:50px;
 	border-top:1px solid #ddd;
 	border-bottom:1px solid #ddd;
 	background-color:#fff;
 
 }
-.header .btn-gnb {}
+.header .btn-back {
+	margin:2px 0 0 2px;
+}
 .head-menu {
 	position:absolute;
 	left:37px;right:37px;top:0;
@@ -1158,7 +1159,7 @@ html.bg-gray {background-color:#f7f7f7;}
 /* //on */
 .header .btn-search {
 	position:absolute;
-	right:0;top:0;
+	right:2px;top:2px;
 	z-index:2;
 }
 
@@ -1173,12 +1174,12 @@ html.bg-gray {background-color:#f7f7f7;}
 	overflow:hidden;
 	position:absolute;
 	left:37px;right:37px;top:0;
-	height:45px;
+	height:50px;
 	color:#333;
 	font-size:16px;
 	text-overflow:ellipsis;
 	text-align:center;
-	line-height:45px;
+	line-height:50px;
 	white-space:nowrap;
 }
 
@@ -1813,7 +1814,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	물품 상세 ()
 -------------------------------------------------------------------------------------------- */
 /* 탭 영역 고정 */
-.view-content .tab-area {height:45px;}
+.view-content .tab-area {height:55px;}
 .view-content .tab-area .tab-list3.fixed {
 	position:fixed;
 	left:0;right:0;top:47px;
@@ -1828,11 +1829,16 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	margin:0 auto;
 }
 .view-content .visual-slide .swiper-pagination {
-	height:32px;
+	width:60px;
+	height:25px;
+	margin:10px auto 0;
+	box-sizing:border-box;
+	border-radius:25px;
+	border:1px solid #cdcdcd;
 	color:#aaa;
 	font-size:12px;
 	text-align:center;
-	line-height:32px;
+	line-height:23px;
 }
 .view-content .visual-slide .swiper-pagination .swiper-pagination-current {color:#333;}
 .view-content .visual-slide .btn-prev,
@@ -1859,64 +1865,59 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 .view-content .goods-info-box {
-	padding:5px 10px 13px;
+	padding:10px 10px 13px;
 	border-bottom:8px solid #eee;
 }
-.view-content .goods-info-box .goods-info {
-	position:relative;
-	padding-bottom:16px;
+.view-content .goods-info-box .order-volume {
+	height:32px;
+	margin:0 -10px;
+	background-color:#fff046;
+	color:#333;
+	font-size:13px;
+	text-align:center;
+	line-height:32px;
 }
+.view-content .goods-info-box .order-volume .fColor02 {font-weight:bold;}
+.view-content .goods-info-box .goods-info {position:relative;}
 .view-content .goods-info-box .goods-info .goods-name {
 	color:#333;
-	font-size:15px;
-	font-weight:bold;
-	line-height:21px;
-}
-.view-content .goods-info-box .goods-info .price-area {
-	padding-top:10px;
-	color:#333;
-}
-.view-content .goods-info-box .goods-info .price-area .title {
-	font-size:9px;
-	line-height:14px;
-}
-.view-content .goods-info-box .goods-info .price-area .price {font-size:11px;}
-.view-content .goods-info-box .goods-info .price-area .price .number {
-	color:#f04114;
 	font-size:18px;
 	font-weight:bold;
+	line-height:54px;
 }
-.view-content .goods-info-box .goods-info .len-area {
+.view-content .goods-info-box .goods-info .price-area {
 	overflow:hidden;
-	position:absolute;
-	right:0;bottom:16px;
-	color:#666;
-	font-size:11px;
-	line-height:16px;
+	height:52px;
+	border-top:1px solid #ddd;
+	color:#333;
+	font-size:14px;
+	line-height:52px;
 }
-.view-content .goods-info-box .goods-info .len-area .text {
-	float:left;
-	margin-left:10px;
+.view-content .goods-info-box .goods-info .price-area .title {float:left;}
+.view-content .goods-info-box .goods-info .price-area .price {float:right;}
+.view-content .goods-info-box .goods-info .price-area .price .number {
+	color:#f04114;
+	font-size:21px;
+	font-weight:bold;
 }
-.view-content .goods-info-box .goods-info .len-area .text:first-child {margin-left:0;}
 
 .view-content .goods-info-box .goods-list {
-	padding-top:8px;
+	padding:18px 0 5px;
 	border-top:1px solid #ddd;
+	font-size:14px;
+	line-height:19px;
 }
 .view-content .goods-info-box .goods-list .item {
 	position:relative;
-	padding:4px 0 4px 90px;
-	font-size:12px;
-	line-height:16px;
+	padding:4px 0 4px 105px;
 }
 .view-content .goods-info-box .goods-list .item .title {
 	position:absolute;
 	left:0;top:4px;
-	width:90px;
+	width:105px;
 	color:#333;
 }
-.view-content .goods-info-box .goods-list .item .title .btn-tooltip {margin-left:2px;}
+.view-content .goods-info-box .goods-list .item .title .btn-tooltip {margin-left:4px;}
 .view-content .goods-info-box .goods-list .item .text {color:#666;}
 .view-content .goods-info-box .goods-list .item .link {
 	display:inline-block;
@@ -1955,7 +1956,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 
 .view-content .tab-content {
 	display:none;
-	padding:20px 10px;
+	padding:24px 10px;
 }
 .view-content .tab-content.on {display:block;}
 .view-content .tab-content .board1 {
@@ -1964,14 +1965,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .tab-content .board1:first-child {margin-top:-10px;}
 .view-content .tab-content .exclamation-box {
 	margin:0 -10px;
-	padding:35px 20px 18px;
+	padding:40px 20px 20px;
 	border-top:1px solid #a69384;
 	background:#f6f6f7 url(../img/ico/ico_exclamation02.png) no-repeat 50% 15px;
-	background-size:12px 12px;
+	background-size:14px 14px;
 	color:#333;
-	font-size:11px;
+	font-size:13px;
 	text-align:center;
-	line-height:15px;
+	line-height:18px;
 }
 .view-content .tab-content .view-img-area {
 	padding:10px 0 37px;
