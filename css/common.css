@@ -286,9 +286,9 @@ button {outline:0;vertical-align:top;}
 
 .cTitle01 {
 	color:#333;
-	font-size:14px;
+	font-size:16px;
 	font-weight:bold;
-	line-height:30px;
+	line-height:32px;
 }
 .cTitle02 {
 	color:#333;
@@ -637,9 +637,8 @@ button {outline:0;vertical-align:top;}
 /* 전화상담 */
 .btn-call {
 	display:inline-block;
-	min-width:94px;
-	height:25px;
-	padding:0 10px;
+	min-width:103px;
+	padding:0 11px;
 	box-sizing:border-box;
 	border-radius:4px;
 	border:1px solid #bbb;
@@ -649,10 +648,11 @@ button {outline:0;vertical-align:top;}
 .btn-call .text {
 	display:inline-block;
 	position:relative;
-	padding-left:17px;
+	height:25px;
+	padding-left:18px;
 	color:#60b015;
-	font-size:11px;
-	line-height:23px;
+	font-size:13px;
+	line-height:25px;
 }
 .btn-call .text:before {
 	content:'';
@@ -996,12 +996,13 @@ select.styled1 {
 	font-size:15px;
 	text-align:center;
 	line-height:55px;
+	white-space:nowrap;
 }
 .tab-list3 .item.on .text {
 	border-bottom:2px solid #60b015;
 	color:#60b015;
 	font-weight:bold;
-	line-height:56px;
+	line-height:55px;
 }/* on */
 
 /* ============================================================================================
@@ -1015,9 +1016,9 @@ select.styled1 {
 }
 .board1 th,
 .board1 td {
-	padding:10px;
+	padding:12px;
 	border-top:1px solid #ddd;
-	font-size:13px;
+	font-size:15px;
 	text-align:left;
 	line-height:19px;
 	font-weight:normal;
@@ -1962,7 +1963,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .tab-content .board1 {
 	margin-top:10px;
 }
-.view-content .tab-content .board1:first-child {margin-top:-10px;}
+.view-content .tab-content .board1:first-child {margin-top:0;}
 .view-content .tab-content .exclamation-box {
 	margin:0 -10px;
 	padding:40px 20px 20px;
@@ -1990,7 +1991,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .tab-content .detail-info .info-graybox dd {}
 
 .view-content .top-gray-box {
-	padding:10px 10px 20px;
+	padding:17px 12px 25px;
 	border-top:8px solid #eee;
 }
 .view-content .tab-content .top-gray-box {margin:0 -10px;}
@@ -2002,23 +2003,37 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .cooking-box .link {display:block;}
 .cooking-box .img-area {}
 .cooking-box .text-area {
-	margin-top:8px;
-	padding:0 10px;
+	position:relative;
+	margin:0 12px;
+	padding:14px 0 12px;
 	color:#333;
+	border-bottom:1px solid #ddd;
+}
+.cooking-box .text-area:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:10px;
+	height:10px;
+	border-top:1px solid #bbb;
+	border-right:1px solid #bbb;
 }
 .cooking-box .text-area .text {
-	font-size:11px;
+	font-size:13px;
 	line-height:16px;
 }
 .cooking-box .text-area .title {
-	font-size:18px;
+	font-size:16px;
 	font-weight:bold;
-	line-height:22px;
+	line-height:24px;
 }
 .cooking-box .hashtag-area {
 	overflow:hidden;
 	margin:-3px 0 0 -3px;
-	padding:10px;
+	padding:12px;
 }
 .cooking-box .hashtag-area .hashtag {
 	float:left;
