@@ -528,12 +528,13 @@ button {outline:0;vertical-align:top;}
 /* 전화상담 */
 .btn-call {
 	display:inline-block;
-	width:94px;
 	height:25px;
+	padding:0 11px;
 	box-sizing:border-box;
 	border-radius:4px;
 	border:1px solid #bbb;
 	text-align:center;
+	background-color:#fff;
 }
 .btn-call .text {
 	display:inline-block;
