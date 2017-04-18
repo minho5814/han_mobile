@@ -2032,18 +2032,18 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .cooking-box .hashtag-area {
 	overflow:hidden;
-	margin:-3px 0 0 -3px;
+	margin:-4px 0 0 -4px;
 	padding:12px;
 }
 .cooking-box .hashtag-area .hashtag {
 	float:left;
-	height:21px;
-	margin:3px 0 0 3px;
-	padding:0 6px;
+	height:24px;
+	margin:4px 0 0 4px;
+	padding:0 8px;
 	border:1px solid #bbb;
 	color:#666;
-	font-size:11px;
-	line-height:21px;
+	font-size:13px;
+	line-height:24px;
 }
 
 .card-news-box {
