@@ -348,6 +348,43 @@ button {outline:0;vertical-align:top;}
 	flex-shrink:0;
 }
 
+/* --------------------------------------------------------------------------------------------
+	캠페인 마크
+-------------------------------------------------------------------------------------------- */
+.campaign-mark {
+	position:relative;
+	width:90px;
+	height:90px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:90px 90px;
+}
+.campaign-mark .label {
+	position:absolute;
+	left:0;right:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	font-weight:bold;
+	line-height:14px;
+}
+.campaign-mark .label:before {
+	content:'';
+	display:block;
+}
+/* 배경 종류 */
+.bg1.campaign-mark {background-image:url(../img/ico/campaign/bg_campaign01.png);}
+/* 아이콘 종류 */
+.mark1.campaign-mark .label:before {
+	width:12px;
+	height:2px;
+	margin:0 auto 12px;
+	background-color:#fff;
+}
+
 /* ============================================================================================
 	버튼
 ============================================================================================ */
@@ -531,6 +568,7 @@ button {outline:0;vertical-align:top;}
 /* 더보기 */
 .btn-link-more {
 	display:block;
+	width:100%;
 	height:31px;
 	box-sizing:border-box;
 	border-radius:4px;
@@ -557,6 +595,40 @@ button {outline:0;vertical-align:top;}
 	width:6px;
 	height:6px;
 	border-top:1px solid #bbb;
+	border-right:1px solid #bbb;
+}
+/* 물품 더보기 */
+.btn-goods-more {
+	display:block;
+	width:100%;
+	height:35px;
+	margin-top:10px;
+	box-sizing:border-box;
+	border-radius:4px;
+	border:1px solid #ddd;
+	background-color:#fff;
+	text-align:center;
+}
+.btn-goods-more .text {
+	display:inline-block;
+	position:relative;
+	height:33px;
+	padding-right:15px;
+	color:#aaa;
+	font-size:11px;
+	line-height:33px;
+}
+.btn-goods-more .text:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:6px;
+	height:6px;
+	margin-top:-2px;
+	border-bottom:1px solid #bbb;
 	border-right:1px solid #bbb;
 }
 /* 전화상담 */
@@ -693,6 +765,27 @@ select.styled1 {
 	padding-left:0;
 }
 .phone-area .box input {text-align:center;}
+
+/* 이메일 타입 */
+.email-area {
+	overflow:hidden;
+}
+.email-area .box {
+	float:left;
+	width:34%;
+	padding-left:4px;
+	box-sizing:border-box;
+}
+.email-area .box.at {position:relative;}
+.email-area .box.at:before {
+	content: '@';
+	
+}
+.email-area .box:first-child {
+	width:32%;
+	padding-left:0;
+}
+.email-area .box input {text-align:center;}
 
 /* 체크박스/라디오 리스트 */
 .check-list {
@@ -1354,7 +1447,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list2 {
 	overflow:hidden;
-	margin:-6px 0 0;
+	margin:-6px -3px 0;
 }
 .thumb-list2 .box {
 	float:left;
@@ -1409,6 +1502,102 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list2 .box .btn-list .item .btn-like {border-right:0;}
 
+/* 캠페인 */
+.thumb-box1 {
+	width:220px;
+	padding-top:15px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	text-align:center;
+}
+.thumb-box1 .campaign-mark {
+	margin:0 auto;
+}
+.thumb-box1 .text-area {
+	margin-top:10px;
+	padding-bottom:13px;
+}
+.thumb-box1 .text-area .title {
+	color:#333;
+	font-size:13px;
+	font-weight:bold;
+}
+.thumb-box1 .text-area .text-box {
+	position:relative;
+	height:30px;
+	margin-top:3px;
+}
+.thumb-box1 .text-area .text-box .text {
+	position:absolute;
+	left:30px;right:30px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:auto;
+	max-height:30px;
+	color:#666;
+	font-size:12px;
+	line-height:15px;
+}
+.thumb-box1 .icon-area {
+	height:56px;
+	margin:0 10px;
+	padding:8px 30px;
+	box-sizing:border-box;
+	border-top:1px solid #eee;
+	color:#666;
+	font-size:11px;
+	text-align:left;
+	line-height:17px;
+	white-space:nowrap;
+}
+.thumb-box1 .icon-area p {
+	position:relative;
+	padding-left:15px;
+}
+.thumb-box1 .icon-area p:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:9px;
+	height:10px;
+	background-image:url(../img/sprite_ico.png);
+	background-repeat:no-repeat;
+	background-size:40px 250px;
+}
+.thumb-box1 .icon-area .join:before {background-position:0 -57px;}
+.thumb-box1 .icon-area .date:before {background-position:0 -68px;}
+.thumb-box1 .link {
+	display:block;
+	height:34px;
+	border-top:1px solid #ddd;
+	background-color:#f7f7f7;
+	color:#333;
+	font-size:13px;
+	text-align:center;
+	line-height:34px;
+}
+.thumb-box1 .link .text {
+	display:inline-block;
+	position:relative;
+	padding-right:11px;
+	line-height:34px;
+}
+.thumb-box1 .link .text:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:6px;
+	height:6px;
+	border-top:1px solid #bbb;
+	border-right:1px solid #bbb;
+}
 
 /* ============================================================================================
 	sub
@@ -2010,3 +2199,32 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	float:left;
 	line-height:21px;
 }
+
+.view-content .exhibition-slide {
+	position:relative;
+	margin:0 -10px;
+}
+.view-content .exhibition-slide .swiper-slide {}
+.view-content .exhibition-slide .swiper-slide .link {
+	display:block;
+	font-size:0;
+	line-height:0;
+}
+.view-content .exhibition-slide .swiper-slide .link img {width:100%;}
+.view-content .exhibition-slide .swiper-pagination {
+	position:absolute;
+	right:10px;bottom:15px;
+	z-index:1;
+	height:23px;
+	padding:0 15px;
+	border-radius:25px;
+	background-color:rgba(50,50,50,.5);
+	color:#fff;
+	font-size:10px;
+	line-height:23px;
+}
+.view-content .goods-more-box {margin-top:10px;}
+.view-content .goods-more-box .thumb-list2 {
+	height:236px;
+}
+.view-content .goods-more-box {}
