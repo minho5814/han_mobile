@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* MW-JO0601.html */
+.complete-area .text-grey {
+	font-size:11px;
+	color:#666;
+	line-height:15px;
+	text-align:center;
+}
+.sign-area {}
+.sign-area .sign-title {
+	position:relative;
+	padding-bottom:8px;
+	font-size:19px;
+	color:#239bd2;
+	line-height:23px;
+	text-align:center;
+}
+.sign-area .sign-title:before {
+	content:'';
+	position:absolute;
+	left:50%; bottom:0;
+	display:block;
+	width:35px;
+	height:1px;
+	margin-left:-17.5px;
+	background-color:#bbb;
+}
+.sign-area .sign-text {
+	margin-top:8px;
+	font-size:11px;
+	color:#666;
+	line-height:12px;
+	text-align:center;
+}
+.sign-area .sign-img {margin-top:28px;}
+.sign-area .sign-img img {width:100%; height:auto; vertical-align:middle;}
+.sign-area .news-list {
+	overflow:hidden;
+	margin-top:40px;
+	background-color:#fff;
+	border-left:1px solid #ddd;
+}
+.sign-area .news-list .item-news {
+	float:left;
+	width:33.33%;
+	height:120px;
+	padding:13px 10px 22px 10px;
+	border:1px solid #ddd;
+	border-left:0;
+	box-sizing:border-box;
+}
+.sign-area .news-list .item-news dt {
+	position:relative;
+	padding-bottom:10px;
+	border-bottom:1px solid #ddd;
+	font-size:13px;
+	color:#333;
+	line-height:15px;
+}
+.sign-area .news-list .item-news dt:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:0; top:10px;
+	width:5px;
+	height:11px;
+	background:url(../img/ico/ico_dire_right.gif) no-repeat 0 0;
+	background-size:5px 11px;
+}
+.sign-area .news-list .item-news dd {
+	margin-top:8px;
+	font-size:9px;
+	color:#666;
+	line-height:12px;
+}
+.sns-area {
+	margin-top:5px;
+	background-color:#fff;
+}
+.sns-area .sns-list {}
+.sns-area .sns-list .item-sns {
+	position:relative;
+	padding:17px 10px 17px 49px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+.sns-area .sns-list .item-sns:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:10px; top:50%;
+	width:5px;
+	height:11px;
+	margin-top:-5.5px;
+	background:url(../img/ico/ico_dire_right.gif) no-repeat 0 0;
+	background-size:5px 11px;
+}
+.sns-area .sns-list .item-sns.sns01 {
+	background:url(../img/ico/ico_sns01.png) no-repeat 10px center;
+	background-size:30px;
+}
+.sns-area .sns-list .item-sns.sns02 {
+	border-top:0;
+	background:url(../img/ico/ico_sns02.png) no-repeat 10px center;
+	background-size:30px;
+}
+.sns-area .sns-list .item-sns a {
+	display:block;
+	font-size:11px;
+	color:#666;
+	line-height:12px;
+}
