@@ -176,6 +176,40 @@
 .text-box02 .btn-box {
 	margin-top:10px;
 }
+
+.list-box .title {
+	margin-top:5px;
+	font-size:13px;
+	color:#666;
+	font-weight:bold;
+	line-height: 24px;
+}
+.list-box .text {
+	margin:3px 0 8px;
+}
+.list-box .sub-list li {
+	line-height: 21px;
+	font-size:13px;
+	color:#666;
+}
+.list-box .sub-list li .num {
+	display: inline-block;
+	width:12px; height:12px;
+	border:1px solid #666;
+	border-radius:50%;
+	font-size:11px;
+	line-height: 10px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.list-box {}
+
+.text-area {
+	margin-top:5px;
+	color:#666;
+	font-size:13px;
+	line-height: 19px;
+}
 .top-info {
 	margin:7px 0 16px;
 	text-align: center;
@@ -263,8 +297,14 @@
 -------------------------------------------------------------------------------------------- */
 .text-btn-wrap {
 	overflow: hidden;
+	margin-top:2px;
 }
-.text-btn-wrap .text {float:left;}
+.text-btn-wrap .text {
+	float:left;
+	font-size:11px;
+	color:#666;
+	line-height: 25px;
+}
 .text-btn-wrap .btn-wrap {
 	float: right;
 }
