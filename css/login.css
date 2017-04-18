@@ -127,8 +127,9 @@
 	margin-top:15px;
 }
 .check-wrap label {
+	display: inline-block;
 	margin-left:20px;
-	line-height: 24px;
+	line-height: 25px;
 	font-size:15px;
 }
 .check-wrap label:first-child {margin-left:0;}
