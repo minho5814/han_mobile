@@ -686,6 +686,27 @@ select.styled1 {
 }
 .phone-area .box input {text-align:center;}
 
+/* 이메일 타입 */
+.email-area {
+	overflow:hidden;
+}
+.email-area .box {
+	float:left;
+	width:34%;
+	padding-left:4px;
+	box-sizing:border-box;
+}
+.email-area .box.at {position:relative;}
+.email-area .box.at:before {
+	content: '@';
+	
+}
+.email-area .box:first-child {
+	width:32%;
+	padding-left:0;
+}
+.email-area .box input {text-align:center;}
+
 /* 체크박스/라디오 리스트 */
 .check-list {
 	margin-left:-17px;
