@@ -656,8 +656,8 @@ button {outline:0;vertical-align:top;}
 	폼요소
 ============================================================================================ */
 /* 체크박스/라디오 */
-input[type=checkbox].styled1,
-input[type=radio].styled1 {
+/* checkbox */
+input[type=checkbox].styled1 {
 	-webkit-appearance:none;
 	-moz-appearance:none;
 	appearance:none;
@@ -668,8 +668,7 @@ input[type=radio].styled1 {
 	background:transparent;
 	vertical-align:top;
 }
-input[type=checkbox].styled1:before,
-input[type=radio].styled1:before {
+input[type=checkbox].styled1:before {
 	content:'';
 	position:absolute;
 	top:0;left:0;
@@ -682,35 +681,67 @@ input[type=radio].styled1:before {
 input[type=checkbox].styled1:before {background-position:0 0;}
 input[type=checkbox].styled1:checked:before {background-position:-26px 0;}
 input[type=checkbox]:disabled.styled1:before {background-position:-52px 0;}
-input[type=radio].styled1:before {background-position:0 -26px;}
-input[type=radio].styled1:checked:before {background-position:-26px -26px;}
-input[type=radio]:disabled.styled1:before {background-position:-52px -52px;}
 
 /* 라벨 */
-.check-radio {
+.check-label {
 	display:inline-block;
 	height:25px;
 	color:#666;
 	font-size:15px;
 	line-height:25px;
 }
-.check-radio input[type=checkbox],
-.check-radio input[type=radio] {margin-right:6px;}
+.check-label input[type=checkbox] {margin-right:6px;}
+
+/* radio */
+input[type=radio].styled1 {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	position:relative;
+	width:28px;
+	height:28px;
+	border:0;
+	background:transparent;
+	vertical-align:top;
+}
+input[type=radio].styled1:before {
+	content:'';
+	position:absolute;
+	top:0;left:0;
+	width:28px;
+	height:28px;
+	background-image:url(../img/sprite_form.png);
+	background-repeat:no-repeat;
+	background-size:100px 100px;
+}
+input[type=radio].styled1:before {background-position:0 -26px;}
+input[type=radio].styled1:checked:before {background-position:-29px -26px;}
+input[type=radio]:disabled.styled1:before {background-position:-58px -26px;}
+
+/* 라벨 */
+.radio-label {
+	display:inline-block;
+	height:28px;
+	color:#666;
+	font-size:15px;
+	line-height:28px;
+}
+.radio-label input[type=radio] {margin-right:6px;}
 
 /* 셀렉트박스 */
 select.styled1 {
 	display:inline-block;
 	width:100%;
-	height:35px;
+	height:42px;
 	margin:0;
-	padding:0 25px 0 10px;
+	padding:0 27px 0 10px;
 	box-sizing:border-box;
 	border-radius:3px;
 	border:1px solid #bbb;
 	background:url(../img/ico/ico_select.png) no-repeat 100% 50%;
-	background-size:20px 6px;
+	background-size:22px 7px;
 	color:#666;
-	font-size:13px;
+	font-size:15px;
 	text-align:left;
 	text-transform:none;
 	vertical-align:middle;
@@ -779,11 +810,13 @@ select.styled1 {
 }
 .email-area .box:first-child {padding-left:0;}
 .email-area .box.at  {position:relative;}
-.email-area .box.at input {padding:0 10px 0 25px }
+.email-area .box.at input {padding: 0 10px 0 22px }
 .email-area .box.at:before {
 	content:'@';
 	position:absolute;
-	left:15px;top:9px;
+	left:10px;top:14px;
+	font-size:15px;
+	line-height: 1;
 }
 .email-area .box:last-child {
 	width:30%;
@@ -799,10 +832,24 @@ select.styled1 {
 	margin-left:17px;
 	padding-top:5px;
 	color:#666;
-	font-size:13px;
-	line-height:20px;
+	font-size:15px;
+	line-height:25px;
 }
 .check-list label input {margin-right:5px;}
+
+.radio-list {
+	margin-left:-17px;
+	padding-bottom:5px;
+}
+.radio-list label {
+	display:inline-block;
+	margin-left:17px;
+	padding-top:5px;
+	color:#666;
+	font-size:15px;
+	line-height:28px;
+}
+.radio-list label input {margin-right:5px;}
 
 /* 폼리스트 01 */
 .form-list1 {}
