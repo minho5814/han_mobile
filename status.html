@@ -204,7 +204,7 @@
 </div>
 
 <!-- 로그인 -->
-<h2 class="on" style="margin-top:50px;">로그인</h2>
+<h2 class="on">로그인</h2>
 <div class="Layer">
 	<table>
 		<colgroup>
@@ -341,7 +341,7 @@
 </div>
 
 <!-- 조합원가입 -->
-<h2 class="on" style="margin-top:50px;">조합원가입</h2>
+<h2 class="on">조합원가입</h2>
 <div class="Layer">
 	<table>
 		<colgroup>
@@ -379,7 +379,6 @@
 				<td class="Hide Date"></td>
 				<td class="Hide Left">조합원가입신청 버튼 누르면 조합원 가입여부 확인 팝업출력</td>
 			</tr>
-
 			<!-- <tr>
 				<td class="Hide Left" rowspan="2">지역한살림확인/약관동의</td>
 				<td class="Left">지역선택(전)</td>
@@ -409,8 +408,7 @@
 				<td class="Hide Hide">jo/</td>
 				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type1.html">MW-JO0301_type1.html</a></td>
 				<td class="Hide Date"></td>
-				<td class="Hide Left">
-				</td>
+				<td class="Hide Left"></td>
 			</tr>
 			<tr>
 				<td class="Hide Left">한살림소개(설문형type1)-한살림수원</td>
@@ -418,8 +416,7 @@
 				<td class="Hide Hide">jo/</td>
 				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type2_1.html">MW-JO0301_type2_1.html</a></td>
 				<td class="Hide Date"></td>
-				<td class="Hide Left">
-				</td>
+				<td class="Hide Left"></td>
 			</tr>
 			<tr>
 				<td class="Hide Left">한살림소개(설문형type2)-한살림경기남부</td>
@@ -427,11 +424,10 @@
 				<td class="Hide Hide">jo/</td>
 				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type2_2.html">MW-JO0301_type2_2.html</a></td>
 				<td class="Hide Date"></td>
-				<td class="Hide Left">
-				</td>
+				<td class="Hide Left"></td>
 			</tr>
 			<tr>
-				<td class="Left">한살림소개(소개모임)</td>
+				<td class="Hide left">한살림소개(소개모임)</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
 				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type3.html">MW-JO0301_type3.html</a></td>
@@ -440,7 +436,7 @@
 			</tr>
 
 			<tr>
-				<td class="Hide Left">신청정보입력</td>
+				<td class="Left">신청정보입력</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
@@ -450,7 +446,7 @@
 			</tr>
 
 			<tr>
-				<td class="Hide Left">신청정보확인</td>
+				<td class="Left">신청정보확인</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
@@ -460,7 +456,7 @@
 			</tr>
 
 			<tr>
-				<td class="Hide Left">가입신청완료</td>
+				<td class="Left">가입신청완료</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
@@ -470,7 +466,7 @@
 			</tr>
 
 			<tr>
-				<td class="Hide Left">조합원 가입여부 확인(팝업)</td>
+				<td class="Left">조합원 가입여부 확인(팝업)</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
@@ -510,7 +506,7 @@
 </div>
 
 <!-- 물품전시 -->
-<h2 class="on" style="margin-top:50px;">물품전시</h2>
+<h2 class="on">물품전시</h2>
 <div class="Layer">
 	<table>
 		<colgroup>
@@ -553,7 +549,7 @@
 </div>
 
 <!-- 물품전시 -->
-<h2 class="on" style="margin-top:50px;">FOOTER UTIL</h2>
+<h2 class="on">FOOTER UTIL</h2>
 <div class="Layer">
 	<table>
 		<colgroup>
@@ -646,6 +642,7 @@ $(window).load(function(){
 		var Len = $(this).find('.Date').length;
 		var ComLen = $(this).find('.Date.On').length;
 		$(this).prev('h2').append('<span>(<em class="ComLen">'+ ComLen +'</em> / <em class="AllLen">'+ Len +'</em>)</span>');
+		$('td.rowhide').attr('rowspan', '0');
 	});
 
 	$('.Link a').click(function(){
