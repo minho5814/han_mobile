@@ -488,10 +488,10 @@ button {outline:0;vertical-align:top;}
 
 /* 팝업 닫기 */
 .btn-close {
-	width:37px;
-	height:45px;
+	width:40px;
+	height:55px;
 	background-color:#fff;
-	background-position:0 -234px;
+	background-position:0 -150px;
 }
 
 /* 툴팁 */
@@ -1220,13 +1220,13 @@ html.bg-gray {background-color:#f7f7f7;}
 .header .head-title {
 	overflow:hidden;
 	position:absolute;
-	left:37px;right:37px;top:0;
-	height:50px;
+	left:40px;right:40px;top:0;
+	height:55px;
 	color:#333;
-	font-size:16px;
+	font-size:19px;
 	text-overflow:ellipsis;
 	text-align:center;
-	line-height:50px;
+	line-height:55px;
 	white-space:nowrap;
 }
 
