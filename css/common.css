@@ -466,17 +466,17 @@ button {outline:0;vertical-align:top;}
 }
 /* 메뉴 열기 */
 .btn-gnb {
-	width:37px;
-	height:45px;
+	width:40px;
+	height:55px;
 	background-color:#fff;
 	background-position:0 0;
 }
 /* 해더 통합검색 */
 .btn-search {
-	width:37px;
-	height:45px;
+	width:40px;
+	height:55px;
 	background-color:#fff;
-	background-position:0 -46px;
+	background-position:0 -56px;
 }
 /* 해더 뒤로가기 */
 .btn-back {
@@ -488,10 +488,10 @@ button {outline:0;vertical-align:top;}
 
 /* 팝업 닫기 */
 .btn-close {
-	width:37px;
-	height:45px;
+	width:40px;
+	height:55px;
 	background-color:#fff;
-	background-position:0 -234px;
+	background-position:0 -150px;
 }
 
 /* 툴팁 */
@@ -508,7 +508,7 @@ button {outline:0;vertical-align:top;}
 	display:inline-block;
 	position:relative;
 	width:100%;
-	height:30px;
+	height:40px;
 	box-sizing:border-box;
 	font-size:0;
 	text-indent:-9999px;
@@ -1065,7 +1065,6 @@ select.styled1 {
 	border-top:1px solid #ddd;
 	font-size:15px;
 	text-align:left;
-	line-height:19px;
 	font-weight:normal;
 }
 .board1 tr:first-child th,
@@ -1073,8 +1072,9 @@ select.styled1 {
 .board1 th {
 	background-color:#f7f7f7;
 	color:#333;
+	line-height:18px;
 }
-.board1 td {color:#666;}
+.board1 td {color:#666; line-height:22px}
 .board1 .non-text {padding:7px 10px;}
 
 .board1 .title01 {
@@ -1101,9 +1101,9 @@ select.styled1 {
 .board2 td {
 	padding:10px;
 	border-top:1px solid #ddd;
-	font-size:13px;
+	font-size:15px;
 	text-align:center;
-	line-height:19px;
+
 	font-weight:normal;
 }
 .board2 tr:first-child th,
@@ -1112,6 +1112,7 @@ select.styled1 {
 	background-color:#f7f7f7;
 	color:#333;
 	text-align:center;
+	line-height:18px;
 }
 .board2 th {letter-spacing:-1px;}
 .board2 thead th {
@@ -1122,6 +1123,7 @@ select.styled1 {
 }
 .board2 td {
 	color:#666;
+	line-height:22px;
 }
 
 /* ============================================================================================
@@ -1141,7 +1143,7 @@ html.bg-gray {background-color:#f7f7f7;}
 	position:fixed;
 	left:0;right:0;top:0;
 	z-index:100;
-	height:50px;
+	height:55px;
 	border-top:1px solid #ddd;
 	border-bottom:1px solid #ddd;
 	background-color:#fff;
@@ -1152,29 +1154,29 @@ html.bg-gray {background-color:#f7f7f7;}
 }
 .head-menu {
 	position:absolute;
-	left:37px;right:37px;top:0;
-	height:45px;
+	left:40px;right:40px;top:0;
+	height:55px;
 	border-right:1px solid #ddd;
 	border-left:1px solid #ddd;
 }
+.head-menu .swiper-wrapper {width:107% !important;}
 .head-menu .swiper-slide {box-sizing:border-box;}
-.head-menu .swiper-slide:nth-child(1) {width:14%;padding-left:8px;}
+.head-menu .swiper-slide:nth-child(1) {width:11%;padding-left:10px;}
 .head-menu .swiper-slide:nth-child(2) {width:24%;}
 .head-menu .swiper-slide:nth-child(3) {width:28%;}
 .head-menu .swiper-slide:nth-child(4) {width:20%;}
-.head-menu .swiper-slide:nth-child(5) {width:24%;padding-right:8px;}
+.head-menu .swiper-slide:nth-child(5) {width:24%;padding-right:10px;}
 .head-menu .swiper-slide .link {
 	display:block;
 	color:#333;
-	font-size:13px;
+	font-size:15px;
 	text-align:center;
-	line-height:45px;
+	line-height:55px;
 }
 .head-menu .swiper-slide .link .text {
 	display:inline-block;
 	position:relative;
 	padding:0 5px;
-	line-height:45px;
 }
 /* on */
 .head-menu .swiper-slide.on .link {color:#60b015;}
@@ -1205,7 +1207,7 @@ html.bg-gray {background-color:#f7f7f7;}
 /* //on */
 .header .btn-search {
 	position:absolute;
-	right:2px;top:2px;
+	right:0;top:0;
 	z-index:2;
 }
 
@@ -1219,20 +1221,20 @@ html.bg-gray {background-color:#f7f7f7;}
 .header .head-title {
 	overflow:hidden;
 	position:absolute;
-	left:37px;right:37px;top:0;
-	height:50px;
+	left:40px;right:40px;top:0;
+	height:55px;
 	color:#333;
-	font-size:16px;
+	font-size:19px;
 	text-overflow:ellipsis;
 	text-align:center;
-	line-height:50px;
+	line-height:55px;
 	white-space:nowrap;
 }
 
 /* --------------------------------------------------------------------------------------------
 	컨테이너
 -------------------------------------------------------------------------------------------- */
-.container {padding-top:47px;}
+.container {padding-top:56px;}
 
 /* 컨텐츠 박스 */
 .white-content1 {
@@ -1259,7 +1261,7 @@ html.bg-gray {background-color:#f7f7f7;}
 	position:fixed;
 	left:0;right:0;bottom:0;
 	z-index:100;
-	height:45px;
+	height:54px;
 	padding:0 10px;
 	border-top:1px solid #bbb;
 	background-color:#fff;
@@ -1281,37 +1283,37 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 	float:left;
 	position:relative;
 	width:33%;
-	height:22px;
-	padding-top:23px;
+	height:27px;
+	padding-top:26px;
 	box-sizing:inherit;
 	color:#333;
 	font-size:11px;
 	font-weight:bold;
 	text-align:center;
-	line-height:22px;
+	line-height:27px;
 }
 .btm-fix-menu .btn-list .btn:before {
 	content:'';
 	position:absolute;
-	left:50%;top:7px;
+	left:50%;top:10px;
 	-webkit-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
 	transform:translateX(-50%);
-	width:18px;
-	height:18px;
+	width:21px;
+	height:20px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
 	background-size:40px 250px;
 }
 .btm-fix-menu .btnmmm-list .btn:nth-child(2) {width:34%;}
 .btm-fix-menu .btn-list .btn1:before {background-position:0 0;}
-.btm-fix-menu .btn-list .btn2:before {background-position:0 -19px;}
-.btm-fix-menu .btn-list .btn3:before {background-position:0 -38px;}
+.btm-fix-menu .btn-list .btn2:before {background-position:0 -21px;}
+.btm-fix-menu .btn-list .btn3:before {background-position:0 -42px;}
 .btm-fix-menu .btn-list .btn .len {
 	position:absolute;
 	left:50%;top:3px;
-	width:18px;
-	height:18px;
+	width:20px;
+	height:20px;
 	-webkit-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
 	transform:translateX(-50%);
@@ -1319,10 +1321,10 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 	border-radius:50%;
 	background-color:#60b015;
 	color:#fff;
-	font-size:10px;
+	font-size:11px;
 	font-weight:600;
 	text-align:center;
-	line-height:18px;
+	line-height:20px;
 }
 
 /*페이지하단고정*/
@@ -1354,7 +1356,7 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 -------------------------------------------------------------------------------------------- */
 .floating-btn-area {
 	position:fixed;
-	left:0;right:0;bottom:45px;
+	left:0;right:0;bottom:56px;
 	-webkit-transition:all .2s;
 	-ms-transition:all .2s;
 	transition:all .2s;
@@ -1362,53 +1364,53 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 html.down .floating-btn-area {bottom:0;}/* scroll down */
 .floating-btn-area .btn {
 	box-sizing:border-box;
-	box-shadow:0 2px 0 rgba(0,0,0,.1);
+	box-shadow:0 3px 0 rgba(0,0,0,.1);
 	border:1px solid #bbb;
 	background-color:rgba(255,255,255,.8);
 	color:#333;
-	font-size:10px;
+	font-size:12px;
 	text-align:center;
 	line-height:12px;
 
 }
 .floating-btn-area .btn-link {
 	display:inline-block;
-	width:35px;
-	height:35px;
-	padding-top:5px;
+	width:40px;
+	height:40px;
+	padding-top:8px;
 	border-radius:50%;
 }
 .floating-btn-area .btn-top {
 	position:relative;
-	width:32px;
-	height:32px;
-	padding-top:12px;
+	width:39px;
+	height:39px;
+	padding-top:18px;
 }
 .floating-btn-area .btn-top:before {
 	content:'';
 	position:absolute;
-	left:11px;top:7px;
-	width:7px;
-	height:7px;
-	border-left:1px solid #333;
-	border-top:1px solid #333;
+	left:13px;top:10px;
+	width:9px;
+	height:9px;
+	border-left:2px solid #333;
+	border-top:2px solid #333;
 	-webkit-transform:rotate(45deg);
 	-ms-transform:rotate(45deg);
 	transform:rotate(45deg);
 }
 .floating-btn-area .btn-prev {
 	position:absolute;
-	left:8px;bottom:12px;
-	width:32px;
-	height:32px;
-	background-position:0 -92px;
+	left:14px;bottom:17px;
+	width:39px;
+	height:39px;
+	background-position:0 -112px;
 	font-size:0;
 	line-height:0;
 }
 .floating-btn-area .right-area {
 	position:absolute;
-	right:8px;bottom:12px;
-	width:35px;
+	right:14px;bottom:17px;
+	width:39px;
 }
 .floating-btn-area .right-area .btn {
 	margin-top:8px;

@@ -110,7 +110,7 @@
 	width:78%;
 	height:40px;
 	color:#333;
-	font-size:13px;
+	font-size:15px;
 	line-height:40px;
 	text-align: center;
 }
@@ -130,7 +130,7 @@
 	transform:translateY(-50%);
 	width:22%;
 	color:#666;
-	font-size:14px;
+	font-size:15px;
 	text-align:center;
 	line-height:65px;
 }
@@ -141,8 +141,8 @@
 }
 .post-result .result-list .address-area .address {
 	color:#666;
-	font-size:12px;
-	line-height:18px;
+	font-size:14px;
+	line-height:21px;
 }
 
 /*조합원가입 - 약관동의*/
