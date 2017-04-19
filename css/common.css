@@ -701,6 +701,17 @@ input[type=radio].styled1:before {background-position:0 -26px;}
 input[type=radio].styled1:checked:before {background-position:-26px -26px;}
 input[type=radio]:disabled.styled1:before {background-position:-52px -52px;}
 
+/* 라벨 */
+.check-radio {
+	display:inline-block;
+	height:25px;
+	color:#666;
+	font-size:15px;
+	line-height:25px;
+}
+.check-radio input[type=checkbox],
+.check-radio input[type=radio] {margin-right:6px;}
+
 /* 셀렉트박스 */
 select.styled1 {
 	display:inline-block;

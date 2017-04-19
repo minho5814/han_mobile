@@ -23,6 +23,33 @@ $(window).load(function(){
 		$(this).addClass('on');
 	});
 
+	/* -----------------------------------------------------------------------------------------------
+		폼요소
+	----------------------------------------------------------------------------------------------- */
+	/* 체크박스 전체 선택 해제 */
+	$('input[type=checkbox].all-check').change(function(){
+		var name = $(this).attr('name');
+		var dLen = $('input[name='+name+']').length;
+		//var cLen = $('input[name='+name+']:checked').length;
+		if(this.checked){
+			$('input[name='+name+']').not('.all-check').prop('checked', true);
+		}else{
+			$('input[name='+name+']').not('.all-check').prop('checked', false);
+		}
+	});
+	$('input[type=checkbox]').change(function(){
+		var name = $(this).attr('name');
+		var allDLen = $('input[name='+name+'].all-check').length;
+		var allCLen = $('input[name='+name+']:checked.all-check').length;
+		var dLen = $('input[name='+name+']').length - allDLen;
+		var cLen = $('input[name='+name+']:checked').length - allCLen;
+		if(cLen >= dLen){
+			$('input[name='+name+'].all-check').prop('checked', true);
+		}else{
+			$('input[name='+name+'].all-check').prop('checked', false);
+		}
+	});
+
 	/* ===============================================================================================
 		스크롤 이벤트
 	=============================================================================================== */
