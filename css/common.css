@@ -1017,7 +1017,6 @@ select.styled1 {
 	border-top:1px solid #ddd;
 	font-size:15px;
 	text-align:left;
-	line-height:19px;
 	font-weight:normal;
 }
 .board1 tr:first-child th,
@@ -1025,8 +1024,9 @@ select.styled1 {
 .board1 th {
 	background-color:#f7f7f7;
 	color:#333;
+	line-height:18px;
 }
-.board1 td {color:#666;}
+.board1 td {color:#666; line-height:22px}
 .board1 .non-text {padding:7px 10px;}
 
 .board1 .title01 {
@@ -1053,9 +1053,9 @@ select.styled1 {
 .board2 td {
 	padding:10px;
 	border-top:1px solid #ddd;
-	font-size:13px;
+	font-size:15px;
 	text-align:center;
-	line-height:19px;
+
 	font-weight:normal;
 }
 .board2 tr:first-child th,
@@ -1064,6 +1064,7 @@ select.styled1 {
 	background-color:#f7f7f7;
 	color:#333;
 	text-align:center;
+	line-height:18px;
 }
 .board2 th {letter-spacing:-1px;}
 .board2 thead th {
@@ -1074,6 +1075,7 @@ select.styled1 {
 }
 .board2 td {
 	color:#666;
+	line-height:22px;
 }
 
 /* ============================================================================================
