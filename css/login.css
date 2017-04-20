@@ -141,7 +141,7 @@
 -------------------------------------------------------------------------------------------- */
 .text-box {
 	margin-top:15px;
-	padding:12px;
+	padding:7px 10px;
 	background-color:#fff;
 	border:1px solid #ddd;
 }
@@ -160,7 +160,7 @@
 	background-color:#666;
 }
 .text-box .btn-box {
-	margin-top:8px;
+	margin:8px 0 3px;
 	padding-left:5px;
 }
 
