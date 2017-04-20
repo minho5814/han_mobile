@@ -9,7 +9,7 @@
 .join-section .form-item:first-child {margin-top:0;}
 
 .login-global {
-	margin-top:11px;
+	margin:11px 0 11px;
 	text-align: center;
 	line-height: 31px;
 }
@@ -79,6 +79,7 @@
 }
 .send-select {
 	overflow: hidden;
+	margin-top:7px;
 	border:1px solid #bbb;
 	border-radius: 5px;
 }
@@ -93,19 +94,19 @@
 	display: block;
 	width:100%;
 	margin: 0 auto;
-	padding:105px 0 20px;
-	font-size:13px;
+	padding:125px 0 22px;
+	font-size:15px;
 	color:#333;
 	text-align: center;
 }
 .find-sms {
-	background:url(../img/bg/bg_sms.png) 50% 20px no-repeat;
-	background-size:69px;
+	background:url(../img/bg/bg_sms.png) 50% 25px no-repeat;
+	background-size:85px;
 }
 
 .find-email {
-	background:url(../img/bg/bg_email.png) 50% 20px no-repeat;
-	background-size:69px;
+	background:url(../img/bg/bg_email.png) 50% 25px no-repeat;
+	background-size:85px;
 }
 
 .find-ipin {
@@ -118,15 +119,15 @@
 }
 .search-id-link .text {
 	margin-left:6px;
-	font-size:12px;
+	font-size:13px;
 	color:#333;
-	line-height: 25px;
+	line-height: 30px;
 }
 /* --------------------------------------------------------------------------------------------
 	체크박스 wrapper
 -------------------------------------------------------------------------------------------- */
 .check-wrap {
-	margin-top:15px;
+	margin-top:10px;
 }
 .check-wrap label {
 	display: inline-block;
@@ -252,7 +253,7 @@
 .top-info {
 	margin:7px 0 16px;
 	text-align: center;
-	font-size:13px;
+	font-size:16px;
 	color:#666;
 	line-height: 19px;
 	letter-spacing: -0.5px;
