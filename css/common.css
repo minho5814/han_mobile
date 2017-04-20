@@ -237,7 +237,7 @@ button {outline:0;vertical-align:top;}
 
 .box-content2 {
 	position:relative;
-	height:45px;
+	height:50px;
 	margin-top:6px;
 	box-sizing:border-box;
 	border:1px solid #ddd;
@@ -245,12 +245,12 @@ button {outline:0;vertical-align:top;}
 .box-content2 p {
 	position:absolute;
 	top:0;left:9px;
-	height:45px;
-	line-height:45px;
+	height:50px;
+	line-height:50px;
 }
 .box-content2 a {
 	position:absolute;
-	right:9px;top:9px;
+	right:9px;top:10px;
 }
 
 .box-content3 {
@@ -633,11 +633,11 @@ button {outline:0;vertical-align:top;}
 .btn-call .text {
 	display:inline-block;
 	position:relative;
-	height:25px;
+	height:30px;
 	padding-left:18px;
 	color:#60b015;
 	font-size:13px;
-	line-height:25px;
+	line-height:28px;
 }
 .btn-call .text:before {
 	content:'';

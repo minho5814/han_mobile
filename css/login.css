@@ -169,12 +169,12 @@
 	background-color:#eee;
 }
 
-.text-box02 .title {
+.text-box02 dl .title {
 	margin:-2px 0 5px;
 	font-size:15px;
 	color:#333;
 }
-.text-box02 .text {
+.text-box02 dl .text {
 	font-size:13px;
 	color:#666;
 	line-height: 18px;
