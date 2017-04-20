@@ -211,11 +211,19 @@ button {outline:0;vertical-align:top;}
 	font-weight:bold;
 	line-height:16px;
 }
-.box-content1 .box-cont {padding:10px;}
-
+.box-content1 .box-cont {padding:7px 10px;}
+.box-content1 .box-cont.bottom-line {
+	padding:7px 10px 12px;
+	border-bottom:1px solid #ddd;
+}
+.box-cont .title {
+	margin-top:6px;
+	font-size:14px;
+	color:#333;
+}
 .box-cont .item {
 	position:relative;
-	margin-top:10px;
+	margin-top:4px;
 	padding-left:5px;
 	color:#666;
 	font-size:13px;
@@ -231,6 +239,31 @@ button {outline:0;vertical-align:top;}
 }
 .box-cont .item:first-child {margin-top:0;}
 .box-content1 .box-btn {padding:0 10px 10px;}
+.box-content1 .item .btn-wrap {
+	display: block;
+	margin:7px 0 7px;
+}
+.box-content1 .refer {
+	padding:7px 10px;
+}
+.box-content1 .refer p {
+	position: relative;
+	margin-top:4px;
+	padding-left:6px;
+	color:#666;
+	font-size:13px;
+	line-height: 18px;
+}
+.box-content1 .refer p:first-child {
+	margin-top:0;
+}
+.box-content1 .refer p:before {
+	content: '*';
+	position: absolute;
+	top:2px; left:0;
+	height: 13px;
+	font-size:13px;
+}
 
 .box-cont.gray li {color:#aaa;}
 .box-cont.gray .item:before {background-color:#aaa;}
@@ -981,12 +1014,12 @@ select.styled1 {
 .tab-list1 .item .text {
 	display:block;
 	position:relative;
-	height:45px;
+	height:55px;
 	box-sizing:border-box;
 	color:#333;
-	font-size:13px;
+	font-size:15px;
 	text-align:center;
-	line-height:45px;
+	line-height:55px;
 }
 .tab-list1 .item.on .text {
 	border-bottom:2px solid #60b015;
@@ -1005,14 +1038,14 @@ select.styled1 {
 }
 .tab-list2 .item .text {
 	display:block;
-	height:35px;
+	height:42px;
 	box-sizing:border-box;
 	border-bottom:1px solid #333;
 	background-color:#eee;
-	color:#bbb;
-	font-size:13px;
+	color:#aaa;
+	font-size:15px;
 	text-align:center;
-	line-height:35px;
+	line-height:42px;
 }
 .tab-list2 .item.on .text {
 	border:1px solid #333;
