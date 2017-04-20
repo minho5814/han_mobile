@@ -377,6 +377,14 @@ html.no-scroll {
 	flex-shrink:0;
 }
 
+.swiper-container-vertical > .swiper-wrapper {
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
 /* --------------------------------------------------------------------------------------------
 	캠페인 마크
 -------------------------------------------------------------------------------------------- */
@@ -596,7 +604,6 @@ html.no-scroll {
 /* 더보기 */
 .btn-link-more {
 	display:block;
-	width:100%;
 	height:40px;
 	box-sizing:border-box;
 	border-radius:3px;
