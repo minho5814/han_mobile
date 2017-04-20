@@ -199,7 +199,7 @@
 .tit-wrap .left {}
 .tit-wrap .right {position: absolute; right:0; bottom:0;}
 .tit-wrap .right.check-list label{line-height: 25px;}
-.tit-wrap .right.check-list label input {margin-right:5px}
+.tit-wrap .right.check-list label input {margin-right:7px}
 
 /*지역한살림 자세히알기 팝업*/
 .board1 .tit {
