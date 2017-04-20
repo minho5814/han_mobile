@@ -2,6 +2,18 @@ $(window).load(function(){
 	/* ===============================================================================================
 		공통
 	=============================================================================================== */
+	/* 레이어 출력시 스크롤 방지  */
+	function scrollNo(){
+		var winTop = $(window).scrollTop();
+		$('html').addClass('no-scroll');
+		$('html').css({'top':-winTop}).attr('data', winTop);
+	}
+	function scrollOk(){
+		var winTop = $('html').attr('data');
+		$('html').removeClass('no-scroll').removeAttr('style');
+		$('body').scrollTop(winTop);
+	}
+
 	/* 상단 고정 메뉴 슬라이드 */
 	$('.head-menu .swiper-container').each(function(){
 		var swiper = new Swiper(this, {
@@ -9,6 +21,46 @@ $(window).load(function(){
 			nextButton: '.head-menu .btn-next',
 			prevButton: '.head-menu .btn-prev'
 		});
+	});
+
+	/* -----------------------------------------------------------------------------------------------
+		전체메뉴 레이어
+	---------------------------------------------------------------------------------------------- */
+	var slideAreaH = $('.gnb-layer .slide-area').outerHeight();
+	$('.gnb-layer').hide();
+	$('.btn-gnb').click(function(){
+		scrollNo();
+		$('.gnb-layer').show().stop().animate({left:0}, 200);
+	});
+	$('.btn-gnb-close').click(function(){
+		scrollOk();
+		$('.gnb-layer').stop().animate({left:'-100%'}, 100, function(){
+			$(this).hide();
+		});
+	});
+	/* 전체메뉴 레이어 내 스크롤 카테고리 */
+	// 스크롤 이벤트
+	$('.gnb-layer .slide-area .depth-box:last-child').css({'height':slideAreaH});
+	$('.gnb-layer .slide-area').scroll(function(){
+		var boxTop = $(this).offset().top;
+		var $direct = $(this).find('.depth-box');
+		$direct.each(function(index){
+			$depthTop = $direct.eq(index).offset().top;
+			if ($depthTop <= boxTop) {
+				$('.gnb-layer .menu-list .item').eq(index).addClass('on').siblings().removeClass('on');
+			}
+		});
+	});
+	// 메뉴 리스트 클릭
+	$('.slide-menu .depth-box').each(function(){
+		var wrapT = $(this).parents('.slide-menu').find('.slide-area').offset().top;
+		var depthT = $(this).offset().top;
+		$(this).attr('data', depthT - wrapT);
+	});
+	$('.menu-list .item').click(function(){
+		var idx = $(this).index();
+		var scrl = $(this).parents('.slide-menu').find('.depth-box').eq(idx).attr('data');
+		$(this).parents('.slide-menu').find('.slide-area').animate({scrollTop:scrl});
 	});
 
 	/* 하단 고정 메뉴가 있을 경우 */

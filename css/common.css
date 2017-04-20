@@ -143,6 +143,13 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	공통
 ============================================================================================ */
+/* 레이어 출력 시 스크롤 방지 */
+html.no-scroll {
+	position:fixed;
+	left:0;right:0;top:0;
+}
+
+
 /* 마진 */
 .mgT0 {margin-top:0px !important;}
 .mgT5 {margin-top:5px !important;}
@@ -1266,7 +1273,7 @@ html.bg-gray {background-color:#f7f7f7;}
 -------------------------------------------------------------------------------------------- */
 .gnb-layer {
 	position:fixed;
-	left:0;top:0;
+	left:-100%;top:0;
 	z-index:105;
 	width:100%;
 	height:100%;
@@ -1407,10 +1414,23 @@ html.bg-gray {background-color:#f7f7f7;}
 	width:31%;
 }
 .gnb-layer .my-menu dt .link {
+	position:relative;
 	padding:11px 0 0 10px;
 	color:#60b015;
 	font-weight:bold;
 	line-height:14px;
+}
+.gnb-layer .my-menu dt .link:before {
+	content:'';
+	position:absolute;
+	right:7px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:19px;
+	height:19px;
+	background:url(../img/sprite_ico.png) no-repeat 0 -63px;
+	background-size:40px 250px;
 }
 .gnb-layer .my-menu dd {
 	width:23%;
@@ -1422,7 +1442,69 @@ html.bg-gray {background-color:#f7f7f7;}
 	line-height:53px;
 }
 
-.gnb-layer {}
+.gnb-layer .slide-menu {
+	overflow-y:auto;
+	position:absolute;
+	left:0;right:0;top:197px;bottom:0;
+	border-top:1px solid #ddd;
+	background-color:#f7f7f7;
+}
+.gnb-layer .slide-menu .menu-list {}
+.gnb-layer .slide-menu .menu-list .item {
+	width:105px;
+	height:75px;
+	padding:33px 0 0 10px;
+	box-sizing:border-box;
+	background-color:#f7f7f7;
+	color:#aaa;
+	font-size:13px;
+	text-align:center;
+	line-height:42px;
+}
+.gnb-layer .slide-menu .menu-list .item1 {}
+.gnb-layer .slide-menu .menu-list .item2 {}
+.gnb-layer .slide-menu .menu-list .item3 {}
+.gnb-layer .slide-menu .menu-list .item4 {}
+.gnb-layer .slide-menu .menu-list .item5 {}
+.gnb-layer .slide-menu .menu-list .item6 {}
+.gnb-layer .slide-menu .menu-list .item.on {
+	background-color:#fff;
+	color:#333;
+	}/* on */
+.gnb-layer .slide-menu .slide-area {
+	overflow-y:auto;
+	position:absolute;
+	left:105px;right:0;top:0;bottom:0;
+	padding:0 10px;
+	background-color:#fff;
+}
+.gnb-layer .slide-menu .slide-area .depth-box {}
+.gnb-layer .slide-menu .slide-area .depth-box:first-child {
+	padding-top:20px;
+}
+.gnb-layer .slide-menu .slide-area .depth-box .title {
+	padding:0 10px;
+	border-top:1px solid #666;
+	color:#333;
+	font-size:15px;
+	line-height:45px;
+}
+.gnb-layer .slide-menu .slide-area .depth-box:last-child .title {border-bottom:1px solid #666;}
+.gnb-layer .slide-menu .slide-area .depth-box .list {
+	border-top:1px solid #e4e4e4;
+	padding:10px 0;
+}
+.gnb-layer .slide-menu .slide-area .depth-box .list li {}
+.gnb-layer .slide-menu .slide-area .depth-box .list li a {
+	display:block;
+	padding:0 10px;
+	color:#666;
+	font-size:14px;
+	line-height:40px;
+}
+.gnb-layer .slide-menu .slide-area .depth-box {}
+.gnb-layer .slide-menu .slide-area {}
+.gnb-layer .slide-menu {}
 
 /* --------------------------------------------------------------------------------------------
 	컨테이너
