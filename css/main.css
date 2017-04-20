@@ -1,6 +1,48 @@
 @charset "utf-8";
 
 .wrapper {background-color:#eee;}
+/* 슬라이드 공통 */
+.page-btn-area {padding:4px 28px 4px 0;}
+.page-btn-area .swiper-pagination {
+	height:27px;
+	padding:0 14px;
+	border-radius:25px 0 0 25px;
+	background-color:rgba(50,50,50,.5);
+	color:#fff;
+	font-size:13px;
+	line-height:27px;
+}
+.page-btn-area .btn-more {
+	position:absolute;
+	right:0;top:0;
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	box-shadow:0 2px 5px rgba(0,0,0,.4);
+	background-color:#fff;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.page-btn-area .btn-more:after,
+.page-btn-area .btn-more:before {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	background-color:#333;
+}
+.page-btn-area .btn-more:after {
+	width:14px;
+	height:1px;
+}
+.page-btn-area .btn-more:before {
+	width:1px;
+	height:14px;
+}
+
 /* 상단 비주얼 슬라이드 */
 .main-visual-slide {
 	position:relative;
@@ -52,46 +94,6 @@
 	z-index:5;
 	padding:4px 28px 4px 0;
 }
-.main-visual-slide .page-btn-area .swiper-pagination {
-	height:27px;
-	padding:0 14px;
-	border-radius:25px 0 0 25px;
-	background-color:rgba(50,50,50,.5);
-	color:#fff;
-	font-size:13px;
-	line-height:27px;
-}
-.main-visual-slide .page-btn-area .swiper-pagination span {}
-.main-visual-slide .page-btn-area .btn-more {
-	position:absolute;
-	right:0;top:0;
-	width:35px;
-	height:35px;
-	border-radius:50%;
-	box-shadow:0 2px 5px rgba(0,0,0,.4);
-	background-color:#fff;
-	font-size:0;
-	text-indent:-9999px;
-	line-height:0;
-}
-.main-visual-slide .page-btn-area .btn-more:after,
-.main-visual-slide .page-btn-area .btn-more:before {
-	content:'';
-	position:absolute;
-	left:50%;top:50%;
-	-webkit-transform:translate(-50%,-50%);
-	-ms-transform:translate(-50%,-50%);
-	transform:translate(-50%,-50%);
-	background-color:#333;
-}
-.main-visual-slide .page-btn-area .btn-more:after {
-	width:14px;
-	height:1px;
-}
-.main-visual-slide .page-btn-area .btn-more:before {
-	width:1px;
-	height:14px;
-}
 
 .main-notice-slide {
 	padding:6px 5px;
@@ -134,9 +136,7 @@
 	margin-top:10px;
 	background-color:#fff;
 }
-.box-depth .title-area {
-	height:45px;
-}
+.box-depth .title-area {height:45px;}
 .box-depth .title-area .title {
 	height:44px;
 	border-bottom:1px solid #bbb;
@@ -147,6 +147,44 @@
 	text-align:center;
 	line-height:45px;
 }
+.box-depth .title-area.fxd .title {
+	position:fixed;
+	left:0;right:0;top:57px;
+	z-index:100;
+	background-color:#fff;
+}
 .box-depth .depth-cont {padding:0 10px 10px;}
-.box-depth {}
-.box-depth {}
+
+.box-depth .depth-cont .tab-area {
+	overflow:hidden;
+	padding-top:10px;
+}
+.box-depth .depth-cont .tab-area .item {
+	float:left;
+	position:relative;
+	width:50%;
+	height:44px;
+	margin:-1px -1px 0 0;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#f7f7f7;
+	color:#aaa;
+	font-size:15px;
+	text-align:center;
+	line-height:42px;
+}
+.box-depth .depth-cont .tab-area .item.on {
+	z-index:1;
+	border-color:#666;
+	background-color:#fff;
+	color:#333;
+}
+.box-depth .depth-cont .tab-cont {padding:10px 0;}
+.box-depth .depth-cont .tab-cont .thumb-list2 {display:none;}
+.box-depth .depth-cont .tab-cont .thumb-list2.on {display:block;}
+
+/* 이즈음 밥상 */
+.recipe-slide {}
+.recipe-slide .swiper-slide {}
+	.recipe-slide .swiper-slide {}
+.recipe-slide {}
