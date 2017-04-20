@@ -480,10 +480,10 @@ button {outline:0;vertical-align:top;}
 }
 /* 해더 뒤로가기 */
 .btn-back {
-	width:37px;
-	height:45px;
+	width:40px;
+	height:55px;
 	background-color:#fff;
-	background-position:0 -175px;
+	background-position:0 -206px;
 }
 
 /* 팝업 닫기 */
@@ -1149,9 +1149,7 @@ html.bg-gray {background-color:#f7f7f7;}
 	background-color:#fff;
 
 }
-.header .btn-back {
-	margin:2px 0 0 2px;
-}
+.header .btn-back {}
 .head-menu {
 	position:absolute;
 	left:40px;right:40px;top:0;
