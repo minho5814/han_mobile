@@ -981,12 +981,12 @@ select.styled1 {
 .tab-list1 .item .text {
 	display:block;
 	position:relative;
-	height:45px;
+	height:55px;
 	box-sizing:border-box;
 	color:#333;
-	font-size:13px;
+	font-size:15px;
 	text-align:center;
-	line-height:45px;
+	line-height:55px;
 }
 .tab-list1 .item.on .text {
 	border-bottom:2px solid #60b015;
@@ -1005,14 +1005,14 @@ select.styled1 {
 }
 .tab-list2 .item .text {
 	display:block;
-	height:35px;
+	height:42px;
 	box-sizing:border-box;
 	border-bottom:1px solid #333;
 	background-color:#eee;
-	color:#bbb;
-	font-size:13px;
+	color:#aaa;
+	font-size:15px;
 	text-align:center;
-	line-height:35px;
+	line-height:42px;
 }
 .tab-list2 .item.on .text {
 	border:1px solid #333;
