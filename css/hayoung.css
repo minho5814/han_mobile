@@ -18,21 +18,19 @@
 }
 
 /*조합원 가입*/
-.join-area .section {margin-top:15px;}
+.join-area .section {margin-top:12px;}
 .step-wrap {
 	overflow: hidden;
-	/*height:37px;*/
-	padding:15px 10px;
+	padding:17px 10px;
 	background-color:#f7f7f7;
 	box-sizing: border-box;
 
 }
 .step-wrap p {
-	height:21px;
-	line-height: 21px;
+	line-height: 25px;
 	float:left;
 	color:#333;
-	font-size:14px;
+	font-size:16px;
 
 }
 .step-list {
@@ -41,10 +39,10 @@
 }
 .step-list li {
 	float:left;
-	width:21px;
-	height:21px;
+	width:25px;
+	height:25px;
 	margin-left:5px;
-	line-height: 21px;
+	line-height: 23px;
 }
 .step-list li:first-child {margin-left: 0;}
 .step-list li span {
@@ -53,9 +51,9 @@
 	height: 100%;
 	background-color:#fff;
 	border:1px solid #bfbfbf;
-	border-radius: 10px;
+	border-radius: 50%;
 	color:#666;
-	font-size: 10px;
+	font-size: 12px;
 	text-align: center;
 	font-weight: bold;
 	box-sizing: border-box;
@@ -74,7 +72,7 @@
 /*주소검색 팝업*/
 .post-area {
 	overflow: hidden;
-	margin-bottom:5px;
+	margin-bottom:6px;
 }
 .post-area .box {
 	float:left;
@@ -86,35 +84,42 @@
 .search-area {}
 .result-area .no-result {
 	color: #aaa;
-	font-size:13px;
+	font-size:15px;
 	text-align: center;
-	line-height: 260px;
+	line-height: 120px;
+	background-color:#f7f7f7;
 }
 
 .post-result {
 	display: none;
+	margin-bottom:40px;
 }
 .post-result .scroll-box {
 	overflow-y:auto;
-	max-height:232px;
+	max-height:222px;
 	border-top:1px solid #bbb;
 	border-bottom:1px solid #bbb;
 }
 .post-result .result-title {
+	position: relative;
 	overflow: hidden;
-	border-bottom:1px solid #bbb;
+	padding-left:70px;
+	border-top:1px solid #bbb;
 	background-color:#f7f7f7;
 }
 .post-result .result-title .title {
-	float:left;
-	width:78%;
-	height:40px;
+	height:43px;
 	color:#333;
 	font-size:15px;
-	line-height:40px;
+	line-height:43px;
 	text-align: center;
 }
-.post-result .result-title .title:first-child {width:22%}
+.post-result .result-title .title:first-child {
+	position: absolute;
+	top:0; left:0;
+	width:70px;
+	height: 43px;
+}
 .post-result .result-list .item {
 	display:block;
 	position:relative;
@@ -128,15 +133,15 @@
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:22%;
+	width:70px;
 	color:#666;
 	font-size:15px;
 	text-align:center;
-	line-height:65px;
+	line-height:64px;
 }
 .post-result .result-list .address-area {
 	width:100%;
-	padding:14px 7px 14px 22%;
+	padding:11px 7px 11px 70px;
 	box-sizing: border-box;
 }
 .post-result .result-list .address-area .address {
@@ -156,8 +161,8 @@
 .post-info-area p {
 	margin-top:9px;
 	color:#aaa;
-	font-size: 13px;
-	line-height: 16px;
+	font-size: 15px;
+	line-height: 22px;
 }
 .post-info-area p:first-child {margin-top:0; }
 
@@ -168,7 +173,7 @@
 	border-bottom:1px solid #bbb;
 }
 .term-list li {
-	padding:8px 10px;
+	padding:6px 10px;
 	border-top:1px solid #ddd;
 }
 .term-list li:first-child {border-top:0;}
@@ -181,33 +186,35 @@
 	float: left;
 	display: block;
 	margin:3px 0;
-	line-height: 20px;
+	font-size:15px;
+	line-height: 25px;
 }
 .term-list li label input {margin-right:5px;}
 .term-list li a {
 	float: right;
 }
 
-.tit-wrap {margin-bottom:6px; position: relative;}
+.tit-wrap {margin-bottom:2px; position: relative;}
 
 .tit-wrap .left {}
 .tit-wrap .right {position: absolute; right:0; bottom:0;}
-.tit-wrap .right.check-list label{line-height: 20px;}
-.tit-wrap .right.check-list label input {margin-right:5px}
+.tit-wrap .right.check-list label{line-height: 25px;}
+.tit-wrap .right.check-list label input {margin-right:7px}
 
 /*지역한살림 자세히알기 팝업*/
 .board1 .tit {
-	height:40px;
+	padding:10px 0;
 	background-color:#f7f7f7;
 	color: #333;
 	border-top:1px solid #bbb;
 	text-align: center;
 }
 .board1 .tit .bg-logo {
-	line-height: 40px;
+	line-height: 20px;
 	background:url(../img/bg/bg_logo.png) no-repeat left center;
 	background-size:20px 18px;
 	padding-left:26px;
+	font-size:15px;
 }
 
 /*한살림소개 동영상*/

@@ -208,10 +208,10 @@ html.no-scroll {
 	border:1px solid #e3e3e3;
 }
 .box-content1 .box-title {
-	padding:10px 10px 10px 31px;
+	padding:11px 10px 11px 31px;
 	box-sizing:border-box;
 	border-bottom:1px solid #ddd;
-	background:url(../img/ico/ico_exclamation.png) no-repeat 11px 11px;
+	background:url(../img/ico/ico_exclamation.png) no-repeat 11px 12px;
 	background-size:15px 15px;
 	color:#666;
 	font-size:14px;
@@ -284,13 +284,14 @@ html.no-scroll {
 }
 .box-content2 p {
 	position:absolute;
-	top:0;left:9px;
+	top:0;left:10px;
 	height:50px;
+	font-size:15px;
 	line-height:50px;
 }
 .box-content2 a {
 	position:absolute;
-	right:9px;top:10px;
+	right:10px;top:9px;
 }
 
 .box-content3 {
@@ -310,6 +311,7 @@ html.no-scroll {
 	position:absolute;
 	top:2px;right:0;
 }
+.title-wrap .text {font-size:15px;}
 
 .cTitle01 {
 	color:#333;
@@ -428,7 +430,7 @@ html.no-scroll {
 /* --------------------------------------------------------------------------------------------
 	정렬
 -------------------------------------------------------------------------------------------- */
-.btn-area {margin-top:25px;}
+.btn-area {margin-top:30px;}
 
 /* --------------------------------------------------------------------------------------------
 	텍스트
@@ -1002,13 +1004,12 @@ select.styled1 {
 	margin-bottom:8px;
 	padding-left:18px;
 	color:#666;
-	font-size:11px;
-	line-height:11px;
+	font-size:13px;
 }
 .bullet-text2:before {
 	content:'';
 	position:absolute;
-	left:0;top:0;
+	left:0;top:2px;
 	width:13px;
 	height:13px;
 	background:url(../img/ico/ico_exclamation.png) no-repeat;
@@ -1107,7 +1108,7 @@ select.styled1 {
 }
 .board1 th,
 .board1 td {
-	padding:12px;
+	padding:10px;
 	border-top:1px solid #ddd;
 	font-size:15px;
 	text-align:left;
@@ -1516,15 +1517,15 @@ html.bg-gray {background-color:#f7f7f7;}
 /* --------------------------------------------------------------------------------------------
 	컨테이너
 -------------------------------------------------------------------------------------------- */
-.container {padding-top:56px;}
+.container {padding:56px 0 20px;}
 
 /* 컨텐츠 박스 */
 .white-content1 {
-	padding:10px 10px 20px;
+	padding:12px 10px 10px;
 	background-color:#fff;
 }
 .white-content2 {
-	padding:25px 12px;
+	padding:20px 12px;
 	background-color:#fff;
 }
 
@@ -1945,28 +1946,26 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* --------------------------------------------------------------------------------------------
 	조합원가입
 -------------------------------------------------------------------------------------------- */
-.join-info {padding-bottom:20px;}
 .join-info .title {
 	color:#666;
 	font-size:15px;
 	line-height:17px;
 }
 .join-info dt {
-	margin-top:20px;
+	margin-top:15px;
 	color:#333;
-	font-size:17px;
+	font-size:16px;
 	font-weight:bold;
-	line-height:22px;
 }
 .join-info dd {
-	margin-top:10px;
+	margin-top:4px;
 	font-size:15px;
 	line-height:22px;
 }
 
 .join-info .join-bg {
 	margin-top:11px;
-	padding:142px 0 23px;
+	padding:142px 0 28px;
 	background:url(../img/img/img_join_bg.png) no-repeat 50% 0;
 	background-size:139px 127px;
 }
