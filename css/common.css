@@ -401,14 +401,14 @@ button {outline:0;vertical-align:top;}
 	line-height:55px;
 }
 .btn-h55.btn-text-line1 {line-height:53px;}
-/* height 35 */
+/* height 42 */
 .btn-h42 {
 	height:42px;
 	font-size:14px;
 	line-height:42px;
 }
 .btn-h42.btn-text-line1 {line-height:40px;}
-/* height 25 */
+/* height 30 */
 .btn-h30 {
 	width:auto;
 	height:30px;
@@ -416,8 +416,8 @@ button {outline:0;vertical-align:top;}
 	font-size:13px;
 	line-height:30px;
 }
-.btn-h25.btn-text-line1 {line-height:28px;}
-.btn-h25.type2 {padding:0 10px;}
+.btn-h30.btn-text-line1 {line-height:28px;}
+.btn-h30.type2 {padding:0 10px;}
 
 /* green */
 .btn-text-green1 {
