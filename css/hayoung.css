@@ -18,7 +18,7 @@
 }
 
 /*조합원 가입*/
-.join-area .section {margin-top:15px;}
+.join-area .section {margin-top:12px;}
 .step-wrap {
 	overflow: hidden;
 	padding:17px 10px;
@@ -82,7 +82,6 @@
 .post-area .box:first-child {padding-left:0}
 
 .search-area {}
-.result-area {margin-bottom:10px;}
 .result-area .no-result {
 	color: #aaa;
 	font-size:15px;
@@ -162,8 +161,8 @@
 .post-info-area p {
 	margin-top:9px;
 	color:#aaa;
-	font-size: 13px;
-	line-height: 16px;
+	font-size: 15px;
+	line-height: 22px;
 }
 .post-info-area p:first-child {margin-top:0; }
 
@@ -174,7 +173,7 @@
 	border-bottom:1px solid #bbb;
 }
 .term-list li {
-	padding:8px 10px;
+	padding:6px 10px;
 	border-top:1px solid #ddd;
 }
 .term-list li:first-child {border-top:0;}
@@ -187,18 +186,19 @@
 	float: left;
 	display: block;
 	margin:3px 0;
-	line-height: 20px;
+	font-size:15px;
+	line-height: 25px;
 }
 .term-list li label input {margin-right:5px;}
 .term-list li a {
 	float: right;
 }
 
-.tit-wrap {margin-bottom:6px; position: relative;}
+.tit-wrap {margin-bottom:2px; position: relative;}
 
 .tit-wrap .left {}
 .tit-wrap .right {position: absolute; right:0; bottom:0;}
-.tit-wrap .right.check-list label{line-height: 20px;}
+.tit-wrap .right.check-list label{line-height: 25px;}
 .tit-wrap .right.check-list label input {margin-right:5px}
 
 /*지역한살림 자세히알기 팝업*/
