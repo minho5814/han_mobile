@@ -496,9 +496,9 @@ button {outline:0;vertical-align:top;}
 
 /* 툴팁 */
 .btn-tooltip {
-	width:18px;
-	height:18px;
-	background-position:0 -280px;
+	width:20px;
+	height:20px;
+	background-position:0 -337px;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -532,12 +532,12 @@ button {outline:0;vertical-align:top;}
 	background-color:#fff;
 }
 .btn-like:before {
-	width:17px;
-	height:16px;
-	background-position:0 -125px;
+	width:19px;
+	height:19px;
+	background-position:0 -262px;
 }
 .btn-like.on {border-color:#60b015;}/* on */
-.btn-like.on:before {background-position:0 -142px;}/* on */
+.btn-like.on:before {background-position:0 -282px;}/* on */
 
 /* 장바구니 */
 .btn-cart {
@@ -545,9 +545,9 @@ button {outline:0;vertical-align:top;}
 	background-color:#60b015;
 }
 .btn-cart:before {
-	width:17px;
-	height:15px;
-	background-position:0 -159px;
+	width:19px;
+	height:19px;
+	background-position:0 -302px;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -557,7 +557,7 @@ button {outline:0;vertical-align:top;}
 .btn-link-more {
 	display:block;
 	width:100%;
-	height:31px;
+	height:40px;
 	box-sizing:border-box;
 	border-radius:3px;
 	border:1px solid #ddd;
@@ -567,11 +567,11 @@ button {outline:0;vertical-align:top;}
 .btn-link-more .text {
 	display:inline-block;
 	position:relative;
-	height:29px;
-	padding-right:10px;
-	color:#aaa;
-	font-size:11px;
-	line-height:29px;
+	height:38px;
+	padding-right:13px;
+	color:#666;
+	font-size:14px;
+	line-height:38px;
 }
 .btn-link-more .text:before {
 	content:'';
@@ -580,16 +580,16 @@ button {outline:0;vertical-align:top;}
 	-webkit-transform:translateY(-50%) rotate(45deg);
 	-ms-transform:translateY(-50%) rotate(45deg);
 	transform:translateY(-50%) rotate(45deg);
-	width:6px;
-	height:6px;
-	border-top:1px solid #bbb;
-	border-right:1px solid #bbb;
+	width:8px;
+	height:8px;
+	border-top:1px solid #666;
+	border-right:1px solid #666;
 }
 /* 물품 더보기 */
 .btn-goods-more {
 	display:block;
 	width:100%;
-	height:35px;
+	height:40px;
 	margin-top:10px;
 	box-sizing:border-box;
 	border-radius:3px;
@@ -600,11 +600,10 @@ button {outline:0;vertical-align:top;}
 .btn-goods-more .text {
 	display:inline-block;
 	position:relative;
-	height:33px;
-	padding-right:15px;
-	color:#aaa;
-	font-size:11px;
-	line-height:33px;
+	padding-right:18px;
+	color:#666;
+	font-size:14px;
+	line-height:40px;
 }
 .btn-goods-more .text:before {
 	content:'';
@@ -613,11 +612,11 @@ button {outline:0;vertical-align:top;}
 	-webkit-transform:translateY(-50%) rotate(45deg);
 	-ms-transform:translateY(-50%) rotate(45deg);
 	transform:translateY(-50%) rotate(45deg);
-	width:6px;
-	height:6px;
-	margin-top:-2px;
-	border-bottom:1px solid #bbb;
-	border-right:1px solid #bbb;
+	width:8px;
+	height:8px;
+	margin-top:-3px;
+	border-bottom:1px solid #666;
+	border-right:1px solid #666;
 }
 /* 전화상담 */
 .btn-call {
@@ -646,9 +645,9 @@ button {outline:0;vertical-align:top;}
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:12px;
-	height:12px;
-	background:url(../img/sprite_btn.png) no-repeat 0 -221px;
+	width:14px;
+	height:14px;
+	background:url(../img/sprite_btn.png) no-repeat 0 -322px;
 	background-size:50px 500px;
 }
 
@@ -1309,7 +1308,7 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 .btm-fix-menu .btn-list .btn3:before {background-position:0 -42px;}
 .btm-fix-menu .btn-list .btn .len {
 	position:absolute;
-	left:50%;top:3px;
+	left:50%;top:4px;
 	width:20px;
 	height:20px;
 	-webkit-transform:translateX(-50%);
@@ -1449,8 +1448,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list1 .box:first-child {border-top:0;}
 .thumb-list1 .box .link {
 	display:block;
-	height:123px;
-	padding-left:110px;
+	height:144px;
+	padding-left:130px;
 }
 .thumb-list1 .box .img-area {
 	overflow:hidden;
@@ -1459,29 +1458,29 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:104px;
-	height:104px;
+	width:120px;
+	height:120px;
 }
-.thumb-list1 .box .text-area {padding-top:20px;}
+.thumb-list1 .box .text-area {padding-top:22px;}
 .thumb-list1 .box .text-area .name {
-	height:32px;
+	height:36px;
 	color:#666;
-	font-size:11px;
-	line-height:16px;
+	font-size:14px;
+	line-height:18px;
 }
 .thumb-list1 .box .text-area .price {
 	color:#333;
-	font-size:11px;
-	line-height:24px;
+	font-size:13px;
+	line-height:28px;
 }
 .thumb-list1 .box .text-area .price .number {
-	font-size:15px;
+	font-size:18px;
 	font-weight:bold;
 }
 .thumb-list1 .box .btn-list {
 	overflow:hidden;
 	position:absolute;
-	left:108px;right:-2px;bottom:12px;
+	left:130px;right:-2px;bottom:12px;
 }
 .thumb-list1 .box .btn-list .item {
 	float:left;
