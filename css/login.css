@@ -26,6 +26,11 @@
 	color:#666;
 	vertical-align: top;
 }
+@media only screen and (max-width: 320px) {
+	.login-global .login-find span {
+		margin:0 14px 0 13px;
+	}
+}
 .login-global .login-find span:first-child {margin-left:0;}
 .login-global .login-find span:last-child {margin-right:0;}
 .login-global .login-find span:before {
@@ -35,6 +40,11 @@
 	width:1px; height:14px;
 	background-color:#ddd;
 	transform: translateY(-50%);
+}
+@media only screen and (max-width: 320px) {
+	.login-global .login-find span:before {
+		left:-14px;
+	}
 }
 .login-global .login-find span:first-child:before{
 	display: none;
