@@ -44,19 +44,21 @@
 .login-wrap .form-area.on {display: block;}
 
 .result-info {
-	padding:13px 20px;
+	padding:15px 20px;
 	background-color:#eee;
 }
 .result-info li {
 	overflow: hidden;
 	position:relative;
+	margin-top:5px;
 }
+.result-info li:first-child {margin-top:0;}
 .result-info dt {
 	position: absolute;
 	top:0; left:0;
 	width:105px;
 	padding-left:6px;
-	font-size:13px;
+	font-size:15px;
 	color:#333;
 	font-weight: bold;
 	line-height: 25px;
@@ -70,7 +72,7 @@
 }
 .result-info dd {
 	margin-left:105px;
-	font-size:13px;
+	font-size:15px;
 	color:#666;
 	line-height: 25px;
 	word-break: break-all;
@@ -163,39 +165,44 @@
 }
 
 .text-box02 {
-	padding:15px;
+	padding:20px;
 	background-color:#eee;
 }
 
-.text-box02 .title {
-	margin:-2px 0 6px;
-	font-size:13px;
+.text-box02 dl .title {
+	margin:-2px 0 5px;
+	font-size:15px;
 	color:#333;
-	font-weight: bold;
 }
-.text-box02 .text {
-	margin-bottom:6px;
-	font-size:11px;
+.text-box02 dl .text {
+	font-size:13px;
 	color:#666;
+	line-height: 18px;
 }
 .text-box02 .bullet-text {
 	position: relative;
 	margin-bottom:6px;
 	padding-left:6px;
-	font-size:11px;
+	font-size:13px;
 	color:#666;
 }
 .text-box02 .bullet-text:before {
 	content:'';
 	position: absolute;
-	top:5px; left:0;
+	top:6px; left:0;
 	width:2px; height: 2px;
 	background-color: #666;
 }
 .text-box02 .btn-box {
 	margin-top:10px;
 }
-
+.text-box02 .price-wrap .item {margin-left:15px;}
+.text-box02 .price-wrap .item:first-child {
+	margin-left:0;
+}
+.text-box02 .price-wrap .item em {
+	font-weight: bold;
+}
 .list-box .title {
 	position: relative;
 	margin-top:5px;
