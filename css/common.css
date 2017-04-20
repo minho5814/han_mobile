@@ -470,6 +470,11 @@ html.no-scroll {
 	font-size:13px;
 	line-height:30px;
 }
+@media only screen and (max-width: 320px) {
+	.btn-h30 {
+		padding:0 8px;
+	}
+}
 .btn-h30.btn-text-line1 {line-height:28px;}
 .btn-h30.type2 {padding:0 10px;}
 
@@ -888,6 +893,14 @@ select.styled1 {
 	line-height:25px;
 }
 .check-list label input {margin-right:5px;}
+@media only screen and (max-width: 320px) {
+	.check-list label {
+		margin-left:8px;
+	}
+	.check-list label:nth-child(3n+1) {
+		margin-left:17px;
+	}
+}
 
 .radio-list {
 	margin-left:-17px;
