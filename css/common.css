@@ -861,7 +861,7 @@ select.styled1 {
 }
 .email-area .box {
 	float:left;
-	width:35%;
+	width:34%;
 	padding-left:4px;
 	box-sizing:border-box;
 }
@@ -876,7 +876,7 @@ select.styled1 {
 	line-height: 1;
 }
 .email-area .box:last-child {
-	width:30%;
+	width:32%;
 }
 
 /* 체크박스/라디오 리스트 */
