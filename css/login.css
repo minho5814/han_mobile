@@ -99,7 +99,7 @@
 	text-align: center;
 }
 .find-sms {
-	background:url(../img/bg/bg_sms.png) 50% 25px no-repeat;
+	background:url(../img/bg/bg_phone.png) 50% 25px no-repeat;
 	background-size:85px;
 }
 
@@ -109,7 +109,7 @@
 }
 
 .find-ipin {
-	background:url(../img/bg/bg_ipin.png) 50% 20px no-repeat;
+	background:url(../img/bg/bg_ipin.png) 50% 25px no-repeat;
 	background-size:85px;
 }
 
@@ -259,7 +259,7 @@
 }
 
 .title-box .cTitle01 + .top-info {
-	margin:-3px 0 15px;
+	margin:0 0 12px;
 }
 
 .joing-step {
