@@ -1,14 +1,15 @@
 @charset "utf-8";
 /* MW-JO0601.html */
 .complete-area .text-grey {
-	font-size:11px;
+	font-size:15px;
 	color:#666;
-	line-height:15px;
+	line-height:18px;
 	text-align:center;
 }
 .sign-area {}
 .sign-area .sign-title {
 	position:relative;
+	margin-top:15px;
 	padding-bottom:8px;
 	font-size:19px;
 	color:#239bd2;
@@ -21,7 +22,7 @@
 	left:50%; bottom:0;
 	display:block;
 	width:35px;
-	height:1px;
+	height:2px;
 	margin-left:-17.5px;
 	background-color:#bbb;
 }
@@ -45,7 +46,7 @@
 	width:33.33%;
 	height:120px;
 	padding:13px 10px 22px 10px;
-	border:1px solid #ddd;
+	border:1px solid #eee;
 	border-left:0;
 	box-sizing:border-box;
 }
@@ -53,7 +54,7 @@
 	position:relative;
 	padding-bottom:10px;
 	border-bottom:1px solid #ddd;
-	font-size:13px;
+	font-size:15px;
 	color:#333;
 	line-height:15px;
 }
@@ -69,12 +70,12 @@
 }
 .sign-area .news-list .item-news dd {
 	margin-top:8px;
-	font-size:9px;
+	font-size:11px;
 	color:#666;
-	line-height:12px;
+	line-height:15px;
 }
 .sns-area {
-	margin-top:5px;
+	margin-top:10px;
 	background-color:#fff;
 }
 .sns-area .sns-list {}
@@ -106,7 +107,7 @@
 }
 .sns-area .sns-list .item-sns a {
 	display:block;
-	font-size:11px;
+	font-size:13px;
 	color:#666;
-	line-height:12px;
+	line-height:11px;
 }
