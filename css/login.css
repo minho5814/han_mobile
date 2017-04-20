@@ -79,14 +79,13 @@
 }
 .send-select {
 	overflow: hidden;
-	margin-top:7px;
-	border:1px solid #bbb;
+	border:1px solid #ddd;
 	border-radius: 5px;
 }
 .send-select li {
 	float:left;
 	width:50%;
-	border-left:1px solid #bbb;
+	border-left:1px solid #ddd;
 	box-sizing: border-box;
 }
 .send-select li:first-child {border-left:0;}
@@ -94,7 +93,7 @@
 	display: block;
 	width:100%;
 	margin: 0 auto;
-	padding:125px 0 22px;
+	padding:125px 0 25px;
 	font-size:15px;
 	color:#333;
 	text-align: center;
@@ -111,7 +110,7 @@
 
 .find-ipin {
 	background:url(../img/bg/bg_ipin.png) 50% 20px no-repeat;
-	background-size:69px;
+	background-size:85px;
 }
 
 .search-id-link {
@@ -260,7 +259,7 @@
 }
 
 .title-box .cTitle01 + .top-info {
-	margin:-3px 0 11px;
+	margin:-3px 0 15px;
 }
 
 .joing-step {

@@ -293,6 +293,9 @@ html.no-scroll {
 	position:absolute;
 	right:10px;top:9px;
 }
+@media only screen and (max-width: 320px) {
+	.box-content2 p {font-size:13px;}
+}
 
 .box-content3 {
 	padding:10px;
@@ -321,7 +324,7 @@ html.no-scroll {
 }
 .cTitle02 {
 	color:#333;
-	font-size:12px;
+	font-size:13px;
 	line-height:23px;
 }
 .cTitle03 {

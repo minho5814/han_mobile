@@ -74,6 +74,11 @@
 	color:#666;
 	line-height:15px;
 }
+@media only screen and (max-width: 320px) {
+	.sign-area .news-list .item-news dd {
+		font-size:10px;
+	}
+}
 .sns-area {
 	margin-top:10px;
 	background-color:#fff;
