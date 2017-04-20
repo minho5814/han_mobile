@@ -79,13 +79,13 @@
 }
 .send-select {
 	overflow: hidden;
-	border:1px solid #bbb;
+	border:1px solid #ddd;
 	border-radius: 5px;
 }
 .send-select li {
 	float:left;
 	width:50%;
-	border-left:1px solid #bbb;
+	border-left:1px solid #ddd;
 	box-sizing: border-box;
 }
 .send-select li:first-child {border-left:0;}
@@ -93,14 +93,14 @@
 	display: block;
 	width:100%;
 	margin: 0 auto;
-	padding:105px 0 20px;
-	font-size:13px;
+	padding:125px 0 25px;
+	font-size:15px;
 	color:#333;
 	text-align: center;
 }
 .find-sms {
-	background:url(../img/bg/bg_sms.png) 50% 20px no-repeat;
-	background-size:69px;
+	background:url(../img/bg/bg_sms.png) 50% 25px no-repeat;
+	background-size:85px;
 }
 
 .find-email {
@@ -110,7 +110,7 @@
 
 .find-ipin {
 	background:url(../img/bg/bg_ipin.png) 50% 20px no-repeat;
-	background-size:69px;
+	background-size:85px;
 }
 
 .search-id-link {
@@ -248,14 +248,14 @@
 .top-info {
 	margin:7px 0 16px;
 	text-align: center;
-	font-size:13px;
+	font-size:15px;
 	color:#666;
 	line-height: 19px;
 	letter-spacing: -0.5px;
 }
 
 .title-box .cTitle01 + .top-info {
-	margin:-3px 0 11px;
+	margin:-3px 0 15px;
 }
 
 .joing-step {
