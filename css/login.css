@@ -165,14 +165,15 @@
 }
 
 .text-box02 {
-	padding:20px;
+	padding:15px;
 	background-color:#eee;
 }
 
 .text-box02 dl .title {
-	margin:-2px 0 5px;
+	margin:-2px 0 10px;
 	font-size:15px;
 	color:#333;
+	font-weight: bold;
 }
 .text-box02 dl .text {
 	font-size:13px;
@@ -194,7 +195,7 @@
 	background-color: #666;
 }
 .text-box02 .btn-box {
-	margin-top:10px;
+	margin-top:8px;
 }
 .text-box02 .price-wrap .item {margin-left:15px;}
 .text-box02 .price-wrap .item:first-child {
@@ -205,9 +206,9 @@
 }
 .list-box .title {
 	position: relative;
-	margin-top:5px;
+	margin-top:10px;
 	padding-left:6px;
-	font-size:13px;
+	font-size:15px;
 	color:#666;
 	font-weight:bold;
 	line-height: 24px;
@@ -221,29 +222,32 @@
 }
 .list-box .text {
 	margin:3px 0 8px;
+	font-size:15px;
+	line-height: 22px;
 }
 .list-box .sub-list li {
 	margin-top:3px;
-	font-size:13px;
+	font-size:15px;
 	color:#666;
 }
 .list-box .sub-list li .num {
 	display: inline-block;
-	width:12px; height:12px;
+	width:15px; height:15px;
 	border:1px solid #666;
 	border-radius:50%;
-	font-size:11px;
-	line-height: 10px;
+	font-size:12px;
+	line-height: 13px;
 	text-align: center;
 	box-sizing: border-box;
+	vertical-align: 1px;
 }
 .list-box {}
 
 .text-area {
-	margin-top:5px;
+	margin-top:3px;
 	color:#666;
-	font-size:13px;
-	line-height: 19px;
+	font-size:14px;
+	line-height: 22px;
 }
 .top-info {
 	margin:7px 0 16px;
@@ -336,15 +340,16 @@
 }
 .text-btn-wrap .text {
 	float:left;
-	font-size:11px;
+	font-size:15px;
 	color:#666;
-	line-height: 25px;
+	line-height: 30px;
 }
 .text-btn-wrap .btn-wrap {
 	float: right;
 }
 
 .system-table {
+	margin:7px 0 22px;
 	padding:15px 10px;
 	background-color:#f7f7f7;
 }
@@ -356,27 +361,28 @@
 .query-list {margin-top:10px;}
 .query-list .title {
 	margin:18px 0 8px;
-	font-size:13px;
+	font-size:15px;
 	color:#666;
-	line-height: 19px;
+	line-height: 22px;
 }
 .query-list li:first-child .title {margin-top:0;}
 .query-list .title .num {
 	display: inline-block;
-	width:12px; height:12px;
+	width:15px; height:15px;
 	border:1px solid #666;
 	border-radius:50%;
-	font-size:11px;
-	line-height: 10px;
+	font-size:12px;
+	line-height: 13px;
 	text-align: center;
 	box-sizing: border-box;
+	vertical-align: 1px;
 }
 .query-list .title .blank {
 	display: inline-block;
-	width:20px;
+	width:24px;
 	color:#239bd2;
 	text-align: center;
-	line-height: 15px;
+	line-height: 18px;
 	border:1px solid #bbb;
 	box-sizing: border-box;
 	vertical-align: top;
