@@ -175,6 +175,7 @@ html.no-scroll {
 .pdT0 {padding-top:0 !important;}
 .pdT5 {padding-top:5px !important;}
 
+
 /* 텍스트 정렬 */
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
@@ -245,7 +246,7 @@ html.no-scroll {
 	background-color:#666;
 }
 .box-cont .item:first-child {margin-top:0;}
-.box-content1 .box-btn {padding:0 10px 10px;}
+.box-content1 .box-btn {padding:0 10px 15px;}
 .box-content1 .item .btn-wrap {
 	display: block;
 	margin:7px 0 7px;

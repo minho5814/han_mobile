@@ -269,8 +269,8 @@
 	position: relative;
 	float: left;
 	width:33%;
-	padding-top:70px;
-	font-size:11px;
+	padding-top:84px;
+	font-size:13px;
 	color:#666;
 	text-align: center;
 }
@@ -282,32 +282,32 @@
 
 .joing-step li.step01 {
 	background:url(../img/bg/ico_join01_off.png) 50% 0 no-repeat;
-	background-size:60px 60px;
+	background-size:70px 70px;
 }
 .joing-step li.step01.on {
 	background:url(../img/bg/ico_join01.png) 50% 0 no-repeat;
-	background-size:60px 60px;
+	background-size:70px 70px;
 }
 .joing-step li.step02 {
 	background:url(../img/bg/ico_join02_off.png) 50% 0 no-repeat;
-	background-size:60px 60px;
+	background-size:70px 70px;
 }
 .joing-step li.step02.on {
 	background:url(../img/bg/ico_join02.png) 50% 0 no-repeat;
-	background-size:60px 60px;
+	background-size:70px 70px;
 }
 .joing-step li.step03 {
 	background:url(../img/bg/ico_join03_off.png) 50% 0 no-repeat;
-	background-size:60px 60px;
+	background-size:70px 70px;
 }
 .joing-step li.step03.on {
 	background:url(../img/bg/ico_join03.png) 50% 0 no-repeat;
-	background-size:60px 60px;
+	background-size:70px 70px;
 }
 .joing-step li:after {
 	content: '';
 	position: absolute;
-	top:24px; right:-4px;
+	top:30px; right:-4px;
 	width:8px; height:13px;
 	background:url(../img/ico/ico_16x26_arrow.png) 0 0 no-repeat;
 	background-size: 8px 13px;
@@ -321,6 +321,10 @@
 .complete-area {
 	padding-top:124px;
 	background:url(../img/bg/bg_order_complete.png) 50% 10px no-repeat;
+	background-size:85px 109px;
+}
+.complete-area.type2 {
+	background:url(../img/bg/bg_order_complete2.png) 50% 10px no-repeat;
 	background-size:75px 96px;
 }
 .complete-area .text-green {
