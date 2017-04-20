@@ -1019,6 +1019,23 @@ select.styled1 {
 	background-size:13px 13px;
 }
 
+/* 해시태그 */
+.hashtag-area {
+	overflow:hidden;
+	padding:0 16px;
+	margin:-4px 0 0 -4px;
+}
+.hashtag-area .hashtag {
+	float:left;
+	height:24px;
+	margin:4px 0 0 4px;
+	padding:0 7px;
+	border:1px solid #ddd;
+	color:#666;
+	font-size:13px;
+	line-height:24px;
+}
+
 /* 탭 01 */
 .tab-list1 {
 	overflow:hidden;
@@ -1203,7 +1220,7 @@ html.bg-gray {background-color:#f7f7f7;}
 .head-menu {
 	position:absolute;
 	left:40px;right:40px;top:0;
-	height:55px;
+	height:56px;
 	border-right:1px solid #ddd;
 	border-left:1px solid #ddd;
 }
@@ -1219,7 +1236,7 @@ html.bg-gray {background-color:#f7f7f7;}
 	color:#333;
 	font-size:15px;
 	text-align:center;
-	line-height:55px;
+	line-height:56px;
 }
 .head-menu .swiper-slide .link .text {
 	display:inline-block;
@@ -1238,7 +1255,7 @@ html.bg-gray {background-color:#f7f7f7;}
 .head-menu .btn-prev,
 .head-menu .btn-next {
 	position:absolute;
-	top:0;bottom:0;
+	top:0;bottom:1px;
 	z-index:1;
 	width:7px;
 	background:url(../img/bg/bg_y_gradient.png) repeat-y;
@@ -1798,7 +1815,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list2 .box .link {
 	display:block;
-	padding:15px 18px 0;
+	padding:15px 0 0;
 	border:1px solid #ddd;
 	border-bottom:0;
 }
@@ -1811,6 +1828,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	margin-top:7px;
 	height:90px;
 	text-align:center;
+	padding:0 18px;
 }
 .thumb-list2 .box .text-area .name {
 	height:30px;
@@ -1942,6 +1960,29 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .campaign-slide .swiper-slide {width:220px;}
 .campaign-slide .swiper-slide:first-child {margin-left:10px;}
 .campaign-slide .swiper-slide:last-child {margin-right:10px;}
+
+/* 요리 박스 */
+.recipe-box {
+	padding-bottom:15px;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.recipe-box .link {display:block;}
+.recipe-box .img-area {}
+.recipe-box .text-area {
+	margin-top:12px;
+	padding:0 16px 11px;
+	color:#333;
+}
+.recipe-box .text-area .text {
+	font-size:13px;
+	line-height:17px;
+}
+.recipe-box .text-area .title {
+	font-size:21px;
+	font-weight:bold;
+	line-height:27px;
+}
 
 /* ============================================================================================
 	sub
