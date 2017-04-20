@@ -1419,11 +1419,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 공통 물품딱지 */
 .ico-label {
 	display:inline-block;
-	width:33px;
-	height:30px;
+	width:39px;
+	height:35px;
 	background-image:url(../img/sprite_label.png);
 	background-repeat:no-repeat;
-	background-size:33px 30px;
+	background-size:39px 35px;
 	font-size:0;
 	text-indent:-9999px;
 	vertical-align:top;
@@ -1493,7 +1493,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 02 */
 .thumb-list2 .box .ico-label {
 	position:absolute;
-	left:18px;top:14px;
+	left:30px;top:15px;
 	z-index:1;
 }
 .thumb-list2 {
@@ -1509,40 +1509,41 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list2 .box .link {
 	display:block;
-	padding:13px 18px 0;
+	padding:15px 18px 0;
 	border:1px solid #ddd;
 	border-bottom:0;
 }
 .thumb-list2 .box .img-area {
-	width:110px;
-	height:110px;
+	width:130px;
+	height:130px;
 	margin:0 auto;
 }
 .thumb-list2 .box .text-area {
-	height:76px;
+	margin-top:7px;
+	height:90px;
 	text-align:center;
 }
 .thumb-list2 .box .text-area .name {
-	height:28px;
+	height:30px;
 	color:#666;
-	font-size:11px;
-	line-height:14px;
+	font-size:13px;
+	line-height:15px;
 }
 .thumb-list2 .box .text-area .price {
-	margin-top:4px;
+	margin-top:6px;
 	color:#333;
-	font-size:11px;
-	line-height:20px;
+	font-size:14px;
+	line-height:23px;
 }
 .thumb-list2 .box .text-area .price .number {
-	font-size:15px;
+	font-size:20px;
 	font-weight:bold;
 }
 .thumb-list2 .box .text-area .price-del {
 	color:#bbb;
-	font-size:11px;
+	font-size:13px;
 	text-decoration:line-through;
-	line-height:13px;
+	line-height:16px;
 }
 .thumb-list2 .box .btn-list {overflow:hidden;}
 .thumb-list2 .box .btn-list .item {
