@@ -1660,6 +1660,7 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 .floating-btn-area {
 	position:fixed;
 	left:0;right:0;bottom:56px;
+	z-index:100;
 	-webkit-transition:all .2s;
 	-ms-transition:all .2s;
 	transition:all .2s;
