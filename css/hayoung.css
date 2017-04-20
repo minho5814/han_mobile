@@ -74,7 +74,7 @@
 /*주소검색 팝업*/
 .post-area {
 	overflow: hidden;
-	margin-bottom:5px;
+	margin-bottom:6px;
 }
 .post-area .box {
 	float:left;
@@ -84,37 +84,46 @@
 .post-area .box:first-child {padding-left:0}
 
 .search-area {}
+.result-area {margin-bottom:10px;}
 .result-area .no-result {
+	margin-bottom:30px;
 	color: #aaa;
-	font-size:13px;
+	font-size:15px;
 	text-align: center;
-	line-height: 260px;
+	line-height: 120px;
+	background-color:#f7f7f7;
 }
 
 .post-result {
 	display: none;
+	margin-bottom:40px;
 }
 .post-result .scroll-box {
 	overflow-y:auto;
-	max-height:232px;
+	max-height:222px;
 	border-top:1px solid #bbb;
 	border-bottom:1px solid #bbb;
 }
 .post-result .result-title {
+	position: relative;
 	overflow: hidden;
-	border-bottom:1px solid #bbb;
+	padding-left:70px;
+	border-top:1px solid #bbb;
 	background-color:#f7f7f7;
 }
 .post-result .result-title .title {
-	float:left;
-	width:78%;
-	height:40px;
+	height:43px;
 	color:#333;
 	font-size:15px;
-	line-height:40px;
+	line-height:43px;
 	text-align: center;
 }
-.post-result .result-title .title:first-child {width:22%}
+.post-result .result-title .title:first-child {
+	position: absolute;
+	top:0; left:0;
+	width:70px;
+	height: 43px;
+}
 .post-result .result-list .item {
 	display:block;
 	position:relative;
@@ -128,15 +137,15 @@
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:22%;
+	width:70px;
 	color:#666;
 	font-size:15px;
 	text-align:center;
-	line-height:65px;
+	line-height:64px;
 }
 .post-result .result-list .address-area {
 	width:100%;
-	padding:14px 7px 14px 22%;
+	padding:11px 7px 11px 70px;
 	box-sizing: border-box;
 }
 .post-result .result-list .address-area .address {
