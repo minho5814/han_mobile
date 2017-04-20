@@ -293,6 +293,9 @@ html.no-scroll {
 	position:absolute;
 	right:10px;top:9px;
 }
+@media only screen and (max-width: 320px) {
+	.box-content2 p {font-size:13px;}
+}
 
 .box-content3 {
 	padding:10px;
@@ -321,7 +324,7 @@ html.no-scroll {
 }
 .cTitle02 {
 	color:#333;
-	font-size:12px;
+	font-size:13px;
 	line-height:23px;
 }
 .cTitle03 {
@@ -901,7 +904,7 @@ select.styled1 {
 
 /* 폼리스트 01 */
 .form-list1 {}
-.form-list1 .form-item {margin-top:5px;}
+.form-list1 .form-item {margin-top:6px;}
 .form-list1 .form-item:first-child {margin-top:0;}
 .form-list1 .btn-list1 {margin-top:20px;}
 
@@ -1142,9 +1145,9 @@ select.styled1 {
 .board1 .non-text {padding:7px 10px;}
 
 .board1 .title01 {
-	font-size:13px;
+	font-size:14px;
 	color:#333;
-	line-height:30px;
+	line-height:32px;
 }
 .board1 td .txt {margin-bottom:2px;}
 
