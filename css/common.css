@@ -1335,7 +1335,7 @@ html.bg-gray {background-color:#f7f7f7;}
 }
 .gnb-head .user-login {
 	position:relative;
-	height:65px;
+	height:55px;
 }
 .gnb-head .user-login .user-name {
 	position:absolute;
@@ -1420,14 +1420,14 @@ html.bg-gray {background-color:#f7f7f7;}
 
 .gnb-head .calendar-area {
 	position:relative;
-	padding:12px 45px 12px 60px;
+	padding:6px 45px 6px 60px;
 	border-top:1px solid #56951a;
 	color:#fff;
 	font-size:15px;
 }
 .gnb-head .calendar-area .title {
 	position:absolute;
-	left:10px;top:12px;
+	left:10px;top:6px;
 	line-height:42px;
 }
 .gnb-head .calendar-area .date-type {
@@ -1438,7 +1438,7 @@ html.bg-gray {background-color:#f7f7f7;}
 }
 .gnb-head .calendar-area .btn-calendar {
 	position:absolute;
-	right:0;top:12px;
+	right:0;top:6px;
 	width:45px;
 	height:42px;
 	background-position:0 -420px;
@@ -1446,27 +1446,30 @@ html.bg-gray {background-color:#f7f7f7;}
 
 .gnb-layer .my-menu {
 	overflow:hidden;
+	position:relative;
 	margin:5px;
+	padding-left:107px;
 	border:1px solid #ddd;
 }
 .gnb-layer .my-menu .link {
 	display:block;
-	height:53px;
+	height:50px;
 	box-sizing:border-box;
 }
 .gnb-layer .my-menu dt,
 .gnb-layer .my-menu dd {
-	float:left;
 	box-sizing:border-box;
 	background-color:#fff;
 	font-size:14px;
 }
 .gnb-layer .my-menu dt {
-	width:31%;
+	position:absolute;
+	left:0;top:0;
+	width:107px;
 }
 .gnb-layer .my-menu dt .link {
 	position:relative;
-	padding:11px 0 0 10px;
+	padding:10px 0 0 10px;
 	color:#60b015;
 	font-weight:bold;
 	line-height:14px;
@@ -1481,43 +1484,66 @@ html.bg-gray {background-color:#f7f7f7;}
 	width:19px;
 	height:19px;
 	background:url(../img/sprite_ico.png) no-repeat 0 -63px;
-	background-size:40px 250px;
+	background-size:40px 500px;
 }
 .gnb-layer .my-menu dd {
-	width:23%;
+	float:left;
+	width:33%;
 	border-left:1px solid #ddd;
 }
+.gnb-layer .my-menu dd:last-child {width:34%;}
 .gnb-layer .my-menu dd .link {
 	color:#666;
 	text-align:center;
-	line-height:53px;
+	line-height:48px;
 }
 
 .gnb-layer .slide-menu {
 	overflow-y:auto;
 	position:absolute;
-	left:0;right:0;top:197px;bottom:0;
+	left:0;right:0;top:171px;bottom:0;
 	border-top:1px solid #ddd;
 	background-color:#f7f7f7;
 }
 .gnb-layer .slide-menu .menu-list {}
 .gnb-layer .slide-menu .menu-list .item {
-	width:105px;
-	height:75px;
-	padding:33px 0 0 10px;
+	position:relative;
+	width:112px;
+	height:55px;
+	padding-left:38px;
 	box-sizing:border-box;
 	background-color:#f7f7f7;
 	color:#aaa;
 	font-size:13px;
-	text-align:center;
-	line-height:42px;
+	line-height:55px;
 }
-.gnb-layer .slide-menu .menu-list .item1 {}
-.gnb-layer .slide-menu .menu-list .item2 {}
-.gnb-layer .slide-menu .menu-list .item3 {}
-.gnb-layer .slide-menu .menu-list .item4 {}
-.gnb-layer .slide-menu .menu-list .item5 {}
-.gnb-layer .slide-menu .menu-list .item6 {}
+.gnb-layer .slide-menu .menu-list .item:before {
+	content:'';
+	position:absolute;
+	left:10px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:23px;
+	height:20px;
+	background-image:url(../img/sprite_ico.png);
+	background-repeat:no-repeat;
+	background-size:40px 500px;
+}
+.gnb-layer .slide-menu .menu-list .item1:before {background-position:0 -103px;}
+.gnb-layer .slide-menu .menu-list .item2:before {background-position:0 -145px;}
+.gnb-layer .slide-menu .menu-list .item3:before {background-position:0 -187px;}
+.gnb-layer .slide-menu .menu-list .item4:before {background-position:0 -229px;}
+.gnb-layer .slide-menu .menu-list .item5:before {background-position:0 -271px;}
+.gnb-layer .slide-menu .menu-list .item6:before {background-position:0 -313px;}
+/* on */
+.gnb-layer .slide-menu .menu-list .item1.on:before {background-position:0 -124px;}
+.gnb-layer .slide-menu .menu-list .item2.on:before {background-position:0 -166px;}
+.gnb-layer .slide-menu .menu-list .item3.on:before {background-position:0 -208px;}
+.gnb-layer .slide-menu .menu-list .item4.on:before {background-position:0 -250px;}
+.gnb-layer .slide-menu .menu-list .item5.on:before {background-position:0 -292px;}
+.gnb-layer .slide-menu .menu-list .item6.on:before {background-position:0 -334px;}
+
 .gnb-layer .slide-menu .menu-list .item.on {
 	background-color:#fff;
 	color:#333;
@@ -1525,7 +1551,7 @@ html.bg-gray {background-color:#f7f7f7;}
 .gnb-layer .slide-menu .slide-area {
 	overflow-y:auto;
 	position:absolute;
-	left:105px;right:0;top:0;bottom:0;
+	left:112px;right:0;top:0;bottom:0;
 	padding:0 10px;
 	background-color:#fff;
 }
@@ -1553,9 +1579,6 @@ html.bg-gray {background-color:#f7f7f7;}
 	font-size:14px;
 	line-height:40px;
 }
-.gnb-layer .slide-menu .slide-area .depth-box {}
-.gnb-layer .slide-menu .slide-area {}
-.gnb-layer .slide-menu {}
 
 /* --------------------------------------------------------------------------------------------
 	컨테이너
@@ -1629,7 +1652,7 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 	height:20px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 250px;
+	background-size:40px 500px;
 }
 .btm-fix-menu .btnmmm-list .btn:nth-child(2) {width:34%;}
 .btm-fix-menu .btn-list .btn1:before {background-position:0 0;}
@@ -1947,7 +1970,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:10px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 250px;
+	background-size:40px 500px;
 }
 .thumb-box1 .icon-area .join:before {background-position:0 -57px;}
 .thumb-box1 .icon-area .date:before {background-position:0 -68px;}
