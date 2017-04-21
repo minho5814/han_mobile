@@ -146,6 +146,38 @@
 }
 .check-wrap label:first-child {margin-left:0;}
 .check-wrap label input {margin-right:6px;}
+
+/* --------------------------------------------------------------------------------------------
+	달력 영역
+-------------------------------------------------------------------------------------------- */
+.date-area {
+	padding:0 10px;
+}
+.date-area dl {
+	position: relative;
+	width: 100%;
+	height:40px;
+	background-color:#f7f7f7;
+	border:1px solid #eee;
+	border-radius:5px;
+}
+.date-area dl:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.date-area dl .title {
+	float: left;
+	padding-left:10px;
+	color:#333;
+	line-height: 40px;
+}
+.date-area dl .calendar {
+	float: right;
+}
+.date-area dl .calendar input {
+	border:0;
+}
 /* --------------------------------------------------------------------------------------------
 	텍스트 박스
 -------------------------------------------------------------------------------------------- */
@@ -475,30 +507,41 @@
 	background:url(../img/btn/btn_up.png) 0 0 no-repeat;
 	background-size:16px 9px;
 }
+.order-cart-list .list-title .btn-aco.btn-down:before {
+	content: '';
+	position: absolute;
+	top:50%; left:50%;
+	width:16px; height:9px;
+	transform: translate(-50%, -50%);
+	background:url(../img/btn/btn_down.png) 0 0 no-repeat;
+	background-size:16px 9px;
+}
 .order-cart-list .list-cont {
-	padding:15px 10px;
+	padding:15px 0;
 	background-color:#fff;
 }
-.order-cart-list .list-cont .date-area {
+.order-cart-list .list-cont .calendar {
 	position: relative;
-	width: 100%;
-	height:40px;
-	background-color:#f7f7f7;
-	border:1px solid #eee;
-	border-radius:5px;
 }
-.order-cart-list .list-cont .date-area:after {
+.order-cart-list .list-cont .calendar:before {
 	content: '';
-	display: block;
-	clear: both;
+	position: absolute;
+	top:9px; right:41px;
+	width:1px; height:22px;
+	background-color:#eee;
 }
-.order-cart-list .list-cont .date-area .title {
-	float: left;
-	padding-left:10px;
-	color:#333;
+.order-cart-list .list-cont .calendar input {
+	height: 40px;
+	padding-right:50px;
 	line-height: 40px;
+	background-color:#f7f7f7;
+	text-align: right;
+	color:#60b015;
 }
-.order-cart-list .list-cont .date-area .calendar {
-	float: right;
-	padding-right: 10px;
+.order-cart-list .list-cont .no-result {
+	margin-top:20px;
+	line-height:107px;
+	color:#aaa;
+	font-size:15px;
+	text-align: center;
 }

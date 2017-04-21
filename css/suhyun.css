@@ -185,3 +185,39 @@
 }
 
 /* 물품안전 */
+.safety-area {}
+.safety-area .radia-txt {
+	margin-top:12px;
+	font-size:13px;
+	color:#333;
+	line-height:19px;
+}
+.safety-area .radia-box {
+	margin-top:10px;
+	padding:7px 10px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+.safety-area .radia-box.first {margin-top:12px;}
+.safety-area .radia-box dl {}
+.safety-area .radia-box dl dt {
+	margin-bottom:6px;
+	font-size:13px;
+	color:#333;
+	line-height:19px;
+}
+.safety-area.radia-box dl dd {
+	font-size:12px;
+	color:#333;
+	line-height:14px;
+}
+.safety-area .radia-box dl dd.dete {
+	color:#ec7015;
+}
+.safety-area .radia-box dl dd.radia-date {
+	margin-top:2px;
+	font-size:11px;
+	color:#aaa;
+}
+.safety-area .green-img {margin-top:15px;}
+.safety-area .green-img img {width:100%; height:auto; vertical-align:middle;}
