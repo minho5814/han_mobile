@@ -2014,7 +2014,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list3 .btn-delete {
 	position: absolute;
-	top:0; right:0;
+	top:0; right:-10px;
 	width:39px;
 	height: 53px;
 }
@@ -2022,40 +2022,70 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list3 .box .link {
 	position: relative;
 	display:block;
-	height:144px;
-	padding-left:130px;
+	min-height:132px;
+	margin-bottom:10px;
+	padding:0 0 62px 130px;
+	box-sizing: border-box;
 }
 .thumb-list3 .box .img-area {
 	overflow:hidden;
 	position:absolute;
-	left:0;top:50%;
-	-webkit-transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	transform:translateY(-50%);
+	left:0;top:0;
 	width:120px;
 	height:120px;
 }
-.thumb-list3 .box .text-area .price {
-	color:#333;
+.thumb-list3 .box .text {
+	margin-bottom:5px;
+	color:#60b015;
 	font-size:13px;
-	line-height:28px;
+	line-height:18px;
 }
-.thumb-list3 .box .text-area .price .number {
-	font-size:18px;
-	font-weight:bold;
+.thumb-list3 .box .count {
+	color:#666;
+	font-size:13px;
+}
+.thumb-list3 .box .count span {
+	margin-left:3px;
 }
 .thumb-list3 .box .btn-list {
 	overflow:hidden;
 	position:absolute;
-	left:130px;right:-2px;bottom:12px;
+	left:130px;right:0; bottom:0;
+	z-index: 1;
 }
-.thumb-list3 .box .btn-list .item {
+.thumb-list3 .box .btn-list:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.thumb-list3 .box .btn-list .price {
 	float:left;
-	width:50%;
-	padding:0 2px;
-	box-sizing:border-box;
+	line-height: 40px;
+	color:#333;
+	font-size:13px;
+}
+.thumb-list3 .box .btn-list .price .number {
+	font-size:18px;
+}
+.thumb-list3 .box .btn-list .select-wrap {
+	float:right;
+	width:105px;
 }
 .thumb-list3 .box .btn-list .btn-ico {border-radius:3px;}
+
+.thumb-list3 .box .bottom-box {
+	padding:11px 0;
+	text-align: right;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.thumb-list3 .box .bottom-box .price {
+	font-size:13px;
+}
+.thumb-list3 .box .bottom-box .price .number {
+	font-size:20px;
+	font-weight: bold;
+}
 
 /* 캠페인 */
 .thumb-box1 {
