@@ -171,12 +171,17 @@
 .palan-content {padding:20px 10px;}
 
 /* MW-PD0504.html */
-.palan-cont .palan-area {padding:0 10px;}
-.palan-cont .palan-tit {text-align:center;}
-.palan-cont .palan-tit .tit {
-	margin:17px 8px;
+.palan-com .tab-list4 {padding:1px 10px 0;}
+.palan-com .palan-cont .palan-area {padding:0 10px;}
+.palan-com .palan-cont .palan-tit {text-align:center;}
+.palan-com .palan-cont .palan-tit .tit {
+	margin-bottom:10px;
+	padding:17px 0 8px;
 	font-size:15px;
 	color:#333;
 	line-height:25px;
 	font-weight:bold;
+	border-bottom:1px solid #bbb;
 }
+
+/* 물품안전 */
