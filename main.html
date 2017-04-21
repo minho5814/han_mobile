@@ -126,11 +126,11 @@
 				<h2 class="title">조합원 추천 물품</h2>
 			</div>
 			<div class="depth-cont">
-				<div class="tab-area">
-					<div class="item on">전체 추천 물품</div>
-					<div class="item">늘 주문하는 물품</div>
-					<div class="item">비슷한 연령별 물품</div>
-					<div class="item">이맘때 이용한 물품</div>
+				<div class="tab-list4">
+					<div class="item on"><span class="text">전체 추천 물품</span></div>
+					<div class="item"><span class="text">늘 주문하는 물품</span></div>
+					<div class="item"><span class="text">비슷한 연령별 물품</span></div>
+					<div class="item"><span class="text">이맘때 이용한 물품</span></div>
 				</div>
 				<div class="tab-cont">
 					<!-- 01 -->
@@ -911,9 +911,9 @@ $(window).load(function(){
 	});
 
 	/* 조합원 추천 물품 탭 영역 */
-	$('.tab-area .item').click(function(){
+	$('.tab-list4 .item').click(function(){
 		var idx = $(this).index();
-		$('.tab-area .item').removeClass('on').eq(idx).addClass('on');
+		$('.tab-list4 .item').removeClass('on').eq(idx).addClass('on');
 		$(this).parents('.depth-cont').find('.thumb-list2').removeClass('on').eq(idx).addClass('on');
 	});
 
