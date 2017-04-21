@@ -614,7 +614,7 @@ html.no-scroll {
 	display:inline-block;
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 500px;
+	background-size:50px 750px;
 	font-size:0;
 	vertical-align:top;
 	line-height:0;
@@ -656,6 +656,19 @@ html.no-scroll {
 	background-position:0 -337px;
 }
 
+/* 녹색 달력 버튼 */
+.btn-image.btn-calendar2 {
+	position:absolute;
+	right:0;top:0;
+	width:40px;
+	height:40px;
+	background-position:0 -493px;
+}
+
+.btn-image.btn-delete {
+	width:39px; height:53px;
+	background-position: 0 -534px;
+}
 /* --------------------------------------------------------------------------------------------
 	아이콘
 -------------------------------------------------------------------------------------------- */
@@ -678,7 +691,7 @@ html.no-scroll {
 	transform:translate(-50%,-50%);
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 500px;
+	background-size:50px 750px;
 }
 
 /* 관심물품 */
@@ -802,7 +815,7 @@ html.no-scroll {
 	width:14px;
 	height:14px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -322px;
-	background-size:50px 500px;
+	background-size:50px 750px;
 }
 
 /* ============================================================================================
@@ -1625,6 +1638,7 @@ html.bg-gray {background-color:#f7f7f7;}
 	color:#fff;
 	text-align:center;
 }
+/* 흰색 달력 버튼 */
 .gnb-head .calendar-area .btn-calendar {
 	position:absolute;
 	right:0;top:6px;
@@ -1632,7 +1646,6 @@ html.bg-gray {background-color:#f7f7f7;}
 	height:42px;
 	background-position:0 -420px;
 }
-
 .gnb-layer .my-menu {
 	overflow:hidden;
 	position:relative;
@@ -2094,6 +2107,110 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:50%;
 }
 .thumb-list2 .box .btn-list .item .btn-like {border-right:0;}
+
+/* 03 */
+.thumb-list3 .box .ico-label {
+	position:absolute;
+	left:0;top:12px;
+	z-index:1;
+}
+.thumb-list3 {
+	overflow:hidden;
+	width:100%;
+}
+.thumb-list3 .box {
+	position:relative;
+	border-top:1px solid #ddd;
+}
+.thumb-list3 .box .name {
+	padding:14px 35px 14px 0;
+	color:#666;
+	font-size:15px;
+}
+.thumb-list3 .box .name label {
+	position: relative;
+	padding-left:33px;
+	line-height: 25px;
+	box-sizing: border-box;
+}
+.thumb-list3 .box .name label input {
+	position: absolute;
+	top:0; left:0;
+}
+.thumb-list3 .btn-delete {
+	position: absolute;
+	top:0; right:-10px;
+	width:39px;
+	height: 53px;
+}
+.thumb-list3 .box:first-child {border-top:0;}
+.thumb-list3 .box .link {
+	position: relative;
+	display:block;
+	min-height:132px;
+	margin-bottom:10px;
+	padding:0 0 62px 130px;
+	box-sizing: border-box;
+}
+.thumb-list3 .box .img-area {
+	overflow:hidden;
+	position:absolute;
+	left:0;top:0;
+	width:120px;
+	height:120px;
+}
+.thumb-list3 .box .text {
+	margin-bottom:5px;
+	color:#60b015;
+	font-size:13px;
+	line-height:18px;
+}
+.thumb-list3 .box .count {
+	color:#666;
+	font-size:13px;
+}
+.thumb-list3 .box .count span {
+	margin-left:3px;
+}
+.thumb-list3 .box .btn-list {
+	overflow:hidden;
+	position:absolute;
+	left:130px;right:0; bottom:0;
+	z-index: 1;
+}
+.thumb-list3 .box .btn-list:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.thumb-list3 .box .btn-list .price {
+	float:left;
+	line-height: 40px;
+	color:#333;
+	font-size:13px;
+}
+.thumb-list3 .box .btn-list .price .number {
+	font-size:18px;
+}
+.thumb-list3 .box .btn-list .select-wrap {
+	float:right;
+	width:105px;
+}
+.thumb-list3 .box .btn-list .btn-ico {border-radius:3px;}
+
+.thumb-list3 .box .bottom-box {
+	padding:11px 0;
+	text-align: right;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.thumb-list3 .box .bottom-box .price {
+	font-size:13px;
+}
+.thumb-list3 .box .bottom-box .price .number {
+	font-size:20px;
+	font-weight: bold;
+}
 
 /* 캠페인 */
 .thumb-box1 {

@@ -262,18 +262,38 @@
 	물품소식과 공지
 -------------------------------------------------------------------------------------------- */
 .tab-list1.two .item {width:50%}
+.qna-area {display: none;}
+.qna-area.on {display: block;}
+.qna-area .tab-list5 {padding-top:15px; border-top:1px solid #bbb;}
 
 .qna-cont {border:1px solid #bbb;}
 .qna-list .item {
 
 }
 .qna-list .item .question {
+	position:relative;
 	border-bottom:1px solid #eee;
 	padding:15px 10px;
+
+}
+.qna-list .item .question:before{
+	content:'';
+	position: absolute;
+	right:10px;
+	top:50%;
+	width:10px;
+	height:6px;
+	margin-top:-3px;
+	background:url(../img/ico/ico_20x12_arrow.png) no-repeat right center;
+	background-size:10px 6px;
+}
+.qna-list .item.on .question:before  {
+	transform: rotate(180deg);
 }
 .qna-list .item .question .title {
 	color:#333;
 }
+
 .qna-list .item .question .date,
 .qna-list .item .question .status {
 	color:#aaa;
@@ -308,6 +328,7 @@
 	font-weight: 600;
 }
 
+.qna-list .item.on .answer {display: block;}
 .qna-list .item .answer {
 	display: none;
 	padding:15px 10px;
@@ -317,4 +338,88 @@
 	font-size:13px;
 	color:#aaa;
 	line-height:17px;
+}
+
+/*공지사항 게시판*/
+.noty-list .item  {
+	border-bottom:1px solid #eee;
+	padding:15px 10px;
+}
+.noty-list .item .title {
+	color:#333;
+}
+
+.noty-list .item  .date,
+.noty-list .item  .status {
+	color:#aaa;
+	font-size: 11px;
+}
+.noty-list .item .date {padding-right:5px;}
+.noty-list .item .status {position:relative;padding-left:5px;}
+.noty-list .item .status:before {
+	content:'';
+	position: absolute;
+	left:0; top:50%;
+	margin-top:-3px;
+	width:1px; height:6px;
+	background-color:#aaa;
+}
+.noty-list .item.important .title {position: relative; padding-left:30px;}
+.noty-list .item.important .title:before {
+	content: '필독';
+	position: absolute;
+	left:0;top:1px;
+	width:26px;
+	height:15px;
+	border:1px solid #ddd;
+	background-color: #f4f4f4;
+	color:#239bd2;
+	font-size: 12px;
+	text-align: center;
+	line-height:15px;
+	box-sizing: border-box;
+}
+.noty-list .item.important .row:first-child .title {
+	font-weight: 600;
+}
+
+.board-view-area .title-area {
+	padding:15px 0;
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+.board-view-area .title-area p {font-size:13px; color:#333;}
+.board-view-area .float-area {overflow: hidden; margin-top:5px;}
+.board-view-area .float-area .f-left{float:left;}
+.board-view-area .float-area .f-right{float:right;}
+.board-view-area .float-area span {color:#aaa; font-size: 11px;}
+.board-view-area .content-area {padding:20px 0 0 0;}
+
+.direction-area{
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+.direction-area li {
+	position:relative;
+	height:46px;
+	line-height: 46px;
+}
+.direction-area li:first-child {border-bottom:1px solid #bbb;}
+.direction-area li span {
+	position:absolute;
+	left:0;
+	top:0;
+	font-size:12px;
+	color:#666;
+	font-weight: bold;
+}
+.direction-area li a {
+
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	padding-left:43px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
 }
