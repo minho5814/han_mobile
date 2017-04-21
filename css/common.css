@@ -2074,17 +2074,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* --------------------------------------------------------------------------------------------
 	한살림운동과 물품정책/물품이야기
 -------------------------------------------------------------------------------------------- */
-.policy-box {}
+.policy-box {padding-top:8px;}
 .policy-box .policy-title {
 	color:#239bd2;
-	font-size:18px;
+	font-size:21px;
 	line-height:23px;
 }
 .policy-box .policy-txt {
-	margin-top:8px;
+	margin-top:10px;
 	color:#666;
-	font-size:13px;
-	line-height:19px;
+	font-size:15px;
+	line-height:22px;
 }
 .policy-box .policy-img {margin-top:11px;}
 .policy-box .policy-img img {
@@ -2097,11 +2097,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	position:relative;
 	width:100%;
 	margin-top:26px;
-	padding:16px 0 16px 68px;
+	padding:19px 10px 19px 79px;
 	box-sizing:border-box;
 	border:1px solid #ddd;
 	background:url(../img/img/img_pdf.png) no-repeat 10px 50%;
-	background-size:50px;
+	background-size:60px;
 }
 .pdf-box a {display:block;}
 .pdf-box:before {
@@ -2117,27 +2117,36 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .pdf-box .pdf-tit {
 	color:#333;
-	font-size:11px;
+	font-size:13px;
 	line-height:18px;
 }
 .pdf-box .pdf-txt {
-	margin-top:2px;
+	margin-top:6px;
 	color:#60b015;
-	font-size:13px;
+	font-size:15px;
 	line-height:18px;
+}
+@media only screen and (max-width: 320px) {
+	.pdf-box .pdf-tit {
+		font-size:11px;
+	}
+	.pdf-box .pdf-txt {
+		margin-top:2px;
+		font-size:13px;
+	}
 }
 .tab-content {display:none;}
 .tab-content.on {display:block;}
 .work-area {}
-.work-area .cTitle01 {margin:25px 0 9px;}
+.work-area .cTitle01 {margin:27px 0 2px;}
 .work-area .work-img img {
 	width:100%;
 	height:auto;
 	vertical-align:middle;
 }
 .work-area .box-cont .item {
-	margin-top:11px;
-	font-size:14px;
+	margin-top:8px;
+	font-size:15px;
 	line-height:19px;
 }
 .work-area .box-cont .item:before {top:8px;}
@@ -2152,17 +2161,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* --------------------------------------------------------------------------------------------
 	사이트 이용약관, 개인정보취급방침
 -------------------------------------------------------------------------------------------- */
-.site-terms-infor {}
+.site-terms-infor {padding-top:15px;}
 .site-terms-infor .terms-tit {
 	margin:20px 0 8px;
 	color:#333;
-	font-size:13px;
-	line-height:18px;
+	font-size:14px;
+	line-height:19px;
 }
 .site-terms-infor .terms-text {
 	color:#666;
-	font-size:12px;
-	line-height:18px;
+	font-size:13px;
+	line-height:19px;
 }
 .site-terms-infor .terms-list01 {}
 .site-terms-infor .terms-list01 .item {
