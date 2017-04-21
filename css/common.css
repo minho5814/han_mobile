@@ -175,6 +175,8 @@ html.no-scroll {
 .pdT0 {padding-top:0 !important;}
 .pdT5 {padding-top:5px !important;}
 
+.pdB0 {padding-bottom:0 !important;}
+
 
 /* 텍스트 정렬 */
 .align-left {text-align:left !important;}
@@ -396,11 +398,11 @@ html.no-scroll {
 -------------------------------------------------------------------------------------------- */
 .campaign-mark {
 	position:relative;
-	width:90px;
-	height:90px;
+	width:105px;
+	height:105px;
 	background-repeat:no-repeat;
 	background-position:0 0;
-	background-size:90px 90px;
+	background-size:105px 105px;
 }
 .campaign-mark .label {
 	position:absolute;
@@ -409,10 +411,10 @@ html.no-scroll {
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 	color:#fff;
-	font-size:12px;
+	font-size:15px;
 	text-align:center;
 	font-weight:bold;
-	line-height:14px;
+	line-height:17px;
 }
 .campaign-mark .label:before {
 	content:'';
@@ -422,8 +424,8 @@ html.no-scroll {
 .bg1.campaign-mark {background-image:url(../img/ico/campaign/bg_campaign01.png);}
 /* 아이콘 종류 */
 .mark1.campaign-mark .label:before {
-	width:12px;
-	height:2px;
+	width:15px;
+	height:3px;
 	margin:0 auto 12px;
 	background-color:#fff;
 }
@@ -1230,7 +1232,7 @@ select.styled1 {
 	position:absolute;
 	right:0;top:8px;
 	color:#aaa;
-	font-size:11px;
+	font-size:13px;
 	line-height:15px;
 }
 .board2 table {
@@ -1982,41 +1984,42 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-box1 .text-area .title {
 	color:#333;
-	font-size:13px;
+	font-size:15px;
 	font-weight:bold;
+	line-height:24px;
 }
 .thumb-box1 .text-area .text-box {
 	position:relative;
 	height:30px;
-	margin-top:3px;
+	margin-top:2px;
 }
 .thumb-box1 .text-area .text-box .text {
 	position:absolute;
-	left:30px;right:30px;top:50%;
+	left:20px;right:20px;top:50%;
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 	width:auto;
-	max-height:30px;
+	max-height:32px;
 	color:#666;
-	font-size:12px;
-	line-height:15px;
+	font-size:14px;
+	line-height:16px;
 }
 .thumb-box1 .icon-area {
-	height:56px;
+	height:63px;
 	margin:0 10px;
-	padding:8px 30px;
+	padding:12px 15px;
 	box-sizing:border-box;
 	border-top:1px solid #eee;
 	color:#666;
-	font-size:11px;
+	font-size:13px;
 	text-align:left;
-	line-height:17px;
+	line-height:19px;
 	white-space:nowrap;
 }
 .thumb-box1 .icon-area p {
 	position:relative;
-	padding-left:15px;
+	padding-left:17px;
 }
 .thumb-box1 .icon-area p:before {
 	content:'';
@@ -2025,28 +2028,28 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:9px;
-	height:10px;
+	width:10px;
+	height:12px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
 	background-size:40px 500px;
 }
-.thumb-box1 .icon-area .join:before {background-position:0 -57px;}
-.thumb-box1 .icon-area .date:before {background-position:0 -68px;}
+.thumb-box1 .icon-area .join:before {background-position:0 -355px;}
+.thumb-box1 .icon-area .date:before {background-position:0 -368px;}
 .thumb-box1 .link {
 	display:block;
-	height:34px;
+	height:40px;
 	border-top:1px solid #ddd;
 	background-color:#f7f7f7;
 	color:#333;
-	font-size:13px;
+	font-size:14px;
 	text-align:center;
-	line-height:34px;
+	line-height:40px;
 }
 .thumb-box1 .link .text {
 	display:inline-block;
 	position:relative;
-	padding-right:11px;
+	padding-right:13px;
 	line-height:34px;
 }
 .thumb-box1 .link .text:before {
@@ -2056,8 +2059,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	-webkit-transform:translateY(-50%) rotate(45deg);
 	-ms-transform:translateY(-50%) rotate(45deg);
 	transform:translateY(-50%) rotate(45deg);
-	width:6px;
-	height:6px;
+	width:7px;
+	height:7px;
 	border-top:1px solid #bbb;
 	border-right:1px solid #bbb;
 }
@@ -2534,7 +2537,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .tab-content .view-img-area img {width:100%;}
 
 .view-content .top-gray-box {
-	padding:17px 12px 25px;
+	padding:17px 10px 25px;
 	border-top:8px solid #eee;
 }
 .view-content .tab-content .top-gray-box {margin:0 -10px;}
@@ -2573,50 +2576,48 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 /* 방사성물질 검사 결과 */
-.radioactivity-box {
-	margin-top:10px;
-}
-.radioactivity-box .radioactivity-list {
-	border-top:1px solid #bbb;
-	border-bottom:1px solid #bbb;
-}
+.radioactivity-box {margin-top:10px;}
+.radioactivity-box .radioactivity-list {border-top:1px solid #bbb;}
 .radioactivity-box .radioactivity-list .item {
 	position:relative;
-	padding:15px 0 8px 55px;
+	padding:10px 0 20px 65px;
 	border-top:1px solid #eee;
 }
 .radioactivity-box .radioactivity-list .item:first-child {border-top:0;}
 .radioactivity-box .radioactivity-list .item .title {
 	position:absolute;
-	left:0;top:33px;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
 	color:#333;
-	font-size:12px;
+	font-size:14px;
 }
 .radioactivity-box .radioactivity-list .radioactivity {}
 .radioactivity-box .radioactivity-list .radioactivity .gauge-box {
 	position:relative;
-	padding-top:16px;
+	padding-top:30px;
 }
 .radioactivity-box .radioactivity-list .radioactivity .label {
 	display:inline-block;
 	position:absolute;
 	left:0;top:0;
-	height:14px;
+	height:20px;
 	padding:0 6px;
 	border-radius:2px 2px 0 2px;
 	border:1px solid #60b015;
 	color:#60b015;
-	font-size:9px;
-	line-height:14px;
+	font-size:11px;
+	line-height:20px;
 }
 .radioactivity-box .radioactivity-list .radioactivity .label:before {
 	content:'';
 	position:absolute;
-	left:-1px;bottom:-5px;
-	width:5px;
-	height:6px;
+	left:-1px;bottom:-7px;
+	width:6px;
+	height:7px;
 	background:url(../img/bg/bg_radioactivity.png) no-repeat 0 0;
-	background-size:5px 6px;
+	background-size:6px 7px;
 }
 .radioactivity-box .radioactivity-list .radioactivity .gauge {
 	display:block;
@@ -2628,7 +2629,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .radioactivity-box .radioactivity-list .radioactivity .text-area {
 	overflow:hidden;
 	color:#333;
-	font-size:9px;
+	font-size:11px;
 	line-height:20px;
 }
 .radioactivity-box .radioactivity-list .radioactivity .text-area .text {
@@ -2640,15 +2641,15 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 
 .view-content .tab-content .radioactivity-info {
 	overflow:hidden;
-	margin-top:10px;
 	color:#333;
-	font-size:11px;
-	line-height:21px;
+	font-size:13px;
+	line-height:24px;
+	letter-spacing:-1px;
 }
 .view-content .tab-content .radioactivity-info .ico-text {
 	position:relative;
-	margin-left:6px;
-	padding-left:11px;
+	margin-left:10px;
+	padding-left:14px;
 }
 .view-content .tab-content .radioactivity-info .ico-text:before {
 	content:'';
@@ -2657,8 +2658,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:6px;
-	height:6px;
+	width:7px;
+	height:7px;
 	background-color:#8dc919;
 }
 .view-content .tab-content .radioactivity-info .left-cont dd:last-child:before {background-color:#f6ce05;}
@@ -2666,13 +2667,19 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .tab-content .radioactivity-info .left-cont {
 	overflow:hidden;
 	float:left;
-	padding:0 6px;
+	padding:0 10px;
 	border:1px solid #ddd;
+}
+@media only screen and (max-width: 320px) {
+	.view-content .tab-content .radioactivity-info .left-cont {
+		width:100%;
+		box-sizing:border-box;
+	}
 }
 .view-content .tab-content .radioactivity-info .left-cont dt {
 	float:left;
 	position:relative;
-	padding-right:6px;
+	padding-right:10px;
 }
 .view-content .tab-content .radioactivity-info .left-cont dt:before {
 	content:'';
@@ -2683,8 +2690,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .view-content .tab-content .radioactivity-info .left-cont dd {float:left;}
 .view-content .tab-content .radioactivity-info .right-text {
-	float:left;
-	line-height:21px;
+	float:right;
+	margin-left:0;
+	line-height:26px;
 }
 
 .view-content .exhibition-slide {
@@ -2702,13 +2710,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	position:absolute;
 	right:10px;bottom:15px;
 	z-index:1;
-	height:23px;
-	padding:0 15px;
+	width:60px;
+	height:26px;
 	border-radius:25px;
 	background-color:rgba(50,50,50,.5);
 	color:#fff;
-	font-size:10px;
-	line-height:23px;
+	font-size:13px;
+	text-align:center;
+	line-height:26px;
 }
 .view-content .goods-more-box {margin-top:10px;}
 .view-content .goods-more-box .thumb-list2 {height:236px;}
