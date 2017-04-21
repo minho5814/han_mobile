@@ -570,6 +570,11 @@ html.no-scroll {
 	height:40px;
 	background-position:0 -493px;
 }
+
+.btn-image.btn-delete {
+	width:39px; height:53px;
+	background-position: 0 -534px;
+}
 /* --------------------------------------------------------------------------------------------
 	아이콘
 -------------------------------------------------------------------------------------------- */
@@ -2010,6 +2015,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list3 .btn-delete {
 	position: absolute;
 	top:0; right:0;
+	width:39px;
+	height: 53px;
 }
 .thumb-list3 .box:first-child {border-top:0;}
 .thumb-list3 .box .link {
