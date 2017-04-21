@@ -1126,6 +1126,9 @@ select.styled1 {
 	line-height:55px;
 	white-space:nowrap;
 }
+@media only screen and (max-width: 320px) {
+	.tab-list3 .item .text {font-size:14px;}
+}
 .tab-list3 .item.on .text {
 	border-bottom:2px solid #60b015;
 	color:#60b015;
@@ -2374,7 +2377,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .tab-area {height:55px;}
 .view-content .tab-area .tab-list3.fixed {
 	position:fixed;
-	left:0;right:0;top:47px;
+	left:0;right:0;top:56px;
 	z-index:5;
 }
 
