@@ -175,6 +175,7 @@ html.no-scroll {
 .pdT0 {padding-top:0 !important;}
 .pdT5 {padding-top:5px !important;}
 
+
 /* 텍스트 정렬 */
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
@@ -245,7 +246,7 @@ html.no-scroll {
 	background-color:#666;
 }
 .box-cont .item:first-child {margin-top:0;}
-.box-content1 .box-btn {padding:0 10px 10px;}
+.box-content1 .box-btn {padding:0 10px 15px;}
 .box-content1 .item .btn-wrap {
 	display: block;
 	margin:7px 0 7px;
@@ -468,6 +469,11 @@ html.no-scroll {
 	padding:0 15px;
 	font-size:13px;
 	line-height:30px;
+}
+@media only screen and (max-width: 320px) {
+	.btn-h30 {
+		padding:0 8px;
+	}
 }
 .btn-h30.btn-text-line1 {line-height:28px;}
 .btn-h30.type2 {padding:0 10px;}
@@ -855,7 +861,7 @@ select.styled1 {
 }
 .email-area .box {
 	float:left;
-	width:35%;
+	width:34%;
 	padding-left:4px;
 	box-sizing:border-box;
 }
@@ -870,7 +876,7 @@ select.styled1 {
 	line-height: 1;
 }
 .email-area .box:last-child {
-	width:30%;
+	width:32%;
 }
 
 /* 체크박스/라디오 리스트 */
@@ -887,6 +893,14 @@ select.styled1 {
 	line-height:25px;
 }
 .check-list label input {margin-right:5px;}
+@media only screen and (max-width: 320px) {
+	.check-list label {
+		margin-left:8px;
+	}
+	.check-list label:nth-child(3n+1) {
+		margin-left:17px;
+	}
+}
 
 .radio-list {
 	margin-left:-17px;
@@ -1231,6 +1245,15 @@ html.bg-gray {background-color:#f7f7f7;}
 .head-menu .swiper-slide:nth-child(3) {width:28%;}
 .head-menu .swiper-slide:nth-child(4) {width:20%;}
 .head-menu .swiper-slide:nth-child(5) {width:24%;padding-right:10px;}
+/* 320 */
+@media only screen and (max-width: 320px) {
+	.head-menu .swiper-wrapper {width:127% !important;}
+	.head-menu .swiper-slide:nth-child(1) {width:15%;}
+	.head-menu .swiper-slide:nth-child(2) {width:28%;}
+	.head-menu .swiper-slide:nth-child(3) {width:32%;}
+	.head-menu .swiper-slide:nth-child(4) {width:24%;}
+	.head-menu .swiper-slide:nth-child(5) {width:28%;}
+}
 .head-menu .swiper-slide .link {
 	display:block;
 	color:#333;
@@ -1660,6 +1683,7 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 .floating-btn-area {
 	position:fixed;
 	left:0;right:0;bottom:56px;
+	z-index:100;
 	-webkit-transition:all .2s;
 	-ms-transition:all .2s;
 	transition:all .2s;
