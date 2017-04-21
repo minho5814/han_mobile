@@ -74,6 +74,9 @@ $(window).load(function(){
 	$('.btn-like').click(function(){
 		$(this).addClass('on');
 	});
+	$('.btn-ico1').click(function(){
+		$(this).addClass('on');
+	});
 
 	/* -----------------------------------------------------------------------------------------------
 		폼요소
