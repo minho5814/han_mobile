@@ -575,6 +575,15 @@ html.no-scroll {
 	width:39px; height:53px;
 	background-position: 0 -534px;
 }
+
+.btn-pin {
+	width:35px; height:35px;
+	background-position: 0 -588px;
+}
+.btn-pin.on {
+	width:35px; height:35px;
+	background-position: 0 -624px;
+}
 /* --------------------------------------------------------------------------------------------
 	아이콘
 -------------------------------------------------------------------------------------------- */
@@ -1986,12 +1995,15 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 03 */
 .thumb-list3 .box .ico-label {
 	position:absolute;
-	left:0;top:12px;
+	left:0;top:0;
 	z-index:1;
 }
 .thumb-list3 {
 	overflow:hidden;
 	width:100%;
+	padding:0 10px;
+	box-sizing: border-box;
+	border-bottom:1px solid #eee;
 }
 .thumb-list3 .box {
 	position:relative;
@@ -2074,10 +2086,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list3 .box .btn-list .btn-ico {border-radius:3px;}
 
 .thumb-list3 .box .bottom-box {
+	position: relative;
 	padding:11px 0;
 	text-align: right;
 	border-top:1px solid #eee;
-	border-bottom:1px solid #eee;
 }
 .thumb-list3 .box .bottom-box .price {
 	font-size:13px;
@@ -2085,6 +2097,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list3 .box .bottom-box .price .number {
 	font-size:20px;
 	font-weight: bold;
+}
+.thumb-list3 .box .bottom-box .btn-pin {
+	position: absolute;
+	left:0; top:7px;
 }
 
 /* 캠페인 */

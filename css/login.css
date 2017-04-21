@@ -151,6 +151,9 @@
 	달력 영역
 -------------------------------------------------------------------------------------------- */
 .date-area {
+	padding:0 10px;
+}
+.date-area dl {
 	position: relative;
 	width: 100%;
 	height:40px;
@@ -158,21 +161,21 @@
 	border:1px solid #eee;
 	border-radius:5px;
 }
-.date-area:after {
+.date-area dl:after {
 	content: '';
 	display: block;
 	clear: both;
 }
-.date-area .title {
+.date-area dl .title {
 	float: left;
 	padding-left:10px;
 	color:#333;
 	line-height: 40px;
 }
-.date-area .calendar {
+.date-area dl .calendar {
 	float: right;
 }
-.date-area .calendar input {
+.date-area dl .calendar input {
 	border:0;
 }
 /* --------------------------------------------------------------------------------------------
@@ -514,7 +517,7 @@
 	background-size:16px 9px;
 }
 .order-cart-list .list-cont {
-	padding:15px 10px;
+	padding:15px 0;
 	background-color:#fff;
 }
 .order-cart-list .list-cont .calendar {

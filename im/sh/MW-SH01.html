@@ -29,13 +29,15 @@
 					</div>
 				</div>
 				<div class="list-cont">
-					<dl class="date-area">
-						<dt class="title">공급일 선택</dt>
-						<dd class="calendar">
-							<input type="text" value="2017/02/21(화)" class="date-type">
-							<button type="button" class="btn-image btn-calendar2">달력</button>
-						</dd>
-					</dl>
+					<div class="date-area">
+						<dl>
+							<dt class="title">공급일 선택</dt>
+							<dd class="calendar">
+								<input type="text" value="2017/02/21(화)" class="date-type">
+								<button type="button" class="btn-image btn-calendar2">달력</button>
+							</dd>
+						</dl>
+					</div>
 					<div class="thumb-list3">
 						<div class="box">
 							<div class="name">
@@ -43,6 +45,7 @@
 							</div>
 							<button class="btn-image btn-delete">삭제</button>
 							<a href="#" class="link">
+								<span class="ico-label label01">햇물품</span>
 								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 								<p class="text">이상기후로 인해서 수확시기가 빨라졌습니다. 안정적인 생산을 위해 책임소비가 필요한 시점입니다.</p>
 								<p class="count">주문가능수량 <span class="fColor02">2</span></p>
@@ -59,6 +62,7 @@
 								</div>
 							</a>
 							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
 								<span class="price"><span class="number">8,000</span>원</span>
 							</div>
 						</div>
@@ -106,6 +110,10 @@
 				$('.list-cont').slideDown();
 				$(this).attr('class','btn-aco btn-up');
 			}
+		});
+
+		$('.btn-pin').click(function(){
+			$(this).addClass('on');
 		});
 	});
 </script>
