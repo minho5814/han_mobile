@@ -1,4 +1,8 @@
 @charset "utf-8";
+/*공통*/
+ .float-area {overflow: hidden;}
+.float-area .f-left{float:left;}
+.float-area .f-right{float:right;}
 
 /* --------------------------------------------------------------------------------------------
 	조합원가입
@@ -396,6 +400,7 @@
 .board-view-area .content-area {padding:20px 0 0 0;}
 
 .direction-area{
+	margin-top:30px;
 	border-top:1px solid #bbb;
 	border-bottom:1px solid #bbb;
 }
@@ -414,7 +419,6 @@
 	font-weight: bold;
 }
 .direction-area li a {
-
 	overflow: hidden;
 	display: inline-block;
 	width: 100%;
@@ -423,3 +427,55 @@
 	text-overflow: ellipsis;
 	box-sizing: border-box;
 }
+
+/*물품개선*/
+.upgrade-area {display: none;}
+.upgrade-area.on {display: block;}
+
+.upgrade-area .white-content2 {
+	border-top: 8px solid #eee;
+}
+.upgrade-area .white-content2:first-child {
+	border:0;
+}
+
+.upgrade-item .thumb-list1 {
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+.upgrade-item .thumb-list1 .btn-list {
+	right:0;
+
+}
+
+.upgrade-list {
+	margin-top:15px;
+	border:1px solid #bbb;
+}
+.upgrade-list li {
+	padding:15px 10px;
+	border-top:1px solid #eee;
+}
+.upgrade-list li:first-child {border-top:0;}
+
+.upgrade-list li .title {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom:5px;
+	color: #333;
+	font-size: 13px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+}
+.upgrade-list li span {
+	color:#aaa;
+	font-size: 11px;
+}
+.upgrade-box {
+	padding:15px 10px;
+	background-color:#eee;
+	border:1px solid #bbb;
+}
+.upgrade-box p {font-size: 13px; color:#333; line-height:19px;}
+.upgrade-box span {display: block; margin-bottom:3px;}

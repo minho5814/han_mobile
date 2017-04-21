@@ -564,7 +564,7 @@ html.no-scroll {
 	transform:translateY(-50%);
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 500px;
+	background-size:50px 750px;
 }
 
 /* 관심물품 (토글) */
@@ -603,7 +603,7 @@ html.no-scroll {
 .btn-ico3 .text:before {
 	width:19px;
 	height:19px;
-	background-position:0 -302px;
+	background-position:0 -660px;
 }
 
 /* --------------------------------------------------------------------------------------------
