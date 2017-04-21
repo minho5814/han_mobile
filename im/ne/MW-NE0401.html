@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/hayoung.css">
+<link rel="stylesheet" href="../../css/suhyun.css">
+<!-- <link rel="stylesheet" href="../../css/login.css"> -->
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">물품안전</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="#" class="btn-image btn-search">통합검색</a>
+	</div>
+
+	<div class="container">
+		<div class="white-content2 qna-area on">
+			<div class="tab-list4">
+				<div class="item on"><span class="text">방사능 검사</span></div>
+				<div class="item"><span class="text">농식품 안전센터</span></div>
+				<div class="item"><span class="text">자주인증/자주관리ㆍ점검</span></div>
+				<div class="item"><span class="text">축산물 이력검사</span></div>
+			</div>
+			<div class="form-button-type1 mgT15">
+				<ul class="select-list1">
+					<li class="item">
+						<input type="tel" id="Id" value="2017">
+					</li>
+					<li class="item">
+						<select class="styled1">
+							<option>4월</option>
+							<option>2월</option>
+							<option>3월</option>
+						</select>
+					</li>
+				</ul>
+				<button type="button" class="btn-text btn-h42 btn-text-gray1 btn">검색</button>
+			</div>
+			<div class="safety-area">
+				<p class="radia-txt">
+					2017년 01월 방사능 검사결과<br>
+					불검출 <em class="fColor03">80</em>건, 검출 <em class="fColor03">2</em>건 검출 총량 <em class="fColor03">4.6Bg/kg</em> 입니다.
+				</p>
+				<div class="radia-box first">
+					<dl>
+						<dt>표고버섯 사각칩</dt>
+						<dd class="dete">검출, 검출 총량 : 2.3 Bq/kg</dd>
+						<dd class="radia-date">2017-03-27 (목)</dd>
+					</dl>
+				</div>
+				<div class="radia-box">
+					<dl>
+						<dt>전어</dt>
+						<dd>불검출</dd>
+						<dd class="radia-date">2017-03-27 (목)</dd>
+					</dl>
+				</div>
+				<div class="radia-box">
+					<dl>
+						<dt>황새치</dt>
+						<dd class="dete">검출, 검출 총량 : 2.3 Bq/kg</dd>
+						<dd class="radia-date">2017-03-27 (목)</dd>
+					</dl>
+				</div>
+				<div class="radia-box">
+					<dl>
+						<dt>시금치</dt>
+						<dd>불검출</dd>
+						<dd class="radia-date">2017-03-27 (목)</dd>
+					</dl>
+				</div>
+				<div class="radia-box">
+					<dl>
+						<dt>전어</dt>
+						<dd>불검출</dd>
+						<dd class="radia-date">2017-03-27 (목)</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="box-content1 mgT15">
+				<h3 class="box-title">방사능 검사 안내</h3>
+				<ul class="box-cont">
+					<li class="item">방사능 검사결과 전체 내역은 한살림 장보기 PC웹사이트에서 확인 가능합니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/*오늘의 물품소식 아코디언*/
+	$(document).on('click', '.qna-list .item', function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+		}else{
+			$(this).addClass('on').siblings('li').removeClass('on');
+		}
+	});
+
+
+	/*  개선필요,공지사항탭 */
+	$('.tab-list1 li').click(function(){
+		var idx = $(this).index();
+		$(this).addClass('on').siblings('li').removeClass('on');
+		$('.qna-area').removeClass('on').eq(idx).addClass('on');
+	});
+
+
+
+});
+</script>
+</body>
+</html>
