@@ -175,6 +175,8 @@ html.no-scroll {
 .pdT0 {padding-top:0 !important;}
 .pdT5 {padding-top:5px !important;}
 
+.pdB0 {padding-bottom:0 !important;}
+
 
 /* 텍스트 정렬 */
 .align-left {text-align:left !important;}
@@ -396,11 +398,11 @@ html.no-scroll {
 -------------------------------------------------------------------------------------------- */
 .campaign-mark {
 	position:relative;
-	width:90px;
-	height:90px;
+	width:105px;
+	height:105px;
 	background-repeat:no-repeat;
 	background-position:0 0;
-	background-size:90px 90px;
+	background-size:105px 105px;
 }
 .campaign-mark .label {
 	position:absolute;
@@ -409,10 +411,10 @@ html.no-scroll {
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 	color:#fff;
-	font-size:12px;
+	font-size:15px;
 	text-align:center;
 	font-weight:bold;
-	line-height:14px;
+	line-height:17px;
 }
 .campaign-mark .label:before {
 	content:'';
@@ -422,8 +424,8 @@ html.no-scroll {
 .bg1.campaign-mark {background-image:url(../img/ico/campaign/bg_campaign01.png);}
 /* 아이콘 종류 */
 .mark1.campaign-mark .label:before {
-	width:12px;
-	height:2px;
+	width:15px;
+	height:3px;
 	margin:0 auto 12px;
 	background-color:#fff;
 }
@@ -1103,7 +1105,7 @@ select.styled1 {
 	color:#333;
 }
 
-/* 탭 02 */
+/* 탭 03 */
 .tab-list3 {
 	overflow:hidden;
 	background-color:#fff;
@@ -1124,12 +1126,74 @@ select.styled1 {
 	line-height:55px;
 	white-space:nowrap;
 }
+@media only screen and (max-width: 320px) {
+	.tab-list3 .item .text {font-size:14px;}
+}
 .tab-list3 .item.on .text {
 	border-bottom:2px solid #60b015;
 	color:#60b015;
 	font-weight:bold;
 	line-height:55px;
 }/* on */
+
+/* 탭 04 */
+.tab-list4 {
+	overflow:hidden;
+	padding-top:1px;
+}
+.tab-list4 .item {
+	float:left;
+	position:relative;
+	width:50%;
+	margin:-1px -1px 0 0;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#f7f7f7;
+}
+.tab-list4 .item .text {
+	display:block;
+	height:44px;
+	color:#aaa;
+	font-size:15px;
+	text-align:center;
+	line-height:42px;
+}
+.tab-list4 .item.on {
+	z-index:1;
+	border-color:#666;
+	background-color:#fff;
+	color:#333;
+}
+
+/* 탭 05 */
+.tab-list5 {
+	overflow:hidden;
+	padding-top:1px;
+}
+.tab-list5 .item {
+	float:left;
+	position:relative;
+	width:33%;
+	margin:-1px -1px 0 0;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.tab-list5 .item:nth-child(3),
+.tab-list5 .item:nth-child(6) {width:34%;}
+.tab-list5 .item .text {
+	display:block;
+	height:44px;
+	color:#aaa;
+	font-size:15px;
+	text-align:center;
+	line-height:42px;
+}
+.tab-list5 .item.on {
+	z-index:1;
+	border-color:#666;
+	color:#333;
+}
 
 /* ============================================================================================
 	게시판
@@ -1171,7 +1235,7 @@ select.styled1 {
 	position:absolute;
 	right:0;top:8px;
 	color:#aaa;
-	font-size:11px;
+	font-size:13px;
 	line-height:15px;
 }
 .board2 table {
@@ -1335,7 +1399,7 @@ html.bg-gray {background-color:#f7f7f7;}
 }
 .gnb-head .user-login {
 	position:relative;
-	height:65px;
+	height:55px;
 }
 .gnb-head .user-login .user-name {
 	position:absolute;
@@ -1420,14 +1484,14 @@ html.bg-gray {background-color:#f7f7f7;}
 
 .gnb-head .calendar-area {
 	position:relative;
-	padding:12px 45px 12px 60px;
+	padding:6px 45px 6px 60px;
 	border-top:1px solid #56951a;
 	color:#fff;
 	font-size:15px;
 }
 .gnb-head .calendar-area .title {
 	position:absolute;
-	left:10px;top:12px;
+	left:10px;top:6px;
 	line-height:42px;
 }
 .gnb-head .calendar-area .date-type {
@@ -1438,7 +1502,7 @@ html.bg-gray {background-color:#f7f7f7;}
 }
 .gnb-head .calendar-area .btn-calendar {
 	position:absolute;
-	right:0;top:12px;
+	right:0;top:6px;
 	width:45px;
 	height:42px;
 	background-position:0 -420px;
@@ -1446,27 +1510,30 @@ html.bg-gray {background-color:#f7f7f7;}
 
 .gnb-layer .my-menu {
 	overflow:hidden;
+	position:relative;
 	margin:5px;
+	padding-left:107px;
 	border:1px solid #ddd;
 }
 .gnb-layer .my-menu .link {
 	display:block;
-	height:53px;
+	height:50px;
 	box-sizing:border-box;
 }
 .gnb-layer .my-menu dt,
 .gnb-layer .my-menu dd {
-	float:left;
 	box-sizing:border-box;
 	background-color:#fff;
 	font-size:14px;
 }
 .gnb-layer .my-menu dt {
-	width:31%;
+	position:absolute;
+	left:0;top:0;
+	width:107px;
 }
 .gnb-layer .my-menu dt .link {
 	position:relative;
-	padding:11px 0 0 10px;
+	padding:10px 0 0 10px;
 	color:#60b015;
 	font-weight:bold;
 	line-height:14px;
@@ -1481,43 +1548,66 @@ html.bg-gray {background-color:#f7f7f7;}
 	width:19px;
 	height:19px;
 	background:url(../img/sprite_ico.png) no-repeat 0 -63px;
-	background-size:40px 250px;
+	background-size:40px 500px;
 }
 .gnb-layer .my-menu dd {
-	width:23%;
+	float:left;
+	width:33%;
 	border-left:1px solid #ddd;
 }
+.gnb-layer .my-menu dd:last-child {width:34%;}
 .gnb-layer .my-menu dd .link {
 	color:#666;
 	text-align:center;
-	line-height:53px;
+	line-height:48px;
 }
 
 .gnb-layer .slide-menu {
 	overflow-y:auto;
 	position:absolute;
-	left:0;right:0;top:197px;bottom:0;
+	left:0;right:0;top:171px;bottom:0;
 	border-top:1px solid #ddd;
 	background-color:#f7f7f7;
 }
 .gnb-layer .slide-menu .menu-list {}
 .gnb-layer .slide-menu .menu-list .item {
-	width:105px;
-	height:75px;
-	padding:33px 0 0 10px;
+	position:relative;
+	width:112px;
+	height:55px;
+	padding-left:38px;
 	box-sizing:border-box;
 	background-color:#f7f7f7;
 	color:#aaa;
 	font-size:13px;
-	text-align:center;
-	line-height:42px;
+	line-height:55px;
 }
-.gnb-layer .slide-menu .menu-list .item1 {}
-.gnb-layer .slide-menu .menu-list .item2 {}
-.gnb-layer .slide-menu .menu-list .item3 {}
-.gnb-layer .slide-menu .menu-list .item4 {}
-.gnb-layer .slide-menu .menu-list .item5 {}
-.gnb-layer .slide-menu .menu-list .item6 {}
+.gnb-layer .slide-menu .menu-list .item:before {
+	content:'';
+	position:absolute;
+	left:10px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:23px;
+	height:20px;
+	background-image:url(../img/sprite_ico.png);
+	background-repeat:no-repeat;
+	background-size:40px 500px;
+}
+.gnb-layer .slide-menu .menu-list .item1:before {background-position:0 -103px;}
+.gnb-layer .slide-menu .menu-list .item2:before {background-position:0 -145px;}
+.gnb-layer .slide-menu .menu-list .item3:before {background-position:0 -187px;}
+.gnb-layer .slide-menu .menu-list .item4:before {background-position:0 -229px;}
+.gnb-layer .slide-menu .menu-list .item5:before {background-position:0 -271px;}
+.gnb-layer .slide-menu .menu-list .item6:before {background-position:0 -313px;}
+/* on */
+.gnb-layer .slide-menu .menu-list .item1.on:before {background-position:0 -124px;}
+.gnb-layer .slide-menu .menu-list .item2.on:before {background-position:0 -166px;}
+.gnb-layer .slide-menu .menu-list .item3.on:before {background-position:0 -208px;}
+.gnb-layer .slide-menu .menu-list .item4.on:before {background-position:0 -250px;}
+.gnb-layer .slide-menu .menu-list .item5.on:before {background-position:0 -292px;}
+.gnb-layer .slide-menu .menu-list .item6.on:before {background-position:0 -334px;}
+
 .gnb-layer .slide-menu .menu-list .item.on {
 	background-color:#fff;
 	color:#333;
@@ -1525,7 +1615,7 @@ html.bg-gray {background-color:#f7f7f7;}
 .gnb-layer .slide-menu .slide-area {
 	overflow-y:auto;
 	position:absolute;
-	left:105px;right:0;top:0;bottom:0;
+	left:112px;right:0;top:0;bottom:0;
 	padding:0 10px;
 	background-color:#fff;
 }
@@ -1553,9 +1643,6 @@ html.bg-gray {background-color:#f7f7f7;}
 	font-size:14px;
 	line-height:40px;
 }
-.gnb-layer .slide-menu .slide-area .depth-box {}
-.gnb-layer .slide-menu .slide-area {}
-.gnb-layer .slide-menu {}
 
 /* --------------------------------------------------------------------------------------------
 	컨테이너
@@ -1596,7 +1683,7 @@ html.bg-gray {background-color:#f7f7f7;}
 	transition:all .2s;
 }
 
-html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
+html.down .btm-fix-menu {bottom:-55px;}/* scroll down */
 .btm-fix-menu .btn-list {
 	overflow:hidden;
 }
@@ -1629,7 +1716,7 @@ html.down .btm-fix-menu {bottom:-46px;}/* scroll down */
 	height:20px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 250px;
+	background-size:40px 500px;
 }
 .btm-fix-menu .btnmmm-list .btn:nth-child(2) {width:34%;}
 .btm-fix-menu .btn-list .btn1:before {background-position:0 0;}
@@ -1900,41 +1987,42 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-box1 .text-area .title {
 	color:#333;
-	font-size:13px;
+	font-size:15px;
 	font-weight:bold;
+	line-height:24px;
 }
 .thumb-box1 .text-area .text-box {
 	position:relative;
 	height:30px;
-	margin-top:3px;
+	margin-top:2px;
 }
 .thumb-box1 .text-area .text-box .text {
 	position:absolute;
-	left:30px;right:30px;top:50%;
+	left:20px;right:20px;top:50%;
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 	width:auto;
-	max-height:30px;
+	max-height:32px;
 	color:#666;
-	font-size:12px;
-	line-height:15px;
+	font-size:14px;
+	line-height:16px;
 }
 .thumb-box1 .icon-area {
-	height:56px;
+	height:63px;
 	margin:0 10px;
-	padding:8px 30px;
+	padding:12px 15px;
 	box-sizing:border-box;
 	border-top:1px solid #eee;
 	color:#666;
-	font-size:11px;
+	font-size:13px;
 	text-align:left;
-	line-height:17px;
+	line-height:19px;
 	white-space:nowrap;
 }
 .thumb-box1 .icon-area p {
 	position:relative;
-	padding-left:15px;
+	padding-left:17px;
 }
 .thumb-box1 .icon-area p:before {
 	content:'';
@@ -1943,28 +2031,28 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:9px;
-	height:10px;
+	width:10px;
+	height:12px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 250px;
+	background-size:40px 500px;
 }
-.thumb-box1 .icon-area .join:before {background-position:0 -57px;}
-.thumb-box1 .icon-area .date:before {background-position:0 -68px;}
+.thumb-box1 .icon-area .join:before {background-position:0 -355px;}
+.thumb-box1 .icon-area .date:before {background-position:0 -368px;}
 .thumb-box1 .link {
 	display:block;
-	height:34px;
+	height:40px;
 	border-top:1px solid #ddd;
 	background-color:#f7f7f7;
 	color:#333;
-	font-size:13px;
+	font-size:14px;
 	text-align:center;
-	line-height:34px;
+	line-height:40px;
 }
 .thumb-box1 .link .text {
 	display:inline-block;
 	position:relative;
-	padding-right:11px;
+	padding-right:13px;
 	line-height:34px;
 }
 .thumb-box1 .link .text:before {
@@ -1974,8 +2062,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	-webkit-transform:translateY(-50%) rotate(45deg);
 	-ms-transform:translateY(-50%) rotate(45deg);
 	transform:translateY(-50%) rotate(45deg);
-	width:6px;
-	height:6px;
+	width:7px;
+	height:7px;
 	border-top:1px solid #bbb;
 	border-right:1px solid #bbb;
 }
@@ -1994,9 +2082,22 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .recipe-box .link {display:block;}
 .recipe-box .img-area {}
 .recipe-box .text-area {
+	position:relative;
 	margin-top:12px;
 	padding:0 16px 11px;
 	color:#333;
+}
+.recipe-box .text-area:before {
+	content:'';
+	position:absolute;
+	right:15px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:12px;
+	height:12px;
+	border-top:1px solid #bebebe;
+	border-right:1px solid #bebebe;
 }
 .recipe-box .text-area .text {
 	font-size:13px;
@@ -2006,6 +2107,52 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:21px;
 	font-weight:bold;
 	line-height:27px;
+}
+
+/* 한살림 소식 */
+.card-news-box {
+	padding:0 10px 16px;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.card-news-box .title-area {
+	position:relative;
+	display:block;
+	padding:15px 30px 14px 0;
+	color:#333;
+}
+.card-news-box .title-area:before {
+	content:'';
+	position:absolute;
+	right:5px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:12px;
+	height:12px;
+	border-top:1px solid #bebebe;
+	border-right:1px solid #bebebe;
+}
+.card-news-box .title-area .text {
+	font-size:13px;
+	line-height:18px;
+}
+.card-news-box .title-area .title {
+	font-size:16px;
+	font-weight:bold;
+	line-height:23px;
+}
+.card-news-box .hashtag-area {
+	padding:6px 0 10px;
+	border-top:1px solid #ddd;
+}
+.card-news-box .link {display:block;}
+.card-news-box .img-area {}
+.card-news-box .text-area {
+	margin-top:10px;
+	color:#666;
+	font-size:14px;
+	line-height:21px;
 }
 
 /* ============================================================================================
@@ -2230,7 +2377,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .tab-area {height:55px;}
 .view-content .tab-area .tab-list3.fixed {
 	position:fixed;
-	left:0;right:0;top:47px;
+	left:0;right:0;top:56px;
 	z-index:5;
 }
 
@@ -2243,15 +2390,15 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .view-content .visual-slide .swiper-pagination {
 	width:60px;
-	height:25px;
-	margin:10px auto 0;
+	height:27px;
+	margin:8px auto 0;
 	box-sizing:border-box;
 	border-radius:25px;
 	border:1px solid #cdcdcd;
 	color:#aaa;
 	font-size:12px;
 	text-align:center;
-	line-height:23px;
+	line-height:25px;
 }
 .view-content .visual-slide .swiper-pagination .swiper-pagination-current {color:#333;}
 .view-content .visual-slide .btn-prev,
@@ -2278,17 +2425,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 .view-content .goods-info-box {
-	padding:10px 10px 13px;
+	padding:8px 10px;
 	border-bottom:8px solid #eee;
 }
 .view-content .goods-info-box .order-volume {
-	height:32px;
+	height:35px;
 	margin:0 -10px;
 	background-color:#fff046;
 	color:#333;
 	font-size:13px;
 	text-align:center;
-	line-height:32px;
+	line-height:35px;
 }
 .view-content .goods-info-box .order-volume .fColor02 {font-weight:bold;}
 .view-content .goods-info-box .goods-info {position:relative;}
@@ -2296,15 +2443,15 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#333;
 	font-size:18px;
 	font-weight:bold;
-	line-height:54px;
+	line-height:50px;
 }
 .view-content .goods-info-box .goods-info .price-area {
 	overflow:hidden;
-	height:52px;
+	height:50px;
 	border-top:1px solid #ddd;
 	color:#333;
 	font-size:14px;
-	line-height:52px;
+	line-height:50px;
 }
 .view-content .goods-info-box .goods-info .price-area .title {float:left;}
 .view-content .goods-info-box .goods-info .price-area .price {float:right;}
@@ -2315,7 +2462,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 .view-content .goods-info-box .goods-list {
-	padding:18px 0 5px;
+	padding:14px 0 5px;
 	border-top:1px solid #ddd;
 	font-size:14px;
 	line-height:19px;
@@ -2386,118 +2533,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:18px;
 }
 .view-content .tab-content .view-img-area {
-	padding:10px 0 37px;
+	padding:10px 0 0;
 	font-size:0;
 	line-height:0;
 }
 .view-content .tab-content .view-img-area img {width:100%;}
 
-.view-content .tab-content .detail-info {}
-.view-content .tab-content .detail-info .info-dl {}
-.view-content .tab-content .detail-info .info-dl dt {}
-.view-content .tab-content .detail-info .info-dl dd {}
-.view-content .tab-content .detail-info .info-graybox {}
-.view-content .tab-content .detail-info .info-graybox dt {}
-.view-content .tab-content .detail-info .info-graybox dd {}
-
 .view-content .top-gray-box {
-	padding:17px 12px 25px;
+	padding:17px 10px 25px;
 	border-top:8px solid #eee;
 }
 .view-content .tab-content .top-gray-box {margin:0 -10px;}
-
-.cooking-box {
-	border:1px solid #ddd;
-	background-color:#fff;
-}
-.cooking-box .link {display:block;}
-.cooking-box .img-area {}
-.cooking-box .text-area {
-	position:relative;
-	margin:0 12px;
-	padding:14px 0 12px;
-	color:#333;
-	border-bottom:1px solid #ddd;
-}
-.cooking-box .text-area:before {
-	content:'';
-	position:absolute;
-	right:0;top:50%;
-	-webkit-transform:translateY(-50%) rotate(45deg);
-	-ms-transform:translateY(-50%) rotate(45deg);
-	transform:translateY(-50%) rotate(45deg);
-	width:10px;
-	height:10px;
-	border-top:1px solid #bbb;
-	border-right:1px solid #bbb;
-}
-.cooking-box .text-area .text {
-	font-size:13px;
-	line-height:16px;
-}
-.cooking-box .text-area .title {
-	font-size:16px;
-	font-weight:bold;
-	line-height:24px;
-}
-.cooking-box .hashtag-area {
-	overflow:hidden;
-	margin:-4px 0 0 -4px;
-	padding:12px;
-}
-.cooking-box .hashtag-area .hashtag {
-	float:left;
-	height:24px;
-	margin:4px 0 0 4px;
-	padding:0 8px;
-	border:1px solid #bbb;
-	color:#666;
-	font-size:13px;
-	line-height:24px;
-}
-
-.card-news-box {
-	padding:0 10px 16px;
-	border:1px solid #ddd;
-	background-color:#fff;
-}
-.card-news-box .title-area {
-	display:block;
-	padding:13px 0 10px;
-	color:#333;
-}
-.card-news-box .title-area .text {
-	font-size:11px;
-	line-height:14px;
-}
-.card-news-box .title-area .title {
-	font-size:13px;
-	font-weight:bold;
-	line-height:20px;
-}
-.card-news-box .hashtag-area {
-	overflow:hidden;
-	margin:-3px 0 0 -3px;
-	padding:10px 0;
-	border-top:1px solid #ddd;
-	color:#666;
-	font-size:11px;
-}
-.card-news-box .hashtag-area .hashtag {
-	float:left;
-	height:22px;
-	padding:0 7px;
-	margin:3px 0 0 3px;
-	background-color:#f7f7f7;
-	line-height:22px;
-}
-.card-news-box .img-area {}
-.card-news-box .text-area {
-	margin-top:7px;
-	color:#666;
-	font-size:12px;
-	line-height:18px;
-}
 
 .bullet-dl1 {
 	padding-bottom:12px;
@@ -2533,50 +2579,48 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 /* 방사성물질 검사 결과 */
-.radioactivity-box {
-	margin-top:10px;
-}
-.radioactivity-box .radioactivity-list {
-	border-top:1px solid #bbb;
-	border-bottom:1px solid #bbb;
-}
+.radioactivity-box {margin-top:10px;}
+.radioactivity-box .radioactivity-list {border-top:1px solid #bbb;}
 .radioactivity-box .radioactivity-list .item {
 	position:relative;
-	padding:15px 0 8px 55px;
+	padding:10px 0 20px 65px;
 	border-top:1px solid #eee;
 }
 .radioactivity-box .radioactivity-list .item:first-child {border-top:0;}
 .radioactivity-box .radioactivity-list .item .title {
 	position:absolute;
-	left:0;top:33px;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
 	color:#333;
-	font-size:12px;
+	font-size:14px;
 }
 .radioactivity-box .radioactivity-list .radioactivity {}
 .radioactivity-box .radioactivity-list .radioactivity .gauge-box {
 	position:relative;
-	padding-top:16px;
+	padding-top:30px;
 }
 .radioactivity-box .radioactivity-list .radioactivity .label {
 	display:inline-block;
 	position:absolute;
 	left:0;top:0;
-	height:14px;
+	height:20px;
 	padding:0 6px;
 	border-radius:2px 2px 0 2px;
 	border:1px solid #60b015;
 	color:#60b015;
-	font-size:9px;
-	line-height:14px;
+	font-size:11px;
+	line-height:20px;
 }
 .radioactivity-box .radioactivity-list .radioactivity .label:before {
 	content:'';
 	position:absolute;
-	left:-1px;bottom:-5px;
-	width:5px;
-	height:6px;
+	left:-1px;bottom:-7px;
+	width:6px;
+	height:7px;
 	background:url(../img/bg/bg_radioactivity.png) no-repeat 0 0;
-	background-size:5px 6px;
+	background-size:6px 7px;
 }
 .radioactivity-box .radioactivity-list .radioactivity .gauge {
 	display:block;
@@ -2588,7 +2632,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .radioactivity-box .radioactivity-list .radioactivity .text-area {
 	overflow:hidden;
 	color:#333;
-	font-size:9px;
+	font-size:11px;
 	line-height:20px;
 }
 .radioactivity-box .radioactivity-list .radioactivity .text-area .text {
@@ -2600,15 +2644,15 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 
 .view-content .tab-content .radioactivity-info {
 	overflow:hidden;
-	margin-top:10px;
 	color:#333;
-	font-size:11px;
-	line-height:21px;
+	font-size:13px;
+	line-height:24px;
+	letter-spacing:-1px;
 }
 .view-content .tab-content .radioactivity-info .ico-text {
 	position:relative;
-	margin-left:6px;
-	padding-left:11px;
+	margin-left:10px;
+	padding-left:14px;
 }
 .view-content .tab-content .radioactivity-info .ico-text:before {
 	content:'';
@@ -2617,8 +2661,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:6px;
-	height:6px;
+	width:7px;
+	height:7px;
 	background-color:#8dc919;
 }
 .view-content .tab-content .radioactivity-info .left-cont dd:last-child:before {background-color:#f6ce05;}
@@ -2626,13 +2670,19 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .tab-content .radioactivity-info .left-cont {
 	overflow:hidden;
 	float:left;
-	padding:0 6px;
+	padding:0 10px;
 	border:1px solid #ddd;
+}
+@media only screen and (max-width: 320px) {
+	.view-content .tab-content .radioactivity-info .left-cont {
+		width:100%;
+		box-sizing:border-box;
+	}
 }
 .view-content .tab-content .radioactivity-info .left-cont dt {
 	float:left;
 	position:relative;
-	padding-right:6px;
+	padding-right:10px;
 }
 .view-content .tab-content .radioactivity-info .left-cont dt:before {
 	content:'';
@@ -2643,8 +2693,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .view-content .tab-content .radioactivity-info .left-cont dd {float:left;}
 .view-content .tab-content .radioactivity-info .right-text {
-	float:left;
-	line-height:21px;
+	float:right;
+	margin-left:0;
+	line-height:26px;
 }
 
 .view-content .exhibition-slide {
@@ -2662,13 +2713,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	position:absolute;
 	right:10px;bottom:15px;
 	z-index:1;
-	height:23px;
-	padding:0 15px;
+	width:60px;
+	height:26px;
 	border-radius:25px;
 	background-color:rgba(50,50,50,.5);
 	color:#fff;
-	font-size:10px;
-	line-height:23px;
+	font-size:13px;
+	text-align:center;
+	line-height:26px;
 }
 .view-content .goods-more-box {margin-top:10px;}
 .view-content .goods-more-box .thumb-list2 {height:236px;}

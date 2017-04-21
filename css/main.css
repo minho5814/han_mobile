@@ -134,7 +134,7 @@
 	width:17px;
 	height:19px;
 	background:url(../img/sprite_ico.png) no-repeat 0 -83px;
-	background-size:40px 250px;
+	background-size:40px 500px;
 }
 
 .box-depth {
@@ -159,31 +159,6 @@
 	background-color:#fff;
 }
 .box-depth .depth-cont {padding:10px}
-
-.box-depth .depth-cont .tab-area {
-	overflow:hidden;
-	padding-top:1px;
-}
-.box-depth .depth-cont .tab-area .item {
-	float:left;
-	position:relative;
-	width:50%;
-	height:44px;
-	margin:-1px -1px 0 0;
-	box-sizing:border-box;
-	border:1px solid #ddd;
-	background-color:#f7f7f7;
-	color:#aaa;
-	font-size:15px;
-	text-align:center;
-	line-height:42px;
-}
-.box-depth .depth-cont .tab-area .item.on {
-	z-index:1;
-	border-color:#666;
-	background-color:#fff;
-	color:#333;
-}
 .box-depth .depth-cont .tab-cont {padding:10px 0;}
 .box-depth .depth-cont .tab-cont .thumb-list2 {display:none;}
 .box-depth .depth-cont .tab-cont .thumb-list2.on {display:block;}
