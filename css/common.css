@@ -898,7 +898,7 @@ html.no-scroll {
 }
 .order-floating-box .order-layer {
 	position:absolute;
-	left:0;right:0;bottom:0;
+	left:0;right:0;top:-1px;
 	padding-bottom:75px;
 	border-top:1px solid #f04114;
 	background-color:#eee;
@@ -963,11 +963,28 @@ html.no-scroll {
 	transform:translateX(-50%);
 	width:67px;
 	height:23px;
-	background:url(../img/btn/btn_floating.png) no-repeat 0 0;
+	background:url(../img/btn/btn_bg_floating.png) no-repeat 0 0;
 	background-size:67px 23px;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
+}
+.order-floating-box .order-layer .btn-order-close:before {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:17px;
+	height:11px;
+	background:url(../img/sprite_btn.png) no-repeat 0 -701px;
+	background-size:50px 750px;
+}
+.order-floating-box.on .order-layer .btn-order-close:before {
+	-webkit-transform:translate(-50%,-50%) rotate(180deg);
+	-ms-transform:translate(-50%,-50%) rotate(180deg);
+	transform:translate(-50%,-50%) rotate(180deg);
 }
 
 /* ============================================================================================

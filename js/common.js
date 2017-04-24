@@ -96,6 +96,15 @@ $(window).load(function(){
 			}
 		}
 	});
+	/* 물품상세 하단 플로팅 영역 */
+	$('.btn-order-close').click(function(){
+		var orderH = $(this).parents('.order-floating-box').find('.order-layer').outerHeight() - $(this).parents('.order-floating-box').find('.btn-list1').outerHeight();
+		if($(this).parents('.order-floating-box').hasClass('on')){
+			$(this).parents('.order-floating-box').removeClass('on').find('.order-layer').animate({top:-1}, 100);
+		}else{
+			$(this).parents('.order-floating-box').addClass('on').find('.order-layer').animate({top:-orderH}, 200);
+		}
+	});
 
 	/* -----------------------------------------------------------------------------------------------
 		폼요소
