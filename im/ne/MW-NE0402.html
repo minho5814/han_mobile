@@ -35,7 +35,7 @@
 					<li class="item">잔류농약 320여 성분 분석과 방사능 검사 등 독자적인 분석시스템을 구축하여 안전성과 공신력을 높였습니다.</li>
 				</ul>
 				<div class="board1">
-					<h3 class="cTitle01">기본정보(필수)</h3>
+					<h3 class="cTitle04 mgT15 mgB5">기본정보(필수)</h3>
 					<table>
 						<colgroup>
 							<col style="width:95px;">
@@ -54,29 +54,70 @@
 								<th scope="row" rowspan="3">분석분야</th>
 								<td>
 									<ul class="analy-list">
-										<li class="item">방사성물질</li>
-										<li class="item">GMO</li>
+										<li class="item item-analy01">방사성물질</li>
+										<li class="item item-analy02">GMO</li>
 									</ul>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<ul class="analy-list">
-										<li class="item">항생제</li>
-										<li class="item">잔류농약</li>
+										<li class="item item-analy03">항생제</li>
+										<li class="item item-analy04">잔류농약</li>
 									</ul>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<ul class="analy-list">
-										<li class="item">미생물(세균)</li>
-										<li class="item">수질</li>
+										<li class="item item-analy05">미생물(세균)</li>
+										<li class="item item-analy06">수질</li>
 									</ul>
 								</td>
 							</tr>
 						</tbody>
 					</table>
+				</div>
+				<div class="process-box">
+					<h3 class="cTitle04 mgT20">한살림농식품분석센터 분석 프로세스</h3>
+					<ul class="process-list">
+						<li class="item">분석의뢰</li>
+						<li class="item">분석센터 시료 접수</li>
+						<li class="item">전처리</li>
+						<li class="item">잔류농약 검사, GMO /축산물 /항생제검사, 미생물 /벤조피렌검사, 방사성물질 /수질검사</li>
+						<li class="item">분석 결과 취합</li>
+						<li class="item">분석 결과 보고</li>
+						<li class="item">성적서 검토 및 승인 성적서 발송</li>
+						<li class="item">[합격]물품공급, [불합격]공급중단</li>
+						<li class="item">검사결과 공시</li>
+					</ul>
+				</div>
+				<div class="vision-box">
+					<h3 class="cTitle04 mgT15 mgB5">한살림농식품분석센터 비전</h3>
+					<div class="box-content4 first">
+						<h3 class="box-title">1단계 (2015년)</h3>
+						<ul class="box-cont">
+							<li class="item">한살림 물품의 안정적 검사</li>
+							<li class="item">검사장비, 시설기반 구축</li>
+							<li class="item">농산물 공인검사기관 신청/지정</li>
+						</ul>
+					</div>
+					<div class="box-content4">
+						<h3 class="box-title">2단계 (2016년~2017년)</h3>
+						<ul class="box-cont">
+							<li class="item">자주기준/자주인증 데이터 축적과 활용</li>
+							<li class="item">한살림 자주인증 시스템 구축</li>
+							<li class="item">농축산물, 가공식품 전반 성분 분석 진행</li>
+							<li class="item">친환경 분석 허브기관 추진</li>
+						</ul>
+					</div>
+					<div class="box-content4">
+						<h3 class="box-title">3단계 (2018년)</h3>
+						<ul class="box-cont">
+							<li class="item">식품R&map;D기능 강화</li>
+							<li class="item">검사항목 확장, 분석 신뢰도 강화</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -85,28 +126,6 @@
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script>
-$(window).load(function(){
-	/*오늘의 물품소식 아코디언*/
-	$(document).on('click', '.qna-list .item', function(){
-		if($(this).hasClass('on')){
-			$(this).removeClass('on');
-		}else{
-			$(this).addClass('on').siblings('li').removeClass('on');
-		}
-	});
 
-
-	/*  개선필요,공지사항탭 */
-	$('.tab-list1 li').click(function(){
-		var idx = $(this).index();
-		$(this).addClass('on').siblings('li').removeClass('on');
-		$('.qna-area').removeClass('on').eq(idx).addClass('on');
-	});
-
-
-
-});
-</script>
 </body>
 </html>
