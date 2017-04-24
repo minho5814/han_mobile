@@ -9,10 +9,11 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapper"><!-- 공급중단 물품일 경우 class="no-goods" 추가 -->
 	<div class="header">
 		<h1 class="head-title">물품상세</h1>
 		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="#" class="btn-cart">장바구니<span class="number">44</span></a>
 		<button type="button" class="btn-image btn-search">통합검색</button>
 	</div>
 
@@ -720,49 +721,51 @@
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="order-floating-box">
-	<ul class="btn-list1">
-		<li class="item"><button type="button" class="btn-text-ico btn-ico1"><span class="text">관심물품</span></button></li>
-		<li class="item"><button type="button" class="btn-text-ico btn-ico2"><span class="text">장바구니</span></button></li>
-	</ul>
-	<div class="order-layer">
-		<div class="select-box">
-			<select class="styled1">
-				<option>물품 옵션을선택해주세요 </option>
-				<option>구이갈비(500g/우리보리살림돼지)</option>
-			</select>
-		</div>
-		<div class="option-list">
-			<div class="item">
-				<p class="title">구이갈비(500g/우리보리살림돼지)</p>
-				<div class="len-btn-box">
-					<button type="button" class="btn-plus">+</button>
-					<input type="tel" value="1">
-					<button type="button" class="btn-minus">-</button>
-				</div>
-				<p class="price"><span class="number">17,500</span>원</p>
-				<button type="button" class="btn-image btn-delete">삭제</button>
+	<div class="order-floating-box">
+		<ul class="btn-list1">
+			<li class="item"><button type="button" class="btn-text-ico btn-ico1"><span class="text">관심물품</span></button></li>
+			<li class="item"><button type="button" class="btn-text-ico btn-ico2"><span class="text">장바구니</span></button></li>
+		</ul>
+		<div class="order-layer">
+			<div class="select-box">
+				<select class="styled1">
+					<option>물품 옵션을선택해주세요 </option>
+					<option>구이갈비(500g/우리보리살림돼지)</option>
+				</select>
 			</div>
-			<div class="item">
-				<p class="title">구이갈비(500g/우리보리살림돼지)</p>
-				<div class="len-btn-box">
-					<button type="button" class="btn-plus">+</button>
-					<input type="tel" value="1">
-					<button type="button" class="btn-minus">-</button>
+			<div class="option-list">
+				<div class="item">
+					<p class="title">구이갈비(500g/우리보리살림돼지)</p>
+					<div class="len-btn-box">
+						<button type="button" class="btn-plus">+</button>
+						<input type="tel" value="1">
+						<button type="button" class="btn-minus">-</button>
+					</div>
+					<p class="price"><span class="number">17,500</span>원</p>
+					<button type="button" class="btn-image btn-delete">삭제</button>
 				</div>
-				<p class="price"><span class="number">17,500</span>원</p>
-				<button type="button" class="btn-image btn-delete">삭제</button>
+				<div class="item">
+					<p class="title">구이갈비(500g/우리보리살림돼지)</p>
+					<div class="len-btn-box">
+						<button type="button" class="btn-plus">+</button>
+						<input type="tel" value="1">
+						<button type="button" class="btn-minus">-</button>
+					</div>
+					<p class="price"><span class="number">17,500</span>원</p>
+					<button type="button" class="btn-image btn-delete">삭제</button>
+				</div>
 			</div>
+			<div class="all-price">
+				<p class="text">최근 한달 간 <span class="number">3</span>번 주문하셨습니다</p>
+				<span class="title">합계</span>
+				<span class="price"><em class="number">35,000</em>원</span>
+			</div>
+			<button type="button" class="btn-order-close">닫기</button>
 		</div>
-		<div class="all-price">
-			<span class="title">합계</span>
-			<span class="price"><em class="number">35,000</em>원</span>
-		</div>
-		<button type="button" class="btn-order-close">닫기</button>
 	</div>
 </div>
+
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
@@ -788,7 +791,7 @@ $(window).load(function(){
 		spaceBetween: 6
 	});
 
-	// 기획전 썸네일 리스트 셋텡
+	// 기획전 썸네일 리스트 셋팅
 	$('.goods-more-box .thumb-list2').each(function(){
 		var boxH = $(this).find('.box').outerHeight();
 		$(this).css({'height':boxH});

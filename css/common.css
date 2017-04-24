@@ -939,12 +939,21 @@ html.no-scroll {
 	background-position:0 -680px;
 }
 .order-floating-box .order-layer .all-price {
+	position:relative;
 	height:45px;
 	padding-right:10px;
 	color:#333;
 	font-size:13px;
 	text-align:right;
 	line-height:45px;
+}
+.order-floating-box .order-layer .all-price .text {
+	position:absolute;
+	left:10px;top:2px;
+}
+.order-floating-box .order-layer .all-price .text .number {
+	color:#60b015;
+	font-weight:bold;
 }
 .order-floating-box .order-layer .all-price .title {}
 .order-floating-box .order-layer .all-price .price {
@@ -985,6 +994,13 @@ html.no-scroll {
 	-webkit-transform:translate(-50%,-50%) rotate(180deg);
 	-ms-transform:translate(-50%,-50%) rotate(180deg);
 	transform:translate(-50%,-50%) rotate(180deg);
+}
+/* 공급중단 물품일 경우 */
+.wrapper.no-goods .order-floating-box {border-top:1px solid #82828c;}
+.wrapper.no-goods .order-floating-box .order-layer {display:none;}
+.wrapper.no-goods .view-content .goods-info-box .order-volume {
+	background-color:#82828c;
+	color:#fff;
 }
 
 /* ============================================================================================
@@ -1689,6 +1705,44 @@ html.bg-gray {background-color:#f7f7f7;}
 	line-height:55px;
 	white-space:nowrap;
 }
+
+/* 물품 상세 장바구니 버튼 */
+.header .btn-cart {
+	position:absolute;
+	right:40px;top:0;bottom:0;
+	z-index:5;
+	width:30px;
+	background-color:transparent;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .btn-cart:before {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:20px;
+	height:19px;
+	background:url(../img/sprite_btn.png) no-repeat 0 -713px;
+	background-size:50px 750px;
+}
+.header .btn-cart .number {
+	position:absolute;
+	right:-5px;top:10px;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:#60b015;
+	color:#fff;
+	font-size:11px;
+	text-align:center;
+	text-indent:0;
+	line-height:20px;
+}
+.header .btn-cart {}
 
 /* --------------------------------------------------------------------------------------------
 	전체메뉴
