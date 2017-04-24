@@ -517,6 +517,13 @@ html.no-scroll {
 	background-color:#999;
 	color:#fff;
 }
+
+/* orange */
+.btn-text-orange1 {
+	background-color:#ec7015;
+	color:#fff;
+}
+
 /* line */
 .btn-text-line1 {
 	border:1px solid #bbb;
@@ -2174,6 +2181,12 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list3 .box .text {
 	margin-bottom:5px;
 	color:#60b015;
+	font-size:13px;
+	line-height:18px;
+}
+.thumb-list3 .box .text2 {
+	margin-bottom:5px;
+	color:#aaa;
 	font-size:13px;
 	line-height:18px;
 }
