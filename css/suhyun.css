@@ -366,3 +366,66 @@
 	background:#fff url(../img/ico/ico_barcode.gif) no-repeat center center;
 	background-size:15px 13px;
 }
+
+/* 한살림 소식 */
+.news-area {}
+.news-area .views-text {
+	margin-bottom:7px;
+	font-size:16px;
+	color:#333;
+	line-height:20px;
+}
+.news-area .views-text .number {
+	font-weight:bold;
+}
+.news-area .news-box {
+	padding:15px 10px 20px;
+	border:1px solid #eee;
+	box-sizing:border-box;
+}
+.news-area .news-box .news-top {
+	position:relative;
+	padding-bottom:14px;
+	border-bottom:1px solid #eee;
+}
+.news-area .news-box .news-top .serve-text {
+	font-size:13px;
+	color:#333;
+	line-height:18px;
+}
+.news-area .news-box .news-top .news-tit {
+	font-size:16px;
+	color:#333;
+	line-height:22px;
+	font-weight:bold;
+}
+.news-area .news-box .news-top .btn-news {
+	position:absolute;
+	right:5px; top:5px;
+	width:35px;
+	height:35px;
+}
+.news-area .news-box .tag-area {
+	overflow:hidden;
+	margin-top:6px;
+}
+.news-area .news-box .tag-area a {
+	display:block;
+	float:left;
+	height:26px;
+	margin:4px;
+	padding:0 7px;
+	font-size:13px;
+	color:#666;
+	line-height:26px;
+	border:1px solid #eee;
+}
+.news-area .news-box .news-img {margin-top:6px;}
+.news-area .news-box .news-img img {width:100%; height:auto; vertical-align:middle;}
+.news-area .news-box .news-txt {
+	margin-top:10px;
+	padding:0 5px;
+	font-size:14px;
+	color:#666;
+	line-height:21px;
+}
