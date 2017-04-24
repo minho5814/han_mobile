@@ -244,7 +244,7 @@
 }
 
 .call-area {
-	margin-top:10px;
+	margin-bottom:10px;
 }
 .call-area .tit {font-size: 14px;}
 .call-area a {margin-left:10px; padding: 0 10px; line-height:23px;}
@@ -393,30 +393,57 @@
 	border-bottom:1px solid #bbb;
 }
 .board-view-area .title-area p {font-size:13px; color:#333;}
-.board-view-area .float-area {overflow: hidden; margin-top:5px;}
+.board-view-area .title-area p span {
+	display: block;
+	font-size:19px;
+	color:#333;
+	font-weight: bold;
+}
+.board-view-area .float-area {overflow: hidden; margin-top:10px;}
 .board-view-area .float-area .f-left{float:left;}
 .board-view-area .float-area .f-right{float:right;}
-.board-view-area .float-area span {color:#aaa; font-size: 11px;}
+.board-view-area .float-area span {color:#999; font-size: 13px;}
+.board-view-area .float-area span:first-child {padding-right:10px;}
+.board-view-area .float-area span em {color:#000;}
 .board-view-area .content-area {padding:20px 0 0 0;}
+.board-view-area .content-area p {font-size:15px; color:#666; line-height:22px;}
+
+/*한살림소식*/
+.board-view-area.type2 .title-area{
+	padding:0;
+	border:0;
+}
+.board-view-area.type2 .content-area {padding-top:15px;}
+.board-view-area .gray-content2 {
+	margin:0 -12px;
+	padding:15px 10px 25px 10px;
+	border-top:1px solid #ddd;
+}
+.board-view-area .gray-content2 .hashtag-area {
+	padding:0;
+}
+.board-view-area .gray-content2 .hashtag-area a {
+	background-color:#fff;
+}
 
 .direction-area{
 	margin-top:30px;
-	border-top:1px solid #bbb;
-	border-bottom:1px solid #bbb;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
 }
 .direction-area li {
 	position:relative;
 	height:46px;
 	line-height: 46px;
 }
-.direction-area li:first-child {border-bottom:1px solid #bbb;}
+.direction-area li:first-child {border-bottom:1px solid #eee;}
 .direction-area li span {
 	position:absolute;
 	left:0;
 	top:0;
-	font-size:12px;
+	font-size:14px;
 	color:#666;
-	font-weight: bold;
+
 }
 .direction-area li a {
 	overflow: hidden;
@@ -435,6 +462,9 @@
 .upgrade-area .white-content2 {
 	border-top: 8px solid #eee;
 }
+.upgrade-area .white-content2.none-border {
+	border-top: 0;
+}
 .upgrade-area .white-content2:first-child {
 	border:0;
 }
@@ -445,7 +475,6 @@
 }
 .upgrade-item .thumb-list1 .btn-list {
 	right:0;
-
 }
 
 .upgrade-list {
@@ -470,12 +499,93 @@
 }
 .upgrade-list li span {
 	color:#aaa;
-	font-size: 11px;
+   font-size: 11px;
 }
 .upgrade-box {
 	padding:15px 10px;
 	background-color:#eee;
 	border:1px solid #bbb;
 }
-.upgrade-box p {font-size: 13px; color:#333; line-height:19px;}
-.upgrade-box span {display: block; margin-bottom:3px;}
+.upgrade-box p {
+	font-size: 13px;
+	color:#333;
+	line-height:19px;
+}
+.upgrade-box span {
+	display: block;
+	margin-bottom:3px;
+}
+
+.upgrade-area  .upgrade-item.type2 .thumb-list1 {
+	position: relative;
+	height: 200px;
+}
+.upgrade-area .box.type2 {height:130px;}
+.upgrade-area .box.type2  .img-area {
+	transform: inherit;
+	top:12px;
+}
+.upgrade-area .box.type2  .text-area {padding-left:130px;}
+.upgrade-area .upgrade-txt {
+	position:absolute;
+	bottom:14px;
+	margin-top:15px;
+	font-size:15px;
+}
+
+.upgrade-area .box-content1 {
+	padding:0 10px;
+}
+.upgrade-area .box-content1 .title-area {
+	overflow: hidden;
+	padding:15px 0;
+	border-bottom:1px solid #eee;
+}
+.upgrade-area .box-content1 .title-area .title {
+	float:left;
+	height:30px;
+	line-height:30px;
+	font-size: 15px;
+	color:#333;
+}
+.upgrade-area  .upgrade-item.type2 .thumb-list1 .btn-list {bottom:-2px;}
+
+.upgrade-area .box-content1 .title-area .btn-text {float:right;}
+.upgrade-area .box-content1 .box-cont {
+	padding:15px 0;
+}
+
+.improve-list li {
+	padding:15px 10px;
+	border:1px solid #bbb;
+}
+.improve-list li .title {
+	margin-bottom:10px;
+	color:#333;
+	font-size: 13px;
+	font-weight: bold;
+}
+.improve-list li .cont {
+	height:38px;
+	color:#333;
+	font-size: 13px;
+	line-height:19px;
+}
+
+.improve-list li .name {
+	margin-top:15px;
+	padding-top:10px;
+	border-top:1px solid #bbb;
+	color:#aaa;
+	font-size:11px;
+}
+.improve-list li .name .date {float: right;}
+
+.search-info {
+	padding-bottom:15px;
+	border-bottom:1px solid #ddd;
+}
+.search-info + p {
+	padding:15px 0 20px;
+	text-align: center;
+}
