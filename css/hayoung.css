@@ -393,30 +393,57 @@
 	border-bottom:1px solid #bbb;
 }
 .board-view-area .title-area p {font-size:13px; color:#333;}
-.board-view-area .float-area {overflow: hidden; margin-top:5px;}
+.board-view-area .title-area p span {
+	display: block;
+	font-size:19px;
+	color:#333;
+	font-weight: bold;
+}
+.board-view-area .float-area {overflow: hidden; margin-top:10px;}
 .board-view-area .float-area .f-left{float:left;}
 .board-view-area .float-area .f-right{float:right;}
-.board-view-area .float-area span {color:#aaa; font-size: 11px;}
+.board-view-area .float-area span {color:#999; font-size: 13px;}
+.board-view-area .float-area span:first-child {padding-right:10px;}
+.board-view-area .float-area span em {color:#000;}
 .board-view-area .content-area {padding:20px 0 0 0;}
+.board-view-area .content-area p {font-size:15px; color:#666; line-height:22px;}
+
+/*한살림소식*/
+.board-view-area.type2 .title-area{
+	padding:0;
+	border:0;
+}
+.board-view-area.type2 .content-area {padding-top:15px;}
+.board-view-area .gray-content2 {
+	margin:0 -12px;
+	padding:15px 10px 25px 10px;
+	border-top:1px solid #ddd;
+}
+.board-view-area .gray-content2 .hashtag-area {
+	padding:0;
+}
+.board-view-area .gray-content2 .hashtag-area a {
+	background-color:#fff;
+}
 
 .direction-area{
 	margin-top:30px;
-	border-top:1px solid #bbb;
-	border-bottom:1px solid #bbb;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
 }
 .direction-area li {
 	position:relative;
 	height:46px;
 	line-height: 46px;
 }
-.direction-area li:first-child {border-bottom:1px solid #bbb;}
+.direction-area li:first-child {border-bottom:1px solid #eee;}
 .direction-area li span {
 	position:absolute;
 	left:0;
 	top:0;
-	font-size:12px;
+	font-size:14px;
 	color:#666;
-	font-weight: bold;
+
 }
 .direction-area li a {
 	overflow: hidden;
