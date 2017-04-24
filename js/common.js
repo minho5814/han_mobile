@@ -66,7 +66,7 @@ $(window).load(function(){
 	/* 하단 고정 메뉴가 있을 경우 */
 	$('.btm-fix-menu').each(function(){
 		var menuH = $(this).outerHeight();
-		$('.container').css({'padding-bottom':menuH});
+		$('.wrapper').css({'padding-bottom':menuH});
 	});
 
 	/* 하단 플로팅 버튼이 있을 경우 (물품상세) */
