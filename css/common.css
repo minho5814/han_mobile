@@ -1543,6 +1543,32 @@ select.styled1 {
 }
 .board1 td .txt {margin-bottom:2px;}
 
+.board1 td .row {
+	overflow: hidden;
+	margin-top:6px;
+}
+.board1 td .row:first-child {margin-top:0;}
+.board1 td .label-text{
+	display: inline-block;
+	color:#aaa;
+	font-size:13px;
+}
+.board1 td .reserve {
+	position: relative;
+}
+.board1 td .reserve:after {
+	content: '원';
+	position: absolute;
+	top:50%; right:10px;
+	transform: translateY(-50%);
+	color:#666;
+	font-size:15px;
+}
+.board1 td .reserve input {
+	padding-right:30px;
+	text-align: right;
+}
+
 /* 02 */
 .board2 {position:relative;}
 .board2 .top-text {
@@ -1583,6 +1609,13 @@ select.styled1 {
 .board2 td {
 	color:#666;
 	line-height:22px;
+}
+
+.board2 td .call-num {
+	margin-left:15px;
+}
+.board2 td .call-num:first-child {
+	margin-left:0;
 }
 
 /* ============================================================================================
@@ -2400,6 +2433,70 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	position: absolute;
 	left:0; top:10px;
 }
+
+/* 04 */
+.thumb-list4 .box .ico-label {
+	position:absolute;
+	left:22px;top:16px;
+	z-index:1;
+}
+.thumb-list4 {
+	overflow:hidden;
+	margin:-6px -3px 0;
+}
+.thumb-list4 .box {
+	float:left;
+	position:relative;
+	width:50%;
+	box-sizing:border-box;
+	padding:6px 3px 0;
+}
+.thumb-list4 .box .link {
+	display:block;
+	padding:15px 0 0;
+	border:1px solid #ddd;
+}
+.thumb-list4 .box .img-area {
+	width:130px;
+	height:130px;
+	margin:0 auto;
+}
+.thumb-list4 .box .text-area {
+	margin-top:7px;
+	height:90px;
+	text-align:center;
+	padding:0 18px;
+}
+.thumb-list4 .box .text-area .name {
+	height:30px;
+	color:#666;
+	font-size:13px;
+	line-height:15px;
+}
+.thumb-list4 .box .text-area .price {
+	margin-top:6px;
+	color:#333;
+	font-size:14px;
+	line-height:23px;
+}
+.thumb-list4 .box .text-area .price .number {
+	font-size:20px;
+	font-weight:bold;
+}
+.thumb-list4 .box .text-area .price-del {
+	color:#bbb;
+	font-size:13px;
+	text-decoration:line-through;
+	line-height:16px;
+}
+.thumb-list4 .box .btn-list {overflow:hidden;}
+.thumb-list4 .box .btn-list .item {
+	float:left;
+	width:50%;
+}
+.thumb-list4 .box .btn-list .item .btn-like {border-right:0;}
+
+
 
 /* 캠페인 */
 .thumb-box1 {
