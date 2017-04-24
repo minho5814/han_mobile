@@ -244,7 +244,7 @@
 }
 
 .call-area {
-	margin-top:10px;
+	margin-bottom:10px;
 }
 .call-area .tit {font-size: 14px;}
 .call-area a {margin-left:10px; padding: 0 10px; line-height:23px;}
@@ -435,6 +435,9 @@
 .upgrade-area .white-content2 {
 	border-top: 8px solid #eee;
 }
+.upgrade-area .white-content2.none-border {
+	border-top: 0;
+}
 .upgrade-area .white-content2:first-child {
 	border:0;
 }
@@ -445,7 +448,6 @@
 }
 .upgrade-item .thumb-list1 .btn-list {
 	right:0;
-
 }
 
 .upgrade-list {
@@ -470,12 +472,93 @@
 }
 .upgrade-list li span {
 	color:#aaa;
-	font-size: 11px;
+   font-size: 11px;
 }
 .upgrade-box {
 	padding:15px 10px;
 	background-color:#eee;
 	border:1px solid #bbb;
 }
-.upgrade-box p {font-size: 13px; color:#333; line-height:19px;}
-.upgrade-box span {display: block; margin-bottom:3px;}
+.upgrade-box p {
+	font-size: 13px;
+	color:#333;
+	line-height:19px;
+}
+.upgrade-box span {
+	display: block;
+	margin-bottom:3px;
+}
+
+.upgrade-area  .upgrade-item.type2 .thumb-list1 {
+	position: relative;
+	height: 200px;
+}
+.upgrade-area .box.type2 {height:130px;}
+.upgrade-area .box.type2  .img-area {
+	transform: inherit;
+	top:12px;
+}
+.upgrade-area .box.type2  .text-area {padding-left:130px;}
+.upgrade-area .upgrade-txt {
+	position:absolute;
+	bottom:14px;
+	margin-top:15px;
+	font-size:15px;
+}
+
+.upgrade-area .box-content1 {
+	padding:0 10px;
+}
+.upgrade-area .box-content1 .title-area {
+	overflow: hidden;
+	padding:15px 0;
+	border-bottom:1px solid #eee;
+}
+.upgrade-area .box-content1 .title-area .title {
+	float:left;
+	height:30px;
+	line-height:30px;
+	font-size: 15px;
+	color:#333;
+}
+.upgrade-area  .upgrade-item.type2 .thumb-list1 .btn-list {bottom:-2px;}
+
+.upgrade-area .box-content1 .title-area .btn-text {float:right;}
+.upgrade-area .box-content1 .box-cont {
+	padding:15px 0;
+}
+
+.improve-list li {
+	padding:15px 10px;
+	border:1px solid #bbb;
+}
+.improve-list li .title {
+	margin-bottom:10px;
+	color:#333;
+	font-size: 13px;
+	font-weight: bold;
+}
+.improve-list li .cont {
+	height:38px;
+	color:#333;
+	font-size: 13px;
+	line-height:19px;
+}
+
+.improve-list li .name {
+	margin-top:15px;
+	padding-top:10px;
+	border-top:1px solid #bbb;
+	color:#aaa;
+	font-size:11px;
+}
+.improve-list li .name .date {float: right;}
+
+.search-info {
+	padding-bottom:15px;
+	border-bottom:1px solid #ddd;
+}
+.search-info + p {
+	padding:15px 0 20px;
+	text-align: center;
+}

@@ -54,7 +54,7 @@
 /* =========================================================================================================
 	Reset
 ========================================================================================================= */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button {margin:0;padding:0}
 fieldset,img {border:0 none}
 dl,ul,ol,menu,li {list-style:none}
 blockquote, q {quotes:none}
@@ -75,7 +75,7 @@ input[type=password] {
 	background-color:#fff;
 	color:#666;
 	font-size:15px;
-	line-height:40px;
+	line-height:42px;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 	vertical-align:top;
@@ -84,7 +84,7 @@ input[type=password] {
 	position:relative;
 	padding-right:20px;
 	height:45px;
-	line-height:45px;
+	line-height:47px;
 }
 .input-price .text {
 	position:absolute;
@@ -104,17 +104,19 @@ input[type=submit] {-webkit-border-radius:0;border:0;border-radius:0;-webkit-app
 textarea {
 	width:100%;
 	padding:8px 10px;
-	border:1px solid #888;
+	border:1px solid #ccc;
 	border-radius:3px;
 	background-color:#fff;
-	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
+	box-sizing:border-box;
 	color:#444;
 	font-size:15px;
 	line-height:17px ;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	word-break:keep-all;
 	word-wrap:break-word;
+	resize:none;
 }
+textarea.hei175 {height:175px;}
 :-ms-input-placeholder {color:#ccc;}
 ::-webkit-input-placeholder {color:#ccc;}
 ::-moz-placeholder{color:#ccc;}
@@ -127,7 +129,7 @@ select {
 	background-color:#fff;
 	color:#666;
 	font-size:12px;
-	line-height:25px;
+	line-height:27px;
 	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 }
 h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;}
@@ -322,11 +324,8 @@ html.no-scroll {
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 }
-.box-content3 .box-cont {
-	padding:10px 0;
-}
+.box-content3 .box-cont {padding:10px 0;}
 
-.box-content3 {}
 /* --------------------------------------------------------------------------------------------
 	타이틀
 -------------------------------------------------------------------------------------------- */
@@ -358,7 +357,12 @@ html.no-scroll {
 	font-size:13px;
 	line-height:23px;
 }
-
+.cTitle04 {
+	color:#333;
+	font-size:14px;
+	line-height:24px;
+	font-weight:bold;
+}
 /* --------------------------------------------------------------------------------------------
 	슬라이드
 -------------------------------------------------------------------------------------------- */
@@ -477,30 +481,31 @@ html.no-scroll {
 .btn-h55 {
 	height:55px;
 	font-size:19px;
-	line-height:55px;
+	line-height:57px;
 }
-.btn-h55.btn-text-line1 {line-height:53px;}
+.btn-h55.btn-text-line1 {line-height:55px;}
 /* height 42 */
 .btn-h42 {
 	height:42px;
 	font-size:14px;
-	line-height:42px;
+	line-height:44px;
 }
-.btn-h42.btn-text-line1 {line-height:40px;}
+.btn-h42.btn-text-line1 {line-height:42px;}
+.btn-h42.btn-text-line2 {line-height:42px;}
 /* height 30 */
 .btn-h30 {
 	width:auto;
 	height:30px;
 	padding:0 15px;
 	font-size:13px;
-	line-height:30px;
+	line-height:32px;
 }
 @media only screen and (max-width: 320px) {
 	.btn-h30 {
 		padding:0 8px;
 	}
 }
-.btn-h30.btn-text-line1 {line-height:28px;}
+.btn-h30.btn-text-line1 {line-height:30px;}
 .btn-h30.type2 {padding:0 10px;}
 
 /* green */
@@ -528,6 +533,11 @@ html.no-scroll {
 .btn-text-line1 {
 	border:1px solid #bbb;
 	color:#333;
+}
+.btn-text-line2 {
+	border:1px solid #60b015;
+	color:#60b015;
+	font-weight:bold;
 }
 
 /* 버튼 정렬 */
@@ -560,7 +570,7 @@ html.no-scroll {
 	height:53px;
 	padding-left:26px;
 	font-size:19px;
-	line-height:53px;
+	line-height:55px;
 }
 .btn-text-ico .text:before {
 	content:'';
@@ -754,7 +764,7 @@ html.no-scroll {
 	padding-right:13px;
 	color:#666;
 	font-size:14px;
-	line-height:38px;
+	line-height:40px;
 }
 .btn-link-more .text:before {
 	content:'';
@@ -786,7 +796,7 @@ html.no-scroll {
 	padding-right:18px;
 	color:#666;
 	font-size:14px;
-	line-height:40px;
+	line-height:42px;
 }
 .btn-goods-more .text:before {
 	content:'';
@@ -801,6 +811,38 @@ html.no-scroll {
 	border-bottom:1px solid #666;
 	border-right:1px solid #666;
 }
+/* 링크 버튼 */
+.btn-link-more2 {
+	display:inline-block;;
+	height:30px;
+	padding:0 12px;
+	box-sizing:border-box;
+	border-radius:3px;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.btn-link-more2 .text {
+	display:inline-block;
+	position:relative;
+	height:30px;
+	padding-right:10px;
+	color:#333;
+	font-size:14px;
+	line-height:30px;
+}
+.btn-link-more2 .text:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:8px;
+	height:8px;
+	border-top:1px solid #999;
+	border-right:1px solid #999;
+}
+
 /* 전화상담 */
 .btn-call {
 	display:inline-block;
@@ -819,7 +861,7 @@ html.no-scroll {
 	padding-left:18px;
 	color:#60b015;
 	font-size:13px;
-	line-height:28px;
+	line-height:30px;
 }
 .btn-call .text:before {
 	content:'';
@@ -832,6 +874,22 @@ html.no-scroll {
 	height:14px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -322px;
 	background-size:50px 750px;
+}
+
+
+/*바코드 버튼*/
+.btn-barcode {
+	display:inline-block;
+	width:42px;
+	height:42px;
+	box-sizing:border-box;
+	border-radius:3px;
+	border:1px solid #bbb;
+	background:url(../img/btn/btn-barcode.gif) no-repeat center;
+	background-size:15px 13px;
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
 }
 
 /* 물품 수량 */
@@ -885,7 +943,7 @@ html.no-scroll {
 	border-right:1px solid #bbb;
 	color:#333;
 	text-align:center;
-	line-height:28px;
+	line-height:30px;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -946,12 +1004,21 @@ html.no-scroll {
 	background-position:0 -680px;
 }
 .order-floating-box .order-layer .all-price {
+	position:relative;
 	height:45px;
 	padding-right:10px;
 	color:#333;
 	font-size:13px;
 	text-align:right;
 	line-height:45px;
+}
+.order-floating-box .order-layer .all-price .text {
+	position:absolute;
+	left:10px;top:2px;
+}
+.order-floating-box .order-layer .all-price .text .number {
+	color:#60b015;
+	font-weight:bold;
 }
 .order-floating-box .order-layer .all-price .title {}
 .order-floating-box .order-layer .all-price .price {
@@ -993,6 +1060,13 @@ html.no-scroll {
 	-ms-transform:translate(-50%,-50%) rotate(180deg);
 	transform:translate(-50%,-50%) rotate(180deg);
 }
+/* 공급중단 물품일 경우 */
+.wrapper.no-goods .order-floating-box {border-top:1px solid #82828c;}
+.wrapper.no-goods .order-floating-box .order-layer {display:none;}
+.wrapper.no-goods .view-content .goods-info-box .order-volume {
+	background-color:#82828c;
+	color:#fff;
+}
 
 /* ============================================================================================
 	폼요소
@@ -1030,7 +1104,7 @@ input[type=checkbox]:disabled.styled1:before {background-position:-52px 0;}
 	height:25px;
 	color:#666;
 	font-size:15px;
-	line-height:25px;
+	line-height:27px;
 }
 .check-label input[type=checkbox] {margin-right:6px;}
 
@@ -1066,7 +1140,7 @@ input[type=radio]:disabled.styled1:before {background-position:-58px -26px;}
 	height:28px;
 	color:#666;
 	font-size:15px;
-	line-height:28px;
+	line-height:30px;
 }
 .radio-label input[type=radio] {margin-right:6px;}
 
@@ -1122,6 +1196,21 @@ select.styled1 {
 	position:absolute;
 	right:0;top:0;
 	width:65px;
+}
+
+/*버튼2개 포함 타입*/
+.form-button-type2 {
+	position:relative;
+	padding-right:127px;
+}
+.form-button-type2 .btn-barcode {
+	position:absolute;
+	right:0;top:0;
+}
+.form-button-type2 .btn {
+	position:absolute;
+	right:47px;top:0;
+	width:75px;
 }
 
 /* 전화번호 타입 */
@@ -1212,13 +1301,25 @@ select.styled1 {
 .form-list2 .form-item {margin-top:11px;}
 .form-list2 .form-item:first-child {margin-top:0;}
 
+/* 텍스트아레아 글자수 제한 */
+.text-len-box {}
+.text-len-box .len-text {
+	height:25px;
+	color:#ccc;
+	font-size:13px;
+	text-align:right;
+	line-height:25px;
+}
+
 /* ============================================================================================
 	폰트 스타일/컬러
 ============================================================================================ */
 .fColor01 {color:#333 !important;} /* 진한 회색 */
 .fColor02 {color:#60b015 !important;} /* 녹색 */
 .fColor03 {color:#f04114 !important;} /* 빨강 */
-.fColor04 {color:#239bd2 !important;} /* 빨강 */
+.fColor04 {color:#239bd2 !important;} /* 파랑 */
+.fColor05 {color:#aaa !important;} /* 연한회색 */
+.fColor06 {color:#ec7015 !important;} /* 주황 */
 /* ============================================================================================
 	리스트/탭
 ============================================================================================ */
@@ -1261,6 +1362,30 @@ select.styled1 {
 	width:2px;
 	height:2px;
 	background-color:#666;
+}
+
+/* 불릿 리스트 03 */
+.bullet-list3 {
+	color:#666;
+	font-size:15px;
+	line-height:22px;
+}
+.bullet-list3 .item {
+	position:relative;
+	margin-top:10px;
+	padding-left:7px;
+}
+.bullet-list3 .item:first-child {margin-top:0;}
+.bullet-list3 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:9px;
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+.bullet-list3 .bullet-text1 {
+	margin-top:2px;
 }
 
 /* 불릿 텍스트 01 */
@@ -1310,7 +1435,7 @@ select.styled1 {
 	border:1px solid #ddd;
 	color:#666;
 	font-size:13px;
-	line-height:24px;
+	line-height:26px;
 }
 
 /* 탭 01 */
@@ -1611,12 +1736,46 @@ select.styled1 {
 	line-height:22px;
 }
 
+<<<<<<< HEAD
 .board2 td .call-num {
 	margin-left:15px;
 }
 .board2 td .call-num:first-child {
 	margin-left:0;
 }
+=======
+
+/* 03 */
+.board3 {}
+
+.board3 table {
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+
+.board3 th {
+	padding:15px 0;
+	background-color:#f7f7f7;
+	color:#333;
+	font-size:15px;
+	text-align:center;
+	line-height:18px;
+	letter-spacing:-1px;
+	text-align: center;
+	font-weight: normal;
+}
+.board3 td {
+	padding:15px 0;
+	border-top:1px solid #ddd;
+	color:#666;
+	font-size:15px;
+	text-align:center;
+	font-weight:normal;
+}
+.board3 td.left {text-align: left;}
+
+
+>>>>>>> dccfcf8866350d42445663209ae0e326b0f141ea
 
 /* ============================================================================================
 	레이아웃
@@ -1728,6 +1887,43 @@ html.bg-gray {background-color:#f7f7f7;}
 	text-align:center;
 	line-height:55px;
 	white-space:nowrap;
+}
+
+/* 물품 상세 장바구니 버튼 */
+.header .btn-cart {
+	position:absolute;
+	right:40px;top:0;bottom:0;
+	z-index:5;
+	width:30px;
+	background-color:transparent;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .btn-cart:before {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:20px;
+	height:19px;
+	background:url(../img/sprite_btn.png) no-repeat 0 -713px;
+	background-size:50px 750px;
+}
+.header .btn-cart .number {
+	position:absolute;
+	right:-5px;top:10px;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:#60b015;
+	color:#fff;
+	font-size:11px;
+	text-align:center;
+	text-indent:0;
+	line-height:22px;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -3252,3 +3448,140 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .view-content .goods-more-box {margin-top:10px;}
 .view-content .goods-more-box .thumb-list2 {height:236px;}
+
+/* 이용후기 */
+.goods-postscript {
+	margin-top:10px;
+}
+.goods-postscript .btn-link-more {margin-top:10px;}
+.goods-postscript .gray-content1 {
+	margin:3px -10px 0;
+	padding:20px 10px;
+}
+.postscript-box {
+	margin-top:6px;
+	border:1px solid #bbb;
+	background-color:#fff;
+	font-size:15px;
+}
+.postscript-box:first-child {margin-top:0;}
+.postscript-box .title-box {
+	border-bottom:1px solid #ddd;
+	text-align:center;
+}
+.postscript-box .title-box .title {
+	position:relative;
+	display:inline-block;
+	height:40px;
+	padding-left:28px;
+	color:#333;
+	font-weight:bold;
+	line-height:42px;
+}
+.postscript-box .title-box .title:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:21px;
+	height:21px;
+	background-image:url(../img/sprite_ico.png);
+	background-repeat:no-repeat;
+	background-size:40px 500px;
+}
+.good.postscript-box .title-box .title:before {background-position:0 -381px;}/* 좋아요 */
+.bad.postscript-box .title-box .title:before {background-position:0 -403px;}/* 개선필요 */
+.postscript-box .text-area {
+	padding:13px 15px;
+	line-height:22px;
+}
+.postscript-box .info-area {
+	overflow:hidden;
+	padding:0 15px;
+	border-top:1px solid #ddd;
+	color:#666;
+	font-size:13px;
+	line-height:40px;
+}
+.postscript-box .info-area .name {float:left;}
+.postscript-box .info-area .date {float:right;}
+.postscript-list {
+	margin-top:20px;
+	border-bottom:1px solid #ddd;
+}
+.postscript-list .item {border-top:1px solid #ddd;}
+.postscript-list .postscript-box {
+	position:relative;
+	padding-left:30px;
+	border:0;
+}
+.postscript-list .postscript-box:before {
+	content:'';
+	position:absolute;
+	left:0;top:13px;
+	width:21px;
+	height:21px;
+	background-image:url(../img/sprite_ico.png);
+	background-repeat:no-repeat;
+	background-size:40px 500px;
+}
+.postscript-list .postscript-box.good:before {background-position:0 -381px;}/* 좋아요 */
+.postscript-list .postscript-box.bad:before {background-position:0 -403px;}/* 개선필요 */
+.postscript-list .postscript-box .text-area {padding:13px 0;}
+.postscript-list .postscript-box .info-area {padding:0;}
+
+/* 이용후기 팝업 */
+.all-list-box {
+	padding-bottom:10px;
+}
+.all-list-box .postscript-list {
+	margin-top:0;
+	border-top:0;
+}
+.all-list-box .postscript-list .item {
+	padding:0 10px;
+}
+
+/* 이용후기 작성 팝업 */
+.btn-goods {
+	display:inline-block;
+	width:100%;
+	height:42px;
+	box-sizing:border-box;
+	border-radius:3px;
+	border:1px solid #ddd;
+	background-color:#f7f7f7;
+	color:#aaa;
+	font-size:14px;
+	text-align:center;
+}
+.btn-goods .text {
+	display:inline-block;
+	position:relative;
+	padding-left:27px;
+	line-height:42px;
+}
+.btn-goods .text:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:21px;
+	height:21px;
+	background-image:url(../img/sprite_ico.png);
+	background-repeat:no-repeat;
+	background-size:40px 500px;
+}
+.btn-goods.btn-good .text:before {background-position:0 -425px;}
+.btn-goods.btn-bad .text:before {background-position:0 -447px;}
+.btn-goods.on {
+	border-color:#bbb;
+	background-color:#fff;
+	color:#333;
+}/* on */
+.btn-goods.btn-good.on .text:before {background-position:0 -381px;}/* on */
+.btn-goods.btn-bad.on .text:before {background-position:0 -403px;}/* on */
