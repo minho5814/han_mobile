@@ -834,6 +834,166 @@ html.no-scroll {
 	background-size:50px 750px;
 }
 
+/* 물품 수량 */
+.len-btn-box {
+	position:relative;
+	width:118px;
+	height:30px;
+	padding:0 28px;
+	box-sizing:border-box;
+	border:1px solid #bbb;
+	background-color:#fff;
+}
+.len-btn-box button {
+	position:absolute;
+	top:0;
+	width:28px;
+	height:28px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.len-btn-box .btn-plus {
+	right:0;
+}
+.len-btn-box .btn-minus {
+	left:0;
+}
+.len-btn-box button:before,
+.len-btn-box .btn-plus:after {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	background-color:#333;
+}
+.len-btn-box button:before {
+	width:8px;
+	height:1px;
+}
+.len-btn-box .btn-plus:after {
+	width:1px;
+	height:8px;
+}
+.len-btn-box input {
+	height:28px;
+	border-radius:0;
+	border:0;
+	border-left:1px solid #bbb;
+	border-right:1px solid #bbb;
+	color:#333;
+	text-align:center;
+	line-height:28px;
+}
+
+/* --------------------------------------------------------------------------------------------
+	물품상세 플로팅 버튼 영역
+-------------------------------------------------------------------------------------------- */
+.order-floating-box {
+	position:fixed;
+	left:0;right:0;bottom:0;
+	z-index:100;
+	background-color:#fff;
+}
+.order-floating-box .btn-list1 {
+	position:relative;
+	z-index:1;
+	padding:10px;
+	background-color:#fff;
+}
+.order-floating-box .order-layer {
+	position:absolute;
+	left:0;right:0;top:-1px;
+	padding-bottom:75px;
+	border-top:1px solid #f04114;
+	background-color:#eee;
+	box-shadow:0 -6px 12px rgba(0,0,0,.1);
+}
+.order-floating-box .order-layer .select-box {
+	padding:10px;
+	background-color:#fff;
+}
+.order-floating-box .order-layer .option-list {
+	padding:10px 10px 0;
+}
+.order-floating-box .order-layer .option-list .item {
+	position:relative;
+	margin-top:5px;
+	padding:0 10px 10px;
+	border:1px solid #999;
+	background-color:#fff;
+}
+.order-floating-box .order-layer .option-list .item:first-child {margin-top:0;}
+.order-floating-box .order-layer .option-list .item .title {
+	color:#333;
+	font-size:13px;
+	line-height:33px;
+}
+.order-floating-box .order-layer .option-list .item .price {
+	position:absolute;
+	right:10px;bottom:0;
+	color:#333;
+	font-size:16px;
+	line-height:32px;
+}
+.order-floating-box .order-layer .option-list .item .btn-delete {
+	position:absolute;
+	right:10px;top:10px;
+	width:20px;
+	height:20px;
+	background-position:0 -680px;
+}
+.order-floating-box .order-layer .all-price {
+	height:45px;
+	padding-right:10px;
+	color:#333;
+	font-size:13px;
+	text-align:right;
+	line-height:45px;
+}
+.order-floating-box .order-layer .all-price .title {}
+.order-floating-box .order-layer .all-price .price {
+	color:#f04114;
+	margin-left:5px;
+}
+.order-floating-box .order-layer .all-price .price .number {
+	font-size:19px;
+	font-weight:bold;
+}
+.order-floating-box .order-layer .btn-order-close {
+	position:absolute;
+	left:50%;top:-23px;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:67px;
+	height:23px;
+	background:url(../img/btn/btn_bg_floating.png) no-repeat 0 0;
+	background-size:67px 23px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.order-floating-box .order-layer .btn-order-close:before {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:17px;
+	height:11px;
+	background:url(../img/sprite_btn.png) no-repeat 0 -701px;
+	background-size:50px 750px;
+}
+.order-floating-box.on .order-layer .btn-order-close:before {
+	-webkit-transform:translate(-50%,-50%) rotate(180deg);
+	-ms-transform:translate(-50%,-50%) rotate(180deg);
+	transform:translate(-50%,-50%) rotate(180deg);
+}
+
 /* ============================================================================================
 	폼요소
 ============================================================================================ */
