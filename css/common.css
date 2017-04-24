@@ -1269,6 +1269,16 @@ select.styled1 {
 .form-list2 .form-item {margin-top:11px;}
 .form-list2 .form-item:first-child {margin-top:0;}
 
+/* 텍스트아레아 글자수 제한 */
+.text-len-box {}
+.text-len-box .len-text {
+	height:25px;
+	color:#ccc;
+	font-size:13px;
+	text-align:right;
+	line-height:25px;
+}
+
 /* ============================================================================================
 	폰트 스타일/컬러
 ============================================================================================ */
@@ -3420,5 +3430,3 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }/* on */
 .btn-goods.btn-good.on .text:before {background-position:0 -381px;}/* on */
 .btn-goods.btn-bad.on .text:before {background-position:0 -403px;}/* on */
-.btn-goods {}
-.btn-goods {}
