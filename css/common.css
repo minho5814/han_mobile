@@ -322,11 +322,8 @@ html.no-scroll {
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 }
-.box-content3 .box-cont {
-	padding:10px 0;
-}
+.box-content3 .box-cont {padding:10px 0;}
 
-.box-content3 {}
 /* --------------------------------------------------------------------------------------------
 	타이틀
 -------------------------------------------------------------------------------------------- */
@@ -487,6 +484,7 @@ html.no-scroll {
 	line-height:42px;
 }
 .btn-h42.btn-text-line1 {line-height:40px;}
+.btn-h42.btn-text-line2 {line-height:40px;}
 /* height 30 */
 .btn-h30 {
 	width:auto;
@@ -528,6 +526,11 @@ html.no-scroll {
 .btn-text-line1 {
 	border:1px solid #bbb;
 	color:#333;
+}
+.btn-text-line2 {
+	border:1px solid #60b015;
+	color:#60b015;
+	font-weight:bold;
 }
 
 /* 버튼 정렬 */
@@ -3209,3 +3212,47 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .view-content .goods-more-box {margin-top:10px;}
 .view-content .goods-more-box .thumb-list2 {height:236px;}
+
+/* 이용후기 */
+.goods-postscript {
+	margin-top:10px;
+}
+.goods-postscript .gray-content1 {
+	margin:3px -10px 0;
+	padding:20px 10px;
+}
+.postscript-box {
+	margin-top:6px;
+	border:1px solid #bbb;
+	background-color:#fff;
+	font-size:15px;
+}
+.postscript-box:first-child {margin-top:0;}
+.postscript-box .title-box {
+	border-bottom:1px solid #ddd;
+	text-align:center;
+}
+.postscript-box .title-box .title {
+	display:inline-block;
+	height:40px;
+	padding-left:28px;
+	color:#333;
+	font-weight:bold;
+	line-height:40px;
+}
+.good.postscript-box .title-box .title {}/* 좋아요 */
+.bad.postscript-box .title-box .title {}/* 개선필요 */
+.postscript-box .text-area {
+	padding:13px 15px;
+	line-height:22px;
+}
+.postscript-box .info-area {
+	overflow:hidden;
+	padding:0 15px;
+	border-top:1px solid #ddd;
+	color:#666;
+	font-size:13px;
+	line-height:40px;
+}
+.postscript-box .info-area .name {float:left;}
+.postscript-box .info-area .date {float:right;}
