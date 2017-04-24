@@ -811,6 +811,38 @@ html.no-scroll {
 	border-bottom:1px solid #666;
 	border-right:1px solid #666;
 }
+/* 링크 버튼 */
+.btn-link-more2 {
+	display:inline-block;;
+	height:30px;
+	padding:0 12px;
+	box-sizing:border-box;
+	border-radius:3px;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.btn-link-more2 .text {
+	display:inline-block;
+	position:relative;
+	height:30px;
+	padding-right:10px;
+	color:#333;
+	font-size:14px;
+	line-height:30px;
+}
+.btn-link-more2 .text:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:8px;
+	height:8px;
+	border-top:1px solid #999;
+	border-right:1px solid #999;
+}
+
 /* 전화상담 */
 .btn-call {
 	display:inline-block;
