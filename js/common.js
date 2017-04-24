@@ -69,6 +69,12 @@ $(window).load(function(){
 		$('.container').css({'padding-bottom':menuH});
 	});
 
+	/* 하단 플로팅 버튼이 있을 경우 (물품상세) */
+	$('.order-floating-box').each(function(){
+		var orderH = $(this).outerHeight();
+		$('.container').css({'padding-bottom':orderH});
+	});
+
 	/* 버튼 */
 	// 관심물품
 	$('.btn-like').click(function(){
@@ -76,6 +82,19 @@ $(window).load(function(){
 	});
 	$('.btn-ico1').click(function(){
 		$(this).addClass('on');
+	});
+	/* 물품 수량 */
+	$('.len-btn-box button').click(function(){
+		var len = $(this).parents('.len-btn-box').find('input').val() * 1;
+		if($(this).hasClass('btn-plus')){
+			$(this).parents('.len-btn-box').find('input').val(len + 1);
+		}else{
+			if(len <= 1){
+				$(this).parents('.len-btn-box').find('input').val('1');
+			}else{
+				$(this).parents('.len-btn-box').find('input').val(len - 1);
+			}
+		}
 	});
 
 	/* -----------------------------------------------------------------------------------------------

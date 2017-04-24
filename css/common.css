@@ -827,6 +827,72 @@ html.no-scroll {
 	background-size:50px 750px;
 }
 
+/* 물품 수량 */
+.len-btn-box {
+	position:relative;
+	width:118px;
+	height:30px;
+	padding:0 28px;
+	box-sizing:border-box;
+	border:1px solid #bbb;
+	background-color:#fff;
+}
+.len-btn-box button {
+	position:absolute;
+	top:0;
+	width:28px;
+	height:28px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.len-btn-box .btn-plus {
+	right:0;
+}
+.len-btn-box .btn-minus {
+	left:0;
+}
+.len-btn-box button:before,
+.len-btn-box .btn-plus:after {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	background-color:#333;
+}
+.len-btn-box button:before {
+	width:8px;
+	height:1px;
+}
+.len-btn-box .btn-plus:after {
+	width:1px;
+	height:8px;
+}
+.len-btn-box input {
+	height:28px;
+	border-radius:0;
+	border:0;
+	border-left:1px solid #bbb;
+	border-right:1px solid #bbb;
+	color:#333;
+	text-align:center;
+	line-height:28px;
+}
+
+/* --------------------------------------------------------------------------------------------
+	물품상세 플로팅 버튼 영역
+-------------------------------------------------------------------------------------------- */
+.order-floating-box {
+	position:fixed;
+	left:0;right:0;bottom:0;
+	z-index:100;
+	background-color:#fff;
+}
+.order-floating-box .btn-list1 {padding:10px;}
+.order-floating-box .order-layer {}
+
 /* ============================================================================================
 	폼요소
 ============================================================================================ */
