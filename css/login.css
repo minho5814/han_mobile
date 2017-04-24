@@ -459,13 +459,11 @@
 	장바구니
 -------------------------------------------------------------------------------------------- */
 .order-cart-list .list-group {
-	border-top:2px solid #bbb;
-}
-.order-cart-list .list-group:first-child {
 	border-top:1px solid #bbb;
 }
 .order-cart-list .list-title {
 	position: relative;
+	background-color: #eee;
 }
 .order-cart-list .list-title:after {
 	content: '';
@@ -498,7 +496,7 @@
 	line-height: 0;
 
 }
-.order-cart-list .list-title .btn-aco.btn-up:before {
+.order-cart-list .list-group.on .list-title .btn-aco:before {
 	content: '';
 	position: absolute;
 	top:50%; left:50%;
@@ -507,7 +505,7 @@
 	background:url(../img/btn/btn_up.png) 0 0 no-repeat;
 	background-size:16px 9px;
 }
-.order-cart-list .list-title .btn-aco.btn-down:before {
+.order-cart-list .list-group .list-title .btn-aco:before {
 	content: '';
 	position: absolute;
 	top:50%; left:50%;
@@ -516,9 +514,18 @@
 	background:url(../img/btn/btn_down.png) 0 0 no-repeat;
 	background-size:16px 9px;
 }
-.order-cart-list .list-cont {
-	padding:15px 0;
+.order-cart-list .list-group .list-cont {
+	display: none;
 	background-color:#fff;
+}
+.order-cart-list .list-group.on .list-cont {
+	padding-bottom:40px;
+}
+.order-cart-list .list-group.on:last-child .list-cont {
+	padding-bottom:10px;
+}
+.order-cart-list .list-group .list-cont .date-area{
+	margin-top:15px;
 }
 .order-cart-list .list-cont .calendar {
 	position: relative;
@@ -544,4 +551,44 @@
 	color:#aaa;
 	font-size:15px;
 	text-align: center;
+}
+
+.order-cart-list .list-cont .result {
+	padding:0 10px;
+	background-color:#f7f7f7;
+}
+.order-cart-list .list-cont .result .total {
+	overflow: hidden;
+	border-bottom:1px solid #eee;
+}
+.order-cart-list .list-cont .result .total dt {
+	float:left;
+	color:#666;
+	font-size:13px;
+	line-height: 45px;
+}
+.order-cart-list .list-cont .result .total dd {
+	float:right;
+	font-size:13px;
+	color:#f04114;
+	line-height: 45px;
+}
+.order-cart-list .list-cont .result .total dd .number {
+	font-size:22px;
+	font-weight: bold;
+	vertical-align: top;
+}
+.order-cart-list .list-cont .result .btn-group {
+	overflow: hidden;
+	padding:10px 0 15px;
+}
+.order-cart-list .list-cont .result .btn-group .fl {
+	float:left;
+}
+.order-cart-list .list-cont .result .btn-group .fr {
+	float: right;
+}
+
+.order-cart-list .list-cont .btn-area {
+	padding:0 10px;
 }

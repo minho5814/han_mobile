@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko" class="bg-gray">
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -19,13 +19,13 @@
 
 	<div class="container">
 		<div class="order-cart-list">
-			<div class="list-group">
+			<div class="list-group on">
 				<div class="list-title">
 					<div class="left-area">
-						<label><input type="checkbox" class="styled1"> 일반품<span class="num">(3)</span></label>
+						<label class="check-label"><input type="checkbox" class="styled1 all-check" name="Choice01"> 일반품<span class="num">(3)</span></label>
 					</div>
 					<div class="right-area">
-						<button type="button" class="btn-aco btn-up">닫기</button>
+						<button type="button" class="btn-aco">닫기</button>
 					</div>
 				</div>
 				<div class="list-cont">
@@ -41,7 +41,7 @@
 					<div class="thumb-list3">
 						<div class="box">
 							<div class="name">
-								<label class="ellipsis-line"><input type="checkbox" class="styled1"> 백미/유(2kg)</label>
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice01"> 백미/유(2kg)</label>
 							</div>
 							<button class="btn-image btn-delete">삭제</button>
 							<a href="#" class="link">
@@ -68,11 +68,10 @@
 						</div>
 						<div class="box">
 							<div class="name">
-								<label class="ellipsis-line"><input type="checkbox" class="styled1"> 백미/유(2kg)</label>
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice01"> 백미/유(2kg)</label>
 							</div>
 							<button class="btn-image btn-delete">삭제</button>
 							<a href="#" class="link">
-								<span class="ico-label label01">햇물품</span>
 								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 								<p class="text">해당 공급일에 동일한 물품 구입 이력이 있습니다.</p>
 								<p class="count">주문가능수량 <span class="fColor02">2</span></p>
@@ -95,11 +94,10 @@
 						</div>
 						<div class="box">
 							<div class="name">
-								<label class="ellipsis-line"><input type="checkbox" class="styled1"> 백미/유(2kg)</label>
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice01"> 백미/유(2kg)</label>
 							</div>
 							<button class="btn-image btn-delete">삭제</button>
 							<a href="#" class="link">
-								<span class="ico-label label01">햇물품</span>
 								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 								<p class="text">최근 3개월동안 자주 이용했던 물품입니다.</p>
 								<p class="count">주문가능수량 <span class="fColor02">2</span></p>
@@ -122,11 +120,10 @@
 						</div>
 						<div class="box">
 							<div class="name">
-								<label class="ellipsis-line"><input type="checkbox" class="styled1"> 백미/유(2kg)</label>
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice01"> 백미/유(2kg)</label>
 							</div>
 							<button class="btn-image btn-delete">삭제</button>
 							<a href="#" class="link">
-								<span class="ico-label label01">햇물품</span>
 								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 								<p class="count">주문가능수량 <span class="fColor02">2</span></p>
 								<div class="btn-list">
@@ -173,33 +170,525 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="btn-area mgT20">
-					<a href="#" class="btn-text btn-h55 btn-text-green1">계속 장보기</a>
-				</div>
-
-				<div class="box-content1 mgT25">
-					<h3 class="box-title">장바구니 안내</h3>
-					<dl class="box-cont bottom-line">
-						<dt class="title">출자금 자동증자</dt>
-						<dd class="item">
-							비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등 조직 운영에 사용되며, 물품 구입 시
-							<strong>의무자동출자</strong> 됩니다. 출자금은 탈퇴 시 환불됩니다.
-							<span class="btn-wrap"><a href="#" class="btn-text btn-h30 btn-text-line1">출자금 의무증자 제도란</a></span>
-						</dd>
-						<dd class="item">출자금 등은 부가세 매입세액 및 연말정산 공제 대상이 아닙니다.</dd>
-					</dl>
-					<dl class="box-cont bottom-line">
-						<dt class="title">결제방법</dt>
-						<dd class="item">결제 방법은 <strong>신용카드, 무통장입금, 지로, CMS</strong>로 결제할 수 있습니다.</dd>
-						<dd class="item">대금 결제일은 결제 방법에 따라 다를 수 있습니다.</dd>
-						<dd class="item">소속생협에 따라 가능한 결제 방법이 다를 수 있습니다.</dd>
-					</dl>
-					<div class="refer">
-						<p>기후 및 산지 사정 등으로 주문한 물품이 결품 또는 가격이 변경될 수 있습니다.</p>
+					<div class="result">
+						<div class="total">
+							<dl>
+								<dt>총 결제금액(2종)</dt>
+								<dd><span class="number">6,700</span> 원</dd>
+							</dl>
+						</div>
+						<div class="btn-group">
+							<div class="fl">
+								<button type="button" class="btn-text btn-h30 btn-text-line1">선택삭제</button>
+								<button type="button" class="btn-text btn-h30 btn-text-line1">공급중단 물품삭제</button>
+							</div>
+							<div class="fr">
+								<button type="button" class="btn-text btn-h30 btn-text-line1">관심물품 보기</button>
+							</div>
+						</div>
+					</div>
+					<div class="btn-area mgT20">
+						<ul class="btn-list1">
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">계속 장보기</a></li>
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-orange1">주문하기</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
+			<div class="list-group">
+				<div class="list-title">
+					<div class="left-area">
+						<label class="check-label"><input type="checkbox" class="styled1 all-check" name="Choice02"> 특별품<span class="num">(3)</span></label>
+					</div>
+					<div class="right-area">
+						<button type="button" class="btn-aco">닫기</button>
+					</div>
+				</div>
+				<div class="list-cont">
+					<div class="thumb-list3">
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice02"> 유기농면침구커버세트(슈퍼싱글/하늘색)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text2">공급예정기간 :<br>2017-03-20 (월) ~ 2017-03-24(금)</p>
+								<p class="count">주문가능수량 <span class="fColor02">2</span></p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice02"> 유정란(10알/국내산)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text2">공급예정기간 :<br>2017-03-20 (월) ~ 2017-03-24(금)</p>
+								<p class="count">주문가능수량 <span class="fColor02">제한없음</span></p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" disabled> 닭고기볶음밥(300g)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text">공급중단</p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+					</div>
+					<div class="result">
+						<div class="total">
+							<dl>
+								<dt>총 결제금액(2종)</dt>
+								<dd><span class="number">6,700</span> 원</dd>
+							</dl>
+						</div>
+						<div class="btn-group">
+							<div class="fl">
+								<button type="button" class="btn-text btn-h30 btn-text-line1">선택삭제</button>
+								<button type="button" class="btn-text btn-h30 btn-text-line1">공급중단 물품삭제</button>
+							</div>
+						</div>
+					</div>
+					<div class="btn-area mgT20">
+						<ul class="btn-list1">
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">계속 장보기</a></li>
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-orange1">주문하기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="list-group">
+				<div class="list-title">
+					<div class="left-area">
+						<label class="check-label"><input type="checkbox" class="styled1 all-check" name="Choice03"> 선물택배<span class="num">(3)</span></label>
+					</div>
+					<div class="right-area">
+						<button type="button" class="btn-aco">닫기</button>
+					</div>
+				</div>
+				<div class="list-cont">
+					<div class="date-area">
+						<dl>
+							<dt class="title">희망택배배송일 선택</dt>
+							<dd class="calendar">
+								<input type="text" value="2017/02/21(화)" class="date-type">
+								<button type="button" class="btn-image btn-calendar2">달력</button>
+							</dd>
+						</dl>
+					</div>
+					<div class="thumb-list3">
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice03"> 무말림(200g)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<span class="ico-label label01">햇물품</span>
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text">해당 공급일에 동일한 물품 구입 이력이 있습니다.</p>
+								<p class="count">주문가능수량 <span class="fColor02">2</span></p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice03"> 백미/유(2kg)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="count">주문가능수량 <span class="fColor02">제한없음</span></p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" disabled> 흑미(유1kg)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text">공급중단</p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+					</div>
+					<div class="result">
+						<div class="total">
+							<dl>
+								<dt>총 결제금액(2종)</dt>
+								<dd><span class="number">6,700</span> 원</dd>
+							</dl>
+						</div>
+						<div class="btn-group">
+							<div class="fl">
+								<button type="button" class="btn-text btn-h30 btn-text-line1">선택삭제</button>
+								<button type="button" class="btn-text btn-h30 btn-text-line1">공급중단 물품삭제</button>
+							</div>
+						</div>
+					</div>
+					<div class="btn-area mgT20">
+						<ul class="btn-list1">
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">계속 장보기</a></li>
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-orange1">주문하기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="list-group">
+				<div class="list-title">
+					<div class="left-area">
+						<label class="check-label"><input type="checkbox" class="styled1 all-check" name="Choice04"> 김장채소[산지직송]<span class="num">(3)</span></label>
+					</div>
+					<div class="right-area">
+						<button type="button" class="btn-aco">닫기</button>
+					</div>
+				</div>
+				<div class="list-cont">
+					<div class="date-area">
+						<dl>
+							<dt class="title">공급일 선택</dt>
+							<dd class="calendar">
+								<input type="text" value="2017/02/21(화)" class="date-type">
+								<button type="button" class="btn-image btn-calendar2">달력</button>
+							</dd>
+						</dl>
+					</div>
+					<div class="thumb-list3">
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice04"> 새송이버섯(300g)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text2">공급예정기간 :<br>2017-03-20 (월) ~ 2017-03-24(금)</p>
+								<p class="count">주문가능수량 <span class="fColor02">2</span></p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice04"> 알배기배추(1kg)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text2">공급예정기간 :<br>2017-03-20 (월) ~ 2017-03-24(금)</p>
+								<p class="count">주문가능수량 <span class="fColor02">제한없음</span></p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" disabled> 대파(500g)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text">공급중단</p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+					</div>
+					<div class="result">
+						<div class="total">
+							<dl>
+								<dt>총 결제금액(2종)</dt>
+								<dd><span class="number">6,700</span> 원</dd>
+							</dl>
+						</div>
+						<div class="btn-group">
+							<div class="fl">
+								<button type="button" class="btn-text btn-h30 btn-text-line1">선택삭제</button>
+								<button type="button" class="btn-text btn-h30 btn-text-line1">공급중단 물품삭제</button>
+							</div>
+						</div>
+					</div>
+					<div class="btn-area mgT20">
+						<ul class="btn-list1">
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">계속 장보기</a></li>
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-orange1">주문하기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="list-group">
+				<div class="list-title">
+					<div class="left-area">
+						<label class="check-label"><input type="checkbox" class="styled1 all-check" name="Choice05"> 김장채소[특별품]<span class="num">(3)</span></label>
+					</div>
+					<div class="right-area">
+						<button type="button" class="btn-aco">닫기</button>
+					</div>
+				</div>
+				<div class="list-cont">
+					<div class="date-area">
+						<dl>
+							<dt class="title">공급일 선택</dt>
+							<dd class="calendar">
+								<input type="text" value="2017/02/21(화)" class="date-type">
+								<button type="button" class="btn-image btn-calendar2">달력</button>
+							</dd>
+						</dl>
+					</div>
+					<div class="thumb-list3">
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice05"> 새송이버섯(300g)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text2">공급예정기간 :<br>2017-03-20 (월) ~ 2017-03-24(금)</p>
+								<p class="count">주문가능수량 <span class="fColor02">2</span></p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice05"> 알배기배추(1kg)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text2">공급예정기간 :<br>2017-03-20 (월) ~ 2017-03-24(금)</p>
+								<p class="count">주문가능수량 <span class="fColor02">제한없음</span></p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+						<div class="box">
+							<div class="name">
+								<label class="ellipsis-line"><input type="checkbox" class="styled1" disabled> 대파(500g)</label>
+							</div>
+							<button class="btn-image btn-delete">삭제</button>
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<p class="text">공급중단</p>
+								<div class="btn-list">
+									<p class="price"><span class="number">8,000</span>원</p>
+									<div class="select-wrap">
+										<select class="styled1">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>직접입력</option>
+										</select>
+									</div>
+								</div>
+							</a>
+							<div class="bottom-box">
+								<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
+								<span class="price"><span class="number">8,000</span>원</span>
+							</div>
+						</div>
+					</div>
+					<div class="result">
+						<div class="total">
+							<dl>
+								<dt>총 결제금액(2종)</dt>
+								<dd><span class="number">6,700</span> 원</dd>
+							</dl>
+						</div>
+						<div class="btn-group">
+							<div class="fl">
+								<button type="button" class="btn-text btn-h30 btn-text-line1">선택삭제</button>
+								<button type="button" class="btn-text btn-h30 btn-text-line1">공급중단 물품삭제</button>
+							</div>
+						</div>
+					</div>
+					<div class="btn-area mgT20">
+						<ul class="btn-list1">
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">계속 장보기</a></li>
+							<li class="item"><a href="#" class="btn-text btn-h55 btn-text-orange1">주문하기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white-content2">
+			<div class="box-content1">
+			<h3 class="box-title">장바구니 안내</h3>
+			<dl class="box-cont bottom-line">
+				<dt class="title">출자금 자동증자</dt>
+				<dd class="item">
+					비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등 조직 운영에 사용되며, 물품 구입 시
+					<strong>의무자동출자</strong> 됩니다. 출자금은 탈퇴 시 환불됩니다.
+					<span class="btn-wrap"><a href="#" class="btn-text btn-h30 btn-text-line1">출자금 의무증자 제도란</a></span>
+				</dd>
+				<dd class="item">출자금 등은 부가세 매입세액 및 연말정산 공제 대상이 아닙니다.</dd>
+			</dl>
+			<dl class="box-cont bottom-line">
+				<dt class="title">결제방법</dt>
+				<dd class="item">결제 방법은 <strong>신용카드, 무통장입금, 지로, CMS</strong>로 결제할 수 있습니다.</dd>
+				<dd class="item">대금 결제일은 결제 방법에 따라 다를 수 있습니다.</dd>
+				<dd class="item">소속생협에 따라 가능한 결제 방법이 다를 수 있습니다.</dd>
+			</dl>
+			<div class="refer">
+				<p>기후 및 산지 사정 등으로 주문한 물품이 결품 또는 가격이 변경될 수 있습니다.</p>
+			</div>
+		</div>
 		</div>
 	</div>
 </div>
@@ -208,13 +697,12 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 	$(window).load(function(){
+		$('.list-group.on .list-cont').slideDown(200);
 		$('.list-group .btn-aco').click(function(){
-			if($(this).hasClass('btn-up')){
-				$('.list-cont').slideUp();
-				$(this).attr('class','btn-aco btn-down');
+			if($(this).parents('.list-group').hasClass('on')){
+				$(this).parents('.list-group').removeClass('on').find('.list-cont').slideUp();
 			}else{
-				$('.list-cont').slideDown();
-				$(this).attr('class','btn-aco btn-up');
+				$(this).parents('.list-group').addClass('on').find('.list-cont').slideDown();
 			}
 		});
 
