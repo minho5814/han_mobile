@@ -827,6 +827,20 @@ html.no-scroll {
 	background-size:50px 750px;
 }
 
+/*바코드 버튼*/
+.btn-barcode {
+	display:inline-block;
+	width:42px;
+	height:42px;
+	box-sizing:border-box;
+	border-radius:3px;
+	border:1px solid #bbb;
+	background:url(../img/btn/btn-barcode.gif) no-repeat center;
+	background-size:15px 13px;
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+}
 /* ============================================================================================
 	폼요소
 ============================================================================================ */
@@ -957,6 +971,21 @@ select.styled1 {
 	width:65px;
 }
 
+/*버튼2개 포함 타입*/
+.form-button-type2 {
+	position:relative;
+	padding-right:127px;
+}
+.form-button-type2 .btn-barcode {
+	position:absolute;
+	right:0;top:0;
+}
+.form-button-type2 .btn {
+	position:absolute;
+	right:47px;top:0;
+	width:75px;
+}
+
 /* 전화번호 타입 */
 .phone-area {
 	overflow:hidden;
@@ -1051,7 +1080,9 @@ select.styled1 {
 .fColor01 {color:#333 !important;} /* 진한 회색 */
 .fColor02 {color:#60b015 !important;} /* 녹색 */
 .fColor03 {color:#f04114 !important;} /* 빨강 */
-.fColor04 {color:#239bd2 !important;} /* 빨강 */
+.fColor04 {color:#239bd2 !important;} /* 파랑 */
+.fColor05 {color:#aaa !important;} /* 연한회색 */
+.fColor06 {color:#ec7015 !important;} /* 주황 */
 /* ============================================================================================
 	리스트/탭
 ============================================================================================ */
@@ -1417,6 +1448,38 @@ select.styled1 {
 	color:#666;
 	line-height:22px;
 }
+
+
+/* 03 */
+.board3 {}
+
+.board3 table {
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+
+.board3 th {
+	padding:15px 0;
+	background-color:#f7f7f7;
+	color:#333;
+	font-size:15px;
+	text-align:center;
+	line-height:18px;
+	letter-spacing:-1px;
+	text-align: center;
+	font-weight: normal;
+}
+.board3 td {
+	padding:15px 0;
+	border-top:1px solid #ddd;
+	color:#666;
+	font-size:15px;
+	text-align:center;
+	font-weight:normal;
+}
+.board3 td.left {text-align: left;}
+
+
 
 /* ============================================================================================
 	레이아웃
