@@ -890,7 +890,52 @@ html.no-scroll {
 	z-index:100;
 	background-color:#fff;
 }
-.order-floating-box .btn-list1 {padding:10px;}
+.order-floating-box .btn-list1 {
+	position:relative;
+	z-index:1;
+	padding:10px;
+}
+.order-floating-box .order-layer {
+	position:absolute;
+	left:0;right:0;bottom:0;
+	padding-bottom:75px;
+	border-top:1px solid #f04114;
+	background-color:#eee;
+}
+.order-floating-box .order-layer .select-box {
+	padding:10px;
+	background-color:#fff;
+}
+.order-floating-box .order-layer .option-list {
+	padding:10px 10px 0;
+}
+.order-floating-box .order-layer .option-list .item {
+	position:relative;
+	margin-top:5px;
+	padding:0 10px 10px;
+	border:1px solid #999;
+	background-color:#fff;
+}
+.order-floating-box .order-layer .option-list .item:first-child {margin-top:0;}
+.order-floating-box .order-layer .option-list .item .title {
+	color:#333;
+	font-size:13px;
+	line-height:33px;
+}
+.order-floating-box .order-layer .option-list .item .price {
+	position:absolute;
+	right:10px;bottom:0;
+	color:#333;
+	font-size:16px;
+	line-height:32px;
+}
+.order-floating-box .order-layer .option-list .item .btn-delete {
+	position:absolute;
+	right:10px;top:10px;
+}
+.order-floating-box .order-layer .option-list {}
+.order-floating-box .order-layer .option-list {}
+.order-floating-box .order-layer {}
 .order-floating-box .order-layer {}
 
 /* ============================================================================================
