@@ -669,26 +669,26 @@
 		</div>
 		<div class="white-content2">
 			<div class="box-content1">
-			<h3 class="box-title">장바구니 안내</h3>
-			<dl class="box-cont bottom-line">
-				<dt class="title">출자금 자동증자</dt>
-				<dd class="item">
-					비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등 조직 운영에 사용되며, 물품 구입 시
-					<strong>의무자동출자</strong> 됩니다. 출자금은 탈퇴 시 환불됩니다.
-					<span class="btn-wrap"><a href="#" class="btn-text btn-h30 btn-text-line1">출자금 의무증자 제도란</a></span>
-				</dd>
-				<dd class="item">출자금 등은 부가세 매입세액 및 연말정산 공제 대상이 아닙니다.</dd>
-			</dl>
-			<dl class="box-cont bottom-line">
-				<dt class="title">결제방법</dt>
-				<dd class="item">결제 방법은 <strong>신용카드, 무통장입금, 지로, CMS</strong>로 결제할 수 있습니다.</dd>
-				<dd class="item">대금 결제일은 결제 방법에 따라 다를 수 있습니다.</dd>
-				<dd class="item">소속생협에 따라 가능한 결제 방법이 다를 수 있습니다.</dd>
-			</dl>
-			<div class="refer">
-				<p>기후 및 산지 사정 등으로 주문한 물품이 결품 또는 가격이 변경될 수 있습니다.</p>
+				<h3 class="box-title">장바구니 안내</h3>
+				<dl class="box-cont bottom-line">
+					<dt class="title">출자금 자동증자</dt>
+					<dd class="item">
+						비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등 조직 운영에 사용되며, 물품 구입 시
+						<strong>의무자동출자</strong> 됩니다. 출자금은 탈퇴 시 <strong>환불</strong>됩니다.
+						<span class="btn-wrap"><a href="#" class="btn-text btn-h30 btn-text-line1">출자금 의무증자 제도란</a></span>
+					</dd>
+					<dd class="item">출자금 등은 부가세 매입세액 및 연말정산 공제 대상이 아닙니다.</dd>
+				</dl>
+				<dl class="box-cont bottom-line">
+					<dt class="title">결제방법</dt>
+					<dd class="item">결제 방법은 <strong>신용카드, 무통장입금, 지로, CMS</strong>로 결제할 수 있습니다.</dd>
+					<dd class="item">대금 결제일은 결제 방법에 따라 다를 수 있습니다.</dd>
+					<dd class="item">소속생협에 따라 가능한 결제 방법이 다를 수 있습니다.</dd>
+				</dl>
+				<div class="refer">
+					<p>기후 및 산지 사정 등으로 주문한 물품이 결품 또는 가격이 변경될 수 있습니다.</p>
+				</div>
 			</div>
-		</div>
 		</div>
 	</div>
 </div>
@@ -696,20 +696,22 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
-	$(window).load(function(){
-		$('.list-group.on .list-cont').slideDown(200);
-		$('.list-group .btn-aco').click(function(){
-			if($(this).parents('.list-group').hasClass('on')){
-				$(this).parents('.list-group').removeClass('on').find('.list-cont').slideUp();
-			}else{
-				$(this).parents('.list-group').addClass('on').find('.list-cont').slideDown();
-			}
-		});
-
-		$('.btn-pin').click(function(){
-			$(this).addClass('on');
-		});
+$(window).load(function(){
+	/* 장바구니 아코디언 기능 */
+	$('.list-group.on .list-cont').slideDown(200);
+	$('.list-group .btn-aco').click(function(){
+		if($(this).parents('.list-group').hasClass('on')){
+			$(this).parents('.list-group').removeClass('on').find('.list-cont').slideUp();
+		}else{
+			$(this).parents('.list-group').addClass('on').find('.list-cont').slideDown();
+		}
 	});
+
+	/* 장바구니 핀 고정 버튼 */
+	$('.btn-pin').click(function(){
+		$(this).addClass('on');
+	});
+});
 </script>
 </body>
 </html>
