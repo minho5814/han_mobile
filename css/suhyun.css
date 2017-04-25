@@ -466,6 +466,7 @@
 
 /* 어린인 식단 상세 */
 .child-area {}
+.child-com {padding:20px 10px;}
 .child-area .child-img img {width:100%; height:auto; vertical-align:middle;}
 .child-area .child-tlte {
 	position:relative;
@@ -520,6 +521,7 @@
 	color:#666;
 	line-height:18px;
 }
+.child-area .box-content1 {margin:0 10px;}
 .child-area .box-content1 .box-cont .item.ty01:before {display:none;}
 
 /* MW-FO010301.html */
