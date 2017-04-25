@@ -376,7 +376,12 @@
 	font-weight: bold;
 	text-align: center;
 }
-
+.complete-area .text-grey {
+	font-size:15px;
+	color:#666;
+	line-height:18px;
+	text-align:center;
+}
 
 /* --------------------------------------------------------------------------------------------
 	조합원 가입
