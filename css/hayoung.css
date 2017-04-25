@@ -740,3 +740,110 @@ label.important:before {
 	 font-size:15px;
 	 line-height: 18px;
  }
+
+/*요리상세-연관요리 썸네일*/
+
+.cook-list  {
+	overflow:hidden;
+	margin:-6px -3px 0;
+}
+.cook-list .box {
+	float:left;
+	position:relative;
+	width:50%;
+	box-sizing:border-box;
+	padding:6px 3px 0;
+}
+.cook-list .box .link {
+	display:block;
+	/*padding:15px 0 0;*/
+	border:1px solid #ddd;
+	border-bottom:0;
+}
+.cook-list .box .img-area {
+	width:100%;
+	height:100%;
+
+}
+.cook-list .box .text-area {
+	height:60px;
+	padding:14px 25px;
+	text-align:center;
+	box-sizing: border-box;
+}
+.cook-list .box .text-area .name {
+	width:100%;
+	color:#333;
+	font-size:15px;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+}
+.cook-list .box .text-area .time {
+	display: inline-block;
+	padding-left:17px;
+	color:#60b015;
+	font-size:13px;
+	background:url(../img/bg/bg_time.png) no-repeat left center;
+	background-size:12px 12px;
+}
+.cook-slide {margin-top:5px;}
+.cook-slide .swiper-pagination {
+	width:60px;
+	height:27px;
+	margin:18px auto 0;
+	box-sizing:border-box;
+	border-radius:25px;
+	border:1px solid #cdcdcd;
+	color:#aaa;
+	font-size:12px;
+	text-align:center;
+	line-height:27px;
+}
+.cook-slide .swiper-pagination .swiper-pagination-current {color:#333;}
+.cook-slide .btn-prev,
+.cook-slide .btn-next {
+	position:absolute;
+	top:50%;
+	z-index:1;
+	-webkit-transform:translateY(-50%) rotate(-45deg);
+	-ms-transform:translateY(-50%) rotate(-45deg);
+	transform:translateY(-50%) rotate(-45deg);
+	width:10px;
+	height:10px;
+	margin-top:-16px;
+}
+
+.replay-table-wrap .cTitle04 {
+	height:30px;
+	line-height:30px;
+	color:#666;
+	font-weight: normal;
+}
+.reply-table {width:100%; border-top:1px solid #666; border-bottom:1px solid #bbb;}
+	.reply-table li {
+		box-sizing: border-box;
+		border-top:1px solid  #ddd;
+	}
+	.reply-table li.on {padding:20px;}
+		.reply-table li .title {
+			width:100%;
+			padding:20px;
+		}
+	.reply-table li:first-child {margin-top:0;}
+
+	.reply-table .cont > div,
+	.reply-table .cont > span {display: table-cell; vertical-align: middle;}
+	.reply-table .cont .img-area {width:13%; vertical-align: top;}
+	.reply-table .cont .img-area img {width: 100%; height: 100%;}
+	.reply-table .cont .text-area {width:70%; padding: 0 20px; vertical-align: top;}
+	.reply-table .cont .name { width:7%}
+	.reply-table .cont .date {width:10%}
+	.reply-table li {cursor: pointer;}
+	.reply-table li.on {cursor: default;}
+	.reply-table li .cont {display:none;}
+	.reply-table li.on .cont {display: block;}
+	.reply-table li.on .title {display: none;}
+	.reply-table li.on .cont {display:block;}
