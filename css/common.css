@@ -1173,7 +1173,11 @@ select.styled1 {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
-
+select.styled1:disabled {
+	background-color: #eee;
+	color: #aaa;
+	border-color: #ddd;
+}
 /* 셀렉트 리스트 형식 */
 .select-list1 {
 	overflow:hidden;
@@ -1736,14 +1740,12 @@ select.styled1 {
 	line-height:22px;
 }
 
-<<<<<<< HEAD
 .board2 td .call-num {
 	margin-left:15px;
 }
 .board2 td .call-num:first-child {
 	margin-left:0;
 }
-=======
 
 /* 03 */
 .board3 {}
@@ -1773,9 +1775,6 @@ select.styled1 {
 	font-weight:normal;
 }
 .board3 td.left {text-align: left;}
-
-
->>>>>>> dccfcf8866350d42445663209ae0e326b0f141ea
 
 /* ============================================================================================
 	레이아웃
