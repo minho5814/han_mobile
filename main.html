@@ -42,7 +42,7 @@
 				<div class="btn-img-next"></div>
 				<div class="page-btn-area">
 					<div class="swiper-pagination"></div>
-					<div class="btn-popup btn-more">전체보기</div>
+					<div class="btn-more">전체보기</div>
 				</div>
 			</div>
 		</div>
@@ -851,7 +851,7 @@
 							<div class="btn-img-next"></div>
 							<div class="page-btn-area">
 								<div class="swiper-pagination"></div>
-								<div class="btn-popup btn-more">전체보기</div>
+								<div class="btn-more">전체보기</div>
 							</div>
 						</div>
 					</div>
@@ -953,6 +953,54 @@
 	</div>
 </div>
 
+<!-- 레이어 영역 -->
+<!-- 상단 슬라이드 배너 -->
+<div class="popup-banner popup1">
+	<div class="banner-box">
+		<a href="#" class="banner"><div class="img-area"><img src="img/temp/img_main_visual01.jpg" alt="비주얼 이미지"></div></a>
+		<a href="#" class="banner"><div class="img-area"><img src="img/temp/img_main_visual02.jpg" alt="비주얼 이미지"></div></a>
+		<a href="#" class="banner"><div class="img-area"><img src="img/temp/img_main_visual03.jpg" alt="비주얼 이미지"></div></a>
+		<a href="#" class="banner"><div class="img-area"><img src="img/temp/img_main_visual04.jpg" alt="비주얼 이미지"></div></a>
+	</div>
+	<button type="button" class="btn-popup-close">닫기</button>
+</div>
+
+<!-- 이즈음 밥상 슬라이드 배너 -->
+<div class="popup-banner popup2">
+	<div class="banner-box">
+		<a href="#" class="banner">
+			<div class="img-area"><img src="img/temp/img_recipe.jpg" alt="요리 이미지"></div>
+			<div class="text-area">
+				<p class="text">찬바람 몰아내는 얼큰 시원함</p>
+				<p class="title">얼큰해물쌀국수</p>
+			</div>
+		</a>
+		<a href="#" class="banner">
+			<div class="img-area"><img src="img/temp/img_recipe.jpg" alt="요리 이미지"></div>
+			<div class="text-area">
+				<p class="text">찬바람 몰아내는 얼큰 시원함</p>
+				<p class="title">얼큰해물쌀국수</p>
+			</div>
+		</a>
+		<a href="#" class="banner">
+			<div class="img-area"><img src="img/temp/img_recipe.jpg" alt="요리 이미지"></div>
+			<div class="text-area">
+				<p class="text">찬바람 몰아내는 얼큰 시원함</p>
+				<p class="title">얼큰해물쌀국수</p>
+			</div>
+		</a>
+		<a href="#" class="banner">
+			<div class="img-area"><img src="img/temp/img_recipe.jpg" alt="요리 이미지"></div>
+			<div class="text-area">
+				<p class="text">찬바람 몰아내는 얼큰 시원함</p>
+				<p class="title">얼큰해물쌀국수</p>
+			</div>
+		</a>
+	</div>
+	<button type="button" class="btn-popup-close">닫기</button>
+</div>
+
+
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script><!-- 슬라이드 -->
 <script type="text/javascript" src="js/common.js"></script>
@@ -983,6 +1031,33 @@ $(window).load(function(){
 		pagination: '.recipe-slide .swiper-pagination',
 		noSwipingClass: 'recipe-slide',
 		paginationType: 'fraction'
+	});
+
+	/* 레이어 출력시 스크롤 방지  */
+	function scrollNo(){
+		var winTop = $(window).scrollTop();
+		$('html').addClass('no-scroll');
+		$('html').css({'top':-winTop}).attr('data', winTop);
+	}
+	function scrollOk(){
+		var winTop = $('html').attr('data');
+		$('html').removeClass('no-scroll').removeAttr('style');
+		$('body').scrollTop(winTop);
+	}
+	/* 팝업 출력 버튼 */
+	// 상단 롤링 배너
+	$('.main-visual-slide .page-btn-area').click(function(){
+		scrollNo();
+		$('.popup1').fadeIn(200).scrollTop(0);
+	});
+	// 이즈음 밥상
+	$('.recipe-slide .page-btn-area').click(function(){
+		scrollNo();
+		$('.popup2').fadeIn(200).scrollTop(0);
+	});
+	$('.btn-popup-close').click(function(){
+		scrollOk();
+		$('.popup-banner').fadeOut(100);
 	});
 
 	/* 조합원 추천 물품 탭 영역 */
