@@ -195,6 +195,13 @@ html.no-scroll {
 .bold {font-weight: bold !important;}
 .normal {font-weight: normal !important;}
 
+.normal-text {
+	margin-bottom:10px;
+	color:#666;
+	font-size:15px;
+	line-height: 18px;
+}
+
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
@@ -778,6 +785,18 @@ html.no-scroll {
 	width:19px;
 	height:19px;
 	background-position:0 -302px;
+}
+
+.btn-cart2 {
+	display:inline-block;
+	position:relative;
+	width:100%;
+	height:35px;
+	box-sizing:border-box;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	border-radius: 3px;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -2868,26 +2887,31 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list4 .box {
 	float:left;
-	position:relative;
 	width:50%;
 	box-sizing:border-box;
 	padding:6px 3px 0;
 }
-.thumb-list4 .box .link {
+.thumb-list4 .box .inner-wrap {
+	position: relative;
 	display:block;
-	padding:15px 0 0;
+	padding:18px 0 0;
 	border:1px solid #ddd;
 }
+.thumb-list4 .box .check-box {
+	position: absolute;
+	top:4px; left:4px;
+	z-index: 2;
+}
 .thumb-list4 .box .img-area {
-	width:130px;
-	height:130px;
+	width:124px;
+	height:124px;
 	margin:0 auto;
 }
 .thumb-list4 .box .text-area {
-	margin-top:7px;
-	height:90px;
-	text-align:center;
-	padding:0 18px;
+	margin-top:17px;
+	height:76px;
+	text-align:left;
+	padding:0 50px 0 10px;
 }
 .thumb-list4 .box .text-area .name {
 	height:30px;
@@ -2896,7 +2920,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:15px;
 }
 .thumb-list4 .box .text-area .price {
-	margin-top:6px;
 	color:#333;
 	font-size:14px;
 	line-height:23px;
@@ -2918,6 +2941,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list4 .box .btn-list .item .btn-like {border-right:0;}
 
+.thumb-list4 .box .btn-box {
+	position: absolute;
+	right:11px; bottom:16px;
+	width: 35px; height: 35px;
+}
 
 
 /* 캠페인 */
