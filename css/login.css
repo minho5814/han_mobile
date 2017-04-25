@@ -735,6 +735,10 @@
 	color:#333;
 	line-height: 27px;
 }
+.cart-wrap .section .price-wrap li .btn-tooltip {
+	margin-left: 5px;
+	vertical-align: middle;
+}
 .cart-wrap .section .price-wrap li .price {
 	float: right;
 }

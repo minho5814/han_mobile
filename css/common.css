@@ -2280,7 +2280,7 @@ html.down .btm-fix-menu {bottom:-55px;}/* scroll down */
 	font-size:11px;
 	font-weight:600;
 	text-align:center;
-	line-height:20px;
+	line-height:22px;
 }
 
 /*페이지하단고정*/
@@ -2834,28 +2834,31 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 /* 한살림 소식 */
+.card-news-list {}
+.card-news-list .card-news-box {margin-top:6px;}
+.card-news-list .card-news-box:first-child {margin-top:0;}
 .card-news-box {
 	padding:0 10px 16px;
 	border:1px solid #ddd;
 	background-color:#fff;
 }
-.card-news-box .title-area {
+.card-news-box .card-news-title {
 	position:relative;
+}
+.card-news-box .title-area {
 	display:block;
-	padding:15px 30px 14px 0;
+	padding:15px 45px 14px 0;
 	color:#333;
 }
-.card-news-box .title-area:before {
-	content:'';
+.card-news-box .card-news-title .btn-like {
 	position:absolute;
 	right:5px;top:50%;
-	-webkit-transform:translateY(-50%) rotate(45deg);
-	-ms-transform:translateY(-50%) rotate(45deg);
-	transform:translateY(-50%) rotate(45deg);
-	width:12px;
-	height:12px;
-	border-top:1px solid #bebebe;
-	border-right:1px solid #bebebe;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:35px;
+	height:35px;
+	border-radius:3px;
 }
 .card-news-box .title-area .text {
 	font-size:13px;
@@ -3122,7 +3125,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#aaa;
 	font-size:12px;
 	text-align:center;
-	line-height:25px;
+	line-height:27px;
 }
 .view-content .visual-slide .swiper-pagination .swiper-pagination-current {color:#333;}
 .view-content .visual-slide .btn-prev,
