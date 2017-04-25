@@ -815,14 +815,93 @@ label.important:before {
 	height:10px;
 	margin-top:-16px;
 }
-
+.replay-table-wrap  {
+	margin-top:5px;
+	padding-top:10px;
+	border-top:1px solid #eee;
+}
 .replay-table-wrap .cTitle04 {
 	height:30px;
 	line-height:30px;
 	color:#666;
 	font-weight: normal;
 }
-.reply-table {width:100%; border-top:1px solid #666; border-bottom:1px solid #bbb;}
+.reply-list {border:1px solid #eee;}
+.reply-list .item .question {
+	position:relative;
+	border-bottom:1px solid #eee;
+	padding:15px 45px 15px 10px;
+	box-sizing: border-box;
+
+}
+.reply-list .item .question:before{
+	content:'';
+	position: absolute;
+	right:10px;
+	top:50%;
+	width:10px;
+	height:6px;
+	margin-top:-3px;
+	background:url(../img/ico/ico_20x12_arrow.png) no-repeat right center;
+	background-size:10px 6px;
+}
+.reply-list .item.on .question:before  {
+	transform: rotate(180deg);
+}
+.reply-list .item .question .row:first-child {margin-bottom:5px;}
+.reply-list .item .question .title {
+	overflow: hidden;
+	display: inline-block;
+	width:100%;
+	color:#666;
+	font-size: 15px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+}
+
+.reply-list .item .date,
+.reply-list .item .name {
+	color:#aaa;
+	font-size: 13px;
+}
+.reply-list .item .name {padding-right:5px;}
+.reply-list .item .date {position:relative; padding-left:5px;}
+.reply-list .item .date:before {
+	content:'';
+	position: absolute;
+	left:0; top:50%;
+	margin-top:-5px;
+	width:1px; height:10px;
+	background-color:#aaa;
+}
+
+.reply-list .item.on .answer {display: block;}
+.reply-list .item .answer {
+	display: none;
+	padding:10px;
+	background-color:#f7f7f7;
+}
+.reply-list .item .answer .text {
+	margin-top:10px;
+	font-size:15px;
+	color:#666;
+	line-height:22px;
+}
+.reply-list .item .answer .text + .float-area .row span {
+	display: inline-block;
+	height:30px;
+	line-height: 30px;
+}
+
+.reply-list .item .float-area .btn-h30 {padding:0 12px;}
+
+.reply-list .item.on .question {display: none;}
+.reply-list .item .question {display: block;}
+.reply-list .item.on .answer {display: block;}
+.reply-list .item .answer {display: none;}
+
+/*.reply-table {width:100%; border-top:1px solid #666; border-bottom:1px solid #bbb;}
 	.reply-table li {
 		box-sizing: border-box;
 		border-top:1px solid  #ddd;
@@ -846,4 +925,4 @@ label.important:before {
 	.reply-table li .cont {display:none;}
 	.reply-table li.on .cont {display: block;}
 	.reply-table li.on .title {display: none;}
-	.reply-table li.on .cont {display:block;}
+	.reply-table li.on .cont {display:block;}*/
