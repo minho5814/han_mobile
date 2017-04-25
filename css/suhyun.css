@@ -1,11 +1,5 @@
 @charset "utf-8";
 /* MW-JO0601.html */
-.complete-area .text-grey {
-	font-size:15px;
-	color:#666;
-	line-height:18px;
-	text-align:center;
-}
 .sign-area {}
 .sign-area .sign-title {
 	position:relative;
@@ -469,7 +463,6 @@
 	margin:30px 0;
 	background-color:#eee;
 }
-
 .cooking-cont .thumb-wrap {padding:0 10px;}
 .cooking-cont .thumb-wrap .thumb-list1 {
 
@@ -485,4 +478,81 @@
 	position: absolute;
 	left:0;
 	top:14px;
+}
+
+/* 어린인 식단 상세 */
+.child-area {}
+.child-area .child-img img {width:100%; height:auto; vertical-align:middle;}
+.child-area .child-tlte {
+	position:relative;
+	padding:17px 15px;
+	border-bottom:2px solid #ccc;
+}
+.child-area .child-tlte .cTitle01 {font-weight:normal;}
+.child-area .child-tlte .btn-like {
+	position:absolute;
+	right:15px; top:7px;
+	width:35px;
+	height:35px;
+}
+.child-area .board1 .cTitle01 {
+	margin:15px 0 5px;
+	line-height:25px;
+}
+.child-area .board1 th {text-align:center;}
+.child-area .board1 .child-txt {
+	max-height:44px;
+	word-break:keep-all;
+}
+.child-area .board1 .child-txt .recipe {
+	padding-right:20px;
+	background:url(../img/ico/ico_recipe01.gif) no-repeat right 4px;
+	background-size:13px 10px;
+}
+.child-area .board1 .notice-child {
+	margin-top:10px;
+	padding-left:21px;
+	background:url(../img/ico/ico_recipe01.gif) no-repeat 4px center;
+	background-size:13px 10px;
+	font-size:13px;
+	color:#666;
+	line-height:12px;
+}
+.child-area .refer-box {
+	padding:15px 10px;
+	border:1px solid #eee;
+	box-sizing:border-box;
+}
+.child-area .refer-box dl dt {
+	margin:12px 0 8px;
+	font-size:13px;
+	color:#333;
+	line-height:12px;
+	font-weight:bold;
+}
+.child-area .refer-box dl dd {
+	padding-left:6px;
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+}
+.child-area .box-content1 .box-cont .item.ty01:before {display:none;}
+
+/* MW-FO010301.html */
+.photo-area {position:relative;}
+.photo-area .btn-call .text:before {
+	background:url(../img/ico/ico_photo.png) no-repeat 0 0;
+	background-size:14px 14px;
+}
+.photo-area .limit-txt {
+	display:block;
+	position:absolute;
+	right:0; top:7px;
+	font-size:13px;
+	color:#ccc;
+	line-height:12px;
+}
+.child-area .btn-list1 .item.ty02 {
+	width:33.33%;
+
 }

@@ -185,6 +185,9 @@ html.no-scroll {
 .align-right {text-align:right !important;}
 .align-center {text-align:center !important;}
 
+.floatL {float:left;}
+.floatR {float:right;}
+
 /*보더 (white-content)*/
 .borderT {border-top:1px solid #ddd}
 
@@ -252,6 +255,21 @@ html.no-scroll {
 	width:2px;
 	height:2px;
 	background-color:#666;
+}
+.box-cont .item2 {
+	position:relative;
+	margin-top:4px;
+	padding-left:6px;
+	color:#666;
+	font-size:13px;
+	line-height:18px;
+}
+.box-cont .item2:before {
+	content:'*';
+	position:absolute;
+	left:0;top:2px;
+	height: 13px;
+	font-size: 13px;
 }
 .box-cont .item:first-child {margin-top:0;}
 .box-content1 .box-btn {padding:0 10px 15px;}
@@ -1750,12 +1768,19 @@ select.styled1:disabled {
 	color:#666;
 	line-height:22px;
 }
-
-.board2 td .call-num {
-	margin-left:15px;
+.board2 td .call-box {
+	overflow: hidden;
 }
-.board2 td .call-num:first-child {
+.board2 td .call-box .num {
+	display: inline-block;
+	margin-left:10px;
+	padding:4px 0;
+}
+.board2 td .call-box .num:first-child {
 	margin-left:0;
+}
+.board2 td .btn-box .btn-text{
+	float: right;
 }
 
 /* 03 */
@@ -2199,6 +2224,84 @@ html {
 }
 
 /* --------------------------------------------------------------------------------------------
+	검색 레이어
+-------------------------------------------------------------------------------------------- */
+.search-layer {
+	position:fixed;
+	display:none;
+	right:-100%;top:0;bottom:0;
+	z-index:150;
+	width:100%;
+	padding-left:55px;
+	box-sizing:border-box;
+}
+.bg-close {
+	position:fixed;
+	left:0;right:0;top:0;bottom:0;
+	background-color:rgba(0,0,0,.75);
+}
+.search-layer .inner {
+	overflow:hidden;
+	position:absolute;
+	left:55px;right:0;top:0;bottom:0;
+	background-color:#fff;
+}
+.search-layer .head {
+	position:relative;
+	height:56px;
+	border-bottom:1px solid #60b015;
+}
+.search-layer .head .title {
+	color:#60ac19;
+	font-size:19px;
+	line-height:58px;
+	text-align:center;
+}
+.search-layer .head .btn-close {
+	position:absolute;
+	right:0;top:0;
+}
+.search-layer .layer-cont {
+	overflow-y:auto;
+	position:absolute;
+	left:0;right:0;top:57px;bottom:76px;
+}
+.search-layer .layer-cont .layer-title {
+	position:relative;
+	height:42px;
+	padding:0 25px 0 32px;
+	background-color:#f7f7f7;
+	color:#666;
+	font-size:13px;
+	line-height:44px;
+}
+.search-layer .layer-cont .layer-title:before {
+	content:'';
+	position:absolute;
+	left:25px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:2px;
+	height:2px;
+	background-color:#666;
+}
+.search-layer .layer-cont .layer-list {padding:0 10px;}
+.search-layer .layer-cont .check-label {
+	display:block;
+	padding:10px 15px;
+	border-top:1px solid #eee;
+}
+.search-layer .layer-cont .check-label:first-child {border-top:0;}
+.search-layer .layer-cont {}
+.search-layer .btn-list1 {
+	position:absolute;
+	left:0;right:0;bottom:0;
+	padding:10px 15px;
+	border-top:1px solid #bbb;
+}
+
+/* --------------------------------------------------------------------------------------------
 	컨테이너
 -------------------------------------------------------------------------------------------- */
 .container {padding:56px 0 20px;}
@@ -2565,7 +2668,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height: 53px;
 }
 .thumb-list3 .box:first-child {border-top:0;}
-.thumb-list3 .box .link {
+.thumb-list3 .box .inner-wrap {
 	position: relative;
 	display:block;
 	min-height:132px;
@@ -2600,7 +2703,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	margin-left:3px;
 }
 .thumb-list3 .box .btn-list {
-	overflow:hidden;
 	position:absolute;
 	left:130px;right:0; bottom:0;
 	z-index: 1;
@@ -2619,9 +2721,20 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list3 .box .btn-list .price .number {
 	font-size:18px;
 }
-.thumb-list3 .box .btn-list .select-wrap {
+@media only screen and (max-width: 320px) {
+	.thumb-list3 .box .btn-list .price .number {
+		font-size:16px;
+	}
+}
+.thumb-list3 .box .btn-list .input-select {
 	float:right;
 	width:105px;
+	margin:0;
+}
+@media only screen and (max-width: 320px) {
+	.thumb-list3 .box .btn-list .input-select {
+		width:85px;
+	}
 }
 .thumb-list3 .box .btn-list .btn-ico {border-radius:3px;}
 
@@ -3607,6 +3720,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 -------------------------------------------------------------------------------------------- */
 .select-btn1 {
 	overflow:hidden;
+	position:fixed;
+	left:0;right:0;top:57px;
+	z-index:100;
 	padding:7px 10px;
 	background-color:#f7f7f7;
 }
@@ -3615,4 +3731,3 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:150px;
 }
 .select-btn1 .btn-filter {float:right;}
-.select-btn1 {}
