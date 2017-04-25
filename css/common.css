@@ -188,6 +188,10 @@ html.no-scroll {
 /*보더 (white-content)*/
 .borderT {border-top:1px solid #ddd}
 
+/*폰트 굵기*/
+.bold {font-weight: bold !important;}
+.normal {font-weight: normal !important;}
+
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
@@ -581,7 +585,7 @@ html.no-scroll {
 	transform:translateY(-50%);
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 
 /* 관심물품 (토글) */
@@ -631,7 +635,7 @@ html.no-scroll {
 	display:inline-block;
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 	font-size:0;
 	vertical-align:top;
 	line-height:0;
@@ -695,6 +699,13 @@ html.no-scroll {
 	width:35px; height:35px;
 	background-position: 0 -624px;
 }
+
+/* 필터 */
+.btn-filter {
+	width:45px;
+	height:42px;
+	background-position: 0 -733px;
+}
 /* --------------------------------------------------------------------------------------------
 	아이콘
 -------------------------------------------------------------------------------------------- */
@@ -717,7 +728,7 @@ html.no-scroll {
 	transform:translate(-50%,-50%);
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 
 /* 관심물품 */
@@ -873,7 +884,7 @@ html.no-scroll {
 	width:14px;
 	height:14px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -322px;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 
 
@@ -1053,7 +1064,7 @@ html.no-scroll {
 	width:17px;
 	height:11px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -701px;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 .order-floating-box.on .order-layer .btn-order-close:before {
 	-webkit-transform:translate(-50%,-50%) rotate(180deg);
@@ -1154,7 +1165,7 @@ select.styled1 {
 	box-sizing:border-box;
 	border-radius:3px;
 	border:1px solid #bbb;
-	background:url(../img/ico/ico_select.png) no-repeat 100% 50%;
+	background:#fff url(../img/ico/ico_select.png) no-repeat 100% 50%;
 	background-size:22px 7px;
 	color:#666;
 	font-size:15px;
@@ -1785,7 +1796,7 @@ html {
 	height:100%;
 	box-sizing:border-box;
 }
-html.bg-gray {background-color:#f7f7f7;}
+.bg-gray {background-color:#f7f7f7;}
 /* --------------------------------------------------------------------------------------------
 	해더
 -------------------------------------------------------------------------------------------- */
@@ -1799,6 +1810,7 @@ html.bg-gray {background-color:#f7f7f7;}
 	background-color:#fff;
 
 }
+.header.popup-type {border-bottom:1px solid #bbb;} /*이전견적내역 팝업헤더*/
 .header .btn-back {}
 .head-menu {
 	position:absolute;
@@ -1909,7 +1921,7 @@ html.bg-gray {background-color:#f7f7f7;}
 	width:20px;
 	height:19px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -713px;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 .header .btn-cart .number {
 	position:absolute;
@@ -2279,7 +2291,7 @@ html.down .btm-fix-menu {bottom:-55px;}/* scroll down */
 	font-size:11px;
 	font-weight:600;
 	text-align:center;
-	line-height:20px;
+	line-height:22px;
 }
 
 /*페이지하단고정*/
@@ -2833,28 +2845,31 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 /* 한살림 소식 */
+.card-news-list {}
+.card-news-list .card-news-box {margin-top:6px;}
+.card-news-list .card-news-box:first-child {margin-top:0;}
 .card-news-box {
 	padding:0 10px 16px;
 	border:1px solid #ddd;
 	background-color:#fff;
 }
-.card-news-box .title-area {
+.card-news-box .card-news-title {
 	position:relative;
+}
+.card-news-box .title-area {
 	display:block;
-	padding:15px 30px 14px 0;
+	padding:15px 45px 14px 0;
 	color:#333;
 }
-.card-news-box .title-area:before {
-	content:'';
+.card-news-box .card-news-title .btn-like {
 	position:absolute;
 	right:5px;top:50%;
-	-webkit-transform:translateY(-50%) rotate(45deg);
-	-ms-transform:translateY(-50%) rotate(45deg);
-	transform:translateY(-50%) rotate(45deg);
-	width:12px;
-	height:12px;
-	border-top:1px solid #bebebe;
-	border-right:1px solid #bebebe;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:35px;
+	height:35px;
+	border-radius:3px;
 }
 .card-news-box .title-area .text {
 	font-size:13px;
@@ -3094,7 +3109,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .site-terms-infor .infor-list .item-infor .terms-list01 {margin-left:-15px;}
 
 /* --------------------------------------------------------------------------------------------
-	물품 상세 ()
+	물품 상세
 -------------------------------------------------------------------------------------------- */
 /* 탭 영역 고정 */
 .view-content .tab-area {height:55px;}
@@ -3584,3 +3599,18 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }/* on */
 .btn-goods.btn-good.on .text:before {background-position:0 -381px;}/* on */
 .btn-goods.btn-bad.on .text:before {background-position:0 -403px;}/* on */
+
+/* --------------------------------------------------------------------------------------------
+	함살림 소식
+-------------------------------------------------------------------------------------------- */
+.select-btn1 {
+	overflow:hidden;
+	padding:7px 10px;
+	background-color:#f7f7f7;
+}
+.select-btn1 select {
+	float:left;
+	width:150px;
+}
+.select-btn1 .btn-filter {float:right;}
+.select-btn1 {}
