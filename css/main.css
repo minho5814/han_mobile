@@ -1,6 +1,68 @@
 @charset "utf-8";
 
 .wrapper {background-color:#eee;}
+.container {padding-bottom:0;}
+.footer {
+	padding-bottom:20px;
+	background-color:#f7f7f7;
+}
+.footer .uitl-list {
+	overflow:hidden;
+	padding:0 5px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+.footer .uitl-list .link {
+	float:left;
+	position:relative;
+	width:31%;
+	height:36px;
+	color:#666;
+	font-size:12px;
+	text-align:center;
+	line-height:38px;
+}
+.footer .uitl-list .link:first-child,
+.footer .uitl-list .link:last-child {width:19%;}
+.footer .uitl-list .link:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:1px;
+	height:12px;
+	background-color:#ddd;
+}
+.footer .uitl-list .link:first-child:before {display:none;}
+.footer .footer-text {
+	padding:18px 10px;
+	color:#aaa;
+	font-size:11px;
+	line-height:15px;
+}
+.footer .footer-text p {margin-top:10px;}
+.footer .footer-btn-area {
+	overflow:hidden;
+	margin:0 5px;
+}
+.footer .footer-btn-area .item {
+	float:left;
+	width:33%;
+	padding:0 5px;
+	box-sizing:border-box;
+}
+.footer .footer-btn-area .item:first-child {width:34%;}
+.footer .footer-btn-area .item a {
+	display:block;
+	height:22px;
+	border:1px solid #ddd;
+	color:#aaa;
+	font-size:11px;
+	text-align:center;
+	line-height:24px;
+}
 /* 슬라이드 공통 */
 .page-btn-area {
 	position:relative;
@@ -14,7 +76,7 @@
 	background-color:rgba(50,50,50,.5);
 	color:#fff;
 	font-size:13px;
-	line-height:27px;
+	line-height:29px;
 }
 .page-btn-area .btn-more {
 	position:absolute;
@@ -70,7 +132,7 @@
 	width:19px;
 	height:29px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -463px;
-	background-size:50px 500px;
+	background-size:50px 750px;
 }
 .btn-img-prev {left:0;}
 .btn-img-next {right:0;}
@@ -141,8 +203,8 @@
 	margin-top:10px;
 	background-color:#fff;
 }
-.box-depth .title-area {height:45px;}
-.box-depth .title-area .title {
+.box-depth .box-title {height:45px;}
+.box-depth .box-title .title {
 	height:44px;
 	border-bottom:1px solid #bbb;
 	background-color:#fff;
@@ -152,7 +214,7 @@
 	text-align:center;
 	line-height:45px;
 }
-.box-depth .title-area.fxd .title {
+.box-depth .box-title.fxd .title {
 	position:fixed;
 	left:0;right:0;top:57px;
 	z-index:100;
@@ -178,3 +240,6 @@
 	right:10px;bottom:15px;
 	z-index:5;
 }
+
+/* 한살림 소식 */
+.card-news-box {margin-bottom:10px;}
