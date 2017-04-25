@@ -471,7 +471,7 @@
 	padding-left:40px;
 }
 
-.cooking-cont .thumb-wrap .align-left.bg-gray {padding:10px; margin: 0 -10px;}
+.thumb-wrap .align-left.bg-gray {padding:10px; margin: 0 -10px;}
 .cooking-cont .thumb-wrap  .thumb-list1 .box .btn-list {left:170px;}
 .cooking-cont .thumb-wrap  .thumb-list1 .box .link {position:relative;}
 .cooking-cont .thumb-wrap  .thumb-list1 .box .check-wrap {
@@ -482,7 +482,8 @@
 
 /* 어린인 식단 상세 */
 .child-area {}
-.child-com {padding:20px 10px;}
+.child-area .thumb-wrap {padding:0 10px;}
+.child-com {padding:20px 10px 12px;}
 .child-area .child-img img {width:100%; height:auto; vertical-align:middle;}
 .child-area .child-tlte {
 	position:relative;
@@ -541,7 +542,8 @@
 .child-area .box-content1 .box-cont .item.ty01:before {display:none;}
 
 /* MW-FO010301.html */
-.photo-area {position:relative;}
+.photo-area {overflow:hidden;}
+.photo-area .btn-call {float:left;}
 .photo-area .btn-call .text:before {
 	background:url(../img/ico/ico_photo.png) no-repeat 0 0;
 	background-size:14px 14px;
@@ -556,5 +558,5 @@
 }
 .child-area .btn-list1 .item.ty02 {
 	width:33.33%;
-
 }
+.photo-area .len-text {float:right;}
