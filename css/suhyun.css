@@ -125,26 +125,23 @@
 .palan-box .palan-img a {display:block; position:relative;}
 .palan-box .palan-img img {width:100%; height:auto; vertical-align:middle;}
 .palan-box .palan-img .dead-box {
-	position:relative;
-	width:100%;
-	height:auto;
-	background-color:rgba(0, 0, 0, 0.5);
-	z-index: 10;
-}
-.palan-box .palan-img .dead-box:before {
-	content:'기획전마감';
 	display:block;
 	position:absolute;
-	left:50%; top:50%;
+	left:0; top:0;
 	width:100%;
 	height:100%;
+	background-color:rgba(63, 61, 59, 0.8);
+}
+.palan-box .palan-img .dead-box .txt {
+	position:absolute;
+	left:50%; top:50%;
 	font-size:19px;
 	color:#fff;
-	line-height:100%;
+	line-height:18px;
 	font-weight:bold;
-	transform:translate(-50%, -50%);
-	-ms-transform:translate(-50%, -50%);
-	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-webkit-transform:tanslate(-50%,-50%);
 }
 .palan-box .palan-text {
 	padding:12px 14px 14px;
@@ -156,6 +153,7 @@
 	font-size:16px;
 	color:#333;
 	line-height:24px;
+	letter-spacing:-1px;
 }
 .palan-box .palan-text .palan-date {
 	display:block;
@@ -171,17 +169,14 @@
 .palan-content {padding:20px 10px;}
 
 /* MW-PD0504.html */
-.palan-com .tab-list4 {padding:1px 10px 0;}
-.palan-com .palan-cont .palan-area {padding:0 10px;}
-.palan-com .palan-cont .palan-tit {text-align:center;}
-.palan-com .palan-cont .palan-tit .tit {
-	margin-bottom:10px;
-	padding:17px 0 8px;
-	font-size:15px;
+.palan-cont {padding:15px 10px;}
+.palan-cont .palan-area {}
+.palan-cont .palan-area .palan-tit {
+	padding:24px 0 6px;
+	font-size:16px;
 	color:#333;
-	line-height:25px;
+	line-height:28px;
 	font-weight:bold;
-	border-bottom:1px solid #bbb;
 }
 
 /* 물품안전 */
