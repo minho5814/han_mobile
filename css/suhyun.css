@@ -373,3 +373,99 @@
 .news-area .views-text .number {
 	font-weight:bold;
 }
+
+/* 요리 */
+/* MW-FO0103.html */
+.cooking-cont {}
+.cooking-cont .cooking-img {}
+.cooking-cont .cooking-img img {width:100%; height:auto; vertical-align:middle;}
+.cooking-area {padding:0 10px;}
+.cooking-area .cooking-text {
+	position:relative;
+	margin:17px 0 12px;
+}
+.cooking-area .cooking-text .serve-txt {
+	font-size:13px;
+	color:#333;
+	line-height:18px;
+}
+.cooking-area .cooking-text .cooking-title {
+	font-size:21px;
+	color:#333;
+	line-height:26px;
+	font-weight:bold;
+}
+.cooking-area .cooking-text .btn-like {
+	position:absolute;
+	right:0; top:5px;
+	width:35px;
+	height:35px;
+}
+
+.cooking-area .fab-way {
+	background-color:#f7f7f7;
+}
+.cooking-area .fab-way .fab-box {padding:14px 16px;}
+.cooking-area .fab-way .fab-box dl dt {
+	padding-left:26px;
+	font-size:15px;
+	color:#333;
+	line-height:17px;
+	font-weight:bold;
+}
+.cooking-area .fab-way .fab-box dl {position:relative;}
+.cooking-area .fab-way .fab-box dl .fab-tit {
+	background:url(../img/ico/ico_cooking01.png) no-repeat 0 1px;
+	background-size:21px 14px;
+}
+.cooking-area .fab-way .fab-box dl .stuff-tit {
+	background:url(../img/ico/ico_cooking02.png) no-repeat 0 1px ;
+	background-size:18px 14px;
+}
+.cooking-area .fab-way .fab-box dl dd {
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+}
+.cooking-area .fab-way .fab-box dl .cook-time {
+	margin-top:6px;
+	padding-left:17px;
+	color:#60b015;
+	background:url(../img/ico/ico_time01.png) no-repeat 0 center;
+	background-size:12px 12px;
+}
+.cooking-area .fab-way .fab-box dl .servings {
+	position:absolute;
+	right:0; top:-1px;
+	padding-left:17px;
+	background:url(../img/ico/ico_fork.png) no-repeat 0 center;
+	background-size:12px 13px;
+	color:#60b015;
+}
+.cooking-area .fab-way .fab-box .stuff-list {margin-top:5px;}
+.cooking-area .fab-way .fab-box .stuff-list .item {
+	position:relative;
+	padding-left:62px;
+}
+.cooking-area .fab-way .fab-box .stuff-list .item .title {
+	position:absolute;
+	left:0; top:0;
+	color:#9e8441;
+}
+.cooking-area .fab-way .fab-box .fab-list {margin-top:14px;}
+.cooking-area .fab-way .fab-box .fab-list .item {
+	position:relative;
+	padding-left:12px;
+}
+.cooking-area .fab-way .fab-box .fab-list .item .number {
+	position:absolute;
+	left:0; top:0;
+}
+.cooking-area .fab-way .stuff-img img {width:100%; height:auto; vertical-align:middle;}
+
+.bar-box {
+	width:100%;
+	height:10px;
+	margin:30px 0;
+	background-color:#eee;
+}

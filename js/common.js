@@ -63,6 +63,32 @@ $(window).load(function(){
 		$(this).parents('.slide-menu').find('.slide-area').animate({scrollTop:scrl});
 	});
 
+	/* -----------------------------------------------------------------------------------------------
+		검색 레이어
+	---------------------------------------------------------------------------------------------- */
+	// 열기
+	$('.btn-filter').click(function(){
+		scrollNo();
+		$('.filter-layer').show().stop().animate({right:0}, 200);
+	});
+	// 닫기
+	$('.search-layer .btn-close, .bg-close').click(function(){
+		scrollOk();
+		$('.search-layer').stop().animate({right:'-100%'}, 100, function(){
+			$(this).hide();
+		});
+	});
+	// 체크 전체 해제
+	$('.search-layer .btn-text-line1').click(function(){
+		$(this).parents('.search-layer').find('input[type=checkbox]').prop('checked', false);
+	});
+
+	/* 상단 고정 버튼 영역이 있을경우 */
+	$('.select-btn1').each(function(){
+		var btnH = $(this).outerHeight();
+		$(this).parents('.wrapper').css({'padding-top':btnH});
+	});
+
 	/* 하단 고정 메뉴가 있을 경우 */
 	$('.btm-fix-menu').each(function(){
 		var menuH = $(this).outerHeight();
