@@ -83,6 +83,23 @@ $(window).load(function(){
 		$(this).parents('.search-layer').find('input[type=checkbox]').prop('checked', false);
 	});
 
+	/* -----------------------------------------------------------------------------------------------
+		카테고리 레이어
+	---------------------------------------------------------------------------------------------- */
+	$('.btm-fix-menu .btn-list .btn2').click(function(){
+		scrollNo();
+		$('.btm-fix-menu .btn-list .btn2').css({'opacity':'0'});
+		$('.category-layer').show().stop().animate({bottom:0}, 200);
+	});
+	// 닫기
+	$('.btn-close-category').click(function(){
+		scrollOk();
+		$('.btm-fix-menu .btn-list .btn2').css({'opacity':'1'});
+		$('.category-layer').stop().animate({bottom:'-100%'}, 100, function(){
+			$(this).hide();
+		});
+	});
+
 	/* 상단 고정 버튼 영역이 있을경우 */
 	$('.select-btn1').each(function(){
 		var btnH = $(this).outerHeight();
