@@ -581,7 +581,7 @@ html.no-scroll {
 	transform:translateY(-50%);
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 
 /* 관심물품 (토글) */
@@ -631,7 +631,7 @@ html.no-scroll {
 	display:inline-block;
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 	font-size:0;
 	vertical-align:top;
 	line-height:0;
@@ -695,6 +695,13 @@ html.no-scroll {
 	width:35px; height:35px;
 	background-position: 0 -624px;
 }
+
+/* 필터 */
+.btn-filter {
+	width:45px;
+	height:42px;
+	background-position: 0 -733px;
+}
 /* --------------------------------------------------------------------------------------------
 	아이콘
 -------------------------------------------------------------------------------------------- */
@@ -717,7 +724,7 @@ html.no-scroll {
 	transform:translate(-50%,-50%);
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 
 /* 관심물품 */
@@ -873,7 +880,7 @@ html.no-scroll {
 	width:14px;
 	height:14px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -322px;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 
 
@@ -1053,7 +1060,7 @@ html.no-scroll {
 	width:17px;
 	height:11px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -701px;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 .order-floating-box.on .order-layer .btn-order-close:before {
 	-webkit-transform:translate(-50%,-50%) rotate(180deg);
@@ -1154,7 +1161,7 @@ select.styled1 {
 	box-sizing:border-box;
 	border-radius:3px;
 	border:1px solid #bbb;
-	background:url(../img/ico/ico_select.png) no-repeat 100% 50%;
+	background:#fff url(../img/ico/ico_select.png) no-repeat 100% 50%;
 	background-size:22px 7px;
 	color:#666;
 	font-size:15px;
@@ -1910,7 +1917,7 @@ html.bg-gray {background-color:#f7f7f7;}
 	width:20px;
 	height:19px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -713px;
-	background-size:50px 750px;
+	background-size:50px 1000px;
 }
 .header .btn-cart .number {
 	position:absolute;
@@ -3098,7 +3105,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .site-terms-infor .infor-list .item-infor .terms-list01 {margin-left:-15px;}
 
 /* --------------------------------------------------------------------------------------------
-	물품 상세 ()
+	물품 상세
 -------------------------------------------------------------------------------------------- */
 /* 탭 영역 고정 */
 .view-content .tab-area {height:55px;}
@@ -3588,3 +3595,18 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }/* on */
 .btn-goods.btn-good.on .text:before {background-position:0 -381px;}/* on */
 .btn-goods.btn-bad.on .text:before {background-position:0 -403px;}/* on */
+
+/* --------------------------------------------------------------------------------------------
+	함살림 소식
+-------------------------------------------------------------------------------------------- */
+.select-btn1 {
+	overflow:hidden;
+	padding:7px 10px;
+	background-color:#f7f7f7;
+}
+.select-btn1 select {
+	float:left;
+	width:150px;
+}
+.select-btn1 .btn-filter {float:right;}
+.select-btn1 {}
