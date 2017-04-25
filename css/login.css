@@ -376,7 +376,12 @@
 	font-weight: bold;
 	text-align: center;
 }
-
+.complete-area .text-grey {
+	font-size:15px;
+	color:#666;
+	line-height:18px;
+	text-align:center;
+}
 
 /* --------------------------------------------------------------------------------------------
 	조합원 가입
@@ -691,7 +696,7 @@
 	font-size: 0;
 	line-height: 0;
 }
-.cart-wrap .section .sub-title-wrap .btn-sub-aco:before {
+.cart-wrap .goods-info .sub-title-wrap .btn-sub-aco:before {
 	content: '';
 	position: absolute;
 	top:50%; left:50%;
@@ -700,7 +705,7 @@
 	background:url(../img/btn/btn_down.png) 0 0 no-repeat;
 	background-size:16px 9px;
 }
-.cart-wrap .section.on .sub-title-wrap .btn-sub-aco:before {
+.cart-wrap .goods-info.on .sub-title-wrap .btn-sub-aco:before {
 	content: '';
 	position: absolute;
 	top:50%; left:50%;
@@ -770,11 +775,13 @@
 		font-size:16px;
 	}
 }
-.cart-wrap .section .order-list .price-wrap .select-wrap {
+.cart-wrap .section .order-list .price-wrap .input-select {
 	float: right;
+	width:105px;
+	margin:0;
 }
 @media only screen and (max-width: 320px) {
-	.cart-wrap .section .order-list .price-wrap .select-wrap {
+	.cart-wrap .section .order-list .price-wrap .input-select {
 		width:85px;
 	}
 }
@@ -877,7 +884,6 @@
 .input-select .text-form {
 	position:relative;
 	width:100%;
-	z-index:11;
 }
 .input-select .text-form::after {
 	content:'';
@@ -897,7 +903,7 @@
 	display:none;
 	position:absolute;
 	left:0;right:0;top:41px;
-	z-index: 1;
+	z-index: 2;
 	padding:10px 0;
 	border:1px solid #91c90b;
 	background-color:#fff;
@@ -934,6 +940,9 @@
 }
 .cart-wrap .section .goods-info {
 	margin-top:30px;
+}
+.cart-wrap .section .goods-info .sub-cont {
+	display: none;
 }
 .cart-wrap .section .goods-info .order-list{
 	padding:0;
