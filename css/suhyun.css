@@ -469,3 +469,20 @@
 	margin:30px 0;
 	background-color:#eee;
 }
+
+.cooking-cont .thumb-wrap {padding:0 10px;}
+.cooking-cont .thumb-wrap .thumb-list1 {
+
+}
+.cooking-cont .thumb-wrap .thumb-list1 .box {
+	padding-left:40px;
+}
+
+.cooking-cont .thumb-wrap .align-left.bg-gray {padding:10px; margin: 0 -10px;}
+.cooking-cont .thumb-wrap  .thumb-list1 .box .btn-list {left:170px;}
+.cooking-cont .thumb-wrap  .thumb-list1 .box .link {position:relative;}
+.cooking-cont .thumb-wrap  .thumb-list1 .box .check-wrap {
+	position: absolute;
+	left:0;
+	top:14px;
+}
