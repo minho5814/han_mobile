@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/hayoung.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">견적요청 완료</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<button type="button" class="btn-image btn-search">통합검색</button>
+	</div>
+
+	<div class="container">
+		<div class="right-btn-area bg-gray">
+			<a href="#" class="btn-text btn-h30 btn-text-line1">이전 견적내용</a>
+		</div>
+		<div class="white-content1 estimate-area">
+			<div class="group">
+				<h3 class="cTitle01">1. 확인전화 및 주문확정</h3>
+				<ul class="bullet-list1">
+					<li class="item">
+						견적요청된 건에 대해 생산자(에덴바이오)로 부터 익일 오전 12시(토,일 제외)까지
+						조합원님께 전화를 드리며, 조합원님과 전화통화를 통해 주문을 확정하게 됩니다.
+					</li>
+					<li class="item">
+						주문이 확정된 주문은 ‘나의한살림 > 거래정보 > 주문내역조회’
+						에서 확인하실 수 있습니다. 주문수정 및 삭제는 생산자(에덴바이오)에 직접 연락하여 처리요청을 하셔야 합니다.
+					</li>
+				</ul>
+			</div>
+			<div class="group mgT15">
+				<h3 class="cTitle01">2. 공급확정</h3>
+				<ul class="bullet-list1">
+					<li class="item">
+						시공 및 주문이 확정된 건에 한해 공급을 확정 짓게 되며, 확정
+						된 공급일로 물품대금이 청구됩니다. 공급일 이후 공급 내역은
+						‘나의한살림 > 거래정보 > 공급내역조회’에서 확인 하실 수 있습니다.
+					</li>
+					<li class="item">
+						카드결제가 가능한 지역한살림 조합원은 공급일로 부터 7일 이내 결제방법을 변경하실 수 있습니다.
+					</li>
+					<li class="item bold">기타 문의 : ㈜에덴바이오벽지 031-445-3106~7</li>
+				</ul>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+			<div class="box-content1 mgT30">
+				<h3 class="box-title">천연벽지 시공 안내</h3>
+				<ul class="box-cont">
+					<li class="item">카드결제가 가능한 지역한살림 조합원은 공급일로 부터 7일 이내 결제방법을 변경하실 수 있습니다.</li>
+					<li class="item">시공은 천연벽지 구매와 별개이며, 주문확정시 총합계에 포함되지 않습니다.</li>
+					<li class="item">시공가액은 업체별, 지역별로 워낙 편차가 크기 때문에 일률적으로 기준을 정하기 어려우며 주문대상에 포함되지 않습니다.</li>
+					<li class="item">단, 조합원님의 요청이 있을시 시공업체를 소개해 드릴 수 있으나, 한살림에서 시공업체를 관리하지 않습니다.</li>
+					<li class="item">시공업체 선정과 시공금액 및 시공방법에 대한 협의는 직접 하셔야 합니다. (시공상의 하자나 클레임에 대한 부분은 한살림에서 책임지지 않습니다.)</li>
+					<li class="item">어떤 업체가 시공을 하더라도 도배작업 시 주의사항을 정리한 "시방서"가 물품공급 시 함께 제공되오니 업체선정 시 꼭 참조하시도록 부탁드립니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+//글자수
+function fnChkByte(obj, maxByte){
+	var str = obj.value;
+	var str_len = str.length;
+
+	var rbyte = 0;
+	var rlen = 0;
+	var one_char = "";
+	var str2 = "";
+
+	for(var i=0; i<str_len; i++){
+		one_char = str.charAt(i);
+		if(escape(one_char).length > 4){
+			rbyte += 2;   //한글2Byte
+		}else{
+			rbyte++; //영문 등 나머지 1Byte
+		}
+		if(rbyte <= maxByte){
+			rlen = i+1;  //return할 문자열 갯수
+		}
+	}
+
+	if(rbyte > maxByte){
+		alert("한글 "+(maxByte/2)+"자 / 영문 "+maxByte+"자를 초과 입력할 수 없습니다.");
+		str2 = str.substr(0,rlen);  //문자열 자르기
+		obj.value = str2;
+		fnChkByte(obj, maxByte);
+	}else{
+		document.getElementById('byteInfo').innerText = rbyte;
+	}
+}
+
+</script>
+</body>
+</html>

@@ -188,6 +188,10 @@ html.no-scroll {
 /*보더 (white-content)*/
 .borderT {border-top:1px solid #ddd}
 
+/*폰트 굵기*/
+.bold {font-weight: bold !important;}
+.normal {font-weight: normal !important;}
+
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
@@ -1180,7 +1184,11 @@ select.styled1 {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
-
+select.styled1:disabled {
+	background-color: #eee;
+	color: #aaa;
+	border-color: #ddd;
+}
 /* 셀렉트 리스트 형식 */
 .select-list1 {
 	overflow:hidden;
@@ -1743,14 +1751,12 @@ select.styled1 {
 	line-height:22px;
 }
 
-<<<<<<< HEAD
 .board2 td .call-num {
 	margin-left:15px;
 }
 .board2 td .call-num:first-child {
 	margin-left:0;
 }
-=======
 
 /* 03 */
 .board3 {}
@@ -1804,6 +1810,7 @@ html {
 	background-color:#fff;
 
 }
+.header.popup-type {border-bottom:1px solid #bbb;} /*이전견적내역 팝업헤더*/
 .header .btn-back {}
 .head-menu {
 	position:absolute;
