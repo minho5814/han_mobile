@@ -564,6 +564,12 @@
 	text-align: right;
 	color:#60b015;
 }
+.order-cart-list .list-group .list-cont .load-goods {
+	background-color:#f7f7f7;
+	border-top:2px solid #ccc;
+	border-bottom:2px solid #ccc;
+}
+
 .order-cart-list .list-cont .no-result {
 	margin-top:20px;
 	line-height:107px;
@@ -575,6 +581,7 @@
 .order-cart-list .list-cont .result {
 	padding:0 10px;
 	background-color:#f7f7f7;
+	border-top:1px solid #eee;
 }
 .order-cart-list .list-cont .result .total {
 	overflow: hidden;
