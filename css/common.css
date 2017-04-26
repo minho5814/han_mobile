@@ -3639,8 +3639,24 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:15px;
 	font-weight:bold;
 }
-.history-list .link .goods .text-area {}
-.history-list .link {}
+/* 결과 없음 */
+.no-result1 {
+	padding-top:150px;
+	font-size:15px;
+	color:#aaa;
+	text-align:center;
+	line-height:22px;
+}
+.no-result1 .text1 {padding-top:20px;}
+.no-result1 .text2 {
+	padding-top:106px;
+	background:url(../img/bg/bg_noresult01.png) no-repeat 50% 0;
+	background-size:100px 92px;
+}
+.no-result1 .btn-text {
+	width:80px;
+	margin-top:16px;
+}
 
 /* --------------------------------------------------------------------------------------------
 	조합원가입
