@@ -28,6 +28,19 @@ $(window).load(function(){
 		});
 	});
 
+	/* 탭이 4개 이상일 경우 히든처리 후 버튼 출력 */
+	$('.tab-hide-box').each(function(){
+		var len = $(this).find('.tab-list4 .item').length;
+		if(len >= 5){
+			$(this).append('<button type="button" class="btn-goods-more"><span class="text">더보기</span></button>');
+		}
+		var btn = $(this).find('.btn-goods-more');
+		$(btn).click(function(){
+			$(this).parents('.tab-hide-box').find('.tab-list4').css({'max-height':'inherit'});
+			$(this).remove();
+		});
+	});
+
 	/* -----------------------------------------------------------------------------------------------
 		슬라이드
 	---------------------------------------------------------------------------------------------- */
@@ -99,12 +112,8 @@ $(window).load(function(){
 		scrollNo();
 		$('.filter-layer').show().stop().animate({right:0}, 200);
 	});
-	/* 상세 검색 */
+	// 레이어 내 아코디언
 	$('.search-layer .accordion-list .item.on .layer-list').show();
-	$('.header .btn-search').click(function(){
-		scrollNo();
-		$('.detail-layer').show().stop().animate({right:0}, 200);
-	});
 	$('.search-layer .accordion-list .item .layer-title').click(function(){
 		if($(this).parents('.item').hasClass('on')){
 			$(this).parents('.item').removeClass('on').find('.layer-list').slideUp(100);

@@ -1770,7 +1770,7 @@ select.styled1:disabled {
 /* 탭영역 감추기 */
 .tab-hide-box {}
 .tab-hide-box .tab-list4 {
-	height:90px;
+	max-height:90px;
 }
 .tab-hide-box .btn-goods-more {
 	margin-top:0;
@@ -3264,10 +3264,12 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-box2 .btn-list .item .btn-like {border-right:0;}
 
-.goods-slide {
-	margin:8px 0 40px;
+.goods-slide {margin:8px 0 40px;}
+.goods-slide .swiper-slide {
+	width:70%;
+	opacity:.6;
 }
-.goods-slide .swiper-slide {width:70%;}
+.goods-slide .swiper-slide-active {opacity:1;}
 
 
 /* 요리 박스 */
@@ -3593,7 +3595,43 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .top-gray-box2 .align-center .cTitle01 {line-height:50px;}
 .top-gray-box2 .cont {border-top:1px solid #bbb;}
 .top-gray-box2 .thumb-list1 .box {margin:0 10px;}
-.top-gray-box2 {}
+
+.select-btn2 {
+	position:relative;
+	overflow:hidden;
+	padding:6px 10px;
+	border-top:1px solid #bbb;
+	background-color:#f7f7f7;
+}
+.select-btn2:before {
+	content:'';
+	position:absolute;
+	right:65px;top:0;bottom:0;
+	width:1px;
+	background-color:#eee;
+}
+.select-btn2 .len-text {
+	float:left;
+	height:43px;
+	color:#333;
+	font-size:16px;
+	line-height:45px;
+}
+.select-btn2 .len-text .len {font-weight:bold;}
+.select-btn2 .right-area {
+	overflow:hidden;
+	float:right;
+}
+.select-btn2 .right-area select {
+	float:left;
+	width:150px;
+}
+.select-btn2 .right-area .btn-filter {
+	float:left;
+	margin-left:21px;
+}
+.select-btn2 {}
+.select-btn2 {}
 
 /* --------------------------------------------------------------------------------------------
 	물품상세
