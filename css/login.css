@@ -148,14 +148,13 @@
 /* --------------------------------------------------------------------------------------------
 	체크박스 wrapper
 -------------------------------------------------------------------------------------------- */
-.check-wrap {
-	margin-top:10px;
-}
+.check-wrap {margin-top:10px;}
 .check-wrap label {
 	display: inline-block;
 	margin-left:20px;
 	line-height: 25px;
 	font-size:15px;
+	white-space:nowrap;
 }
 .check-wrap label:first-child {margin-left:0;}
 .check-wrap label input {margin-right:6px;}

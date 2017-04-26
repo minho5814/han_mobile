@@ -91,7 +91,9 @@
 
 	colgroup .Hide {display:table-column;}
 	colgroup .Dfault {display:none;}
-	.Text {text-align:right;}
+	.OverBox {overflow:hidden;margin-top:5px;}
+	.MoTxt {float:left;padding:0 10px;background-color:#f9f2b0;color:#ff0000;}
+	.Text {float:right;}
 	.Com {color:#999;}
 </style>
 </head>
@@ -99,7 +101,10 @@
 <body>
 <div class="Head">
 	<h1>한살림 장보기 :: 2017.04.17</h1>
-	<p class="Text"><span class="Com"></span> / <span class="All"></span></p>
+	<div class="OverBox">
+		<p class="MoTxt">완료</p>
+		<p class="Text"><span class="Com"></span> / <span class="All"></span></p>
+	</div>
 </div>
 
 <h2 class="on" style="margin-top:50px;">Guide</h2>
@@ -250,8 +255,60 @@
 				<td class="Left"></td>
 				<td class="Hide Left"></td>
 				<td class="Hide Left"></td>
-				<td class="Hide Hide">guide/</td>
+				<td class="Hide Hide"></td>
 				<td class="Link"><a target="_blank" href="main.html">main.html</a></td>
+				<td class="Hide Date">2017-04-26</td>
+				<td class="Hide Left"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 퀵메뉴 -->
+<h2 class="on">퀵메뉴</h2>
+<div class="Layer">
+	<table>
+		<colgroup>
+			<col style="width:15%;" class="Hide">
+			<col style="width:15%;" class="Hide">
+			<col style="width:15%;" class="Hide">
+			<col style="width:15%;" class="Hide">
+			<col style="width:5%;" class="Hide">
+			<col style="width:12%;" class="Hide">
+			<col style="width:5%;" class="Hide">
+			<col style="width:35%;" class="Dfault">
+			<col style="width:35%;" class="Dfault">
+			<col style="*">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>2 Depth</th>
+				<th>3 Depth</th>
+				<th class="Hide">4 Depth</th>
+				<th class="Hide">5 Depth</th>
+				<th class="Hide">Path</th>
+				<th>File</th>
+				<th class="Hide">완료</th>
+				<th class="Hide">메모</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="Left" rowspan="2">최근이력</td>
+				<td class="Left">결과 있음</td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">qc/</td>
+				<td class="Link"><a target="_blank" href="im/qc/MW-QC02.html">MW-QC02.html</a></td>
+				<td class="Hide Date"></td>
+				<td class="Hide Left"></td>
+			</tr>
+			<tr>
+				<td class="Left">결과 없음</td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">qc/</td>
+				<td class="Link"><a target="_blank" href="im/qc/MW-QC02_noresult.html">MW-QC02_noresult.html</a></td>
 				<td class="Hide Date"></td>
 				<td class="Hide Left"></td>
 			</tr>
@@ -440,7 +497,7 @@
 				<td class="Hide Left">지역선택(전)</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
-					<td class="Link"><a target="_blank" href="im/jo/MW-JO0201_type2.html">MW-JO0201_type2.html</a></td>
+					<td class="Link"><a target="_blank" href="im/jo/MW-JO0201_type02.html">MW-JO0201_type02.html</a></td>
 				<td class="Hide Date">2017-04-26</td>
 				<td class="Hide Left">
 					1.검색버튼 클릭시 우편번호 검색팝업 출력
@@ -463,7 +520,7 @@
 				<td class="Hide Left">한살림소개(동영상)</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
-				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type1.html">MW-JO0301_type1.html</a></td>
+				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type01.html">MW-JO0301_type01.html</a></td>
 				<td class="Hide Date">2017-04-26</td>
 				<td class="Hide Left"></td>
 			</tr>
@@ -471,7 +528,7 @@
 				<td class="Hide Left">한살림소개(설문형type1)-한살림수원</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
-				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type2_1.html">MW-JO0301_type2_1.html</a></td>
+				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type0201.html">MW-JO0301_type0201.html</a></td>
 				<td class="Hide Date">2017-04-26</td>
 				<td class="Hide Left"></td>
 			</tr>
@@ -479,7 +536,7 @@
 				<td class="Hide Left">한살림소개(설문형type2)-한살림경기남부</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
-				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type2_2.html">MW-JO0301_type2_2.html</a></td>
+				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type0202.html">MW-JO0301_type0202.html</a></td>
 				<td class="Hide Date">2017-04-26</td>
 				<td class="Hide Left"></td>
 			</tr>
@@ -487,7 +544,7 @@
 				<td class="Hide left">한살림소개(소개모임)</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">jo/</td>
-				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type3.html">MW-JO0301_type3.html</a></td>
+				<td class="Link"><a target="_blank" href="im/jo/MW-JO0301_type03.html">MW-JO0301_type03.html</a></td>
 				<td class="Hide Date">2017-04-26</td>
 				<td class="Hide Left"></td>
 			</tr>
@@ -598,8 +655,10 @@
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">pd/</td>
 				<td class="Link"><a target="_blank" href="im/pd/MW-PD0202.html">MW-PD0202.html</a></td>
-				<td class="Hide Date"></td>
-				<td class="Hide Left"></td>
+				<td class="Hide Date">2017-04-26</td>
+				<td class="Hide Left">
+					으뜸물품 아래 필터 버튼 클릭시 상세검색 레이어 출력
+				</td>
 			</tr>
 			<tr>
 				<td class="Left" rowspan="6">물품상세</td>
@@ -613,8 +672,7 @@
 					감축량 툴팁 버튼 클릭시 이산화탄소 감축량 팝업 출력<br>
 					알레르기성분 툴팁 버튼 클릭시 알레르기성분 팝업 출력<br>
 					이용후기 작성하기 버튼 클릭시 이용후기 작성 팝업 출력<br>
-					이용후기 전체보기 버튼 클릭시 이용후기 리스트 팝업 출력<br>
-					검색 버튼 클릭시 상세검색 레이어 출력
+					이용후기 전체보기 버튼 클릭시 이용후기 리스트 팝업 출력
 				</td>
 			</tr>
 			<tr>
@@ -1179,10 +1237,18 @@ $(window).load(function(){
 		var winW = $(window).width();
 		if(winW <= 800){
 			$('.Hide').hide();
-			$('colgroup .Dfault').show()
+			$('.MoTxt').show();
+			$('colgroup .Dfault').show();
+			$('.Date').each(function(){
+				var len = $(this).text().length;
+				if(len > 2){
+					$(this).parents('tr').find('.Link').css({'background-color':'#f9f2b0'});
+				}
+			});
 		}else{
 			$('.Hide').show();
-			$('colgroup .Dfault').hide()
+			$('.MoTxt').hide();
+			$('colgroup .Dfault').hide();
 		}
 	}
 	resizeTable();
