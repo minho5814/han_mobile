@@ -1770,7 +1770,7 @@ select.styled1:disabled {
 /* 탭영역 감추기 */
 .tab-hide-box {}
 .tab-hide-box .tab-list4 {
-	height:90px;
+	max-height:90px;
 }
 .tab-hide-box .btn-goods-more {
 	margin-top:0;
@@ -3240,9 +3240,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	box-sizing:border-box;
 	text-align:center;
 }
-.thumb-box1 .campaign-mark {
-	margin:0 auto;
-}
+.thumb-box1 .campaign-mark {margin:0 auto;}
 .thumb-box1 .text-area {
 	margin-top:10px;
 	padding-bottom:13px;
@@ -3334,6 +3332,82 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .campaign-slide .swiper-slide {width:220px;}
 .campaign-slide .swiper-slide:first-child {margin-left:10px;}
 .campaign-slide .swiper-slide:last-child {margin-right:10px;}
+
+/* 02 */
+.thumb-box2 {
+	position:relative;
+	padding:5px 6px 0;
+}
+.thumb-box2 .ico-number {
+	display:block;
+	position:absolute;
+	left:0;top:0;
+	z-index:5;
+	width:31px;
+	height:32px;
+	padding:6px 3px 0 0;
+	box-sizing:border-box;
+	background:url(../img/bg/bg_label.png) no-repeat 0 0;
+	background-size:31px 32px;
+	color:#fff;
+	text-align:center;
+	font-size:12px;
+}
+.thumb-box2 .ico-number em {
+	font-size:13px;
+	font-weight:bold;
+}
+.thumb-box2 .link {
+	display:block;
+	border:1px solid #eee;
+	border-bottom:0;
+	background-color:#fff;
+}
+.thumb-box2 .link .img-area {
+	margin:0 44px;
+}
+.thumb-box2 .link .text-area {
+	padding:12px 10px 0;
+}
+.thumb-box2 .link .text-area .name {
+	height:36px;
+	color:#666;
+	font-size:14px;
+	line-height:18px;
+}
+.thumb-box2 .link .text-area .price {
+	display:inline-block;
+	color:#333;
+	font-size:14px;
+	line-height:30px;
+}
+.thumb-box2 .link .text-area .price .number {
+	font-size:20px;
+	font-weight:bold;
+}
+.thumb-box2 .link .text-area .price-del {
+	display:inline-block;
+	margin-left:8px;
+	color:#bbb;
+	font-size:13px;
+	text-decoration:line-through;
+}
+.thumb-box2 .btn-list {
+	overflow:hidden;
+}
+.thumb-box2 .btn-list .item {
+	float:left;
+	width:50%;
+}
+.thumb-box2 .btn-list .item .btn-like {border-right:0;}
+
+.goods-slide {margin:8px 0 40px;}
+.goods-slide .swiper-slide {
+	width:70%;
+	opacity:.6;
+}
+.goods-slide .swiper-slide-active {opacity:1;}
+
 
 /* 요리 박스 */
 .recipe-box {
@@ -3658,7 +3732,43 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .top-gray-box2 .align-center .cTitle01 {line-height:50px;}
 .top-gray-box2 .cont {border-top:1px solid #bbb;}
 .top-gray-box2 .thumb-list1 .box {margin:0 10px;}
-.top-gray-box2 {}
+
+.select-btn2 {
+	position:relative;
+	overflow:hidden;
+	padding:6px 10px;
+	border-top:1px solid #bbb;
+	background-color:#f7f7f7;
+}
+.select-btn2:before {
+	content:'';
+	position:absolute;
+	right:65px;top:0;bottom:0;
+	width:1px;
+	background-color:#eee;
+}
+.select-btn2 .len-text {
+	float:left;
+	height:43px;
+	color:#333;
+	font-size:16px;
+	line-height:45px;
+}
+.select-btn2 .len-text .len {font-weight:bold;}
+.select-btn2 .right-area {
+	overflow:hidden;
+	float:right;
+}
+.select-btn2 .right-area select {
+	float:left;
+	width:150px;
+}
+.select-btn2 .right-area .btn-filter {
+	float:left;
+	margin-left:21px;
+}
+.select-btn2 {}
+.select-btn2 {}
 
 /* --------------------------------------------------------------------------------------------
 	물품상세
