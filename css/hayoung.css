@@ -768,7 +768,7 @@ label.important:before {
 }
 .cook-list .box .text-area {
 	height:60px;
-	padding:14px 25px;
+	padding:14px 10px;
 	text-align:center;
 	box-sizing: border-box;
 }
