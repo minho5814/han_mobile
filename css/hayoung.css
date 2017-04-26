@@ -168,7 +168,6 @@
 	border-radius: 4px;
 }
 .post-info-area p {
-	margin-top:9px;
 	color:#aaa;
 	font-size: 15px;
 	line-height: 22px;
@@ -255,11 +254,13 @@
 }
 .box-content3.pay-info .item {font-size:13px;}
 .box-content3.pay-info .bg-logo {
-	margin-bottom:10px;
 	background:url(../img/bg/bg_logo2.png) no-repeat left center;
 	background-size:17px 15px;
 	padding-left:24px;
 	font-size:14px;
+}
+.box-content3.pay-info .box-cont {
+	padding:5px 0 0 0;
 }
 
 /* --------------------------------------------------------------------------------------------
