@@ -119,7 +119,7 @@ $(window).load(function(){
 
 	/* 하단 플로팅 버튼이 있을 경우 (물품상세) */
 	$('.order-floating-box').each(function(){
-		var orderH = $(this).outerHeight();
+		var orderH = $(this).outerHeight() + 10;
 		$('.container').css({'padding-bottom':orderH});
 	});
 

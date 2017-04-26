@@ -1584,8 +1584,8 @@ select.styled1:disabled {
 	transform:translateY(-50%) rotate(45deg);
 	width:8px;
 	height:8px;
-	border-right:2px solid #666;
-	border-bottom:2px solid #666;
+	border-right:1px solid #666;
+	border-bottom:1px solid #666;
 }
 .accordion-list1 .item.on .title:before {
 	border:0;
@@ -2742,7 +2742,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 02 */
 .thumb-list2 .box .ico-label {
 	position:absolute;
-	left:30px;top:15px;
+	left:20px;top:15px;
 	z-index:1;
 }
 .thumb-list2 {
