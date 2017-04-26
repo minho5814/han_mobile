@@ -91,7 +91,9 @@
 
 	colgroup .Hide {display:table-column;}
 	colgroup .Dfault {display:none;}
-	.Text {text-align:right;}
+	.OverBox {overflow:hidden;margin-top:5px;}
+	.MoTxt {float:left;padding:0 10px;background-color:#f9f2b0;color:#ff0000;}
+	.Text {float:right;}
 	.Com {color:#999;}
 </style>
 </head>
@@ -99,7 +101,10 @@
 <body>
 <div class="Head">
 	<h1>한살림 장보기 :: 2017.04.17</h1>
-	<p class="Text"><span class="Com"></span> / <span class="All"></span></p>
+	<div class="OverBox">
+		<p class="MoTxt">완료</p>
+		<p class="Text"><span class="Com"></span> / <span class="All"></span></p>
+	</div>
 </div>
 
 <h2 class="on" style="margin-top:50px;">Guide</h2>
@@ -1232,6 +1237,7 @@ $(window).load(function(){
 		var winW = $(window).width();
 		if(winW <= 800){
 			$('.Hide').hide();
+			$('.MoTxt').show();
 			$('colgroup .Dfault').show();
 			$('.Date').each(function(){
 				var len = $(this).text().length;
@@ -1241,6 +1247,7 @@ $(window).load(function(){
 			});
 		}else{
 			$('.Hide').show();
+			$('.MoTxt').hide();
 			$('colgroup .Dfault').hide();
 		}
 	}
