@@ -1758,6 +1758,15 @@ select.styled1:disabled {
 	color:#333;
 }
 
+.tab-list5.gray .item {
+	background-color:#f7f7f7;
+	color:#aaa;
+}
+
+.tab-list5.gray .item.on {
+	background-color:#fff;
+}
+
 /* 탭영역 감추기 */
 .tab-hide-box {}
 .tab-hide-box .tab-list4 {

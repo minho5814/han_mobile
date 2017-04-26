@@ -849,12 +849,13 @@
 	color:#666;
 	font-size:13px;
 }
-.cart-wrap .section .total-price .total .discount {
-	margin-left:13px;
+.cart-wrap .section .discount {
+	margin-top:10px;
 	font-size:12px;
 	color:#aaa;
+	text-align: right;
 }
-.cart-wrap .section .total-price .total .discount span {
+.cart-wrap .section .discount span {
 	color:#f04114;
 }
 .cart-wrap .section .total-price .price {
