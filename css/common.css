@@ -2568,6 +2568,10 @@ html {
 .white-content3 {
 	background-color:#fff;
 }
+.white-content4 {
+	padding:0 10px;
+	background-color:#fff;
+}
 .gray-content1 {
 	padding:10px 10px 20px;
 	background-color:#f7f7f7;
@@ -2769,7 +2773,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list1 .box {
 	position:relative;
-	border-top:1px solid #ddd;
+	border-top:1px solid #eee;
 	padding-bottom:12px;
 }
 .thumb-list1 .box:first-child {border-top:0;}
