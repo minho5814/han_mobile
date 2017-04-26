@@ -14,12 +14,41 @@ $(window).load(function(){
 		$('body').scrollTop(winTop);
 	}
 
+	/* 새창 팝업 닫기 */
+	$('.header .btn-close').click(function(){
+		window.close();
+	});
+
 	/* 상단 고정 메뉴 슬라이드 */
 	$('.head-menu .swiper-container').each(function(){
 		var swiper = new Swiper(this, {
 			slidesPerView:'auto',
 			nextButton: '.head-menu .btn-next',
 			prevButton: '.head-menu .btn-prev'
+		});
+	});
+
+	/* 탭이 4개 이상일 경우 히든처리 후 버튼 출력 */
+	$('.tab-hide-box').each(function(){
+		var len = $(this).find('.tab-list4 .item').length;
+		if(len >= 5){
+			$(this).append('<button type="button" class="btn-goods-more"><span class="text">더보기</span></button>');
+		}
+		var btn = $(this).find('.btn-goods-more');
+		$(btn).click(function(){
+			$(this).parents('.tab-hide-box').find('.tab-list4').css({'max-height':'inherit'});
+			$(this).remove();
+		});
+	});
+
+	/* -----------------------------------------------------------------------------------------------
+		슬라이드
+	---------------------------------------------------------------------------------------------- */
+	// 이미지 슬라이드 01
+	$('.visual-slide1 .swiper-container').each(function(){
+		var swiper = new Swiper(this, {
+			pagination: '.visual-slide1 .swiper-pagination',
+			paginationType: 'fraction'
 		});
 	});
 
@@ -66,11 +95,6 @@ $(window).load(function(){
 	/* -----------------------------------------------------------------------------------------------
 		검색 레이어
 	---------------------------------------------------------------------------------------------- */
-	// 열기
-	$('.btn-filter').click(function(){
-		scrollNo();
-		$('.filter-layer').show().stop().animate({right:0}, 200);
-	});
 	// 닫기
 	$('.search-layer .btn-close, .bg-close').click(function(){
 		scrollOk();
@@ -81,6 +105,21 @@ $(window).load(function(){
 	// 체크 전체 해제
 	$('.search-layer .btn-text-line1').click(function(){
 		$(this).parents('.search-layer').find('input[type=checkbox]').prop('checked', false);
+	});
+	/* 필터 검색 */
+	// 열기
+	$('.btn-filter').click(function(){
+		scrollNo();
+		$('.filter-layer').show().stop().animate({right:0}, 200);
+	});
+	// 레이어 내 아코디언
+	$('.search-layer .accordion-list .item.on .layer-list').show();
+	$('.search-layer .accordion-list .item .layer-title').click(function(){
+		if($(this).parents('.item').hasClass('on')){
+			$(this).parents('.item').removeClass('on').find('.layer-list').slideUp(100);
+		}else{
+			$(this).parents('.item').addClass('on').find('.layer-list').slideDown(200);
+		}
 	});
 
 	/* -----------------------------------------------------------------------------------------------
@@ -114,7 +153,7 @@ $(window).load(function(){
 
 	/* 하단 플로팅 버튼이 있을 경우 (물품상세) */
 	$('.order-floating-box').each(function(){
-		var orderH = $(this).outerHeight();
+		var orderH = $(this).outerHeight() + 10;
 		$('.container').css({'padding-bottom':orderH});
 	});
 

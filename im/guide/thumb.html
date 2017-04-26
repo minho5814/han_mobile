@@ -38,13 +38,17 @@
 				<p class="price"><span class="number">8,000</span>원</p>
 			</div>
 		</a>
-		<div class="btn-list">
+		<ul class="btn-list">
 			<li class="item">
 				<button type="button" class="btn-ico btn-like">관심물품</button>
 			</li>
 			<li class="item">
 				<button type="button" class="btn-ico btn-cart">장바구니</button>
 			</li>
+		</ul>
+		<div class="gray-text-box">
+			<p>이상기후로 인해서 수확시기가 빨라졌습니다.</p>
+			<p>안정적인 생산을 위해 책임소비가 필요한 시점입니다.</p>
 		</div>
 	</div>
 	<div class="box">
@@ -55,14 +59,14 @@
 				<p class="price"><span class="number">8,000</span>원</p>
 			</div>
 		</a>
-		<div class="btn-list">
+		<ul class="btn-list">
 			<li class="item">
 				<button type="button" class="btn-ico btn-like">관심물품</button>
 			</li>
 			<li class="item">
 				<button type="button" class="btn-ico btn-cart">장바구니</button>
 			</li>
-		</div>
+		</ul>
 	</div>
 	<div class="box">
 		<a href="#" class="link">
@@ -72,14 +76,14 @@
 				<p class="price"><span class="number">8,000</span>원</p>
 			</div>
 		</a>
-		<div class="btn-list">
+		<ul class="btn-list">
 			<li class="item">
 				<button type="button" class="btn-ico btn-like">관심물품</button>
 			</li>
 			<li class="item">
 				<button type="button" class="btn-ico btn-cart">장바구니</button>
 			</li>
-		</div>
+		</ul>
 	</div>
 </div>
 
@@ -95,14 +99,14 @@
 				<p class="price"><span class="number">8,000</span>원</p>
 			</div>
 		</a>
-		<div class="btn-list">
+		<ul class="btn-list">
 			<li class="item">
 				<button type="button" class="btn-ico btn-like">관심물품</button>
 			</li>
 			<li class="item">
 				<button type="button" class="btn-ico btn-cart">장바구니</button>
 			</li>
-		</div>
+		</ul>
 	</div>
 	<div class="box">
 		<a href="#" class="link">
@@ -113,14 +117,14 @@
 				<p class="price-del">8,000원</p>
 			</div>
 		</a>
-		<div class="btn-list">
+		<ul class="btn-list">
 			<li class="item">
 				<button type="button" class="btn-ico btn-like">관심물품</button>
 			</li>
 			<li class="item">
 				<button type="button" class="btn-ico btn-cart">장바구니</button>
 			</li>
-		</div>
+		</ul>
 	</div>
 	<div class="box">
 		<a href="#" class="link">
@@ -130,14 +134,14 @@
 				<p class="price"><span class="number">8,000</span>원</p>
 			</div>
 		</a>
-		<div class="btn-list">
+		<ul class="btn-list">
 			<li class="item">
 				<button type="button" class="btn-ico btn-like">관심물품</button>
 			</li>
 			<li class="item">
 				<button type="button" class="btn-ico btn-cart">장바구니</button>
 			</li>
-		</div>
+		</ul>
 	</div>
 	<div class="box">
 		<a href="#" class="link">
@@ -147,14 +151,14 @@
 				<p class="price"><span class="number">8,000</span>원</p>
 			</div>
 		</a>
-		<div class="btn-list">
+		<ul class="btn-list">
 			<li class="item">
 				<button type="button" class="btn-ico btn-like">관심물품</button>
 			</li>
 			<li class="item">
 				<button type="button" class="btn-ico btn-cart">장바구니</button>
 			</li>
-		</div>
+		</ul>
 	</div>
 </div>
 
@@ -185,23 +189,26 @@
 						<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice01"> 백미/유(2kg)</label>
 					</div>
 					<button class="btn-image btn-delete">삭제</button>
-					<a href="#" class="link">
+					<div class="inner-wrap">
 						<span class="ico-label label01">햇물품</span>
 						<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 						<p class="text">이상기후로 인해서 수확시기가 빨라졌습니다. 안정적인 생산을 위해 책임소비가 필요한 시점입니다.</p>
 						<p class="count">주문가능수량 <span class="fColor02">제한없음</span></p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="select-wrap">
-								<select class="styled1">
-									<option>0</option>
-									<option>1</option>
-									<option>2</option>
-									<option>직접입력</option>
-								</select>
+							<div class="input-select">
+								<div class="text-form">
+									<input type="text" value="1" maxlength="100">
+									<ul class="list">
+										<li class="item">1</li>
+										<li class="item">2</li>
+										<li class="item">3</li>
+										<li class="item write">직접입력</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</a>
+					</div>
 					<div class="bottom-box">
 						<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
 						<span class="price"><span class="number">8,000</span>원</span>
@@ -212,22 +219,25 @@
 						<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice01"> 백미/유(2kg)</label>
 					</div>
 					<button class="btn-image btn-delete">삭제</button>
-					<a href="#" class="link">
+					<div class="inner-wrap">
 						<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 						<p class="text">해당 공급일에 동일한 물품 구입 이력이 있습니다.</p>
 						<p class="count">주문가능수량 <span class="fColor02">2</span></p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="select-wrap">
-								<select class="styled1">
-									<option>0</option>
-									<option>1</option>
-									<option>2</option>
-									<option>직접입력</option>
-								</select>
+							<div class="input-select">
+								<div class="text-form">
+									<input type="text" value="1" maxlength="100">
+									<ul class="list">
+										<li class="item">1</li>
+										<li class="item">2</li>
+										<li class="item">3</li>
+										<li class="item write">직접입력</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</a>
+					</div>
 					<div class="bottom-box">
 						<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
 						<span class="price"><span class="number">8,000</span>원</span>
@@ -238,22 +248,25 @@
 						<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice01"> 백미/유(2kg)</label>
 					</div>
 					<button class="btn-image btn-delete">삭제</button>
-					<a href="#" class="link">
+					<div class="inner-wrap">
 						<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 						<p class="text">최근 3개월동안 자주 이용했던 물품입니다.</p>
 						<p class="count">주문가능수량 <span class="fColor02">2</span></p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="select-wrap">
-								<select class="styled1">
-									<option>0</option>
-									<option>1</option>
-									<option>2</option>
-									<option>직접입력</option>
-								</select>
+							<div class="input-select">
+								<div class="text-form">
+									<input type="text" value="1" maxlength="100">
+									<ul class="list">
+										<li class="item">1</li>
+										<li class="item">2</li>
+										<li class="item">3</li>
+										<li class="item write">직접입력</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</a>
+					</div>
 					<div class="bottom-box">
 						<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
 						<span class="price"><span class="number">8,000</span>원</span>
@@ -264,21 +277,24 @@
 						<label class="ellipsis-line"><input type="checkbox" class="styled1" name="Choice01"> 백미/유(2kg)</label>
 					</div>
 					<button class="btn-image btn-delete">삭제</button>
-					<a href="#" class="link">
+					<div class="inner-wrap">
 						<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 						<p class="count">주문가능수량 <span class="fColor02">2</span></p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="select-wrap">
-								<select class="styled1">
-									<option>0</option>
-									<option>1</option>
-									<option>2</option>
-									<option>직접입력</option>
-								</select>
+							<div class="input-select">
+								<div class="text-form">
+									<input type="text" value="1" maxlength="100">
+									<ul class="list">
+										<li class="item">1</li>
+										<li class="item">2</li>
+										<li class="item">3</li>
+										<li class="item write">직접입력</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</a>
+					</div>
 					<div class="bottom-box">
 						<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
 						<span class="price"><span class="number">8,000</span>원</span>
@@ -289,22 +305,25 @@
 						<label class="ellipsis-line"><input type="checkbox" class="styled1" disabled> 백미/유(2kg)</label>
 					</div>
 					<button class="btn-image btn-delete">삭제</button>
-					<a href="#" class="link">
+					<div class="inner-wrap">
 						<span class="ico-label label01">햇물품</span>
 						<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 						<p class="text">공급중단</p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="select-wrap">
-								<select class="styled1">
-									<option>0</option>
-									<option>1</option>
-									<option>2</option>
-									<option>직접입력</option>
-								</select>
+							<div class="input-select">
+								<div class="text-form">
+									<input type="text" value="1" maxlength="100">
+									<ul class="list">
+										<li class="item">1</li>
+										<li class="item">2</li>
+										<li class="item">3</li>
+										<li class="item write">직접입력</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</a>
+					</div>
 					<div class="bottom-box">
 						<button type="button" class="btn-image btn-pin">물품 고정 핀</button>
 						<span class="price"><span class="number">8,000</span>원</span>
@@ -341,45 +360,61 @@
 <h2>04</h2>
 <div class="thumb-list4">
 	<div class="box">
-		<a href="#" class="link">
+		<div class="inner-wrap">
+			<div class="check-box"><input type="checkbox" class="styled1"></div>
 			<span class="ico-label label01">햇물품</span>
 			<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 			<div class="text-area">
 				<p class="name ellipsis-line">백미/유(2kg)</p>
 				<p class="price"><span class="number">8,000</span>원</p>
 			</div>
-		</a>
+			<div class="btn-box">
+				<button type="button" class="btn-ico btn-cart btn-cart2">장바구니</button>
+			</div>
+		</div>
 	</div>
 	<div class="box">
-		<a href="#" class="link">
+		<div class="inner-wrap">
+			<div class="check-box"><input type="checkbox" class="styled1"></div>
 			<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 			<div class="text-area">
 				<p class="name ellipsis-line">유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글) 유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글) 유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글)</p>
 				<p class="price"><span class="number">8,000</span>원</p>
 				<p class="price-del">8,000원</p>
 			</div>
-		</a>
+			<div class="btn-box">
+				<button type="button" class="btn-ico btn-cart btn-cart2">장바구니</button>
+			</div>
+		</div>
 	</div>
 	<div class="box">
-		<a href="#" class="link">
+		<div class="inner-wrap">
+			<div class="check-box"><input type="checkbox" class="styled1"></div>
 			<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 			<div class="text-area">
 				<p class="name ellipsis-line">백미/유(2kg)</p>
 				<p class="price"><span class="number">8,000</span>원</p>
 			</div>
-		</a>
+			<div class="btn-box">
+				<button type="button" class="btn-ico btn-cart btn-cart2">장바구니</button>
+			</div>
+		</div>
 	</div>
 	<div class="box">
-		<a href="#" class="link">
+		<div class="inner-wrap">
+			<div class="check-box"><input type="checkbox" class="styled1"></div>
 			<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 			<div class="text-area">
 				<p class="name ellipsis-line">백미/유(2kg)</p>
 				<p class="price"><span class="number">8,000</span>원</p>
 			</div>
-		</a>
+			<div class="btn-box">
+				<button type="button" class="btn-ico btn-cart btn-cart2">장바구니</button>
+			</div>
+		</div>
 	</div>
 </div>
-
+<br>
 <h1>썸네일 박스</h1>
 <h2>01</h2>
 <div class="thumb-box1">
@@ -395,6 +430,27 @@
 		<p class="date">2017-01-01 ~ 2017-12-31</p>
 	</div>
 	<a href="#" class="link"><span class="text">함께하기</span></a>
+</div>
+
+<h2>02</h2>
+<div class="thumb-box2">
+	<span class="ico-number"><em>1</em>위</span>
+	<a href="#" class="link">
+		<div class="img-area"><img src="../../img/temp/@temp_cooking03.jpg" alt="요리 이미지"></div>
+		<div class="text-area">
+			<p class="name ellipsis-line">유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글) 유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글) 유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글)</p>
+			<p class="price"><span class="number">8,000</span>원</p>
+			<p class="price-del">8,000원</p>
+		</div>
+	</a>
+	<ul class="btn-list">
+		<li class="item">
+			<button type="button" class="btn-ico btn-like">관심물품</button>
+		</li>
+		<li class="item">
+			<button type="button" class="btn-ico btn-cart">장바구니</button>
+		</li>
+	</ul>
 </div>
 
 
@@ -416,23 +472,48 @@
 </div>
 
 <h2>한살림 소식</h2>
-<div class="card-news-box">
-	<a href="#" class="title-area">
-		<p class="text">생산지는 지금</p>
-		<p class="title">[괴산연합회] 다시 토마토를 심습니다.</p>
-	</a>
-	<div class="hashtag-area">
-		<a htef="#" class="hashtag">#해물탕</a>
-		<a htef="#" class="hashtag">#동태채소진밥</a>
-		<a htef="#" class="hashtag">#오징어동태버섯탕</a>
-		<a htef="#" class="hashtag">#귤소스탕수어</a>
-	</div>
-	<a href="#" class="link">
-		<div class="img-area"><img src="../../img/temp/photo_cardnews.jpg" alt="요리 사진"></div>
-		<div class="text-area">
-			토마토 씨앗 피해 때문에 많은 어려움을 겪고 있는 솔뫼농산 생산자들이 다시 기운을 내 토마토 농사를 재개했습니다. 토마토 씨앗 피해로 어려움을 겪고 있습니다.
+<div class="card-news-list">
+	<div class="card-news-box">
+		<div class="card-news-title">
+			<a href="#" class="title-area">
+				<p class="text">생산지는 지금</p>
+				<p class="title">[괴산연합회] 다시 토마토를 심습니다.</p>
+			</a>
+			<button type="button" class="btn-ico btn-like">관심물품</button>
 		</div>
-	</a>
+		<div class="hashtag-area">
+			<a htef="#" class="hashtag">#해물탕</a>
+			<a htef="#" class="hashtag">#동태채소진밥</a>
+			<a htef="#" class="hashtag">#오징어동태버섯탕</a>
+			<a htef="#" class="hashtag">#귤소스탕수어</a>
+		</div>
+		<a href="#" class="link">
+			<div class="img-area"><img src="../../img/temp/photo_cardnews.jpg" alt="요리 사진"></div>
+			<div class="text-area">
+				토마토 씨앗 피해 때문에 많은 어려움을 겪고 있는 솔뫼농산 생산자들이 다시 기운을 내 토마토 농사를 재개했습니다. 토마토 씨앗 피해로 어려움을 겪고 있습니다.
+			</div>
+		</a>
+	</div>
+	<div class="card-news-box">
+		<div class="card-news-title">
+			<a href="#" class="title-area link-area">
+				<p class="text">생산지는 지금</p>
+				<p class="title">[괴산연합회] 다시 토마토를 심습니다.</p>
+			</a>
+		</div>
+		<div class="hashtag-area">
+			<a htef="#" class="hashtag">#해물탕</a>
+			<a htef="#" class="hashtag">#동태채소진밥</a>
+			<a htef="#" class="hashtag">#오징어동태버섯탕</a>
+			<a htef="#" class="hashtag">#귤소스탕수어</a>
+		</div>
+		<a href="#" class="link">
+			<div class="img-area"><img src="../../img/temp/photo_cardnews.jpg" alt="요리 사진"></div>
+			<div class="text-area">
+				토마토 씨앗 피해 때문에 많은 어려움을 겪고 있는 솔뫼농산 생산자들이 다시 기운을 내 토마토 농사를 재개했습니다. 토마토 씨앗 피해로 어려움을 겪고 있습니다.
+			</div>
+		</a>
+	</div>
 </div>
 
 

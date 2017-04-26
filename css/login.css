@@ -148,14 +148,13 @@
 /* --------------------------------------------------------------------------------------------
 	체크박스 wrapper
 -------------------------------------------------------------------------------------------- */
-.check-wrap {
-	margin-top:10px;
-}
+.check-wrap {margin-top:10px;}
 .check-wrap label {
 	display: inline-block;
 	margin-left:20px;
 	line-height: 25px;
 	font-size:15px;
+	white-space:nowrap;
 }
 .check-wrap label:first-child {margin-left:0;}
 .check-wrap label input {margin-right:6px;}
@@ -226,7 +225,7 @@
 }
 
 .text-box02 dl .title {
-	margin:-2px 0 10px;
+	margin:-2px 0 5px;
 	font-size:15px;
 	color:#333;
 	font-weight: bold;
@@ -564,6 +563,12 @@
 	text-align: right;
 	color:#60b015;
 }
+.order-cart-list .list-group .list-cont .load-goods {
+	background-color:#f7f7f7;
+	border-top:2px solid #ccc;
+	border-bottom:2px solid #ccc;
+}
+
 .order-cart-list .list-cont .no-result {
 	margin-top:20px;
 	line-height:107px;
@@ -575,6 +580,7 @@
 .order-cart-list .list-cont .result {
 	padding:0 10px;
 	background-color:#f7f7f7;
+	border-top:1px solid #eee;
 }
 .order-cart-list .list-cont .result .total {
 	overflow: hidden;
@@ -842,12 +848,13 @@
 	color:#666;
 	font-size:13px;
 }
-.cart-wrap .section .total-price .total .discount {
-	margin-left:13px;
+.cart-wrap .section .discount {
+	margin-top:10px;
 	font-size:12px;
 	color:#aaa;
+	text-align: right;
 }
-.cart-wrap .section .total-price .total .discount span {
+.cart-wrap .section .discount span {
 	color:#f04114;
 }
 .cart-wrap .section .total-price .price {

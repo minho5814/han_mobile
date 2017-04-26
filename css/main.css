@@ -226,9 +226,7 @@
 .box-depth .depth-cont .tab-cont .thumb-list2.on {display:block;}
 
 /* 이즈음 밥상 */
-.recipe-slide {
-	position:relative;
-}
+.recipe-slide {position:relative;}
 .recipe-slide .swiper-slide .thumb-list2 {padding:10px 0;}
 	.recipe-slide .btn-layer {
 		position:absolute;
@@ -243,3 +241,46 @@
 
 /* 한살림 소식 */
 .card-news-box {margin-bottom:10px;}
+
+
+/* 팝업 영역 */
+.popup-banner {
+	display:none;
+	overflow-y:auto;
+	position:fixed;
+	left:0;right:0;top:0;bottom:0;
+	z-index:150;
+	background-color:#fff;
+}
+.popup-banner .banner-box {}
+.popup-banner .banner-box .banner {display:block;}
+.popup-banner .banner-box .banner .text-area {
+	min-height:70px;
+	padding:0 30px;
+	border-bottom:1px solid #333;
+	color:#333;
+}
+.popup-banner .banner-box .banner:last-child .text-area {border-bottom:0;}
+.popup-banner .banner-box .banner .text-area .text {
+	padding-top:16px;
+	font-size:13px;
+	line-height:14px;
+}
+.popup-banner .banner-box .banner .text-area .title {
+	font-size:21px;
+	font-weight:bold;
+	line-height:29px;
+}
+.popup-banner .btn-popup-close {
+	position:fixed;
+	right:0;top:0;
+	width:60px;
+	height:60px;
+	background:url(../img/btn/btn_close_30x30.png) no-repeat 50% 50%;
+	background-size:30px 30px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.popup-banner {}
+.popup-banner {}
