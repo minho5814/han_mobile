@@ -1232,10 +1232,16 @@ $(window).load(function(){
 		var winW = $(window).width();
 		if(winW <= 800){
 			$('.Hide').hide();
-			$('colgroup .Dfault').show()
+			$('colgroup .Dfault').show();
+			$('.Date').each(function(){
+				var len = $(this).text().length;
+				if(len > 2){
+					$(this).parents('tr').find('.Link').css({'background-color':'#f9f2b0'});
+				}
+			});
 		}else{
 			$('.Hide').show();
-			$('colgroup .Dfault').hide()
+			$('colgroup .Dfault').hide();
 		}
 	}
 	resizeTable();
