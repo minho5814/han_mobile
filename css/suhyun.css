@@ -178,6 +178,7 @@
 	font-size:15px;
 	color:#333;
 	line-height:22px;
+	letter-spacing:-0.5px;
 	text-align:center;
 }
 .safety-area .radia-txt .radia-serve {
@@ -375,12 +376,8 @@
 	line-height:18px;
 }
 
-.search-livesto .form-button-type1 {
-	padding-right:114px;
-}
-.search-livesto .form-button-type1 input {
-	font-size:13px;
-}
+.search-livesto .form-button-type1 {padding-right:114px;}
+.search-livesto .form-button-type1 input {font-size:13px;}
 .search-livesto .form-button-type1 .btn {right:46px;}
 .safety-area .bullet-list1 .item.ty03 {
 	margin-top:6px;
