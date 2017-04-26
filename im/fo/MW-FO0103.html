@@ -85,7 +85,7 @@
 				<div class="thumb-wrap">
 					<h3 class="cTitle01">관련물품 장보기</h3>
 					<div class="align-left bg-gray">
-						<button type="button" class="btn-text btn-h30 btn-text-line1">전체선택</button>
+						<button type="button" class="btn-text btn-h30 btn-text-line1 all-check" name="Choice01">전체선택</button>
 						<button type="button" class="btn-text btn-h30 btn-text-line1">선택삭제</button>
 					</div>
 					<div class="thumb-list1">
@@ -427,6 +427,14 @@ var swiper = new Swiper('.cook-slide .swiper-container', {
 		$('.reply-list .item').removeClass('on');
 		$(this).parent('.item').addClass('on');
 	});
+
+	/* 체크박스 전체 선택 */
+	$('.all-check').click(function(){
+		var name = $(this).attr('name');
+		var dLen = $('input[name='+name+']').length;
+		$('input[name='+name+']').not('.all-check').prop('checked', true);
+	});
+
 
 </script>
 </body>
