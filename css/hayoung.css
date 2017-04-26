@@ -649,6 +649,27 @@
     line-height:14px;
 }
 
+.search-info02 {
+    padding:10px;
+    background-color:#f7f7f7;
+    border-top:1px solid #bbb;
+}
+.search-info02 dl {
+    position: relative;
+    padding-left:75px;
+    margin-top:6px;
+}
+.search-info02 dl:fisrt-child {
+    margin-top:0;
+}
+.search-info02 dl dt {
+    position: absolute;
+    top:0; left:0;
+    width:75px;
+    color:#333;
+    font-size:16px;
+    line-height: 42px;
+}
 /* --------------------------------------------------------------------------------------------
 	천연벽지
 -------------------------------------------------------------------------------------------- */

@@ -2794,7 +2794,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list1 .box {
 	position:relative;
-	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
 	padding-bottom:12px;
 }
 .thumb-list1 .box:first-child {border-top:0;}
@@ -2856,6 +2856,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:14px;
 }
 .thumb-list1 .gray-text-box p:first-child {margin-top:0;}
+
+.thumb-list1.btn-none .price {
+	position: absolute;
+	bottom:0;
+}
 
 /* 02 */
 .thumb-list2 .box .ico-label {
