@@ -387,15 +387,9 @@ $(window).load(function(){
 		}
 
 		$('.palan-area').each(function(index){
-			$cont_height = $('.palan-area').eq(index).offset().top - $('.header').outerHeight() - $('.move-area').outerHeight() - $('.select-area').outerHeight();
+			$cont_height = $('.palan-area').eq(index).offset().top - headH - $('.move-area').outerHeight() - $('.select-area').outerHeight();
 			if (winTop >= $cont_height){
-				$('.styled1 option').eq(index).attr("selected", "true");
-				// $('.styled1 option').removeAttr("selected").eq(index).attr("selected", "true");
-				// $('.styled1').change(function(){
-				// 	var txt = $('.styled1 option:selected').text();
-				// 	console.log(txt);
-				//
-				// });
+				$('.styled1 option').removeAttr("selected").eq(index).prop("selected", "true");
 			}
 
 		});
