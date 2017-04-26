@@ -14,6 +14,11 @@ $(window).load(function(){
 		$('body').scrollTop(winTop);
 	}
 
+	/* 새창 팝업 닫기 */
+	$('.header .btn-close').click(function(){
+		window.close();
+	});
+
 	/* 상단 고정 메뉴 슬라이드 */
 	$('.head-menu .swiper-container').each(function(){
 		var swiper = new Swiper(this, {
