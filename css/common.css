@@ -457,6 +457,30 @@ html.no-scroll {
 	-webkit-flex-direction: column;
 	flex-direction: column;
 }
+/* 이미지 슬라이드 01 */
+.visual-slide1 {
+	position:relative;
+}
+.visual-slide1 .swiper-slide {}
+.visual-slide1 .swiper-slide .link {
+	display:block;
+	font-size:0;
+	line-height:0;
+}
+.visual-slide1 .swiper-slide .link img {width:100%;}
+.visual-slide1 .swiper-pagination {
+	position:absolute;
+	right:13px;bottom:20px;
+	z-index:5;
+	width:50px;
+	height:27px;
+	border-radius:25px;
+	background-color:rgba(50,50,50,.5);
+	color:#fff;
+	font-size:13px;
+	text-align:center;
+	line-height:29px;
+}
 
 /* --------------------------------------------------------------------------------------------
 	캠페인 마크
@@ -1584,8 +1608,8 @@ select.styled1:disabled {
 	transform:translateY(-50%) rotate(45deg);
 	width:8px;
 	height:8px;
-	border-right:2px solid #666;
-	border-bottom:2px solid #666;
+	border-right:1px solid #666;
+	border-bottom:1px solid #666;
 }
 .accordion-list1 .item.on .title:before {
 	border:0;
@@ -1677,7 +1701,8 @@ select.styled1:disabled {
 /* 탭 04 */
 .tab-list4 {
 	overflow:hidden;
-	padding-top:1px;
+	margin-right:-1px;
+	padding-top:2px;
 }
 .tab-list4 .item {
 	float:left;
@@ -1700,8 +1725,8 @@ select.styled1:disabled {
 	z-index:1;
 	border-color:#666;
 	background-color:#fff;
-	color:#333;
 }
+.tab-list4 .item.on .text {color:#333;}
 
 /* 탭 05 */
 .tab-list5 {
@@ -1741,6 +1766,18 @@ select.styled1:disabled {
 .tab-list5.gray .item.on {
 	background-color:#fff;
 }
+
+/* 탭영역 감추기 */
+.tab-hide-box {}
+.tab-hide-box .tab-list4 {
+	height:90px;
+}
+.tab-hide-box .btn-goods-more {
+	margin-top:0;
+	border-top:0;
+}
+.tab-hide-box {}
+
 /* ============================================================================================
 	게시판
 ============================================================================================ */
@@ -2374,6 +2411,38 @@ html {
 	padding:10px 15px;
 	border-top:1px solid #bbb;
 }
+/* 아코디언 */
+.search-layer .accordion-list {}
+.search-layer .accordion-list .layer-title {
+	height:45px;
+	padding:0 10px;
+	background-color:#eee;
+	color:#333;
+	font-size:17px;
+	line-height:47px;
+}
+.search-layer .accordion-list .item {border-top:1px solid #bbb;}
+.search-layer .accordion-list .item:first-child {border-top:0;}
+.search-layer .accordion-list .layer-title:before {
+	content:'';
+	position:absolute;
+	left:inherit;right:10px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(225deg);
+	-ms-transform:translateY(-50%) rotate(225deg);
+	transform:translateY(-50%) rotate(225deg);
+	width:9px;
+	height:9px;
+	border-left:2px solid #333;
+	border-top:2px solid #333;
+	background-color:transparent;
+}
+.search-layer .accordion-list .item .layer-list {display:none;}
+.search-layer .accordion-list .item.on .layer-title:before {
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+}
+.search-layer .accordion-list {}
 
 /* --------------------------------------------------------------------------------------------
 	카테고리 레이어
@@ -2701,11 +2770,13 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list1 .box {
 	position:relative;
 	border-top:1px solid #ddd;
+	padding-bottom:12px;
 }
 .thumb-list1 .box:first-child {border-top:0;}
 .thumb-list1 .box .link {
 	display:block;
-	height:144px;
+	position:relative;
+	min-height:132px;
 	padding-left:130px;
 }
 .thumb-list1 .box .img-area {
@@ -2717,6 +2788,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	transform:translateY(-50%);
 	width:120px;
 	height:120px;
+	margin-top:12px;
 }
 .thumb-list1 .box .text-area {padding-top:22px;}
 .thumb-list1 .box .text-area .name {
@@ -2737,7 +2809,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list1 .box .btn-list {
 	overflow:hidden;
 	position:absolute;
-	left:130px;right:-2px;bottom:12px;
+	left:130px;right:-2px;top:92px;
 }
 .thumb-list1 .box .btn-list .item {
 	float:left;
@@ -2747,10 +2819,23 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list1 .box .btn-list .btn-ico {border-radius:3px;}
 
+.thumb-list1 .gray-text-box {
+	margin-top:10px;
+	padding:10px;
+	background-color:#f7f7f7;
+}
+.thumb-list1 .gray-text-box p {
+	margin-top:3px;
+	color:#aaa;
+	font-size:12px;
+	line-height:14px;
+}
+.thumb-list1 .gray-text-box p:first-child {margin-top:0;}
+
 /* 02 */
 .thumb-list2 .box .ico-label {
 	position:absolute;
-	left:30px;top:15px;
+	left:20px;top:15px;
 	z-index:1;
 }
 .thumb-list2 {
@@ -3429,6 +3514,16 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .site-terms-infor .infor-list .item-infor .terms-list01 {margin-left:-15px;}
 
 /* --------------------------------------------------------------------------------------------
+	중카테고리
+-------------------------------------------------------------------------------------------- */
+.top-gray-box2 {border-top:10px solid #eee;}
+.top-gray-box2:first-child {border-top:0;}
+.top-gray-box2 .align-center .cTitle01 {line-height:50px;}
+.top-gray-box2 .cont {border-top:1px solid #bbb;}
+.top-gray-box2 .thumb-list1 .box {margin:0 10px;}
+.top-gray-box2 {}
+
+/* --------------------------------------------------------------------------------------------
 	물품상세
 -------------------------------------------------------------------------------------------- */
 /* 상단 슬라이드 영역 물품 라벨 */
@@ -3609,11 +3704,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .view-content .tab-content .view-img-area img {width:100%;}
 
-.view-content .top-gray-box {
+.view-content .top-gray-box1 {
 	padding:17px 10px 25px;
 	border-top:8px solid #eee;
 }
-.view-content .tab-content .top-gray-box {margin:0 -10px;}
+.view-content .tab-content .top-gray-box1 {margin:0 -10px;}
 
 .bullet-dl1 {
 	padding-bottom:12px;

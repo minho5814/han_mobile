@@ -29,6 +29,17 @@ $(window).load(function(){
 	});
 
 	/* -----------------------------------------------------------------------------------------------
+		슬라이드
+	---------------------------------------------------------------------------------------------- */
+	// 이미지 슬라이드 01
+	$('.visual-slide1 .swiper-container').each(function(){
+		var swiper = new Swiper(this, {
+			pagination: '.visual-slide1 .swiper-pagination',
+			paginationType: 'fraction'
+		});
+	});
+
+	/* -----------------------------------------------------------------------------------------------
 		전체메뉴 레이어
 	---------------------------------------------------------------------------------------------- */
 	var slideAreaH = $('.gnb-layer .slide-area').outerHeight();
@@ -71,11 +82,6 @@ $(window).load(function(){
 	/* -----------------------------------------------------------------------------------------------
 		검색 레이어
 	---------------------------------------------------------------------------------------------- */
-	// 열기
-	$('.btn-filter').click(function(){
-		scrollNo();
-		$('.filter-layer').show().stop().animate({right:0}, 200);
-	});
 	// 닫기
 	$('.search-layer .btn-close, .bg-close').click(function(){
 		scrollOk();
@@ -86,6 +92,25 @@ $(window).load(function(){
 	// 체크 전체 해제
 	$('.search-layer .btn-text-line1').click(function(){
 		$(this).parents('.search-layer').find('input[type=checkbox]').prop('checked', false);
+	});
+	/* 필터 검색 */
+	// 열기
+	$('.btn-filter').click(function(){
+		scrollNo();
+		$('.filter-layer').show().stop().animate({right:0}, 200);
+	});
+	/* 상세 검색 */
+	$('.search-layer .accordion-list .item.on .layer-list').show();
+	$('.header .btn-search').click(function(){
+		scrollNo();
+		$('.detail-layer').show().stop().animate({right:0}, 200);
+	});
+	$('.search-layer .accordion-list .item .layer-title').click(function(){
+		if($(this).parents('.item').hasClass('on')){
+			$(this).parents('.item').removeClass('on').find('.layer-list').slideUp(100);
+		}else{
+			$(this).parents('.item').addClass('on').find('.layer-list').slideDown(200);
+		}
 	});
 
 	/* -----------------------------------------------------------------------------------------------
@@ -119,7 +144,7 @@ $(window).load(function(){
 
 	/* 하단 플로팅 버튼이 있을 경우 (물품상세) */
 	$('.order-floating-box').each(function(){
-		var orderH = $(this).outerHeight();
+		var orderH = $(this).outerHeight() + 10;
 		$('.container').css({'padding-bottom':orderH});
 	});
 
