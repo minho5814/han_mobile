@@ -1321,6 +1321,21 @@ select.styled1:disabled {
 	width:65px;
 }
 
+.select-button-type1 {
+	overflow:hidden;
+	padding:7px 10px;
+	background-color:#f7f7f7;
+}
+.select-button-type1 select {
+	float:left;
+	width:150px;
+}
+.select-button-type1 .btn-text {
+	float:right;
+	width:80px;
+	height:42px;
+}
+
 /*버튼2개 포함 타입*/
 .form-button-type2 {
 	position:relative;
