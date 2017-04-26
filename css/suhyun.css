@@ -213,6 +213,7 @@
 	font-size:15px;
 	color:#333;
 	line-height:22px;
+	letter-spacing:-0.5px;
 	text-align:center;
 }
 .safety-area .radia-txt .radia-serve {
@@ -410,12 +411,8 @@
 	line-height:18px;
 }
 
-.search-livesto .form-button-type1 {
-	padding-right:114px;
-}
-.search-livesto .form-button-type1 input {
-	font-size:13px;
-}
+.search-livesto .form-button-type1 {padding-right:114px;}
+.search-livesto .form-button-type1 input {font-size:13px;}
 .search-livesto .form-button-type1 .btn {right:46px;}
 .safety-area .bullet-list1 .item.ty03 {
 	margin-top:6px;
@@ -445,7 +442,6 @@
 /* 요리 */
 /* MW-FO0103.html */
 .cooking-cont {}
-.cooking-cont .cooking-img {}
 .cooking-cont .cooking-img img {width:100%; height:auto; vertical-align:middle;}
 .cooking-area {padding:0 10px;}
 .cooking-area .cooking-text {
@@ -470,9 +466,7 @@
 	height:35px;
 }
 
-.cooking-area .fab-way {
-	background-color:#f7f7f7;
-}
+.cooking-area .fab-way {background-color:#f7f7f7;}
 .cooking-area .fab-way .fab-box {padding:14px 16px;}
 .cooking-area .fab-way .fab-box dl dt {
 	padding-left:26px;
@@ -542,17 +536,13 @@
 	background-color:#ddd;
 }
 .cooking-cont .thumb-wrap {padding:0 10px;}
-.cooking-cont .thumb-wrap .thumb-list1 {
-
-}
-.cooking-cont .thumb-wrap .thumb-list1 .box {
-	padding-left:40px;
-}
+.cooking-cont .thumb-wrap .thumb-list1 {}
+.cooking-cont .thumb-wrap .thumb-list1 .box {padding-left:40px;}
 
 .thumb-wrap .align-left.bg-gray {padding:10px; margin: 0 -10px;}
-.cooking-cont .thumb-wrap  .thumb-list1 .box .btn-list {left:170px;}
-.cooking-cont .thumb-wrap  .thumb-list1 .box .link {position:relative;}
-.cooking-cont .thumb-wrap  .thumb-list1 .box .check-wrap {
+.cooking-cont .thumb-wrap .thumb-list1 .box .btn-list {left:170px;}
+.cooking-cont .thumb-wrap .thumb-list1 .box .link {position:relative;}
+.cooking-cont .thumb-wrap .thumb-list1 .box .check-wrap {
 	position: absolute;
 	left:0;
 	top:14px;
@@ -592,7 +582,7 @@
 .child-area .board1 .notice-child {
 	margin-top:10px;
 	padding-left:21px;
-	background:url(../img/ico/ico_recipe01.gif) no-repeat 4px center;
+	background:url(../img/ico/ico_recipe01.gif) no-repeat 4px 0;
 	background-size:13px 10px;
 	font-size:13px;
 	color:#666;
