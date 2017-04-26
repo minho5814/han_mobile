@@ -68,11 +68,6 @@
 	color:#666;
 	line-height:15px;
 }
-@media only screen and (max-width: 320px) {
-	.sign-area .news-list .item-news dd {
-		font-size:10px;
-	}
-}
 .sns-area {
 	margin-top:10px;
 	background-color:#fff;
@@ -175,38 +170,45 @@
 
 /* 물품안전 */
 .safety-area {}
+.safety-area .cTitle01 {
+	margin:19px 0 4px;
+}
 .safety-area .radia-txt {
-	margin-top:12px;
-	font-size:13px;
+	margin:36px 0;
+	font-size:15px;
 	color:#333;
-	line-height:19px;
+	line-height:22px;
+	text-align:center;
+}
+.safety-area .radia-txt .radia-serve {
+	display:block;
+	color:#aaa;
 }
 .safety-area .radia-box {
-	margin-top:10px;
-	padding:7px 10px;
-	border:1px solid #ddd;
+	padding:12px 0;
+	border-bottom:1px solid #ddd;
 	box-sizing:border-box;
 }
-.safety-area .radia-box.first {margin-top:12px;}
-.safety-area .radia-box dl {}
+.safety-area .radia-box.first {border-top:1px solid #ddd;}
+.safety-area .radia-box dl {position:relative;}
 .safety-area .radia-box dl dt {
-	margin-bottom:6px;
-	font-size:13px;
+	margin-bottom:7px;
+	font-size:15px;
 	color:#333;
 	line-height:19px;
+	font-weight:bold;
 }
-.safety-area.radia-box dl dd {
-	font-size:12px;
-	color:#333;
+.safety-area .radia-box dl dd {
+	font-size:14px;
+	color:#f04114;
 	line-height:14px;
 }
-.safety-area .radia-box dl dd.dete {
-	color:#ec7015;
-}
 .safety-area .radia-box dl dd.radia-date {
-	margin-top:2px;
-	font-size:11px;
-	color:#aaa;
+	position:absolute;
+	right:0; bottom:0;
+	font-size:13px;
+	color:#666;
+	line-height:13px;
 }
 .safety-area .green-img {margin-top:15px;}
 .safety-area .green-img img {width:100%; height:auto; vertical-align:middle;}
@@ -244,69 +246,81 @@
 	background:url(../img/ico/ico_analy06.gif) no-repeat 0 center;
 	background-size:17px 17px;
 }
-
-.process-list {font-size:0; line-height:0;}
-.process-list .item {
-	display:inline;
+.safety-area .board1 th .ico-bot {
+	display:block;
 	position:relative;
-	margin-left:5px;
-	padding-left:18px;
-	font-size:13px;
-	color:#666;
-	line-height:19px;
+}
+.safety-area .board1 th .ico-bot:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:50%; top:-22px;
+	width:15px;
+	height:15px;
+	margin-left:-7.5px;
+	background:url(../img/ico/ico_bot.png) no-repeat 0 0;
+	background-size:15px 15px;
+}
+.process-list {
+	border:1px solid #ccc;
+	box-sizing:border-box;
+}
+.process-list .item {
+	position:relative;
+	border-top:1px solid #eee;
 }
 .process-list .item:before {
 	content:'';
 	display:block;
 	position:absolute;
-	left:0; top:3px;
-	width:13px;
-	height:13px;
-	background:url(../img/ico/ico_process.gif) no-repeat 0 0;
-	background-size:13px 13px;
+	left:30px; bottom:-8px;
+	width:15px;
+	height:15px;
+	background:url(../img/ico/ico_bot.png) no-repeat 0 0;
+	background-size:15px 15px;
+	z-index:10;
 }
-.process-list .item:first-child {margin-left:0; padding-left:0;}
-.process-list .item:first-child:before {display:none;}
-
-.box-content4 {
-	border:1px solid #ddd;
-}
-.box-content4 .box-title {
-	padding:8px 10px;
-	box-sizing:border-box;
-	border-bottom:1px solid #ddd;
+.process-list .item:last-child:before {display:none;}
+.process-list .item:first-child {border-top:0;}
+.process-list .item dl {display:table; width:100%;}
+.process-list .item dl dt,
+.process-list .item dl dd  {
+	display:table-cell;
+	padding:13px 15px;
+	background-color:#f7f7f7;
+	box-sizing: border-box;
+	font-size:15px;
 	color:#666;
-	font-size:14px;
-	font-weight:bold;
-	line-height:16px;
+	line-height:19px;
+	vertical-align:middle;
+	text-align:center;
 }
-.box-content4 .box-cont {padding:7px 15px;}
-.box-content4 .box-cont .item {
-	margin-top:0;
-	color:#666;
-	font-size:11px;
-	line-height:15px;
+.process-list .item dl dt {width:75px;}
+.process-list .item dl dd {
+	background-color:#fff;
+	text-align:left;
 }
-.vision-box .box-content4 {
-	border-top:0;
+.safety-area .cTitle06 {
+	margin:20px 0 5px;
 }
-.vision-box .box-content4.first {border-top:1px solid #ddd;}
-
-.safety-area .check-tit {
-	margin:12px 0 3px;
-	font-size:14px;
+.safety-area .check-tit02 {
+	margin:12px 0;
+	text-align:center;
+}
+.safety-area .check-txt {
+	font-size:15px;
 	color:#333;
 	line-height:18px;
 }
 .safety-area .bullet-list1 .item {
 	margin-top:3px;
-	font-size:13px;
+	font-size:15px;
 	color:#666;
 	line-height:19px;
 }
 .safety-area .bullet-list1 .item:first-child {margin-top:0;}
 .safety-area .check-txt {
-	font-size:13px;
+	font-size:15px;
 	color:#666;
 	line-height:19px;
 }
@@ -315,25 +329,51 @@
 	font-size:13px;
 	color:#aaa;
 	line-height:19px;
+	text-indent:-8px;
 }
 .manage-check {
-	margin-top:6px;
+	margin-top:12px;
 	border:1px solid #bbb;
 	box-sizing:border-box;
 }
+.check-list02 {margin-top:7px;}
+.check-list02 .item {
+	position:relative;
+	padding-left:14px;
+	font-size:15px;
+	color:#666;
+	line-height:19px;
+}
+.check-list02 .item .number {
+	position:absolute;
+	left:0; top:0;
+}
+.certifi-img img {width:100%; height:auto; vertical-align:middle;}
 .manage-check img {width:100%; height:auto; vertical-align:middle;}
 
 /* 축산물 이력검사 */
 .livestock-box {
-	margin-top:5px;
-	padding:12px 0 22px 11px;
-	background:#efeee4 url(../img/img/img_livest.jpg) no-repeat right 0;
-	background-size:98px 79px;
-	font-size:12px;
-	color:#666;
-	line-height:15px;
+	margin-top:10px;
+	padding:32px 24px 31px 20px;
+	background:url(../img/img/img_livest.png) no-repeat right center;
+	background-size:142px 147px;
+	border:1px solid #eee;
 	box-sizing:border-box;
 }
+
+.livestock-box .livestock-tit {
+	font-size:17px;
+	color:#6e4a23;
+	line-height:19px;
+	font-weight:600;
+}
+.livestock-box .livestock-txt {
+	margin-top:10px;
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+}
+
 .search-livesto .form-button-type1 {
 	padding-right:114px;
 }
@@ -341,11 +381,11 @@
 	font-size:13px;
 }
 .search-livesto .form-button-type1 .btn {right:46px;}
-.notice-livest {
-	margin-top:8px;
-	font-size:12px;
+.safety-area .bullet-list1 .item.ty03 {
+	margin-top:6px;
+	font-size:13px;
 	color:#aaa;
-	line-height:17px;
+	line-height:18px;
 }
 .btn-barcode {
 	position:absolute;
@@ -364,9 +404,7 @@
 	color:#333;
 	line-height:20px;
 }
-.news-area .views-text .number {
-	font-weight:bold;
-}
+.news-area .views-text .number {font-weight:bold;}
 
 /* 요리 */
 /* MW-FO0103.html */
@@ -458,10 +496,14 @@
 .cooking-area .fab-way .stuff-img img {width:100%; height:auto; vertical-align:middle;}
 
 .bar-box {
-	width:100%;
 	height:10px;
-	margin:30px 0;
+	margin:30px -12px;
 	background-color:#eee;
+}
+.bar-box02 {
+	height:2px;
+	margin:0 -12px;
+	background-color:#ddd;
 }
 .cooking-cont .thumb-wrap {padding:0 10px;}
 .cooking-cont .thumb-wrap .thumb-list1 {
@@ -560,3 +602,16 @@
 	width:33.33%;
 }
 .photo-area .len-text {float:right;}
+
+@media only screen and (max-width: 320px) {
+	.sign-area .news-list .item-news dd {
+		font-size:10px;
+	}
+	.livestock-box .livestock-tit {
+		font-size:15px;
+		color:#6e4a23;
+		line-height:19px;
+		font-weight:600;
+	}
+
+}
