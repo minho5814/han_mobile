@@ -173,6 +173,17 @@
 	font-weight:bold;
 }
 
+.select-area {display: none;}
+.select-area.fixed {
+	display: block;
+	position:fixed;
+	left:0; right:0;
+	top:56px;
+	padding:7px 10px;
+	background-color:#f7f7f7;
+	z-index: 20;
+}
+
 /* 물품안전 */
 .safety-area {}
 .safety-area .radia-txt {
