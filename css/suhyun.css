@@ -107,8 +107,16 @@
 }
 
 /* 특별품 */
+.special-area {
+	border-bottom:1px solid #bbb;
+}
+.special-area img {
+	width:100%;
+	height:auto;
+	vertical-align: top;
+}
 .special-goods {
-	margin:10px;
+	margin:0 10px 10px;
 	border:1px solid #eee;
 }
 .special-goods .img-wrap {
