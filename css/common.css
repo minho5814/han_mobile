@@ -1989,7 +1989,7 @@ html {
 	white-space:nowrap;
 }
 
-/* 물품 상세 장바구니 버튼 */
+/* 물품상세 장바구니 버튼 */
 .header .btn-cart {
 	position:absolute;
 	right:40px;top:0;bottom:0;
@@ -3156,6 +3156,21 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:15px 45px 14px 0;
 	color:#333;
 }
+.card-news-box .title-area.link-area {
+	padding:15px 20px 14px 0;
+}
+.card-news-box .link-area:before {
+	content:'';
+	position:absolute;
+	right:5px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	width:12px;
+	height:12px;
+	border-top:1px solid #bebebe;
+	border-right:1px solid #bebebe;
+}
 .card-news-box .card-news-title .btn-like {
 	position:absolute;
 	right:5px;top:50%;
@@ -3404,8 +3419,19 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .site-terms-infor .infor-list .item-infor .terms-list01 {margin-left:-15px;}
 
 /* --------------------------------------------------------------------------------------------
-	물품 상세
+	물품상세
 -------------------------------------------------------------------------------------------- */
+/* 상단 슬라이드 영역 물품 라벨 */
+.visual-slide .ico-label {
+	position:absolute;
+	left:0;right:0;
+	width:45px;
+	height:40px;
+	background-image:url(../img/ico/sprite_label02.png);
+	background-size:45px 40px;
+}
+.visual-slide .ico-label.label01 {background-position:0 0;}
+
 /* 탭 영역 고정 */
 .view-content .tab-area {height:55px;}
 .view-content .tab-area .tab-list3.fixed {
@@ -3417,8 +3443,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content {}
 .view-content .visual-slide {}
 .view-content .visual-slide .swiper-slide .img-area {
-	width:253px;
-	height:253px;
+	position:relative;
+	width:300px;
+	height:300px;
 	margin:0 auto;
 }
 .view-content .visual-slide .swiper-pagination {
