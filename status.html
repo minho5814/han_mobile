@@ -91,7 +91,9 @@
 
 	colgroup .Hide {display:table-column;}
 	colgroup .Dfault {display:none;}
-	.Text {text-align:right;}
+	.OverBox {overflow:hidden;margin-top:5px;}
+	.MoTxt {float:left;padding:0 10px;background-color:#f9f2b0;color:#ff0000;}
+	.Text {float:right;}
 	.Com {color:#999;}
 </style>
 </head>
@@ -99,7 +101,10 @@
 <body>
 <div class="Head">
 	<h1>한살림 장보기 :: 2017.04.17</h1>
-	<p class="Text"><span class="Com"></span> / <span class="All"></span></p>
+	<div class="OverBox">
+		<p class="MoTxt">완료</p>
+		<p class="Text"><span class="Com"></span> / <span class="All"></span></p>
+	</div>
 </div>
 
 <h2 class="on" style="margin-top:50px;">Guide</h2>
@@ -289,22 +294,30 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td class="Left" rowspan="2">최근이력</td>
+				<td class="Left" rowspan="3">최근이력</td>
 				<td class="Left">결과 있음</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">qc/</td>
 				<td class="Link"><a target="_blank" href="im/qc/MW-QC02.html">MW-QC02.html</a></td>
-				<td class="Hide Date"></td>
+				<td class="Hide Date">2017-04-26</td>
 				<td class="Hide Left"></td>
 			</tr>
 			<tr>
-				<td class="Left">결과 없음</td>
-				<td class="Hide Left"></td>
+				<td class="Left" rowspan="2">결과 없음</td>
+				<td class="Hide Left">로그인전</td>
 				<td class="Hide Left"></td>
 				<td class="Hide Hide">qc/</td>
-				<td class="Link"><a target="_blank" href="im/qc/MW-QC02_noresult.html">MW-QC02_noresult.html</a></td>
-				<td class="Hide Date"></td>
+				<td class="Link"><a target="_blank" href="im/qc/MW-QC02_noresult01.html">MW-QC02_noresult01.html</a></td>
+				<td class="Hide Date">2017-04-26</td>
+				<td class="Hide Left"></td>
+			</tr>
+			<tr>
+				<td class="Hide Left">로그인후</td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">qc/</td>
+				<td class="Link"><a target="_blank" href="im/qc/MW-QC02_noresult02.html">MW-QC02_noresult02.html</a></td>
+				<td class="Hide Date">2017-04-26</td>
 				<td class="Hide Left"></td>
 			</tr>
 		</tbody>
@@ -1232,10 +1245,18 @@ $(window).load(function(){
 		var winW = $(window).width();
 		if(winW <= 800){
 			$('.Hide').hide();
-			$('colgroup .Dfault').show()
+			$('.MoTxt').show();
+			$('colgroup .Dfault').show();
+			$('.Date').each(function(){
+				var len = $(this).text().length;
+				if(len > 2){
+					$(this).parents('tr').find('.Link').css({'background-color':'#f9f2b0'});
+				}
+			});
 		}else{
 			$('.Hide').show();
-			$('colgroup .Dfault').hide()
+			$('.MoTxt').hide();
+			$('colgroup .Dfault').hide();
 		}
 	}
 	resizeTable();

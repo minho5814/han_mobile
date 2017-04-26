@@ -628,14 +628,48 @@
 .improve-list li .name .date {float: right;}
 
 .search-info {
-	padding-bottom:15px;
+	padding:20px 10px 15px;
 	border-bottom:1px solid #ddd;
+    background-color:#f7f7f7;
 }
-.search-info + p {
-	padding:15px 0 20px;
+.result-txt {
+	padding:30px 0 20px;
+    font-size:15px;
+    line-height:14px;
 	text-align: center;
 }
+.search-info .bullet-list1 .item.ty03 {
+    margin-top:6px;
+    font-size:13px;
+    color:#aaa;
+    line-height:18px;
+}
+.breed-txt {
+    font-size:15px;
+    line-height:14px;
+}
 
+.search-info02 {
+    padding:10px;
+    background-color:#f7f7f7;
+    border-top:1px solid #bbb;
+}
+.search-info02 dl {
+    position: relative;
+    padding-left:75px;
+    margin-top:6px;
+}
+.search-info02 dl:fisrt-child {
+    margin-top:0;
+}
+.search-info02 dl dt {
+    position: absolute;
+    top:0; left:0;
+    width:75px;
+    color:#333;
+    font-size:16px;
+    line-height: 42px;
+}
 /* --------------------------------------------------------------------------------------------
 	천연벽지
 -------------------------------------------------------------------------------------------- */

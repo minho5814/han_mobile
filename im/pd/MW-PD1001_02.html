@@ -11,7 +11,6 @@
 <body>
 <div class="wrapper no-goods"><!-- 공급중단 물품일 경우 class="no-goods" 추가 -->
 	<div class="header">
-		<h1 class="head-title">물품상세</h1>
 		<button type="button" class="btn-image btn-back">이전</button>
 		<a href="#" class="btn-cart">장바구니<span class="number">44</span></a>
 		<a href="#" class="btn-image btn-search">통합검색</a>
@@ -49,7 +48,7 @@
 						<a href="#" class="text link">우리보리살림돼지</a>
 					</div>
 					<div class="item">
-						<p class="title">감축량</p>
+						<p class="title">감축량<a href="MW-PD100101.html" target="_blank" class="btn-image btn-tooltip">?</a></p>
 						<p class="text">이동거리 : 19,636km / CO2 : 183g</p>
 					</div>
 					<div class="item">
@@ -57,7 +56,7 @@
 						<p class="text">소식지 설문 두부 쿠폰 재발행 (할인액 : 3,000원) 외 2건</p>
 					</div>
 					<div class="item">
-						<p class="title">알레르기성분<a href="#" class="btn-image btn-tooltip">?</a></p>
+						<p class="title">알레르기성분<a href="MW-PD100102.html" target="_blank" class="btn-image btn-tooltip">?</a></p>
 						<p class="text">옥수수, 복숭아</p>
 					</div>
 					<div class="item">
@@ -86,6 +85,8 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
+	/* 페이지 로드시 해더 보더라인 제거 */
+	$('.header').css({'border':'0'});
 	/* 슬라이드 영역 */
 	// 상세 물품
 	var swiper = new Swiper('.visual-slide .swiper-container', {
@@ -93,6 +94,16 @@ $(window).load(function(){
 		prevButton: '.visual-slide .btn-prev',
 		pagination: '.visual-slide .swiper-pagination',
 		paginationType: 'fraction'
+	});
+
+	$(window).scroll(function(){
+		var winTop = $(window).scrollTop();
+		/* 스크롤시 해더 하단 보다라인 추가 */
+		if(winTop <= 0){
+			$('.header').css({'border':'0'});
+		}else{
+			$('.header').css({'border-bottom':'1px solid #ddd'});
+		}
 	});
 });
 </script>
