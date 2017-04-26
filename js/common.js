@@ -71,11 +71,6 @@ $(window).load(function(){
 	/* -----------------------------------------------------------------------------------------------
 		검색 레이어
 	---------------------------------------------------------------------------------------------- */
-	// 열기
-	$('.btn-filter').click(function(){
-		scrollNo();
-		$('.filter-layer').show().stop().animate({right:0}, 200);
-	});
 	// 닫기
 	$('.search-layer .btn-close, .bg-close').click(function(){
 		scrollOk();
@@ -86,6 +81,25 @@ $(window).load(function(){
 	// 체크 전체 해제
 	$('.search-layer .btn-text-line1').click(function(){
 		$(this).parents('.search-layer').find('input[type=checkbox]').prop('checked', false);
+	});
+	/* 필터 검색 */
+	// 열기
+	$('.btn-filter').click(function(){
+		scrollNo();
+		$('.filter-layer').show().stop().animate({right:0}, 200);
+	});
+	/* 상세 검색 */
+	$('.search-layer .accordion-list .item.on .layer-list').show();
+	$('.header .btn-search').click(function(){
+		scrollNo();
+		$('.detail-layer').show().stop().animate({right:0}, 200);
+	});
+	$('.search-layer .accordion-list .item .layer-title').click(function(){
+		if($(this).parents('.item').hasClass('on')){
+			$(this).parents('.item').removeClass('on').find('.layer-list').slideUp(100);
+		}else{
+			$(this).parents('.item').addClass('on').find('.layer-list').slideDown(200);
+		}
 	});
 
 	/* -----------------------------------------------------------------------------------------------

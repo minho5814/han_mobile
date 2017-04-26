@@ -2366,6 +2366,38 @@ html {
 	padding:10px 15px;
 	border-top:1px solid #bbb;
 }
+/* 아코디언 */
+.search-layer .accordion-list {}
+.search-layer .accordion-list .layer-title {
+	height:45px;
+	padding:0 10px;
+	background-color:#eee;
+	color:#333;
+	font-size:17px;
+	line-height:47px;
+}
+.search-layer .accordion-list .item {border-top:1px solid #bbb;}
+.search-layer .accordion-list .item:first-child {border-top:0;}
+.search-layer .accordion-list .layer-title:before {
+	content:'';
+	position:absolute;
+	left:inherit;right:10px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(225deg);
+	-ms-transform:translateY(-50%) rotate(225deg);
+	transform:translateY(-50%) rotate(225deg);
+	width:9px;
+	height:9px;
+	border-left:2px solid #333;
+	border-top:2px solid #333;
+	background-color:transparent;
+}
+.search-layer .accordion-list .item .layer-list {display:none;}
+.search-layer .accordion-list .item.on .layer-title:before {
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+}
+.search-layer .accordion-list {}
 
 /* --------------------------------------------------------------------------------------------
 	카테고리 레이어
