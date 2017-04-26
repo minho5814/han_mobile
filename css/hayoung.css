@@ -483,6 +483,14 @@
 	text-overflow: ellipsis;
 	box-sizing: border-box;
 }
+/*이용후기*/
+.upgrade-area .postscript p {
+	height:42px;
+	line-height:42px;
+	margin-bottom:10px;
+	font-weight: normal;
+}
+.upgrade-area .postscript .select-area {width:150px;}
 
 /*물품개선*/
 .upgrade-area {display: none;}
@@ -491,9 +499,11 @@
 .upgrade-area .white-content2 {
 	border-top: 8px solid #eee;
 }
+
 .upgrade-area .white-content2.none-border {
 	border-top: 0;
 }
+/*
 .upgrade-area .white-content2:first-child {
 	border:0;
 }
@@ -583,30 +593,37 @@
 .upgrade-area .box-content1 .box-cont {
 	padding:15px 0;
 }
-
+*/
 .improve-list li {
 	padding:15px 10px;
-	border:1px solid #bbb;
+	border-bottom:1px solid #eee;
 }
 .improve-list li .title {
 	margin-bottom:10px;
 	color:#333;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: bold;
 }
 .improve-list li .cont {
-	height:38px;
-	color:#333;
-	font-size: 13px;
-	line-height:19px;
+	width: 100%;
+	max-height:110px;
+	color:#666;
+	font-size: 15px;
+	line-height:22px;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+
 }
 
 .improve-list li .name {
-	margin-top:15px;
 	padding-top:10px;
-	border-top:1px solid #bbb;
 	color:#aaa;
-	font-size:11px;
+	font-size:13px;
 }
 .improve-list li .name .date {float: right;}
 
