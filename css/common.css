@@ -4261,31 +4261,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:26px;
 }
 
-.view-content .exhibition-slide {
-	position:relative;
-	margin:0 -10px;
-}
-.view-content .exhibition-slide .swiper-slide {}
-.view-content .exhibition-slide .swiper-slide .link {
-	display:block;
-	font-size:0;
-	line-height:0;
-}
-.view-content .exhibition-slide .swiper-slide .link img {width:100%;}
-.view-content .exhibition-slide .swiper-pagination {
-	position:absolute;
-	right:10px;bottom:15px;
-	z-index:1;
-	width:60px;
-	height:26px;
-	border-radius:25px;
-	background-color:rgba(50,50,50,.5);
-	color:#fff;
-	font-size:13px;
-	text-align:center;
-	line-height:26px;
-}
-.view-content .goods-more-box {margin-top:10px;}
+.top-gray-box1 .visual-slide1 {margin:0 -10px;}
+.view-content .goods-more-box {margin:10px 10px 0;}
 .view-content .goods-more-box .thumb-list2 {height:236px;}
 
 /* 이용후기 */
