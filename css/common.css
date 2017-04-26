@@ -3008,13 +3008,13 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 		font-size:16px;
 	}
 }
-.thumb-list3 .box .btn-list .input-select {
+.thumb-list3 .box .btn-list .num-select {
 	float:right;
 	width:105px;
 	margin:0;
 }
 @media only screen and (max-width: 320px) {
-	.thumb-list3 .box .btn-list .input-select {
+	.thumb-list3 .box .btn-list .num-select {
 		width:85px;
 	}
 }

@@ -558,7 +558,7 @@
 .order-cart-list .list-cont .calendar input {
 	height: 40px;
 	padding-right:50px;
-	line-height: 40px;
+	line-height: 42px;
 	background-color:#f7f7f7;
 	text-align: right;
 	color:#60b015;
@@ -794,13 +794,13 @@
 		font-size:16px;
 	}
 }
-.cart-wrap .section .order-list .price-wrap .input-select {
+.cart-wrap .section .order-list .price-wrap .num-select {
 	float: right;
 	width:105px;
 	margin:0;
 }
 @media only screen and (max-width: 320px) {
-	.cart-wrap .section .order-list .price-wrap .input-select {
+	.cart-wrap .section .order-list .price-wrap .num-select {
 		width:85px;
 	}
 }
@@ -954,6 +954,36 @@
 	line-height:33px;
 }
 .input-select .byte-text .byte {color:#60b015;}
+
+.num-select {
+	position: relative;
+}
+.num-select .inp-box {
+	display: none;
+	position: absolute;
+	top:0; right:0; left:0; bottom:0;
+}
+.num-select .inp-box.on {
+	display: block;
+}
+.num-select .inp-box input[type=tel] {
+	padding:0 35px 0 10px;
+}
+.num-select .inp-box .btn-cancle {
+	position: absolute;
+	top:0; right:0;
+	width:30px; height:42px;
+	font-size:0;
+	line-height:0;
+}
+.num-select .inp-box .btn-cancle:before {
+	content: '';
+	position: absolute;
+	top:0; left:0;
+	width:30px; height:42px;
+	background:url(../img/btn/btn_x_19x19.png) 50% 50% no-repeat;
+	background-size:12px 12px;
+}
 
 .cart-wrap .section .delivery-wrap {
 	padding:20px 10px 0;
