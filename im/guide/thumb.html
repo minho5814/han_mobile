@@ -196,16 +196,17 @@
 						<p class="count">주문가능수량 <span class="fColor02">제한없음</span></p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="input-select">
-								<div class="text-form">
-									<input type="text" value="1" maxlength="100">
-									<ul class="list">
-										<li class="item">1</li>
-										<li class="item">2</li>
-										<li class="item">3</li>
-										<li class="item write">직접입력</li>
-									</ul>
+							<div class="num-select">
+								<div class="inp-box">
+									<input type="tel" value="1" maxlength="100">
+									<button type="button" class="btn-cancle">닫기</button>
 								</div>
+								<select class="styled1 num-sel">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option value="write">직접입력</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -225,16 +226,17 @@
 						<p class="count">주문가능수량 <span class="fColor02">2</span></p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="input-select">
-								<div class="text-form">
-									<input type="text" value="1" maxlength="100">
-									<ul class="list">
-										<li class="item">1</li>
-										<li class="item">2</li>
-										<li class="item">3</li>
-										<li class="item write">직접입력</li>
-									</ul>
+							<div class="num-select">
+								<div class="inp-box">
+									<input type="tel" value="1" maxlength="100">
+									<button type="button" class="btn-cancle">닫기</button>
 								</div>
+								<select class="styled1 num-sel">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option value="write">직접입력</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -254,16 +256,17 @@
 						<p class="count">주문가능수량 <span class="fColor02">2</span></p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="input-select">
-								<div class="text-form">
-									<input type="text" value="1" maxlength="100">
-									<ul class="list">
-										<li class="item">1</li>
-										<li class="item">2</li>
-										<li class="item">3</li>
-										<li class="item write">직접입력</li>
-									</ul>
+							<div class="num-select">
+								<div class="inp-box">
+									<input type="tel" value="1" maxlength="100">
+									<button type="button" class="btn-cancle">닫기</button>
 								</div>
+								<select class="styled1 num-sel">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option value="write">직접입력</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -282,16 +285,17 @@
 						<p class="count">주문가능수량 <span class="fColor02">2</span></p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="input-select">
-								<div class="text-form">
-									<input type="text" value="1" maxlength="100">
-									<ul class="list">
-										<li class="item">1</li>
-										<li class="item">2</li>
-										<li class="item">3</li>
-										<li class="item write">직접입력</li>
-									</ul>
+							<div class="num-select">
+								<div class="inp-box">
+									<input type="tel" value="1" maxlength="100">
+									<button type="button" class="btn-cancle">닫기</button>
 								</div>
+								<select class="styled1 num-sel">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option value="write">직접입력</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -311,16 +315,17 @@
 						<p class="text">공급중단</p>
 						<div class="btn-list">
 							<p class="price"><span class="number">8,000</span>원</p>
-							<div class="input-select">
-								<div class="text-form">
-									<input type="text" value="1" maxlength="100">
-									<ul class="list">
-										<li class="item">1</li>
-										<li class="item">2</li>
-										<li class="item">3</li>
-										<li class="item write">직접입력</li>
-									</ul>
+							<div class="num-select">
+								<div class="inp-box">
+									<input type="tel" value="1" maxlength="100">
+									<button type="button" class="btn-cancle">닫기</button>
 								</div>
+								<select class="styled1 num-sel">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option value="write">직접입력</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -532,6 +537,22 @@
 
 		$('.btn-pin').click(function(){
 			$(this).addClass('on');
+		});
+
+
+		/* num-select */
+		$('.num-sel').change(function(){
+			$(this).each(function(){
+				var val = $(this).find('option:selected').val();
+				if(val == 'write'){
+					$(this).siblings('.inp-box').addClass('on').find('input').focus();
+				}
+			});
+		});
+
+		$('.num-select .btn-cancle').click(function(){
+			$(this).parents('.inp-box').removeClass('on');
+			$(this).parents('.num-select').find('.num-sel option:eq(0)').prop('selected', true);
 		});
 	});
 </script>
