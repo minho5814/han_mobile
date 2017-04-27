@@ -1229,7 +1229,7 @@ input[type=checkbox].styled1 {
 	height:25px;
 	border:0;
 	background:transparent;
-	vertical-align:top;
+	vertical-align:middle;
 }
 input[type=checkbox].styled1:before {
 	content:'';
