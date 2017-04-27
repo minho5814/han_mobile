@@ -1986,7 +1986,7 @@ html {
 	background-color:#fff;
 }
 .transparent .header {
-	background:none;
+	background-color:rgba(27,27,27,0.7);
 	border-bottom:0;
 }
 .header.popup-type {border-bottom:1px solid #bbb;} /*이전견적내역 팝업헤더*/

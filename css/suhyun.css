@@ -685,6 +685,7 @@
 	position:relative;
 	margin-top:-57px;
 }
+.theme-area.ty02 {margin-top:0 !important;}
 .theme-area .theme-img {
 	position:relative;
 }
@@ -717,7 +718,7 @@
 	overflow:auto;
 	height:240px;
 	margin-top:14px;
-	padding:22px 25px 32px;
+	padding:22px 25px 30px;
 	background-color:#fff;
 	box-sizing:border-box;
 }
@@ -765,6 +766,58 @@
 	border:0;
 	background-color:inherit;
 	color:#fff;
+}
+/* 신규 요리 */
+.new-cont {padding:0 10px;}
+.new-cont .new-box {}
+.new-cont .new-box .new-img img {width:100%; height:auto; vertical-align:middle;}
+.new-cont .new-box .new-text {
+	position:relative;
+	padding:12px 0 17px;
+	border:1px solid #ddd;
+	border-top:0;
+	box-sizing:border-box;
+}
+.new-cont .new-box .new-text .text-area {padding:0 15px;}
+.new-cont .new-box .new-text .new-txt .tit {color:#333;}
+.new-cont .new-box .new-text .time {
+	position:absolute;
+	right:15px; top:20px;
+	color:#60b015;
+}
+.new-cont .new-box .new-text .new-silde {margin-top:18px;}
+.new-cont .new-box .new-text .new-silde .swiper-slide {
+	margin-left:15px;
+	width:90px !important;
+}
+.new-cont .new-box .new-text .new-silde .swiper-slide:first-child {margin-left:0;}
+.new-cont .new-box .new-text .new-silde .swiper-slide .img-area {
+	position:relative;
+	height:90px;
+	border:1px solid #eee;
+	box-sizing:border-box;
+}
+.new-cont .new-box .new-text .new-silde .swiper-slide .img-area .ico-label {
+	position:absolute;
+	left:0; top:0;
+}
+.new-cont .new-box .new-text .new-silde .swiper-slide .slid-txt {
+	position:relative;
+	overflow:hidden;
+	height:32px;
+	margin-top:8px;
+	font-size:13px;
+	color:#666;
+	line-height:16px;
+	letter-spacing:-1px;
+}
+.new-cont .new-box .new-text .new-silde .swiper-slide .slid-txt .txt01 {
+	display:block;
+	position:absolute;
+	left:0; top:50%;
+	transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
 }
 
 @media only screen and (max-width: 320px) {
