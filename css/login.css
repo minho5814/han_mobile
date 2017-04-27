@@ -90,14 +90,14 @@
 .result-info dd .order-goods span {
 	overflow: hidden;
 	display:inline-block;
-	width: 80%;
+	max-width: 80%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	vertical-align: top;
 }
 @media only screen and (max-width: 320px) {
 	.result-info dd .order-goods span {
-		width: 70%;
+		max-width: 70%;
 	}
 }
 .send-select {
