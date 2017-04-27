@@ -90,7 +90,7 @@
 .result-info dd .order-goods span {
 	overflow: hidden;
 	display:inline-block;
-	max-width: 80%;
+	max-width: 78%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	vertical-align: top;
