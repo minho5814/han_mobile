@@ -1626,14 +1626,17 @@ select.styled1:disabled {
 }
 .tab-list1 .item:first-child {width:34%;}
 .tab-list1 .item .text {
+	overflow: hidden;
 	display:block;
 	position:relative;
 	height:55px;
-	box-sizing:border-box;
 	color:#333;
 	font-size:15px;
 	text-align:center;
 	line-height:55px;
+	box-sizing:border-box;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 .tab-list1 .item.on .text {
 	border-bottom:2px solid #60b015;
@@ -1702,15 +1705,18 @@ select.styled1:disabled {
 	width:50%;
 }
 .tab-list2 .item .text {
+	overflow: hidden;
 	display:block;
 	height:42px;
-	box-sizing:border-box;
 	border-bottom:1px solid #333;
 	background-color:#eee;
 	color:#aaa;
 	font-size:15px;
 	text-align:center;
 	line-height:42px;
+	box-sizing:border-box;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 .tab-list2 .item.on .text {
 	border:1px solid #333;
@@ -1729,6 +1735,7 @@ select.styled1:disabled {
 	width:25%;
 }
 .tab-list3 .item .text {
+	overflow: hidden;
 	display:block;
 	position:relative;
 	height:55px;
@@ -1738,6 +1745,7 @@ select.styled1:disabled {
 	font-size:15px;
 	text-align:center;
 	line-height:55px;
+	text-overflow:ellipsis;
 	white-space:nowrap;
 }
 @media only screen and (max-width: 320px) {
@@ -1766,12 +1774,16 @@ select.styled1:disabled {
 	background-color:#f7f7f7;
 }
 .tab-list4 .item .text {
+	overflow: hidden;
 	display:block;
 	height:44px;
 	color:#aaa;
 	font-size:15px;
 	text-align:center;
 	line-height:42px;
+	box-sizing:border-box;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 .tab-list4 .item.on {
 	z-index:1;
@@ -1797,12 +1809,16 @@ select.styled1:disabled {
 .tab-list5 .item:nth-child(3),
 .tab-list5 .item:nth-child(6) {width:34%;}
 .tab-list5 .item .text {
+	overflow: hidden;
 	display:block;
 	height:44px;
 	color:#aaa;
 	font-size:15px;
 	text-align:center;
 	line-height:42px;
+	box-sizing:border-box;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 .tab-list5 .item.on {
 	z-index:1;
