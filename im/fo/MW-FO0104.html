@@ -16,6 +16,12 @@
 	<div class="header">
 		<h1 class="head-title">어린이 식단 상세</h1>
 		<button type="button" class="btn-image btn-back">이전</button>
+		<div class="share-box">
+		   <button type="button" class="btn-image btn-use">공유</button>
+		   <div class="sns-box">
+			   준비중
+		   </div>
+	   </div>
 		<a href="#" class="btn-image btn-search">통합검색</a>
 	</div>
 
@@ -212,6 +218,16 @@
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+	/* sns 공유 */
+	$('.btn-use').click(function(){
+		$(this).next('.sns-box').show();
+	});
 
+	$('.sns-box .sns-close').click(function(){
+		$(this).parents('.sns-box').hide();
+	});
+
+</script>
 </body>
 </html>

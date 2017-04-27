@@ -661,6 +661,8 @@
 .btn-use {
 	width:40px;
 	height:55px;
+	background-color:#fff;
+	background-position:0 -946px;
 }
 .sns-box {
 	display:none;
