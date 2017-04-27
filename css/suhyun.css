@@ -802,6 +802,7 @@
 	left:0; top:0;
 }
 .new-cont .new-box .new-text .new-silde .swiper-slide .slid-txt {
+	position:relative;
 	overflow:hidden;
 	height:32px;
 	margin-top:8px;
@@ -809,6 +810,14 @@
 	color:#666;
 	line-height:16px;
 	letter-spacing:-1px;
+}
+.new-cont .new-box .new-text .new-silde .swiper-slide .slid-txt .txt01 {
+	display:block;
+	position:absolute;
+	left:0; top:50%;
+	transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
 }
 
 @media only screen and (max-width: 320px) {
