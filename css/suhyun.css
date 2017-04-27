@@ -106,6 +106,49 @@
 	line-height:11px;
 }
 
+/* 특별품 */
+.special-area {
+	border-bottom:1px solid #bbb;
+}
+.special-area img {
+	width:100%;
+	height:auto;
+	vertical-align: top;
+}
+.special-goods {
+	margin:0 10px 10px;
+	border:1px solid #eee;
+}
+.special-goods .img-wrap {
+	width: 100%;
+}
+.special-goods .img-wrap img {
+	width:100%; height:auto;
+	vertical-align: top;
+}
+.special-goods .info-area {
+	padding:10px;
+}
+.special-goods .info-area li {
+	position: relative;
+	padding-left:5px;
+	color:#666;
+	font-size:13px;
+	line-height: 18px;
+}
+.special-goods .info-area li:before {
+	content: '';
+	position: absolute;
+	top:8px; left:0;
+	width:2px; height: 2px;
+	background-color:#333;
+}
+.special-goods .info-area li .title {
+	display: inline-block;
+	width:92px;
+	font-weight: bold;
+	vertical-align: top;
+}
 /* 기획전 */
 
 /* MW-PD0501.html */
@@ -166,6 +209,17 @@
 	color:#333;
 	line-height:28px;
 	font-weight:bold;
+}
+
+.select-area {display: none;}
+.select-area.fixed {
+	display: block;
+	position:fixed;
+	left:0; right:0;
+	top:56px;
+	padding:7px 10px;
+	background-color:#f7f7f7;
+	z-index: 20;
 }
 
 /* 물품안전 */
