@@ -916,6 +916,13 @@
 	border-top:2px solid #333;
 	border-right:2px solid #333;
 }
+.input-select .text-form.disabled:before {
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0; right:0; top:0; bottom:0;
+	background-color:#ddd;
+}
 .input-select .text-form input {
 	padding:0 30px 0 10px;
 }
