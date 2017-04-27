@@ -901,14 +901,21 @@ html.no-scroll {
 	content:'';
 	position:absolute;
 	right:0;top:50%;
+	-webkit-transform:translateY(-50%) rotate(225deg);
+	-ms-transform:translateY(-50%) rotate(225deg);
+	transform:translateY(-50%) rotate(225deg);
+	width:8px;
+	height:8px;
+	margin-top:2px;
+	border-bottom:1px solid #666;
+	border-right:1px solid #666;
+}
+.tab-hide-box.open .btn-goods-more .text:before {
 	-webkit-transform:translateY(-50%) rotate(45deg);
 	-ms-transform:translateY(-50%) rotate(45deg);
 	transform:translateY(-50%) rotate(45deg);
-	width:8px;
-	height:8px;
 	margin-top:-3px;
-	border-bottom:1px solid #666;
-	border-right:1px solid #666;
+
 }
 /* 링크 버튼 */
 .btn-link-more2 {
@@ -1954,6 +1961,7 @@ html {
 
 }
 .header.popup-type {border-bottom:1px solid #bbb;} /*이전견적내역 팝업헤더*/
+.header.type2 {border-bottom:0;} /*탭과 보더 겹치는경우*/
 .header .btn-back {}
 .head-menu {
 	position:absolute;

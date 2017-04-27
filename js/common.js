@@ -35,9 +35,19 @@ $(window).load(function(){
 			$(this).append('<button type="button" class="btn-goods-more"><span class="text">더보기</span></button>');
 		}
 		var btn = $(this).find('.btn-goods-more');
+
 		$(btn).click(function(){
-			$(this).parents('.tab-hide-box').find('.tab-list4').css({'max-height':'inherit'});
-			$(this).remove();
+			var box = $(this).parents('.tab-hide-box');
+			$(box).toggleClass('open');
+			if(box.hasClass('open')){
+				$(this).parents('.tab-hide-box').find('.tab-list4').css({'max-height':'90px'});
+				$(this).children('.text').text('더보기');
+			}else {
+				$(this).parents('.tab-hide-box').find('.tab-list4').css({'max-height':'inherit'});
+				$(this).children('.text').text('닫기');
+			}
+
+
 		});
 	});
 
