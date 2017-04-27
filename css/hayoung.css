@@ -503,97 +503,7 @@
 .upgrade-area .white-content2.none-border {
 	border-top: 0;
 }
-/*
-.upgrade-area .white-content2:first-child {
-	border:0;
-}
 
-.upgrade-item .thumb-list1 {
-	border-top:1px solid #bbb;
-	border-bottom:1px solid #bbb;
-}
-.upgrade-item .thumb-list1 .btn-list {
-	right:0;
-}
-
-.upgrade-list {
-	margin-top:15px;
-	border:1px solid #bbb;
-}
-.upgrade-list li {
-	padding:15px 10px;
-	border-top:1px solid #eee;
-}
-.upgrade-list li:first-child {border-top:0;}
-
-.upgrade-list li .title {
-	overflow: hidden;
-	width: 100%;
-	margin-bottom:5px;
-	color: #333;
-	font-size: 13px;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	box-sizing: border-box;
-}
-.upgrade-list li span {
-	color:#aaa;
-   font-size: 11px;
-}
-.upgrade-box {
-	padding:15px 10px;
-	background-color:#eee;
-	border:1px solid #bbb;
-}
-.upgrade-box p {
-	font-size: 13px;
-	color:#333;
-	line-height:19px;
-}
-.upgrade-box span {
-	display: block;
-	margin-bottom:3px;
-}
-
-.upgrade-area  .upgrade-item.type2 .thumb-list1 {
-	position: relative;
-	height: 200px;
-}
-.upgrade-area .box.type2 {height:130px;}
-.upgrade-area .box.type2  .img-area {
-	transform: inherit;
-	top:12px;
-}
-.upgrade-area .box.type2  .text-area {padding-left:130px;}
-.upgrade-area .upgrade-txt {
-	position:absolute;
-	bottom:14px;
-	margin-top:15px;
-	font-size:15px;
-}
-
-.upgrade-area .box-content1 {
-	padding:0 10px;
-}
-.upgrade-area .box-content1 .title-area {
-	overflow: hidden;
-	padding:15px 0;
-	border-bottom:1px solid #eee;
-}
-.upgrade-area .box-content1 .title-area .title {
-	float:left;
-	height:30px;
-	line-height:30px;
-	font-size: 15px;
-	color:#333;
-}
-.upgrade-area  .upgrade-item.type2 .thumb-list1 .btn-list {bottom:-2px;}
-
-.upgrade-area .box-content1 .title-area .btn-text {float:right;}
-.upgrade-area .box-content1 .box-cont {
-	padding:15px 0;
-}
-*/
 .improve-list li {
 	padding:15px 10px;
 	border-bottom:1px solid #eee;
@@ -980,28 +890,59 @@ label.important:before {
 .reply-list .item.on .answer {display: block;}
 .reply-list .item .answer {display: none;}
 
-/*.reply-table {width:100%; border-top:1px solid #666; border-bottom:1px solid #bbb;}
-	.reply-table li {
-		box-sizing: border-box;
-		border-top:1px solid  #ddd;
-	}
-	.reply-table li.on {padding:20px;}
-		.reply-table li .title {
-			width:100%;
-			padding:20px;
-		}
-	.reply-table li:first-child {margin-top:0;}
 
-	.reply-table .cont > div,
-	.reply-table .cont > span {display: table-cell; vertical-align: middle;}
-	.reply-table .cont .img-area {width:13%; vertical-align: top;}
-	.reply-table .cont .img-area img {width: 100%; height: 100%;}
-	.reply-table .cont .text-area {width:70%; padding: 0 20px; vertical-align: top;}
-	.reply-table .cont .name { width:7%}
-	.reply-table .cont .date {width:10%}
-	.reply-table li {cursor: pointer;}
-	.reply-table li.on {cursor: default;}
-	.reply-table li .cont {display:none;}
-	.reply-table li.on .cont {display: block;}
-	.reply-table li.on .title {display: none;}
-	.reply-table li.on .cont {display:block;}*/
+/* --------------------------------------------------------------------------------------------
+	물품- 브랜드관
+-------------------------------------------------------------------------------------------- */
+.brand-wrap {
+	width:100%;
+	overflow-x: scroll;
+	background-color:#f7f7f7;
+}
+.brand-wrap ul { width:525px;}
+.brand-wrap ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.brand-wrap ul li {
+	position: relative;
+	float:left;
+	width:75px;
+	height:60px;
+}
+.brand-wrap ul li:before {
+	content: '';
+	position: absolute;
+	width:75px;
+	height:60px;
+	background-image:url(../img/sprite_brand.png);
+	background-repeat:no-repeat;
+	background-size:532px 60px;
+}
+.brand-wrap ul li:nth-child(1):before{
+	background-position: 0 0;
+}
+.brand-wrap ul li:nth-child(2):before{
+	background-position: -76px 0;
+}
+.brand-wrap ul li:nth-child(3):before{
+	background-position: -152px 0;
+}
+.brand-wrap ul li:nth-child(4):before{
+	background-position: -228px 0;
+}
+.brand-wrap ul li:nth-child(5):before{
+	background-position: -304px 0;
+}
+.brand-wrap ul li:nth-child(6):before{
+	background-position: -380px 0;
+}
+.brand-wrap ul li:nth-child(7):before{
+	background-position: -456px 0;
+}
+
+
+.brand-area .tab-content .white-content4 {
+	border-top:1px solid #ccc;
+}

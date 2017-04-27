@@ -176,7 +176,7 @@
 	-webkit-transform:tanslate(-50%,-50%);
 }
 .palan-box .palan-text {
-	padding:12px 14px 14px;
+	padding:16px 14px 14px;
 	border:1px solid #eee;
 	border-top:0;
 	box-sizing:border-box;
@@ -184,10 +184,16 @@
 .palan-box .palan-text .palan-title {
 	font-size:16px;
 	color:#333;
-	line-height:24px;
+	/*line-height:24px;*/
 	letter-spacing:-1px;
 }
+.palan-box .palan-text .palan-title span {
+	display: block;
+	font-size: 13px;
+	line-height: 13px;
+}
 .palan-box .palan-text .palan-date {
+	margin-top:5px;
 	display:block;
 	font-size:13px;
 	color:#666;
@@ -216,8 +222,8 @@
 	display: block;
 	position:fixed;
 	left:0; right:0;
-	top:56px;
-	padding:7px 10px;
+	top:57px;
+	padding:8px 10px;
 	background-color:#f7f7f7;
 	z-index: 20;
 }

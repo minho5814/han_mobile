@@ -90,14 +90,14 @@
 .result-info dd .order-goods span {
 	overflow: hidden;
 	display:inline-block;
-	width: 80%;
+	max-width: 78%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	vertical-align: top;
 }
 @media only screen and (max-width: 320px) {
 	.result-info dd .order-goods span {
-		width: 70%;
+		max-width: 70%;
 	}
 }
 .send-select {
@@ -151,8 +151,8 @@
 .check-wrap {margin-top:10px;}
 .check-wrap label {
 	display: inline-block;
-	margin-left:20px;
-	line-height: 25px;
+	margin-left: 20px;
+	line-height: 27px;
 	font-size:15px;
 	white-space:nowrap;
 }
@@ -1151,10 +1151,14 @@
 	width:200px;
 }
 
-.review-slide {margin:0 -12px;}
+.review-slide {
+	margin:5px -12px 0 -12px;
+	padding-top:11px;
+	border-top:1px solid #bbb;
+}
 .review-slide .item {
 	position:relative;
-	width:296px;
+	width:330px;
 	height: 143px;
 	padding-left:120px;
 	border:1px solid #eee;
@@ -1177,7 +1181,7 @@
 }
 .review-slide .item .img-wrap .name {
 	display: block;
-	margin:20px 0 10px;
+	margin-top:14px;
 	text-align: center;
 	color:#666;
 	font-size:13px;
