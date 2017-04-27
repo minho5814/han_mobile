@@ -946,3 +946,140 @@ label.important:before {
 .brand-area .tab-content .white-content4 {
 	border-top:1px solid #ccc;
 }
+
+
+/* --------------------------------------------------------------------------------------------
+	요리 검색결과
+-------------------------------------------------------------------------------------------- */
+.recipe-wrap {}
+.recipe-wrap .sorting-wrap:nth-child(2) {
+	padding:0 10px;
+	background-color: #fff;
+	border-top:0;
+}
+.recipe-wrap .sorting-wrap:nth-child(2) .select-box {width: inherit;}
+.recipe-wrap .sorting-wrap:nth-child(2) .styled1 {width: 150px;}
+
+
+.cook-list2 {
+	overflow:hidden;
+	margin-top:-5px;
+}
+.cook-list2 .box {
+	float: left;
+	width: 50%;
+	padding-left:5px;
+	margin-top:5px;
+	box-sizing: border-box;
+}
+.cook-list2 .link {display:block;}
+.cook-list2 .img-area {
+	overflow: hidden;
+	width:100%;
+	height:100%;
+	text-align: center;
+}
+.cook-list2 .img-area img {
+	width:210%;
+	display: inline-block;
+	margin:0 0 0 -53%;
+}
+.cook-list2 .text-area {
+    position:relative;
+	/*height:70px;*/
+	padding:13px 10px 18px;
+    border:1px solid #eee;
+	box-sizing: border-box;
+    border-top:0;
+	margin-top:0;
+}
+.cook-list2 .text-area .name {
+	width:100%;
+	padding-right:40px;
+	color:#333;
+	font-size:15px;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+}
+.cook-list2 .text-area .time {
+	margin-top:3px;
+	color:#60b015;
+	font-size:13px;
+	line-height: 13px;
+}
+.cook-list2 .text-area .material {
+	/*display: inline-block;
+	width: 100%;
+	height:34px;
+    margin-top:3px;
+	color:#666;
+	font-size:13px;
+	line-height:17px;*/
+	height: 34px;
+	padding-top:12px;
+    color: #666;
+    font-size: 13px;
+    line-height: 17px;
+
+	/*overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;*/
+}
+.cook-list2 .text-area .material em {color:#333;}
+.cook-list2 .text-area .btn-like {
+    position:absolute;
+    right:12px; top:14px;
+    width:35px;
+    height:35px;
+}
+
+.recipe-wrap .tab-content.list {}
+
+.recipe-wrap .tab-content.list  .cook-list2 {
+	overflow:hidden;
+	margin-top:-5px;
+}
+.recipe-wrap .tab-content.list  .cook-list2 .box {
+	float: inherit;
+	width: 100%;
+	margin-top:5px;
+	padding-left:0;
+	box-sizing: border-box;
+}
+.recipe-wrap .tab-content.list  .cook-list2 .link {display:block;}
+.cook-list2 .img-area {
+	width:100%;
+	height:100%;
+}
+.recipe-wrap .tab-content.list .cook-list2 .img-area img {
+	width:100%;
+	margin:0;
+}
+.recipe-wrap .tab-content.list  .cook-list2 .text-area {
+
+	padding:17px;
+    border:1px solid #eee;
+
+}
+.recipe-wrap .tab-content.list  .cook-list2 .text-area .name {font-size:18px;}
+.recipe-wrap .tab-content.list  .cook-list2 .text-area .time {margin-top:0;
+}
+.recipe-wrap .tab-content.list .cook-list2 .text-area .material {
+	display: inherit;
+	height:30px;
+	padding:10px 65px 0 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+
+}
+.recipe-wrap .tab-content.list  .cook-list2 .text-area .btn-like {
+    right:16px; top:32px;
+
+}
