@@ -664,7 +664,7 @@ html.no-scroll {
 	transform:translateY(-50%);
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 1000px;
+	background-size:50px 1300px;
 }
 
 /* 관심물품 (토글) */
@@ -820,7 +820,7 @@ html.no-scroll {
 	transform:translate(-50%,-50%);
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 1000px;
+	background-size:50px 1300px;
 }
 
 /* 관심물품 */
@@ -1021,7 +1021,7 @@ html.no-scroll {
 	width:14px;
 	height:14px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -322px;
-	background-size:50px 1000px;
+	background-size:50px 1300px;
 }
 
 
@@ -1201,7 +1201,7 @@ html.no-scroll {
 	width:17px;
 	height:11px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -701px;
-	background-size:50px 1000px;
+	background-size:50px 1300px;
 }
 .order-floating-box.on .order-layer .btn-order-close:before {
 	-webkit-transform:translate(-50%,-50%) rotate(180deg);
@@ -2091,7 +2091,7 @@ html {
 	width:20px;
 	height:19px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -713px;
-	background-size:50px 1000px;
+	background-size:50px 1300px;
 }
 .header .btn-cart .number {
 	position:absolute;
@@ -3637,7 +3637,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:20px;
 	height:20px;
 	background:url(../img/sprite_btn.png) no-repeat 0 -680px;
-	background-size:50px 1000px;
+	background-size:50px 1300px;
 }
 
 .history-list .link .subject {
