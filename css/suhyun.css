@@ -407,88 +407,87 @@
 /* 요리 */
 /* MW-FO0103.html */
 .cooking-cont {}
+.cooking-cont .cooking-img {margin-top:-57px;}
 .cooking-cont .cooking-img img {width:100%; height:auto; vertical-align:middle;}
 .cooking-area {padding:0 10px;}
 .cooking-area .cooking-text {
 	position:relative;
-	margin:17px 0 12px;
+	padding:17px 0;
+	border-bottom:2px solid #eee;
 }
 .cooking-area .cooking-text .serve-txt {
 	font-size:13px;
 	color:#333;
-	line-height:18px;
+	line-height:20px;
 }
 .cooking-area .cooking-text .cooking-title {
-	font-size:21px;
+	font-size:22px;
 	color:#333;
 	line-height:26px;
 	font-weight:bold;
 }
 .cooking-area .cooking-text .btn-like {
 	position:absolute;
-	right:0; top:5px;
+	right:0; top:50%;
 	width:35px;
 	height:35px;
+	margin-top:-17.5px;
 }
 
-.cooking-area .fab-way {background-color:#f7f7f7;}
-.cooking-area .fab-way .fab-box {padding:14px 16px;}
-.cooking-area .fab-way .fab-box dl dt {
-	padding-left:26px;
-	font-size:15px;
+.cooking-area .fab-box {
+	position:relative;
+	padding:18px 0 0;
+}
+.cooking-area .fab-box dt {
+	font-size:17px;
 	color:#333;
-	line-height:17px;
+	line-height:20px;
 	font-weight:bold;
 }
-.cooking-area .fab-way .fab-box dl {position:relative;}
-.cooking-area .fab-way .fab-box dl .fab-tit {
-	background:url(../img/ico/ico_cooking01.png) no-repeat 0 1px;
-	background-size:21px 14px;
-}
-.cooking-area .fab-way .fab-box dl .stuff-tit {
-	background:url(../img/ico/ico_cooking02.png) no-repeat 0 1px ;
-	background-size:18px 14px;
-}
-.cooking-area .fab-way .fab-box dl dd {
-	font-size:13px;
+.cooking-area .fab-box dd {
+	font-size:15px;
 	color:#666;
 	line-height:18px;
 }
-.cooking-area .fab-way .fab-box dl .cook-time {
-	margin-top:6px;
+.cooking-area .fab-box .cook-time {
+	position:absolute;
+	right:0; top:20px;
 	padding-left:17px;
 	color:#60b015;
 	background:url(../img/ico/ico_time01.png) no-repeat 0 center;
 	background-size:12px 12px;
+	font-size:13px;
 }
-.cooking-area .fab-way .fab-box dl .servings {
+.cooking-area .fab-box .servings {
 	position:absolute;
-	right:0; top:-1px;
+	right:0; top:22px;
 	padding-left:17px;
 	background:url(../img/ico/ico_fork.png) no-repeat 0 center;
 	background-size:12px 13px;
 	color:#60b015;
 }
-.cooking-area .fab-way .fab-box .stuff-list {margin-top:5px;}
-.cooking-area .fab-way .fab-box .stuff-list .item {
-	position:relative;
-	padding-left:62px;
+.cooking-area .fab-box .stuff-list {margin-top:8px;}
+.cooking-area .fab-box .stuff-list .item {
+	margin-top:7px;
+	font-size:15px;
+	color:#666;
+	line-height:19px;
 }
-.cooking-area .fab-way .fab-box .stuff-list .item .title {
+.cooking-area .fab-box .stuff-list .item .title {color:#9e8441;}
+
+.cooking-area .fab-box .fab-list {margin-top:16px;}
+.cooking-area .fab-box .fab-list .item {
+	position:relative;
+	margin-top:8px;
+	padding-left:17px;
+}
+.cooking-area .fab-box .fab-list .item:first-child {margin-top:0;}
+.cooking-area .fab-box .fab-list .item .number {
 	position:absolute;
 	left:0; top:0;
-	color:#9e8441;
 }
-.cooking-area .fab-way .fab-box .fab-list {margin-top:14px;}
-.cooking-area .fab-way .fab-box .fab-list .item {
-	position:relative;
-	padding-left:12px;
-}
-.cooking-area .fab-way .fab-box .fab-list .item .number {
-	position:absolute;
-	left:0; top:0;
-}
-.cooking-area .fab-way .stuff-img img {width:100%; height:auto; vertical-align:middle;}
+.cooking-cont .stuff-img {margin-top:32px;}
+.cooking-cont .stuff-img img {width:100%; height:auto; vertical-align:middle;}
 
 .bar-box {
 	height:10px;
@@ -516,19 +515,24 @@
 /* 어린인 식단 상세 */
 .child-area {}
 .child-area .thumb-wrap {padding:0 10px;}
-.child-com {padding:20px 10px 12px;}
+.child-com {padding:0 10px 12px;}
 .child-area .child-img img {width:100%; height:auto; vertical-align:middle;}
 .child-area .child-tlte {
 	position:relative;
-	padding:17px 15px;
+	padding:18px 0;
 	border-bottom:2px solid #ccc;
 }
-.child-area .child-tlte .cTitle01 {font-weight:normal;}
 .child-area .child-tlte .btn-like {
 	position:absolute;
-	right:15px; top:7px;
+	right:0; top:10px;
 	width:35px;
 	height:35px;
+}
+.child-area .child-tlte .child-title {
+	color:#333;
+	font-size:18px;
+	font-weight:bold;
+	line-height:20px;
 }
 .child-area .board1 .cTitle01 {
 	margin:15px 0 5px;
@@ -536,22 +540,24 @@
 }
 .child-area .board1 th {text-align:center;}
 .child-area .board1 .child-txt {
-	max-height:44px;
+	max-height:48px;
+	line-height:24px;
 	word-break:keep-all;
 }
 .child-area .board1 .child-txt .recipe {
-	padding-right:20px;
-	background:url(../img/ico/ico_recipe01.gif) no-repeat right 4px;
-	background-size:13px 10px;
+	display:inline-block;
+	padding-right:28px;
+	background:url(../img/ico/ico_recipe01.gif) no-repeat right 0;
+	background-size:24px 22px;
 }
 .child-area .board1 .notice-child {
 	margin-top:10px;
-	padding-left:21px;
-	background:url(../img/ico/ico_recipe01.gif) no-repeat 4px 0;
-	background-size:13px 10px;
+	padding-left:26px;
+	background:url(../img/ico/ico_recipe01.gif) no-repeat 0 0;
+	background-size:24px 22px;
 	font-size:13px;
 	color:#666;
-	line-height:12px;
+	line-height:24px;
 }
 .child-area .refer-box {
 	padding:15px 10px;
@@ -559,17 +565,16 @@
 	box-sizing:border-box;
 }
 .child-area .refer-box dl dt {
-	margin:12px 0 8px;
+	margin:15px 0 4px;
 	font-size:13px;
 	color:#333;
 	line-height:12px;
 	font-weight:bold;
 }
 .child-area .refer-box dl dd {
-	padding-left:6px;
 	font-size:13px;
 	color:#666;
-	line-height:18px;
+	line-height:22px;
 }
 .child-area .box-content1 {margin:0 10px;}
 .child-area .box-content1 .box-cont .item.ty01:before {display:none;}
@@ -593,6 +598,27 @@
 	width:33.33%;
 }
 .photo-area .len-text {float:right;}
+
+/* 공유 하기 */
+.header .share-box {
+	position:absolute;
+	right:40px; top:0;
+}
+.btn-use {
+	width:40px;
+	height:55px;
+}
+.sns-box {
+	display:none;
+	position:absolute;
+	top:36px;
+	right:0;
+	z-index:1;
+	width:100px;
+	padding:20px;
+	background-color:#fff;
+	box-sizing:border-box;
+}
 
 @media only screen and (max-width: 320px) {
 	.sign-area .news-list .item-news dd {
