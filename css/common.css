@@ -178,6 +178,7 @@ html.no-scroll {
 
 .pdT0 {padding-top:0 !important;}
 .pdT5 {padding-top:5px !important;}
+.pdT10 {padding-top:10px !important;}
 
 .pdB0 {padding-bottom:0 !important;}
 
@@ -1961,7 +1962,7 @@ html {
 
 }
 .header.popup-type {border-bottom:1px solid #bbb;} /*이전견적내역 팝업헤더*/
-.header.type2 {border-bottom:0;} /*탭과 보더 겹치는경우*/
+.header.type2 {border-bottom:1px solid #fff;} /*탭과 보더 겹치는경우*/
 .header .btn-back {}
 .head-menu {
 	position:absolute;
