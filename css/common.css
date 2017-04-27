@@ -179,6 +179,7 @@ html.no-scroll {
 .pdT0 {padding-top:0 !important;}
 .pdT5 {padding-top:5px !important;}
 .pdT10 {padding-top:10px !important;}
+.pdT20 {padding-top:20px !important;}
 
 .pdB0 {padding-bottom:0 !important;}
 
@@ -408,6 +409,7 @@ html.no-scroll {
 	font-weight:bold;
 	line-height:20px;
 }
+
 /* --------------------------------------------------------------------------------------------
 	슬라이드
 -------------------------------------------------------------------------------------------- */
@@ -712,7 +714,7 @@ html.no-scroll {
 	display:inline-block;
 	background-image:url(../img/sprite_btn.png);
 	background-repeat:no-repeat;
-	background-size:50px 1000px;
+	background-size:50px 1300px;
 	font-size:0;
 	vertical-align:top;
 	line-height:0;
@@ -737,6 +739,19 @@ html.no-scroll {
 	height:55px;
 	background-color:#fff;
 	background-position:0 -206px;
+}
+/* 공유 하기 */
+.transparent .btn-use {
+	background-color:initial;
+	background-position:0 -890px;
+}
+.transparent .btn-back {
+	background-color:initial;
+	background-position:0 -776px;
+}
+.transparent .btn-search {
+	background-color:initial;
+	background-position:0 -833px;
 }
 
 /* 팝업 닫기 */
@@ -1959,7 +1974,10 @@ html {
 	border-top:1px solid #ddd;
 	border-bottom:1px solid #ddd;
 	background-color:#fff;
-
+}
+.transparent .header {
+	background:none;
+	border-bottom:0;
 }
 .header.popup-type {border-bottom:1px solid #bbb;} /*이전견적내역 팝업헤더*/
 .header.type2 {border-bottom:1px solid #fff;} /*탭과 보더 겹치는경우*/
