@@ -2069,6 +2069,7 @@ html {
 	line-height:55px;
 	white-space:nowrap;
 }
+.transparent .head-title {color:#fff;}
 
 /* 물품상세 장바구니 버튼 */
 .header .btn-cart {

@@ -681,6 +681,91 @@
 	background-color:#fff;
 	box-sizing:border-box;
 }
+.theme-area {
+	position:relative;
+	margin-top:-57px;
+}
+.theme-area .theme-img {
+	position:relative;
+}
+.theme-area .theme-img::before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:0;
+	right:0; bottom:0;
+	background-color:rgba(27,27,27,0.7);
+}
+.theme-area .theme-img img {width:100%; height:auto; vertical-align:middle;}
+.theme-area .theme-text {
+	position:absolute;
+	left:0; bottom:20px;
+	padding:0 10px;
+}
+.theme-area .theme-text .theme-serve {
+	font-size:15px;
+	color:#fff;
+	line-height:24px;
+}
+.theme-area .theme-text .theme-title {
+	font-size:30px;
+	color:#fff;
+	line-height:39px;
+	font-weight:bold;
+}
+.theme-area .theme-text .theme-box {
+	overflow:auto;
+	height:240px;
+	margin-top:14px;
+	padding:22px 25px 32px;
+	background-color:#fff;
+	box-sizing:border-box;
+}
+.theme-area .theme-text .theme-box .theme-list {}
+.theme-area .theme-text .theme-box .theme-list .item {
+	position:relative;
+	margin-top:7px;
+	padding-left:16px;
+	font-size:13px;
+	color:#333;
+	line-height:17px;
+}
+.theme-area .theme-text .theme-box .theme-list .item:first-child {margin-top:0;}
+.theme-area .theme-text .theme-box .theme-list .item .number {
+	position:absolute;
+	left:0; top:0;
+}
+.theme-area .theme-slide .swiper-pagination {
+	position:absolute;
+	right:10px; bottom:280px;
+	width:60px;
+    height:27px;
+    box-sizing:border-box;
+    border-radius:25px;
+	background-color:rgba(102,102,102,0.6);
+    color:#fff;
+    font-size:12px;
+    text-align:center;
+    line-height:27px;
+	z-index:100;
+}
+.theme-area .simple-search {
+	position:absolute;
+	left:10px; top:55px;
+	right:10px;
+	margin:0 auto;
+	border:3px solid #fff;
+	box-sizing:border-box;
+	z-index:100;
+}
+.theme-area .simple-search .form-button-type1 {
+	padding-right:65px;
+}
+.theme-area .simple-search .form-button-type1 input {
+	border:0;
+	background-color:inherit;
+	color:#fff;
+}
 
 @media only screen and (max-width: 320px) {
 	.sign-area .news-list .item-news dd {
