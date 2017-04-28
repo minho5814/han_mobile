@@ -242,7 +242,8 @@
 <script>
 $(window).load(function(){
 	/*오늘의 물품소식 아코디언*/
-	$(document).on('click', '.qna-list .item', function(){
+
+	$('.qna-list .item').click(function(){
 		if($(this).hasClass('on')){
 			$(this).removeClass('on');
 		}else{

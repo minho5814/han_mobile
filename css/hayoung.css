@@ -311,9 +311,10 @@
 	margin-top:-3px;
 	background:url(../img/ico/ico_26x14_arrow.png) no-repeat right center;
 	background-size:13px 7px;
+	transform: rotate(180deg);
 }
 .qna-list .item.on .question:before  {
-	transform: rotate(180deg);
+		transform: rotate(0);
 }
 .qna-list .item .question .title {
 	color:#333;
