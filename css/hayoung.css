@@ -218,7 +218,7 @@
 	text-align: center;
 }
 .board1 .tit .bg-logo {
-	line-height: 20px;
+	line-height: 22px;
 	background:url(../img/bg/bg_logo.png) no-repeat left center;
 	background-size:20px 18px;
 	padding-left:26px;
@@ -311,9 +311,10 @@
 	margin-top:-3px;
 	background:url(../img/ico/ico_26x14_arrow.png) no-repeat right center;
 	background-size:13px 7px;
+	transform: rotate(180deg);
 }
 .qna-list .item.on .question:before  {
-	transform: rotate(180deg);
+		transform: rotate(0);
 }
 .qna-list .item .question .title {
 	color:#333;
