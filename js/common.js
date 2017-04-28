@@ -122,6 +122,14 @@ $(window).load(function(){
 		scrollNo();
 		$('.filter-layer').show().stop().animate({right:0}, 200);
 	});
+	$('.btn-filter01').click(function(){
+		scrollNo();
+		$('.filter-layer01').show().stop().animate({right:0}, 200);
+	});
+	$('.btn-filter02').click(function(){
+		scrollNo();
+		$('.filter-layer02').show().stop().animate({right:0}, 200);
+	});
 	// 레이어 내 아코디언
 	$('.search-layer .accordion-list .item.on .layer-list').show();
 	$('.search-layer .accordion-list .item .layer-title').click(function(){
