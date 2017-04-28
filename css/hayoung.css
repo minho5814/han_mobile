@@ -218,11 +218,12 @@
 	text-align: center;
 }
 .board1 .tit .bg-logo {
-	line-height: 20px;
 	background:url(../img/bg/bg_logo.png) no-repeat left center;
 	background-size:20px 18px;
 	padding-left:26px;
 	font-size:15px;
+	padding-top:3px;
+	padding-bottom:3px;
 }
 
 /*한살림소개 동영상*/
@@ -254,7 +255,7 @@
 }
 .box-content3.pay-info .item {font-size:13px;}
 .box-content3.pay-info .bg-logo {
-	background:url(../img/bg/bg_logo2.png) no-repeat left center;
+	background:url(../img/bg/bg_logo2.png) no-repeat left top;
 	background-size:17px 15px;
 	padding-left:24px;
 	font-size:14px;
@@ -273,7 +274,7 @@
 	right:-12px; top:0;*/
 	width:17px;
 	height:17px;
-	margin:2px 0 0 5px;
+	margin:0 0 0 5px;
 	border:1px solid #f04114;
 	color:#f04114;
 	font-size:11px;
@@ -311,9 +312,10 @@
 	margin-top:-3px;
 	background:url(../img/ico/ico_26x14_arrow.png) no-repeat right center;
 	background-size:13px 7px;
+	transform: rotate(180deg);
 }
 .qna-list .item.on .question:before  {
-	transform: rotate(180deg);
+		transform: rotate(0);
 }
 .qna-list .item .question .title {
 	color:#333;

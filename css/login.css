@@ -36,7 +36,7 @@
 .login-global .login-find span:before {
 	content: '';
 	position: absolute;
-	left:-16px; top:50%;
+	left:-20px; top:50%;
 	width:1px; height:14px;
 	background-color:#ddd;
 	transform: translateY(-50%);

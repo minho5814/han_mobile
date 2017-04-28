@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<div class="wrapper transparent">
+<div class="wrapper transparent transparent02">
 	<div class="header">
 		<button type="button" class="btn-image btn-back">이전</button>
 		<div class="share-box">
@@ -91,7 +91,7 @@
 							<div class="check-wrap">
 								<input type="checkbox" class="styled1" name="Choice01">
 							</div>
-							<a href="#" class="link">
+							<a href="#none" class="link">
 								<span class="ico-label label01">햇물품</span>
 								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 								<div class="text-area">
@@ -112,7 +112,7 @@
 							<div class="check-wrap">
 								<input type="checkbox" class="styled1" name="Choice01">
 							</div>
-							<a href="#" class="link">
+							<a href="#none" class="link">
 								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 								<div class="text-area">
 									<p class="name ellipsis-line">유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글) 유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글) 유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글)</p>
@@ -132,7 +132,7 @@
 							<div class="check-wrap">
 								<input type="checkbox" class="styled1" name="Choice01">
 							</div>
-							<a href="#" class="link">
+							<a href="#none" class="link">
 								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
 								<div class="text-area">
 									<p class="name ellipsis-line">백미/유(2kg)</p>
@@ -166,7 +166,7 @@
 								<div class="swiper-slide">
 									<div class="cook-list">
 										<div class="box">
-											<a href="#" class="link">
+											<a href="#none" class="link">
 												<div class="img-area"><img src="../../img/temp/img_cook_slide1.jpg" alt="물품 이미지"></div>
 												<div class="text-area">
 													<p class="name ellipsis-line">구운버섯샐러드</p>
@@ -180,7 +180,7 @@
 								<div class="swiper-slide">
 									<div class="cook-list">
 										<div class="box">
-											<a href="#" class="link">
+											<a href="#none" class="link">
 												<div class="img-area"><img src="../../img/temp/img_cook_slide1.jpg" alt="물품 이미지"></div>
 												<div class="text-area">
 													<p class="name ellipsis-line">구운버섯샐러드</p>
@@ -193,7 +193,7 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="cook-list">
-										<a href="#" class="link">
+										<a href="#none" class="link">
 											<div class="img-area"><img src="../../img/temp/img_cook_slide1.jpg" alt="물품 이미지"></div>
 											<div class="text-area">
 												<p class="name ellipsis-line">구운버섯샐러드</p>
@@ -209,7 +209,6 @@
 				</div>
 				<div class="bar-box mgB20"></div>
 				<div class="thumb-wrap">
-
 					<div class="replay-table-wrap">
 						<div class="title-wrap">
 							<h3 class="cTitle01">댓글</h3>
@@ -358,7 +357,7 @@
 /* 슬라이드 영역 */
 
 /* 댓글 아코디언 */
-	$(document).on('click', '.reply-list .question', function(){
+	$('.reply-list .question').click(function(){
 		$('.reply-list .item').removeClass('on');
 		$(this).parent('.item').addClass('on');
 	});

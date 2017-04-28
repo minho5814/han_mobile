@@ -753,7 +753,7 @@
 }
 .theme-area .simple-search {
 	position:absolute;
-	left:10px; top:55px;
+	left:10px; top:57px;
 	right:10px;
 	margin:0 auto;
 	border:3px solid #fff;
@@ -810,12 +810,14 @@
 	font-size:13px;
 	color:#666;
 	line-height:16px;
+	text-align:center;
 	letter-spacing:-1px;
 }
 .new-cont .new-box .new-text .new-silde .swiper-slide .slid-txt .txt01 {
 	display:block;
 	position:absolute;
 	left:0; top:50%;
+	width:100%;
 	transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	-webkit-transform:translateY(-50%);
