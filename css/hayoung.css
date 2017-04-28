@@ -218,11 +218,12 @@
 	text-align: center;
 }
 .board1 .tit .bg-logo {
-	line-height: 20px;
 	background:url(../img/bg/bg_logo.png) no-repeat left center;
 	background-size:20px 18px;
 	padding-left:26px;
 	font-size:15px;
+	padding-top:3px;
+	padding-bottom:3px;
 }
 
 /*한살림소개 동영상*/
