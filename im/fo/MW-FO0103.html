@@ -358,7 +358,7 @@
 /* 슬라이드 영역 */
 
 /* 댓글 아코디언 */
-	$(document).on('click', '.reply-list .question', function(){
+	$('.reply-list .question').click(function(){
 		$('.reply-list .item').removeClass('on');
 		$(this).parent('.item').addClass('on');
 	});
