@@ -255,7 +255,7 @@
 }
 .box-content3.pay-info .item {font-size:13px;}
 .box-content3.pay-info .bg-logo {
-	background:url(../img/bg/bg_logo2.png) no-repeat left center;
+	background:url(../img/bg/bg_logo2.png) no-repeat left top;
 	background-size:17px 15px;
 	padding-left:24px;
 	font-size:14px;

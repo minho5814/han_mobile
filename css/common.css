@@ -927,6 +927,21 @@ html.no-scroll {
 	content:'';
 	position:absolute;
 	right:0;top:50%;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+	margin-top:-3px;
+	width:8px;
+	height:8px;
+	margin-top:-3px;
+	border-bottom:1px solid #666;
+	border-right:1px solid #666;
+}
+
+.tab-hide-box .btn-goods-more .text:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
 	-webkit-transform:translateY(-50%) rotate(225deg);
 	-ms-transform:translateY(-50%) rotate(225deg);
 	transform:translateY(-50%) rotate(225deg);
@@ -1442,6 +1457,7 @@ select.styled1:disabled {
 	color:#666;
 	font-size:15px;
 	line-height:25px;
+	white-space: nowrap;
 }
 .check-list label input {margin-right:5px;}
 @media only screen and (max-width: 320px) {
