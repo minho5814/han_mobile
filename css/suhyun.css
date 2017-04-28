@@ -833,3 +833,46 @@
 	}
 
 }
+
+/* 바코드 검색 */
+.barcode-area {position:relative;}
+.barcode-area .barcode-img {position:relative; z-index:5;}
+.barcode-area .barcode-img img {width:100%; height:auto; vertical-align:middle;}
+.barcode-area .barcode-text {
+	position:absolute;
+	left:20px; top:20px;
+	right:20px;
+	height:31px;
+	font-size:13px;
+	color:#fff;
+	line-height:31px;
+	background-color:rgba(0,0,0,0.5);
+	text-align:center;
+	z-index:10;
+}
+.barcode-area .bar-area {
+	position:absolute;
+	width:15px;
+	height:15px;
+	z-index:10;
+}
+.barcode-area .bar01 {
+	left:10px; top:10px;
+	border-top:2px solid #fff;
+	border-left:2px solid #fff;
+}
+.barcode-area .bar02 {
+	right:10px; top:10px;
+	border-top:2px solid #fff;
+	border-right:2px solid #fff;
+}
+.barcode-area .bar03 {
+	left:10px; bottom:10px;
+	border-bottom:2px solid #fff;
+	border-left:2px solid #fff;
+}
+.barcode-area .bar04 {
+	right:10px; bottom:10px;
+	border-bottom:2px solid #fff;
+	border-right:2px solid #fff;
+}
