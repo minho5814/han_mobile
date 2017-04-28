@@ -137,7 +137,7 @@ a {color:#333;text-decoration:none}
 a:active, a:hover {text-decoration:none}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .hide {position:absolute;left:-9999px;top:-9999px;width:0;height:0;text-indent:-9999px;font-size:0;line-height:0;opacity:0;}
-caption {display:none; visibility:hidden;overflow:hidden;width:0;height:0;margin:0;padding:0;font-size:0;line-height:0;}
+legend,caption {display:none; visibility:hidden;overflow:hidden;width:0;height:0;margin:0;padding:0;font-size:0;line-height:0;}
 table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:0;border-collapse:collapse;}
 *+html table {border-collapse:collapse;}
 button {outline:0;vertical-align:top;}
@@ -2134,6 +2134,43 @@ html {
 	line-height:22px;
 }
 
+.header .search-wrap {
+	position: absolute;
+	top:0; left:40px; right:0;
+	z-index: 2;
+	height: 55px;
+	padding-right:58px;
+	background-color:#fff;
+}
+.header .search-wrap fieldset {
+	position: relative;
+}
+.header .search-wrap .btn-search02 {
+	position: absolute;
+	top:0; right:0;
+	width:45px; height:42px;
+	font-size:0;
+	line-height: 0;
+	background-color:#82828c;
+	border-radius:3px;
+}
+.header .search-wrap .btn-search02:before {
+	content: '';
+	position: absolute;
+	top:50%; left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	width:20px; height:20px;
+	background:url(../img/sprite_btn.png) 0 0 no-repeat;
+	background-position:-10px -850px;
+	background-size:50px 1300px;
+}
+.header .search-wrap form {padding-top:7px;}
+.header .search-wrap .btn-barcode {
+	position: absolute;
+	top:7px; right:10px;
+}
 /* --------------------------------------------------------------------------------------------
 	전체메뉴
 -------------------------------------------------------------------------------------------- */
@@ -2805,6 +2842,75 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 /* ============================================================================================
+	통합검색
+============================================================================================ */
+.word-box {
+	position: absolute;
+	top:55px; left:0; right:0;
+	padding-top:10px;
+	background-color:#eeeeee;
+}
+.word-box ul {
+	background-color:#fff;
+}
+.word-box ul li {
+	border-bottom:1px solid #eee;
+}
+.word-box ul li a {
+	display:block;
+	padding:0 20px;
+	font-size:15px;
+	color:#333;
+	line-height: 45px;
+}
+.word-box ul li a span {
+	color:#f04114;
+}
+
+.fixed-area {
+	position:fixed;
+	top:57px; left:0; right:0;
+	z-index:2;
+	height: 55px;
+}
+.fixed-area .fixed-sub {
+	display: none;
+	padding:10px 10px 20px;
+	background-color:#fff;
+}
+.sub-tab li {
+	width:auto;
+	height:40px;
+	margin:0 3px;
+	padding:0 10px;
+	border:1px solid #ccc;
+	line-height:42px;
+	border-radius: 3px;
+	background-color:#fff;
+	box-sizing: border-box;
+}
+.sub-tab li span {
+	display: block;
+	font-size:14px;
+	color:#666;
+}
+.search-cont {
+	display: none;
+	padding-top:75px;
+}
+.search-cont.on {
+	display: block;
+}
+.search-cont.total-search {
+	padding-top:126px;
+}
+.search-cont.total-search .sub-cont {
+	display: none;
+}
+.search-cont.total-search .sub-cont.on {
+	display:block;
+}
+/* ============================================================================================
 	썸네일 박스
 ============================================================================================ */
 /* 공통 물품딱지 */
@@ -2814,13 +2920,19 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:35px;
 	background-image:url(../img/ico/sprite_label01.png);
 	background-repeat:no-repeat;
-	background-size:39px 35px;
+	background-size:39px 100px;
 	font-size:0;
 	text-indent:-9999px;
 	vertical-align:top;
 	line-height:0;
 }
+/* 햇물품 */
 .ico-label.label01 {background-position:0 0;}
+/* 가격인하 */
+.ico-label.label02 {
+	height:30px;
+	background-position:0 -36px;
+}
 
 /* 01 */
 .thumb-list1 .box .ico-label {
@@ -2866,6 +2978,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#333;
 	font-size:13px;
 	line-height:28px;
+}
+
+.thumb-list1 .box .text-area .price .price-del {
+	margin-left:7px;
+	color:#bbb;
+	font-size:13px;
+	text-decoration:line-through;
+	line-height:16px;
 }
 .thumb-list1 .box .text-area .price .number {
 	font-size:18px;
@@ -3705,6 +3825,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#aaa;
 	text-align:center;
 	line-height:22px;
+	background-color:#fff;
 }
 .no-result1 .text1 {padding-top:20px;}
 .no-result1 .text2 {
@@ -3952,6 +4073,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:1px;
 	background-color:#eee;
 }
+.select-btn2.no-filter:before {
+	display: none;
+}
 .select-btn2 .len-text {
 	float:left;
 	height:43px;
@@ -3967,6 +4091,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .select-btn2 .right-area select {
 	float:left;
 	width:150px;
+}
+.select-btn2 .right-area .type02 {
+	width:160px;
 }
 .select-btn2 .right-area .btn-filter {
 	float:left;
