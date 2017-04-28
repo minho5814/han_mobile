@@ -843,12 +843,10 @@
 	left:20px; top:20px;
 	right:20px;
 	height:31px;
-	padding:8px 37px;
 	font-size:13px;
 	color:#fff;
-	line-height:15px;
+	line-height:31px;
 	background-color:rgba(0,0,0,0.5);
-	box-sizing:border-box;
 	text-align:center;
 	z-index:10;
 }
