@@ -972,7 +972,8 @@
 	padding:0 10px;
 	font-size:13px;
 	color:#aaa;
-	line-height:14px;
+	line-height:16px;
+	background-color:#fff;
 }
 .my-notice-area .cTitle01 {
 	display:inline-block;
@@ -982,24 +983,23 @@
 	border-top:1px solid #bbb;
 }
 .my-notice-list .item {
-	position:relative;
-	height:79px;
-	padding:18px 0;
+	display:table;
+	width:100%;
+	min-height:79px;
+	padding:16px 0 18px;
 	border-top:1px solid #eee;
 	box-sizing: border-box;
 }
 .my-notice-list .item:first-child {border-top:0;}
+.my-notice-list .item.last {border-bottom:1px solid #eee;}
 .my-notice-list .item .my-notice-text {
-	position:absolute;
-	left:0; top:50%;
-	transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	-webkit-transform:translateY(-50%);
+	display:table-cell;
+	vertical-align:middle;
 }
 .my-notice-list .item .my-notice-text .my-notice-tit {
 	font-size:15px;
 	color:#333;
-	line-height:19px;
+	line-height:22px;
 }
 .my-notice-list .item .my-notice-text .my-notice-tit .label-tit {
 	display:inline-block;
@@ -1007,9 +1007,8 @@
 	margin-right:8px;
 	font-size:13px;
 	color:#60b015;
-	line-height:19px;
+	line-height:17px;
 	font-weight:bold;
-	vertical-align:top;
 }
 .my-notice-list .item .my-notice-text .my-notice-tit .label-tit:before {
 	content:'';
@@ -1020,7 +1019,7 @@
 	border-bottom:1px solid #60b015;
 }
 .my-notice-list .item .my-notice-text .my-notice-txt {
-	margin-top:5px;
+	margin-top:3px;
 	font-size:14px;
 	color:#666;
 	line-height:18px;
