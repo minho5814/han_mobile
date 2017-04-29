@@ -1415,6 +1415,64 @@ select.styled1:disabled {
 	width:75px;
 }
 
+/* 인풋안에 버튼 */
+.form-button-type3 {
+	position:relative;
+}
+.form-button-type3 .departure {
+	padding:0 95px 0 75px
+}
+.form-button-type3 .destination {
+	padding:0 95px 0 10px
+}
+.form-button-type3 .now-location {
+	position:absolute;
+	left:6px;top:6px;
+	width:60px;
+	height: 30px;
+	color:#fff;
+	background-color:#82828c;
+	border-radius:3px;
+}
+.form-button-type3 .btn-delete {
+	position: absolute;
+	top:1px; right:55px;
+	width: 40px; height:40px;
+	font-size:0;
+	line-height: 0;
+}
+.form-button-type3 .btn-delete:before {
+	content: '';
+	position: absolute;
+	top:0; left:0;
+	width:40px;
+	height:40px;
+	background:url(../img/btn/btn_delete.png) 0 0 no-repeat;
+	background-size:40px 40px;
+}
+.form-button-type3 .btn-search03 {
+	position: absolute;
+	top:0; right:0;
+	width:55px; height:42px;
+	font-size:0;
+	line-height: 0;
+	background-color:#60b015;
+	border-radius:0 3px 3px 0;
+}
+.form-button-type3 .btn-search03:before {
+	content: '';
+	position: absolute;
+	top:50%; left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	width:20px; height:20px;
+	background:url(../img/sprite_btn.png) 0 0 no-repeat;
+	background-position:-10px -850px;
+	background-size:50px 1300px;
+}
+
+
 /* 전화번호 타입 */
 .phone-area {
 	overflow:hidden;
@@ -1751,6 +1809,12 @@ select.styled1:disabled {
 	color:#333;
 }
 
+.tab-list2.three-column .item{
+	width:33%;
+}
+.tab-list2.three-column .item:nth-child(2) {
+	width:34%;
+}
 /* 탭 03 */
 .tab-list3 {
 	overflow:hidden;
@@ -3712,19 +3776,22 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .map-area .map-search {
 	position: absolute;
-	top:10px; left:10px; right:10px;
+	top:0; left:0; right:0;
 	z-index: 3;
 }
-.map-area .map-search .row {
+.map-search {
+	padding:10px 10px 0;
+}
+.map-search .row {
 	margin-top:6px;
 }
-.map-area .map-search .row:first-child {
+.map-search .row:first-child {
 	margin-top:0;
 }
-.map-area .map-search .btn-box {
+.map-search .btn-box {
 	margin-top:10px;
 }
-.map-area .map-search .btn-map-list {
+.map-search .btn-map-list {
 	position: relative;
 	display: inline-block;
 	height:30px;
@@ -3734,7 +3801,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border:1px solid #539219;
 	background-color:#60b015;
 }
-.map-area .map-search .btn-map-list:before {
+.map-search .btn-map-list:before {
 	content: '';
 	position: absolute;
 	top:50%; left:12px;
@@ -3775,15 +3842,45 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .store-result .result-area .result-text {
 	color:#333;
-	font-size:16px;
 	line-height: 55px;
+	font-size:16px;
+}
+@media only screen and (max-width: 320px) {
+	.store-result .result-area .result-text {
+		font-size:14px;
+	}
 }
 .store-result .result-area .result-text .num {
 	color:#f04114;
 }
 .store-result .result-area .btn-box {
 	float:right;
+	margin-top:12px;
 }
+.store-result .result-area .btn-map-view {
+	position: relative;
+	display: inline-block;
+	height:30px;
+	padding:0 12px 0 30px;
+	color:#fff;
+	font-size:13px;
+	border:1px solid #539219;
+	background-color:#60b015;
+}
+.store-result .result-area .btn-map-view:before {
+	content: '';
+	position: absolute;
+	top:50%; left:12px;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:13px; height:14px;
+	background-image: url(../img/sprite_btn.png);
+	background-repeat: no-repeat;
+	background-position: 0 -1098px;
+	background-size:50px 1300px;
+}
+
 .store-result .flag-list {
 	overflow: hidden;
 	height: 50px;
@@ -3867,6 +3964,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border-radius:3px;
 	box-sizing: border-box;
 }
+.find-list .item .regular.on {
+	color:#60b015;
+	border:1px solid #60b015;
+	background-color:#fff;
+}
 .find-list dt {
 	margin-bottom:12px;
 	color:#333;
@@ -3943,6 +4045,52 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#333;
 	font-size:14px;
 	line-height: 40px;
+}
+.no-find {
+	padding-top:150px;
+	font-size:15px;
+	color:#aaa;
+	text-align: center;
+}
+
+.find-way {
+	padding:20px 10px;
+}
+.find-way .way-list .item:first-child {
+	border-top:1px solid #eee;
+}
+.find-way .way-list .item a {
+	display: block;
+}
+.find-way .way-list .item dl {
+	border-bottom:1px solid #eee;
+}
+.find-way .way-list .item .title {
+	margin-top:20px;
+	color:#333;
+	font-size:16px;
+	font-weight: bold;
+	line-height: 18px;
+}
+.find-way .way-list .item .addr {
+	padding:12px 0;
+	color:#666;
+	font-size:15px;
+	line-height: 18px;
+}
+.find-way .way-list .item .addr:last-child {
+	padding:17px 0;
+	border-top:1px solid #eee;
+}
+.transport {
+	display: none;
+	padding:20px 10px;
+}
+.transport .transport-cont {
+	display: none;
+}
+.transport .transport-cont.on {
+	display: block;
 }
 /* 캠페인 */
 .thumb-box1 {

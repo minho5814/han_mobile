@@ -46,14 +46,21 @@ $(window).load(function(){
 				$(this).parents('.tab-hide-box').find('.tab-list4').css({'max-height':'inherit'});
 				$(this).children('.text').text('닫기');
 			}
-
-
 		});
 	});
 
-	/*레이어팝업*/
+	/* -----------------------------------------------------------------------------------------------
+		레이어팝업
+	---------------------------------------------------------------------------------------------- */
+	/* 열기 */
+	$('.btn-popup').click(function(){
+		scrollNo();
+	});
+
+	/* 닫기 */
 	$('.layer-popup').hide().css({'opacity':'1'});
 	$(document).on('click', '.popup-close, .block-ui', function(){
+		scrollOk();
 		$('.layer-popup').fadeOut(200);
 		$('.block-ui').fadeOut();
 	});

@@ -907,8 +907,6 @@
 	background-size:43px 24px;
 }
 /* CMS 임의해지 안내 팝업 */
-.pop-cms-guid01 {width:325px !important;}
-.pop-cms-guid02 {width:325px !important;}
 .pop-area .btn-area {
 	margin-top:20px;
 	padding:15px 20px 0;
@@ -1043,11 +1041,11 @@
 /* 팝업 */
 .layer-popup {
 	position:fixed;
-	left:50%;top:50%;
+	left:25px;right:25px;top:50%;
 	z-index:500;
-	-webkit-transform:translate(-50%,-50%);
-	-ms-transform:translate(-50%,-50%);
-	transform:translate(-50%,-50%);
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
 	border-radius:5px;
 	background-color:#fff;
 	opacity:0;
