@@ -20,7 +20,29 @@
 
 	<div class="container">
 		<div class="campaign-sub">
-			<div class="thumb-box">
+			<div class="thumb-box">  <!--달성한경우 achieve 추가,  참여중이면 join추가 -->
+				<div class="campaign-mark">
+					<img src="../../img/ico/campaign/icon_campaign02.png" alt="">
+				</div>
+				<div class="right-wrap">
+					<p class="title">라면도! 기부도!<button type="button" target="_blank" class="btn-image btn-tooltip btn-popup btn-question"></button>
+					<p class="text ellipsis-line">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
+					<div class="btn-wrap">
+						<button type="button" class="btn-text btn-h42 btn-text-line2 btn-join">참여하기</button>
+					</div>
+					<div class="join-wrap">
+						<div class="float-area">
+							<span class="f-left fColor02">달성율 50%</span>
+						</div>
+						<div class="bar-box">
+							<p class="bar" style="width:50%;"></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--쌀약정인경우-->
+			<div class="thumb-box rice"> <!--달성한경우 achieve 추가,  참여중이면 join추가 -->
 				<div class="campaign-mark">
 					<img src="../../img/ico/campaign/icon_campaign02.png" alt="">
 				</div>
@@ -213,28 +235,23 @@
 <div class="block-ui"></div>
 <div class="layer-popup pop-question">
 	<div class="pop-head">
-		<h1 class="pop-title">CMS 임의해지 안내</h1>
+		<h1 class="pop-title"><span class="fColor02">캠페인</span>정보</h1>
 		<button type="button" class="popup-close">닫기</button>
 	</div>
 	<div class="pop-content">
 		<div class="pop-area">
 			<div class="pop-cont">
-				<p class="pop-txt mgT0">
-					조합원님께서 등록하신 자동이체 계좌는 한살림과
-					1년 이상 거래가 없었으므로 조합원님의 예금계좌
-					보호를 위해 은행 측에서 자동해지 되었습니다.
-				</p>
-				<p class="pop-txt">
-					현재 <span class="fColor02">무통장 입금방식</span>으로 <span class="fColor02">자동변경</span>되었으니, 이용
-					에 불편 없도록 참고 부탁드립니다.
-				</p>
-				<p class="pop-txt">
-					CMS 재등록 관련 문의사항이 있으시면 아래 연락
-					처로 문의해주세요.
-				</p>
-				<div class="info-box01 mgT10">
-					<p class="txt">한살림서울</p>
-					<a href="tel:1661-0800" class="btn-call"><span class="text">02-3498-3600</span></a>
+				<h3 class="cTitle01">라면도! 기부도!</h3>
+				<div class="cont-area">
+					<p class="pop-txt mgT0">
+						구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.
+					</p>
+					<p class="pop-txt mgT10">
+						값싼 외국 농산물이 우리 식탁을 채워갑니다. 그만큼 우리의 식량주권은 점점 사라져 갑니다.
+						우리 다음세대가 우리작물을 먹을 수 있도록, 힘을 모아주세요.
+						감자라면 60개 소비가 우리땅 우리작물을 지켜냅니다.
+					</p>
+					<p class="pop-txt mgT10 fColor01">기간 : 2017-01-01 ~ 2017-12-31<p>
 				</div>
 			</div>
 			<div class="btn-area">
@@ -246,40 +263,29 @@
 <!-- 쌀약정량 수정 팝업-->
 <div class="layer-popup pop-modify">
 	<div class="pop-head">
-		<h1 class="pop-title">CMS 임의해지 안내</h1>
+		<h1 class="pop-title"><span class="fColor02">목표 약정량</span>을 입력해주세요</h1>
 		<button type="button" class="popup-close">닫기</button>
 	</div>
 	<div class="pop-content">
 		<div class="pop-area">
 			<div class="pop-cont">
-				<p class="pop-txt mgT0">
-					조합원님의 지역한살림 이관으로 이전에 등록하신
-					CMS는 자동해지 되었음을 알려드립니다.
-					한살림은 권역별로 운영하고 있으므로, CMS 재등
-					록이 필요합니다.
-				</p>
-				<p class="pop-txt">
-					아래 방법으로 CMS를 재등록해주시기 바랍니다.
-				</p>
-				<div class="info-box02 mgT10">
-					<dl>
-						<dt><span class="number">1.</span> 한살림 모바일앱</dt>
-						<dd>
-							메뉴 &gt; 나의한살림 &gt; 개인정보 &gt; 결제정보 관리 &gt; CMS변경/신청
-							<p class="notice-txt">※ 공인인증서 전자서명 필요</p>
-						</dd>
-					</dl>
-					<dl>
-						<dt><span class="number">2.</span> 한살림서울 주문상담실</dt>
-						<dd>
-							1661-0800 (내선 3번)
-							<p class="notice-txt">※ 금융결제원 승인을 위해 전화 녹취합니다.</p>
-						</dd>
-					</dl>
+				<div class="form-button-type1">
+					<input type="tel" class="text">
+					<span>kg</span>
+				</div>
+				<div class="box-content1 mgT20">
+					<h3 class="box-title">목표 약정량 안내</h3>
+					<ul class="box-cont">
+						<li class="item">목표 약정량은 숫자로만 입력 가능합니다.</li>
+						<li class="item">목표 약정량 수정시 최초 입력한 약정량보다 작게 입력 할 수 없습니다.</li>
+					</ul>
 				</div>
 			</div>
 			<div class="btn-area">
-				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+				<ul class="btn-list1">
+					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">취소</a></li>
+					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-green1">확인</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -297,11 +303,20 @@ $(window).load(function(){
 	});
 
 	/*참여하기*/
+	$('.join-wrap').hide();
 	$('.btn-join').click(function(){
 		$(this).parents('.btn-wrap').hide();
+		var me = $(this).parents('.thumb-box');
 		$(this).parents('.right-wrap').find('.join-wrap').show();
-		$(this).parents('.thumb-box').addClass('join');
+
+		//case분기한것으로 삭제하셔도 됩니다.
+		if(me.hasClass('rice')){
+			$(this).parents('.thumb-box').addClass('achieve');
+		}else{
+			$(this).parents('.thumb-box').addClass('join');
+		}
 	});
+
 
 	/* 팝업*/
 	/*캠페인정보*/
@@ -313,6 +328,7 @@ $(window).load(function(){
 	$('.btn-modify').click(function(){
 		$('.pop-modify').fadeIn(200);
 		$('.block-ui').fadeIn();
+		$('.pop-modify').find('input').focus();
 	});
 
 	$(window).scroll(function(){

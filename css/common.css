@@ -2796,6 +2796,10 @@ html {
 	padding:0 10px;
 	background-color:#fff;
 }
+.white-content5 {
+	padding:15px 10px;
+	background-color:#fff;
+}
 .gray-content1 {
 	padding:10px 10px 20px;
 	background-color:#f7f7f7;
@@ -3052,7 +3056,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:35px;
 	background-image:url(../img/ico/sprite_label01.png);
 	background-repeat:no-repeat;
-	background-size:39px 100px;
+	background-size:39px 103px;
 	font-size:0;
 	text-indent:-9999px;
 	vertical-align:top;
@@ -3064,6 +3068,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .ico-label.label02 {
 	height:30px;
 	background-position:0 -36px;
+}
+/* 동물복지 */
+.ico-label.label03 {
+	background-position:0 -67px;
 }
 
 /* 01 */
@@ -3177,6 +3185,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border:1px solid #ddd;
 	border-bottom:0;
 }
+.thumb-list2 .box .inner {
+	padding:15px 0 0;
+	border:1px solid #ddd;
+}
 .thumb-list2 .box .img-area {
 	width:130px;
 	height:130px;
@@ -3216,7 +3228,13 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:50%;
 }
 .thumb-list2 .box .btn-list .item .btn-like {border-right:0;}
-
+.thumb-list2 .box .total-count {
+	color:#333;
+	font-size:13px;
+	line-height: 32px;
+	text-align: center;
+	border-top:1px solid #ddd;
+}
 /* 03 */
 .thumb-list3 .box .ico-label {
 	position:absolute;
@@ -3917,14 +3935,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-size:50px 1300px;
 }
 
-.store-result .flag-list {
+.store-flag-list {
 	overflow: hidden;
 	height: 50px;
 	padding:0 10px;
 	background-color:#f7f7f7;
 	border-top:1px solid #ddd;
 }
-.store-result .flag-list .flag-ico {
+.store-flag-list .flag-ico {
 	float:left;
 	width:25%;
 	color:#666;
@@ -3933,26 +3951,26 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align: center;
 	box-sizing: border-box;
 }
-.store-result .flag-list .flag-ico span {
+.store-flag-list .flag-ico span {
 	position: relative;
 	display: inline-block;
 	padding-left:24px;
 }
 @media only screen and (max-width: 320px) {
-	.store-result .flag-list .flag-ico:first-child {
+	.store-flag-list .flag-ico:first-child {
 		width:27%;
 	}
-	.store-result .flag-list .flag-ico {
+	.store-flag-list .flag-ico {
 		width:26%;
 	}
-	.store-result .flag-list .flag-ico:last-child {
+	.store-flag-list .flag-ico:last-child {
 		width:21%;
 	}
-	.store-result .flag-list .flag-ico {
+	.store-flag-list .flag-ico {
 		font-size:13px;
 	}
 }
-.store-result .flag-list .flag-ico span:before {
+.store-flag-list .flag-ico span:before {
 	content: '';
 	position: absolute;
 	top:50%; left:0;
@@ -3962,19 +3980,19 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background:url(../img/ico/sprite_store02.png) 0 0 no-repeat;
 	background-size:18px 66px;
 }
-.store-result .flag-list .flag01 span:before {
+.store-flag-list .flag01 span:before {
 	width:18px; height:17px;
 	background-position:0 0;
 }
-.store-result .flag-list .flag02 span:before {
+.store-flag-list .flag02 span:before {
 	width:18px; height:16px;
 	background-position:0 -18px;
 }
-.store-result .flag-list .flag03 span:before {
+.store-flag-list .flag03 span:before {
 	width:18px; height:15px;
 	background-position:0 -35px;
 }
-.store-result .flag-list .flag04 span:before {
+.store-flag-list .flag04 span:before {
 	width:18px; height:15px;
 	background-position:0 -51px;
 }
@@ -4127,6 +4145,167 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .transport .transport-cont.on {
 	display: block;
+}
+
+/* 매장 상세 */
+.store-slide {
+	position: relative;
+}
+.store-slide img {
+	width:100%;
+	vertical-align: top;
+}
+.store-slide .swiper-pagination {
+	position:absolute;
+	left:50%; bottom:15px;
+	width:60px;
+	height:27px;
+	margin-left:-30px;
+	box-sizing:border-box;
+	border-radius:25px;
+	background-color:rgba(102,102,102,0.6);
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	line-height:27px;
+	z-index:1;
+}
+.store-title {
+	position: relative;
+	padding:0 70px 0 10px;
+}
+.store-title .title {
+	display: inline-block;
+	font-size:18px;
+	font-weight:bold;
+	color:#333;
+	line-height: 55px;
+}
+.store-title .flag {
+	display: inline-block;
+	height: 23px;
+	margin-left:7px;
+	padding:0 10px;
+	font-size:13px;
+	border-radius:15px;
+	line-height: 25px;
+}
+.store-title .regular {
+	position: absolute;
+	top:13px; right:10px;
+	height:30px;
+	padding:0 13px;
+	font-size:14px;
+	color:#aaa;
+	font-weight: bold;
+	line-height: 30px;
+	background-color:#f7f7f7;
+	border:1px solid #ddd;
+	border-radius:3px;
+	box-sizing: border-box;
+}
+.store-title .regular.on {
+	color:#60b015;
+	border:1px solid #60b015;
+	background-color:#fff;
+}
+
+.store-news .swiper-slide {
+	width:55%;
+	opacity:.6;
+}
+.store-news .swiper-slide-active {
+	opacity:1;
+}
+.store-news  {
+	overflow:hidden;
+	margin-top:20px;
+	padding-bottom:30px;
+}
+.store-news .cTitle01 {
+	padding:0 7px;
+}
+.store-news .swiper-container {
+	margin-top:8px;
+}
+.store-news .item {
+	overflow: hidden;
+	padding:0 3px;
+}
+.store-news .link {display:block;}
+.store-news .img-area {
+	width:100%;
+	height:100%;
+}
+.store-news .text-area {
+	position:relative;
+	height:70px;
+	padding:13px 10px 18px;
+	border:1px solid #eee;
+	box-sizing: border-box;
+	border-top:0;
+}
+.store-news .text-area .name {
+	width:100%;
+	color:#333;
+	font-size:15px;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+}
+.store-news .text-area .time {
+	display: inline-block;
+	margin-top:3px;
+	color:#666;
+	font-size:13px;
+}
+.store-news .text-area .btn-like {
+	position:absolute;
+	right:12px; top:14px;
+	width:35px;
+	height:35px;
+}
+.store-news .swiper-pagination {
+	width:60px;
+	height:27px;
+	margin:18px auto 0;
+	box-sizing:border-box;
+	border-radius:25px;
+	border:1px solid #cdcdcd;
+	color:#aaa;
+	font-size:12px;
+	text-align:center;
+	line-height:27px;
+}
+.store-news .swiper-pagination .swiper-pagination-current {color:#333;}
+.store-news .btn-prev,
+.store-news .btn-next {
+	position:absolute;
+	top:50%;
+	z-index:1;
+	-webkit-transform:translateY(-50%) rotate(-45deg);
+	-ms-transform:translateY(-50%) rotate(-45deg);
+	transform:translateY(-50%) rotate(-45deg);
+	width:10px;
+	height:10px;
+	margin-top:-16px;
+}
+.store-tab {
+	background-color:#fff;
+	border-bottom:1px solid #ddd;
+}
+@media only screen and (max-width: 320px) {
+	.store-tab .item:first-child {
+		width:40%;
+	}
+	.store-tab .item:nth-child(2) {
+		width:35%;
+	}
+	.store-tab .item:last-child {
+		width:25%;
+	}
 }
 /* 캠페인 */
 .thumb-box1 {
