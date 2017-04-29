@@ -3687,6 +3687,27 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .no-search p span {
 	color:#ec7015;
 }
+
+.map-area {
+	position:fixed;
+	top:112px; bottom:0;
+}
+.map-area .map-search {
+	position: absolute;
+	top:10px; left:10px; right:10px;
+}
+.map-area .map-search .row {
+	margin-top:6px;
+}
+.map-area .map-search .row:first-child {
+	margin-top:0;
+}
+.map-area .map-search .btn-map-list
+.map-area .map-search .btn-map-list:before {
+	width:12px; height:9px;
+	background-position: 0 -1088px;
+}
+
 /* 캠페인 */
 .thumb-box1 {
 	width:220px;

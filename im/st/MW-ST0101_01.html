@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/hayoung.css">
+<link rel="stylesheet" href="../../css/login.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">매장</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="#" class="btn-image btn-search">통합검색</a>
+	</div>
+
+	<div class="container">
+		<ul class="tab-list1">
+			<li class="item on"><span class="text">매장검색</span></li>
+			<li class="item"><span class="text">길찾기</span></li>
+			<li class="item"><span class="text">단골매장</span></li>
+		</ul>
+		<div class="store-cont">
+			<div class="sub-cont">
+				<div class="map-area">
+					<img src="../../img/temp/temp_map.jpg" alt="" style="vertical-align:top; width:100%;">
+					<div class="map-search">
+						<div class="row">
+							<ul class="select-list1">
+							<li class="item">
+								<select class="styled1">
+									<option>시/도</option>
+									<option>서울</option>
+									<option>경기</option>
+								</select>
+							</li>
+							<li class="item">
+								<select class="styled1">
+									<option>시/군/구</option>
+									<option>강남구</option>
+									<option>서구</option>
+								</select>
+							</li>
+						</ul>
+						</div>
+						<div class="row">
+							<div class="form-button-type1">
+								<input type="text" placeholder="지역/매장명 검색" class="text">
+								<button type="button" class="btn-text btn-h42 btn-text-gray1 btn">검색</span>
+							</div>
+						</div>
+						<button type="button" class="btn-ico btn-map-list">목록보기</button>
+					</div>
+				</div>
+			</div>
+			<div class="sub-cont"></div>
+		</div>
+		<div class="store-cont"></div>
+		<div class="store-cont"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/*  개선필요,물품개선,물품요청 탭 */
+	$('.tab-list1 li').click(function(){
+		var idx = $(this).index();
+		$(this).addClass('on').siblings('li').removeClass('on');
+		$('.upgrade-area').removeClass('on').eq(idx).addClass('on');
+	});
+});
+</script>
+</body>
+</html>
