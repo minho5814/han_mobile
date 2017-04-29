@@ -5301,3 +5301,36 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:150px;
 }
 .select-btn1 .btn-filter {float:right;}
+
+
+/* --------------------------------------------------------------------------------------------
+	나의 함살림
+-------------------------------------------------------------------------------------------- */
+/* 탈퇴신청 (MW-MY020601) */
+.thanks-area {
+	padding:16px 0 35px;
+	color:#999;
+	font-size:15px;
+	text-align:center;
+}
+.thanks-area .fColor02 {
+	margin-bottom:6px;
+	font-size:17px;
+	font-weight:bold;
+}
+.text-box03 {
+	padding:10px 15px 18px;
+	border:1px solid #ddd;
+}
+.text-box03 .cTitle01 {
+	margin-top:8px;
+}
+.text-box03 .cTitle01:first-child {margin-top:0;}
+.text-box03 .text {
+	color:#666;
+	font-size:14px;
+	line-height:19px;
+}
+.text-box03 {}
+.text-box03 {}
+.text-box03 {}
