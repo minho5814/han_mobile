@@ -7,6 +7,7 @@
 <title>한살림 장보기</title>
 <link rel="stylesheet" href="../../css/common.css">
 <link rel="stylesheet" href="../../css/login.css">
+<link rel="stylesheet" href="../../css/suhyun.css">
 </head>
 
 <body>
@@ -440,8 +441,8 @@
 								<ul>
 									<li>합계금액(<strong>2</strong>종)<span class="price">6,700원</span></li>
 									<li>기타(<strong>0</strong>종)<span class="price">0원</span></li>
-									<li>출자금 자동증자금<a href="#none" class="btn-image btn-tooltip">?</a> <span class="price">1,000원</span></li>
-									<li>공급부담금<a href="#none" class="btn-image btn-tooltip">?</a>  <span class="price"><span class="fColor04 ">3,000</span>원</span></li>
+									<li>출자금 자동증자금<button type="button" class="btn-image btn-tooltip btn-capital-increase">?</button> <span class="price">1,000원</span></li>
+									<li>공급부담금<button type="button" class="btn-image btn-tooltip btn-supply-share">?</button>  <span class="price"><span class="fColor04 ">3,000</span>원</span></li>
 									<li>장바구니총액<span class="price total"><span>10,700</span>원</span></li>
 								</ul>
 							</div>
@@ -581,7 +582,52 @@
 		</div>
 	</div>
 </div>
+<!-- 출자금 자동증자금 팝업 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-capital-increase">
+	<div class="pop-head">
+		<h1 class="pop-title">출자금 자동증자금</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등
+						조직 운영에 사용되며 물품구입시마다 의무자동출자되며 이는 탈퇴 시 환불됩니다.
+						* 출자금 등은 부가세 매입세액 및 연말정산 공제대상이 아닙니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
 
+<!-- 공급부담금 팝업 -->
+<div class="layer-popup pop-supply-share">
+	<div class="pop-head">
+		<h1 class="pop-title">공급부담금</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						출자금을 제외한 일정금액(지역한살림별로 다름) 미만 주문시 부과됩니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
@@ -658,6 +704,19 @@ $(window).load(function(){
 		}else{
 			$(this).parents('.goods-info').addClass('on').find('.sub-cont').slideDown();
 		}
+	});
+
+	/*툴팁 팝업*/
+	/*출자금 자동증자금 팝업*/
+	$('.btn-capital-increase').click(function(){
+		$('.pop-capital-increase').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+	/*공급부담금*/
+	$('.btn-supply-share').click(function(){
+		$('.pop-supply-share').fadeIn(200);
+		$('.block-ui').fadeIn();
 	});
 });
 </script>
