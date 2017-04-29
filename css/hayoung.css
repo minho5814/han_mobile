@@ -265,26 +265,6 @@
 /* --------------------------------------------------------------------------------------------
 	물품소식과 공지
 -------------------------------------------------------------------------------------------- */
-.tab-list1.two .item {width:50%}
-.tab-list1.two .item.new span em {position:relative;}
-.tab-list1.two .item.new span em:after {
-	content:'N';
-	display: inline-block;
-	/*position:absolute;
-	right:-12px; top:0;*/
-	width:17px;
-	height:17px;
-	margin:0 0 0 5px;
-	border:1px solid #f04114;
-	color:#f04114;
-	font-size:11px;
-	text-align: center;
-	font-weight: bold;
-	line-height: 15px;
-	border-radius: 2px;
-	vertical-align: text-top;
-	box-sizing: border-box;
-}
 .qna-area {display: none;}
 .qna-area.on {display: block;}
 .qna-area .tab-list5 {padding-top:10px; border-top:1px solid #bbb;}
