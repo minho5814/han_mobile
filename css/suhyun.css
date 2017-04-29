@@ -878,3 +878,211 @@
 	border-bottom:2px solid #fff;
 	border-right:2px solid #fff;
 }
+/* 나의 한살림 */
+.my-area {}
+.my-area .my-txt {
+	font-size:15px;
+	color:#666;
+	line-height:22px;
+}
+.form-list1 .form-item {margin-top:15px;}
+.birth-area,
+.tele-area {overflow:hidden;}
+.birth-area .box,
+.tele-area .box {
+	float:left;
+	width:30%;
+	padding-left:4px;
+	box-sizing:border-box;
+}
+.birth-area .box:first-child {width:70%; padding-left:0;}
+.tele-area .box:first-child {padding-left:0;}
+.tele-area .box:last-child {width:70%;}
+.form-button-type3 {
+	position:relative;
+}
+.btn-calendar {
+	padding-right:43px !important;
+	background:url(../img/btn/btn_calendar.png) no-repeat right center;
+	background-size:43px 24px;
+}
+/* CMS 임의해지 안내 팝업 */
+.pop-cms-guid01 {width:325px !important;}
+.pop-cms-guid02 {width:325px !important;}
+.pop-area .btn-area {
+	margin-top:20px;
+	padding:15px 20px 0;
+	border-top:1px solid #eee;
+}
+.layer-popup .pop-cont {padding:15px 20px 0;}
+.layer-popup .pop-cont .pop-txt {
+	margin-top:6px;
+	font-size:15px;
+	color:#666;
+	line-height:22px;
+}
+.layer-popup .pop-cont .info-box01 {
+	padding:8px 0 15px;
+	border:1px solid #eee;
+	box-sizing:border-box;
+	background-color:#f7f7f7;
+	text-align:center;
+}
+.layer-popup .pop-cont .info-box01 .txt {
+	font-size:15px;
+	color:#333;
+	line-height:25px;
+}
+.layer-popup .pop-cont .info-box02 {
+	padding:15px;
+	border:1px solid #eee;
+	box-sizing:border-box;
+	background-color:#f7f7f7;
+}
+.layer-popup .pop-cont .info-box02 dl {margin-top:13px;}
+.layer-popup .pop-cont .info-box02 dl:first-child {margin-top:0;}
+.layer-popup .pop-cont .info-box02 dl dt,
+.layer-popup .pop-cont .info-box02 dl dd {
+	font-size:15px;
+	color:#333;
+	line-height:23px;
+}
+.layer-popup .pop-cont .info-box02 dl dd {
+	padding-left:15px;
+	color:#666;
+	line-height:18px;
+}
+.layer-popup .pop-cont .info-box02 dl dd .notice-txt {
+	margin-top:5px;
+	font-size:13px;
+	color:#aaa;
+	line-height:17px;
+}
+
+/* 나의 알림 */
+.btn-notice-set {
+	width:99px;
+	height:42px;
+}
+.btn-notice-set .text {
+	height:42px;
+	padding-left:22px;
+	font-size:14px;
+	line-height:42px;
+}
+.notice-txt02 {
+	padding:0 10px;
+	font-size:13px;
+	color:#aaa;
+	line-height:14px;
+}
+.my-notice-area .cTitle01 {
+	display:inline-block;
+	vertical-align:middle;
+}
+.my-notice-list {
+	border-top:1px solid #bbb;
+}
+.my-notice-list .item {
+	position:relative;
+	height:79px;
+	padding:18px 0;
+	border-top:1px solid #eee;
+	box-sizing: border-box;
+}
+.my-notice-list .item:first-child {border-top:0;}
+.my-notice-list .item .my-notice-text {
+	position:absolute;
+	left:0; top:50%;
+	transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+}
+.my-notice-list .item .my-notice-text .my-notice-tit {
+	font-size:15px;
+	color:#333;
+	line-height:19px;
+}
+.my-notice-list .item .my-notice-text .my-notice-tit .label-tit {
+	display:inline-block;
+	position:relative;
+	margin-right:8px;
+	font-size:13px;
+	color:#60b015;
+	line-height:19px;
+	font-weight:bold;
+	vertical-align:top;
+}
+.my-notice-list .item .my-notice-text .my-notice-tit .label-tit:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; bottom:0;
+	width:100%;
+	border-bottom:1px solid #60b015;
+}
+.my-notice-list .item .my-notice-text .my-notice-txt {
+	margin-top:5px;
+	font-size:14px;
+	color:#666;
+	line-height:18px;
+}
+
+.mark-txt {
+	display:inline-block;
+    padding:0 12px;
+    font-size:13px;
+    font-weight:bold;
+    line-height:20px;
+    border-radius:10px;
+    color:#239bd2;
+    border:1px solid #239bd2;
+    vertical-align:middle;
+}
+
+/* 팝업 */
+.layer-popup {
+	position:fixed;
+	left:50%;top:50%;
+	z-index:500;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	border-radius:5px;
+	background-color:#fff;
+	opacity:0;
+}
+.layer-popup .pop-head {
+	position:relative;
+	height:45px;
+	padding:0 20px;
+	border-radius:5px;
+	background-color:#eee;
+}
+.layer-popup .pop-head .pop-title {
+	color:#404040;
+	font-size:16px;
+	line-height:48px;
+	font-family: ns;
+}
+.layer-popup .pop-head .popup-close {
+	position:absolute;
+	right:10px;top:0;bottom:0;
+	width:40px;
+	background:url(../img/btn/btn_close.png) no-repeat 50% 50%;
+	background-size:16px 16px;
+	font-size:0;
+	line-height:0;
+}
+.layer-popup .pop-content {padding:0 0 15px;}
+
+.block-ui {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.75);
+	z-index: 100;
+}
