@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/login.css">
+<link rel="stylesheet" href="../../css/suhyun.css">
+<link rel="stylesheet" href="../../css/hayoung.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">주소록 관리</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<button type="button" class="btn-image btn-search">통합검색</button>
+	</div>
+
+	<div class="container">
+		<ul class="tab-list1 two">
+			<li class="item on"><a href="#none" class="text">공급지 정보</a></li>
+			<li class="item"><a href="MW-MY02030201.html" class="text"><em>선물택배 배송지</em></a></li>
+		</ul>
+		<div class="tab-cont on">
+			<div class="white-content2">
+				<div class="my-area">
+					<div class="board1">
+						<table>
+							<colgroup>
+								<col style="width:95px;">
+								<col style="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">소속한살림</th>
+									<td><span class="fColor02">한살림서울</span> (공급요일 : 매주 월, 수요일)</td>
+								</tr>
+								<tr>
+									<th scope="row">공급주소</th>
+									<td>(06170) 서울 강남구 삼성동 162-11번지(봉은사로 634)</td>
+								</tr>
+								<tr>
+									<th scope="row">요청일</th>
+									<td>2017-03-01</td>
+								</tr>
+								<tr>
+									<th scope="row">처리일</th>
+									<td>2017-03-02</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btn-area mgT30">
+						<a href="MW-MY02030102.html" type="button" class="btn-text btn-h55 btn-text-green1">주소 변경 신청</a>
+					</div>
+					<div class="box-content1 mgT30">
+						<h3 class="box-title">공급지정보 안내</h3>
+						<ul class="box-cont">
+							<li class="item">공급지정보의 주소 변경이 가능하며, 조합원님이 소속된 한살림 관할구역 내에서만 주소변경이 가능합니다.</li>
+							<li class="item">공급지 주소를 변경하시면 평일을 기준으로 1일이 소요됩니다. 단, 주말과 공휴일은 다음날 근무일을 기준으로 1일이 소요됩니다.</li>
+							<li class="item">공급지 변경소요시간으로 인해 주문마감일에 변경하시면 변경된 주소로 물품을 받지 못하실 수도 있습니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 레이어 팝업 영역 -->
+<!-- 나의 알림 설정 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-my-notice">
+	<div class="pop-head">
+		<h1 class="pop-title">나의 알림 설정</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont pdT20">
+				<ul class="pop-notice-list">
+					<li class="item">
+						<span class="title">물품 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff on"></button>
+					</li>
+					<li class="item">
+						<span class="title">특별품 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff"></button>
+					</li>
+					<li class="item">
+						<span class="title">프로모션 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff"></button>
+					</li>
+					<li class="item">
+						<span class="title">캠페인 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff on"></button>
+					</li>
+					<li class="item">
+						<span class="title">쿠폰 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff on"></button>
+					</li>
+					<li class="item">
+						<span class="title">지역 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff"></button>
+					</li>
+				</ul>
+			</div>
+			<div class="btn-area mgT10">
+				<ul class="btn-list1">
+					<li class="item"><button type="button" class="btn-text btn-h55 btn-text-line1">취소</button></li>
+					<li class="item"><button type="button" class="btn-text btn-h55 btn-text-green1">확인</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+
+	/*  개선필요,공지사항탭 */
+	$('.tab-list1 li').click(function(){
+		var idx = $(this).index();
+		$(this).addClass('on').siblings('li').removeClass('on');
+		$('.tab-cont').removeClass('on').eq(idx).addClass('on');
+	});
+
+});
+</script>
+</body>
+</html>

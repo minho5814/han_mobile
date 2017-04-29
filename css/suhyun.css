@@ -1036,6 +1036,31 @@
     border:1px solid #239bd2;
     vertical-align:middle;
 }
+/* 나의 알림 설정 팝업 */
+.pop-area .pop-notice-list {}
+.pop-area .pop-notice-list .item {
+	position:relative;
+	width:100%;
+	padding:15px 0;
+	border-top:1px solid #eee;
+	box-sizing:border-box;
+	vertical-align:middle;
+}
+.pop-area .pop-notice-list .item:first-child {border-top:0;}
+.pop-area .pop-notice-list .item .title {
+	width:100%;
+	font-size:15px;
+	color:#333;
+	line-height:14px;
+	vertical-align:middle;
+}
+.pop-area .pop-notice-list .item .btn-pop-onoff {
+	position:absolute;
+	right:0; top:50%;
+	transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+}
 
 /* 팝업 */
 .layer-popup {
@@ -1082,4 +1107,43 @@
 	height:100%;
 	background-color:rgba(0,0,0,0.75);
 	z-index: 100;
+}
+
+/* 주소록 관리 */
+.tab-cont {display:none;}
+.tab-cont.on {display:block;}
+.shipping-list {}
+.shipping-list .item-ship {
+	padding:20px 0 25px;
+	border-bottom:1px solid #eee;
+}
+.shipping-list .item-ship:first-child {padding-top:0;}
+.shipping-list .item-ship dl {
+	position:relative;
+}
+.shipping-list .item-ship dl dt {
+	font-size:15px;
+	color:#333;
+	line-height:16px;
+	font-weight:bold;
+}
+.shipping-list .item-ship dl dd {
+	font-size:15px;
+	color:#666;
+	line-height:18px;
+}
+.shipping-list .item-ship dl dd .address-text {
+	margin-top:12px;
+}
+.shipping-list .item-ship dl dd .tel {
+	display:block;
+	margin-top:6px;
+}
+.shipping-list .item-ship dl dd.btn-box {
+	position:absolute;
+	right:0; bottom:-15px;
+}
+.my-area .float-area {
+	padding-bottom:15px;
+	border-bottom:1px solid #eee;
 }

@@ -410,6 +410,12 @@ html.no-scroll {
 	font-weight:bold;
 	line-height:20px;
 }
+.cTitle07 {
+	color:#333;
+	font-size:18px;
+	font-weight:bold;
+	line-height:29px;
+}
 
 /* --------------------------------------------------------------------------------------------
 	슬라이드
@@ -1561,11 +1567,9 @@ select.styled1:disabled {
 }
 .check-list label input {margin-right:5px;}
 @media only screen and (max-width: 320px) {
+	.check-list {margin-left:-8px;}
 	.check-list label {
 		margin-left:8px;
-	}
-	.check-list label:nth-child(3n+1) {
-		margin-left:17px;
 	}
 }
 
@@ -1758,6 +1762,27 @@ select.styled1:disabled {
 	border-bottom:2px solid #60b015;
 	color:#60b015;
 	font-weight:bold;
+}
+
+.tab-list1.two .item {width:50%}
+.tab-list1.two .item.new span em {position:relative;}
+.tab-list1.two .item.new span em:after {
+	content:'N';
+	display: inline-block;
+	/*position:absolute;
+	right:-12px; top:0;*/
+	width:17px;
+	height:17px;
+	margin:0 0 0 5px;
+	border:1px solid #f04114;
+	color:#f04114;
+	font-size:11px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 15px;
+	border-radius: 2px;
+	vertical-align: text-top;
+	box-sizing: border-box;
 }
 
 /* 아코디언 리스트 01 */
@@ -2782,7 +2807,7 @@ html {
 	background-color:#fff;
 }
 .white-content2 {
-	padding:20px 12px;
+	padding:20px 10px;
 	background-color:#fff;
 }
 .white-content3 {
@@ -5506,9 +5531,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:10px 15px 18px;
 	border:1px solid #ddd;
 }
-.text-box03 .cTitle01 {
-	margin-top:8px;
-}
+.text-box03 .cTitle01 {margin-top:8px;}
 .text-box03 .cTitle01:first-child {margin-top:0;}
 .text-box03 .text {
 	color:#666;
@@ -5518,3 +5541,68 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .text-box03 {}
 .text-box03 {}
 .text-box03 {}
+
+/* 공유하기 팝업 */
+.share-list {
+	overflow: hidden;
+	display: inline-block;
+	width:230px;
+	margin: 0 auto;
+}
+.share-list li {
+	float:left;
+	margin-left:10px;
+}
+.share-list li:first-child {
+	margin-left:0;
+}
+.share-list li .btn-share {
+	display: block;
+	width:50px; height:50px;
+	background-image: url(../img/btn/btn_share.png);
+	background-repeat: no-repeat;
+	background-size:230px 50px;
+}
+.share-list li .btn-share.cacaotalk {background-position:0 0;}
+.share-list li .btn-share.cacaostory {background-position:-60px 0;}
+.share-list li .btn-share.facebook {background-position:-120px 0;}
+.share-list li .btn-share.urlcopy {background-position:-180px 0;}
+
+.price-info-box {
+	padding:0 15px;
+	border:1px solid #eee;
+}
+.price-info-box .box {
+	padding:10px 5px 15px;
+	border-top:1px solid #eee;
+}
+.price-info-box .box:first-child {border-top:0;}
+.price-info-box .box .title {
+	color:#333;
+	font-size:16px;
+	font-weight:bold;
+	line-height:35px;
+}
+.price-info-box .box dl {
+	overflow:hidden;
+	color:#666;
+	font-size:15px;
+	line-height:23px;
+}
+.price-info-box .box dl dt {
+	float:left;
+}
+.price-info-box .box dl dd {
+	float:right;
+}
+.price-info-box .box dl dd .number {
+	color:#f04114;
+	font-weight:bold;
+}
+
+.border-top-box {
+	border-top:10px solid #eee;
+	margin:25px -10px 0;
+	padding:25px 10px 0;
+	background-color:#fff;
+}

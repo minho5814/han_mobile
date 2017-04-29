@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="../../css/common.css">
 <link rel="stylesheet" href="../../css/hayoung.css">
 <link rel="stylesheet" href="../../css/login.css">
+<link rel="stylesheet" href="../../css/suhyun.css">
 </head>
 
 <body>
@@ -15,6 +16,12 @@
 	<div class="header">
 		<h1 class="head-title">매장 상세</h1>
 		<button type="button" class="btn-image btn-back">이전</button>
+		<div class="share-box">
+			<button type="button" class="btn-image btn-use">공유</button>
+			<div class="sns-box">
+				준비중
+			</div>
+		</div>
 		<a href="#" class="btn-image btn-search">통합검색</a>
 	</div>
 
@@ -234,6 +241,28 @@
 	</div>
 </div>
 
+<!-- 레이어 팝업 영역 -->
+<!-- CMS 임의해지 안내1 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-share">
+	<div class="pop-head">
+		<h1 class="pop-title">공유하기</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<ul class="share-list">
+					<li><a href="#none" class="btn-share cacaotalk"><span class="hide">카카오 톡</span></a></li>
+					<li><a href="#none" class="btn-share cacaostory"><span class="hide">카카오 스토리</span></a></li>
+					<li><a href="#none" class="btn-share facebook"><span class="hide">페이스북</span></a></li>
+					<li><a href="#none" class="btn-share urlcopy"><span class="hide">주소복사</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
 <script type="text/javascript" src="../../js/common.js"></script>
@@ -257,6 +286,19 @@ $(window).load(function(){
 
 	$('.regular').click(function(){
 		$(this).addClass('on');
+	});
+
+	/* 공유하기 팝업 */
+	$('.btn-use').click(function(){
+		$('.pop-share').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+	$('.store-tab li').click(function(){
+		var idx = $(this).index();
+		if(idx != 0 ){
+			alert('준비중입니다.');
+		}
 	});
 });
 </script>

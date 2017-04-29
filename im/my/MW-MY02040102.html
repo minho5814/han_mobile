@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/hayoung.css">
+<link rel="stylesheet" href="../../css/login.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">결제정보 관리</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<button type="button" class="btn-image btn-search">통합검색</button>
+	</div>
+
+	<div class="container">
+		<ul class="tab-list1 two">
+			<li class="item on"><span class="text">CMS 변경/신청</span></li>
+			<li class="item"><a href="MW-MY02040103.html" class="text">카드 변경/신청</a></li>
+		</ul>
+
+		<div class="white-content2">
+			<div class="form-list2">
+				<div class="form-item">
+					<h3 class="cTitle02">출금은행</h3>
+					<select class="styled1">
+						<option>기업은행(003)</opstion>
+						<option>기업은행(003)</opstion>
+						<option>기업은행(003)</opstion>
+					</select>
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02"><label for="BankNem">계좌번호</label></h3>
+					<input type="text" id="BankNem" value="281-054523-015" class="text">
+					<p class="bullet-text1">- 없이 입력해주세요.</p>
+					<p class="bullet-text1 mgT0">원계좌만 사용 가능 (가상계좌, 전화번호계좌 사용불가)</p>
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02"><label for="Name">예금주명</label></h3>
+					<input type="text" id="Name" value="홍길동" class="text">
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02">계좌명의</h3>
+					<select class="styled1">
+						<option>개인명의 1</opstion>
+						<option>개인명의 2</opstion>
+						<option>개인명의 3</opstion>
+					</select>
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02">예금주와의 관계</h3>
+					<select class="styled1">
+						<option>본인</opstion>
+						<option>배우자</opstion>
+					</select>
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02"><label for="Date">예금주 생년월일</label></h3>
+					<input type="text" id="Date" value="1980년 9월 29일" class="text datepicker">
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02">휴대전화</h3>
+					<div class="phone-area">
+						<div class="box">
+							<select class="styled1">
+								<option>선택</option>
+								<option>011</option>
+								<option>010</option>
+							</select>
+						</div>
+						<div class="box">
+							<input type="tel">
+						</div>
+					</div>
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02">영수증 발급선택</h3>
+					<div class="radio-list">
+						<label><input type="radio" name="Receipt" class="styled1" checked>발급</label>
+						<label><input type="radio" name="Receipt" class="styled1">미발급</label>
+					</div>
+				</div>
+				<div class="form-item">
+					<h3 class="cTitle02">현금영수증 구분</h3>
+					<select class="styled1">
+						<option>소득공제용</opstion>
+						<option>사업자용</opstion>
+					</select>
+					<select class="styled1 mgT5">
+						<option>주민번호</opstion>
+						<option>휴대전화번호</opstion>
+					</select>
+					<p class="bullet-text1">주민번호로 등록을 원하는 조합원은 아래 연락처로 연락해주십시오.<br>주문상담실 : 1661-0800</p>
+				</div>
+			</div>
+
+			<div class="border-top-box mgT15 pdT20">
+				<label class="check-label"><input type="checkbox" class="styled1">물품대금 자동이체(CMS)에 동의합니다.</label>
+				<ul class="btn-list1 mgT25">
+					<li class="item"><a href="MW-MY02040102.html" class="btn-text btn-h55 btn-text-line1">취소</a></li>
+					<li class="item"><a href="MW-MY02040102.html" class="btn-text btn-h55 btn-text-green1">신청</a></li>
+				</ul>
+			</div>
+
+			<div class="box-content1 mgT25">
+				<h3 class="box-title">CMS 변경/신청 안내</h3>
+				<div class="box-cont">
+					<ul class="bullet-list3">
+						<li class="item fColor02">CMS 변경/신청은 한살림 PC/모바일앱, 주문상담실에서만 가능합니다.</li>
+						<li class="item">
+							한살림 PC, 모바일앱<br>
+							메뉴>나의한살림>개인정보>결제정보관리>CMS 변경/ 신청
+							<p class="bullet-text1">공인인증서 전자서명 필요</p>
+						</li>
+						<li class="item">
+							한살림서울 주문상담실 (내선 3번)
+							<p class="bullet-text1">금융결제원 승인을 위해 전화 녹취합니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
+<script type="text/javascript" src="../../js/common.js"></script>
+
+</body>
+</html>

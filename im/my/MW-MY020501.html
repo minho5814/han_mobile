@@ -25,7 +25,7 @@
 				<option>전체1</option>
 				<option>전체2</option>
 			</select>
-			<button type="button" class="btn-text-ico btn-ico3 btn-filter btn-notice-set"><span class="text">알림설정</span></button>
+			<button type="button" class="btn-text-ico btn-ico3 btn-filter btn-notice-set btn-popup"><span class="text">알림설정</span></button>
 		</div>
 		<p class="notice-txt02 mgT10">※ 나의 알림 전체 내역조회 및 서비스별 알림 설정을 할 수 있습니다.</p>
 		<div class="white-content2">
@@ -106,94 +106,62 @@
 	</div>
 </div>
 <!-- 레이어 팝업 영역 -->
-<!-- CMS 임의해지 안내1 -->
+<!-- 나의 알림 설정 -->
 <div class="block-ui"></div>
-<div class="layer-popup pop-cms-guid01">
+<div class="layer-popup pop-my-notice">
 	<div class="pop-head">
-		<h1 class="pop-title">CMS 임의해지 안내</h1>
+		<h1 class="pop-title">나의 알림 설정</h1>
 		<button type="button" class="popup-close">닫기</button>
 	</div>
 	<div class="pop-content">
 		<div class="pop-area">
-			<div class="pop-cont">
-				<p class="pop-txt mgT0">
-					조합원님께서 등록하신 자동이체 계좌는 한살림과
-					1년 이상 거래가 없었으므로 조합원님의 예금계좌
-					보호를 위해 은행 측에서 자동해지 되었습니다.
-				</p>
-				<p class="pop-txt">
-					현재 <span class="fColor02">무통장 입금방식</span>으로 <span class="fColor02">자동변경</span>되었으니, 이용
-					에 불편 없도록 참고 부탁드립니다.
-				</p>
-				<p class="pop-txt">
-					CMS 재등록 관련 문의사항이 있으시면 아래 연락
-					처로 문의해주세요.
-				</p>
-				<div class="info-box01 mgT10">
-					<p class="txt">한살림서울</p>
-					<a href="tel:1661-0800" class="btn-call"><span class="text">02-3498-3600</span></a>
-				</div>
+			<div class="pop-cont pdT20">
+				<ul class="pop-notice-list">
+					<li class="item">
+						<span class="title">물품 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff on"></button>
+					</li>
+					<li class="item">
+						<span class="title">특별품 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff"></button>
+					</li>
+					<li class="item">
+						<span class="title">프로모션 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff"></button>
+					</li>
+					<li class="item">
+						<span class="title">캠페인 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff on"></button>
+					</li>
+					<li class="item">
+						<span class="title">쿠폰 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff on"></button>
+					</li>
+					<li class="item">
+						<span class="title">지역 소식</span>
+						<button type="button" class="btn-onoff btn-pop-onoff"></button>
+					</li>
+				</ul>
 			</div>
-			<div class="btn-area">
-				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- CMS 임의해지 안내2 -->
-<div class="layer-popup pop-cms-guid02">
-	<div class="pop-head">
-		<h1 class="pop-title">CMS 임의해지 안내</h1>
-		<button type="button" class="popup-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<div class="pop-area">
-			<div class="pop-cont">
-				<p class="pop-txt mgT0">
-					조합원님의 지역한살림 이관으로 이전에 등록하신
-					CMS는 자동해지 되었음을 알려드립니다.
-					한살림은 권역별로 운영하고 있으므로, CMS 재등
-					록이 필요합니다.
-				</p>
-				<p class="pop-txt">
-					아래 방법으로 CMS를 재등록해주시기 바랍니다.
-				</p>
-				<div class="info-box02 mgT10">
-					<dl>
-						<dt><span class="number">1.</span> 한살림 모바일앱</dt>
-						<dd>
-							메뉴 &gt; 나의한살림 &gt; 개인정보 &gt; 결제정보 관리 &gt; CMS변경/신청
-							<p class="notice-txt">※ 공인인증서 전자서명 필요</p>
-						</dd>
-					</dl>
-					<dl>
-						<dt><span class="number">2.</span> 한살림서울 주문상담실</dt>
-						<dd>
-							1661-0800 (내선 3번)
-							<p class="notice-txt">※ 금융결제원 승인을 위해 전화 녹취합니다.</p>
-						</dd>
-					</dl>
-				</div>
-			</div>
-			<div class="btn-area">
-				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			<div class="btn-area mgT10">
+				<ul class="btn-list1">
+					<li class="item"><button type="button" class="btn-text btn-h55 btn-text-line1">취소</button></li>
+					<li class="item"><button type="button" class="btn-text btn-h55 btn-text-green1">확인</button></li>
+				</ul>
 			</div>
 		</div>
 	</div>
 </div>
+
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
 	/* CMS 임의해지 안내1 */
-	$('.btn-cms-guid01').click(function(){
-		$('.pop-cms-guid01').fadeIn(200);
-		$('.block-ui').fadeIn();
-	});
-	/* CMS 임의해지 안내2 */
-	$('.btn-cms-guid02').click(function(){
-		$('.pop-cms-guid02').fadeIn(200);
+	$('.btn-notice-set').click(function(){
+		$('.pop-my-notice').fadeIn(200);
 		$('.block-ui').fadeIn();
 	});
 
