@@ -5512,6 +5512,36 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:14px;
 	line-height:19px;
 }
+.text-box03 {}
+.text-box03 {}
+.text-box03 {}
+
+/* 공유하기 팝업 */
+.share-list {
+	overflow: hidden;
+	display: inline-block;
+	width:230px;
+	margin: 0 auto;
+}
+.share-list li {
+	float:left;
+	margin-left:10px;
+}
+.share-list li:first-child {
+	margin-left:0;
+}
+.share-list li .btn-share {
+	display: block;
+	width:50px; height:50px;
+	background-image: url(../img/btn/btn_share.png);
+	background-repeat: no-repeat;
+	background-size:230px 50px;
+}
+.share-list li .btn-share.cacaotalk {background-position:0 0;}
+.share-list li .btn-share.cacaostory {background-position:-60px 0;}
+.share-list li .btn-share.facebook {background-position:-120px 0;}
+.share-list li .btn-share.urlcopy {background-position:-180px 0;}
+
 .price-info-box {
 	padding:0 15px;
 	border:1px solid #eee;
