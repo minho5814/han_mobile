@@ -1094,12 +1094,8 @@ html.no-scroll {
 	text-indent:-9999px;
 	line-height:0;
 }
-.len-btn-box .btn-plus {
-	right:0;
-}
-.len-btn-box .btn-minus {
-	left:0;
-}
+.len-btn-box .btn-plus {right:0;}
+.len-btn-box .btn-minus {left:0;}
 .len-btn-box button:before,
 .len-btn-box .btn-plus:after {
 	content:'';
@@ -1128,6 +1124,42 @@ html.no-scroll {
 	text-align:center;
 	line-height:30px;
 }
+
+/* 온/오프 */
+.btn-onoff {
+	display:inline-block;
+	position:relative;
+	width:60px;
+	height:30px;
+	box-sizing:border-box;
+	border-radius:25px;
+	background-color:#ccc;
+	font-size:0;
+	text-indent:-9999px;
+	text-align:left;
+	line-height:0;
+}
+.btn-onoff:before {
+	content:'Off';
+	position:absolute;
+	left:3px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:#fff;
+	box-shadow:0 2px 2px rgba(0,0,0,.2);
+	vertical-align:top;
+}
+.btn-onoff.on {background-color:#60b015;}
+.btn-onoff.on:before {
+	content:'On';
+	left:inherit;right:3px;
+	box-shadow:0 2px 2px rgba(0,0,0,0);
+}
+
 
 /* --------------------------------------------------------------------------------------------
 	물품상세 플로팅 버튼 영역
