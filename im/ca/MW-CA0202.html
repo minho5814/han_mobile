@@ -13,23 +13,20 @@
 <body>
 <div class="wrapper">
 	<div class="header">
-		<h1 class="head-title">진행중인 캠페인</h1>
+		<h1 class="head-title">지난 캠페인</h1>
 		<button type="button" class="btn-image btn-back">이전</button>
 		<a href="#" class="btn-image btn-search">통합검색</a>
 	</div>
 
 	<div class="container">
 		<div class="campaign-sub">
-			<div class="thumb-box">  <!--달성한경우 achieve 추가,  참여중이면 join추가 -->
+			<div class="thumb-box achieve">  <!--달성한경우 achieve 추가,  참여함이면 finish추가 -->
 				<div class="campaign-mark">
 					<img src="../../img/ico/campaign/icon_campaign02.png" alt="">
 				</div>
 				<div class="right-wrap">
 					<p class="title">라면도! 기부도!<button type="button" target="_blank" class="btn-image btn-tooltip btn-popup btn-question"></button>
 					<p class="text ellipsis-line">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
-					<div class="btn-wrap">
-						<button type="button" class="btn-text btn-h42 btn-text-line2 btn-join">참여하기</button>
-					</div>
 					<div class="join-wrap">
 						<div class="float-area">
 							<span class="f-left fColor02">달성율 50%</span>
@@ -37,33 +34,24 @@
 						<div class="bar-box">
 							<p class="bar" style="width:50%;"></p>
 						</div>
-
 					</div>
 				</div>
 			</div>
 			<!--쌀약정인경우-->
-			<div class="thumb-box rice"> <!--달성한경우 achieve 추가,  참여중이면 join추가 -->
+			<div class="thumb-box finish"> <!--달성한경우 achieve 추가,  참여중이면 join추가 -->
 				<div class="campaign-mark">
 					<img src="../../img/ico/campaign/icon_campaign02.png" alt="">
 				</div>
 				<div class="right-wrap">
 					<p class="title">라면도! 기부도!<button type="button" target="_blank" class="btn-image btn-tooltip btn-popup btn-question"></button>
 					<p class="text ellipsis-line">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
-					<div class="btn-wrap">
-						<button type="button" class="btn-text btn-h42 btn-text-line2 btn-join">참여하기</button>
-					</div>
 					<div class="join-wrap">
 						<div class="float-area">
-							<span class="f-left fColor02">달성율 50%</span>
-							<div class="f-right">
-								<span>목표 약정량 80%</span>
-								<button type="button" class="btn-text btn-text-gray1 btn-h24 btn btn-popup btn-modify">수정</span>
-							</div>
+							<span class="f-left fColor02">달성율 100%</span>
 						</div>
 						<div class="bar-box">
-							<p class="bar" style="width:50%;"></p>
+							<p class="bar" style="width:100%;"></p>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -73,7 +61,7 @@
 						참여자<span class="fColor01">10,223명</span>
 					</li>
 					<li>
-						남은 일수<span class="fColor02">212일</span>
+						남은 일수<span class="fColor02">종료</span>
 					</li>
 				</ul>
 			</div>
@@ -260,36 +248,6 @@
 		</div>
 	</div>
 </div>
-<!-- 쌀약정량 수정 팝업-->
-<div class="layer-popup pop-modify">
-	<div class="pop-head">
-		<h1 class="pop-title"><span class="fColor02">목표 약정량</span>을 입력해주세요</h1>
-		<button type="button" class="popup-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<div class="pop-area">
-			<div class="pop-cont">
-				<div class="form-button-type1">
-					<input type="tel" class="text">
-					<span>kg</span>
-				</div>
-				<div class="box-content1 mgT20">
-					<h3 class="box-title">목표 약정량 안내</h3>
-					<ul class="box-cont">
-						<li class="item">목표 약정량은 숫자로만 입력 가능합니다.</li>
-						<li class="item">목표 약정량 수정시 최초 입력한 약정량보다 작게 입력 할 수 없습니다.</li>
-					</ul>
-				</div>
-			</div>
-			<div class="btn-area">
-				<ul class="btn-list1">
-					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">취소</a></li>
-					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-green1">확인</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
@@ -302,33 +260,12 @@ $(window).load(function(){
 		$('.tab-content').removeClass('on').eq(idx).addClass('on');
 	});
 
-	/*참여하기*/
-	$('.join-wrap').hide();
-	$('.btn-join').click(function(){
-		$(this).parents('.btn-wrap').hide();
-		var me = $(this).parents('.thumb-box');
-		$(this).parents('.right-wrap').find('.join-wrap').show();
-
-		//case분기한것으로 삭제하셔도 됩니다.
-		if(me.hasClass('rice')){
-			$(this).parents('.thumb-box').addClass('achieve');
-		}else{
-			$(this).parents('.thumb-box').addClass('join');
-		}
-	});
-
 
 	/* 팝업*/
 	/*캠페인정보*/
 	$('.btn-question').click(function(){
 		$('.pop-question').fadeIn(200);
 		$('.block-ui').fadeIn();
-	});
-	/*목표약정량*/
-	$('.btn-modify').click(function(){
-		$('.pop-modify').fadeIn(200);
-		$('.block-ui').fadeIn();
-		$('.pop-modify').find('input').focus();
 	});
 
 	$(window).scroll(function(){
