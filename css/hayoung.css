@@ -1131,29 +1131,21 @@ label.important:before {
 	padding:25px 40px 25px 0;
 	box-sizing:border-box;
 }
-.campaign-list .thumb-box.join:before {
+.campaign-list .thumb-box:before {
 	content:'';
 	position:absolute;
 	right:0;
 	top:-1px;
 	width:42px;
 	height:39px;
-	background-image:url(../img/ico/ico_flag1.png);
 	background-repeat:no-repeat;
 	background-size:42px 39px;
-
-
+}
+.campaign-list .thumb-box.join:before {
+	background-image:url(../img/ico/ico_flag1.png);
 }
 .campaign-list .thumb-box.achieve:before {
-	content:'';
-	position:absolute;
-	right:0;
-	top:-1px;
-	width:42px;
-	height:39px;
 	background-image:url(../img/ico/ico_flag2.png);
-	background-repeat:no-repeat;
-	background-size:42px 39px;
 }
 /*공통*/
 .thumb-box  {position:relative;}
@@ -1188,11 +1180,9 @@ label.important:before {
 
 }
 .campaign-list .thumb-box .icon-area {
-
 	margin:10px 0 0 0;
 	padding:0;
 	box-sizing:border-box;
-
 	color:#666;
 	font-size:13px;
 	text-align:left;
@@ -1234,8 +1224,25 @@ label.important:before {
 
 /*캠페인 sub*/
 .campaign-sub .thumb-box {
+	position: relative;
 	background-color:#f7f7f7;
 	padding:20px 10px 30px 10px;
+}
+.campaign-sub .thumb-box:before  {
+	content:'';
+	position:absolute;
+	right:0;
+	top:-1px;
+	width:42px;
+	height:39px;
+	background-repeat:no-repeat;
+	background-size:42px 39px;
+}
+.campaign-sub .thumb-box.join:before {
+	background-image:url(../img/ico/ico_flag1.png);
+}
+.campaign-sub .thumb-box.achieve:before {
+	background-image:url(../img/ico/ico_flag2.png);
 }
 .campaign-sub .thumb-box .campaign-mark {
 	top:20px;
@@ -1253,9 +1260,9 @@ label.important:before {
 .campaign-sub .thumb-box .right-wrap .title button {margin-left:10px;}
 .campaign-sub .thumb-box .right-wrap .text {
 	margin-top:10px;
+	padding-bottom:15px;
 	font-size: 14px;
 }
-.campaign-sub .thumb-box .right-wrap .btn-wrap {margin-top:15px;}
 
 .campaign-sub .count-area {
 
@@ -1347,9 +1354,52 @@ label.important:before {
 
 .title-area.fixed{
 	position: fixed;
-    left: 0;
-    right: 0;
-    top: 56px;
-    padding: 0 10px;
-    z-index: 20;
+	left: 0;
+	right: 0;
+	top: 56px;
+	padding: 0 10px;
+	z-index: 20;
 }
+.campaign-sub .join-wrap {
+	display: none;
+	padding-top:10px;
+	border-top:1px solid #ddd;
+}
+.campaign-sub .join-wrap .f-left {
+	color:#60b015;
+	line-height: 24px;
+}
+.campaign-sub .join-wrap .f-right button {width:45px;}
+.campaign-sub .join-wrap .f-right span {
+	padding-right:5px;
+	line-height: 24px;
+	color:#333;
+}
+
+.campaign-sub .join-wrap .bar-box {
+	margin-top:5px;
+	position:relative;
+	display:inline-block;
+	width:100%;
+}
+.campaign-sub .join-wrap .bar-box:before {
+	content:'';
+	display:block;
+	position:absolute;
+	top:0;left:0;
+	width:100%;
+	height:10px;
+	border:1px solid #ddd;
+	background-color: #fff;
+	box-sizing:border-box;
+}
+.campaign-sub .join-wrap .bar-box .bar {
+	position:relative;
+	z-index:1;
+	display:block;
+	height:10px;
+	background-color:#60b015;
+}
+/*.campaign-sub .join-wrap .bar-box.ty02 .bar {
+	background-color:#51d4d3;
+}*/

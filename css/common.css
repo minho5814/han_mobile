@@ -580,6 +580,15 @@ html.no-scroll {
 .btn-h30.btn-text-line1 {line-height:30px;}
 .btn-h30.type2 {padding:0 10px;}
 
+/* height 24 */
+.btn-h24 {
+	height:24px;
+	font-size:12px;
+	line-height:24px;
+}
+
+
+
 /* green */
 .btn-text-green1 {
 	background-color:#60b015;
