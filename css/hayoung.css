@@ -1013,23 +1013,12 @@ label.important:before {
 	line-height: 13px;
 }
 .cook-list2 .text-area .material {
-	/*display: inline-block;
-	width: 100%;
-	height:34px;
-    margin-top:3px;
-	color:#666;
-	font-size:13px;
-	line-height:17px;*/
 	height: 34px;
 	padding-top:12px;
-    color: #666;
-    font-size: 13px;
-    line-height: 17px;
+	color: #666;
+	font-size: 13px;
+	line-height: 17px;
 
-	/*overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	box-sizing: border-box;*/
 }
 .cook-list2 .text-area .material em {color:#333;}
 .cook-list2 .text-area .btn-like {
@@ -1040,7 +1029,6 @@ label.important:before {
 }
 
 .recipe-wrap .tab-content.list {}
-
 .recipe-wrap .tab-content.list  .cook-list2 {
 	overflow:hidden;
 	margin-top:-5px;
@@ -1062,10 +1050,8 @@ label.important:before {
 	margin:0;
 }
 .recipe-wrap .tab-content.list  .cook-list2 .text-area {
-
 	padding:17px;
-    border:1px solid #eee;
-
+	border:1px solid #eee;
 }
 .recipe-wrap .tab-content.list  .cook-list2 .text-area .name {font-size:18px;}
 .recipe-wrap .tab-content.list  .cook-list2 .text-area .time {margin-top:0;
@@ -1082,6 +1068,288 @@ label.important:before {
 
 }
 .recipe-wrap .tab-content.list  .cook-list2 .text-area .btn-like {
-    right:16px; top:32px;
+	right:16px; top:32px;
+}
 
+/* --------------------------------------------------------------------------------------------
+	캠페인
+-------------------------------------------------------------------------------------------- */
+.campaign-wrap {}
+.campaign-wrap .cont-wrap {
+	padding-top:56px;
+}
+.campaign-wrap .tab-list1 {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 57px;
+	z-index: 100;
+}
+.campaign-wrap .cTitle01 {line-height: 50px;}
+.campaign-wrap .white-content3 {padding:0 0 20px;}
+.campaign-wrap .icon-area {
+	padding:12px 30px;
+}
+
+.campaign-wrap .campaign-slide .swiper-slide {
+	opacity: .6;
+}
+.campaign-wrap .campaign-slide .swiper-slide-active {
+	opacity: 1;
+}
+
+.campaign-wrap .white-content3.gray-border {
+	border-top:10px solid #eee
+}
+
+/* 캠페인 */
+.campaign-list li {
+	border-bottom:1px solid #eee;
+}
+.campaign-list li a {
+	display: block;
+	position: relative;
+}
+.campaign-list li a:before {
+	content:'';
+	position:absolute;
+	right:10px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(-45deg);
+	-ms-transform:translateY(-50%) rotate(-45deg);
+	transform:translateY(-50%) rotate(-45deg);
+	width:10px;
+	height:10px;
+	border-bottom:1px solid #bbb;
+	border-right:1px solid #bbb;
+}
+.campaign-list li:first-child {
+	border-top:1px solid #bbb;
+}
+.campaign-list .thumb-box {
+	position:relative;
+	width:100%;
+	padding:25px 40px 25px 0;
+	box-sizing:border-box;
+}
+.campaign-list .thumb-box.join:before {
+	content:'';
+	position:absolute;
+	right:0;
+	top:-1px;
+	width:42px;
+	height:39px;
+	background-image:url(../img/ico/ico_flag1.png);
+	background-repeat:no-repeat;
+	background-size:42px 39px;
+
+
+}
+.campaign-list .thumb-box.achieve:before {
+	content:'';
+	position:absolute;
+	right:0;
+	top:-1px;
+	width:42px;
+	height:39px;
+	background-image:url(../img/ico/ico_flag2.png);
+	background-repeat:no-repeat;
+	background-size:42px 39px;
+}
+/*공통*/
+.thumb-box  {position:relative;}
+.thumb-box .campaign-mark {
+	position:absolute;
+	left:10px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:80px;
+	height:80px;
+}
+.thumb-box .campaign-mark img {width:100%;height:100%;}
+
+.campaign-list .thumb-box .text-wrap {
+	padding-left:105px;
+
+}
+.campaign-list .thumb-box .text-area {
+
+}
+.campaign-list .thumb-box .text-area .title {
+	color:#333;
+	font-size:15px;
+	font-weight:bold;
+	line-height:24px;
+}
+.campaign-list .thumb-box .text-area .text-box {
+
+}
+.campaign-list .thumb-box .text-area .text-box .text {
+
+}
+.campaign-list .thumb-box .icon-area {
+
+	margin:10px 0 0 0;
+	padding:0;
+	box-sizing:border-box;
+
+	color:#666;
+	font-size:13px;
+	text-align:left;
+	line-height:19px;
+	white-space:nowrap;
+}
+.campaign-list .thumb-box .icon-area p {
+	position:relative;
+	padding-left:17px;
+}
+.campaign-list .thumb-box .icon-area p:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:10px;
+	height:12px;
+	background-image:url(../img/sprite_ico.png);
+	background-repeat:no-repeat;
+	background-size:40px 500px;
+}
+.campaign-list .thumb-box .icon-area .join:before {background-position:0 -355px;}
+.campaign-list .thumb-box .icon-area .date:before {background-position:0 -368px;}
+
+.btn-link-more3:before {
+	content:'';
+	position:absolute;
+	right:10px;top:50%;
+	-webkit-transform:translateY(-50%) rotate(-45deg);
+	-ms-transform:translateY(-50%) rotate(-45deg);
+	transform:translateY(-50%) rotate(-45deg);
+	width:7px;
+	height:7px;
+	border-bottom:1px solid #bbb;
+	border-right:1px solid #bbb;
+}
+
+/*캠페인 sub*/
+.campaign-sub .thumb-box {
+	background-color:#f7f7f7;
+	padding:20px 10px 30px 10px;
+}
+.campaign-sub .thumb-box .campaign-mark {
+	top:20px;
+	transform: inherit;
+}
+.campaign-sub .thumb-box .right-wrap {
+	padding-left:105px;
+}
+.campaign-sub .thumb-box .right-wrap .title {
+	display: inline-block;
+	color:#333;
+	font-size: 16px;
+	font-weight: bold;
+}
+.campaign-sub .thumb-box .right-wrap .title button {margin-left:10px;}
+.campaign-sub .thumb-box .right-wrap .text {
+	margin-top:10px;
+	font-size: 14px;
+}
+.campaign-sub .thumb-box .right-wrap .btn-wrap {margin-top:15px;}
+
+.campaign-sub .count-area {
+
+	border-bottom:1px solid #eee;
+}
+.campaign-sub .count-area ul {
+	overflow: hidden;
+}
+.campaign-sub .count-area li {
+	float:left;
+	width: 50%;
+	height:56px;
+	padding:0 20px;
+	color:#666;
+	font-size:13px;
+	box-sizing:border-box;
+	line-height: 56px;
+}
+.campaign-sub .count-area li span {
+	float: right;
+	font-size: 18px;
+	font-weight: bold;
+}
+.campaign-sub .count-area li:first-child {border-right:1px solid #eee;}
+
+.campaign-sub .title-area {
+	height:45px;
+	line-height: 45px;
+	background-color:#f7f7f7;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	color:#333;
+	font-size:15px;
+
+}
+.campaign-sub .title-area p {
+	display: inline-block;
+}
+.campaign-sub .title-area .name {float: left; padding-left:10px;}
+.campaign-sub .title-area .status {float: right; padding-right:10px;}
+.campaign-sub .list-area li {
+	display: table;
+	width:100%;
+	padding:7px 0;
+	border-bottom: 1px solid #eee;
+}
+.campaign-sub .list-area span {display: table-cell; vertical-align: middle;}
+.campaign-sub .list-area .img-area {
+	width: 48px;
+	height:48px;
+}
+.campaign-sub .list-area .img-area img {width:100%; height:100%; border-radius: 100%;}
+.campaign-sub .list-area .name {
+	padding-left:10px;
+	font-size: 15px;
+	color: #333;
+
+}
+.campaign-sub .list-area .name em {
+	display: block;
+	font-size: 14px;
+	color:#666;
+}
+.campaign-sub .list-area .percent {
+	position: relative;
+	width:85px;
+	height:48px;
+	padding-left:45px;
+	color:#333;
+	font-size:15px;
+	font-weight: bold;
+	line-height: 48px;
+	text-align: right;
+	box-sizing: border-box;
+}
+.campaign-sub .list-area .percent.attain:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:35px;
+	height:43px;
+	background-image:url(../img/ico/ico_attain.png);
+	background-repeat:no-repeat;
+	background-size:35px 43px;
+}
+
+.title-area.fixed{
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: 56px;
+    padding: 0 10px;
+    z-index: 20;
 }
