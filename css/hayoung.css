@@ -265,26 +265,6 @@
 /* --------------------------------------------------------------------------------------------
 	물품소식과 공지
 -------------------------------------------------------------------------------------------- */
-.tab-list1.two .item {width:50%}
-.tab-list1.two .item.new span em {position:relative;}
-.tab-list1.two .item.new span em:after {
-	content:'N';
-	display: inline-block;
-	/*position:absolute;
-	right:-12px; top:0;*/
-	width:17px;
-	height:17px;
-	margin:0 0 0 5px;
-	border:1px solid #f04114;
-	color:#f04114;
-	font-size:11px;
-	text-align: center;
-	font-weight: bold;
-	line-height: 15px;
-	border-radius: 2px;
-	vertical-align: text-top;
-	box-sizing: border-box;
-}
 .qna-area {display: none;}
 .qna-area.on {display: block;}
 .qna-area .tab-list5 {padding-top:10px; border-top:1px solid #bbb;}
@@ -1075,6 +1055,8 @@ label.important:before {
 	캠페인
 -------------------------------------------------------------------------------------------- */
 .campaign-wrap {}
+.campaign-wrap .gray-border .align-center {border-bottom:1px solid #bbb;}
+.campaign-wrap .gray-border .campaign-list li:first-child {border-top:0;}
 .campaign-wrap .cont-wrap {
 	padding-top:56px;
 }
@@ -1147,6 +1129,9 @@ label.important:before {
 .campaign-list .thumb-box.achieve:before {
 	background-image:url(../img/ico/ico_flag2.png);
 }
+.campaign-list .thumb-box.finish:before {
+	background-image:url(../img/ico/ico_flag3.png);
+}
 /*공통*/
 .thumb-box  {position:relative;}
 .thumb-box .campaign-mark {
@@ -1160,6 +1145,7 @@ label.important:before {
 }
 .thumb-box .campaign-mark img {width:100%;height:100%;}
 
+.campaign-list {padding:0 10px}
 .campaign-list .thumb-box .text-wrap {
 	padding-left:105px;
 
@@ -1243,6 +1229,9 @@ label.important:before {
 }
 .campaign-sub .thumb-box.achieve:before {
 	background-image:url(../img/ico/ico_flag2.png);
+}
+.campaign-sub .thumb-box.finish:before {
+	background-image:url(../img/ico/ico_flag3.png);
 }
 .campaign-sub .thumb-box .campaign-mark {
 	top:20px;
@@ -1361,7 +1350,6 @@ label.important:before {
 	z-index: 20;
 }
 .campaign-sub .join-wrap {
-	display: none;
 	padding-top:10px;
 	border-top:1px solid #ddd;
 }
@@ -1377,7 +1365,7 @@ label.important:before {
 }
 
 .campaign-sub .join-wrap .bar-box {
-	margin-top:5px;
+	margin:5px 0 0 0;
 	position:relative;
 	display:inline-block;
 	width:100%;
@@ -1403,3 +1391,22 @@ label.important:before {
 /*.campaign-sub .join-wrap .bar-box.ty02 .bar {
 	background-color:#51d4d3;
 }*/
+
+/*목표약정량 팝업*/
+.pop-modify .pop-cont {padding-top:20px !important;}
+.pop-modify .form-button-type1 {
+	position:relative;
+	width:100%;
+	padding-right:25px;
+	box-sizing: border-box;
+}
+.pop-modify .form-button-type1 input {width:100%;}
+.pop-modify .form-button-type1 span {
+	position:absolute;
+	right:0; top:0;
+	display: inline-block;
+	width:18px;
+	line-height: 42px;
+	color:#666;
+	font-size: 15px;
+}
