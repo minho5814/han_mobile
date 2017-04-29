@@ -580,6 +580,15 @@ html.no-scroll {
 .btn-h30.btn-text-line1 {line-height:30px;}
 .btn-h30.type2 {padding:0 10px;}
 
+/* height 24 */
+.btn-h24 {
+	height:24px;
+	font-size:12px;
+	line-height:24px;
+}
+
+
+
 /* green */
 .btn-text-green1 {
 	background-color:#60b015;
@@ -2085,9 +2094,6 @@ html {
 .transparent .header {
 	background-color:rgba(27,27,27,0.7);
 	border-bottom:0;
-}
-.transparent.transparent02 .header {
-	background-color:inherit;
 }
 .header.popup-type {border-bottom:1px solid #bbb;} /*이전견적내역 팝업헤더*/
 .header.type2 {border-bottom:1px solid #fff;} /*탭과 보더 겹치는경우*/
