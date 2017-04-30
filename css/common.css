@@ -2821,6 +2821,10 @@ html {
 	padding:15px 10px;
 	background-color:#fff;
 }
+.white-content6 {
+	padding:30px 10px;
+	background-color:#fff;
+}
 .gray-content1 {
 	padding:10px 10px 20px;
 	background-color:#f7f7f7;
@@ -2829,6 +2833,7 @@ html {
 	padding:25px 12px;
 	background-color:#f7f7f7;
 }
+.gray-content3 {padding:30px 10px;}
 /* --------------------------------------------------------------------------------------------
 	하단 고정 메뉴
 -------------------------------------------------------------------------------------------- */
