@@ -54,7 +54,7 @@
 						<div class="birth-area">
 							<div class="box first01">
 								<div class="form-button-type3">
-									<input type="text" id="Id" value="1980년 9월 29일" class="text btn-calendar">
+									<button type="button" class="btn-calendar two">1980년 9월 29일</button>
 								</div>
 							</div>
 							<div class="box">
@@ -95,7 +95,7 @@
 								<input type="text">
 							</div>
 							<div class="box at">
-								<input type="text" value="gmail.com" class="transTxt">
+								<input type="text" class="transTxt">
 							</div>
 							<div class="box">
 								<select class="styled1">
@@ -152,8 +152,22 @@
 	</div>
 </div>
 
+
+<!-- 달력 레이어 -->
+<div class="calendar-layer">
+	<div class="header">
+		<h1 class="head-title">생년월일 선택</h1>
+		<button type="button" class="btn-image btn-calendar-close">닫기</button>
+	</div>
+	<div class="datepicker1"></div><!-- 달력 영역 (공급일 선택일 경우 class="datepicker2") -->
+	<ul class="btn-list1">
+		<li class="item"><button type="button" class="btn-text btn-h55 btn-text-line1">취소</button></li>
+		<li class="item"><button type="button" class="btn-text btn-h55 btn-text-green1 btn-date-print">확인</button></li>
+	</ul>
+</div>
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
+<script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script><!-- 달력 -->
 <script type="text/javascript" src="../../js/common.js"></script>
 
 </body>

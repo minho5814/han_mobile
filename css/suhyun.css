@@ -902,11 +902,6 @@
 .form-button-type3 {
 	position:relative;
 }
-.btn-calendar {
-	padding-right:43px !important;
-	background:url(../img/btn/btn_calendar.png) no-repeat right center;
-	background-size:43px 24px;
-}
 /* CMS 임의해지 안내 팝업 */
 .pop-area .btn-area {
 	margin-top:20px;

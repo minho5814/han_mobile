@@ -195,6 +195,7 @@ html.no-scroll {
 /*보더 (white-content)*/
 .borderT {border-top:1px solid #ddd;}
 .borderT02 {border-top:1px solid #bbb;}
+.borderT03 {border-top:1px solid #eee;}
 
 /*폰트 굵기*/
 .bold {font-weight: bold !important;}
@@ -6243,6 +6244,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 .history-calendar {
+	margin:5px -10px 0;
 	padding:15px 8px;
 	background-color:#f7f7f7;
 }
