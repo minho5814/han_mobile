@@ -4834,6 +4834,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:80px;
 	margin-top:16px;
 }
+.no-result2 {
+	margin:0 10px;
+	padding:75px 0;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	font-size:15px;
+	color:#aaa;
+	text-align:center;
+	line-height:22px;
+	background-color:#fff;
+}
 
 /* --------------------------------------------------------------------------------------------
 	조합원가입

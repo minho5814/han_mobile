@@ -1918,3 +1918,53 @@ label.important:before {
 	font-weight: bold;
 	text-align: center;
 }
+
+/* --------------------------------------------------------------------------------------------
+	나의한살림 - 거래정보
+-------------------------------------------------------------------------------------------- */
+.store-wrap .cTitle05 {padding-top:0}
+.store-wrap .cTitle05 + .cTitle01 {margin-top:10px;}
+
+.store-wrap .accordion-list .list-cont { padding-bottom:0;}
+.store-wrap .accordion-list .left-area p {
+	font-size: 15px;
+	color:#333;
+	font-weight: bold;
+}
+.store-wrap .title {line-height: 22px;}
+.store-wrap .cont  {
+	position: relative;
+	text-align: right;
+}
+.store-wrap .row:first-child .cont {text-align: inherit;}
+.store-wrap .cont .btn-my-more {display: block;}
+.store-wrap .cont .btn-my-more .text {
+	font-size: 15px;
+	color:#333;
+	font-weight: bold;
+}
+
+.store-wrap .cont .toggle-area {
+	position: absolute;
+	right:0;
+	top:50%;
+	margin-top:-15px;
+}
+.store-wrap .cont .toggle-area .flag {
+	padding:0 12px;
+	height:30px;
+	font-size:14px;
+	line-height: 30px;
+	border:1px solid #ddd;
+	background-color:#f7f7f7;
+	color:#aaa;
+	font-weight: bold;
+}
+.store-wrap .cont .toggle-area .flag.on {
+	background-color: #fff;
+	border:1px solid #60b015;
+	color:#60b015;
+}
+.store-wrap .cont .btn-receipt {font-size: 15px;}
+
+.store-wrap .list-group:last-child  .list-cont .row:last-child {border-bottom:1px solid #eee;}
