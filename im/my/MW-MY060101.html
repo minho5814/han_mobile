@@ -25,16 +25,16 @@
 					<a href="MW-MY060102_popup.html" target="_blank" class="btn-text btn-h30 btn-text-line1">1:1상담 등록</a>
 				</div>
 			</div>
-			<div class="search-box mgT5">
-				<ul class="period-list">
-					<li><button type="button" class="btn-month on">1개월</buton></li>
-					<li><button type="button" class="btn-month">3개월</buton></li>
-					<li><button type="button" class="btn-month">6개월</buton></li>
+			<div class="history-calendar">
+				<ul class="month-btn-area">
+					<li class="item"><button type="button" class="btn-month on">1개월</button></li>
+					<li class="item"><button type="button" class="btn-month">2개월</button></li>
+					<li class="item"><button type="button" class="btn-month">3개월</button></li>
 				</ul>
-				<div class="calender-wrap">
-					<input type="text" id="Id" value="1980년 9월 29일" class="text btn-calendar">
-					<span class="label-text">~</span>
-					<input type="text" id="Id" value="1980년 9월 29일" class="text btn-calendar">
+				<div class="date-textbox">
+					<div class="box"><button type="button" class="btn-calendar">2017/4/1(월)</button></div>
+					<div class="hyphen">~</div>
+					<div class="box"><button type="button" class="btn-calendar">2017/4/31(일)</button></div>
 				</div>
 			</div>
 
@@ -142,14 +142,25 @@
 	</div>
 </div>
 
+
+<!-- 달력 레이어 -->
+<div class="calendar-layer">
+	<div class="header">
+		<h1 class="head-title">1:1상담 내역</h1>
+		<button type="button" class="btn-image btn-calendar-close">닫기</button>
+	</div>
+	<div class="datepicker1"></div><!-- 달력 영역 (공급일 선택일 경우 class="datepicker2") -->
+	<ul class="btn-list1">
+		<li class="item"><button type="button" class="btn-text btn-h55 btn-text-line1">취소</button></li>
+		<li class="item"><button type="button" class="btn-text btn-h55 btn-text-green1 btn-date-print">확인</button></li>
+	</ul>
+</div>
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script><!-- 달력 -->
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	$('.btn-month').click(function(){
-		$(this).addClass('on').parents().siblings('li').find('.btn-month').removeClass('on');
-	});
-
 	/* 1:1 상담 내용 아코디언 */
 	$('.question .title').click(function(){
 		$(this).parents('.item').toggleClass('on');

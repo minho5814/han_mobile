@@ -322,7 +322,7 @@ $(window).load(function(){
 			var month = $(this).parents('.calendar-layer').find('.ui-datepicker-month').html();
 			var date = $(this).parents('.calendar-layer').find('.ui-state-active').html();
 			// 일반
-			$('.btn-calendar.twoOn').html(yesr + '년 ' + month + '월 ' + date + '일').removeClass('on');
+			$('.btn-calendar.twoOn').html(yesr + '년 ' + month + '월 ' + date + '일').removeClass('twoOn');
 
 			// 요일 구하기
 			var idx = $(this).parents('.calendar-layer').find('a.ui-state-active').parent('td').index();
@@ -334,7 +334,7 @@ $(window).load(function(){
 			if(idx == 5) var idx = '금';
 			if(idx == 6) var idx = '토';
 			// 내역조회/공급일 선택
-			$('.btn-calendar.on').html(yesr + '/' + month + '/' + date + '(' + idx + ')').removeClass('twoOn');
+			$('.btn-calendar.on').html(yesr + '/' + month + '/' + date + '(' + idx + ')').removeClass('on');
 			$('.calendar-layer').hide();
 		}else{
 			$('.calendar-layer').hide();
@@ -344,10 +344,11 @@ $(window).load(function(){
 	$('.btn-calendar-close, .calendar-layer .btn-text-line1').click(function(){
 		scrollOk();
 		$('.calendar-layer').hide();
+		$('.btn-calendar').removeClass('on');
 	});
 
 	$('.btn-month').click(function(){
-		$('.btn-month').removeClass('on');
+		$('.btn-month').removeClass('on').removeClass('twoOn');
 		$(this).addClass('on');
 	});
 
