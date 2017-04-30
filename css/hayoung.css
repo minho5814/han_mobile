@@ -1211,6 +1211,9 @@ label.important:before {
 	border-right:1px solid #bbb;
 }
 
+.my-campaign li:first-child {
+	border-top:1px solid #eee;
+}
 .my-campaign li a:before {
     display: none;
 }

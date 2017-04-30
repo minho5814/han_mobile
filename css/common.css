@@ -1758,6 +1758,12 @@ select.styled1:disabled {
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
+.tab-list1 .item.line2 .text {
+	height: 34px;
+	padding:10px 0 11px;
+	line-height: 17px;
+	box-sizing: content-box;
+}
 .tab-list1 .item.on .text {
 	border-bottom:2px solid #60b015;
 	color:#60b015;
@@ -4970,6 +4976,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .top-gray-box2 .cont {border-top:1px solid #bbb;}
 .top-gray-box2 .thumb-list1 .box {margin:0 10px;}
 
+.select-btn {
+	position:relative;
+	overflow:hidden;
+	padding:6px 10px;
+	border-top:1px solid #bbb;
+	background-color:#f7f7f7;
+}
+
 .select-btn2 {
 	position:relative;
 	overflow:hidden;
@@ -5720,4 +5734,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align: center;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
+}
+.favorites-list {
+	border-top:1px solid #ddd;
+}
+.favorites-list .check-list-box {
+	padding:10px;
+	background-color:#f7f7f7;
 }
