@@ -21,14 +21,20 @@
 
 	<div class="container">
 		<ul class="tab-list1 bg-white">
-			<li class="item on"><a href="#none" class="text">관심물품(24)</a></li>
+			<li class="item"><a href="#none" class="text">관심물품(24)</a></li>
 			<li class="item"><a href="#none" class="text">관심콘텐츠(37)</a></li>
-			<li class="item line2"><a href="#none" class="text">내가 작성한<br>물품후기(12)</a></li>
+			<li class="item line2 on"><a href="#none" class="text">내가 작성한<br>물품후기(12)</a></li>
 		</ul>
-
+		<div class="select-btn">
+			<select class="styled1">
+				<option>전체</option>
+				<option>이 물품이 좋아요</option>
+				<option>개선이 필요해요</option>
+			</select>
+		</div>
 		<div class="favorites-cont on">
 			<div class="favorites-list">
-				<p class="no-result-box mgT20">관심 물품이 존재하지 않습니다</p>
+				<p class="no-result-box mgT20">관심 콘텐츠가 존재하지 않습니다</p>
 			</div>
 		</div>
 	</div>
@@ -36,5 +42,15 @@
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 체크박스 전체 선택 */
+	$('.all-check').click(function(){
+		var name = $(this).attr('name');
+		var dLen = $('input[name='+name+']').length;
+		$('input[name='+name+']').not('.all-check').prop('checked', true);
+	});
+});
+</script>
 </body>
 </html>

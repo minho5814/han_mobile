@@ -1966,5 +1966,41 @@ label.important:before {
 	color:#60b015;
 }
 .store-wrap .cont .btn-receipt {font-size: 15px;}
-
 .store-wrap .list-group:last-child  .list-cont .row:last-child {border-bottom:1px solid #eee;}
+
+/*거래내역조회*/
+.store-wrap .price-info-box.bold-line .box {
+	/*padding-right:95px;*/
+}
+.store-wrap .price-info-box .box dl dt {line-height: 30px;}
+.store-wrap .price-info-box .box dl dd .number {
+	padding-right:10px;
+	line-height: 30px;
+	color:#239bd2;
+	font-size: 17px;
+}
+.store-wrap .price-info-box .box dl dd .number em {
+	font-size: 15px;
+	color:#333;
+	font-weight: normal;
+}
+.store-wrap .price-info-box .box dl dd button {width: 80px; padding:0 10px;}
+
+/*외상결제 팝업*/
+.pop-credit .pop-cont .radio-list {
+	padding:14px 20px;
+	margin-left:0;
+	background-color: #f7f7f7;
+}
+.pop-credit .pop-cont .radio-list label:first-child {margin-left:0;}
+
+.change-wrap .cTitle02 {line-height: 50px; padding-left:10px;}
+.change-wrap .accordion-list .list-title p {font-weight: bold;}
+.change-wrap .accordion-list .list-group .list-cont {padding-bottom:0}
+.change-wrap .accordion-list .list-group .list-cont .row .title {max-width:100px; }
+.change-wrap .accordion-list .list-group .list-cont .row .cont {
+	padding-left:100px;
+	text-align: right;
+}
+.change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}
+.change-wrap + .btn-area {margin:30px 10px 0 10px;}

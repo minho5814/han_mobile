@@ -20,7 +20,7 @@
 	</div>
 
 	<div class="container">
-		<ul class="tab-list1">
+		<ul class="tab-list1 bg-white">
 			<li class="item on"><a href="#none" class="text">관심물품(24)</a></li>
 			<li class="item"><a href="#none" class="text">관심콘텐츠(37)</a></li>
 			<li class="item line2"><a href="#none" class="text">내가 작성한<br>물품후기(12)</a></li>
@@ -114,8 +114,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="favorites-cont"></div>
-		<div class="favorites-cont"></div>
 	</div>
 </div>
 
@@ -123,13 +121,6 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	/*  개선필요,물품개선,물품요청 탭 */
-	$('.tab-list1 li').click(function(){
-		var idx = $(this).index();
-		$(this).addClass('on').siblings('li').removeClass('on');
-		$('.upgrade-area').removeClass('on').eq(idx).addClass('on');
-	});
-
 	/* 체크박스 전체 선택 */
 	$('.all-check').click(function(){
 		var name = $(this).attr('name');
