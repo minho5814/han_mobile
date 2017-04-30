@@ -39,6 +39,8 @@
 	left:-20px; top:50%;
 	width:1px; height:14px;
 	background-color:#ddd;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
 	transform: translateY(-50%);
 }
 @media only screen and (max-width: 320px) {
@@ -519,6 +521,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_up.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -528,6 +532,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_down.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -673,6 +679,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_down.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -682,6 +690,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_up.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -711,6 +721,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_down.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -720,6 +732,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_up.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -914,6 +928,8 @@
 	content: '원';
 	position: absolute;
 	top:50%; right:10px;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
 	transform: translateY(-50%);
 	color:#666;
 	font-size:15px;
