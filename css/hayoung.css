@@ -1799,8 +1799,6 @@ label.important:before {
 	vertical-align: middle;
 }
 .accordion-list .list-group .list-cont .row .title {
-	/*position:absolute;
-	left:10px;*/
 	max-width:85px;
 	color:#333;
 }
@@ -1814,9 +1812,11 @@ label.important:before {
 
  }
 .accordion-list .list-group .list-cont .row .btn-box {
-
 	display: inline-block;
 	vertical-align: top;
+}
+.accordion-list .list-group .list-cont .row .btn-box.call {
+	display: block;
 }
 .accordion-list .list-group .list-cont .row .btn-box li {
 	padding:0;
@@ -1936,6 +1936,8 @@ label.important:before {
 .store-wrap .cTitle05 + .cTitle01 {margin-top:10px;}
 
 .store-wrap .accordion-list .list-cont { padding-bottom:0;}
+.store-wrap .accordion-list .list-cont.ty03 .title {font-weight: bold;}
+.store-wrap .accordion-list .list-cont.ty04 .title {line-height:18px;}
 .store-wrap .accordion-list .left-area p {
 	font-size: 15px;
 	color:#333;
@@ -1979,7 +1981,6 @@ label.important:before {
 .store-wrap .list-group:last-child  .list-cont .row:last-child {border-bottom:1px solid #eee;}
 
 /*거래내역조회*/
-
 .store-wrap .price-info-box .box dl dt {line-height: 30px;}
 .store-wrap .price-info-box .box dl dd .number {
 	padding-right:10px;
@@ -2005,6 +2006,29 @@ label.important:before {
 .change-wrap .cTitle02 {line-height: 50px; padding-left:10px;}
 .change-wrap .accordion-list .list-title p {font-weight: bold;}
 .change-wrap .accordion-list .list-group .list-cont {padding-bottom:0}
-.change-wrap .accordion-list .list-group .list-cont .row .title {max-width:100px;}
-.change-wrap .accordion-list .list-group .list-cont .row .cont {text-align: right;}
+.change-wrap .accordion-list .list-group .list-cont .row .title {width:100px;}
+.change-wrap .accordion-list .list-group .list-cont .row .cont {text-align: right; line-height: 22px;}
+.change-wrap .accordion-list .list-group .list-cont .row .cont .txt2 {
+	font-size: 13px;
+	color:#aaa;
+	line-height:16px;
+	display: block;
+}
 .change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}
+
+/*주문조회*/
+.flag {
+	display: inline-block;
+	width:68px;
+	height:25px;
+	line-height: 25px;
+	color:#fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 15px;
+}
+.flag.bg1 {
+	background-color:#5bb4ba;
+
+}
