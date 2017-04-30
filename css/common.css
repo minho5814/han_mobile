@@ -2171,6 +2171,7 @@ html {
 	box-sizing:border-box;
 }
 .bg-gray {background-color:#f7f7f7;}
+.bg-white {background-color:#fff;}
 /* --------------------------------------------------------------------------------------------
 	해더
 -------------------------------------------------------------------------------------------- */
@@ -3702,13 +3703,39 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 /* 08 */
 .thumb-list8 .item {
+	position: relative;
 	padding:10px;
 	border-bottom:1px solid #eee;
 }
+.thumb-list8 .item:last-child {}
 .thumb-list8 .box {
 	position: relative;
+	display: table;
+	width:100%;
 	height:70px;
-	padding-left:80px;
+	padding:0 30px 0 80px;
+	box-sizing: border-box;
+}
+.thumb-list8 .link {
+	display: block;
+}
+.thumb-list8 .btn-delete {
+	position: absolute;
+	top:0; right:0; bottom:0;
+	width:40px;
+	font-size: 0;
+	line-height: 0;
+}
+.thumb-list8 .btn-delete:before {
+	content: '';
+	position: absolute;
+	top:50%; right:0;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:20px; height:20px;
+	background:url(../img/sprite_btn.png) no-repeat 0 -680px;
+	background-size:50px 1300px;
 }
 .thumb-list8 .box .img-wrap {
 	position: absolute;
@@ -3717,6 +3744,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list8 .box .img-wrap img {
 	width:100%;
+}
+.thumb-list8 .box .text-wrap {
+	display: table-cell;
+	width:100%;
+	vertical-align: middle;
+}
+.thumb-list8 .box .text-wrap .text {
+	margin-top:6px;
+	font-size:15px;
+	color:#666;
+	line-height: 18px;
 }
 .thumb-list8 .box .theme {
 	display: inline-block;
@@ -3735,6 +3773,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .thumb-list8 .box.type02 .img-wrap {
 	width:125px;
+}
+.thumb-list8 .box.type02 .theme {
+	color:#239bd2;
+	border:1px solid #239bd2;
 }
 /* 매장 */
 .store-list {
@@ -5816,6 +5858,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .favorites-list .accordion-list {
 	margin: 0 -10px;
 }
+.favorites-list .accordion-list .list-group .list-cont {
+	padding-bottom:0;
+}
 
 /* 나의 한살림 - 결과 없을 경우 */
 .no-result-box {
@@ -5857,6 +5902,197 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	margin: 0 -10px;
 }
 
+.my-reivew {margin-top:20px;}
+.my-reivew .item {
+	margin-top:5px;
+	border:1px solid #eee;
+}
+.my-reivew .item:first-child {
+	margin-top:0;
+}
+.my-reivew .item .title-area {
+	overflow: hidden;
+	padding:0 10px;
+	border-bottom:1px solid #eee;
+}
+.my-reivew .item .title-area .title {
+	position: relative;
+	display: inline-block;
+	padding-left:28px;
+	color:#333;
+	font-size:15px;
+	font-weight: bold;
+	line-height: 45px;
+}
+.my-reivew .item .title-area .title:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 12px;
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/sprite_ico.png);
+	background-repeat: no-repeat;
+	background-size: 40px 500px;
+}
+.my-reivew .item .title-area .title.good:before {
+	background-position: 0 -381px;
+}
+.my-reivew .item .title-area .title.bad:before {
+	background-position: 0 -403px;
+}
+.my-reivew .item .title-area .date {
+	float: right;
+	color:#666;
+	font-size:13px;
+	line-height: 45px;
+}
+.my-reivew .item .cont {
+	position: relative;
+	overflow: hidden;
+	min-height: 125px;
+	padding:10px 15px 15px 120px;
+}
+.my-reivew .item .cont .img-wrap {
+	position: absolute;
+	top:0; left:0;
+	width:120px;
+	padding-top:22px;
+	text-align: center;
+}
+.my-reivew .item .cont .img-wrap .link {
+	display: block;
+}
+.my-reivew .item .cont .img-wrap img {
+	width:77px; height:77px;
+	vertical-align: top;
+}
+.my-reivew .item .cont .img-wrap .goods-name {
+	display: block;
+	margin-top:8px;
+	padding:0 10px;
+	font-size:13px;
+	color:#666;
+}
+.my-reivew .item .cont .text-wrap {
+	color:#666;
+	font-size:15px;
+	line-height: 22px;
+}
+.my-reivew .item .cont .btn-box {
+	margin-top:10px;
+}
+.my-reivew .item .cont .btn-box .btn-text {
+	margin-left:4px;
+}
+@media only screen and (max-width: 320px) {
+	.my-reivew .item .cont .btn-box .btn-text {
+		padding:0 15px;
+	}
+}
+.my-reivew .item .cont .btn-box .btn-text:first-child {
+	margin-left:0;
+}
+.qna-cont {
+	margin-top:20px;
+}
+.qna-list {
+	border-top:1px solid #eee;
+}
+.qna-list .item {
+	padding-bottom:20px;
+	border-bottom:1px solid #eee;
+}
+.qna-list .item .question {
+	position: relative;
+	padding-top:20px;
+}
+.qna-list .item .question .info-area span {
+	position: relative;
+	margin-left:5px;
+	padding-left:6px;
+	color:#aaa;
+	font-size:13px;
+}
+.qna-list .item .question .info-area span:before {
+	content: '';
+	position: absolute;
+	top:50%; left:0;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:1px; height:13px;
+	background-color:#eee;
+}
+.qna-list .item .question .info-area span:first-child {
+	margin-left:0;
+	padding-left:0;
+}
+.qna-list .item .question .info-area span:first-child:before {
+	display: none;
+}
+.qna-list .item .question .state {
+	position: absolute;
+	top:20px; right:0;
+	height:24px;
+	padding:0 12px;
+	font-size:12px;
+	line-height: 24px;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+.qna-list .item .question .state.state01 {
+	color:#60b015;
+	border:1px solid #60b015;
+}
+.qna-list .item .question .state.state02 {
+	color:#09babc;
+	border:1px solid #09babc;
+}
+.qna-list .item .question .title {
+	overflow: hidden;
+	display: block;
+	width:100%;
+	margin-top:10px;
+	color:#333;
+	font-size:15px;
+	font-weight:bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.qna-list .item.on .question .title {
+	white-space: normal;
+}
+.qna-list .item .detail {
+	display: none;
+	margin-top:10px;
+}
+.qna-list .item.on .detail {
+	display: block;
+}
+.qna-list .item .detail .text {
+	color:#666;
+	font-size:15px;
+	line-height: 22px;
+}
+.qna-list .item .detail .btn-box {
+	margin-top:10px;
+}
+.qna-list .item .detail .answer {
+	margin-top:15px;
+	padding:15px;
+	background-color:#f7f7f7;
+}
+.qna-list .item .detail .answer .date {
+	display: block;
+	margin-bottom:10px;
+	color:#aaa;
+	font-size:13px;
+}
+.qna-list .item .detail .answer .text {
+	color:#666;
+	line-height: 22px;
+}
 /* --------------------------------------------------------------------------------------------
 	달력 레이어
 -------------------------------------------------------------------------------------------- */
