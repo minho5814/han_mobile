@@ -195,6 +195,7 @@ html.no-scroll {
 /*보더 (white-content)*/
 .borderT {border-top:1px solid #ddd;}
 .borderT02 {border-top:1px solid #bbb;}
+.borderT03 {border-top:1px solid #eee;}
 
 /*폰트 굵기*/
 .bold {font-weight: bold !important;}

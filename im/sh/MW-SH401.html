@@ -188,36 +188,22 @@
 								</div>
 								</div>
 							</div>
-							<div class="white-content1">
-								<h3 class="cTitle01">보내는 분</h3>
-								<div class="board2">
-								<table>
-									<colgroup>
-										<col style="width:100%;">
-									</colgroup>
-									<thead>
-										<tr>
-											<th scope="col">홍길동</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="align-left">(12345) 서울 송파구 잠실동 123-456번지 ABC아파트 120동 1501호</td>
-										</tr>
-										<tr>
-											<td class="align-left">
-												<div class="call-box">
-													<span class="num">010-1234-5678</span>
-													<span class="num">02) 2678-5960</span>
-													<div class="btn-box floatR">
-														<button type="button" class="btn-text btn-h30 btn-text-line1">수정</button>
-													</div>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+						</div>
+					</div>
+					<div class="white-content1">
+						<h3 class="cTitle01">보내는 분</h3>
+						<div class="order-addr-list borderT03">
+							<div class="item">
+								<div class="row">
+									<span class="user">홍길동</span>
+									<p class="text">(12345) 서울 송파구 잠실동 123-456번지 ABC아파트 120동 1501호</p>
+								</div>
+								<div class="row">
+									<p class="text">
+										<span class="num">010-1234-5678</span>
+										<span class="num">02) 2678-5960</span>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -306,6 +292,32 @@
 								</div>
 								<div class="sub-cont">
 									<div class="order-list">
+										<div class="box">
+											<span class="ico-label label01">햇물품</span>
+											<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+											<div class="goods-cont">
+												<div class="inner">
+													<p class="name ellipsis-line">유정란(6알/국내산)</p>
+													<p class="count">수량 <span class="fColor02">2개</span></p>
+													<div class="price-wrap">
+														<p class="price"><span class="number">8,000</span>원</p>
+														<div class="num-select">
+															<div class="inp-box">
+																<input type="tel" value="1" maxlength="100">
+																<button type="button" class="btn-cancle">닫기</button>
+															</div>
+															<select class="styled1 num-sel">
+																<option>0</option>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option value="write">직접입력</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 										<div class="box">
 											<span class="ico-label label01">햇물품</span>
 											<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
@@ -457,42 +469,36 @@
 					<button type="button" class="btn-aco">닫기</button>
 				</div>
 				<div class="cont-area">
-					<div class="white-content1">
+					<div class="white-content1 top-gray-box2">
 						<h3 class="cTitle01">적립금</h3>
-						<div class="board1">
-							<table>
-								<colgroup>
-									<col style="width:120px;">
-									<col style="*">
-								</colgroup>
-								<tbody>
-									<tr>
-										<th scope="row">사용 가능 적립금</th>
-										<td class="align-right">1,000원</td>
-									</tr>
-									<tr>
-										<th scope="row">사용할 적립금</th>
-										<td>
-											<div class="row">
-												<label class="check-label"><input type="checkbox" class="styled1"> 모두사용</label>
-												<span class="label-text">(사용단위:1,000원)</span>
-											</div>
-											<div class="row">
-												<div class="reserve">
-													<input type="tel">
-												</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<ul class="box-cont gray mgT10">
+						<ul class="reserves-list">
+							<li>
+								<div class="row">
+									<span class="title">사용 가능 적립금</span>
+									<span class="cont-area">1,000원</span>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<span class="title">사용할 적립금</span>
+									<span class="cont-area">
+										<label class="check-label">
+											<input type="checkbox" class="styled1"> 모두사용
+											<span class="label-text">(사용단위:1,000원)</span>
+										</label>
+									</span>
+								</div>
+								<div class="reserve">
+									<input type="tel">
+								</div>
+							</li>
+						</ul>
+						<ul class="box-cont gray">
 							<li class="item">사용 가능 적립금 = 현 사용가능 적립금 + 이전주문 사용적립금</li>
 							<li class="item">공급포인트 적립은 회원생협별로 다를 수 있습니다.</li>
 						</ul>
 					</div>
-					<div class="white-content1">
+					<div class="white-content1 top-gray-box2">
 						<h3 class="cTitle01">쿠폰 할인</h3>
 						<div class="form-list1">
 							<div class="form-item">
@@ -511,12 +517,12 @@
 									<option>쿠폰명2 (-500원)</option>
 								</select>
 							</div>
-							<p class="discount">(총 <span>0</span>원 할인)</p>
+							<!--p class="discount">(총 <span>0</span>원 할인)</p-->
 						</div>
-						<div class="total-price">
-							<span class="total">최종 결제금액</span>
-							<span class="price"><span class="number">9,700</span>원</span>
-						</div>
+					</div>
+					<div class="total-price mgT10">
+						<span class="total">최종 결제금액</span>
+						<span class="price"><span class="number">9,700</span>원</span>
 					</div>
 				</div>
 			</div>

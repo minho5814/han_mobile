@@ -768,6 +768,7 @@
 	height: 90px;
 	padding-left:100px;
 	vertical-align: middle;
+	box-sizing: border-box;
 }
 .order-list .box .goods-cont .inner {
 	display: table-cell;
