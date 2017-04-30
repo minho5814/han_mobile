@@ -27,7 +27,7 @@
 				<span class="flag bg1 f-right mgT5">일반품</span>
 			</div>
 		</div>
-		<div class="white-content3 change-wrap mgT10">
+		<div class="white-content3 change-wrap pdT10">
 			<div class="accordion-list">
 				<div class="list-group on">
 					<div class="list-title">
@@ -70,7 +70,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="white-content3 change-wrap mgT10">
+		<div class="white-content3 change-wrap">
 			<div class="accordion-list">
 				<div class="list-group on">
 					<div class="list-title">
@@ -81,7 +81,7 @@
 							<button type="button" class="btn-aco">닫기</button>
 						</div>
 					</div>
-					<div class="list-cont">
+					<div class="list-cont pdB20">
 						<p class="bullet-text2">
 							<span class="bold">기후 및 산지 사정</span> 등으로 인해 주문한 물품이 <span class="bold">결품</span>
 							또는 <span class="bold">가격</span>이 <span class="bold">변경</span>될 수 있습니다.
@@ -124,26 +124,11 @@
 									<li class="item">합계금액(<strong>3</strong>)<span class="price"><span class="number">8,450</span>원</span></li>
 									<li class="item">기타(<strong>0</strong>)<span class="price"><span class="number">0</span>원</span></li>
 									<li class="item">출자금 자동증자금
-										<a href="#none" class="tip">
-											<span class="hide">도움말</span>
-											<div class="inner-box">
-												<div>
-													<p>비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등 조직 운영에 사용되며 물품구입시마다 의무자동출자되며 이는 탈퇴 시 환불됩니다.</p>
-													<p>* 출자금 등은 부가세 매입세액 및 연말정산 공제대상이 아닙니다.</p>
-												</div>
-											</div>
-										</a>
+										<button type="button" class="btn-popup btn-image btn-tooltip btn-capital-increase"><span class="hide">출자금 자동증자금</span></button>
 										<span class="price"><span class="number">1,000</span>원</span>
 									</li>
 									<li class="item">공급부담금
-										<a href="#none" class="tip">
-											<span class="hide">도움말</span>
-											<div class="inner-box">
-												<div>
-													<p>출자금을 제외한 일정금액(지역한살림별로 다름) 미만 주문시 부과됩니다.</p>
-												</div>
-											</div>
-										</a>
+										<button type="button" class="btn-popup btn-image btn-tooltip btn-supply-share"><span class="hide">공급부담금</span></button>
 										<span class="price"><span class="number">3,000</span>원</span>
 									</li>
 									<li class="item">적립금 사용(<strong>3</strong>)<span class="price"><span class="number">-1,000</span>원</span></li>
@@ -156,7 +141,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="white-content3 change-wrap mgT20">
+		<div class="white-content3 change-wrap">
 			<div class="accordion-list">
 				<div class="list-group on">
 					<div class="list-title">
@@ -263,28 +248,48 @@
 	</div>
 </div>
 
-<!-- 운송장 팝업 -->
+<!-- 출자금 자동증자금 팝업 -->
 <div class="block-ui"></div>
-<div class="layer-popup pop-waybill">
+<div class="layer-popup pop-capital-increase">
 	<div class="pop-head">
-		<h1 class="pop-title">운송장조회</h1>
+		<h1 class="pop-title">출자금 자동증자금</h1>
 		<button type="button" class="popup-close">닫기</button>
 	</div>
 	<div class="pop-content">
 		<div class="pop-area">
 			<div class="pop-cont">
-				<!-- <h3 class="cTitle01">결제방법 선택</h3> -->
-				<div class="radio-list">
-					<label><input type="radio" name="choice" class="styled1" checked>홍길동 [123456789152]</label>
-					<label><input type="radio" name="choice" class="styled1">홍길순 [123456789152]</label>
-					<label><input type="radio" name="choice" class="styled1">김길동 [123456789152]</label>
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등
+						조직 운영에 사용되며 물품구입시마다 의무자동출자되며 이는 탈퇴 시 환불됩니다.
+						* 출자금 등은 부가세 매입세액 및 연말정산 공제대상이 아닙니다.
+					</p>
 				</div>
 			</div>
 			<div class="btn-area">
-				<ul class="btn-list1">
-					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">취소</a></li>
-					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-green1">확인</a></li>
-				</ul>
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 공급부담금 팝업 -->
+<div class="layer-popup pop-supply-share">
+	<div class="pop-head">
+		<h1 class="pop-title">공급부담금</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						출자금을 제외한 일정금액(지역한살림별로 다름) 미만 주문시 부과됩니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
 			</div>
 		</div>
 	</div>
@@ -306,9 +311,16 @@ $(window).load(function(){
 	});
 
 	/* 팝업*/
-	/*운송장조회*/
-	$('.btn-waybill').click(function(){
-		$('.pop-waybill').fadeIn(200);
+	/*툴팁 팝업*/
+	/*출자금 자동증자금 팝업*/
+	$('.btn-capital-increase').click(function(){
+		$('.pop-capital-increase').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+	/*공급부담금*/
+	$('.btn-supply-share').click(function(){
+		$('.pop-supply-share').fadeIn(200);
 		$('.block-ui').fadeIn();
 	});
 
