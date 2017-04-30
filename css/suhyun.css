@@ -1226,6 +1226,7 @@
 	float:left;
 	position:relative;
 	width:50%;
+	height:162px;
 	padding:15px 0;
 	border-right:1px solid #ddd;
 	border-top:1px solid #ddd;
@@ -1419,4 +1420,70 @@
 .apply-history-list .history-item .price-history .number {
 	font-weight:bold;
 	color:#333;
+}
+
+/* 간편주문 팝업 */
+.bar-box01 {
+	height:1px;
+	margin:18px -10px 12px;
+	background-color:#eee;
+}
+.easy-area {}
+.easy-area .result-info dd {margin-left:77px;}
+.easy-area .notice-easy {
+	margin-top:18px;
+	font-size:13px;
+	color:#aaa;
+	line-height:20px;
+}
+.easy-area .easy-list {}
+.easy-area .easy-list .item-easy {
+	position:relative;
+	padding:15px 0;
+	border-bottom:1px solid #eee;
+}
+.easy-area .easy-list .item-easy:last-child {border-bottom:0;}
+.easy-area .easy-list .item-easy .easy-txt {
+	padding-bottom:8px;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.easy-area .easy-list .item-easy .price-easy {
+	position:absolute;
+	right:0; bottom:20px;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.easy-area .easy-list .item-easy .price-easy .number {
+	font-weight:bold;
+}
+
+.gun-payment {
+	margin:0 -10px;
+	border-bottom:2px solid #ccc;
+	background-color:#f7f7f7;
+}
+.gun-payment .gun-area {padding:12px 10px;}
+.gun-payment .gun-area .gun-list {}
+.gun-payment .gun-area .gun-list .item {
+	overflow:hidden;
+	margin-top:7px;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.gun-payment .gun-area .gun-list .item:first-child {margin-top:0;}
+.gun-payment .gun-area .gun-list .item.gun-item {
+	padding-top:12px;
+	border-top:1px solid #e7e7e7;
+}
+.gun-payment .gun-area .gun-list .item .price {
+	float:right;
+}
+.gun-payment .gun-area .gun-list .item .price .number {font-weight:bold;}
+.gun-payment .gun-area .gun-list .item .price .gun-number {
+	font-size:16px;
+	font-weight:bold;
 }
