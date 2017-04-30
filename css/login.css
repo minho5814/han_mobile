@@ -734,25 +734,25 @@
 .cart-wrap .section .cont-area {
 	display: none;
 }
-.cart-wrap .section .order-list {
+.order-list {
 	padding:0 10px;
 }
-.cart-wrap .section .order-list .box {
+.order-list .box {
 	position: relative;
 	width:100%;
 	padding:12px 0 12px;
 	border-top:1px solid #eee;
 	box-sizing: border-box;
 }
-.cart-wrap .section .order-list .box:first-child {
+.order-list .box:first-child {
 	border-top:0;
 }
-.cart-wrap .section .order-list .ico-label {
+.order-list .ico-label {
 	position:absolute;
 	left:0;top:15px;
 	z-index:1;
 }
-.cart-wrap .section .order-list .img-area {
+.order-list .img-area {
 	overflow:hidden;
 	position:absolute;
 	left:0;top:12px;
@@ -761,7 +761,7 @@
 	border:1px solid #eee;
 }
 
-.cart-wrap .section .order-list .box .goods-cont {
+.order-list .box .goods-cont {
 	position: relative;
 	display: table;
 	width:100%;
@@ -769,52 +769,52 @@
 	padding-left:100px;
 	vertical-align: middle;
 }
-.cart-wrap .section .order-list .box .goods-cont .inner {
+.order-list .box .goods-cont .inner {
 	display: table-cell;
 	width: 100%;
 	vertical-align: middle;
 }
-.cart-wrap .section .order-list .name {
+.order-list .name {
 	max-height:36px;
 	margin-top:3px;
 	color:#666;
 	font-size:15px;
 	line-height:18px;
 }
-.cart-wrap .section .order-list .count {
+.order-list .count {
 	margin-top:6px;
 }
-.cart-wrap .section .order-list .origin-price {
+.order-list .origin-price {
 	margin-top:6px;
 }
-.cart-wrap .section .order-list .price-wrap {
+.order-list .price-wrap {
 	margin-top:8px;
 }
-.cart-wrap .section .order-list .price-wrap .price {
+.order-list .price-wrap .price {
 	display: inline-block;
 	color:#333;
 	font-size:13px;
 }
-.cart-wrap .section .order-list .price-wrap .number {
+.order-list .price-wrap .number {
 	font-size:18px;
 	font-weight:bold;
 }
 @media only screen and (max-width: 320px) {
-	.cart-wrap .section .order-list .price-wrap .number {
+	.order-list .price-wrap .number {
 		font-size:16px;
 	}
 }
-.cart-wrap .section .order-list .price-wrap .num-select {
+.order-list .price-wrap .num-select {
 	float: right;
 	width:105px;
 	margin:0;
 }
 @media only screen and (max-width: 320px) {
-	.cart-wrap .section .order-list .price-wrap .num-select {
+	.order-list .price-wrap .num-select {
 		width:85px;
 	}
 }
-.cart-wrap .section .order-list .date {
+.order-list .date {
 	margin-top:5px;
 	padding:0 10px;
 	color:#aaa;
