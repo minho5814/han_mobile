@@ -5830,7 +5830,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	top:12px; left:0;
 	margin:0;
 }
-.thumb-list1 .box .link {
+.favorites-list .thumb-list1 .box .link {
 	min-height: 100px;
 	padding-left:100px;
 }
