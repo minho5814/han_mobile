@@ -2002,5 +2002,21 @@ label.important:before {
 	padding-left:100px;
 	text-align: right;
 }
+.change-wrap .accordion-list .list-group .list-cont .row .cont.have-btn {
+	padding-right:95px;
+}
+.change-wrap .accordion-list .list-group .list-cont .row .cont.have-btn + .btn-box,
+.change-wrap .accordion-list .list-group .list-cont .row .cont.have-btn2 + .btn-box {right:7px; bottom:10px;}
 .change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}
 .change-wrap + .btn-area {margin:30px 10px 0 10px;}
+
+.change-wrap .accordion-list .list-group .list-cont.ty02 .row .cont.have-btn {padding-right:85px;}
+.change-wrap .accordion-list .list-group .list-cont.ty02 .row .cont.have-btn2 {padding-right:160px;}
+@media only screen and (max-width: 320px) {
+	.change-wrap .accordion-list .list-group .list-cont.ty02 .row .cont.have-btn2 {
+		padding-right:140px;
+	}
+	.change-wrap .accordion-list .list-group .list-cont.ty02 .row .cont.have-btn {
+		padding-right:75px;
+	}
+}
