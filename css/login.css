@@ -548,18 +548,12 @@
 .order-cart-list .list-cont .calendar {
 	position: relative;
 }
-.order-cart-list .list-cont .calendar:before {
-	content: '';
-	position: absolute;
-	top:9px; right:41px;
-	width:1px; height:22px;
-	background-color:#eee;
-}
-.order-cart-list .list-cont .calendar input {
+.order-cart-list .list-cont .calendar .btn-calendar {
 	height: 40px;
 	padding-right:50px;
 	line-height: 42px;
-	background-color:#f7f7f7;
+	background-color:transparent;
+	border:0;
 	text-align: right;
 	color:#60b015;
 }
