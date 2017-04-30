@@ -3701,6 +3701,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:35px; height:35px;
 }
 /* 08 */
+.thumb-list8 .item {
+	padding:10px;
+	border-bottom:1px solid #eee;
+}
 .thumb-list8 .box {
 	position: relative;
 	height:70px;
@@ -5786,7 +5790,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	top:12px; left:0;
 	margin:0;
 }
-.thumb-list1 .box .link {
+.favorites-list .thumb-list1 .box .link {
 	min-height: 100px;
 	padding-left:100px;
 }
