@@ -1993,3 +1993,14 @@ label.important:before {
 	background-color: #f7f7f7;
 }
 .pop-credit .pop-cont .radio-list label:first-child {margin-left:0;}
+
+.change-wrap .cTitle02 {line-height: 50px; padding-left:10px;}
+.change-wrap .accordion-list .list-title p {font-weight: bold;}
+.change-wrap .accordion-list .list-group .list-cont {padding-bottom:0}
+.change-wrap .accordion-list .list-group .list-cont .row .title {max-width:100px; }
+.change-wrap .accordion-list .list-group .list-cont .row .cont {
+	padding-left:100px;
+	text-align: right;
+}
+.change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}
+.change-wrap + .btn-area {margin:30px 10px 0 10px;}
