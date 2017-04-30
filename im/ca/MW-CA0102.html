@@ -26,7 +26,7 @@
 				</div>
 				<div class="right-wrap">
 					<p class="title">라면도! 기부도!<button type="button" target="_blank" class="btn-image btn-tooltip btn-popup btn-question"></button>
-					<p class="text ellipsis-line">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
+					<p class="text">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
 					<div class="btn-wrap">
 						<button type="button" class="btn-text btn-h42 btn-text-line2 btn-join">참여하기</button>
 					</div>
@@ -48,7 +48,7 @@
 				</div>
 				<div class="right-wrap">
 					<p class="title">라면도! 기부도!<button type="button" target="_blank" class="btn-image btn-tooltip btn-popup btn-question"></button>
-					<p class="text ellipsis-line">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
+					<p class="text">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
 					<div class="btn-wrap">
 						<button type="button" class="btn-text btn-h42 btn-text-line2 btn-join">참여하기</button>
 					</div>
@@ -83,12 +83,10 @@
 					<li class="item new"><span class="text">나의 지역 한살림</span></li>
 				</ul>
 				<div class="tab-content on">
-					<div class="title-fix">
-						<div class="title-area">
-							<p class="name">조합원명</p>
-							<p class="status">진행현황</p>
-						</div>
-					</div>
+					<div class="title-area">
+						<p class="name">조합원명</p>
+						<p class="status">진행현황</p>
+					</div>				
 					<div class="list-area">
 						<ul>
 							<li>
@@ -334,7 +332,7 @@ $(window).load(function(){
 	$(window).scroll(function(){
 		var winTop = $(window).scrollTop();
 		var headH = $('.header').outerHeight();
-		var tabTop = $('.title-fix').offset().top;
+		var tabTop = $('.tab-content.on').offset().top;
 
 		/* 스크롤시 탭 고정 */
 		if(tabTop <= winTop+headH){
