@@ -207,7 +207,30 @@
 	</div>
 </div>
 
-
+<!-- 출자금 자동증자금 팝업 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-capital-increase">
+	<div class="pop-head">
+		<h1 class="pop-title">출자금 자동증자금</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등
+						조직 운영에 사용되며 물품구입시마다 의무자동출자되며 이는 탈퇴 시 환불됩니다.
+						* 출자금 등은 부가세 매입세액 및 연말정산 공제대상이 아닙니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
@@ -222,6 +245,13 @@ $(window).load(function(){
 		}else{
 			$(this).parents('.list-group').addClass('on').find('.list-cont').slideDown();
 		}
+	});
+
+	/*툴팁 팝업*/
+	/*출자금 자동증자금 팝업*/
+	$('.btn-capital-increase').click(function(){
+		$('.pop-capital-increase').fadeIn(200);
+		$('.block-ui').fadeIn();
 	});
 
 
