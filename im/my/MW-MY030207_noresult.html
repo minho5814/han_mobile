@@ -22,16 +22,16 @@
 		<div class="white-content1">
 			<p class="cTitle05 align-left"><em class="bold">홍길동(652275)</em>님의 매장이용 내역입니다.</p>
 			<h3 class="cTitle01">조회기간</h3>
-			<div class="search-box mgT5">
-				<ul class="period-list">
-					<li><button type="button" class="btn-month on">1개월</buton></li>
-					<li><button type="button" class="btn-month">3개월</buton></li>
-					<li><button type="button" class="btn-month">6개월</buton></li>
+			<div class="history-calendar">
+				<ul class="month-btn-area">
+					<li class="item"><button type="button" class="btn-month on">1개월</button></li>
+					<li class="item"><button type="button" class="btn-month">2개월</button></li>
+					<li class="item"><button type="button" class="btn-month">3개월</button></li>
 				</ul>
-				<div class="calender-wrap">
-					<input type="text" id="Id" value="1980년 9월 29일" class="text btn-calendar">
-					<span class="label-text">~</span>
-					<input type="text" id="Id" value="1980년 9월 29일" class="text btn-calendar">
+				<div class="date-textbox">
+					<div class="box"><button type="button" class="btn-calendar">2017/4/1(월)</button></div>
+					<div class="hyphen">~</div>
+					<div class="box"><button type="button" class="btn-calendar">2017/4/31(일)</button></div>
 				</div>
 			</div>
 		</div>
@@ -65,85 +65,22 @@
 	</div>
 </div>
 
+
+<!-- 달력 레이어 -->
+<div class="calendar-layer">
+	<div class="header">
+		<h1 class="head-title">조회기간</h1>
+		<button type="button" class="btn-image btn-calendar-close">닫기</button>
+	</div>
+	<div class="datepicker1"></div><!-- 달력 영역 (공급일 선택일 경우 class="datepicker2") -->
+	<ul class="btn-list1">
+		<li class="item"><button type="button" class="btn-text btn-h55 btn-text-line1">취소</button></li>
+		<li class="item"><button type="button" class="btn-text btn-h55 btn-text-green1 btn-date-print">확인</button></li>
+	</ul>
+</div>
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
+<script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script><!-- 달력 -->
 <script type="text/javascript" src="../../js/common.js"></script>
-<script>
-$(window).load(function(){
-	/* 아코디언 기능 */
-	$('.list-group.on .list-cont').slideDown(200);
-	$('.list-group .btn-aco').click(function(){
-		if($(this).parents('.list-group').hasClass('on')){
-			$(this).parents('.list-group').removeClass('on').find('.list-cont').slideUp();
-		}else{
-			$(this).parents('.list-group').addClass('on').find('.list-cont').slideDown();
-		}
-	});
-
-	/* 팝업*/
-	/*바코드*/
-	$('.btn-view-barcode').click(function(){
-		$('.pop-view-barcode').fadeIn(200);
-		$('.block-ui').fadeIn();
-	});
-
-	/* 나의 한살림 (오늘의 알림) */
-	$('.notice-slide').each(function(){
-		var item = $(this).find('.notice-list .item');
-		var itemLen =  $(item).length;
-		if(itemLen >= 2){
-			$(this).append('<button type="button" class="btn-notice-tog">');
-			$(this).append('<button type="button" class="btn-next">다음');
-
-			var itemHei = $(item).outerHeight();
-			$(item).each(function(){
-				var idx = $(this).index();
-				$(this).css({'top':itemHei * idx});
-			});
-
-			count = 0;
-			var btnNext = $(this).find('.btn-next');
-			$(btnNext).click(function(){
-				$('.notice-slide .notice-list .item').animate({top:'-=' + itemHei}, 300);
-				setTimeout(function(){
-					var itemData = $('.notice-slide .notice-list .item:first-child').html();
-					$('.notice-slide .notice-list .item:first-child').remove();
-					var itemLen = $('.notice-slide .notice-list .item').length;
-					$('.notice-slide .notice-list').append('<p class="item" style="top:' + itemHei * itemLen + 'px;">' + itemData);
-				}, 300);
-
-				count ++;
-				if(count >= itemLen){
-					count = 0;
-					$('.notice-slide .count-area .now').html('1');
-				}else{
-					$('.notice-slide .count-area .now').html(count + 1);
-				}
-			});
-
-			var sSpeed = 4000;// 슬라이드 속도
-			noticeTimer = setInterval(function(){
-				$(btnNext).click();
-			}, sSpeed);
-
-			var btnTog = $(this).find('.btn-notice-tog');
-			$(btnTog).click(function(){
-				if($(this).hasClass('on')){
-					noticeTimer = setInterval(function(){
-						$(btnNext).click();
-					}, sSpeed);
-					$('.notice-slide .notice-list').animate({'height':itemHei}, 200);
-					$(this).removeClass('on');
-				}else{
-					clearInterval(noticeTimer);
-					$('.notice-slide .notice-list').animate({'height':itemLen * itemHei}, 200);
-					$(this).addClass('on');
-				}
-			});
-		}
-	});
-
-});
-</script>
 </body>
 </html>
