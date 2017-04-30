@@ -5566,7 +5566,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:40px;
 }
 .postscript-box .info-area .name {float:left;}
-.postscript-box .info-area .date {float:right;}
+.postscript-box .info-area .date {float:right;margin-bottom:0;}
 .postscript-list {
 	margin-top:20px;
 	border-bottom:1px solid #ddd;
