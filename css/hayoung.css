@@ -1739,6 +1739,14 @@ label.important:before {
 	box-sizing: border-box;
 
 }
+.accordion-list .list-title .left-area p label {
+    color:#333;
+    font-weight: bold;
+}
+.accordion-list .list-title .left-area p label .num {
+    margin-left:6px;
+    color:#f04114;
+}
 .accordion-list  .list-title .right-area {
 	float: right;
 }
