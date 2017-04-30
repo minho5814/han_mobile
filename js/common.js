@@ -274,13 +274,8 @@ $(window).load(function(){
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
 			firstDay: 0,
 			showOtherMonths: true,
-			yearSuffix: '.',
-			onSelect: function() {
-				$(this).find('a').attr('href', '');
-			}
+			yearSuffix: '.'
 		});
-
-		$(this).find('a').removeClass('ui-state-active').attr('href', '');
 	});
 
 	/* 공급일 선택일 경우 */
@@ -292,14 +287,9 @@ $(window).load(function(){
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
 			firstDay: 0,
 			showOtherMonths: true,
-			yearSuffix: '.',
-			onSelect: function() {
-				$(this).find('a').attr('href', '');
-				dateSetting();
-			}
+			yearSuffix: '.'
 		});
 
-		$(this).find('a').removeClass('ui-state-active').attr('href', '');
 		/* 공급일 선택일 기본 설정 */
 		function dateSetting(){
 			setTimeout(function(){
@@ -349,7 +339,7 @@ $(window).load(function(){
 		}else{
 			$('.calendar-layer').hide();
 		}
-		$('.datepicker1 a').removeClass('ui-state-active');
+		//$('.datepicker1 a').removeClass('ui-state-active');
 	});
 	$('.btn-calendar-close, .calendar-layer .btn-text-line1').click(function(){
 		scrollOk();
