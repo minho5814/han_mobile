@@ -5670,3 +5670,54 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height: 42px;
 	text-align: center;
 }
+.history-info {
+	margin-top:20px;
+}
+.history-info .item {
+	overflow: hidden;
+	display: table;
+	width:100%;
+	padding:12px 0;
+	border-bottom:1px solid #eee;
+}
+.history-info .item:first-child {
+	border-top:1px solid #eee;
+}
+.history-info .item .title-box {
+	display: table-cell;
+	width:70%;
+	vertical-align:middle;
+}
+.history-info .item .title-box span {
+	display: block;
+}
+.history-info .item .title-box .title {
+	font-size:15px;
+	color:#333;
+}
+.history-info .item .title-box .date {
+	margin-top:4px;
+	color:#aaa;
+	font-size:13px;
+}
+.history-info .item .price {
+	display: table-cell;
+	width:30%;
+	font-size: 15px;
+	color:#666;
+	vertical-align: middle;
+	text-align: right;
+}
+.history-info .item .price span {
+	font-weight: bold;
+	color:#333;
+}
+/* 나의 한살림 - 결과 없을 경우 */
+.no-result-box {
+	font-size:15px;
+	color:#aaa;
+	line-height: 150px;
+	text-align: center;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
