@@ -116,7 +116,7 @@
 <!-- 달력 레이어 -->
 <div class="calendar-layer">
 	<div class="header">
-		<h1 class="head-title">출자금 내역</h1>
+		<h1 class="head-title">출자금내역</h1>
 		<button type="button" class="btn-image btn-calendar-close">닫기</button>
 	</div>
 	<div class="datepicker1"></div><!-- 달력 영역 (공급일 선택일 경우 class="datepicker2") -->
@@ -129,12 +129,5 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script><!-- 달력 -->
 <script type="text/javascript" src="../../js/common.js"></script>
-<script>
-$(window).load(function(){
-	$('.btn-month').click(function(){
-		$(this).addClass('on').parents().siblings('li').find('.btn-month').removeClass('on');
-	});
-});
-</script>
 </body>
 </html>
