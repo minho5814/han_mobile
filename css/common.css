@@ -224,7 +224,7 @@ html.no-scroll {
 	font-size:0;
 	line-height:0;
 }
-.img-area img {width:100%;}
+.img-area img {width:100%; vertical-align: top;}
 
 /* box 스타일 */
 .box-content1 {
@@ -1760,7 +1760,7 @@ select.styled1:disabled {
 }
 .tab-list1 .item.line2 .text {
 	height: 34px;
-	padding:10px 0 11px;
+	padding:9px 0 10px;
 	line-height: 17px;
 	box-sizing: content-box;
 }
@@ -3088,7 +3088,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:35px;
 	background-image:url(../img/ico/sprite_label01.png);
 	background-repeat:no-repeat;
-	background-size:39px 103px;
+	background-size:39px 150px;
 	font-size:0;
 	text-indent:-9999px;
 	vertical-align:top;
@@ -3104,6 +3104,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 동물복지 */
 .ico-label.label03 {
 	background-position:0 -67px;
+}
+/* 품질인증 */
+.ico-label.label04 {
+	background-position:0 -103px;
 }
 
 /* 01 */
@@ -3138,6 +3142,19 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:120px;
 	height:120px;
 	margin-top:12px;
+}
+.thumb-list1 .box .img-area.goods-stop {
+	padding-bottom:14px;
+}
+.thumb-list1 .box .img-area.goods-stop .stop {
+	position: absolute;
+	left:0; right:0; bottom:0;
+	font-size:12px;
+	color:#fff;
+	font-weight: bold;
+	line-height: 24px;
+	text-align: center;
+	background-color:rgba(102,102,102,0.6);
 }
 .thumb-list1 .box .text-area {padding-top:22px;}
 .thumb-list1 .box .text-area .name {
@@ -5736,9 +5753,32 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border-bottom:1px solid #eee;
 }
 .favorites-list {
+	padding:0 10px;
 	border-top:1px solid #ddd;
 }
-.favorites-list .check-list-box {
-	padding:10px;
-	background-color:#f7f7f7;
+.favorites-list .thumb-list1 .box {
+	padding-left:40px;
+}
+.favorites-list .thumb-list1 .box:last-child {
+	border-bottom:0;
+}
+.favorites-list .thumb-list1 .box .check-wrap {
+	position: absolute;
+	top:12px; left:0;
+	margin:0;
+}
+.thumb-list1 .box .link {
+	min-height: 100px;
+	padding-left:100px;
+}
+.favorites-list .thumb-list1 .box .img-area {
+	width:78px;
+	height:78px;
+	margin-top: 0;
+}
+.favorites-list .thumb-list1 .box .text-area {
+	margin-top:0;
+}
+.favorites-list .accordion-list {
+	margin: 0 -10px;
 }
