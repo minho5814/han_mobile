@@ -1783,30 +1783,40 @@ label.important:before {
 }
 .accordion-list .list-group .list-cont .row {
 	position:relative;
-	padding:15px 10px;
+	display: table;
+	width:100%;
+	padding:10px;
 	border-bottom:1px solid #eee;
 	font-size:15px;
+	box-sizing: border-box;
 }
 .accordion-list .list-group .list-cont .row:last-child {
 	border-bottom:0;
 }
 .accordion-list .list-group .list-cont .row .title,
 .accordion-list .list-group .list-cont .row .cont {
-	display: block;
-
+	display: table-cell;
+	vertical-align: middle;
 }
 .accordion-list .list-group .list-cont .row .title {
-	position:absolute;
-	left:10px;
+	/*position:absolute;
+	left:10px;*/
 	max-width:85px;
 	color:#333;
 }
 .accordion-list .list-group .list-cont .row .cont {
-	padding-left:85px;
+	height:30px;
 }
+.accordion-list .list-group .list-cont .row .cont .txt {
+	display: inline-block;
+	line-height: 30px;
+	padding-right:5px;
+
+ }
 .accordion-list .list-group .list-cont .row .btn-box {
-	position:absolute;
-	right:0;bottom:8px;
+
+	display: inline-block;
+	vertical-align: top;
 }
 .accordion-list .list-group .list-cont .row .btn-box li {
 	padding:0;
@@ -1969,9 +1979,7 @@ label.important:before {
 .store-wrap .list-group:last-child  .list-cont .row:last-child {border-bottom:1px solid #eee;}
 
 /*거래내역조회*/
-.store-wrap .price-info-box.bold-line .box {
-	/*padding-right:95px;*/
-}
+
 .store-wrap .price-info-box .box dl dt {line-height: 30px;}
 .store-wrap .price-info-box .box dl dd .number {
 	padding-right:10px;
@@ -1997,26 +2005,6 @@ label.important:before {
 .change-wrap .cTitle02 {line-height: 50px; padding-left:10px;}
 .change-wrap .accordion-list .list-title p {font-weight: bold;}
 .change-wrap .accordion-list .list-group .list-cont {padding-bottom:0}
-.change-wrap .accordion-list .list-group .list-cont .row .title {max-width:100px; }
-.change-wrap .accordion-list .list-group .list-cont .row .cont {
-	padding-left:100px;
-	text-align: right;
-}
-.change-wrap .accordion-list .list-group .list-cont .row .cont.have-btn {
-	padding-right:95px;
-}
-.change-wrap .accordion-list .list-group .list-cont .row .cont.have-btn + .btn-box,
-.change-wrap .accordion-list .list-group .list-cont .row .cont.have-btn2 + .btn-box {right:7px; bottom:10px;}
+.change-wrap .accordion-list .list-group .list-cont .row .title {max-width:100px;}
+.change-wrap .accordion-list .list-group .list-cont .row .cont {text-align: right;}
 .change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}
-.change-wrap + .btn-area {margin:30px 10px 0 10px;}
-
-.change-wrap .accordion-list .list-group .list-cont.ty02 .row .cont.have-btn {padding-right:85px;}
-.change-wrap .accordion-list .list-group .list-cont.ty02 .row .cont.have-btn2 {padding-right:160px;}
-@media only screen and (max-width: 320px) {
-	.change-wrap .accordion-list .list-group .list-cont.ty02 .row .cont.have-btn2 {
-		padding-right:140px;
-	}
-	.change-wrap .accordion-list .list-group .list-cont.ty02 .row .cont.have-btn {
-		padding-right:75px;
-	}
-}
