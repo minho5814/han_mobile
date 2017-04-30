@@ -182,6 +182,7 @@
 	float: left;
 	padding-left:10px;
 	color:#333;
+	font-size:14px;
 	line-height: 40px;
 }
 .date-area dl .calendar {
@@ -500,7 +501,6 @@
 	padding:12px 0;
 	font-size:17px;
 	color:#333;
-	font-weight: bold;
 	line-height: 25px;
 }
 .order-cart-list .list-title label input {
@@ -563,10 +563,12 @@
 	text-align: right;
 	color:#60b015;
 }
+.order-cart-list .list-group .list-cont .load-title {
+	padding:12px 10px 6px;
+}
 .order-cart-list .list-group .list-cont .load-goods {
 	background-color:#f7f7f7;
-	border-top:2px solid #ccc;
-	border-bottom:2px solid #ccc;
+	border-bottom:1px solid #eee;
 }
 
 .order-cart-list .list-cont .no-result {
@@ -580,23 +582,25 @@
 .order-cart-list .list-cont .result {
 	padding:0 10px;
 	background-color:#f7f7f7;
-	border-top:1px solid #eee;
 }
 .order-cart-list .list-cont .result .total {
 	overflow: hidden;
-	border-bottom:1px solid #eee;
+	padding-top:13px;
 }
 .order-cart-list .list-cont .result .total dt {
 	float:left;
-	color:#666;
-	font-size:13px;
-	line-height: 45px;
+	color:#f04114;
+	font-size:15px;
+	line-height: 33px;
+}
+.order-cart-list .list-cont .result .total dt em {
+	font-weight: bold;
 }
 .order-cart-list .list-cont .result .total dd {
 	float:right;
 	font-size:13px;
 	color:#f04114;
-	line-height: 45px;
+	line-height: 33px;
 }
 .order-cart-list .list-cont .result .total dd .number {
 	font-size:22px;
@@ -605,7 +609,7 @@
 }
 .order-cart-list .list-cont .result .btn-group {
 	overflow: hidden;
-	padding:10px 0 15px;
+	padding-bottom:20px;
 }
 .order-cart-list .list-cont .result .btn-group .fl {
 	float:left;
