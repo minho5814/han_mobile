@@ -626,17 +626,10 @@
 .cart-wrap {}
 .cart-wrap .order-day {
 	position: relative;
-	padding:0 10px 0 17px;
+	padding:0 10px 0 10px;
 	color:#333;
 	font-size:14px;
 	line-height:48px;
-}
-.cart-wrap .order-day:before {
-	content: '';
-	position: absolute;
-	top:22px; left:10px;
-	width:3px; height:3px;
-	background-color:#333;
 }
 .cart-wrap .order-day span {
 	color:#60b015;
@@ -746,7 +739,12 @@
 }
 .cart-wrap .section .order-list .box {
 	position: relative;
+	display: table;
+	width:100%;
+	height: 114px;
+	padding:12px 0 12px 100px;
 	border-top:1px solid #eee;
+	box-sizing: border-box;
 }
 .cart-wrap .section .order-list .box:first-child {
 	border-top:0;
@@ -759,19 +757,21 @@
 .cart-wrap .section .order-list .img-area {
 	overflow:hidden;
 	position:absolute;
-	left:0;top:10px;
-	width:120px;
-	height:120px;
+	left:0;top:12px;
+	width:90px;
+	height:90px;
+	border:1px solid #eee;
 }
 
 .cart-wrap .section .order-list .box .inner {
 	position: relative;
-	min-height: 140px;
-	padding-left: 130px;
+	display: table-cell;
+	width:100%;
+	vertical-align: middle;
 }
 .cart-wrap .section .order-list .name {
 	max-height:36px;
-	padding-top:22px;
+	margin-top:3px;
 	color:#666;
 	font-size:15px;
 	line-height:18px;
@@ -783,14 +783,12 @@
 	margin-top:6px;
 }
 .cart-wrap .section .order-list .price-wrap {
-	position: absolute;
-	bottom:8px; left:130px; right:0;
+	margin-top:8px;
 }
 .cart-wrap .section .order-list .price-wrap .price {
 	display: inline-block;
 	color:#333;
 	font-size:13px;
-	line-height:42px;
 }
 .cart-wrap .section .order-list .price-wrap .number {
 	font-size:18px;
@@ -822,11 +820,11 @@
 
 .cart-wrap .section .price-info {
 	padding-top:8px;
-	border-top:1px solid #eee;
+	border-top:10px solid #eee;
 }
 .cart-wrap .section .price-info li {
 	overflow: hidden;
-	padding:0 20px;
+	padding:0 10px;
 	font-size:14px;
 	color:#333;
 	line-height: 27px;
@@ -838,22 +836,22 @@
 .cart-wrap .section .price-info li .price {
 	float: right;
 }
-.cart-wrap .section .price-info li .total span {
+.cart-wrap .section .price-info .total span {
 	color:#f04114;
 	font-size:18px;
 	font-weight: bold;
 }
 .cart-wrap .section .total-price {
 	overflow: hidden;
-	margin:20px -10px 0;
+	margin-top:20px;
 	padding:0 10px;
 	line-height: 51px;
 	background-color:#f7f7f7;
 	border-top:1px solid #eee;
 }
 .cart-wrap .section .total-price .total {
-	color:#666;
-	font-size:13px;
+	color:#f04114;
+	font-size:17px;
 }
 .cart-wrap .section .discount {
 	margin-top:10px;
@@ -872,6 +870,85 @@
 	font-size:22px;
 	font-weight: bold;
 	vertical-align: top;
+}
+.reserves-list {
+	margin:0 -10px;
+}
+.reserves-list li {
+	padding:13px 10px;
+	border-top:1px solid #eee;
+}
+.reserves-list li .row {
+	position: relative;
+}
+.reserves-list li .row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.reserves-list li .title {
+	float:left;
+	color:#333;
+	font-size:13px;
+}
+.reserves-list li .cont-area {
+	float: right;
+	color:#666;
+	font-size:15px;
+}
+.reserves-list li .cont-area .check-label {
+	margin-top:-4px;
+}
+.reserves-list li .cont-area .check-label .label-text {
+	color:#aaa;
+	font-size:13px;
+}
+.reserve {
+	position: relative;
+	margin-top:6px;
+}
+.reserve:after {
+	content: '원';
+	position: absolute;
+	top:50%; right:10px;
+	transform: translateY(-50%);
+	color:#666;
+	font-size:15px;
+}
+.reserve input {
+	padding-right:30px;
+	text-align: right;
+}
+
+.order-addr-list {
+	margin:0 -10px;
+}
+.order-addr-list .item .row {
+	position: relative;
+	padding:14px 0 14px 65px;
+	border-bottom:1px solid #eee;
+}
+.order-addr-list .item .row .user {
+	position: absolute;
+	top:14px; left:0;
+	width:55px;
+	color:#333;
+	font-size: 15px;
+	text-align: center;
+	line-height: 22px;
+}
+.order-addr-list .item .row .text {
+	color:#666;
+	font-size:15px;
+	line-height: 22px;
+}
+.order-addr-list .item .row .text .num {
+	display: inline-block;
+	margin-left:16px;
+	vertical-align: top;
+}
+.order-addr-list .item .row .text .num:first-child {
+	margin-left:0;
 }
 
 .payment {

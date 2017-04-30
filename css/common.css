@@ -2072,21 +2072,6 @@ select.styled1:disabled {
 	color:#aaa;
 	font-size:13px;
 }
-.board1 td .reserve {
-	position: relative;
-}
-.board1 td .reserve:after {
-	content: '원';
-	position: absolute;
-	top:50%; right:10px;
-	transform: translateY(-50%);
-	color:#666;
-	font-size:15px;
-}
-.board1 td .reserve input {
-	padding-right:30px;
-	text-align: right;
-}
 
 /* 02 */
 .board2 {position:relative;}
@@ -2124,13 +2109,6 @@ select.styled1:disabled {
 	color:#666;
 	line-height:22px;
 }
-.board2 td .call-box {overflow: hidden;}
-.board2 td .call-box .num {
-	display: inline-block;
-	margin-left:10px;
-	padding:4px 0;
-}
-.board2 td .call-box .num:first-child {margin-left:0;}
 .board2 td .btn-box .btn-text {float: right;}
 
 /* 03 */
