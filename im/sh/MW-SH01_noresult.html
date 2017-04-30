@@ -33,8 +33,7 @@
 						<dl>
 							<dt class="title">공급일 선택</dt>
 							<dd class="calendar">
-								<input type="text" value="2017/02/21(화)" class="date-type">
-								<button type="button" class="btn-image btn-calendar2">달력</button>
+								<button type="button" class="btn-calendar">2017/4/1(월)</button>
 							</dd>
 						</dl>
 					</div>
@@ -72,7 +71,32 @@
 	</div>
 </div>
 
+
+<!-- 달력 레이어 -->
+<div class="calendar-layer">
+	<div class="header">
+		<h1 class="head-title">공급일 선택</h1>
+		<button type="button" class="btn-image btn-calendar-close">닫기</button>
+	</div>
+	<div class="datepicker2"></div><!-- 달력 영역 (공급일 선택일 경우 class="datepicker2") -->
+	<div class="wish-box">
+		<div class="guide-text">
+			<p class="gray">선택가능공급일</p>
+			<p class="blue">희망배송일</p>
+		</div>
+		<div class="wish-date">
+			<p class="text">희망 배송일 </p>
+			<p class="date">2017년 3월 27일 (목)</p>
+		</div>
+	</div>
+	<ul class="btn-list1">
+		<li class="item"><button type="button" class="btn-text btn-h55 btn-text-line1">취소</button></li>
+		<li class="item"><button type="button" class="btn-text btn-h55 btn-text-green1 btn-date-print">확인</button></li>
+	</ul>
+</div>
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script><!-- 달력 -->
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){

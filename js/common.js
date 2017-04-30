@@ -287,7 +287,10 @@ $(window).load(function(){
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
 			firstDay: 0,
 			showOtherMonths: true,
-			yearSuffix: '.'
+			yearSuffix: '.',
+			onSelect: function() {
+				dateSetting();
+			}
 		});
 
 		/* 공급일 선택일 기본 설정 */
