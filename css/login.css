@@ -823,7 +823,10 @@
 	line-height: 35px;
 	background-color:#f7f7f7;
 }
-
+.order-list .goods-cont .btn-wrap {
+	position: absolute;
+	right:0;bottom:0;
+}
 .cart-wrap .section .price-info {
 	padding-top:8px;
 	border-top:10px solid #eee;
