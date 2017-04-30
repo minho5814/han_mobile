@@ -5567,10 +5567,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:0 15px;
 	border:1px solid #eee;
 }
-.price-info-box .box {
-	padding:10px 5px 15px;
-	border-top:1px solid #eee;
-}
 .price-info-box .box:first-child {border-top:0;}
 .price-info-box .box .title {
 	color:#333;
@@ -5594,10 +5590,78 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#f04114;
 	font-weight:bold;
 }
-
+.price-info-box.bold-line {
+	border:4px solid #eee;
+}
+.price-info-box.bold-line .box {
+	padding:10px 5px;
+}
+.price-info-box .box {
+	padding:10px 5px 15px;
+	border-top:1px solid #eee;
+}
 .border-top-box {
 	border-top:10px solid #eee;
 	margin:25px -10px 0;
 	padding:25px 10px 0;
 	background-color:#fff;
+}
+
+.search-box {
+	margin:0 -10px;
+	padding:15px 10px;
+	background-color:#f7f7f7;
+}
+.search-box .period-list {
+	overflow:hidden;
+}
+.search-box .period-list li {
+	float:left;
+	width:33%;
+	padding:0 2px;
+	box-sizing: border-box;
+}
+.search-box .period-list li:first-child {
+	width:34%;
+	padding-left:0;
+}
+.search-box .period-list li:last-child {
+	padding-right:0;
+}
+.search-box .period-list li .btn-month {
+	display: inline-block;
+	width: 100%;
+	height: 42px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	background-color: #fff;
+	text-align: center;
+	vertical-align: top;
+	border: 1px solid #bbb;
+	color: #333;
+	font-size:15px;
+}
+.search-box .period-list li .btn-month.on {
+	border:1px solid #60b015;
+	color:#60b015;
+	font-weight: bold;
+}
+.search-box .calender-wrap {
+	position: relative;
+	margin-top:6px;
+}
+.search-box .calender-wrap:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.search-box .calender-wrap .btn-calendar {
+	float:left;
+	width:48%;
+}
+.search-box .calender-wrap .label-text {
+	float:left;
+	width:4%;
+	line-height: 42px;
+	text-align: center;
 }
