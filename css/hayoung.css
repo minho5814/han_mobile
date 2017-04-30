@@ -1790,9 +1790,9 @@ label.important:before {
 	font-size:15px;
 	box-sizing: border-box;
 }
-.accordion-list .list-group .list-cont .row:last-child {
+/*.accordion-list .list-group .list-cont .row:last-child {
 	border-bottom:0;
-}
+}*/
 .accordion-list .list-group .list-cont .row .title,
 .accordion-list .list-group .list-cont .row .cont {
 	display: table-cell;
@@ -1978,7 +1978,7 @@ label.important:before {
 	color:#60b015;
 }
 .store-wrap .cont .btn-receipt {font-size: 15px;}
-.store-wrap .list-group:last-child  .list-cont .row:last-child {border-bottom:1px solid #eee;}
+/*.store-wrap .list-group:last-child  .list-cont .row:last-child {border-bottom:1px solid #eee;}*/
 
 /*거래내역조회*/
 .store-wrap .price-info-box .box dl dt {line-height: 30px;}
@@ -2014,7 +2014,7 @@ label.important:before {
 	line-height:16px;
 	display: block;
 }
-.change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}
+/*.change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}*/
 
 /*주문조회*/
 .flag {
@@ -2053,3 +2053,7 @@ label.important:before {
 	margin-top:10px;
 	line-height: 18px;
 }
+
+.border-t {border-top:1px solid #eee;}
+.border-b {border-bottom:1px solid #eee;}
+.border-b0 {border-bottom:0 !important;}
