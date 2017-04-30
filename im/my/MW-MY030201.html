@@ -13,15 +13,29 @@
 <body>
 <div class="wrapper">
 	<div class="header">
-		<h1 class="head-title">매장이용내역조회</h1>
+		<h1 class="head-title">공급내역조회</h1>
 		<button type="button" class="btn-image btn-back">이전</button>
 		<a href="#" class="btn-image btn-search">통합검색</a>
 	</div>
 
+
 	<div class="container store-wrap">
-		<div class="white-content1">
-			<p class="cTitle05 align-left"><em class="bold">홍길동(652275)</em>님의 매장이용 내역입니다.</p>
-			<h3 class="cTitle01">조회기간</h3>
+		<div class="white-content2">
+			<p class="cTitle05 align-left"><em class="bold">홍길동(652275)</em>님의 공급내역입니다.</p>
+			<div class="price-info-box bold-line">
+				<div class="box">
+					<dl>
+						<dt>환불가능금액</dt>
+						<dd>
+							<span class="number">75,400<em>원</em></span>
+							<button type="button" class="btn-text btn-h30 btn-text-gray1">환불신청</button>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="white-content4">
+			<h3 class="cTitle01">공급내역</h3>
 			<div class="search-box mgT5">
 				<ul class="period-list">
 					<li><button type="button" class="btn-month on">1개월</buton></li>
@@ -35,12 +49,24 @@
 				</div>
 			</div>
 		</div>
-		<div class="white-content3 mgT10">
+		<div class="white-content2">
+			<div class="select-wrap">
+				<select class="styled1">
+					<option>전체</option>
+					<option>일반품</option>
+					<option>특별품</option>
+					<option>선물택배</option>
+					<option>김장채소</option>
+					<option>천연벽지</option>
+				</select>
+			</div>
+		</div>
+		<div class="white-content3 change-wrap">
 			<div class="accordion-list">
 				<div class="list-group on">
 					<div class="list-title">
 						<div class="left-area">
-							<p>유기농면침구커버세트(슈퍼싱글/하늘색) 외 2건</p>
+							<p><a href="#">유정란(10알/국내산)</a></p>
 						</div>
 						<div class="right-area">
 							<button type="button" class="btn-aco">닫기</button>
@@ -49,30 +75,26 @@
 					<div class="list-cont">
 						<ul>
 							<li class="row">
-								<span class="title">매장명<br>이용일시</span>
-								<div class="cont">
-									<a href="#" class="btn-my-more"><span class="text">대치매장</span></a>
-									2017-02-27 (월) 14:00:09
-									<div class="toggle-area">
-										<span class="btn-text flag on">단골</span>
-									</div>
+								<span class="title">공급/배송일</span>
+								<span class="cont">2017-03-02(목)</span>
+							</li>
+							<li class="row">
+								<span class="title">구분</span>
+								<span class="cont">일반품</span>
+							</li>
+							<li class="row">
+								<span class="title">공급합계금액</span>
+								<span class="cont"><em class="fColor03 bold">4,000</em>원 [<em class="bold">CMS</em>]</span>
+							</li>
+							<li class="row">
+								<span class="title">공급상태</span>
+								<span class="cont have-btn">정상</span>
+								<div class="btn-box">
+
+									<ul class="btn-list1">
+										<li class="item"><button type="button" class="btn-text btn-h30 btn-text-line1">운송장조회</button></li>
+									</ul>
 								</div>
-							</li>
-							<li class="row">
-								<span class="title">구매금액</span>
-								<span class="cont">40,000원</span>
-							</li>
-							<li class="row">
-								<span class="title">출자금</span>
-								<span class="cont">800원</span>
-							</li>
-							<li class="row">
-								<span class="title">미정산정리</span>
-								<span class="cont">0원</span>
-							</li>
-							<li class="row">
-								<span class="title">결제금액</span>
-								<span class="cont"><button type="button" class="btn-popup btn-receipt"><em class="fColor03 bold">15,000</em>원</button></span>
 							</li>
 						</ul>
 					</div>
@@ -80,7 +102,7 @@
 				<div class="list-group on">
 					<div class="list-title">
 						<div class="left-area">
-							<p>유정란(10알/국내산) 외 5건</p>
+							<p><a href="#">양송이스프(80g) 외 10건</a></p>
 						</div>
 						<div class="right-area">
 							<button type="button" class="btn-aco">닫기</button>
@@ -89,30 +111,20 @@
 					<div class="list-cont">
 						<ul>
 							<li class="row">
-								<span class="title">매장명<br>이용일시</span>
-								<div class="cont">
-									<a href="#" class="btn-my-more"><span class="text">잠실매장</span></a>
-									2017-02-27 (월) 14:00:09
-									<div class="toggle-area">
-										<span class="btn-text flag">단골</span>
-									</div>
-								</div>
+								<span class="title">공급/배송일</span>
+								<span class="cont">2017-03-02(목)</span>
 							</li>
 							<li class="row">
-								<span class="title">구매금액</span>
-								<span class="cont">40,000원</span>
+								<span class="title">구분</span>
+								<span class="cont">선물택배</span>
 							</li>
 							<li class="row">
-								<span class="title">출자금</span>
-								<span class="cont">800원</span>
+								<span class="title">공급합계금액</span>
+								<span class="cont"><em class="fColor03 bold">14,000</em>원 [<em class="bold">카드</em>]</span>
 							</li>
 							<li class="row">
-								<span class="title">미정산정리</span>
-								<span class="cont">0원</span>
-							</li>
-							<li class="row">
-								<span class="title">결제금액</span>
-								<span class="cont"><button type="button" class="btn-popup btn-receipt"><em class="fColor03 bold">15,000</em>원</button></span>
+								<span class="title">공급상태</span>
+								<span class="cont"><a href="MW-MY03020101.html">변동</a></span>
 							</li>
 						</ul>
 					</div>
@@ -120,7 +132,7 @@
 				<div class="list-group on">
 					<div class="list-title">
 						<div class="left-area">
-							<p>유기농면침구커버세트(슈퍼싱글/하늘색) 외 2건</p>
+							<p><a href="#">양송이스프(80g) 외 10건</a></p>
 						</div>
 						<div class="right-area">
 							<button type="button" class="btn-aco">닫기</button>
@@ -129,39 +141,29 @@
 					<div class="list-cont">
 						<ul>
 							<li class="row">
-								<span class="title">매장명<br>이용일시</span>
-								<div class="cont">
-									<a href="#" class="btn-my-more"><span class="text">대치매장</span></a>
-									2017-02-27 (월) 14:00:09
-									<div class="toggle-area">
-										<span class="btn-text flag">단골</span>
-									</div>
-								</div>
+								<span class="title">공급/배송일</span>
+								<span class="cont">2017-03-02(목)</span>
 							</li>
 							<li class="row">
-								<span class="title">구매금액</span>
-								<span class="cont">40,000원</span>
+								<span class="title">구분</span>
+								<span class="cont">김장채소</span>
 							</li>
 							<li class="row">
-								<span class="title">출자금</span>
-								<span class="cont">800원</span>
+								<span class="title">공급합계금액</span>
+								<span class="cont"><em class="fColor03 bold">14,000</em>원 [<em class="bold">카드</em>]</span>
 							</li>
 							<li class="row">
-								<span class="title">미정산정리</span>
-								<span class="cont">0원</span>
-							</li>
-							<li class="row">
-								<span class="title">결제금액</span>
-								<span class="cont"><button type="button" class="btn-popup btn-receipt"><em class="fColor03 bold">15,000</em>원</button></span>
+								<span class="title">공급상태</span>
+								<span class="cont">정상</span>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="white-content6">
+		<div class="white-content6 pdB0">
 			<div class="box-content1">
-				<h3 class="box-title">매장이용내역 안내</h3>
+				<h3 class="box-title">공급내역조회 안내</h3>
 				<ul class="box-cont">
 					<li class="item">안내문구 수급 예정.</li>
 				</ul>
@@ -170,10 +172,12 @@
 	</div>
 </div>
 
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
+
 	/* 아코디언 기능 */
 	$('.list-group.on .list-cont').slideDown(200);
 	$('.list-group .btn-aco').click(function(){
@@ -183,6 +187,7 @@ $(window).load(function(){
 			$(this).parents('.list-group').addClass('on').find('.list-cont').slideDown();
 		}
 	});
+	
 
 });
 </script>

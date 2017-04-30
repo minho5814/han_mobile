@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/hayoung.css">
+<link rel="stylesheet" href="../../css/suhyun.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">공급내역조회</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="#" class="btn-image btn-search">통합검색</a>
+	</div>
+
+
+	<div class="container store-wrap">
+		<div class="white-content2">
+			<p class="cTitle05 align-left"><em class="bold">홍길동(652275)</em>님의 공급내역입니다.</p>
+		</div>
+		<div class="white-content4">
+			<h3 class="cTitle01">조회기간</h3>
+			<div class="search-box mgT5">
+				<ul class="period-list">
+					<li><button type="button" class="btn-month on">1개월</buton></li>
+					<li><button type="button" class="btn-month">3개월</buton></li>
+					<li><button type="button" class="btn-month">6개월</buton></li>
+				</ul>
+				<div class="calender-wrap">
+					<input type="text" id="Id" value="1980년 9월 29일" class="text btn-calendar">
+					<span class="label-text">~</span>
+					<input type="text" id="Id" value="1980년 9월 29일" class="text btn-calendar">
+				</div>
+			</div>
+		</div>
+		<div class="white-content3 mgT20">
+			<p class="no-result2">공급내역이 존재하지 않습니다.</p>
+		</div>
+		<div class="white-content6 pdB0">
+			<div class="box-content1">
+				<h3 class="box-title">공급내역조회 안내</h3>
+				<ul class="box-cont">
+					<li class="item">안내문구 수급 예정.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+
+	/* 아코디언 기능 */
+	$('.list-group.on .list-cont').slideDown(200);
+	$('.list-group .btn-aco').click(function(){
+		if($(this).parents('.list-group').hasClass('on')){
+			$(this).parents('.list-group').removeClass('on').find('.list-cont').slideUp();
+		}else{
+			$(this).parents('.list-group').addClass('on').find('.list-cont').slideDown();
+		}
+	});
+
+
+});
+</script>
+</body>
+</html>
