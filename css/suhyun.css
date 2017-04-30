@@ -1314,6 +1314,8 @@
 	left:-160px; top:18px;
 	padding-top:5px;
 	z-index:10;
+	-webkit-transform:translateX(80px);
+	-ms-transform:translateX(80px);
 	transform:translateX(80px);
 }
 .tip .inner-box:before {
