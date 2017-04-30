@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/hayoung.css">
+<link rel="stylesheet" href="../../css/login.css">
+<link rel="stylesheet" href="../../css/suhyun.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">즐겨찾기/물품후기</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="#" class="btn-image btn-search">통합검색</a>
+	</div>
+
+	<div class="container">
+		<ul class="tab-list1">
+			<li class="item on"><span class="text">관심물품(24)</span></li>
+			<li class="item"><span class="text">관심콘텐츠(37)</span></li>
+			<li class="item line2"><span class="text">내가 작성한<br>물품후기(12)</span></li>
+		</ul>
+
+		<div class="favorites-cont on">
+			<div class="favorites-list">
+				<div class="thumb-wrap">
+					<div class="align-left bg-gray">
+						<button type="button" class="btn-text btn-h30 btn-text-line1">전체선택</button>
+						<button type="button" class="btn-text btn-h30 btn-text-line1">선택삭제</button>
+					</div>
+					<div class="thumb-list1">
+						<div class="box">
+							<a href="#" class="link">
+								<span class="ico-label label01">햇물품</span>
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<div class="text-area">
+									<p class="name ellipsis-line">백미/유(2kg)</p>
+									<p class="price"><span class="number">8,000</span>원</p>
+								</div>
+							</a>
+							<ul class="btn-list">
+								<li class="item">
+									<button type="button" class="btn-ico btn-like">관심물품</button>
+								</li>
+								<li class="item">
+									<button type="button" class="btn-ico btn-cart">장바구니</button>
+								</li>
+							</ul>
+						</div>
+						<div class="box">
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<div class="text-area">
+									<p class="name ellipsis-line">유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글) 유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글) 유기농면 목화솜 이불 속통(봄가을용/슈퍼싱글)</p>
+									<p class="price"><span class="number">8,000</span>원</p>
+								</div>
+							</a>
+							<ul class="btn-list">
+								<li class="item">
+									<button type="button" class="btn-ico btn-like">관심물품</button>
+								</li>
+								<li class="item">
+									<button type="button" class="btn-ico btn-cart">장바구니</button>
+								</li>
+							</ul>
+						</div>
+						<div class="box">
+							<a href="#" class="link">
+								<div class="img-area"><img src="../../img/temp/img_goods01.jpg" alt="물품 이미지"></div>
+								<div class="text-area">
+									<p class="name ellipsis-line">백미/유(2kg)</p>
+									<p class="price"><span class="number">8,000</span>원</p>
+								</div>
+							</a>
+							<ul class="btn-list">
+								<li class="item">
+									<button type="button" class="btn-ico btn-like">관심물품</button>
+								</li>
+								<li class="item">
+									<button type="button" class="btn-ico btn-cart">장바구니</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="align-left bg-gray">
+						<button type="button" class="btn-text btn-h30 btn-text-line1">전체선택</button>
+						<button type="button" class="btn-text btn-h30 btn-text-line1">선택삭제</button>
+					</div>
+					<div class="btn-area mgT10">
+						<button type="button" class="btn-text-ico btn-ico2"><span class="text">장바구니</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="favorites-cont"></div>
+		<div class="favorites-cont"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+
+
+
+	/*  개선필요,물품개선,물품요청 탭 */
+	$('.tab-list1 li').click(function(){
+		var idx = $(this).index();
+		$(this).addClass('on').siblings('li').removeClass('on');
+		$('.upgrade-area').removeClass('on').eq(idx).addClass('on');
+	});
+
+	/*아코디언*/
+	$(document).on('click', '.qna-list .item', function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+		}else{
+			$(this).addClass('on').siblings('li').removeClass('on');
+		}
+	});
+
+
+
+});
+</script>
+</body>
+</html>

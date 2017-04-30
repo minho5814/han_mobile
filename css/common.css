@@ -1787,6 +1787,12 @@ select.styled1:disabled {
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
+.tab-list1 .item.line2 .text {
+	height: 34px;
+	padding:10px 0 11px;
+	line-height: 17px;
+	box-sizing: content-box;
+}
 .tab-list1 .item.on .text {
 	border-bottom:2px solid #60b015;
 	color:#60b015;
@@ -5002,6 +5008,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .top-gray-box2 .cont {border-top:1px solid #bbb;}
 .top-gray-box2 .thumb-list1 .box {margin:0 10px;}
 
+.select-btn {
+	position:relative;
+	overflow:hidden;
+	padding:6px 10px;
+	border-top:1px solid #bbb;
+	background-color:#f7f7f7;
+}
+
 .select-btn2 {
 	position:relative;
 	overflow:hidden;
@@ -5701,4 +5715,62 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:4%;
 	line-height: 42px;
 	text-align: center;
+}
+.history-info {
+	margin-top:20px;
+}
+.history-info .item {
+	overflow: hidden;
+	display: table;
+	width:100%;
+	padding:12px 0;
+	border-bottom:1px solid #eee;
+}
+.history-info .item:first-child {
+	border-top:1px solid #eee;
+}
+.history-info .item .title-box {
+	display: table-cell;
+	width:70%;
+	vertical-align:middle;
+}
+.history-info .item .title-box span {
+	display: block;
+}
+.history-info .item .title-box .title {
+	font-size:15px;
+	color:#333;
+}
+.history-info .item .title-box .date {
+	margin-top:4px;
+	color:#aaa;
+	font-size:13px;
+}
+.history-info .item .price {
+	display: table-cell;
+	width:30%;
+	font-size: 15px;
+	color:#666;
+	vertical-align: middle;
+	text-align: right;
+}
+.history-info .item .price span {
+	font-weight: bold;
+	color:#333;
+}
+/* 나의 한살림 - 결과 없을 경우 */
+.no-result-box {
+	font-size:15px;
+	color:#aaa;
+	line-height: 150px;
+	text-align: center;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.favorites-list {
+	border-top:1px solid #ddd;
+}
+.favorites-list .check-list-box {
+	padding:10px;
+	background-color:#f7f7f7;
 }

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/hayoung.css">
+<link rel="stylesheet" href="../../css/suhyun.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">내가 참여한 캠페인</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<button type="button" class="btn-image btn-search">통합검색</button>
+	</div>
+
+	<div class="container">
+		<div class="select-btn">
+			<select class="styled1">
+				<option>전체</option>
+				<option>참여중</option>
+				<option>달성함</option>
+				<option>참여함</option>
+			</select>
+		</div>
+		<div class="campaign-list my-campaign mgT20">
+			<ul>
+				<li>
+					<a href="#">
+						<div class="thumb-box join"> <!--참여중-->
+							<div class="campaign-mark">
+								<img src="../../img/ico/campaign/icon_campaign02.png" alt="">
+							</div>
+							<div class="text-wrap">
+								<div class="text-area">
+									<p class="title">라면도! 기부도!</p>
+									<div class="text-box"><p class="text ellipsis-line">구매한 라면만큼 기부도 동시에</p></div>
+								</div>
+								<div class="join-wrap">
+									<div class="title">
+										<span class="f-left fColor02">50%</span>
+									</div>
+									<div class="bar-box">
+										<p class="bar" style="width:50%;"></p>
+									</div>
+								</div>
+								<div class="icon-area">
+									<p class="join">123,453 명 참여</p>
+									<p class="date">2017-01-01 ~ 2017-12-31 <span class="day">(<span class="fColor03">20</span>일 남음)</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="thumb-box finish">
+							<div class="campaign-mark">
+								<img src="../../img/ico/campaign/icon_campaign01.png" alt="매운라면">
+							</div>
+							<div class="text-wrap">
+								<div class="text-area">
+									<p class="title">빈 병으로 이어달리기</p>
+									<div class="text-box"><p class="text ellipsis-line">생활 속 작은 실천 병 재사용!<br>다음 세대에게 이어줄 소중한 자원입니다.</p></div>
+								</div>
+								<div class="join-wrap">
+									<div class="title">
+										<span class="f-left fColor02">50%</span>
+									</div>
+									<div class="bar-box">
+										<p class="bar" style="width:50%;"></p>
+									</div>
+								</div>
+								<div class="icon-area">
+									<p class="join">123,453 명 참여</p>
+									<p class="date">2017-01-01 ~ 2017-12-31 <span class="day">(종료)</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="thumb-box achieve"> <!--달성함-->
+							<div class="campaign-mark">
+								<img src="../../img/ico/campaign/icon_campaign02.png" alt="">
+							</div>
+							<div class="text-wrap">
+								<div class="text-area">
+									<p class="title">라면도! 기부도!</p>
+									<div class="text-box"><p class="text ellipsis-line">구매한 라면만큼 기부도 동시에</p></div>
+								</div>
+								<div class="join-wrap">
+									<div class="title">
+										<span class="f-left fColor04">100%</span>
+									</div>
+									<div class="bar-box">
+										<p class="bar" style="width:100%;"></p>
+									</div>
+								</div>
+								<div class="icon-area">
+									<p class="join">123,453 명 참여</p>
+									<p class="date">2017-01-01 ~ 2017-12-31 <span class="day">(<span class="fColor03">3</span>일 남음)</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	$('.btn-month').click(function(){
+		$(this).addClass('on').parents().siblings('li').find('.btn-month').removeClass('on');
+	});
+});
+</script>
+</body>
+</html>
