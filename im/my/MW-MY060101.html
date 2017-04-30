@@ -22,7 +22,7 @@
 			<div class="title-wrap">
 				<h3 class="cTitle01">1:1상담 내역</h3>
 				<div class="btn-wrap">
-					<a href="#none" class="btn-text btn-h30 btn-text-line1">1:1상담 등록</a>
+					<a href="MW-MY060102_popup.html" target="_blank" class="btn-text btn-h30 btn-text-line1">1:1상담 등록</a>
 				</div>
 			</div>
 			<div class="search-box mgT5">
@@ -46,6 +46,7 @@
 								<span>2017-02-27(수)</span>
 								<span>물품상담</span>
 							</span>
+							<span class="state state01">상담중</span>
 							<span class="title">곡물세안제 이제 구입 못하나요?</span>
 						</div>
 						<div class="detail">
@@ -56,13 +57,87 @@
 								<a href="#" class="btn-text btn-h30 btn-text-line1">수정</a>
 								<a href="#" class="btn-text btn-h30 btn-text-line1">삭제</a>
 							</div>
+
+							<div class="answer">
+								<p class="text">아직 답변이 등록되지 않았습니다. 빠른 시일 내 답변 드리겠습니다.</p>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="question">
+							<span class="info-area">
+								<span>2017-02-27(수)</span>
+								<span>물품상담</span>
+							</span>
+							<span class="state state02">상담완료</span>
+							<span class="title">곡물세안제 이제 구입 못하나요? 곡물세안제 이제 구입 못하나요? 곡물세안제 이제 구입 못하나요?</span>
+						</div>
+						<div class="detail">
+							<p class="text">
+								늘 사용하던 제품이라 주문하려고 했는데 중단 됐다고 나오네요 구입 못하는건가요?<br>꼭 구매하고 싶습니다.
+							</p>
+
+							<div class="answer">
+								<span class="date">2017-02-27(수)</span>
+								<p class="text">
+									안녕하세요. 한살림주문상담실입니다.
+									한살림은 사전 주문 공급제로 처리기한이 마감되면 단순 주문수정 및 취소가 어렵습니다.
+									물품 이상이 아닌 조합원님의 사정에 의한 취소라면, 공급 수수료 3,000원과 출자금 1,000원이 부과되오니 이점 조합원님의 양해 부탁드립니다.
+									관련하여 조합원님께 다시 한번 전화상담 드리도록 하겠습니다. 감사합니다.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="question">
+							<span class="info-area">
+								<span>2017-02-27(수)</span>
+								<span>물품상담</span>
+							</span>
+							<span class="state state01">상담중</span>
+							<span class="title">곡물세안제 이제 구입 못하나요?</span>
+						</div>
+						<div class="detail">
+							<p class="text">
+								늘 사용하던 제품이라 주문하려고 했는데 중단 됐다고 나오네요 구입 못하는건가요?<br>꼭 구매하고 싶습니다.
+							</p>
+							<div class="btn-box">
+								<a href="#" class="btn-text btn-h30 btn-text-line1">수정</a>
+								<a href="#" class="btn-text btn-h30 btn-text-line1">삭제</a>
+							</div>
+
+							<div class="answer">
+								<p class="text">아직 답변이 등록되지 않았습니다. 빠른 시일 내 답변 드리겠습니다.</p>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="question">
+							<span class="info-area">
+								<span>2017-02-27(수)</span>
+								<span>물품상담</span>
+							</span>
+							<span class="state state02">상담완료</span>
+							<span class="title">곡물세안제 이제 구입 못하나요? 곡물세안제 이제 구입 못하나요? 곡물세안제 이제 구입 못하나요?</span>
+						</div>
+						<div class="detail">
+							<p class="text">
+								늘 사용하던 제품이라 주문하려고 했는데 중단 됐다고 나오네요 구입 못하는건가요?<br>꼭 구매하고 싶습니다.
+							</p>
+
+							<div class="answer">
+								<span class="date">2017-02-27(수)</span>
+								<p class="text">
+									안녕하세요. 한살림주문상담실입니다.
+									한살림은 사전 주문 공급제로 처리기한이 마감되면 단순 주문수정 및 취소가 어렵습니다.
+									물품 이상이 아닌 조합원님의 사정에 의한 취소라면, 공급 수수료 3,000원과 출자금 1,000원이 부과되오니 이점 조합원님의 양해 부탁드립니다.
+									관련하여 조합원님께 다시 한번 전화상담 드리도록 하겠습니다. 감사합니다.
+								</p>
+							</div>
 						</div>
 					</li>
 				</ul>
 			</div>
-
-
-
 		</div>
 	</div>
 </div>
@@ -73,6 +148,11 @@
 $(window).load(function(){
 	$('.btn-month').click(function(){
 		$(this).addClass('on').parents().siblings('li').find('.btn-month').removeClass('on');
+	});
+
+	/* 1:1 상담 내용 아코디언 */
+	$('.question .title').click(function(){
+		$(this).parents('.item').toggleClass('on');
 	});
 });
 </script>
