@@ -27,15 +27,7 @@
 					<div class="form-item">
 						<div class="swit-rese-box">
 							<label class="radio-label"><input type="radio" name="trans01" class="styled1">물품대금 전환 (외상금 있을 시 가능)
-								<a href="#" class="tip">
-									<span class="hide">도움말</span>
-									<div class="inner-box">
-										<div>
-											<p>신청하신 적립금만큼 조합원의 외상대금으로 자동 전환됩니다.</p>
-											<p>외상대금전환은 전일 마감 기준의 외상금이 있을시 신청 할 수 있으며, 외상대금 전환시 CMS로 외상대금을 납입하는 조합원은 당일 마감시 선수금이 발생할 수 있습니다.</p>
-										</div>
-									</div>
-								</a>
+								<button type="button" class="btn-popup btn-image btn-tooltip btn-article"><span class="hide">물품대금 전환(외상금 있을 시 가능)</span></button>
 							</label>
 							<span class="dead-balan">전일 마감 기준 외상 잔액 : <span class="price">0</span>원</span>
 							<span class="gift-addr"><a href="#" class="btn-text btn-h30 btn-text-line1">나의 거래내역</a></span>
@@ -44,15 +36,7 @@
 					<div class="form-item">
 						<div class="swit-rese-box">
 							<label class="radio-label"><input type="radio" name="trans01" class="styled1">출자금 전환
-								<a href="#" class="tip">
-									<span class="hide">도움말</span>
-									<div class="inner-box">
-										<div>
-											<p>신청하신 적립금만큼 조합원의 출자금으로 자동 전환됩니다.</p>
-											<p>전환된 출자금은 다음날 조합원의 출자금내역보기에서 확인할 수 있습니다.</p>
-										</div>
-									</div>
-								</a>
+								<button type="button" class="btn-popup btn-image btn-tooltip btn-lnvest"><span class="hide">출자금 전환</span></button>
 							</label>
 							<span class="gift-addr"><a href="#" class="btn-text btn-h30 btn-text-line1">나의 거래내역</a></span>
 						</div>
@@ -104,8 +88,75 @@
 		</div>
 	</div>
 </div>
+<!-- 물품대금 전환 팝업 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-article">
+	<div class="pop-head">
+		<h1 class="pop-title">물품대금 전환</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						신청하신 적립금만큼 조합원의 외상대금으로 자동 전환됩니다.<br>
+						외상대금전환은 전일 마감 기준의 외상금이 있을시 신청 할 수 있으며,
+						외상대금 전환시 CMS로 외상대금을 납입하는 조합원은 당일 마감시 선수금이 발생할 수 있습니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
 
+<!-- 출자금 전환 팝업 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-lnvest">
+	<div class="pop-head">
+		<h1 class="pop-title">출자금 전환</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						신청하신 적립금만큼 조합원의 출자금으로 자동 전환됩니다.<br>
+						전환된 출자금은 다음날 조합원의 출자금내역보기에서 확인할 수 있습니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+
+
+	/* 팝업*/
+	/*툴팁 팝업*/
+	/*출자금 자동증자금 팝업*/
+	$('.btn-article').click(function(){
+		$('.pop-article').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+	/*출자금 전환 팝업*/
+	$('.btn-lnvest').click(function(){
+		$('.pop-lnvest').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+});
+</script>
 </body>
 </html>
