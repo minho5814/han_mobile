@@ -1302,9 +1302,7 @@
 	border-bottom:2px solid #eee;
 }
 .accumu-inst .form-list3 .form-item:last-child {border-bottom:0;}
-.swit-rese-box {
-
-}
+.swit-rese-box {}
 .tip {
 	position:relative;
 	display:inline-block;
@@ -1323,15 +1321,6 @@
 	z-index:10;
 	transform:translateX(80px);
 }
-.tip .inner-box div {
-	padding:5px;
-	font-size:13px;
-	color:#666;
-	line-height:18px;
-	text-align:left;
-	background-color:#fff;
-	border:1px solid #60b015;
-}
 .tip .inner-box:before {
 	content: '';
 	position: absolute;
@@ -1341,10 +1330,19 @@
 	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
 	background-size:3px 2px;
 }
+.tip .inner-box div {
+	padding:5px;
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+	text-align:left;
+	background-color:#fff;
+	border:1px solid #60b015;
+}
 .tip .inner-box div p {margin-top:3px;}
 .tip .inner-box div p:first-child {margin-top:0;}
 .tip:hover .inner-box {
-	display: block;
+	display:block;
 }
 .swit-rese-box .dead-balan {
 	display:block;
@@ -1468,7 +1466,6 @@
 .gun-payment .gun-area {padding:12px 10px;}
 .gun-payment .gun-area .gun-list {}
 .gun-payment .gun-area .gun-list .item {
-	overflow:hidden;
 	margin-top:7px;
 	font-size:15px;
 	color:#333;
