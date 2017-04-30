@@ -2032,3 +2032,18 @@ label.important:before {
 	background-color:#5bb4ba;
 
 }
+
+.change-wrap .order-list {border-top:1px solid #eee; padding:0;}
+.change-wrap .order-list .box {padding:12px 10px;}
+.change-wrap .order-list .name {color:#333;}
+.change-wrap .order-list .img-area {border: 0; left:10px;}
+.change-wrap .order-list .img-area .ico-label {top:0}
+.change-wrap .bullet-text2 {
+	margin:15px 14px;
+	word-break: keep-all;
+}
+
+.change-wrap .gun-payment {margin:0; border-bottom:0;}
+/*.change-wrap .gun-payment .item.gun-item {border-bottom: 0;}*/
+.change-wrap .accordion-list .list-group:last-child .list-cont .gun-payment .item.gun-item {border-bottom: 0;}
+.change-wrap .accordion-list .list-group:first-child .list-cont li:last-child {border-bottom:0;}
