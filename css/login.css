@@ -802,7 +802,7 @@
 .order-list .price-wrap .num-select {
 	float: right;
 	width:105px;
-	margin:0;
+	margin-top:-9px;
 }
 @media only screen and (max-width: 320px) {
 	.order-list .price-wrap .num-select {
@@ -1090,7 +1090,14 @@
 .cart-wrap .section .goods-info .order-list{
 	padding:0;
 }
-
+.cart-wrap .section .goods-info .price-info {
+	border-top:1px solid #eee;
+}
+.cart-wrap .section .goods-info .price-info .total-price {
+	margin-top:5px;
+	line-height: 42px;
+	border-top:0;
+}
 
 
 .category {
