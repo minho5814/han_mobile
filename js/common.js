@@ -281,6 +281,9 @@ $(window).load(function(){
 		});
 
 		$(this).find('a').removeClass('ui-state-active').attr('href', '');
+
+		/* 공급일 선택일 경우 기본 설정 */
+		
 	});
 	$('.btn-calendar').click(function(){
 		scrollNo();
