@@ -785,6 +785,7 @@ html.no-scroll {
 	background-position:0 -337px;
 }
 
+
 /* 녹색 달력 버튼 */
 .btn-image.btn-calendar2 {
 	position:absolute;
@@ -1065,6 +1066,34 @@ html.no-scroll {
 	background-size:50px 1300px;
 }
 
+/* 나의한살림 서브메인 더보기 */
+.btn-my-more {
+	display: inline-block;
+	position:relative;
+	color:#333;
+	font-size:13px;
+
+}
+.btn-my-more .text {
+	display:inline-block;
+	position:relative;
+	padding-right: 25px;
+	color:#333;
+	font-size:13px;
+	line-height:23px;
+}
+
+.btn-my-more .text:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	width:19px;
+	height:19px;
+	margin-top:-10px;
+	background:url(../img/sprite_btn.png) no-repeat 0 -322px;
+	background-size:50px 1300px;
+	background-position:0 -1113px;
+}
 
 /*바코드 버튼*/
 .btn-barcode {
@@ -2839,7 +2868,10 @@ html {
 	padding:25px 12px;
 	background-color:#f7f7f7;
 }
-.gray-content3 {padding:30px 10px;}
+.gray-content3 {
+	padding:30px 10px;
+	background-color: #f7f7f7;
+}
 /* --------------------------------------------------------------------------------------------
 	하단 고정 메뉴
 -------------------------------------------------------------------------------------------- */
