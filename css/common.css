@@ -224,7 +224,7 @@ html.no-scroll {
 	font-size:0;
 	line-height:0;
 }
-.img-area img {width:100%;}
+.img-area img {width:100%; vertical-align: top;}
 
 /* box 스타일 */
 .box-content1 {
@@ -785,6 +785,7 @@ html.no-scroll {
 	background-position:0 -337px;
 }
 
+
 /* 녹색 달력 버튼 */
 .btn-image.btn-calendar2 {
 	position:absolute;
@@ -1065,6 +1066,34 @@ html.no-scroll {
 	background-size:50px 1300px;
 }
 
+/* 나의한살림 서브메인 더보기 */
+.btn-my-more {
+	display: inline-block;
+	position:relative;
+	color:#333;
+	font-size:13px;
+
+}
+.btn-my-more .text {
+	display:inline-block;
+	position:relative;
+	padding-right: 25px;
+	color:#333;
+	font-size:13px;
+	line-height:23px;
+}
+
+.btn-my-more .text:before {
+	content:'';
+	position:absolute;
+	right:0;top:50%;
+	width:19px;
+	height:19px;
+	margin-top:-10px;
+	background:url(../img/sprite_btn.png) no-repeat 0 -322px;
+	background-size:50px 1300px;
+	background-position:0 -1113px;
+}
 
 /*바코드 버튼*/
 .btn-barcode {
@@ -1758,6 +1787,12 @@ select.styled1:disabled {
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
+.tab-list1 .item.line2 .text {
+	height: 34px;
+	padding:9px 0 10px;
+	line-height: 17px;
+	box-sizing: content-box;
+}
 .tab-list1 .item.on .text {
 	border-bottom:2px solid #60b015;
 	color:#60b015;
@@ -2436,7 +2471,7 @@ html {
 	text-align:center;
 }
 /* 흰색 달력 버튼 */
-.gnb-head .calendar-area .btn-calendar {
+.gnb-head .calendar-area .btn-calendar3 {
 	position:absolute;
 	right:0;top:6px;
 	width:45px;
@@ -2833,7 +2868,10 @@ html {
 	padding:25px 12px;
 	background-color:#f7f7f7;
 }
-.gray-content3 {padding:30px 10px;}
+.gray-content3 {
+	padding:30px 10px;
+	background-color: #f7f7f7;
+}
 /* --------------------------------------------------------------------------------------------
 	하단 고정 메뉴
 -------------------------------------------------------------------------------------------- */
@@ -3082,7 +3120,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:35px;
 	background-image:url(../img/ico/sprite_label01.png);
 	background-repeat:no-repeat;
-	background-size:39px 103px;
+	background-size:39px 150px;
 	font-size:0;
 	text-indent:-9999px;
 	vertical-align:top;
@@ -3098,6 +3136,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 동물복지 */
 .ico-label.label03 {
 	background-position:0 -67px;
+}
+/* 품질인증 */
+.ico-label.label04 {
+	background-position:0 -103px;
 }
 
 /* 01 */
@@ -3132,6 +3174,19 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:120px;
 	height:120px;
 	margin-top:12px;
+}
+.thumb-list1 .box .img-area.goods-stop {
+	padding-bottom:14px;
+}
+.thumb-list1 .box .img-area.goods-stop .stop {
+	position: absolute;
+	left:0; right:0; bottom:0;
+	font-size:12px;
+	color:#fff;
+	font-weight: bold;
+	line-height: 24px;
+	text-align: center;
+	background-color:rgba(102,102,102,0.6);
 }
 .thumb-list1 .box .text-area {padding-top:22px;}
 .thumb-list1 .box .text-area .name {
@@ -3645,7 +3700,42 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	top:22px; right:0;
 	width:35px; height:35px;
 }
-
+/* 08 */
+.thumb-list8 .item {
+	padding:10px;
+	border-bottom:1px solid #eee;
+}
+.thumb-list8 .box {
+	position: relative;
+	height:70px;
+	padding-left:80px;
+}
+.thumb-list8 .box .img-wrap {
+	position: absolute;
+	top:0; left:0;
+	width:70px; height:70px;
+}
+.thumb-list8 .box .img-wrap img {
+	width:100%;
+}
+.thumb-list8 .box .theme {
+	display: inline-block;
+	height:24px;
+	padding:0 10px;
+	color:#60b015;
+	font-size:12px;
+	text-align: center;
+	line-height: 24px;
+	border:1px solid #60b015;
+	border-radius:15px;
+	box-sizing: border-box;
+}
+.thumb-list8 .box.type02 {
+	padding-left:135px;
+}
+.thumb-list8 .box.type02 .img-wrap {
+	width:125px;
+}
 /* 매장 */
 .store-list {
 	padding:15px 10px;
@@ -4748,6 +4838,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:80px;
 	margin-top:16px;
 }
+.no-result2 {
+	margin:0 10px;
+	padding:75px 0;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	font-size:15px;
+	color:#aaa;
+	text-align:center;
+	line-height:22px;
+	background-color:#fff;
+}
 
 /* --------------------------------------------------------------------------------------------
 	조합원가입
@@ -4969,6 +5070,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .top-gray-box2 .align-center .cTitle01 {line-height:50px;}
 .top-gray-box2 .cont {border-top:1px solid #bbb;}
 .top-gray-box2 .thumb-list1 .box {margin:0 10px;}
+
+.select-btn {
+	position:relative;
+	overflow:hidden;
+	padding:6px 10px;
+	border-top:1px solid #bbb;
+	background-color:#f7f7f7;
+}
 
 .select-btn2 {
 	position:relative;
@@ -5538,9 +5647,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:14px;
 	line-height:19px;
 }
-.text-box03 {}
-.text-box03 {}
-.text-box03 {}
 
 /* 공유하기 팝업 */
 .share-list {
@@ -5669,4 +5775,363 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:4%;
 	line-height: 42px;
 	text-align: center;
+}
+
+/* 나의 한살림 - 결과 없을 경우 */
+.no-result-box {
+	font-size:15px;
+	color:#aaa;
+	line-height: 150px;
+	text-align: center;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.favorites-list {
+	padding:0 10px;
+	border-top:1px solid #ddd;
+}
+.favorites-list .thumb-list1 .box {
+	padding-left:40px;
+}
+.favorites-list .thumb-list1 .box:last-child {
+	border-bottom:0;
+}
+.favorites-list .thumb-list1 .box .check-wrap {
+	position: absolute;
+	top:12px; left:0;
+	margin:0;
+}
+.favorites-list .thumb-list1 .box .link {
+	min-height: 100px;
+	padding-left:100px;
+}
+.favorites-list .thumb-list1 .box .img-area {
+	width:78px;
+	height:78px;
+	margin-top: 0;
+}
+.favorites-list .thumb-list1 .box .text-area {
+	margin-top:0;
+}
+.favorites-list .accordion-list {
+	margin: 0 -10px;
+}
+
+/* 나의 한살림 - 결과 없을 경우 */
+.no-result-box {
+	font-size:15px;
+	color:#aaa;
+	line-height: 150px;
+	text-align: center;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.favorites-list {
+	padding:0 10px;
+	border-top:1px solid #ddd;
+}
+.favorites-list .thumb-list1 .box {
+	padding-left:40px;
+}
+.favorites-list .thumb-list1 .box:last-child {
+	border-bottom:0;
+}
+.favorites-list .thumb-list1 .box .check-wrap {
+	position: absolute;
+	top:12px; left:0;
+	margin:0;
+}
+.favorites-list .thumb-list1 .box .link {
+	min-height: 100px;
+	padding-left:100px;
+}
+.favorites-list .thumb-list1 .box .img-area {
+	width:78px;
+	height:78px;
+	margin-top: 0;
+}
+.favorites-list .thumb-list1 .box .text-area {
+	margin-top:0;
+}
+.favorites-list .accordion-list {
+	margin: 0 -10px;
+}
+
+/* --------------------------------------------------------------------------------------------
+	달력 레이어
+-------------------------------------------------------------------------------------------- */
+.btn-calendar {
+	width:100%;
+	height:42px;
+	padding:0 10px;
+	box-sizing:border-box;
+	border-radius:3px;
+	border:1px solid #bbb;
+	background:#fff url(../img/btn/btn_calendar.png) no-repeat 100% 50%;
+	background-size:43px 24px;
+	color:#666;
+	font-size:15px;
+	text-align:left;
+	vertical-align:top;
+	line-height:42px;
+}
+/* 공통 레이어 영역 */
+.calendar-layer {
+	display:none;
+	position:fixed;
+	left:0;right:0;top:0;bottom:0;
+	z-index:200;
+	background-color:#fff;
+}
+.calendar-layer .ui-datepicker {
+	padding-top:57px;
+	border:1px solid #eee;
+}
+.calendar-layer .btn-calendar-close {
+	position:absolute;
+	right:0;top:0;
+	z-index:2;
+	width:40px;
+	height:55px;
+	background-color:#fff;
+	background-position:0 -150px;
+}
+
+.calendar-layer .ui-datepicker-header {
+	position:relative;
+	padding-top:10px;
+	background-color:#f7f7f7;
+}
+.calendar-layer .ui-datepicker-header .ui-datepicker-title {
+	color:#333;
+	font-size:22px;
+	text-align:center;
+	line-height:32px;
+}
+.calendar-layer .ui-datepicker-header .ui-datepicker-prev,
+.calendar-layer .ui-datepicker-header .ui-datepicker-next {
+	position:absolute;
+	top:10px;
+	width:30px;
+	height:32px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:10px 16px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.calendar-layer .ui-datepicker-header .ui-datepicker-prev {
+	left:10px;
+	background-image:url(../img/btn/btn_calendar_prev.png);
+}
+.calendar-layer .ui-datepicker-header .ui-datepicker-next {
+	right:10px;
+	background-image:url(../img/btn/btn_calendar_next.png);
+}
+.calendar-layer .ui-datepicker-calendar {}
+.calendar-layer .ui-datepicker-calendar th {
+	height:32px;
+	background-color:#f7f7f7;
+	color:#aaa;
+	font-size:12px;
+	font-weight:normal;
+	text-align:center;
+}
+.calendar-layer .ui-datepicker-calendar td {
+	height:37px;
+	color:#333;
+	font-size:15px;
+	text-align:center;
+}
+.calendar-layer .ui-datepicker-calendar tr:first-child td {padding-top:5px;}
+.calendar-layer .ui-datepicker-calendar td a {
+	display:inline-block;
+	position:relative;
+	width:30px;
+	height:30px;
+	color:#333;
+	border-radius:50%;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+}
+.calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:before {
+	content:'';
+	position:absolute;
+	left:50%;top:1px;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:4px;
+	height:4px;
+	border-radius:50%;
+	background-color:#60b015;
+}
+.calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:after {
+	content:'';
+	position:absolute;
+	left:-1px;right:0;bottom:-2px;
+	height:9px;
+	background:url(../img/ico/ico_text_today.png) no-repeat 50% 0;
+	background-size:16px 9px;
+}
+.calendar-layer .ui-datepicker-calendar td.ui-state-disabled span {color:#aaa;}
+.calendar-layer .ui-datepicker-calendar td a.ui-state-active {
+	background-color:#60b015;
+	color:#fff;
+}
+.calendar-layer .ui-datepicker-calendar td a.ui-gray {
+	background-color:#eee;
+	color:#000;
+}
+.calendar-layer .ui-datepicker-calendar td a.ui-blue {
+	background-color:#239bd2;
+	color:#fff;
+}
+.calendar-layer .wish-box {
+	padding:0 10px;
+}
+.calendar-layer .wish-box .guide-text {
+	overflow:hidden;
+}
+.calendar-layer .wish-box .guide-text p {
+	float:left;
+	position:relative;
+	margin-left:15px;
+	padding-left:12px;
+	color:#aaa;
+	font-size:14px;
+	line-height:30px;
+}
+.calendar-layer .wish-box .guide-text p:first-child {margin-left:0;}
+.calendar-layer .wish-box .guide-text p:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:8px;
+	height:8px;
+	border-radius:50%;
+}
+.calendar-layer .wish-box .guide-text .gray:before {background-color:#eee;}
+.calendar-layer .wish-box .guide-text .blue:before {background-color:#239bd2;}
+.calendar-layer .wish-box .wish-date {
+	margin-top:12px;
+	padding:12px 0;
+	border:1px solid #eee;
+	text-align:center;
+}
+.calendar-layer .wish-box .wish-date .text {
+	color:#aaa;
+	font-size:15px;
+}
+.calendar-layer .wish-box .wish-date .date {
+	color:#239bd2;
+	font-size:17px;
+	font-weight:bold;
+}
+
+
+/* 내역 조회 */
+.calendar-layer .btn-list1 {
+	padding:30px 10px;
+	background-color:#fff;
+}
+
+.history-calendar {
+	padding:15px 8px;
+	background-color:#f7f7f7;
+}
+.history-calendar .month-btn-area {
+	overflow:hidden;
+}
+.history-calendar .month-btn-area .item {
+	float:left;
+	width:33%;
+	padding:0 2px;
+	box-sizing:border-box;
+}
+.history-calendar .month-btn-area .item:first-child {width:34%;}
+.history-calendar .month-btn-area .btn-month {
+	display:block;
+	width:100%;
+	height:42px;
+	border-radius:3px;
+	border:1px solid #bbb;
+	background-color:#fff;
+	color:#333;
+	font-size:15px;
+	line-height:40px;
+}
+.history-calendar .month-btn-area .btn-month.on {
+	border-color:#60b015;
+	color:#60b015;
+	font-weight:bold;
+}
+.history-calendar .date-textbox {
+	overflow:hidden;
+	position:relative;
+	margin-top:6px;
+	padding:0 2px;
+}
+.history-calendar .date-textbox .box {
+	float:left;
+	width:50%;
+	padding:0 0 0 10px;
+	box-sizing:border-box;
+}
+.history-calendar .date-textbox .box:first-child {padding:0 10px 0 0;}
+.history-calendar .date-textbox .hyphen  {
+	position:absolute;
+	left:50%;top:0;
+	width:20px;
+	height:42px;
+	margin-left:-10px;
+	text-align:center;
+	line-height:42px;
+}
+.history-info {
+	margin-top:20px;
+}
+.history-info .item {
+	overflow: hidden;
+	display: table;
+	width:100%;
+	padding:12px 0;
+	border-bottom:1px solid #eee;
+}
+.history-info .item:first-child {
+	border-top:1px solid #eee;
+}
+.history-info .item .title-box {
+	display: table-cell;
+	width:70%;
+	vertical-align:middle;
+}
+.history-info .item .title-box span {
+	display: block;
+}
+.history-info .item .title-box .title {
+	font-size:15px;
+	color:#333;
+}
+.history-info .item .title-box .date {
+	margin-top:4px;
+	color:#aaa;
+	font-size:13px;
+}
+.history-info .item .price {
+	display: table-cell;
+	width:30%;
+	font-size: 15px;
+	color:#666;
+	vertical-align: middle;
+	text-align: right;
+}
+.history-info .item .price span {
+	font-weight: bold;
+	color:#333;
 }

@@ -26,7 +26,7 @@
 				</div>
 				<div class="right-wrap">
 					<p class="title">라면도! 기부도!<button type="button" target="_blank" class="btn-image btn-tooltip btn-popup btn-question"></button>
-					<p class="text ellipsis-line">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
+					<p class="text">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
 					<div class="btn-wrap">
 						<button type="button" class="btn-text btn-h42 btn-text-line2 btn-join">참여하기</button>
 					</div>
@@ -48,20 +48,20 @@
 				</div>
 				<div class="right-wrap">
 					<p class="title">라면도! 기부도!<button type="button" target="_blank" class="btn-image btn-tooltip btn-popup btn-question"></button>
-					<p class="text ellipsis-line">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
+					<p class="text">구매한 라면만큼 기부도 동시에, 감자라면 60개를 구매하고 기부에 동참하세요.</p>
 					<div class="btn-wrap">
 						<button type="button" class="btn-text btn-h42 btn-text-line2 btn-join">참여하기</button>
 					</div>
 					<div class="join-wrap">
 						<div class="float-area">
-							<span class="f-left fColor02">달성율 50%</span>
+							<span class="f-left fColor04">달성율 100%</span>
 							<div class="f-right">
 								<span>목표 약정량 80%</span>
 								<button type="button" class="btn-text btn-text-gray1 btn-h24 btn btn-popup btn-modify">수정</span>
 							</div>
 						</div>
-						<div class="bar-box">
-							<p class="bar" style="width:50%;"></p>
+						<div class="bar-box ty02">
+							<p class="bar" style="width:100%;"></p>
 						</div>
 
 					</div>
@@ -83,12 +83,10 @@
 					<li class="item new"><span class="text">나의 지역 한살림</span></li>
 				</ul>
 				<div class="tab-content on">
-					<div class="title-fix">
-						<div class="title-area">
-							<p class="name">조합원명</p>
-							<p class="status">진행현황</p>
-						</div>
-					</div>
+					<div class="title-area">
+						<p class="name">조합원명</p>
+						<p class="status">진행현황</p>
+					</div>				
 					<div class="list-area">
 						<ul>
 							<li>
@@ -334,7 +332,7 @@ $(window).load(function(){
 	$(window).scroll(function(){
 		var winTop = $(window).scrollTop();
 		var headH = $('.header').outerHeight();
-		var tabTop = $('.title-fix').offset().top;
+		var tabTop = $('.tab-content.on').offset().top;
 
 		/* 스크롤시 탭 고정 */
 		if(tabTop <= winTop+headH){
