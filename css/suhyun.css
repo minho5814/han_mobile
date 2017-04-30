@@ -1152,3 +1152,270 @@
 .btn-card-apply {
 	width:80px;
 }
+
+/* 쿠폰 */
+.coupon-area {
+	margin-top:20px;
+	padding-top:20px;
+	border-top:2px solid #ddd;
+}
+.coupon-area.bot-border {
+	padding-bottom:20px;
+	border-bottom:2px solid #ddd;
+}
+.no-noresult {
+	padding:65px 0;
+	border-top:2px solid #ddd;
+	border-bottom:2px solid #ddd;
+	text-align:center;
+}
+.no-noresult .txt {
+	font-size:15px;
+	color:#aaa;
+	line-height:19px;
+}
+.coupon-area .coupon-box {}
+.coupon-area .coupon-box dl {
+	position:relative;
+	overflow:hidden;
+	padding-left:120px;
+}
+.coupon-area .coupon-box dl dt {
+	padding-top:23px;
+	font-size:16px;
+	color:#333;
+	line-height:15px;
+	font-weight:bold;
+}
+.coupon-area .coupon-box dl dd.serve-txt {
+	position:absolute;
+	left:120px; top:0;
+	font-size:13px;
+	line-height:20px;
+	font-weight:bold;
+}
+.coupon-area .coupon-box dl dd.dete-txt {
+	margin-top:5px;
+	font-size:13px;
+	color:#666;
+	line-height:15px;
+}
+.coupon-area .coupon-box dl dd.coupon-img {
+	position:absolute;
+	left:0; top:0;
+	width:105px;
+	height:60px;
+}
+.coupon-area .coupon-box dl dd.coupon-img img {width:100%; height:auto; vertical-align:middle;}
+.coupon-area .notice-box {
+	margin:0 0 10px;
+	padding:10px 15px;
+	background-color:#f7f7f7;
+}
+.coupon-area .notice-box .bullet-list1 .item {
+	font-size:13px;
+	color:#666;
+	line-height:22px;
+}
+.coupon-cont {margin-top:10px;}
+.coupon-cont .thumb-list8 {
+	overflow:hidden;
+}
+.coupon-cont .thumb-list8 .box {
+	float:left;
+	position:relative;
+	width:50%;
+	padding:15px 0;
+	border-right:1px solid #ddd;
+	border-top:1px solid #ddd;
+	box-sizing:border-box;
+}
+.coupon-cont .thumb-list8 .box:nth-child(1),
+.coupon-cont .thumb-list8 .box:nth-child(2) {
+	border-top:0;
+}
+.coupon-cont .thumb-list8 .box:nth-child(2n+2) {
+	border-right:0;
+}
+.coupon-cont .thumb-list8 .box .link {display:block;}
+.thumb-list8 .box .ico-label {
+	position:absolute;
+	left:43px; top:16px;
+}
+.coupon-cont .thumb-list8 .box .img-area {
+	width:78px;
+	height:78px;
+	margin:0 auto;
+}
+.coupon-cont .thumb-list8 .box .text-area {
+	margin-top:14px;
+	height:32px;
+	padding:0 40px;
+	text-align:center;
+}
+.coupon-cont .thumb-list8 .box .text-area .name {
+	font-size:13px;
+	color:#666;
+	line-height:16px;
+}
+
+/* 1:1상담 팝업*/
+.consul-area .cTitle02 {font-weight:bold;}
+.consul-area .btn-list2 {margin:0;}
+
+/* 적립금 적립제도 이용안내 팝업 */
+.accumu-inst {}
+.accumu-inst .accumu-txt {
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.accumu-inst dl {}
+.accumu-inst dl dt {
+	margin-top:12px;
+	font-size:16px;
+	color:#333;
+	line-height:20px;
+	font-weight:bold;
+}
+.accumu-inst dl dd {
+	margin-top:5px;
+	font-size:15px;
+	color:#666;
+	line-height:20px;
+}
+.accumu-inst .accumu-notice-box {
+	margin-top:17px;
+	padding:7px 10px;
+	border:2px solid #eee;
+	box-sizing:border-box;
+}
+
+/* 적립금사용신청 팝업 */
+.accumu-inst {}
+.accumu-inst .cTitle02 {font-weight:bold;}
+.accumu-inst .form-list3 {border-top:2px solid #ddd;}
+.accumu-inst .form-list3 .form-item {
+	padding:12px 0 15px;
+	border-bottom:2px solid #eee;
+}
+.accumu-inst .form-list3 .form-item:last-child {border-bottom:0;}
+.swit-rese-box {
+
+}
+.tip {
+	position:relative;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	margin-left:6px;
+	background:url(../img/btn/btn_question.png) no-repeat 0 0;
+	background-size:20px 20px;
+	vertical-align:middle;
+}
+.tip .inner-box {
+	display:none;
+	position:absolute;
+	left:-160px; top:18px;
+	padding-top:5px;
+	z-index:10;
+	transform:translateX(80px);
+}
+.tip .inner-box div {
+	padding:5px;
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+	text-align:left;
+	background-color:#fff;
+	border:1px solid #60b015;
+}
+.tip .inner-box:before {
+	content: '';
+	position: absolute;
+	top:3px; left:50%;
+	width:3px; height:2px;
+	margin-left:-1px;
+	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
+	background-size:3px 2px;
+}
+.tip .inner-box div p {margin-top:3px;}
+.tip .inner-box div p:first-child {margin-top:0;}
+.tip:hover .inner-box {
+	display: block;
+}
+.swit-rese-box .dead-balan {
+	display:block;
+	margin:5px 0 0 36px;
+	font-size:13px;
+	color:#666;
+	line-height:20px;
+}
+.swit-rese-box .dead-balan .price {
+	font-weight:bold;
+}
+.swit-rese-box .gift-addr {
+	display:block;
+	margin:8px 0 0 36px;
+}
+.unit-box {position:relative;}
+.unit-box:before {
+	content:'원';
+	display:block;
+	position:absolute;
+	right:15px; top:13px;
+	font-size:15px;
+	line-height:14px;
+	color:#666;
+}
+.accumu-inst .use-price {
+	position:absolute;
+	right:0; top:7px;
+	font-size:14px;
+	color:#666;
+	line-height:20px;
+}
+.accumu-inst .use-price span {font-weight:bold;}
+
+.apply-history {}
+.apply-history .no-noresult {border-color:#eee;}
+.apply-history-list {}
+.apply-history-list .history-item {
+	overflow:hidden;
+	width:100%;
+	padding:10px 0;
+	border-bottom:2px solid #eee;
+}
+.apply-history-list .history-item:first-child {border-top:2px solid #eee;}
+.apply-history-list .history-item .history-txt {
+	float:left;
+	overflow:hidden;
+	width:150px;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.apply-history-list .history-item .history-txt .date {
+	display:block;
+	margin-top:2px;
+	font-size:13px;
+	color:#666;
+	line-height:20px;
+}
+.apply-history-list .history-item .price-btn-box {
+	float:right;
+	margin:6px 0;
+}
+.apply-history-list .history-item .price-history {
+	display:inline-block;
+	height:30px;
+	margin-right:10px;
+	font-size:15px;
+	color:#666;
+	line-height:30px;
+	vertical-align:middle;
+}
+.apply-history-list .history-item .price-history .number {
+	font-weight:bold;
+	color:#333;
+}
