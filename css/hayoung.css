@@ -1410,3 +1410,82 @@ label.important:before {
 	color:#666;
 	font-size: 15px;
 }
+
+/* --------------------------------------------------------------------------------------------
+	나의한살림 -서브메인
+-------------------------------------------------------------------------------------------- */
+.info-area {
+	position:relative;
+	padding:20px 10px;
+	background-color: #f7f7f7;
+}
+.info-area .img-area {
+	position:absolute;
+	width:85px;
+	height:85px;
+
+}
+.info-area .img-area img {width: 100%;height:100%;border-radius: 100%;}
+.info-area .info-box {
+	padding-left:120px;
+}
+.info-area p {margin-bottom:5px; font-size: 16px;}
+.info-area .barcode-area {
+	position:relative;
+	padding:15px 16px;
+	background-color: #fff;
+}
+.info-area .barcode-area .barcode {
+	display: inline-block;
+	width:61px;
+	height:28px;
+}
+.info-area .barcode-area .barcode img {width: 100%;height:100%;}
+.info-area .barcode-area .num {
+	margin-left:15px;
+	font-size:19px;
+	color:#333;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.btn-view-barcode {
+	position:absolute;
+	right:15px;
+	top:13px;
+	width:35px;
+	height:35px;
+	background-image:url(../img/btn/btn-more.png);
+	background-repeat:no-repeat;
+	background-size:35px 35px;
+
+}
+
+.btn-photo {
+	position:absolute;
+	right:-7px;
+	bottom:0;
+	width:37px;
+	height:37px;
+	background-image:url(../img/btn/btn-photo.png);
+	background-repeat:no-repeat;
+	background-size:37px 37px;
+
+}
+
+.sub-main .white-content6 {}
+.sub-main .white-content6 h3 {
+	margin-bottom:10px;
+	color:#333;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.sub-main .gray-content3 .link-wrap li {
+	float:left;
+	width:50%;
+
+}
+.sub-main .gray-content3 .link-wrap li a {
+		border:0;
+}
