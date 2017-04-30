@@ -266,7 +266,7 @@ $(window).load(function(){
 	/* ===============================================================================================
 		달력 (datepicker)
 	=============================================================================================== */
-	$(".datepicker1").each(function(){
+	$('.datepicker1').each(function(){
 		$(this).datepicker({
 			dateFormat:'yy/mm/dd',
 			monthNames :['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
@@ -282,6 +282,40 @@ $(window).load(function(){
 
 		$(this).find('a').removeClass('ui-state-active').attr('href', '');
 	});
+
+	/* 공급일 선택일 경우 */
+	$('.datepicker2').each(function(){
+		$(this).datepicker({
+			dateFormat:'yy/mm/dd',
+			monthNames :['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			showMonthAfterYear:true,
+			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
+			firstDay: 0,
+			showOtherMonths: true,
+			yearSuffix: '.',
+			onSelect: function() {
+				$(this).find('a').attr('href', '');
+				dateSetting();
+			}
+		});
+
+		$(this).find('a').removeClass('ui-state-active').attr('href', '');
+		/* 공급일 선택일 기본 설정 */
+		function dateSetting(){
+			setTimeout(function(){
+				$('.datepicker2 .ui-state-default').each(function(){
+					var txt = $(this).html();
+					// 선택가능 공급일
+					if(txt == '5' || txt == '21') $(this).addClass('ui-gray');
+					// 희망 배송일
+					if(txt == '18') $(this).addClass('ui-blue');
+				});
+			}, 20);
+		}
+		dateSetting();
+	});
+
+
 	$('.btn-calendar').click(function(){
 		scrollNo();
 		$('.calendar-layer').show();
