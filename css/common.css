@@ -5993,6 +5993,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .qna-list .item .question .info-area:before {
 	content: '';
+	
 }
 .qna-list .item .question .title {
 	display: block;
