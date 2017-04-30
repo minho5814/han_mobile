@@ -4880,6 +4880,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:80px;
 	margin-top:16px;
 }
+.no-result2 {
+	margin:0 10px;
+	padding:75px 0;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	font-size:15px;
+	color:#aaa;
+	text-align:center;
+	line-height:22px;
+	background-color:#fff;
+}
 
 /* --------------------------------------------------------------------------------------------
 	조합원가입
@@ -6125,6 +6136,61 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-color:#60b015;
 	color:#fff;
 }
+.calendar-layer .ui-datepicker-calendar td a.ui-gray {
+	background-color:#eee;
+	color:#000;
+}
+.calendar-layer .ui-datepicker-calendar td a.ui-blue {
+	background-color:#239bd2;
+	color:#fff;
+}
+.calendar-layer .wish-box {
+	padding:0 10px;
+}
+.calendar-layer .wish-box .guide-text {
+	overflow:hidden;
+}
+.calendar-layer .wish-box .guide-text p {
+	float:left;
+	position:relative;
+	margin-left:15px;
+	padding-left:12px;
+	color:#aaa;
+	font-size:14px;
+	line-height:30px;
+}
+.calendar-layer .wish-box .guide-text p:first-child {margin-left:0;}
+.calendar-layer .wish-box .guide-text p:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:8px;
+	height:8px;
+	border-radius:50%;
+}
+.calendar-layer .wish-box .guide-text .gray:before {background-color:#eee;}
+.calendar-layer .wish-box .guide-text .blue:before {background-color:#239bd2;}
+.calendar-layer .wish-box .wish-date {
+	margin-top:12px;
+	padding:12px 0;
+	border:1px solid #eee;
+	text-align:center;
+}
+.calendar-layer .wish-box .wish-date .text {
+	color:#aaa;
+	font-size:15px;
+}
+.calendar-layer .wish-box .wish-date .date {
+	color:#239bd2;
+	font-size:17px;
+	font-weight:bold;
+}
+
+
+/* 내역 조회 */
 .calendar-layer .btn-list1 {
 	padding:30px 10px;
 	background-color:#fff;
@@ -6182,10 +6248,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align:center;
 	line-height:42px;
 }
-.history-calendar {}
-.history-calendar {}
-.history-calendar {}
-
 .history-info {
 	margin-top:20px;
 }

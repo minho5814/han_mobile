@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/hayoung.css">
+<link rel="stylesheet" href="../../css/suhyun.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">거래내역조회</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="#" class="btn-image btn-search">통합검색</a>
+	</div>
+
+
+	<div class="container store-wrap">
+		<div class="white-content2">
+			<p class="cTitle05 align-left"><em class="bold">홍길동(652275)</em>님의 거래내역입니다.</p>
+			<div class="price-info-box bold-line">
+				<div class="box">
+					<dl class="mgB10">
+						<dt>환불가능금액</dt>
+						<dd>
+							<span class="number">75,400<em>원</em></span>
+							<button type="button" class="btn-text btn-h30 btn-text-gray1">환불신청</button>
+						</dd>
+					</dl>
+					<dl>
+						<dt>공급잔액</dt>
+						<dd>
+							<span class="number">5,400<em>원</em></span>
+							<button type="button" class="btn-text btn-h30 btn-text-gray1 btn-credit btn-popup">미납금결제</button>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="white-content1">
+			<h3 class="cTitle01">매장이용내역</h3>
+			<div class="search-box mgT5">
+				<ul class="period-list">
+					<li><button type="button" class="btn-month on">1개월</buton></li>
+					<li><button type="button" class="btn-month">3개월</buton></li>
+					<li><button type="button" class="btn-month">6개월</buton></li>
+				</ul>
+				<div class="calender-wrap">
+					<input type="text" id="Id" value="1980년 9월 29일" class="text btn-calendar">
+					<span class="label-text">~</span>
+					<input type="text" id="Id" value="1980년 9월 29일" class="text btn-calendar">
+				</div>
+			</div>
+		</div>
+		<div class="white-content2">
+			<div class="select-wrap">
+				<select class="styled1">
+					<option>전체</option>
+					<option>결제내역</option>
+					<option>주문내역</option>
+					<option>환불내역</option>
+				</select>
+			</div>
+
+
+			<div class="history-info">
+				<ul>
+					<li class="item">
+						<span class="title-box">
+							<span class="title"><em class="fColor04">결제</em>-유기 연엽식기세트 외 1건</span>
+							<span class="date">2017-03-01(수)</span>
+						</span>
+						<span class="price"><span>5,000</span>원</span>
+					</li>
+					<li class="item">
+						<span class="title-box">
+							<span class="title">주문-유기 연엽식기세트 외 1건</span>
+							<span class="date">2017-03-01(수)</span>
+						</span>
+						<span class="price"><span>15,000</span>원</span>
+					</li>
+					<li class="item">
+						<span class="title-box">
+							<span class="title"><em class="fColor03">환불(카드)</em>-유기 연엽식기세트 외 1건</span>
+							<span class="date">2017-03-01(수)</span>
+						</span>
+						<span class="price"><span>5,000</span>원</span>
+					</li>
+					<li class="item">
+						<span class="title-box">
+							<span class="title"><em class="fColor04">결제</em>-유기 연엽식기세트 외 1건</span>
+							<span class="date">2017-03-01(수)</span>
+						</span>
+						<span class="price"><span>5,000</span>원</span>
+					</li>
+					<li class="item">
+						<span class="title-box">
+							<span class="title">주문-유기 연엽식기세트 외 1건</span>
+							<span class="date">2017-03-01(수)</span>
+						</span>
+						<span class="price"><span>15,000</span>원</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="white-content1">
+			<div class="box-content1">
+				<h3 class="box-title">거래내역조회 안내</h3>
+				<ul class="box-cont">
+					<li class="item">안내문구 수급 예정.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 외상결제 팝업 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-credit">
+	<div class="pop-head">
+		<h1 class="pop-title">외상결제</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<h3 class="cTitle01">결제방법 선택</h3>
+				<div class="radio-list">
+					<label><input type="radio" name="payment" class="styled1" checked>신용카드</label>
+					<label><input type="radio" name="payment" class="styled1">무통장입금</label>
+				</div>
+				<p class="fColor05 mgT10">※ 결제방법 선택 후 미지급 금액을 결제합니다.</p>
+			</div>
+			<div class="btn-area">
+				<ul class="btn-list1">
+					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">취소</a></li>
+					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-green1">결제</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+
+	/* 팝업*/
+	/*외상결제*/
+	$('.btn-credit').click(function(){
+		$('.pop-credit').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+
+});
+</script>
+</body>
+</html>

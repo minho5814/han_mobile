@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/suhyun.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">쿠폰</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<button type="button" class="btn-image btn-search">통합검색</button>
+	</div>
+
+	<div class="container">
+		<div class="white-content2">
+			<div class="price-info-box bold-line">
+				<div class="box">
+					<dl>
+						<dt>사용가능쿠폰</dt>
+						<dd><span class="number">3</span>개</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+
+		<div class="white-content4">
+			<div class="no-noresult">
+				<p class="txt">보유 쿠폰 내역이 존재하지 않습니다</p>
+			</div>
+			<div class="box-content1 mgT30">
+				<h3 class="box-title">쿠폰 안내</h3>
+				<ul class="box-cont">
+					<li class="item">사용기간이 만료된 쿠폰은 보유 목록에서 자동으로 삭제됩니다.</li>
+					<li class="item">결제시 쿠폰을 적용하지 않으면 할인/적립 금액이 적용되지 않을 수 있습니다.</li>
+					<li class="item">쿠폰은 정해진 기간 동안만 사용이 유효합니다. 쿠폰의 사용기간을 확인해주세요.</li>
+					<li class="item fColor02">매장쿠폰은 계산시 쿠폰을 제시해 주세요.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	$('.btn-month').click(function(){
+		$(this).addClass('on').parents().siblings('li').find('.btn-month').removeClass('on');
+	});
+});
+</script>
+</body>
+</html>
