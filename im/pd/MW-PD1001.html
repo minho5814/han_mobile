@@ -1095,6 +1095,12 @@ $(window).load(function(){
 		spaceBetween: 6
 	});
 
+	// 관련 기획전 페이징 위치 조정
+	$('.visual-slide1 .swiper-pagination').each(function(){
+		var hei = $('.visual-slide1 .swiper-slide .link').outerHeight();
+		$(this).css({'bottom':'inherit', 'top':hei-47});
+	});
+
 	// 기획전 썸네일 리스트 셋팅
 	$('.goods-more-box .thumb-list2').each(function(){
 		var boxH = $(this).find('.box').outerHeight();
