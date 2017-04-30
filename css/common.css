@@ -3349,6 +3349,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list3 .btn-delete {
 	position: absolute;
 	top:0; right:0;
+	z-index:5;
 	width:39px;
 	height: 53px;
 }
