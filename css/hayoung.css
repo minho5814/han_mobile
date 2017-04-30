@@ -1388,9 +1388,9 @@ label.important:before {
 	height:10px;
 	background-color:#60b015;
 }
-/*.campaign-sub .join-wrap .bar-box.ty02 .bar {
-	background-color:#51d4d3;
-}*/
+.campaign-sub .join-wrap .bar-box.ty02 .bar {
+	background-color:#239bd2;
+}
 
 /*목표약정량 팝업*/
 .pop-modify .pop-cont {padding-top:20px !important;}
@@ -1423,6 +1423,12 @@ label.important:before {
 	position:absolute;
 	width:85px;
 	height:85px;
+	background-image:url(../img/bg/bg_noimg.png);
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size:30px 47px;
+	background-color: #fff;
+	border-radius: 100%;
 
 }
 .info-area .img-area img {width: 100%;height:100%;border-radius: 100%;}
@@ -1461,9 +1467,22 @@ label.important:before {
 
 }
 
+@media only screen and (max-width: 320px) {
+	.info-area .barcode-area {
+		padding:10px;
+	}
+	.info-area .barcode-area .num {margin-left:5px; font-size:15px; line-height: 28px;}
+	.btn-view-barcode {
+		width:25px;
+		height:25px;
+		right:10px;
+		background-size:25px 25px;
+	}
+}
+
 .btn-photo {
 	position:absolute;
-	right:-7px;
+	right:-10px;
 	bottom:0;
 	width:37px;
 	height:37px;
@@ -1473,8 +1492,9 @@ label.important:before {
 
 }
 
-.sub-main .white-content6 {}
-.sub-main .white-content6 h3 {
+.sub-main .white-content6 {border-top:10px solid #f7f7f7;}
+.sub-main .white-content6 h3,
+.sub-main .gray-content3 h3 {
 	margin-bottom:10px;
 	color:#333;
 	font-size: 18px;
@@ -1548,6 +1568,76 @@ label.important:before {
 	color:#f04114;
 	font-weight: bold;
 }
+/* 오늘의 알림 */
+.notice-wrap {
+	padding:10px 10px 0 10px;
+	background-color:#f7f7f7;
+}
+.notice-slide {
+	overflow:hidden;
+	position:relative;
+	border:1px solid #eee;
+	padding:6px 40px 6px 15px;
+	box-sizing:border-box;
+	background-color:#fff;
+}
+.notice-slide:before,
+.notice-slide:after {
+	content:'';
+	position:absolute;
+	left:0;right:0;
+	z-index:2;
+	height:6px;
+	background-color:#fff;
+}
+.notice-slide:before {top:0;}
+.notice-slide:after {bottom:0;}
+.notice-slide .notice-title {
+	position:absolute;
+	left:30px;top:16px;
+	color:#000;
+	font-size:15px;
+	font-weight:bold;
+	line-height:30px;
+}
+.notice-slide .notice-list {
+	position:relative;
+	min-height:30px;
+}
+.notice-slide .notice-list .item {
+	display:block;
+	overflow:hidden;
+	position:absolute;
+	left:0;top:0;
+	width:100%;
+	color:#666;
+	font-size:15px;
+	text-overflow:ellipsis;
+	line-height:30px;
+	white-space:nowrap;
+}
+.notice-slide .btn-notice-tog {
+	position:absolute;
+	right:13px;top:16px;
+	width:13px;
+	height:8px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	background-image:url(../img/btn/btn_down2.png);
+	background-position:0 0;
+	background-size:13px 8px;
+}
+.notice-slide .btn-notice-tog.on {background-image:url(../img/btn/btn_up2.png);}
+.notice-slide .btn-next {display:none;}
+.notice-slide .count-area {
+	position:absolute;
+	right:80px;top:16px;
+	color:#666;
+	font-size:15px;
+	line-height:30px;
+}
+
 /*아코디언 공통*/
 .accordion-list  .list-group {
 	border-top:1px solid #bbb;
@@ -1566,13 +1656,21 @@ label.important:before {
 }
 .accordion-list .list-title .left-area {
 	float:left;
-	padding-left:10px;
+	width:85%;
+	box-sizing: border-box;
 }
 .accordion-list .list-title .left-area p {
+	overflow: hidden;
+	width:100%;
 	height:43px;
+	padding-left:10px;
 	color: #333;
 	font-size: 15px;
 	line-height: 43px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+
 }
 .accordion-list  .list-title .right-area {
 	float: right;
@@ -1642,6 +1740,11 @@ label.important:before {
 .accordion-list .list-group .list-cont li .btn-box li a {
 	padding: 0 12px;
 }
+@media only screen and (max-width: 320px) {
+	.accordion-list .list-group .list-cont li .btn-box li a {
+		padding: 0 6px;
+	}
+}
 
 
 .accordion-list .list-group .list-cont dd {
@@ -1649,4 +1752,93 @@ label.important:before {
 	margin-bottom:15px;
 	font-size: 15px;
 	color:#666;
+}
+
+.sub-my-hansalim.campaign-list {padding:0;}
+.sub-my-hansalim.campaign-list .thumb-box {
+	padding:25px 0;
+}
+.sub-my-hansalim.campaign-list .campaign-mark {
+	transform: inherit;
+	top:25px;
+}
+.sub-my-hansalim.campaign-list li:last-child {border-bottom:0;}
+.sub-my-hansalim.campaign-list li a:before {content: none;}
+
+.sub-my-hansalim.campaign-list .text-box p {
+	line-height:17px;
+	color:#666;
+}
+.sub-my-hansalim.campaign-list .bar-box {
+	margin:0;
+	position:relative;
+	display:inline-block;
+	width:100%;
+}
+.sub-my-hansalim.campaign-list .bar-box:before {
+	content:'';
+	display:block;
+	position:absolute;
+	top:0;left:0;
+	width:100%;
+	height:10px;
+	border:1px solid #ddd;
+	background-color: #fff;
+	box-sizing:border-box;
+}
+.sub-my-hansalim.campaign-list .bar-box .bar {
+	position:relative;
+	z-index:1;
+	display:block;
+	height:10px;
+	background-color:#60b015;
+}
+.sub-my-hansalim.campaign-list .bar-box.ty02 .bar {
+	background-color:#239bd2;
+}
+
+.sub-my-hansalim.campaign-list .graph-area {
+	position:relative;
+	width:100%;
+	padding:15px 0 15px 40px;
+	box-sizing: border-box;
+}
+
+.sub-my-hansalim.campaign-list .graph-area span {
+	position:absolute; left:0;top:50%;
+	margin-top:-8px;
+	font-weight: bold;
+}
+.sub-my-hansalim.campaign-list .icon-area {
+	margin-top:0;
+}
+
+.sub-main .gray-content3 .link-wrap {margin-bottom:30px;}
+.sub-main .gray-content3 .link-wrap .btn-list1 {margin-top:-4px;}
+.sub-main .gray-content3 .link-wrap li {
+	margin-top:4px;
+}
+
+.sub-main .white-content6 .box.no-order {
+	padding:25px 0;
+}
+.sub-main .white-content6 .box.no-order p {
+	text-align: center;
+	font-size:15px;
+	line-height:20px;
+}
+.sub-main .white-content6 .thumb-list1 {
+	border-top:1px solid #ccc;
+}
+
+/*바코드 팝업*/
+.pop-view-barcode.layer-popup .pop-head {background-color:#fff;}
+.pop-view-barcode.layer-popup .pop-cont {padding:0 50px 30px 50px;}
+.pop-view-barcode.layer-popup .pop-content {padding:0}
+.pop-view-barcode .number {
+	padding-top:18px;
+	color:#333;
+	font-size:16px;
+	font-weight: bold;
+	text-align: center;
 }
