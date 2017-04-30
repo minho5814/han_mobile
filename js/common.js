@@ -264,6 +264,70 @@ $(window).load(function(){
 	});
 
 	/* ===============================================================================================
+		달력 (datepicker)
+	=============================================================================================== */
+	$(".datepicker1").each(function(){
+		$(this).datepicker({
+			dateFormat:'yy/mm/dd',
+			monthNames :['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			showMonthAfterYear:true,
+			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
+			firstDay: 0,
+			showOtherMonths: true,
+			yearSuffix: '.',
+			onSelect: function() {
+				$(this).find('a').attr('href', '');
+			}
+		});
+
+		$(this).find('a').removeClass('ui-state-active').attr('href', '');
+	});
+	$('.btn-calendar').click(function(){
+		scrollNo();
+		$('.calendar-layer').show();
+		if($(this).hasClass('two')){
+			$(this).addClass('twoOn');
+		}else{
+			$(this).addClass('on');
+		}
+	});
+	$('.btn-date-print').click(function(){
+		scrollOk();
+		if($(this).parents('.calendar-layer').find('a').hasClass('ui-state-active')){
+			var yesr = $(this).parents('.calendar-layer').find('.ui-datepicker-year').html();
+			var month = $(this).parents('.calendar-layer').find('.ui-datepicker-month').html();
+			var date = $(this).parents('.calendar-layer').find('.ui-state-active').html();
+			// 일반
+			$('.btn-calendar.twoOn').html(yesr + '년 ' + month + '월 ' + date + '일').removeClass('on');
+
+			// 요일 구하기
+			var idx = $(this).parents('.calendar-layer').find('a.ui-state-active').parent('td').index();
+			if(idx == 0) var idx = '일';
+			if(idx == 1) var idx = '월';
+			if(idx == 2) var idx = '화';
+			if(idx == 3) var idx = '수';
+			if(idx == 4) var idx = '목';
+			if(idx == 5) var idx = '금';
+			if(idx == 6) var idx = '토';
+			// 내역조회/공급일 선택
+			$('.btn-calendar.on').html(yesr + '/' + month + '/' + date + '(' + idx + ')').removeClass('twoOn');
+			$('.calendar-layer').hide();
+		}else{
+			$('.calendar-layer').hide();
+		}
+		$('.datepicker1 a').removeClass('ui-state-active');
+	});
+	$('.btn-calendar-close, .calendar-layer .btn-text-line1').click(function(){
+		scrollOk();
+		$('.calendar-layer').hide();
+	});
+
+	$('.btn-month').click(function(){
+		$('.btn-month').removeClass('on');
+		$(this).addClass('on');
+	});
+
+	/* ===============================================================================================
 		스크롤 이벤트
 	=============================================================================================== */
 	/* 하단 고정메뉴 */

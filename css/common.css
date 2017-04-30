@@ -2436,7 +2436,7 @@ html {
 	text-align:center;
 }
 /* 흰색 달력 버튼 */
-.gnb-head .calendar-area .btn-calendar {
+.gnb-head .calendar-area .btn-calendar3 {
 	position:absolute;
 	right:0;top:6px;
 	width:45px;
@@ -5538,9 +5538,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:14px;
 	line-height:19px;
 }
-.text-box03 {}
-.text-box03 {}
-.text-box03 {}
 
 /* 공유하기 팝업 */
 .share-list {
@@ -5670,3 +5667,188 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height: 42px;
 	text-align: center;
 }
+
+/* --------------------------------------------------------------------------------------------
+	달력 레이어
+-------------------------------------------------------------------------------------------- */
+.btn-calendar {
+	width:100%;
+	height:42px;
+	padding:0 10px;
+	box-sizing:border-box;
+	border-radius:3px;
+	border:1px solid #bbb;
+	background:#fff url(../img/btn/btn_calendar.png) no-repeat 100% 50%;
+	background-size:43px 24px;
+	color:#666;
+	font-size:15px;
+	text-align:left;
+	vertical-align:top;
+	line-height:42px;
+}
+/* 공통 레이어 영역 */
+.calendar-layer {
+	display:none;
+	position:fixed;
+	left:0;right:0;top:0;bottom:0;
+	z-index:200;
+	background-color:#fff;
+}
+.calendar-layer .ui-datepicker {
+	padding-top:57px;
+	border:1px solid #eee;
+}
+.calendar-layer .btn-calendar-close {
+	position:absolute;
+	right:0;top:0;
+	z-index:2;
+	width:40px;
+	height:55px;
+	background-color:#fff;
+	background-position:0 -150px;
+}
+
+.calendar-layer .ui-datepicker-header {
+	position:relative;
+	padding-top:10px;
+	background-color:#f7f7f7;
+}
+.calendar-layer .ui-datepicker-header .ui-datepicker-title {
+	color:#333;
+	font-size:22px;
+	text-align:center;
+	line-height:32px;
+}
+.calendar-layer .ui-datepicker-header .ui-datepicker-prev,
+.calendar-layer .ui-datepicker-header .ui-datepicker-next {
+	position:absolute;
+	top:10px;
+	width:30px;
+	height:32px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:10px 16px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.calendar-layer .ui-datepicker-header .ui-datepicker-prev {
+	left:10px;
+	background-image:url(../img/btn/btn_calendar_prev.png);
+}
+.calendar-layer .ui-datepicker-header .ui-datepicker-next {
+	right:10px;
+	background-image:url(../img/btn/btn_calendar_next.png);
+}
+.calendar-layer .ui-datepicker-calendar {}
+.calendar-layer .ui-datepicker-calendar th {
+	height:32px;
+	background-color:#f7f7f7;
+	color:#aaa;
+	font-size:12px;
+	font-weight:normal;
+	text-align:center;
+}
+.calendar-layer .ui-datepicker-calendar td {
+	height:37px;
+	color:#333;
+	font-size:15px;
+	text-align:center;
+}
+.calendar-layer .ui-datepicker-calendar tr:first-child td {padding-top:5px;}
+.calendar-layer .ui-datepicker-calendar td a {
+	display:inline-block;
+	position:relative;
+	width:30px;
+	height:30px;
+	color:#333;
+	border-radius:50%;
+	font-size:15px;
+	text-align:center;
+	line-height:30px;
+}
+.calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:before {
+	content:'';
+	position:absolute;
+	left:50%;top:1px;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:4px;
+	height:4px;
+	border-radius:50%;
+	background-color:#60b015;
+}
+.calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:after {
+	content:'';
+	position:absolute;
+	left:-1px;right:0;bottom:-2px;
+	height:9px;
+	background:url(../img/ico/ico_text_today.png) no-repeat 50% 0;
+	background-size:16px 9px;
+}
+.calendar-layer .ui-datepicker-calendar td.ui-state-disabled span {color:#aaa;}
+.calendar-layer .ui-datepicker-calendar td a.ui-state-active {
+	background-color:#60b015;
+	color:#fff;
+}
+.calendar-layer .btn-list1 {
+	padding:30px 10px;
+	background-color:#fff;
+}
+
+.history-calendar {
+	padding:15px 8px;
+	background-color:#f7f7f7;
+}
+.history-calendar .month-btn-area {
+	overflow:hidden;
+}
+.history-calendar .month-btn-area .item {
+	float:left;
+	width:33%;
+	padding:0 2px;
+	box-sizing:border-box;
+}
+.history-calendar .month-btn-area .item:first-child {width:34%;}
+.history-calendar .month-btn-area .btn-month {
+	display:block;
+	width:100%;
+	height:42px;
+	border-radius:3px;
+	border:1px solid #bbb;
+	background-color:#fff;
+	color:#333;
+	font-size:15px;
+	line-height:40px;
+}
+.history-calendar .month-btn-area .btn-month.on {
+	border-color:#60b015;
+	color:#60b015;
+	font-weight:bold;
+}
+.history-calendar .date-textbox {
+	overflow:hidden;
+	position:relative;
+	margin-top:6px;
+	padding:0 2px;
+}
+.history-calendar .date-textbox .box {
+	float:left;
+	width:50%;
+	padding:0 0 0 10px;
+	box-sizing:border-box;
+}
+.history-calendar .date-textbox .box:first-child {padding:0 10px 0 0;}
+.history-calendar .date-textbox .hyphen  {
+	position:absolute;
+	left:50%;top:0;
+	width:20px;
+	height:42px;
+	margin-left:-10px;
+	text-align:center;
+	line-height:42px;
+}
+.history-calendar {}
+.history-calendar {}
+.history-calendar {}
