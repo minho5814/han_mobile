@@ -2046,7 +2046,12 @@ label.important:before {
 }
 .flag.bg1 {
 	background-color:#5bb4ba;
-
+}
+.flag.bg4 {
+	background-color:#ff9c00;
+}
+.flag.bg5 {
+	background-color:#6bc31c;
 }
 
 .change-wrap .order-list {border-top:1px solid #eee; padding:0;}
@@ -2069,6 +2074,7 @@ label.important:before {
 	margin-top:10px;
 	line-height: 18px;
 }
+.order-list .box .price-count + .select-price {padding:10px 0 7px;}
 
 .border-t {border-top:1px solid #eee;}
 .border-b {border-bottom:1px solid #eee;}
