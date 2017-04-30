@@ -2047,3 +2047,9 @@ label.important:before {
 /*.change-wrap .gun-payment .item.gun-item {border-bottom: 0;}*/
 .change-wrap .accordion-list .list-group:last-child .list-cont .gun-payment .item.gun-item {border-bottom: 0;}
 /*.change-wrap .accordion-list .list-group:first-child .list-cont li:last-child {border-bottom:0;}*/
+
+.order-list.supply .box {padding:20px 10px;}
+.order-list .box .price-count {
+	margin-top:10px;
+	line-height: 18px;
+}
