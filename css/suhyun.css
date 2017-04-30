@@ -1147,3 +1147,8 @@
 	padding-bottom:15px;
 	border-bottom:1px solid #eee;
 }
+
+/* 카드 신청 */
+.btn-card-apply {
+	width:80px;
+}
