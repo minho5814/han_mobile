@@ -39,6 +39,8 @@
 	left:-20px; top:50%;
 	width:1px; height:14px;
 	background-color:#ddd;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
 	transform: translateY(-50%);
 }
 @media only screen and (max-width: 320px) {
@@ -519,6 +521,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_up.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -528,6 +532,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_down.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -548,18 +554,12 @@
 .order-cart-list .list-cont .calendar {
 	position: relative;
 }
-.order-cart-list .list-cont .calendar:before {
-	content: '';
-	position: absolute;
-	top:9px; right:41px;
-	width:1px; height:22px;
-	background-color:#eee;
-}
-.order-cart-list .list-cont .calendar input {
+.order-cart-list .list-cont .calendar .btn-calendar {
 	height: 40px;
 	padding-right:50px;
 	line-height: 42px;
-	background-color:#f7f7f7;
+	background-color:transparent;
+	border:0;
 	text-align: right;
 	color:#60b015;
 }
@@ -679,6 +679,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_down.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -688,6 +690,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_up.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -717,6 +721,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_down.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -726,6 +732,8 @@
 	position: absolute;
 	top:50%; left:50%;
 	width:16px; height:9px;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background:url(../img/btn/btn_up.png) 0 0 no-repeat;
 	background-size:16px 9px;
@@ -823,7 +831,10 @@
 	line-height: 35px;
 	background-color:#f7f7f7;
 }
-
+.order-list .goods-cont .btn-wrap {
+	position: absolute;
+	right:0;bottom:0;
+}
 .cart-wrap .section .price-info {
 	padding-top:8px;
 	border-top:10px solid #eee;
@@ -917,6 +928,8 @@
 	content: '원';
 	position: absolute;
 	top:50%; right:10px;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
 	transform: translateY(-50%);
 	color:#666;
 	font-size:15px;

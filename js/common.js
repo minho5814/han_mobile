@@ -263,6 +263,16 @@ $(window).load(function(){
 		});
 	});
 
+	/* 금액 입력 팝업 */
+	$('input.right').keyup(function(){
+		var len = $(this).val().length;
+		if(len >= 1){
+			$(this).css({'text-align':'right'});
+		}else{
+			$(this).css({'text-align':'left'});
+		}
+	});
+
 	/* ===============================================================================================
 		달력 (datepicker)
 	=============================================================================================== */
@@ -287,7 +297,10 @@ $(window).load(function(){
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
 			firstDay: 0,
 			showOtherMonths: true,
-			yearSuffix: '.'
+			yearSuffix: '.',
+			onSelect: function() {
+				dateSetting();
+			}
 		});
 
 		/* 공급일 선택일 기본 설정 */

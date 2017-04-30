@@ -1301,6 +1301,49 @@
 .swit-rese-box .btn-article,
 .swit-rese-box .btn-lnvest {vertical-align:middle;}
 .mg-on {margin:0;}
+.tip {
+	position:relative;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	margin-left:6px;
+	background:url(../img/btn/btn_question.png) no-repeat 0 0;
+	background-size:20px 20px;
+	vertical-align:middle;
+}
+.tip .inner-box {
+	display:none;
+	position:absolute;
+	left:-160px; top:18px;
+	padding-top:5px;
+	z-index:10;
+	-webkit-transform:translateX(80px);
+	-ms-transform:translateX(80px);
+	transform:translateX(80px);
+}
+.tip .inner-box:before {
+	content: '';
+	position: absolute;
+	top:3px; left:50%;
+	width:3px; height:2px;
+	margin-left:-1px;
+	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
+	background-size:3px 2px;
+}
+.tip .inner-box div {
+	padding:5px;
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+	text-align:left;
+	background-color:#fff;
+	border:1px solid #60b015;
+}
+.tip .inner-box div p {margin-top:3px;}
+.tip .inner-box div p:first-child {margin-top:0;}
+.tip:hover .inner-box {
+	display:block;
+}
 .swit-rese-box .dead-balan {
 	display:block;
 	margin:5px 0 0 36px;

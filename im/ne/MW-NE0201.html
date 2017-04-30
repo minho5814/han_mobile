@@ -242,7 +242,6 @@
 <script>
 $(window).load(function(){
 	/*오늘의 물품소식 아코디언*/
-
 	$('.qna-list .item').click(function(){
 		if($(this).hasClass('on')){
 			$(this).removeClass('on');
@@ -251,7 +250,6 @@ $(window).load(function(){
 		}
 	});
 
-
 	/*  개선필요,공지사항탭 */
 	$('.tab-list1 li').click(function(){
 		var idx = $(this).index();
@@ -259,8 +257,10 @@ $(window).load(function(){
 		$('.qna-area').removeClass('on').eq(idx).addClass('on');
 	});
 
-
-
+	$('.tab-list5 .item').click(function(){
+		$('.tab-list5 .item').removeClass('on');
+		$(this).addClass('on');
+	});
 });
 </script>
 </body>

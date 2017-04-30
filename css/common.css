@@ -80,6 +80,7 @@ input[type=password] {
 	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 	vertical-align:top;
 }
+input.right {padding-right:30px;}
 .input-price {
 	position:relative;
 	padding-right:20px;
@@ -3349,6 +3350,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .thumb-list3 .btn-delete {
 	position: absolute;
 	top:0; right:0;
+	z-index:5;
 	width:39px;
 	height: 53px;
 }
@@ -5559,12 +5561,13 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	overflow:hidden;
 	padding:0 15px;
 	border-top:1px solid #ddd;
+	background-color:#fff;
 	color:#666;
 	font-size:13px;
 	line-height:40px;
 }
-.postscript-box .info-area .name {float:left;}
-.postscript-box .info-area .date {float:right;}
+.postscript-box .info-area .name {float:left;margin-bottom:0;}
+.postscript-box .info-area .date {float:right;margin-bottom:0;}
 .postscript-list {
 	margin-top:20px;
 	border-bottom:1px solid #ddd;
@@ -6180,16 +6183,16 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-size:16px 9px;
 }
 .calendar-layer .ui-datepicker-calendar td.ui-state-disabled span {color:#aaa;}
-.calendar-layer .ui-datepicker-calendar td a.ui-state-active {
-	background-color:#60b015;
-	color:#fff;
-}
 .calendar-layer .ui-datepicker-calendar td a.ui-gray {
 	background-color:#eee;
 	color:#000;
 }
 .calendar-layer .ui-datepicker-calendar td a.ui-blue {
 	background-color:#239bd2;
+	color:#fff;
+}
+.calendar-layer .ui-datepicker-calendar td a.ui-state-active {
+	background-color:#60b015;
 	color:#fff;
 }
 .calendar-layer .wish-box {
