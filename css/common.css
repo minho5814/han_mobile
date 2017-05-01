@@ -4864,7 +4864,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 /* 결과 없음 */
 .no-result1 {
-	padding-top:150px;
+	padding-top:170px;
 	font-size:15px;
 	color:#aaa;
 	text-align:center;
@@ -4872,11 +4872,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-color:#fff;
 }
 .no-result1 .text1 {padding-top:20px;}
-.no-result1 .text2 {
-	padding-top:106px;
-	background:url(../img/bg/bg_noresult01.png) no-repeat 50% 0;
-	background-size:100px 92px;
-}
+
 .no-result1 .btn-text {
 	width:80px;
 	margin-top:16px;
