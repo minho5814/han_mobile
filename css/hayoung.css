@@ -1362,10 +1362,13 @@ label.important:before {
 }
 .campaign-sub .list-area span {display: table-cell; vertical-align: middle;}
 .campaign-sub .list-area .img-area {
+	display:inline-block;
+	overflow:hidden;
 	width: 48px;
 	height:48px;
+	border-radius:50%;
 }
-.campaign-sub .list-area .img-area img {width:100%; height:100%; border-radius: 100%;}
+.campaign-sub .list-area .img-area img {width:100%;}
 .campaign-sub .list-area .name {
 	padding-left:10px;
 	font-size: 15px;
