@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*공통*/
- .float-area {overflow: hidden;}
+.float-area {overflow: hidden;}
 .float-area .f-left{float:left;}
 .float-area .f-right{float:right;}
 
@@ -229,9 +229,9 @@
 /*한살림소개 동영상*/
 .video-area {
 	overflow: hidden;
-	width:355px;
-	height:200px;
-	margin:15px auto 0 auto;
+	width:100%;
+	height:auto;
+	margin-top:15px;
 }
 .video-area img {width: 100%; height:100%;}
 @media only screen and (max-width: 320px) {
@@ -437,7 +437,9 @@
 .board-view-area .gray-content2 .hashtag-area a {
 	background-color:#fff;
 }
-
+.board-view-area .thumb-wrap {
+    padding:0 0 30px;
+}
 .direction-area{
 	margin-top:30px;
 	border-top:1px solid #eee;
@@ -1817,7 +1819,6 @@ label.important:before {
 }
 .accordion-list .list-group .list-cont .row .cont {
 	height:30px;
-	text-align:
 }
 .accordion-list .list-group .list-cont .row .cont .txt {
 	display: inline-block;
@@ -2034,7 +2035,7 @@ label.important:before {
 /*.change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}*/
 
 /*주문조회*/
-.flag {
+.float-area .flag {
 	display: inline-block;
 	width:68px;
 	height:25px;

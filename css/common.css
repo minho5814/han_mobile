@@ -1976,7 +1976,11 @@ select.styled1:disabled {
 	background-color:#fff;
 }
 .tab-list4 .item.on .text {color:#333;}
-
+@media only screen and (max-width: 320px) {
+	.tab-list4 .item .text {
+		font-size:14px;
+	}
+}
 /* 탭 05 */
 .tab-list5 {
 	overflow:hidden;
@@ -3586,7 +3590,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding-top:15px;
 }
 .thumb-list5 .box .float-area span {color:#666;}
-
+@media only screen and (max-width: 320px) {
+	.thumb-list5 .box .float-area .name {
+		display: block;
+		float: none;
+	}
+	.thumb-list5 .box .float-area .date {
+		display: block;
+		float: none;
+		margin-top:5px;
+	}
+}
 /* 06 */
 .thumb-list6 .box .ico-label {
 	position:absolute;
@@ -3971,8 +3985,16 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#ec7015;
 }
 
+.store-fix-area .tab-list1 {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 57px;
+	z-index: 100;
+}
 .store-cont {
 	display: none;
+	padding-top:56px;
 }
 .store-cont.on {
 	display: block;
@@ -4027,6 +4049,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-position: 0 -1088px;
 	background-size:50px 1300px;
 }
+.map-search select.styled1 {color:#ccc}
+.map-search select.styled1 option {color:#666;}
 .map-maker {
 	z-index: 2;
 }
@@ -5692,7 +5716,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 공유하기 팝업 */
 .share-list {
 	overflow: hidden;
-	display: inline-block;
 	width:230px;
 	margin: 0 auto;
 }
