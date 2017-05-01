@@ -2741,17 +2741,17 @@ html {
 }
 .search-layer .accordion-list .title-box.fxd .layer-title {
 	position:fixed;
-	right:0;top:57px;
+	left:55px;right:0;top:57px;
 	z-index:5;
-	width:359px;
 	box-sizing:border-box;
 }
 .search-layer .accordion-list .item {border-top:1px solid #bbb;}
 .search-layer .accordion-list .item:first-child {border-top:0;}
-.search-layer .accordion-list .layer-title:before {
+.search-layer .accordion-list .layer-title:before {display:none;}
+.search-layer .accordion-list .layer-title:after {
 	content:'';
 	position:absolute;
-	left:inherit;right:10px;top:50%;
+	right:10px;top:50%;
 	-webkit-transform:translateY(-50%) rotate(225deg);
 	-ms-transform:translateY(-50%) rotate(225deg);
 	transform:translateY(-50%) rotate(225deg);
@@ -2762,12 +2762,11 @@ html {
 	background-color:transparent;
 }
 .search-layer .accordion-list .item .layer-list {display:none;}
-.search-layer .accordion-list .item.on .layer-title:before {
+.search-layer .accordion-list .item.on .layer-title:after {
 	-webkit-transform:translateY(-50%) rotate(45deg);
 	-ms-transform:translateY(-50%) rotate(45deg);
 	transform:translateY(-50%) rotate(45deg);
 }
-.search-layer .accordion-list {}
 
 /* --------------------------------------------------------------------------------------------
 	카테고리 레이어
@@ -3112,8 +3111,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	z-index:2;
 }
 .fixed-area .fixed-sub {
-	display: none;
-	padding:10px 10px 20px;
+	display:none;
+	padding:10px 0 20px;
 	background-color:#fff;
 }
 .sub-tab li.on {
@@ -3130,6 +3129,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-color:#fff;
 	box-sizing: border-box;
 }
+.sub-tab li:first-child {margin-left:10px;}
+.sub-tab li:last-child {margin-right:10px;}
 .sub-tab li span {
 	display: block;
 	font-size:14px;

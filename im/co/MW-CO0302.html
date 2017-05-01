@@ -34,14 +34,17 @@
 				<li class="item"><span class="text">원재료검색(21)</span></li>
 				<li class="item"><span class="text">전체검색(14)</span></li>
 			</ul>
-			<div class="fixed-sub">
-				<div class="swiper-container">
-					<ul class="sub-tab swiper-wrapper">
-						<li class="swiper-slide item on"><span class="text">물품(99)</span></li>
-						<li class="swiper-slide item"><span class="text">요리(99)</span></li>
-						<li class="swiper-slide item"><span class="text">한살림이야기(99)</span></li>
-						<li class="swiper-slide item"><span class="text">매장(00)</span></li>
-					</ul>
+			<div class="align-center">
+				<div class="fixed-sub">
+					<div class="swiper-container">
+						<ul class="sub-tab swiper-wrapper">
+							<li class="swiper-slide item on"><span class="text">물품(99)</span></li>
+							<li class="swiper-slide item"><span class="text">요리(99)</span></li>
+							<li class="swiper-slide item"><span class="text">한살림이야기(99)</span></li>
+							<li class="swiper-slide item"><span class="text">매장(00)</span></li>
+						</ul>
+					</div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</div>
@@ -797,12 +800,13 @@ $(window).load(function(){
 		$('.search-cont').removeClass('on').eq(idx).addClass('on');
 
 		if($('.tab-list1 li').eq(2).hasClass('on')){
-			$('.fixed-sub').show();
+			$('.fixed-sub').css({'display':'inline-block'});
 
 			/* 슬라이드 영역 */
 			var swiper = new Swiper('.fixed-sub .swiper-container', {
 				slidesPerView: 'auto',
-				paginationType: 'fraction',
+				pagination: '.fixed-sub .swiper-pagination',
+				paginationClickable: true
 			});
 		}else{
 			$('.fixed-sub').hide();
@@ -813,6 +817,12 @@ $(window).load(function(){
 		var idx = $(this).index();
 		$('.sub-tab li').removeClass('on').eq(idx).addClass('on');
 		$('.sub-cont').removeClass('on').eq(idx).addClass('on');
+	});
+	$('.sub-tab li:last-child').click(function(){
+		$('.fixed-sub .swiper-pagination-bullet:last-child').click();
+	});
+	$('.sub-tab li:first-child').click(function(){
+		$('.fixed-sub .swiper-pagination-bullet:first-child').click();
 	});
 
 	$(window).scroll(function(){
