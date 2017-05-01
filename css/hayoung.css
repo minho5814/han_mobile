@@ -571,6 +571,15 @@
 /* --------------------------------------------------------------------------------------------
 	천연벽지
 -------------------------------------------------------------------------------------------- */
+.estimate-area .form-list2 {
+    padding:0;
+}
+.estimate-area .title-wrap {
+    margin-bottom:2px;
+}
+.estimate-area .title-wrap h3 {
+    line-height: 30px;
+}
 .right-btn-area {padding:13px 10px; text-align: right;}
 .unit-area {width: 100%; overflow: hidden;}
 .unit-area .box {float: left;}
@@ -601,7 +610,7 @@
 	border-bottom:1px solid #eee;
 }
 .estimate-area .form-item:last-child {border-bottom: 0;}
-.estimate-area .check-list {margin-left:0; padding-bottom:0;}
+.estimate-area .check-list {margin:-5px 0 0 0; padding-bottom:0;}
 .estimate-area .check-list label {width:110px; margin-left:0;}
 
 .estimate-area .box-cont {margin:15px 0 10px}
@@ -623,7 +632,10 @@ label.important:before {
 
 /*이전견적내역*/
 .estimate-list  .list-group {
-	border-top:1px solid #bbb;
+	border-top:1px solid #ccc;
+}
+.estimate-list  .list-group:last-child .list-cont li {
+    border-bottom:1px solid #eee;
 }
 .estimate-list  .list-title {
 	width: 100%;
@@ -684,7 +696,6 @@ label.important:before {
 }
 .estimate-list .list-group .list-cont {
 	/*display: none;*/
-	padding:20px 10px 35px 10px;
 	background-color:#fff;
 }
 .estimate-list  .list-group.on .list-cont {
@@ -697,18 +708,38 @@ label.important:before {
 	margin-top:15px;
 }
 
-.estimate-list .list-group .list-cont dl {}
-.estimate-list .list-group .list-cont dt {
-	float: left;
-	margin-bottom:15px;
+.estimate-list .list-group .list-cont li {
+    position: relative;
+    display: table;
+    width:100%;
+    padding:15px 10px;
+    border-top:1px solid #eee;
+    box-sizing: border-box;
+}
+.estimate-list .list-group .list-cont li:fisrt-child {
+    border-top:0;
+}
+.estimate-list .list-group .list-cont li .title {
+    display: table-cell;
+    width:30%;
 	font-size: 15px;
 	color:#333;
+    vertical-align: middle;
 }
-.estimate-list .list-group .list-cont dd {
-	padding-left:80px;
-	margin-bottom:15px;
+.estimate-list .list-group .list-cont li .text {
+	display: table-cell;
+    width: 70%%;
 	font-size: 15px;
 	color:#666;
+    text-align: right;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.estimate-list .list-group .list-cont.type02 .title {
+    width:50%;
+}
+.estimate-list .list-group .list-cont.type02 li .text {
+    width:50%;
 }
 
 .estimate-list .board1 td {text-align: right; padding-right:10px;}
