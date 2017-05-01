@@ -1816,7 +1816,6 @@ label.important:before {
 }
 .accordion-list .list-group .list-cont .row .cont {
 	height:30px;
-	text-align:
 }
 .accordion-list .list-group .list-cont .row .cont .txt {
 	display: inline-block;
@@ -2033,7 +2032,7 @@ label.important:before {
 /*.change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}*/
 
 /*주문조회*/
-.flag {
+.float-area .flag {
 	display: inline-block;
 	width:68px;
 	height:25px;
