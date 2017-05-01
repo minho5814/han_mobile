@@ -63,6 +63,11 @@
 	text-align:center;
 	line-height:24px;
 }
+.footer .footer-btn-area .item:last-child a {
+	border-color:#b9d7a5;
+	color:#60b015;
+}
+
 /* 슬라이드 공통 */
 .page-btn-area {
 	position:relative;
