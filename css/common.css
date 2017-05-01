@@ -3097,7 +3097,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .search-cont {
 	display: none;
-	padding-top:75px;
+	padding-top:76px;
 }
 .search-cont.on {
 	display: block;
