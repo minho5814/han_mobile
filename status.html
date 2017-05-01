@@ -243,6 +243,70 @@
 	</table>
 </div>
 
+<h2 class="on">공통영역</h2>
+<div class="Layer">
+	<table>
+		<colgroup>
+			<col style="width:15%;" class="Hide">
+			<col style="width:15%;" class="Hide">
+			<col style="width:15%;" class="Hide">
+			<col style="width:15%;" class="Hide">
+			<col style="width:5%;" class="Hide">
+			<col style="width:12%;" class="Hide">
+			<col style="width:5%;" class="Hide">
+			<col style="width:35%;" class="Dfault">
+			<col style="width:35%;" class="Dfault">
+			<col style="*">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>2 Depth</th>
+				<th>3 Depth</th>
+				<th class="Hide">4 Depth</th>
+				<th class="Hide">5 Depth</th>
+				<th class="Hide">Path</th>
+				<th>File</th>
+				<th class="Hide">완료</th>
+				<th class="Hide">메모</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="Left">전체메뉴/전체카테고리</td>
+				<td class="Left">01</td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">guide/</td>
+				<td class="Link"><a target="_blank" href="im/guide/layout01.html">layout01.html</a></td>
+				<td class="Hide Date">2017-04-25</td>
+				<td class="Hide Left">
+					햄버거 버튼 : 전체메뉴 레이어 출력<br>
+					하단 카테고리 버튼 : 카테고리 레이어 출력
+				</td>
+			</tr>
+			<tr>
+				<td class="Left" rowspan="2">달력</td>
+				<td class="Left">일반</td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">guide/</td>
+				<td class="Link"><a target="_blank" href="im/guide/calendar01.html">calendar01.html</a></td>
+				<td class="Hide Date">2017-04-30</td>
+				<td class="Hide Left"></td>
+			</tr>
+			<tr>
+				<td class="Left">공급일 선택</td>
+				<td class="Hide Left"></td>
+				<td class="Hide Left"></td>
+				<td class="Hide Hide">guide/</td>
+				<td class="Link"><a target="_blank" href="im/guide/calendar02.html">calendar02.html</a></td>
+				<td class="Hide Date">2017-04-30</td>
+				<td class="Hide Left"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
 <!-- 메인 -->
 <h2>메인</h2>
 <div class="Layer">
@@ -2166,7 +2230,7 @@ $(window).load(function(){
 		$(this).addClass('on');
 	});
 
-	$('h2').next('.Layer').show();
+	$('h2.on').next('.Layer').show();
 
 	$('h2').click(function(){
 		$(this).toggleClass('on').next('.Layer').slideToggle(200);
