@@ -2237,6 +2237,7 @@ html {
 }
 .head-menu .btn-next {right:0;}
 .head-menu .swiper-button-disabled {display:none;}
+.head-menu .swiper-pagination {display:none;}
 /* //on */
 .header .btn-search {
 	position:absolute;
@@ -2345,7 +2346,7 @@ html {
 .gnb-layer {
 	position:fixed;
 	left:-100%;top:0;
-	z-index:105;
+	z-index:150;
 	width:100%;
 	height:100%;
 	background-color:#eee;
@@ -3189,6 +3190,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align: center;
 	background-color:rgba(102,102,102,0.6);
 }
+.thumb-list1 .box .img-area.goods-stop .stop.stop-bot {bottom:14px;}
 .thumb-list1 .box .text-area {padding-top:22px;}
 .thumb-list1 .box .text-area .name {
 	height:36px;
@@ -5411,7 +5413,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 
 /* 방사성물질 검사 결과 */
 .radioactivity-box {margin-top:10px;}
-.radioactivity-box .radioactivity-list {border-top:1px solid #bbb;}
+.radioactivity-box .radioactivity-list {}
 .radioactivity-box .radioactivity-list .item {
 	position:relative;
 	padding:10px 0 20px 65px;

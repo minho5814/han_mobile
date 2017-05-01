@@ -1,4 +1,6 @@
 @charset "utf-8";
+/*공통*/
+.no-border-top {border-top:0 !important;}
 /* MW-JO0601.html */
 .sign-area {}
 .sign-area .sign-title {
