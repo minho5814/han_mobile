@@ -3189,6 +3189,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align: center;
 	background-color:rgba(102,102,102,0.6);
 }
+.thumb-list1 .box .img-area.goods-stop .stop.stop-bot {bottom:14px;}
 .thumb-list1 .box .text-area {padding-top:22px;}
 .thumb-list1 .box .text-area .name {
 	height:36px;
