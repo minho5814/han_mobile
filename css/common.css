@@ -5736,6 +5736,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:23px;
 }
 .price-info-box .box dl dt {
+
 	float:left;
 }
 .price-info-box .box dl dd {
@@ -5761,6 +5762,40 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:25px 10px 0;
 	background-color:#fff;
 }
+
+
+
+.price-info-box2 {
+	overflow: hidden;
+	padding:0 15px;
+	border:2px solid #eee;
+}
+.price-info-box2 li{overflow: hidden;}
+.price-info-box2 li .title {float: left; font-size:15px; color:#666;}
+.price-info-box2 li .number {float:right;}
+.price-info-box2 .box:first-child {border-top:0;}
+.price-info-box2 .box h3.title {
+	color:#333;
+	font-size:16px;
+	font-weight:bold;
+	line-height:35px;
+}
+.price-info-box2 .box li {
+	color:#666;
+	font-size:15px;
+	line-height:23px;
+}
+.price-info-box2 .box .number {
+	color:#f04114;
+	font-weight:bold;
+}
+.price-info-box2 .box .number em {color:#666;}
+
+.price-info-box2 .box {
+	padding:10px 5px 15px;
+	border-top:1px solid #eee;
+}
+
 
 .search-box {
 	margin:0 -10px;
