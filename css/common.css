@@ -725,6 +725,42 @@ html.no-scroll {
 	background-position:0 -660px;
 }
 
+/* 빠른주문 */
+.btn-ico4 {
+	border-color:#ec7015;
+	background-color:#ec7015;
+	color:#fff;
+}
+.btn-ico4 .text:before {
+	width:19px;
+	height:14px;
+	background-position:0 -1133px;
+}
+
+/* 목록보기 */
+.btn-ico5 {
+	border-color:#bbb;
+	background-color:#fff;
+	color:#333;
+}
+.btn-ico5 .text:before {
+	width:16px;
+	height:19px;
+	background-position:0 -1148px;
+}
+
+/* 견적요청 */
+.btn-ico6 {
+	border-color:#ec7015;
+	background-color:#ec7015;
+	color:#fff;
+}
+.btn-ico6 .text:before {
+	width:19px;
+	height:19px;
+	background-position:0 -1168px;
+}
+
 /* --------------------------------------------------------------------------------------------
 	이미지
 -------------------------------------------------------------------------------------------- */
