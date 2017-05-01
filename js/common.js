@@ -24,8 +24,21 @@ $(window).load(function(){
 		var swiper = new Swiper(this, {
 			slidesPerView:'auto',
 			nextButton: '.head-menu .btn-next',
-			prevButton: '.head-menu .btn-prev'
+			prevButton: '.head-menu .btn-prev',
+			pagination: '.head-menu .swiper-pagination',
+			paginationClickable: true,
 		});
+
+		var idx = $(this).parents('.head-menu').find('.swiper-slide.on').index();
+		var len = $(this).parents('.head-menu').find('.swiper-slide.on').length;
+		var prevlen = $(this).parents('.head-menu').find('.swiper-slide.on').prevAll().length;
+		if(idx == prevlen){
+			if(len <= prevlen-1){
+				$(this).parents('.head-menu').find('.swiper-pagination-bullet:last-child').click();
+			}else{
+				$(this).parents('.head-menu').find('.swiper-pagination-bullet').eq(idx).click();
+			}
+		}
 	});
 
 	/* 탭이 4개 이상일 경우 히든처리 후 버튼 출력 */
@@ -92,6 +105,13 @@ $(window).load(function(){
 	$('.btn-gnb').click(function(){
 		scrollNo();
 		$('.gnb-layer').show().stop().animate({left:0}, 200);
+
+		// 메뉴 리스트 위치값 출력
+		$('.slide-menu .depth-box').each(function(){
+			var wrapT = $(this).parents('.slide-menu').find('.slide-area').offset().top;
+			var depthT = $(this).offset().top;
+			$(this).attr('data', depthT - wrapT);
+		});
 	});
 	$('.btn-gnb-close').click(function(){
 		scrollOk();
@@ -111,12 +131,6 @@ $(window).load(function(){
 				$('.gnb-layer .menu-list .item').eq(index).addClass('on').siblings().removeClass('on');
 			}
 		});
-	});
-	// 메뉴 리스트 클릭
-	$('.slide-menu .depth-box').each(function(){
-		var wrapT = $(this).parents('.slide-menu').find('.slide-area').offset().top;
-		var depthT = $(this).offset().top;
-		$(this).attr('data', depthT - wrapT);
 	});
 	$('.menu-list .item').click(function(){
 		var idx = $(this).index();
