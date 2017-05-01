@@ -1129,6 +1129,7 @@ label.important:before {
 	background-repeat:no-repeat;
 	background-size:42px 39px;
 }
+.campaign-list .thumb-box.mark-right:before {right:10px;}
 .campaign-list .thumb-box.join:before {
 	background-image:url(../img/ico/ico_flag1.png);
 }

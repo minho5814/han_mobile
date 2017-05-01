@@ -5384,7 +5384,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 
 /* 방사성물질 검사 결과 */
 .radioactivity-box {margin-top:10px;}
-.radioactivity-box .radioactivity-list {border-top:1px solid #bbb;}
+.radioactivity-box .radioactivity-list {}
 .radioactivity-box .radioactivity-list .item {
 	position:relative;
 	padding:10px 0 20px 65px;
