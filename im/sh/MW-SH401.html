@@ -412,7 +412,7 @@
 							<li>합계금액(<strong>2</strong>종)<span class="price">6,700원</span></li>
 							<li>기타(<strong>0</strong>종)<span class="price">0원</span></li>
 							<li>출자금 자동증자금<button type="button" class="btn-image btn-tooltip btn-capital-increase">?</button> <span class="price">1,000원</span></li>
-							<li>공급부담금<button type="button" class="btn-image btn-tooltip btn-supply-share">?</button>  <span class="price"><span class="fColor04 ">3,000</span>원</span></li>
+							<li>택배비<button type="button" class="btn-image btn-tooltip btn-popup btn-delivery">?</button>  <span class="price"><span class="fColor04 ">3,000</span>원</span></li>
 						</ul>
 						<div class="total-price">
 							<span class="total">장바구니총액</span>
@@ -572,10 +572,10 @@
 	</div>
 </div>
 
-<!-- 공급부담금 팝업 -->
-<div class="layer-popup pop-supply-share">
+<!-- 택배비 팝업 -->
+<div class="layer-popup pop-delivery">
 	<div class="pop-head">
-		<h1 class="pop-title">공급부담금</h1>
+		<h1 class="pop-title">택배비</h1>
 		<button type="button" class="popup-close">닫기</button>
 	</div>
 	<div class="pop-content">
@@ -583,7 +583,9 @@
 			<div class="pop-cont">
 				<div class="cont-area">
 					<p class="pop-txt mgT10">
-						출자금을 제외한 일정금액(지역한살림별로 다름) 미만 주문시 부과됩니다.
+						도서, 산간, 제주 등 항만이나 항공으로 택배를 배송하는 지역은 기본택배료 외에 추가정산료가 발생할 수 있습니다.<br>
+						지역생협에 따라 기본택배료가 다를 수 있습니다.
+						선물택배의 경우 배송지별 주문총액이 3만원 미만이면 택배비 3천원이 부과됩니다.
 					</p>
 				</div>
 			</div>
@@ -678,9 +680,9 @@ $(window).load(function(){
 		$('.block-ui').fadeIn();
 	});
 
-	/*공급부담금*/
-	$('.btn-supply-share').click(function(){
-		$('.pop-supply-share').fadeIn(200);
+	/*택배비*/
+	$('.btn-delivery').click(function(){
+		$('.pop-delivery').fadeIn(200);
 		$('.block-ui').fadeIn();
 	});
 });
