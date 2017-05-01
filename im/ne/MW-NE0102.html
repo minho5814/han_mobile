@@ -156,25 +156,12 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	/*오늘의 물품소식 아코디언*/
-	$(document).on('click', '.qna-list .item', function(){
-		if($(this).hasClass('on')){
-			$(this).removeClass('on');
-		}else{
-			$(this).addClass('on').siblings('li').removeClass('on');
-		}
+	/* 체크박스 전체 선택 */
+	$('.all-check').click(function(){
+		var name = $(this).attr('name');
+		var dLen = $('input[name='+name+']').length;
+		$('input[name='+name+']').not('.all-check').prop('checked', true);
 	});
-
-
-	/*  개선필요,공지사항탭 */
-	$('.tab-list1 li').click(function(){
-		var idx = $(this).index();
-		$(this).addClass('on').siblings('li').removeClass('on');
-		$('.qna-area').removeClass('on').eq(idx).addClass('on');
-	});
-
-
-
 });
 </script>
 </body>
