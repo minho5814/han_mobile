@@ -2237,6 +2237,7 @@ html {
 }
 .head-menu .btn-next {right:0;}
 .head-menu .swiper-button-disabled {display:none;}
+.head-menu .swiper-pagination {display:none;}
 /* //on */
 .header .btn-search {
 	position:absolute;

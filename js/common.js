@@ -24,8 +24,21 @@ $(window).load(function(){
 		var swiper = new Swiper(this, {
 			slidesPerView:'auto',
 			nextButton: '.head-menu .btn-next',
-			prevButton: '.head-menu .btn-prev'
+			prevButton: '.head-menu .btn-prev',
+			pagination: '.head-menu .swiper-pagination',
+			paginationClickable: true,
 		});
+
+		var idx = $(this).parents('.head-menu').find('.swiper-slide.on').index();
+		var len = $(this).parents('.head-menu').find('.swiper-slide.on').length;
+		var prevlen = $(this).parents('.head-menu').find('.swiper-slide.on').prevAll().length;
+		if(idx == prevlen){
+			if(len <= prevlen-1){
+				$(this).parents('.head-menu').find('.swiper-pagination-bullet:last-child').click();
+			}else{
+				$(this).parents('.head-menu').find('.swiper-pagination-bullet').eq(idx).click();
+			}
+		}
 	});
 
 	/* 탭이 4개 이상일 경우 히든처리 후 버튼 출력 */
