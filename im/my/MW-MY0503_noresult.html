@@ -6,29 +6,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
 <title>한살림 장보기</title>
 <link rel="stylesheet" href="../../css/common.css">
-<link rel="stylesheet" href="../../css/hayoung.css">
 <link rel="stylesheet" href="../../css/suhyun.css">
 </head>
 
 <body>
 <div class="wrapper">
 	<div class="header">
-		<h1 class="head-title">공급내역조회</h1>
+		<h1 class="head-title">선수금내역조회</h1>
 		<button type="button" class="btn-image btn-back">이전</button>
-		<a href="#" class="btn-image btn-search">통합검색</a>
+		<button type="button" class="btn-image btn-search">통합검색</button>
 	</div>
 
-
-	<div class="container store-wrap">
+	<div class="container">
 		<div class="white-content2">
-			<p class="cTitle05 align-left"><em class="bold">홍길동(652275)</em>님의 공급내역입니다.</p>
+			<div class="price-info-box bold-line">
+				<div class="box">
+					<dl>
+						<dt>내 선수금 (전일마감기준)</dt>
+						<dd><span class="number">75,400</span>원</dd>
+					</dl>
+				</div>
+			</div>
 		</div>
+
 		<div class="white-content4">
+			<h3 class="cTitle01">선수금내역</h3>
 			<div class="history-calendar">
 				<ul class="month-btn-area">
 					<li class="item"><button type="button" class="btn-month on">1개월</button></li>
 					<li class="item"><button type="button" class="btn-month">2개월</button></li>
-					<li class="item"><button type="button" class="btn-month">6개월</button></li>
+					<li class="item"><button type="button" class="btn-month">3개월</button></li>
 				</ul>
 				<div class="date-textbox">
 					<div class="box"><button type="button" class="btn-calendar">2017/4/1(월)</button></div>
@@ -36,15 +43,21 @@
 					<div class="box"><button type="button" class="btn-calendar">2017/4/31(일)</button></div>
 				</div>
 			</div>
-		</div>
-		<div class="white-content3 mgT20">
-			<p class="no-result2">공급내역이 존재하지 않습니다.</p>
-		</div>
-		<div class="white-content6 pdB0">
-			<div class="box-content1">
-				<h3 class="box-title">공급내역조회 안내</h3>
+
+			<div class="history-info">
+				<p class="no-result-box">선수금내역이 존재하지 않습니다</p>
+			</div>
+
+			<!--리스트 박스-->
+			<div class="box-content1 mgT20">
+				<h3 class="box-title">선수금 안내</h3>
 				<ul class="box-cont">
-					<li class="item">안내문구 수급 예정.</li>
+					<li class="item">매장 이용 시에도 선수금을 사용하실 수 있습니다.</li>
+					<li class="item">문의할 사항이 있으면 한살림 서울로 문의해주십시오.
+						<div class="btn-wrap">
+							<a href="tel:02-3498-3600" class="btn-call"><span class="text">02-3498-3600</span></a>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -55,7 +68,7 @@
 <!-- 달력 레이어 -->
 <div class="calendar-layer">
 	<div class="header">
-		<h1 class="head-title">공급내역</h1>
+		<h1 class="head-title">출자금내역</h1>
 		<button type="button" class="btn-image btn-calendar-close">닫기</button>
 	</div>
 	<div class="datepicker1"></div><!-- 달력 영역 (공급일 선택일 경우 class="datepicker2") -->

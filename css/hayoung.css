@@ -557,6 +557,7 @@
     padding-left:75px;
     margin-top:6px;
 }
+.search-info02 dl:first-child {margin-top:0;}
 .search-info02 dl:fisrt-child {
     margin-top:0;
 }
@@ -1817,7 +1818,6 @@ label.important:before {
 }
 .accordion-list .list-group .list-cont .row .cont {
 	height:30px;
-	text-align:
 }
 .accordion-list .list-group .list-cont .row .cont .txt {
 	display: inline-block;
@@ -2034,7 +2034,7 @@ label.important:before {
 /*.change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}*/
 
 /*주문조회*/
-.flag {
+.float-area .flag {
 	display: inline-block;
 	width:68px;
 	height:25px;
