@@ -1976,7 +1976,11 @@ select.styled1:disabled {
 	background-color:#fff;
 }
 .tab-list4 .item.on .text {color:#333;}
-
+@media only screen and (max-width: 320px) {
+	.tab-list4 .item .text {
+		font-size:14px;
+	}
+}
 /* 탭 05 */
 .tab-list5 {
 	overflow:hidden;
@@ -3586,7 +3590,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding-top:15px;
 }
 .thumb-list5 .box .float-area span {color:#666;}
-
+@media only screen and (max-width: 320px) {
+	.thumb-list5 .box .float-area .name {
+		display: block;
+		float: none;
+	}
+	.thumb-list5 .box .float-area .date {
+		display: block;
+		float: none;
+		margin-top:5px;
+	}
+}
 /* 06 */
 .thumb-list6 .box .ico-label {
 	position:absolute;
