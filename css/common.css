@@ -99,7 +99,7 @@ input[type=number]:disabled,
 input[type=password]:disabled {
 	background-color:#eee;
 	color:#aaa;
-	border-color:#ddd;
+	border-color:#ccc;
 }
 input[type=submit] {-webkit-border-radius:0;border:0;border-radius:0;-webkit-appearance:none;}
 textarea {
