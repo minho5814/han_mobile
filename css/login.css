@@ -570,6 +570,7 @@
 	background-color:#f7f7f7;
 	border-bottom:1px solid #eee;
 }
+.thumb-list3.load-goods .box .text {border:1px solid #ddd; color:#666;}
 
 .order-cart-list .list-cont .no-result {
 	margin-top:20px;
@@ -650,7 +651,7 @@
 	display: inline-block;
 	color:#333;
 	font-size:17px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	line-height: 49px;
 }
 .cart-wrap .section .title-wrap .goods {
@@ -790,6 +791,7 @@
 	font-size:15px;
 	line-height:18px;
 }
+.order-list .sub-price {margin-top:6px;}
 .order-list .count {
 	margin-top:6px;
 }
@@ -835,6 +837,17 @@
 	position: absolute;
 	right:0;bottom:0;
 }
+.cart-wrap .price-wrap {}
+.cart-wrap .price-wrap:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.cart-wrap .price-wrap .num-select {float:left; margin-top:0}
+.cart-wrap .price-wrap .price {float:right; line-height: 40px; }
+.cart-wrap .section .goods-info .price-info .total-price {font-size: 14px; color:#f04114;}
+.cart-wrap .section .goods-info .price-info .total-price .price {font-size:13px;color:#666;}
+.cart-wrap .section .goods-info .price-info .total-price .price span {color:#f04114; font-size: 18px;font-weight: bold;}
 .cart-wrap .section .price-info {
 	padding-top:8px;
 	border-top:10px solid #eee;
@@ -886,7 +899,7 @@
 .cart-wrap .section .total-price .price .number {
 	font-size:22px;
 	font-weight: bold;
-	vertical-align: top;
+	/*vertical-align: top;*/
 }
 .reserves-list {
 	margin:0 -10px;
@@ -944,7 +957,7 @@
 }
 .order-addr-list .item .row {
 	position: relative;
-	padding:14px 0 14px 65px;
+	padding:10px 0 10px 65px;
 	border-bottom:1px solid #eee;
 }
 .order-addr-list .item .row .user {
@@ -968,6 +981,11 @@
 }
 .order-addr-list .item .row .text .num:first-child {
 	margin-left:0;
+}
+.order-addr-list .item .row .btn-box {
+	position: absolute;
+	right:10px;
+	top:5px;
 }
 
 .payment {
@@ -1105,9 +1123,14 @@
 }
 .cart-wrap .section .goods-info .sub-cont {
 	display: none;
+	border:1px solid #eee;
 }
 .cart-wrap .section .goods-info .order-list{
 	padding:0;
+}
+.cart-wrap .section .goods-info .order-list .box {
+	width: inherit;
+	margin:0 14px;
 }
 .cart-wrap .section .goods-info .price-info {
 	border-top:1px solid #eee;
