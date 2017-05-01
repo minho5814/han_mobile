@@ -269,20 +269,19 @@
 .qna-area.on {display: block;}
 .qna-area .tab-list5 {padding-top:10px; border-top:1px solid #bbb;}
 
-.qna-cont {
+.qna-area .qna-cont {
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
 }
-.qna-list .item {
-
+.qna-area .qna-list .item {
+    padding:0;
 }
-.qna-list .item .question {
+.qna-area .qna-list .item .question {
 	position:relative;
-	border-bottom:1px solid #eee;
 	padding:15px 35px 15px 10px;
 
 }
-.qna-list .item .question:before{
+.qna-area .qna-list .item .question:before{
 	content:'';
 	position: absolute;
 	right:10px;
@@ -296,24 +295,24 @@
 	-ms-transform:rotate(180deg);
 	transform: rotate(180deg);
 }
-.qna-list .item.on .question:before  {
+.qna-area .qna-list .item.on .question:before  {
         webkit-transform:rotate(0);
     	-ms-transform:rotate(0);
 		transform: rotate(0);
 }
-.qna-list .item .question .title {
+.qna-area .qna-list .item .question .title {
 	color:#333;
 	font-size:15px;
 }
 
-.qna-list .item .question .date,
-.qna-list .item .question .status {
+.qna-area .qna-list .item .question .date,
+.qna-area .qna-list .item .question .status {
 	color:#aaa;
 	font-size: 13px;
 }
-.qna-list .item .question .date {padding-right:5px;}
-.qna-list .item .question .status {position:relative;padding-left:5px;}
-.qna-list .item .question .status:before {
+.qna-area .qna-list .item .question .date {padding-right:5px;}
+.qna-area .qna-list .item .question .status {position:relative;padding-left:5px;}
+.qna-area .qna-list .item .question .status:before {
 	content:'';
 	position: absolute;
 	left:0; top:50%;
@@ -321,9 +320,9 @@
 	width:1px; height:8px;
 	background-color:#ddd;
 }
-.qna-list .item .question .row:first-child {margin-bottom:5px;}
-.qna-list .item .important .title {}
-.qna-list .item .important .title:before {
+.qna-area .qna-list .item .question .row:first-child {margin-bottom:5px;}
+.qna-area .qna-list .item .important .title {}
+.qna-area .qna-list .item .important .title:before {
 	content: '필독';
 	display: inline-block;
 	width:34px;
@@ -341,14 +340,14 @@
 }
 
 
-.qna-list .item.on .answer {display: block;}
-.qna-list .item .answer {
+.qna-area .qna-list .item.on .answer {display: block;}
+.qna-area .qna-list .item .answer {
 	display: none;
 	padding:15px 10px;
-	border-bottom:1px solid #eee;
+	border-top:1px solid #eee;
 	background-color:#f7f7f7;
 }
-.qna-list .item .answer .text {
+.qna-area .qna-list .item .answer .text {
 	font-size:15px;
 	color:#666;
 	line-height:22px;
