@@ -994,7 +994,6 @@
 .my-notice-list .item {
 	display:table;
 	width:100%;
-	min-height:79px;
 	padding:16px 0 18px;
 	border-top:1px solid #eee;
 	box-sizing: border-box;
@@ -1105,10 +1104,6 @@
 	position:absolute;
 	right:0; bottom:-15px;
 }
-.my-area .float-area {
-	padding-bottom:15px;
-	border-bottom:1px solid #eee;
-}
 
 /* 카드 신청 */
 .btn-card-apply {
@@ -1123,8 +1118,8 @@
 }
 .no-noresult {
 	padding:65px 0;
-	border-top:2px solid #ddd;
-	border-bottom:2px solid #ddd;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
 	text-align:center;
 }
 .no-noresult .txt {

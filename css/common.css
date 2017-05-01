@@ -587,7 +587,7 @@ html.no-scroll {
 	height:30px;
 	padding:0 15px;
 	font-size:13px;
-	line-height:32px;
+	line-height:30px;
 }
 @media only screen and (max-width: 320px) {
 	.btn-h30 {
@@ -636,6 +636,10 @@ html.no-scroll {
 	border:1px solid #60b015;
 	color:#60b015;
 	font-weight:bold;
+}
+.btn-text-line3 {
+	border:1px solid #60b015;
+	color:#60b015;
 }
 
 /* 버튼 정렬 */
