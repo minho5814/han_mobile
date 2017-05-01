@@ -469,7 +469,10 @@
 .cooking-cont {}
 .cooking-cont .cooking-img {margin-top:-57px;}
 .cooking-cont .cooking-img img {width:100%; height:auto; vertical-align:middle;}
-.cooking-area {padding:0 10px;}
+.cooking-area {
+	margin-bottom:32px;
+	padding:0 10px;
+}
 .cooking-area .cooking-text {
 	position:relative;
 	padding:17px 0;
@@ -546,7 +549,7 @@
 	position:absolute;
 	left:0; top:0;
 }
-.cooking-cont .stuff-img {margin-top:32px;}
+.cooking-cont .stuff-img {overflow: hidden;}
 .cooking-cont .stuff-img img {width:100%; height:auto; vertical-align:middle;}
 
 .bar-box {
@@ -559,14 +562,14 @@
 	margin:0 -12px;
 	background-color:#ddd;
 }
-.cooking-cont .thumb-wrap {padding:0 10px;}
-.cooking-cont .thumb-wrap .thumb-list1 {}
-.cooking-cont .thumb-wrap .thumb-list1 .box {padding-left:40px;}
+.thumb-wrap {padding:0 10px 30px;}
+.thumb-wrap .thumb-list1 {}
+.thumb-wrap .thumb-list1 .box {padding-left:40px;}
 
 .thumb-wrap .align-left {padding:10px; margin: 0 -10px;}
-.cooking-cont .thumb-wrap .thumb-list1 .box .btn-list {left:170px;}
-.cooking-cont .thumb-wrap .thumb-list1 .box .link {position:relative;}
-.cooking-cont .thumb-wrap .thumb-list1 .box .check-wrap {
+.thumb-wrap .thumb-list1 .box .btn-list {left:170px;}
+.thumb-wrap .thumb-list1 .box .link {position:relative;}
+.thumb-wrap .thumb-list1 .box .check-wrap {
 	position: absolute;
 	left:0;
 	top:14px;
@@ -575,13 +578,12 @@
 
 /* 어린인 식단 상세 */
 .child-area {}
-.child-area .thumb-wrap {padding:0 10px;}
-.child-com {padding:0 10px 12px;}
+.child-com {padding:0 10px 30px;}
 .child-area .child-img img {width:100%; height:auto; vertical-align:middle;}
 .child-area .child-tlte {
 	position:relative;
 	padding:18px 0;
-	border-bottom:2px solid #ccc;
+	border-bottom:1px solid #eee;
 }
 .child-area .child-tlte .btn-like {
 	position:absolute;
@@ -770,8 +772,9 @@
 	color:#fff;
 }
 /* 신규 요리 */
-.new-cont {padding:0 10px;}
-.new-cont .new-box {}
+.new-cont {padding:0 10px 20px;}
+.new-cont .new-box {margin-top:10px;}
+.new-cont .new-box:first-child {margin-top:0;}
 .new-cont .new-box .new-img img {width:100%; height:auto; vertical-align:middle;}
 .new-cont .new-box .new-text {
 	position:relative;
