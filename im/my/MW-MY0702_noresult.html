@@ -37,5 +37,18 @@
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 스크롤 시 탭에 보더 추가 */
+	$(window).scroll(function(){
+		var winTop = $(window).scrollTop();
+		if(winTop <= 0){
+			$('.fixed-area').css({'border':'0'});
+		}else{
+			$('.fixed-area').css({'border-bottom':'1px solid #ddd'});
+		}
+	});
+});
+</script>
 </body>
 </html>

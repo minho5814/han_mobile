@@ -129,6 +129,16 @@ $(window).load(function(){
 		var dLen = $('input[name='+name+']').length;
 		$('input[name='+name+']').not('.all-check').prop('checked', true);
 	});
+
+	/* 스크롤 시 탭에 보더 추가 */
+	$(window).scroll(function(){
+		var winTop = $(window).scrollTop();
+		if(winTop <= 0){
+			$('.fixed-area').css({'border':'0'});
+		}else{
+			$('.fixed-area').css({'border-bottom':'1px solid #ddd'});
+		}
+	});
 });
 </script>
 </body>
