@@ -1151,13 +1151,9 @@
 
 /* 쿠폰 */
 .coupon-area {
-	margin-top:20px;
-	padding-top:20px;
-	border-top:2px solid #ddd;
-}
-.coupon-area.bot-border {
-	padding-bottom:20px;
-	border-bottom:2px solid #ddd;
+	margin:20px -10px;
+	padding:20px 10px 0;
+	border-top:10px solid #eee;
 }
 .no-noresult {
 	padding:65px 0;
@@ -1216,15 +1212,13 @@
 .coupon-cont {margin-top:10px;}
 .coupon-cont .thumb-list8 {
 	overflow:hidden;
+	margin:0 -2px;
 }
 .coupon-cont .thumb-list8 .box {
 	float:left;
 	position:relative;
 	width:50%;
-	height:162px;
-	padding:15px 0;
-	border-right:1px solid #ddd;
-	border-top:1px solid #ddd;
+	padding:2px;
 	box-sizing:border-box;
 }
 .coupon-cont .thumb-list8 .box:nth-child(1),
@@ -1234,7 +1228,11 @@
 .coupon-cont .thumb-list8 .box:nth-child(2n+2) {
 	border-right:0;
 }
-.coupon-cont .thumb-list8 .box .link {display:block;}
+.coupon-cont .thumb-list8 .box .link {
+	display:block;
+	padding:15px 0 13px;
+	border:1px solid #eee;
+}
 .thumb-list8 .box .ico-label {
 	position:absolute;
 	left:43px; top:16px;
@@ -1254,6 +1252,15 @@
 	font-size:13px;
 	color:#666;
 	line-height:16px;
+}
+.coupon-area .sale-text-box {
+	border:1px solid #eee;
+	padding:38px 10px;
+	color:#666;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;
+	line-height:18px;
 }
 
 /* 1:1상담 팝업*/
