@@ -1976,7 +1976,11 @@ select.styled1:disabled {
 	background-color:#fff;
 }
 .tab-list4 .item.on .text {color:#333;}
-
+@media only screen and (max-width: 320px) {
+	.tab-list4 .item .text {
+		font-size:14px;
+	}
+}
 /* 탭 05 */
 .tab-list5 {
 	overflow:hidden;
@@ -3186,6 +3190,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align: center;
 	background-color:rgba(102,102,102,0.6);
 }
+.thumb-list1 .box .img-area.goods-stop .stop.stop-bot {bottom:14px;}
 .thumb-list1 .box .text-area {padding-top:22px;}
 .thumb-list1 .box .text-area .name {
 	height:36px;
@@ -3587,7 +3592,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding-top:15px;
 }
 .thumb-list5 .box .float-area span {color:#666;}
-
+@media only screen and (max-width: 320px) {
+	.thumb-list5 .box .float-area .name {
+		display: block;
+		float: none;
+	}
+	.thumb-list5 .box .float-area .date {
+		display: block;
+		float: none;
+		margin-top:5px;
+	}
+}
 /* 06 */
 .thumb-list6 .box .ico-label {
 	position:absolute;
@@ -3972,8 +3987,16 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#ec7015;
 }
 
+.store-fix-area .tab-list1 {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 57px;
+	z-index: 100;
+}
 .store-cont {
 	display: none;
+	padding-top:56px;
 }
 .store-cont.on {
 	display: block;
@@ -3990,7 +4013,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .map-area .map-search {
 	position: absolute;
-	top:0; left:0; right:0;
+	top:0; left:0;
+	right:0;
 	z-index: 3;
 }
 .map-search {
@@ -4003,12 +4027,13 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	margin-top:0;
 }
 .map-search .btn-box {
-	margin-top:10px;
+	text-align: right;
 }
 .map-search .btn-map-list {
 	position: relative;
 	display: inline-block;
 	height:30px;
+	margin-top:2px;
 	padding:0 12px 0 30px;
 	color:#fff;
 	font-size:13px;
@@ -4028,6 +4053,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-position: 0 -1088px;
 	background-size:50px 1300px;
 }
+.map-search select.styled1 {color:#ccc}
+.map-search select.styled1 option {color:#666;}
 .map-maker {
 	z-index: 2;
 }
@@ -4865,7 +4892,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 /* 결과 없음 */
 .no-result1 {
-	padding-top:150px;
+	padding-top:170px;
 	font-size:15px;
 	color:#aaa;
 	text-align:center;
@@ -4873,11 +4900,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-color:#fff;
 }
 .no-result1 .text1 {padding-top:20px;}
-.no-result1 .text2 {
-	padding-top:106px;
-	background:url(../img/bg/bg_noresult01.png) no-repeat 50% 0;
-	background-size:100px 92px;
-}
+
 .no-result1 .btn-text {
 	width:80px;
 	margin-top:16px;
@@ -5389,7 +5412,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 
 /* 방사성물질 검사 결과 */
 .radioactivity-box {margin-top:10px;}
-.radioactivity-box .radioactivity-list {border-top:1px solid #bbb;}
+.radioactivity-box .radioactivity-list {}
 .radioactivity-box .radioactivity-list .item {
 	position:relative;
 	padding:10px 0 20px 65px;
@@ -5697,7 +5720,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 공유하기 팝업 */
 .share-list {
 	overflow: hidden;
-	display: inline-block;
 	width:230px;
 	margin: 0 auto;
 }

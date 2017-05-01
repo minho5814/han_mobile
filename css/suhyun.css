@@ -565,6 +565,9 @@
 .thumb-wrap {padding:0 10px 30px;}
 .thumb-wrap .thumb-list1 {}
 .thumb-wrap .thumb-list1 .box {padding-left:40px;}
+.thumb-wrap .thumb-list1 .box:last-child {
+	border-bottom:0;
+}
 
 .thumb-wrap .align-left {padding:10px; margin: 0 -10px;}
 .thumb-wrap .thumb-list1 .box .btn-list {left:170px;}
@@ -1104,7 +1107,7 @@
 	left:0;
 	width:100%;
 	height:100%;
-	background-color:rgba(0,0,0,0.5);
+	background-color:rgba(0,0,0,0.65);
 	z-index: 100;
 }
 
@@ -1501,6 +1504,7 @@
 	font-size:15px;
 	color:#333;
 	line-height:22px;
+	font-weight:bold;
 }
 /* 거래정보 */
 /* 주문조회 */

@@ -70,31 +70,16 @@
 				<div class="gun-payment">
 					<div class="gun-area">
 						<ul class="gun-list">
-							<li class="item">합계금액(<strong>3</strong>)<span class="price"><span class="number">8,450</span>원</span></li>
+							<li class="item">합계금액(<strong>3</strong>종)<span class="price"><span class="number">8,450</span>원</span></li>
 							<li class="item">출자금 자동증자금
-								<a href="#none" class="tip">
-									<span class="hide">도움말</span>
-									<div class="inner-box">
-										<div>
-											<p>비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등 조직 운영에 사용되며 물품구입시마다 의무자동출자되며 이는 탈퇴 시 환불됩니다.</p>
-											<p>* 출자금 등은 부가세 매입세액 및 연말정산 공제대상이 아닙니다.</p>
-										</div>
-									</div>
-								</a>
+								<button type="button" class="btn-popup btn-image btn-tooltip btn-article"><span class="hide">출자금 자동증자금</span></button>
 								<span class="price"><span class="number">1,000</span>원</span>
 							</li>
 							<li class="item">공급부담금
-								<a href="#none" class="tip">
-									<span class="hide">도움말</span>
-									<div class="inner-box">
-										<div>
-											<p>출자금을 제외한 일정금액(지역한살림별로 다름) 미만 주문시 부과됩니다.</p>
-										</div>
-									</div>
-								</a>
+								<button type="button" class="btn-popup btn-image btn-tooltip btn-supply"><span class="hide">공급부담금</span></button>
 								<span class="price"><span class="number">3,000</span>원</span>
 							</li>
-							<li class="item gun-item">총 결제금액<span class="price"><span class="gun-number fColor03">12,450</span>원</span></li>
+							<li class="item gun-item">최종 결제금액<span class="price"><span class="gun-number fColor03">12,450</span>원</span></li>
 						</ul>
 					</div>
 				</div>
@@ -118,8 +103,72 @@
 		</div>
 	</div>
 </div>
-
+<!-- 출자금 자동증자금 팝업 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-article">
+	<div class="pop-head">
+		<h1 class="pop-title">출자금 자동증자금</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등
+						조직 운영에 사용되며 물품구입시마다 의무자동출자되며 이는 탈퇴 시 환불됩니다.
+						* 출자금 등은 부가세 매입세액 및 연말정산 공제대상이 아닙니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 공급부담금 팝업 -->
+<div class="layer-popup pop-supply">
+	<div class="pop-head">
+		<h1 class="pop-title">공급부담금</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						출자금을 제외한 일정금액(지역한살림별로 다름) 미만 주문시 부과됩니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+
+
+	/* 팝업*/
+	/*툴팁 팝업*/
+	/*출자금 자동증자금 팝업*/
+	$('.btn-article').click(function(){
+		$('.pop-article').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+	/*공급부담금 팝업*/
+	$('.btn-supply').click(function(){
+		$('.pop-supply').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+});
+</script>
 </body>
 </html>

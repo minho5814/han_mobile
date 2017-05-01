@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*공통*/
- .float-area {overflow: hidden;}
+.float-area {overflow: hidden;}
 .float-area .f-left{float:left;}
 .float-area .f-right{float:right;}
 
@@ -229,9 +229,9 @@
 /*한살림소개 동영상*/
 .video-area {
 	overflow: hidden;
-	width:355px;
-	height:200px;
-	margin:15px auto 0 auto;
+	width:100%;
+	height:auto;
+	margin-top:15px;
 }
 .video-area img {width: 100%; height:100%;}
 @media only screen and (max-width: 320px) {
@@ -269,20 +269,19 @@
 .qna-area.on {display: block;}
 .qna-area .tab-list5 {padding-top:10px; border-top:1px solid #bbb;}
 
-.qna-cont {
+.qna-area .qna-cont {
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
 }
-.qna-list .item {
-
+.qna-area .qna-list .item {
+    padding:0;
 }
-.qna-list .item .question {
+.qna-area .qna-list .item .question {
 	position:relative;
-	border-bottom:1px solid #eee;
 	padding:15px 35px 15px 10px;
 
 }
-.qna-list .item .question:before{
+.qna-area .qna-list .item .question:before{
 	content:'';
 	position: absolute;
 	right:10px;
@@ -296,24 +295,24 @@
 	-ms-transform:rotate(180deg);
 	transform: rotate(180deg);
 }
-.qna-list .item.on .question:before  {
+.qna-area .qna-list .item.on .question:before  {
         webkit-transform:rotate(0);
     	-ms-transform:rotate(0);
 		transform: rotate(0);
 }
-.qna-list .item .question .title {
+.qna-area .qna-list .item .question .title {
 	color:#333;
 	font-size:15px;
 }
 
-.qna-list .item .question .date,
-.qna-list .item .question .status {
+.qna-area .qna-list .item .question .date,
+.qna-area .qna-list .item .question .status {
 	color:#aaa;
 	font-size: 13px;
 }
-.qna-list .item .question .date {padding-right:5px;}
-.qna-list .item .question .status {position:relative;padding-left:5px;}
-.qna-list .item .question .status:before {
+.qna-area .qna-list .item .question .date {padding-right:5px;}
+.qna-area .qna-list .item .question .status {position:relative;padding-left:5px;}
+.qna-area .qna-list .item .question .status:before {
 	content:'';
 	position: absolute;
 	left:0; top:50%;
@@ -321,9 +320,9 @@
 	width:1px; height:8px;
 	background-color:#ddd;
 }
-.qna-list .item .question .row:first-child {margin-bottom:5px;}
-.qna-list .item .important .title {}
-.qna-list .item .important .title:before {
+.qna-area .qna-list .item .question .row:first-child {margin-bottom:5px;}
+.qna-area .qna-list .item .important .title {}
+.qna-area .qna-list .item .important .title:before {
 	content: '필독';
 	display: inline-block;
 	width:34px;
@@ -341,14 +340,14 @@
 }
 
 
-.qna-list .item.on .answer {display: block;}
-.qna-list .item .answer {
+.qna-area .qna-list .item.on .answer {display: block;}
+.qna-area .qna-list .item .answer {
 	display: none;
 	padding:15px 10px;
-	border-bottom:1px solid #eee;
+	border-top:1px solid #eee;
 	background-color:#f7f7f7;
 }
-.qna-list .item .answer .text {
+.qna-area .qna-list .item .answer .text {
 	font-size:15px;
 	color:#666;
 	line-height:22px;
@@ -437,7 +436,9 @@
 .board-view-area .gray-content2 .hashtag-area a {
 	background-color:#fff;
 }
-
+.board-view-area .thumb-wrap {
+    padding:0 0 30px;
+}
 .direction-area{
 	margin-top:30px;
 	border-top:1px solid #eee;
@@ -1816,7 +1817,6 @@ label.important:before {
 }
 .accordion-list .list-group .list-cont .row .cont {
 	height:30px;
-	text-align:
 }
 .accordion-list .list-group .list-cont .row .cont .txt {
 	display: inline-block;
@@ -2033,7 +2033,7 @@ label.important:before {
 /*.change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}*/
 
 /*주문조회*/
-.flag {
+.float-area .flag {
 	display: inline-block;
 	width:68px;
 	height:25px;
