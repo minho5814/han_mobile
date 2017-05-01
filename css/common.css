@@ -2037,13 +2037,13 @@ select.styled1:disabled {
 /* 01 */
 .board1 {}
 .board1 table {
-	border-top:1px solid #bbb;
-	border-bottom:1px solid #bbb;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
 }
 .board1 th,
 .board1 td {
 	padding:12px 10px;
-	border-top:1px solid #ddd;
+	border-top:1px solid #eee;
 	font-size:15px;
 	text-align:left;
 	font-weight:normal;
@@ -2086,13 +2086,13 @@ select.styled1:disabled {
 	line-height:15px;
 }
 .board2 table {
-	border-top:1px solid #bbb;
-	border-bottom:1px solid #bbb;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
 }
 .board2 th,
 .board2 td {
 	padding:10px;
-	border-top:1px solid #ddd;
+	border-top:1px solid #eee;
 	font-size:15px;
 	text-align:center;
 	font-weight:normal;
@@ -2117,8 +2117,8 @@ select.styled1:disabled {
 /* 03 */
 .board3 {}
 .board3 table {
-	border-top:1px solid #bbb;
-	border-bottom:1px solid #bbb;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
 }
 
 .board3 th {
@@ -2134,7 +2134,7 @@ select.styled1:disabled {
 }
 .board3 td {
 	padding:15px 0;
-	border-top:1px solid #ddd;
+	border-top:1px solid #eee;
 	color:#666;
 	font-size:15px;
 	text-align:center;
@@ -5111,6 +5111,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .top-gray-box2 {border-top:10px solid #eee;}
 .top-gray-box2:first-child {border-top:0;}
 .top-gray-box2 .align-center .cTitle01 {line-height:50px;}
+.top-gray-box2 .title-wrap .cTitle01 {margin-top:15px; line-height: 45px;}
 .top-gray-box2 .cont {border-top:1px solid #bbb;}
 .top-gray-box2 .thumb-list1 .box {margin:0 10px;}
 
@@ -5736,6 +5737,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:23px;
 }
 .price-info-box .box dl dt {
+
 	float:left;
 }
 .price-info-box .box dl dd {
@@ -5761,6 +5763,40 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:25px 10px 0;
 	background-color:#fff;
 }
+
+
+
+.price-info-box2 {
+	overflow: hidden;
+	padding:0 15px;
+	border:2px solid #eee;
+}
+.price-info-box2 li{overflow: hidden;}
+.price-info-box2 li .title {float: left; font-size:15px; color:#666;}
+.price-info-box2 li .number {float:right;}
+.price-info-box2 .box:first-child {border-top:0;}
+.price-info-box2 .box h3.title {
+	color:#333;
+	font-size:16px;
+	font-weight:bold;
+	line-height:35px;
+}
+.price-info-box2 .box li {
+	color:#666;
+	font-size:15px;
+	line-height:23px;
+}
+.price-info-box2 .box .number {
+	color:#f04114;
+	font-weight:bold;
+}
+.price-info-box2 .box .number em {color:#666;}
+
+.price-info-box2 .box {
+	padding:10px 5px 15px;
+	border-top:1px solid #eee;
+}
+
 
 .search-box {
 	margin:0 -10px;
@@ -6152,44 +6188,24 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .calendar-layer .ui-datepicker-calendar tr:first-child td {padding-top:5px;}
 .calendar-layer .ui-datepicker-calendar td a {
-	display:inline-block;
+	display:block;
 	position:relative;
-	width:30px;
-	height:30px;
+	height:37px;
 	color:#333;
-	border-radius:50%;
 	font-size:15px;
 	text-align:center;
-	line-height:30px;
+	line-height:37px;
 }
 .calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:before {
 	content:'';
 	position:absolute;
-	left:50%;top:1px;
-	-webkit-transform:translateX(-50%);
-	-ms-transform:translateX(-50%);
-	transform:translateX(-50%);
-	width:4px;
-	height:4px;
-	border-radius:50%;
-	background-color:#60b015;
-}
-.calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:after {
-	content:'';
-	position:absolute;
-	left:-1px;right:0;bottom:-2px;
-	height:9px;
-	background:url(../img/ico/ico_text_today.png) no-repeat 50% 0;
-	background-size:16px 9px;
+	left:0;right:0;top:0;bottom:0;
+	border:1px solid #60af15;
 }
 .calendar-layer .ui-datepicker-calendar td.ui-state-disabled span {color:#aaa;}
-.calendar-layer .ui-datepicker-calendar td a.ui-gray {
+.calendar-layer .ui-datepicker-calendar td a.ui-possible {
 	background-color:#eee;
 	color:#000;
-}
-.calendar-layer .ui-datepicker-calendar td a.ui-blue {
-	background-color:#239bd2;
-	color:#fff;
 }
 .calendar-layer .ui-datepicker-calendar td a.ui-state-active {
 	background-color:#60b015;
@@ -6205,8 +6221,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	float:left;
 	position:relative;
 	margin-left:15px;
-	padding-left:12px;
-	color:#aaa;
+	padding-left:15px;
+	color:#666;
 	font-size:14px;
 	line-height:30px;
 }
@@ -6218,12 +6234,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:8px;
-	height:8px;
-	border-radius:50%;
+	width:10px;
+	height:10px;
 }
 .calendar-layer .wish-box .guide-text .gray:before {background-color:#eee;}
-.calendar-layer .wish-box .guide-text .blue:before {background-color:#239bd2;}
+.calendar-layer .wish-box .guide-text .green:before {background-color:#60af15;}
 .calendar-layer .wish-box .wish-date {
 	margin-top:12px;
 	padding:12px 0;
@@ -6231,15 +6246,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align:center;
 }
 .calendar-layer .wish-box .wish-date .text {
-	color:#aaa;
+	color:#666;
 	font-size:15px;
 }
 .calendar-layer .wish-box .wish-date .date {
-	color:#239bd2;
+	color:#61b016;
 	font-size:17px;
 	font-weight:bold;
 }
-
 
 /* 내역 조회 */
 .calendar-layer .btn-list1 {

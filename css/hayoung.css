@@ -740,8 +740,8 @@ label.important:before {
 }
 .cook-list .text-area {
     position:relative;
-	height:70px;
-	padding:13px 10px 18px;
+	height:93px;
+	padding:13px 10px 13px;
     border:1px solid #eee;
 	box-sizing: border-box;
     border-top:0;
@@ -759,8 +759,8 @@ label.important:before {
 .cook-list .text-area .time {
 	display: inline-block;
     margin-top:3px;
-	color:#60b015;
-	font-size:13px;
+	color:#666;
+	font-size:14px;
 }
 .cook-list .text-area .btn-like {
     position:absolute;
@@ -768,7 +768,7 @@ label.important:before {
     width:35px;
     height:35px;
 }
-.cook-slide {margin-top:8px;}
+.cook-slide {padding-bottom:30px;}
 .cook-slide .swiper-pagination {
 	width:60px;
 	height:27px;
@@ -805,14 +805,13 @@ label.important:before {
 	font-weight:normal;
 }
 .replay-table-wrap .title-wrap .number-txt {
-    margin-top:6px;
     font-size:14px;
     color:#333;
     line-height:15px;
 }
 .replay-table-wrap .title-wrap .btn-comment {
     position:absolute;
-    right:0; bottom:0;
+    right:0; top:15px;
     width:90px;
 }
 
@@ -1042,8 +1041,6 @@ label.important:before {
 	border:1px solid #eee;
 }
 .recipe-wrap .tab-content.list  .cook-list2 .text-area .name {font-size:18px;}
-.recipe-wrap .tab-content.list  .cook-list2 .text-area .time {margin-top:0;
-}
 .recipe-wrap .tab-content.list .cook-list2 .text-area .material {
 	display: inherit;
 	height:30px;
@@ -1056,7 +1053,7 @@ label.important:before {
 
 }
 .recipe-wrap .tab-content.list  .cook-list2 .text-area .btn-like {
-	right:16px; top:32px;
+	right:16px; top:17px;
 }
 
 /* --------------------------------------------------------------------------------------------
@@ -1292,7 +1289,7 @@ label.important:before {
 .campaign-sub .thumb-box:before  {
 	content:'';
 	position:absolute;
-	right:0;
+	right:10px;
 	top:-1px;
 	width:42px;
 	height:39px;
@@ -1813,11 +1810,12 @@ label.important:before {
 	vertical-align: middle;
 }
 .accordion-list .list-group .list-cont .row .title {
-	max-width:85px;
+	width:85px;
 	color:#333;
 }
 .accordion-list .list-group .list-cont .row .cont {
 	height:30px;
+	text-align:
 }
 .accordion-list .list-group .list-cont .row .cont .txt {
 	display: inline-block;
@@ -1932,6 +1930,7 @@ label.important:before {
 .sub-main .white-content6 .thumb-list1 {
 	border-top:1px solid #ccc;
 }
+.sub-main .btn-box {float:right;}
 
 /*바코드 팝업*/
 .pop-view-barcode.layer-popup .pop-head {background-color:#fff;}
