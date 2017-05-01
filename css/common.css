@@ -4011,7 +4011,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .map-area .map-search {
 	position: absolute;
-	top:0; left:0; right:0;
+	top:0; left:0;
+	right:0;
 	z-index: 3;
 }
 .map-search {
@@ -4024,12 +4025,13 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	margin-top:0;
 }
 .map-search .btn-box {
-	margin-top:10px;
+	text-align: right;
 }
 .map-search .btn-map-list {
 	position: relative;
 	display: inline-block;
 	height:30px;
+	margin-top:2px;
 	padding:0 12px 0 30px;
 	color:#fff;
 	font-size:13px;
