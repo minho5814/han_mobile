@@ -144,10 +144,35 @@ $(window).load(function(){
 	// 닫기
 	$('.search-layer .btn-close, .bg-close').click(function(){
 		scrollOk();
+		$('.search-layer .title-box').removeClass('fxd');
 		$('.search-layer').stop().animate({right:'-100%'}, 100, function(){
 			$(this).hide();
 		});
 	});
+
+	$('.search-layer .layer-cont').scroll(function(){
+		var contTop = $(this).offset().top;
+		var $direct = $(this).find('.title-box');
+		$direct.each(function(index){
+			$boxtop = $direct.eq(index).offset().top;
+			if ($boxtop <= contTop) {
+				$('.search-layer .title-box').eq(index).addClass('fxd');
+			}else{
+				$('.search-layer .title-box').eq(index).removeClass('fxd');
+			}
+		});
+	});
+
+
+
+
+
+
+
+
+
+
+
 	// 체크 전체 해제
 	$('.search-layer .btn-text-line1').click(function(){
 		$(this).parents('.search-layer').find('input[type=checkbox]').prop('checked', false);
@@ -157,6 +182,13 @@ $(window).load(function(){
 	$('.btn-filter').click(function(){
 		scrollNo();
 		$('.filter-layer').show().stop().animate({right:0}, 200);
+
+		// 메뉴 리스트 위치값 출력
+		$('.search-layer .title-box').each(function(){
+			var wrapT = $(this).parents('.layer-cont').offset().top;
+			var depthT = $(this).offset().top;
+			$(this).attr('data', depthT - wrapT);
+		});
 	});
 	$('.btn-filter01').click(function(){
 		scrollNo();

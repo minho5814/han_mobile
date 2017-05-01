@@ -2686,7 +2686,6 @@ html {
 	border-top:1px solid #eee;
 }
 .search-layer .layer-cont .check-label:first-child {border-top:0;}
-.search-layer .layer-cont {}
 .search-layer .btn-list1 {
 	position:absolute;
 	left:0;right:0;bottom:0;
@@ -2695,6 +2694,7 @@ html {
 }
 /* 아코디언 */
 .search-layer .accordion-list {}
+.search-layer .accordion-list .title-box {height:45px;}
 .search-layer .accordion-list .layer-title {
 	height:45px;
 	padding:0 10px;
@@ -2702,6 +2702,13 @@ html {
 	color:#333;
 	font-size:17px;
 	line-height:47px;
+}
+.search-layer .accordion-list .title-box.fxd .layer-title {
+	position:fixed;
+	right:0;top:57px;
+	z-index:5;
+	width:359px;
+	box-sizing:border-box;
 }
 .search-layer .accordion-list .item {border-top:1px solid #bbb;}
 .search-layer .accordion-list .item:first-child {border-top:0;}
