@@ -4183,6 +4183,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .store-flag-list .flag-ico {
 	float:left;
+	position:relative;
 	width:25%;
 	color:#666;
 	font-size:14px;
@@ -4190,6 +4191,18 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align: center;
 	box-sizing: border-box;
 }
+.store-flag-list .flag-ico:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:2px;
+	height:2px;
+	background-color:#999;
+}
+.store-flag-list .flag-ico:first-child:before {display:none;}
 .store-flag-list .flag-ico span {
 	position: relative;
 	display: inline-block;
