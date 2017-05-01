@@ -555,6 +555,7 @@
     padding-left:75px;
     margin-top:6px;
 }
+.search-info02 dl:first-child {margin-top:0;}
 .search-info02 dl:fisrt-child {
     margin-top:0;
 }
