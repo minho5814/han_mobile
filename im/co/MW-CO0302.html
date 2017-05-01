@@ -758,6 +758,17 @@ $(window).load(function(){
 		$('.sub-cont').removeClass('on').eq(idx).addClass('on');
 	});
 
+	$(window).scroll(function(){
+		var winTop = $(window).scrollTop();
+
+		/* 스크롤시 해더 하단 보다라인 추가 */
+		if(winTop <= 0){
+			$('.fixed-sub').css({'border':'0'});
+		}else{
+			$('.fixed-sub').css({'border-bottom':'1px solid #ddd'});
+		}
+	});
+
 
 });
 </script>
