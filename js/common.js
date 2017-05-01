@@ -309,9 +309,7 @@ $(window).load(function(){
 				$('.datepicker2 .ui-state-default').each(function(){
 					var txt = $(this).html();
 					// 선택가능 공급일
-					if(txt == '5' || txt == '21') $(this).addClass('ui-gray');
-					// 희망 배송일
-					if(txt == '18') $(this).addClass('ui-blue');
+					if(txt == '16' || txt == '17' || txt == '18' || txt == '19') $(this).addClass('ui-possible');
 				});
 			}, 20);
 		}

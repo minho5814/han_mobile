@@ -97,27 +97,27 @@
 							<ul>
 								<li class="row">
 									<span class="title">구분</span>
-									<span class="cont">특별품</span>
+									<div class="cont">특별품</div>
 								</li>
 								<li class="row">
 									<span class="title">주문일</span>
-									<span class="cont">2017-02-27(월)</span>
+									<div class="cont">2017-02-27(월)</div>
 								</li>
 								<li class="row">
 									<span class="title">공급일</span>
-									<span class="cont">2017-02-27(월)</span>
+									<div class="cont">2017-02-27(월)</div>
 								</li>
 								<li class="row">
 									<span class="title">금액</span>
-									<span class="cont"><em class="fColor03 bold">15,000</em>원 [<em class="bold">카드</em>]</span>
+									<div class="cont"><em class="fColor03 bold">15,000</em>원 [<em class="bold">카드</em>]</div>
 								</li>
 								<li class="row">
 									<span class="title">상태</span>
-									<span class="cont">주문완료</span>
-									<div class="btn-box">
-										<ul class="btn-list1">
-											<li class="item"><a href="#" class="btn-text btn-h30 btn-text-line1">주문삭제</a></li>
-										</ul>
+									<div class="cont">
+										<span class="txt">주문완료</span>
+										<div class="btn-box">
+											<button type="button" class="btn-text btn-h30 btn-text-line1">주문삭제</button>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -152,12 +152,12 @@
 								</li>
 								<li class="row">
 									<span class="title">상태</span>
-									<span class="cont">주문완료</span>
-									<div class="btn-box">
-										<ul class="btn-list1">
-											<li class="item"><a href="#" class="btn-text btn-h30 btn-text-line1">주문삭제</a></li>
-											<li class="item"><a href="#" class="btn-text btn-h30 btn-text-line1">운송장조회</a></li>
-										</ul>
+									<div class="cont">
+										<span class="txt">주문완료</span>
+										<div class="btn-box">
+											<button type="button" class="btn-text btn-h30 btn-text-line1">주문삭제</button>
+											<button type="button" class="btn-text btn-h30 btn-text-line1 btn-popup btn-waybill">운송장조회</button>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -411,6 +411,34 @@
 	</div>
 </div>
 
+<!-- 운송장 팝업 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-waybill">
+	<div class="pop-head">
+		<h1 class="pop-title">운송장조회</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<!-- <h3 class="cTitle01">결제방법 선택</h3> -->
+				<div class="radio-list">
+					<label><input type="radio" name="choice" class="styled1" checked>홍길동 [123456789152]</label>
+					<label><input type="radio" name="choice" class="styled1">홍길순 [123456789152]</label>
+					<label><input type="radio" name="choice" class="styled1">김길동 [123456789152]</label>
+				</div>
+			</div>
+			<div class="btn-area">
+				<ul class="btn-list1">
+					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">취소</a></li>
+					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-green1">확인</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
 <script type="text/javascript" src="../../js/common.js"></script>
@@ -430,6 +458,12 @@ $(window).load(function(){
 	/*바코드*/
 	$('.btn-view-barcode').click(function(){
 		$('.pop-view-barcode').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+	/*운송장조회*/
+	$('.btn-waybill').click(function(){
+		$('.pop-waybill').fadeIn(200);
 		$('.block-ui').fadeIn();
 	});
 

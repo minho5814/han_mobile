@@ -1810,11 +1810,12 @@ label.important:before {
 	vertical-align: middle;
 }
 .accordion-list .list-group .list-cont .row .title {
-	max-width:85px;
+	width:85px;
 	color:#333;
 }
 .accordion-list .list-group .list-cont .row .cont {
 	height:30px;
+	text-align:
 }
 .accordion-list .list-group .list-cont .row .cont .txt {
 	display: inline-block;
@@ -1929,6 +1930,7 @@ label.important:before {
 .sub-main .white-content6 .thumb-list1 {
 	border-top:1px solid #ccc;
 }
+.sub-main .btn-box {float:right;}
 
 /*바코드 팝업*/
 .pop-view-barcode.layer-popup .pop-head {background-color:#fff;}

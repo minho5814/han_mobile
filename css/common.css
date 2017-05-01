@@ -6153,44 +6153,24 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .calendar-layer .ui-datepicker-calendar tr:first-child td {padding-top:5px;}
 .calendar-layer .ui-datepicker-calendar td a {
-	display:inline-block;
+	display:block;
 	position:relative;
-	width:30px;
-	height:30px;
+	height:37px;
 	color:#333;
-	border-radius:50%;
 	font-size:15px;
 	text-align:center;
-	line-height:30px;
+	line-height:37px;
 }
 .calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:before {
 	content:'';
 	position:absolute;
-	left:50%;top:1px;
-	-webkit-transform:translateX(-50%);
-	-ms-transform:translateX(-50%);
-	transform:translateX(-50%);
-	width:4px;
-	height:4px;
-	border-radius:50%;
-	background-color:#60b015;
-}
-.calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:after {
-	content:'';
-	position:absolute;
-	left:-1px;right:0;bottom:-2px;
-	height:9px;
-	background:url(../img/ico/ico_text_today.png) no-repeat 50% 0;
-	background-size:16px 9px;
+	left:0;right:0;top:0;bottom:0;
+	border:1px solid #60af15;
 }
 .calendar-layer .ui-datepicker-calendar td.ui-state-disabled span {color:#aaa;}
-.calendar-layer .ui-datepicker-calendar td a.ui-gray {
+.calendar-layer .ui-datepicker-calendar td a.ui-possible {
 	background-color:#eee;
 	color:#000;
-}
-.calendar-layer .ui-datepicker-calendar td a.ui-blue {
-	background-color:#239bd2;
-	color:#fff;
 }
 .calendar-layer .ui-datepicker-calendar td a.ui-state-active {
 	background-color:#60b015;
@@ -6206,8 +6186,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	float:left;
 	position:relative;
 	margin-left:15px;
-	padding-left:12px;
-	color:#aaa;
+	padding-left:15px;
+	color:#666;
 	font-size:14px;
 	line-height:30px;
 }
@@ -6219,12 +6199,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
-	width:8px;
-	height:8px;
-	border-radius:50%;
+	width:10px;
+	height:10px;
 }
 .calendar-layer .wish-box .guide-text .gray:before {background-color:#eee;}
-.calendar-layer .wish-box .guide-text .blue:before {background-color:#239bd2;}
+.calendar-layer .wish-box .guide-text .green:before {background-color:#60af15;}
 .calendar-layer .wish-box .wish-date {
 	margin-top:12px;
 	padding:12px 0;
@@ -6232,15 +6211,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align:center;
 }
 .calendar-layer .wish-box .wish-date .text {
-	color:#aaa;
+	color:#666;
 	font-size:15px;
 }
 .calendar-layer .wish-box .wish-date .date {
-	color:#239bd2;
+	color:#61b016;
 	font-size:17px;
 	font-weight:bold;
 }
-
 
 /* 내역 조회 */
 .calendar-layer .btn-list1 {
