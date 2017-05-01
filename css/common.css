@@ -3578,7 +3578,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 05 */
 .thumb-list5 .box .ico-label {
 	position:absolute;
-	left:0;top:5px;
+	left:0;top:0;
 	z-index:1;
 }
 .thumb-list5 {
@@ -5730,7 +5730,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .btn-goods.btn-good .text:before {background-position:0 -425px;}
 .btn-goods.btn-bad .text:before {background-position:0 -447px;}
 .btn-goods.on {
-	border-color:#bbb;
+	border-color:#60b015;
 	background-color:#fff;
 	color:#333;
 }/* on */
@@ -6342,6 +6342,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align:center;
 	line-height:37px;
 }
+.calendar-layer .ui-datepicker-calendar td:first-child a {color:#F04114;}
 .calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:before {
 	content:'';
 	position:absolute;

@@ -267,7 +267,6 @@
 -------------------------------------------------------------------------------------------- */
 .qna-area {display: none;}
 .qna-area.on {display: block;}
-.qna-area .tab-list5 {padding-top:10px; border-top:1px solid #bbb;}
 
 .qna-area .qna-cont {
 	border-top:1px solid #eee;

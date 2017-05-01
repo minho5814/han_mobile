@@ -178,7 +178,7 @@
 	-webkit-transform:tanslate(-50%,-50%);
 }
 .palan-box .palan-text {
-	padding:16px 14px 14px;
+	padding:14px;
 	border:1px solid #eee;
 	border-top:0;
 	box-sizing:border-box;
@@ -189,10 +189,16 @@
 	/*line-height:24px;*/
 	letter-spacing:-1px;
 }
+.palan-box .palan-text .palan-title a {
+	display:block;
+	font-weight:bold;
+}
 .palan-box .palan-text .palan-title span {
 	display: block;
+	margin-bottom:2px;
 	font-size: 13px;
-	line-height: 13px;
+	font-weight:normal;
+	line-height: 17px;
 }
 .palan-box .palan-text .palan-date {
 	margin-top:5px;
@@ -894,7 +900,6 @@
 	color:#666;
 	line-height:22px;
 }
-.form-list1 .form-item {margin-top:15px;}
 .birth-area,
 .tele-area {overflow:hidden;}
 .birth-area .box,
