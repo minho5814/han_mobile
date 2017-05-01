@@ -3971,8 +3971,16 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#ec7015;
 }
 
+.store-fix-area .tab-list1 {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 57px;
+	z-index: 100;
+}
 .store-cont {
 	display: none;
+	padding-top:56px;
 }
 .store-cont.on {
 	display: block;
@@ -4027,6 +4035,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-position: 0 -1088px;
 	background-size:50px 1300px;
 }
+.map-search select.styled1 {color:#ccc}
+.map-search select.styled1 option {color:#666;}
 .map-maker {
 	z-index: 2;
 }
@@ -5692,7 +5702,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 공유하기 팝업 */
 .share-list {
 	overflow: hidden;
-	display: inline-block;
 	width:230px;
 	margin: 0 auto;
 }

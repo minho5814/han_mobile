@@ -19,11 +19,13 @@
 	</div>
 
 	<div class="container">
-		<ul class="tab-list1">
-			<li class="item on"><span class="text">매장검색</span></li>
-			<li class="item"><span class="text">길찾기</span></li>
-			<li class="item"><span class="text">단골매장</span></li>
-		</ul>
+		<div class="store-fix-area">
+			<ul class="tab-list1">
+				<li class="item on"><span class="text">매장검색</span></li>
+				<li class="item"><span class="text">길찾기</span></li>
+				<li class="item"><span class="text">단골매장</span></li>
+			</ul>
+		</div>
 		<div class="store-cont on">
 			<div class="sub-cont on">
 				<div class="map-area">
@@ -56,7 +58,7 @@
 							<button type="button" class="btn-map-list">목록보기</button>
 						</div>
 					</div>
-					<img src="../../img/temp/temp_map.jpg" alt="" style="vertical-align:top; width:100%;">
+					<img src="../../img/temp/temp_map.jpg" alt="" style="vertical-align:top; width:200%;">
 					<div class="map-maker" style="position:absolute; top:50%; right:20%;">
 						<a href="#none" class="maker">1</a>
 					</div>
@@ -104,7 +106,7 @@
 								<button type="button" class="regular on">단골</button>
 								<ul class="btn-box">
 									<li><a href="#none">지도</a></li>
-									<li><a href="#none">물품</a></li>
+									<li><a href="#none">물품정보</a></li>
 									<li><a href="#none">매장상세</a></li>
 								</ul>
 							</li>
@@ -128,7 +130,7 @@
 								<button type="button" class="regular">단골</button>
 								<ul class="btn-box">
 									<li><a href="#none">지도</a></li>
-									<li><a href="#none">물품</a></li>
+									<li><a href="#none">물품정보</a></li>
 									<li><a href="#none">매장상세</a></li>
 								</ul>
 							</li>
@@ -152,7 +154,7 @@
 								<button type="button" class="regular">단골</button>
 								<ul class="btn-box">
 									<li><a href="#none">지도</a></li>
-									<li><a href="#none">물품</a></li>
+									<li><a href="#none">물품정보</a></li>
 									<li><a href="#none">매장상세</a></li>
 								</ul>
 							</li>
@@ -256,7 +258,7 @@
 								<button type="button" class="regular on">단골</button>
 								<ul class="btn-box">
 									<li><a href="#none">지도</a></li>
-									<li><a href="#none">물품</a></li>
+									<li><a href="#none">물품정보</a></li>
 									<li><a href="#none">매장상세</a></li>
 								</ul>
 							</li>
@@ -280,7 +282,7 @@
 								<button type="button" class="regular">단골</button>
 								<ul class="btn-box">
 									<li><a href="#none">지도</a></li>
-									<li><a href="#none">물품</a></li>
+									<li><a href="#none">물품정보</a></li>
 									<li><a href="#none">매장상세</a></li>
 								</ul>
 							</li>
@@ -304,7 +306,7 @@
 								<button type="button" class="regular">단골</button>
 								<ul class="btn-box">
 									<li><a href="#none">지도</a></li>
-									<li><a href="#none">물품</a></li>
+									<li><a href="#none">물품정보</a></li>
 									<li><a href="#none">매장상세</a></li>
 								</ul>
 							</li>
@@ -319,7 +321,7 @@
 							<button type="button" class="btn-map-list">단골매장 목록보기</button>
 						</div>
 					</div>
-					<img src="../../img/temp/temp_map.jpg" alt="" style="vertical-align:top; width:100%;">
+					<img src="../../img/temp/temp_map.jpg" alt="" style="vertical-align:top; width:200%;">
 					<div class="map-maker" style="position:absolute; top:50%; right:20%;">
 						<a href="#none" class="maker">1</a>
 					</div>
@@ -367,6 +369,7 @@ $(window).load(function(){
 		$('.transport .tab-list2 li').removeClass('on').eq(idx).addClass('on');
 		$('.transport .transport-cont').removeClass('on').eq(idx).addClass('on');
 	});
+	
 });
 </script>
 </body>
