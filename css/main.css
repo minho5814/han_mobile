@@ -287,3 +287,32 @@
 	text-indent:-9999px;
 	line-height:0;
 }
+
+
+/* 메인 안내 팝업 */
+.pop-main {}
+.pop-main .pop-cont {
+	padding:18px 20px 0;
+	color:#666;
+	font-size:15px;
+	line-height:22px;
+}
+.pop-main.layer-popup .pop-content {padding-bottom:10px;}
+.pop-main .pop-cont .btn-link-more {
+	width:80px;
+	height:30px;
+	margin-top:8px;
+	border-color:#bbb;
+}
+.pop-main .pop-cont .btn-link-more .text {
+	height:28px;
+	color:#333;
+	font-size:13px;
+	line-height:28px;
+}
+.pop-main .pop-cont .bullet-text1 {
+	margin-top:20px;
+	padding-top:10px;
+	border-top:1px solid #eee;
+}
+.pop-main .pop-cont .bullet-text1:before {top:10px;}

@@ -2880,7 +2880,7 @@ html {
 .btm-fix-menu {
 	position:fixed;
 	left:0;right:0;bottom:0;
-	z-index:105;
+	z-index:100;
 	height:54px;
 	padding:0 10px;
 	border-top:1px solid #bbb;
@@ -3067,7 +3067,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	position:fixed;
 	top:57px; left:0; right:0;
 	z-index:2;
-	height: 55px;
 }
 .fixed-area .fixed-sub {
 	display: none;
@@ -5890,9 +5889,15 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
 }
+.favorites-cont {
+	margin-top:56px;
+}
 .favorites-list {
 	padding:0 10px;
 	border-top:1px solid #ddd;
+}
+.favorites-list .thumb-wrap {
+	padding:0 0 30px;
 }
 .favorites-list .thumb-list1 .box {
 	padding-left:40px;

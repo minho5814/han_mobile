@@ -20,19 +20,21 @@
 	</div>
 
 	<div class="container">
-		<ul class="tab-list1 bg-white">
-			<li class="item"><a href="#none" class="text">관심물품(24)</a></li>
-			<li class="item"><a href="#none" class="text">관심콘텐츠(37)</a></li>
-			<li class="item line2 on"><a href="#none" class="text">내가 작성한<br>물품후기(12)</a></li>
-		</ul>
-		<div class="select-btn">
-			<select class="styled1">
-				<option>전체</option>
-				<option>이 물품이 좋아요</option>
-				<option>개선이 필요해요</option>
-			</select>
+		<div class="fixed-area">
+			<ul class="tab-list1 bg-white">
+				<li class="item"><a href="#none" class="text">관심물품(24)</a></li>
+				<li class="item"><a href="#none" class="text">관심콘텐츠(37)</a></li>
+				<li class="item line2 on"><a href="#none" class="text">내가 작성한<br>물품후기(12)</a></li>
+			</ul>
 		</div>
 		<div class="favorites-cont on">
+			<div class="select-btn">
+				<select class="styled1">
+					<option>전체</option>
+					<option>이 물품이 좋아요</option>
+					<option>개선이 필요해요</option>
+				</select>
+			</div>
 			<div class="favorites-list">
 				<p class="no-result-box mgT20">관심 콘텐츠가 존재하지 않습니다</p>
 			</div>
@@ -50,6 +52,13 @@ $(window).load(function(){
 		var dLen = $('input[name='+name+']').length;
 		$('input[name='+name+']').not('.all-check').prop('checked', true);
 	});
+
+	/* 스크롤시 해더 하단 보다라인 추가 */
+	if(winTop <= 0){
+		$('.header').css({'border':'0'});
+	}else{
+		$('.header').css({'border-bottom':'1px solid #ddd'});
+	}
 });
 </script>
 </body>
