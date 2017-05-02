@@ -4061,6 +4061,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	display: none;
 	padding-top:56px;
 }
+.store-cont.map-cont {
+	padding-top:0;
+}
 .store-cont.on {
 	display: block;
 }
@@ -4088,6 +4091,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .map-search .row:first-child {
 	margin-top:0;
+}
+.map-search .change-view {
+	display: none;
 }
 .map-search .btn-box {
 	text-align: right;
@@ -4137,6 +4143,21 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .map-location img {
 	width:175px; height:175px;
 	vertical-align: top;
+}
+.map-area .view-control {
+	position: absolute;
+	right:10px; bottom:10px;
+	width:35px;
+	height:69px;
+	background:url(../img/btn/btn_view_control.png) 0 0 no-repeat;
+	background-size:35px 69px;
+}
+.map-area .view-control button {
+	display: block;
+	width:35px;
+	height:34px;
+	font-size:0;
+	line-height: 0;
 }
 
 .store-result {}

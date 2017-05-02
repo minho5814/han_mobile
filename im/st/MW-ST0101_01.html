@@ -30,7 +30,7 @@
 			<div class="sub-cont on">
 				<div class="map-area">
 					<div class="map-search">
-						<div class="btn-box">
+						<div class="btn-box change-view">
 							<button type="button" class="btn-map-list">목록보기</button>
 						</div>
 						<div class="row">
@@ -54,7 +54,7 @@
 						<div class="row">
 							<div class="form-button-type1">
 								<input type="text" placeholder="지역/매장명 검색" class="text">
-								<button type="button" class="btn-text btn-h42 btn-text-gray1 btn">검색</span>
+								<button type="button" class="btn-text btn-h42 btn-text-gray1 btn bnt-list-view">검색</span>
 							</div>
 						</div>
 					</div>
@@ -67,6 +67,10 @@
 					</div>
 					<div class="map-location" style="position:absolute; top:30%; left:20%">
 						<img src="../../img/img/img_location.png" alt="현재 위치">
+					</div>
+					<div class="view-control">
+						<button type="button" class="btn-plus">확대</button>
+						<button type="button" class="btn-minus">축소</button>ㄴ
 					</div>
 				</div>
 			</div>
@@ -331,6 +335,10 @@
 					<div class="map-location" style="position:absolute; top:30%; left:20%">
 						<img src="../../img/img/img_location.png" alt="현재 위치">
 					</div>
+					<div class="view-control">
+						<button type="button" class="btn-plus">확대</button>
+						<button type="button" class="btn-minus">축소</button>ㄴ
+					</div>
 				</div>
 			</div>
 		</div>
@@ -346,6 +354,11 @@ $(window).load(function(){
 		var idx = $(this).index();
 		$(this).addClass('on').siblings('li').removeClass('on');
 		$('.store-cont').removeClass('on').eq(idx).addClass('on');
+	});
+
+	/* 매장검색 > 검색조건 입력 후 검색 버튼 클릭 시 결과 값일 있다는 가정 */
+	$('.bnt-list-view').click(function(){
+		$(this).parents('.map-search').find('.change-view').show();
 	});
 
 	/* 목록보기 클릭 시 */
@@ -370,6 +383,16 @@ $(window).load(function(){
 		$('.transport .transport-cont').removeClass('on').eq(idx).addClass('on');
 	});
 
+	$(window).scroll(function(){
+		var winTop = $(window).scrollTop();
+
+		/* 스크롤시 해더 하단 보다라인 추가 */
+		if(winTop <= 0){
+			$('.store-fix-area .tab-list1').css({'border':'0'});
+		}else{
+			$('.store-fix-area .tab-list1').css({'border-bottom':'1px solid #bbb'});
+		}
+	});
 });
 </script>
 </body>

@@ -939,30 +939,36 @@ label.important:before {
 	height:60px;
 	background-image:url(../img/sprite_brand.png);
 	background-repeat:no-repeat;
-	background-size:532px 60px;
+	background-size:524px 60px;
 }
 .brand-wrap ul li:nth-child(1):before{
 	background-position: 0 0;
 }
 .brand-wrap ul li:nth-child(2):before{
-	background-position: -76px 0;
+	background-position: -75px 0;
 }
 .brand-wrap ul li:nth-child(3):before{
-	background-position: -152px 0;
+	background-position: -150px 0;
 }
 .brand-wrap ul li:nth-child(4):before{
-	background-position: -228px 0;
+	background-position: -225px 0;
 }
 .brand-wrap ul li:nth-child(5):before{
-	background-position: -304px 0;
+	background-position: -300px 0;
 }
 .brand-wrap ul li:nth-child(6):before{
-	background-position: -380px 0;
+	background-position: -375px 0;
 }
 .brand-wrap ul li:nth-child(7):before{
-	background-position: -456px 0;
+	background-position: -450px 0;
 }
-
+.brand-wrap ul li.on:after {
+	content:'';
+	position: absolute;
+	left:0;right:0;bottom:0;
+	height:2px;
+	background-color:#60b015;
+}
 
 .brand-area .tab-content .white-content4 {
 	border-top:1px solid #ccc;
