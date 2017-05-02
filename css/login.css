@@ -57,7 +57,9 @@
 
 .result-info {
 	padding:15px 20px;
-	background-color:#eee;
+	background-color:#f7f7f7;
+	border:1px solid #eee;
+	box-sizing:border-box;
 }
 .result-info li {
 	overflow: hidden;
