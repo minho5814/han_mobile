@@ -1361,7 +1361,11 @@ label.important:before {
 }
 .campaign-sub .list-area span {display: table-cell; vertical-align: middle;}
 .campaign-sub .list-area .img-area {
-	display:inline-block;
+	position:absolute;
+	top:50%; left:0;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
 	overflow:hidden;
 	width: 48px;
 	height:48px;
@@ -1369,7 +1373,8 @@ label.important:before {
 }
 .campaign-sub .list-area .img-area img {width:100%;}
 .campaign-sub .list-area .name {
-	padding-left:10px;
+	position: relative;
+	padding-left:58px;
 	font-size: 15px;
 	color: #333;
 
