@@ -178,7 +178,7 @@
 	-webkit-transform:tanslate(-50%,-50%);
 }
 .palan-box .palan-text {
-	padding:16px 14px 14px;
+	padding:14px;
 	border:1px solid #eee;
 	border-top:0;
 	box-sizing:border-box;
@@ -189,10 +189,16 @@
 	/*line-height:24px;*/
 	letter-spacing:-1px;
 }
+.palan-box .palan-text .palan-title a {
+	display:block;
+	font-weight:bold;
+}
 .palan-box .palan-text .palan-title span {
 	display: block;
+	margin-bottom:2px;
 	font-size: 13px;
-	line-height: 13px;
+	font-weight:normal;
+	line-height: 17px;
 }
 .palan-box .palan-text .palan-date {
 	margin-top:5px;
@@ -889,12 +895,17 @@
 }
 /* 나의 한살림 */
 .my-area {}
+.message-box {
+	padding:15px 20px;
+	background-color:#f7f7f7;
+	border:2px solid #eee;
+	text-align:center;
+}
 .my-area .my-txt {
 	font-size:15px;
 	color:#666;
 	line-height:22px;
 }
-.form-list1 .form-item {margin-top:15px;}
 .birth-area,
 .tele-area {overflow:hidden;}
 .birth-area .box,
@@ -989,7 +1000,6 @@
 .my-notice-list .item {
 	display:table;
 	width:100%;
-	min-height:79px;
 	padding:16px 0 18px;
 	border-top:1px solid #eee;
 	box-sizing: border-box;
@@ -1100,10 +1110,6 @@
 	position:absolute;
 	right:0; bottom:-15px;
 }
-.my-area .float-area {
-	padding-bottom:15px;
-	border-bottom:1px solid #eee;
-}
 
 /* 카드 신청 */
 .btn-card-apply {
@@ -1118,8 +1124,8 @@
 }
 .no-noresult {
 	padding:65px 0;
-	border-top:2px solid #ddd;
-	border-bottom:2px solid #ddd;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
 	text-align:center;
 }
 .no-noresult .txt {

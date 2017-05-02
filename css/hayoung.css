@@ -96,7 +96,9 @@
 	font-size:15px;
 	text-align: center;
 	line-height: 120px;
-	background-color:#f7f7f7;
+	background-color:#fff;
+	border:2px solid #eee;
+	box-sizing:border-box;
 }
 
 .post-result {
@@ -181,7 +183,7 @@
 	border-bottom:1px solid #bbb;
 }
 .term-list li {
-	padding:6px 10px;
+	padding:6px 0;
 	border-top:1px solid #ddd;
 }
 .term-list li:first-child {border-top:0;}
@@ -267,7 +269,6 @@
 -------------------------------------------------------------------------------------------- */
 .qna-area {display: none;}
 .qna-area.on {display: block;}
-.qna-area .tab-list5 {padding-top:10px; border-top:1px solid #bbb;}
 
 .qna-area .qna-cont {
 	border-top:1px solid #eee;
@@ -1007,12 +1008,12 @@ label.important:before {
 	margin:0 0 0 -53%;
 }
 .cook-list2 .text-area {
-    position:relative;
+	position:relative;
 	/*height:70px;*/
 	padding:13px 10px 18px;
-    border:1px solid #eee;
+	border:1px solid #eee;
 	box-sizing: border-box;
-    border-top:0;
+	border-top:0;
 	margin-top:0;
 }
 .cook-list2 .text-area .name {
@@ -1038,14 +1039,16 @@ label.important:before {
 	color: #666;
 	font-size: 13px;
 	line-height: 17px;
-
 }
-.cook-list2 .text-area .material em {color:#333;}
+.cook-list2 .text-area .material em {
+	color:#333;
+	font-weight:bold;
+}
 .cook-list2 .text-area .btn-like {
-    position:absolute;
-    right:12px; top:14px;
-    width:35px;
-    height:35px;
+	position:absolute;
+	right:12px; top:14px;
+	width:35px;
+	height:35px;
 }
 
 .recipe-wrap .tab-content.list {}
@@ -1083,11 +1086,8 @@ label.important:before {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	box-sizing: border-box;
-
 }
-.recipe-wrap .tab-content.list  .cook-list2 .text-area .btn-like {
-	right:16px; top:17px;
-}
+.recipe-wrap .tab-content.list  .cook-list2 .text-area .btn-like {right:16px; top:17px;}
 
 /* --------------------------------------------------------------------------------------------
 	캠페인
@@ -1111,16 +1111,10 @@ label.important:before {
 	padding:12px 30px;
 }
 
-.campaign-wrap .campaign-slide .swiper-slide {
-	opacity: .6;
-}
-.campaign-wrap .campaign-slide .swiper-slide-active {
-	opacity: 1;
-}
+.campaign-wrap .campaign-slide .swiper-slide {opacity: .6;}
+.campaign-wrap .campaign-slide .swiper-slide-active {opacity: 1;}
 
-.campaign-wrap .white-content3.gray-border {
-	border-top:10px solid #eee
-}
+.campaign-wrap .white-content3.gray-border {border-top:10px solid #eee}
 
 /* 캠페인 */
 .campaign-list li {
@@ -1142,9 +1136,7 @@ label.important:before {
 	border-bottom:1px solid #bbb;
 	border-right:1px solid #bbb;
 }
-.campaign-list li:first-child {
-	border-top:1px solid #bbb;
-}
+.campaign-list li:first-child {border-top:1px solid #bbb;}
 .campaign-list .thumb-box {
 	position:relative;
 	width:100%;
@@ -1161,18 +1153,10 @@ label.important:before {
 	background-repeat:no-repeat;
 	background-size:42px 39px;
 }
-.campaign-list .thumb-box.join:before {
-	background-image:url(../img/ico/ico_flag1.png);
-}
-.campaign-list .thumb-box.achieve:before {
-	background-image:url(../img/ico/ico_flag2.png);
-}
-.campaign-list .thumb-box.achieve .join-wrap .bar-box .bar {
-    background-color:#239bd2;
-}
-.campaign-list .thumb-box.finish:before {
-	background-image:url(../img/ico/ico_flag3.png);
-}
+.campaign-list .thumb-box.join:before {background-image:url(../img/ico/ico_flag1.png);}
+.campaign-list .thumb-box.achieve:before {background-image:url(../img/ico/ico_flag2.png);}
+.campaign-list .thumb-box.achieve .join-wrap .bar-box .bar {background-color:#239bd2;}
+.campaign-list .thumb-box.finish:before {background-image:url(../img/ico/ico_flag3.png);}
 
 /*공통*/
 .thumb-box  {position:relative;}
@@ -1188,25 +1172,16 @@ label.important:before {
 .thumb-box .campaign-mark img {width:100%;height:100%;}
 
 .campaign-list {padding:0 10px}
-.campaign-list .thumb-box .text-wrap {
-	padding-left:105px;
-
-}
-.campaign-list .thumb-box .text-area {
-
-}
+.campaign-list .thumb-box .text-wrap {padding-left:105px;}
+.campaign-list .thumb-box .text-area {}
 .campaign-list .thumb-box .text-area .title {
 	color:#333;
 	font-size:15px;
 	font-weight:bold;
 	line-height:24px;
 }
-.campaign-list .thumb-box .text-area .text-box {
-
-}
-.campaign-list .thumb-box .text-area .text-box .text {
-
-}
+.campaign-list .thumb-box .text-area .text-box {}
+.campaign-list .thumb-box .text-area .text-box .text {}
 .campaign-list .thumb-box .icon-area {
 	margin:10px 0 0 0;
 	padding:0;
@@ -1220,9 +1195,7 @@ label.important:before {
 	position:relative;
 	padding-left:17px;
 }
-.campaign-list .thumb-box .icon-area p .day {
-    display: inline-block;
-}
+.campaign-list .thumb-box .icon-area p .day {display: inline-block;}
 .campaign-list .thumb-box .icon-area p:before {
 	content:'';
 	position:absolute;
@@ -1249,18 +1222,12 @@ label.important:before {
 	border-right:1px solid #bbb;
 }
 
-.my-campaign li:first-child {
-	border-top:1px solid #eee;
-}
-.my-campaign li a:before {
-    display: none;
-}
-.my-campaign .thumb-box {
-    padding:20px 0;
-}
+.my-campaign li:first-child {border-top:1px solid #eee;}
+.my-campaign li a:before {display: none;}
+.my-campaign .thumb-box {padding:20px 0;}
 .my-campaign .thumb-box .campaign-mark {
-    left:0; top:20px;
-    -webkit-transform:translateY(0);
+	left:0; top:20px;
+	-webkit-transform:translateY(0);
 	-ms-transform:translateY(0);
 	transform:translateY(0);
 }
@@ -1269,13 +1236,13 @@ label.important:before {
 }
 
 .my-campaign .join-wrap {
-    position:relative;
-    margin:11px 0 4px;
-    padding-left:40px;
+	position:relative;
+	margin:11px 0 4px;
+	padding-left:40px;
 }
 .my-campaign .join-wrap .title {
 	position: absolute;
-    top:0; left:0;
+	top:0; left:0;
 }
 .my-campaign .join-wrap .f-left {
 	color:#60b015;
@@ -1329,23 +1296,17 @@ label.important:before {
 	background-repeat:no-repeat;
 	background-size:42px 39px;
 }
-.campaign-sub .thumb-box.join:before {
-	background-image:url(../img/ico/ico_flag1.png);
-}
-.campaign-sub .thumb-box.achieve:before {
-	background-image:url(../img/ico/ico_flag2.png);
-}
-.campaign-sub .thumb-box.finish:before {
-	background-image:url(../img/ico/ico_flag3.png);
-}
+.campaign-sub .thumb-box.join:before {background-image:url(../img/ico/ico_flag1.png);}
+.campaign-sub .thumb-box.achieve:before {background-image:url(../img/ico/ico_flag2.png);}
+.campaign-sub .thumb-box.finish:before {background-image:url(../img/ico/ico_flag3.png);}
 .campaign-sub .thumb-box .campaign-mark {
 	top:20px;
-    -webkit-transform:inherit;
+	-webkit-transform:inherit;
 	-ms-transform:inherit;
 	transform: inherit;
 }
 .campaign-sub .thumb-box .right-wrap {
-	padding-left:105px;
+	padding-left:95px;
 }
 .campaign-sub .thumb-box .right-wrap .title {
 	display: inline-block;
@@ -1360,13 +1321,8 @@ label.important:before {
 	font-size: 14px;
 }
 
-.campaign-sub .count-area {
-
-	border-bottom:1px solid #eee;
-}
-.campaign-sub .count-area ul {
-	overflow: hidden;
-}
+.campaign-sub .count-area {border-bottom:1px solid #eee;}
+.campaign-sub .count-area ul {overflow: hidden;}
 .campaign-sub .count-area li {
 	float:left;
 	width: 50%;
@@ -1407,12 +1363,20 @@ label.important:before {
 }
 .campaign-sub .list-area span {display: table-cell; vertical-align: middle;}
 .campaign-sub .list-area .img-area {
+	position:absolute;
+	top:50%; left:0;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	overflow:hidden;
 	width: 48px;
 	height:48px;
+	border-radius:50%;
 }
-.campaign-sub .list-area .img-area img {width:100%; height:100%; border-radius: 100%;}
+.campaign-sub .list-area .img-area img {width:100%;}
 .campaign-sub .list-area .name {
-	padding-left:10px;
+	position: relative;
+	padding-left:58px;
 	font-size: 15px;
 	color: #333;
 
@@ -1552,6 +1516,7 @@ label.important:before {
 	display: inline-block;
 	width:61px;
 	height:28px;
+	vertical-align:top;
 }
 .info-area .barcode-area .barcode img {width: 100%;height:100%;}
 .info-area .barcode-area .num {
@@ -1559,13 +1524,13 @@ label.important:before {
 	font-size:19px;
 	color:#333;
 	font-weight: bold;
-	vertical-align: top;
+	vertical-align:top;
+	line-height:28px;
 }
 
 .btn-view-barcode {
 	position:absolute;
-	right:15px;
-	top:13px;
+	right:15px;top:12px;
 	width:35px;
 	height:35px;
 	background-image:url(../img/btn/btn-more.png);

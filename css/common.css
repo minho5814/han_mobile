@@ -99,7 +99,7 @@ input[type=number]:disabled,
 input[type=password]:disabled {
 	background-color:#eee;
 	color:#aaa;
-	border-color:#ddd;
+	border-color:#ccc;
 }
 input[type=submit] {-webkit-border-radius:0;border:0;border-radius:0;-webkit-appearance:none;}
 textarea {
@@ -538,6 +538,14 @@ html.no-scroll {
 	background-color:#fff;
 }
 
+/* 전화번호 아이콘 텍스트 */
+.ico-tel {
+	display:inline-block;
+	padding-left:18px;
+	background:url(../img/ico/ico_tel.png) no-repeat 0 50%;
+	background-size:17px 17px;
+}
+
 /* ============================================================================================
 	버튼
 ============================================================================================ */
@@ -579,7 +587,7 @@ html.no-scroll {
 	height:30px;
 	padding:0 15px;
 	font-size:13px;
-	line-height:32px;
+	line-height:30px;
 }
 @media only screen and (max-width: 320px) {
 	.btn-h30 {
@@ -628,6 +636,10 @@ html.no-scroll {
 	border:1px solid #60b015;
 	color:#60b015;
 	font-weight:bold;
+}
+.btn-text-line3 {
+	border:1px solid #60b015;
+	color:#60b015;
 }
 
 /* 버튼 정렬 */
@@ -696,6 +708,10 @@ html.no-scroll {
 	width:19px;
 	height:19px;
 	background-position:0 -262px;
+}
+.btn-ico1.on {
+	color:#509b0a;
+	border-color:#509b0a;
 }
 .btn-ico1.on .text:before {
 	width:19px;
@@ -2722,7 +2738,6 @@ html {
 	border-top:1px solid #eee;
 }
 .search-layer .layer-cont .check-label:first-child {border-top:0;}
-.search-layer .layer-cont {}
 .search-layer .btn-list1 {
 	position:absolute;
 	left:0;right:0;bottom:0;
@@ -2731,6 +2746,7 @@ html {
 }
 /* 아코디언 */
 .search-layer .accordion-list {}
+.search-layer .accordion-list .title-box {height:45px;}
 .search-layer .accordion-list .layer-title {
 	height:45px;
 	padding:0 10px;
@@ -2739,12 +2755,19 @@ html {
 	font-size:17px;
 	line-height:47px;
 }
+.search-layer .accordion-list .title-box.fxd .layer-title {
+	position:fixed;
+	left:55px;right:0;top:57px;
+	z-index:5;
+	box-sizing:border-box;
+}
 .search-layer .accordion-list .item {border-top:1px solid #bbb;}
 .search-layer .accordion-list .item:first-child {border-top:0;}
-.search-layer .accordion-list .layer-title:before {
+.search-layer .accordion-list .layer-title:before {display:none;}
+.search-layer .accordion-list .layer-title:after {
 	content:'';
 	position:absolute;
-	left:inherit;right:10px;top:50%;
+	right:10px;top:50%;
 	-webkit-transform:translateY(-50%) rotate(225deg);
 	-ms-transform:translateY(-50%) rotate(225deg);
 	transform:translateY(-50%) rotate(225deg);
@@ -2755,12 +2778,11 @@ html {
 	background-color:transparent;
 }
 .search-layer .accordion-list .item .layer-list {display:none;}
-.search-layer .accordion-list .item.on .layer-title:before {
+.search-layer .accordion-list .item.on .layer-title:after {
 	-webkit-transform:translateY(-50%) rotate(45deg);
 	-ms-transform:translateY(-50%) rotate(45deg);
 	transform:translateY(-50%) rotate(45deg);
 }
-.search-layer .accordion-list {}
 
 /* --------------------------------------------------------------------------------------------
 	카테고리 레이어
@@ -3104,9 +3126,12 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	top:57px; left:0; right:0;
 	z-index:2;
 }
+.fixed-area .align-center {
+	background-color:#fff;
+}
 .fixed-area .fixed-sub {
-	display: none;
-	padding:10px 10px 20px;
+	display:none;
+	padding:10px 0 20px;
 	background-color:#fff;
 }
 .sub-tab li.on {
@@ -3123,6 +3148,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-color:#fff;
 	box-sizing: border-box;
 }
+.sub-tab li:first-child {margin-left:10px;}
+.sub-tab li:last-child {margin-right:10px;}
 .sub-tab li span {
 	display: block;
 	font-size:14px;
@@ -3562,7 +3589,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 /* 05 */
 .thumb-list5 .box .ico-label {
 	position:absolute;
-	left:0;top:5px;
+	left:0;top:0;
 	z-index:1;
 }
 .thumb-list5 {
@@ -4167,6 +4194,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .store-flag-list .flag-ico {
 	float:left;
+	position:relative;
 	width:25%;
 	color:#666;
 	font-size:14px;
@@ -4174,6 +4202,18 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align: center;
 	box-sizing: border-box;
 }
+.store-flag-list .flag-ico:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:2px;
+	height:2px;
+	background-color:#999;
+}
+.store-flag-list .flag-ico:first-child:before {display:none;}
 .store-flag-list .flag-ico span {
 	position: relative;
 	display: inline-block;
@@ -5174,6 +5214,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .top-gray-box2 .title-wrap .cTitle01 {margin-top:15px; line-height: 45px;}
 .top-gray-box2 .cont {border-top:1px solid #bbb;}
 .top-gray-box2 .thumb-list1 .box {margin:0 10px;}
+.top-gray-box2 .thumb-wrap .thumb-list1 .box {margin:0;}
 
 .select-btn {
 	position:relative;
@@ -5701,7 +5742,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .btn-goods.btn-good .text:before {background-position:0 -425px;}
 .btn-goods.btn-bad .text:before {background-position:0 -447px;}
 .btn-goods.on {
-	border-color:#bbb;
+	border-color:#60b015;
 	background-color:#fff;
 	color:#333;
 }/* on */
@@ -6313,6 +6354,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align:center;
 	line-height:37px;
 }
+.calendar-layer .ui-datepicker-calendar td:first-child a {color:#F04114;}
 .calendar-layer .ui-datepicker-calendar td.ui-datepicker-today a:before {
 	content:'';
 	position:absolute;
