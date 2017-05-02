@@ -5210,6 +5210,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .top-gray-box2 .title-wrap .cTitle01 {margin-top:15px; line-height: 45px;}
 .top-gray-box2 .cont {border-top:1px solid #bbb;}
 .top-gray-box2 .thumb-list1 .box {margin:0 10px;}
+.top-gray-box2 .thumb-wrap .thumb-list1 .box {margin:0;}
 
 .select-btn {
 	position:relative;
