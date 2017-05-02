@@ -149,18 +149,14 @@
 
 
 /* 상단 비주얼 슬라이드 */
-.main-visual-slide {
-	position:relative;
-}
+.main-visual-slide {position:relative;}
 .main-visual-slide .swiper-slide {}
 .main-visual-slide .swiper-slide .link {
 	display:block;
 	font-size:0;
 	line-height:0;
 }
-.main-visual-slide .swiper-slide img {
-	width:100%;
-}
+.main-visual-slide .swiper-slide img {width:100%;}
 .main-visual-slide .page-btn-area {
 	position:absolute;
 	right:10px;bottom:18px;
@@ -233,11 +229,11 @@
 /* 이즈음 밥상 */
 .recipe-slide {position:relative;}
 .recipe-slide .swiper-slide .thumb-list2 {padding:10px 0;}
-	.recipe-slide .btn-layer {
-		position:absolute;
-		left:0;right:0;top:0;
-		z-index:5;
-	}
+.recipe-slide .btn-layer {
+	position:absolute;
+	left:0;right:0;top:0;
+	z-index:5;
+}
 .recipe-slide .btn-layer .page-btn-area {
 	position:absolute;
 	right:10px;bottom:15px;
