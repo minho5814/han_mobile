@@ -118,9 +118,9 @@ textarea {
 	resize:none;
 }
 textarea.hei175 {height:175px;}
-:-ms-input-placeholder {color:#666;}
-::-webkit-input-placeholder {color:#666;}
-::-moz-placeholder{color:#666;}
+:-ms-input-placeholder {color:#ccc;}
+::-webkit-input-placeholder {color:#ccc;}
+::-moz-placeholder{color:#ccc;}
 
 select {
 	height:25px;
