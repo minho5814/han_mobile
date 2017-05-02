@@ -895,6 +895,12 @@
 }
 /* 나의 한살림 */
 .my-area {}
+.message-box {
+	padding:15px 20px;
+	background-color:#f7f7f7;
+	border:2px solid #eee;
+	text-align:center;
+}
 .my-area .my-txt {
 	font-size:15px;
 	color:#666;

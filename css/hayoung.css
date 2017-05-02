@@ -96,7 +96,9 @@
 	font-size:15px;
 	text-align: center;
 	line-height: 120px;
-	background-color:#f7f7f7;
+	background-color:#fff;
+	border:2px solid #eee;
+	box-sizing:border-box;
 }
 
 .post-result {
