@@ -87,7 +87,8 @@
 	float:left;
 	width:50%;
 	padding-left:4px;
-	box-sizing: border-box;}
+	box-sizing: border-box;
+}
 .post-area .box:first-child {padding-left:0}
 
 .search-area {}
@@ -96,7 +97,10 @@
 	font-size:15px;
 	text-align: center;
 	line-height: 120px;
-	background-color:#f7f7f7;
+	background-color:#fff;
+	border-top:2px solid #eee;
+	border-bottom:2px solid #eee;
+	box-sizing:border-box;
 }
 
 .post-result {
@@ -1993,8 +1997,13 @@ label.important:before {
 	border:1px solid #60b015;
 	color:#60b015;
 }
-.store-wrap .cont .btn-receipt {font-size: 15px;}
+.store-wrap .cont .btn-receipt {font-size: 17px;}
 /*.store-wrap .list-group:last-child  .list-cont .row:last-child {border-bottom:1px solid #eee;}*/
+.store-wrap .accordion-list .list-cont em.price {
+	font-size:17px;
+	color:#f04114;
+	font-weight: bold;
+}
 
 /*거래내역조회*/
 .store-wrap .price-info-box .box dl dt {line-height: 30px;}

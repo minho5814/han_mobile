@@ -895,6 +895,12 @@
 }
 /* 나의 한살림 */
 .my-area {}
+.message-box {
+	padding:15px 20px;
+	background-color:#f7f7f7;
+	border:2px solid #eee;
+	text-align:center;
+}
 .my-area .my-txt {
 	font-size:15px;
 	color:#666;
@@ -1237,7 +1243,7 @@
 }
 .accumu-inst dl {}
 .accumu-inst dl dt {
-	margin-top:12px;
+	margin-top:32px;
 	font-size:16px;
 	color:#333;
 	line-height:20px;
@@ -1425,6 +1431,7 @@
 .easy-area .easy-list .item-easy .price-easy .number {
 	font-weight:bold;
 }
+.easy-area .gun-payment .gun-area .gun-list .item .price .gun-number {font-size: 19px}
 
 .gun-payment {
 	margin:0 -10px;
@@ -1449,7 +1456,7 @@
 }
 .gun-payment .gun-area .gun-list .item .price .number {font-weight:bold;}
 .gun-payment .gun-area .gun-list .item .price .gun-number {
-	font-size:16px;
+	font-size:19px;
 	font-weight:bold;
 }
 
