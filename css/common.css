@@ -875,10 +875,10 @@ html.no-scroll {
 .btn-view {
 	width:42px;
 	height:42px;
-	background-position: 0 -1002px;
+	background-position: 0 -1045px;
 }
 .btn-view.on {
-	background-position: 0 -1045px;
+	background-position: 0 -1002px;
 }
 /* --------------------------------------------------------------------------------------------
 	아이콘
