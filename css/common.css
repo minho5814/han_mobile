@@ -709,6 +709,10 @@ html.no-scroll {
 	height:19px;
 	background-position:0 -262px;
 }
+.btn-ico1.on {
+	color:#509b0a;
+	border-color:#509b0a;
+}
 .btn-ico1.on .text:before {
 	width:19px;
 	height:19px;
