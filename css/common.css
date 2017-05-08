@@ -194,35 +194,28 @@ html.no-scroll {
 .align-right {text-align:right !important;}
 .align-center {text-align:center !important;}
 
+.float-area {overflow:hidden;}
 .floatL {float:left !important;}
 .floatR {float:right !important;}
-
-.float-area {overflow:hidden;}
-.float-area .f-left{float:left;}
-.float-area .f-right{float:right;}
 
 /*보더 (white-content)*/
 .borderT {border-top:1px solid #ddd;}
 .borderT02 {border-top:1px solid #bbb;}
 .borderT03 {border-top:1px solid #eee;}
-
-.border-t {border-top:1px solid #eee;}
-.border-b {border-bottom:1px solid #eee;}
-.border-b0 {border-bottom:0 !important;}
+.borderB {border-bottom:1px solid #eee;}
 
 .no-border-top {border-top:0 !important;}
+.no-border-bottom {border-bottom:0 !important;}
 
 /*폰트 굵기*/
 .bold {font-weight:bold !important;}
 .normal {font-weight:normal !important;}
-
 .normal-text {
 	margin-bottom:10px;
 	color:#666;
 	font-size:15px;
 	line-height:18px;
 }
-
 /* 말줄임 */
 .ellipsis-line {
 	display:-webkit-box;
@@ -8382,9 +8375,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#333;
 	font-weight:bold;
 }
-.board-view-area .float-area {overflow:hidden; margin-top:10px;}
-.board-view-area .float-area .f-left{float:left;}
-.board-view-area .float-area .f-right{float:right;}
+.board-view-area .float-area {margin-top:10px;}
 .board-view-area .float-area span {color:#999; font-size:13px;}
 .board-view-area .float-area span:first-child {padding-right:10px;}
 .board-view-area .float-area span em {color:#000;}
@@ -9601,12 +9592,12 @@ label.important:before {
 	position:absolute;
 	top:0; left:0;
 }
-.my-campaign .join-wrap .f-left {
+.my-campaign .join-wrap .floatL {
 	color:#60b015;
 	line-height:24px;
 }
-.my-campaign .join-wrap .f-right button {width:45px;}
-.my-campaign .join-wrap .f-right span {
+.my-campaign .join-wrap .floatR button {width:45px;}
+.my-campaign .join-wrap .floatR span {
 	padding-right:5px;
 	line-height:24px;
 	color:#333;
@@ -9781,12 +9772,12 @@ label.important:before {
 	padding-top:10px;
 	border-top:1px solid #ddd;
 }
-.campaign-sub .join-wrap .f-left {
+.campaign-sub .join-wrap .floatL {
 	color:#60b015;
 	line-height:24px;
 }
-.campaign-sub .join-wrap .f-right button {width:45px;}
-.campaign-sub .join-wrap .f-right span {
+.campaign-sub .join-wrap .floatR button {width:45px;}
+.campaign-sub .join-wrap .floatR span {
 	padding-right:5px;
 	line-height:24px;
 	color:#333;
