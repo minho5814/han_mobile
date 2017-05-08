@@ -383,7 +383,6 @@ html.no-scroll {
 	top:2px;right:0;
 }
 .title-wrap .text {font-size:15px;}
-.tit-wrap .left {}
 .tit-wrap .right {position:absolute; right:0; bottom:0;}
 .tit-wrap .right.check-list label{line-height:25px;}
 .tit-wrap .right.check-list label input {margin-right:7px}
