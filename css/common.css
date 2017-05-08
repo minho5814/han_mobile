@@ -927,6 +927,7 @@ html.no-scroll {
 .btn-cart {
 	border-color:#60b015;
 	background-color:#60b015;
+	vertical-align: top;
 }
 .btn-cart:before {
 	width:19px;
@@ -6509,8 +6510,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 /* 주소록 관리 */
-.tab-cont {display:none;}
-.tab-cont.on {display:block;}
 .shipping-list {}
 .shipping-list .item-ship {
 	padding:20px 0 25px;
