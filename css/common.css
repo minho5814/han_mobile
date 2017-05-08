@@ -4607,6 +4607,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	margin-left:8px;
 	padding-left:20px;
 	font-size:14px;
+	box-sizing: border-box;
 }
 .store-list .box .addr-arae .time li:first-child {
 	margin-left:0;
@@ -4625,7 +4626,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-color:#333;
 }
 @media only screen and (max-width:320px) {
-	.store-list .box .addr-arae .time li {width:50% !important;}
+	.store-list .box .addr-arae .time li {
+		width:50% !important;
+		margin-left:0;
+	}
 }
 
 .store-list .box .call-box {
@@ -5124,22 +5128,22 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-align:center;
 }
 .thumb-box1 .campaign-mark {margin:0 auto;}
-.thumb-box1 .text-area {
+.thumb-box1 .row {
 	margin-top:10px;
 	padding-bottom:13px;
 }
-.thumb-box1 .text-area .title {
+.thumb-box1 .row .title {
 	color:#333;
 	font-size:15px;
 	font-weight:bold;
 	line-height:24px;
 }
-.thumb-box1 .text-area .text-box {
+.thumb-box1 .row .text-wrap {
 	position:relative;
 	height:30px;
 	margin-top:2px;
 }
-.thumb-box1 .text-area .text-box .text {
+.thumb-box1 .row .text-wrap .text {
 	position:absolute;
 	left:20px;right:20px;top:50%;
 	-webkit-transform:translateY(-50%);
@@ -6332,6 +6336,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:15px;
 	color:#666;
 	line-height:22px;
+	text-align:left;
 }
 .birth-area,
 .tele-area {overflow:hidden;}
@@ -7519,10 +7524,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .special-goods .info-area li .title {
 	display:inline-block;
-	width:92px;
+	width:90px;
 	font-weight:bold;
 	vertical-align:top;
 }
+
 /* 기획전 (MW-PD0501.html) */
 .palan-box {margin-top:6px;}
 .palan-box .palan-img {}
@@ -7593,8 +7599,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-weight:bold;
 }
 
-.select-area {display:none;}
-.select-area.fixed {
+.move-area .select-area {display:none;}
+.move-area .select-area.fixed {
 	display:block;
 	position:fixed;
 	left:0; right:0;
@@ -8327,8 +8333,13 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:15px 10px;
 }
 .noty-list .item .title {
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
 	color:#333;
 	font-size:15px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .noty-list .item .row:first-child {margin-bottom:5px;}
 .noty-list .item  .date,
@@ -9519,16 +9530,18 @@ label.important:before {
 .thumb-box .campaign-mark img {width:100%;height:100%;}
 
 .campaign-list {padding:0 10px}
-.campaign-list .thumb-box .text-wrap {padding-left:105px;}
-.campaign-list .thumb-box .text-area {}
-.campaign-list .thumb-box .text-area .title {
+.campaign-list .thumb-box .row {padding-left:105px;}
+.campaign-list .thumb-box .row .title {
 	color:#333;
 	font-size:15px;
 	font-weight:bold;
 	line-height:24px;
 }
-.campaign-list .thumb-box .text-area .text-box {}
-.campaign-list .thumb-box .text-area .text-box .text {}
+.campaign-list .thumb-box .row .text-wrap .text {
+	color:#666;
+	font-size:14px;
+	line-height: 22px;
+}
 .campaign-list .thumb-box .icon-area {
 	margin:10px 0 0 0;
 	padding:0;
@@ -9578,7 +9591,7 @@ label.important:before {
 	-ms-transform:translateY(0);
 	transform:translateY(0);
 }
-.my-campaign .thumb-box .text-wrap {
+.my-campaign .thumb-box .row {
     padding-left:90px !important;
 }
 
@@ -10377,6 +10390,7 @@ label.important:before {
 	color:#aaa;
 	line-height:16px;
 	display:block;
+	word-break: keep-all;
 }
 /*.change-wrap .accordion-list .list-group:last-child .list-cont li:last-child {border-bottom:1px solid #eee;}*/
 
@@ -10935,6 +10949,7 @@ label.important:before {
 	border-bottom:1px solid #eee;
 }
 .order-addr-list .item .row .user {
+	overflow: hidden;
 	position:absolute;
 	top:14px; left:0;
 	width:55px;
@@ -10942,6 +10957,8 @@ label.important:before {
 	font-size:15px;
 	text-align:center;
 	line-height:22px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .order-addr-list .item .row .text {
 	color:#666;
@@ -10950,7 +10967,7 @@ label.important:before {
 }
 .order-addr-list .item .row .text .num {
 	display:inline-block;
-	margin-left:16px;
+	margin-left:10px;
 	vertical-align:top;
 }
 .order-addr-list .item .row .text .num:first-child {
