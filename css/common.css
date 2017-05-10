@@ -3063,6 +3063,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border-radius:50%;
 }
 .floating-btn-area .btn-top {
+	display: none;
 	position:relative;
 	width:39px;
 	height:39px;
@@ -4719,7 +4720,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .map-area .view-control {
 	position:absolute;
-	right:10px; bottom:10px;
+	right:10px; top:148px;
 	width:35px;
 	height:69px;
 	background:url(../img/btn/btn_view_control.png) 0 0 no-repeat;
