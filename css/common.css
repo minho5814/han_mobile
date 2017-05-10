@@ -2980,7 +2980,7 @@ html.down .btm-fix-menu {bottom:-55px;}/* scroll down */
 	-webkit-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
 	transform:translateX(-50%);
-	width:21px;
+	width:22px;
 	height:20px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
@@ -5413,7 +5413,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	overflow-y:auto;
 	position:fixed;
 	left:0;right:0;top:111px;bottom:0;
-	padding-bottom:30px;
+	padding-bottom:55px;
 }
 .history-list:before {
 	content:'';
