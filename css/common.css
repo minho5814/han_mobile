@@ -11412,3 +11412,57 @@ label.important:before {
 	border-bottom:2px solid #fff;
 	border-right:2px solid #fff;
 }
+
+/* --------------------------------------------------------------------------------------------
+	error
+-------------------------------------------------------------------------------------------- */
+.error-header {text-align: center;}
+.error-logo {
+	display: inline-block;
+	width:71px;
+	height:56px;
+	margin:0 auto;
+	background:url(../img/img/img_logo.jpg) 0 center no-repeat;
+	background-size:71px 20px;
+}
+.error-logo a {
+	display: block;
+	width:100%;
+	height:100%;
+}
+.error {
+	padding-top:123px;
+	background:url(../img/ico/ico_error.png) center 60px no-repeat;
+	background-size:56px 48px;;
+}
+.error.type02 {
+	padding-top:113px;
+	background-position: center 45px;
+}
+.error .text01 {
+	margin-bottom:15px;
+	color:#60b015;
+	font-size:17px;
+	font-weight: bold;
+	line-height:22px;
+	text-align:center;
+}
+.error .text02 {
+	margin-bottom:15px;
+	color:#666;
+	font-size:15px;
+	line-height:22px;
+	text-align:center;
+}
+.error .error-inquiry {
+	margin:0 25px;
+	padding:11px 10px;
+	border:1px solid #eee;
+	text-align: center;
+	word-break: keep-all;
+}
+.error .error-inquiry p {
+	margin-bottom:10px;
+	color:#666;
+	font-size:13px;
+}
