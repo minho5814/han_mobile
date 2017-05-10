@@ -215,6 +215,7 @@ $(window).load(function(){
 		scrollNo();
 		$('.btm-fix-menu .btn-list .btn2').css({'opacity':'0'});
 		$('.category-layer').show().stop().animate({bottom:0}, 200);
+		$('.floating-btn-area').hide();
 	});
 	// 닫기
 	$('.btn-close-category').click(function(){
@@ -223,6 +224,7 @@ $(window).load(function(){
 		$('.category-layer').stop().animate({bottom:'-100%'}, 100, function(){
 			$(this).hide();
 		});
+		$('.floating-btn-area').show();
 	});
 
 	/* 상단 고정 버튼 영역이 있을경우 */
