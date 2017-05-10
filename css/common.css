@@ -378,6 +378,7 @@ html.no-scroll {
 }
 
 .tit-wrap {margin-bottom:2px; position:relative;}
+.title-wrap {position:relative;}
 .title-wrap .btn-wrap {
 	position:absolute;
 	top:2px;right:0;
