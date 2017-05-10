@@ -426,5 +426,12 @@ $(window).load(function(){
 			$('html').removeClass('down');
 		}
 		scrolling = winTop;
+
+		/* top 버튼 */
+		if(winTop > 0){
+			$('.btn-top').show();
+		}else{
+			$('.btn-top').hide();
+		}
 	});
 });
