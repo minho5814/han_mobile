@@ -2123,6 +2123,13 @@ select.styled1:disabled {
 	color:#333;
 	line-height:32px;
 }
+.board1 .store-tit {
+	margin:28px 0 6px;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+	font-weight:bold;
+}
 .board1 td .txt {margin-bottom:2px;}
 
 .board1 td .row {
@@ -4122,6 +4129,12 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .text-box02 .btn-box {
 	margin-top:8px;
 }
+.survey-txt {
+	margin-top:15px;
+	font-size:13px;
+	color:#aaa;
+	line-height:20px;
+}
 .text-box02 .price-info .item {margin-left:15px;}
 .text-box02 .price-info .item:first-child {
 	margin-left:0;
@@ -4259,7 +4272,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 
 .system-table {
-	margin:7px 0 22px;
+	margin:7px -10px 22px;
 	padding:15px 10px;
 	background-color:#f7f7f7;
 }
@@ -4267,7 +4280,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:100%; height:auto;
 	vertical-align:top;
 }
-
 .query-list {margin-top:10px;}
 .query-list .title {
 	margin:18px 0 8px;
@@ -4317,6 +4329,15 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:0 2px;
 	box-sizing:border-box;
 }
+.query-list01 .title {
+	position:relative;
+	padding-left:20px;
+}
+.query-list01 .title .num {
+	position:absolute;
+	left:0; top:3px;
+}
+
 /*조합원  기회원 알림*/
 .position-area {position:relative;}
 .position-area .btn-call.right-position {
@@ -4346,6 +4367,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	float:left;
 	color:#333;
 	font-size:16px;
+}
+.store-use {
+	padding:17px 10px;
+	border:2px solid #eee;
+	box-sizing:border-box;
 }
 @media only screen and (max-width:320px) {
 	.step-wrap p {
