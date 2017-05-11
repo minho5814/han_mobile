@@ -1727,7 +1727,127 @@ select.styled1:disabled {
 	height:2px;
 	background-color:#666;
 }
+.bullet-list1 .item .board1 {
+	margin-left:-7px;
+}
+.sub-bllet02 {
+	margin-top:5px;
+}
+.sub-bllet02 .item02 {
+	position:relative;
+	margin-top:8px;
+	padding-left:5px;
+	color:#666;
+	font-size:15px;
+	line-height: 22px;
+	word-break: keep-all;
+}
+.sub-bllet02 .item02:first-child {
+	margin-top:0;
+}
+.sub-bllet02 .item02:before {
+	content: '-';
+	position: absolute;
+	top:0; left:0;
+}
+.sub-bllet03 {
+	margin-top:5px;
+}
+.sub-bllet03 .item03 {
+	position:relative;
+	margin-top:5px;
+	padding-left:5px;
+	color:#666;
+	font-size:14px;
+	line-height: 17px;
+	word-break: keep-all;
+}
+.sub-bllet03 .item03:first-child {
+	margin-top:0;
+}
+.sub-bllet03 .item03:before {
+	content: '';
+	position: absolute;
+	top:7px; left:0;
+	width:3px; height:3px;
+	background-color:#666;
+}
+.sub-bllet04 {
+	margin-top:5px;
+}
+.sub-bllet04 .item04 {
+	position:relative;
+	margin-top:5px;
+	padding-left:7px;
+	color:#aaa;
+	font-size:13px;
+	line-height: 18px;
+	word-break: keep-all;
+}
+.sub-bllet04 .item04:first-child {
+	margin-top:0;
+}
+.sub-bllet04 .item04:before {
+	content: '*';
+	position: absolute;
+	top:0; left:0;
+	font-size:13px;
+	color:#aaa;
+}
+.sub-bllet05 {
+	margin-top:5px;
+}
+.sub-bllet05 .item05 {
+	position:relative;
+	margin-top:5px;
+	padding-left:5px;
+	color:#666;
+	font-size:13px;
+	line-height: 18px;
+	word-break: keep-all;
+}
+.sub-bllet05 .item05:first-child {
+	margin-top:0;
+}
+.sub-bllet05 .item05:before {
+	content: '';
+	position: absolute;
+	top:8px; left:0;
+	width:2px; height:2px;
+	border-radius:50%;
+	background-color:#666;
+}
 
+.num-list {
+	margin-top:5px;
+}
+.num-list .num-item {
+	position:relative;
+	margin-top:5px;
+	padding-left:20px;
+	color:#666;
+	font-size:13px;
+	line-height: 18px;
+	word-break: keep-all;
+}
+.num-list .num-item:first-child {
+	margin-top:0;
+}
+.num-list .num-item .num {
+	position: absolute;
+	top:3px; left:0;
+	width:12px; height:12px;
+	font-size:10px;
+	line-height: 12px;
+	text-align: center;
+	border:1px solid #666;
+	border-radius:50%;
+}
+
+.query-list .item {margin-top:25px;}
+.query-list .item:first-child {
+	margin-top:0;
+}
 /* 불릿 리스트 02 */
 .bullet-list2 {
 	color:#666;
@@ -2208,6 +2328,46 @@ select.styled1:disabled {
 	font-weight:normal;
 }
 .board3 td.left {text-align:left;}
+
+/* 04 */
+.board4 {position:relative;}
+.board4 .top-text {
+	position:absolute;
+	right:0;top:8px;
+	color:#aaa;
+	font-size:13px;
+	line-height:15px;
+}
+.board4 table {
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.board4 th,
+.board4 td {
+	padding:10px;
+	border-top:1px solid #eee;
+	font-size:15px;
+	text-align:center;
+	font-weight:normal;
+}
+.board4 tr:first-child th,
+.board4 tr:first-child td {border-top:0;}
+.board4 th:first-child {
+	background-color:#f7f7f7;
+	color:#333;
+	line-height:18px;
+}
+.board4 th {letter-spacing:-1px;}
+.board4 thead th {
+	text-align:center;
+	border-bottom:1px solid #ccc;
+}
+.board4 tbody th {text-align:left;}
+.board4 td {
+	color:#666;
+	line-height:22px;
+}
+.board4 td .btn-box .btn-text {float:right;}
 
 /* ============================================================================================
 	레이아웃
@@ -4336,6 +4496,23 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .query-list01 .title .num {
 	position:absolute;
 	left:0; top:3px;
+}
+
+.supply {margin-left:-7px;}
+.query-list .supply {
+	margin-left:-12px;
+}
+.supply .row {
+	margin-top:10px;
+}
+.supply .row img {
+	width:100%; height:auto;
+	vertical-align: top;
+}
+.supply .row .text {
+	color:#aaa;
+	font-size:13px;
+	line-height: 18px;
 }
 
 /*조합원  기회원 알림*/
