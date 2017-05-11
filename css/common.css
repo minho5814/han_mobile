@@ -1127,6 +1127,11 @@ html.no-scroll {
 	background:url(../img/sprite_btn.png) no-repeat 0 -322px;
 	background-size:50px 1300px;
 }
+.btn-call.btn-fax .text:before {
+	width:15px;
+	height:15px;
+	background-position:0 -1187px;
+}
 
 /* 나의한살림 서브메인 더보기 */
 .btn-my-more {
@@ -4550,6 +4555,44 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border:2px solid #eee;
 	box-sizing:border-box;
 }
+/* 출자금 안내 */
+.debtor-cont {}
+.debtor-cont dl dt {
+	margin:12px 0 2px;
+	font-size:16px;
+	color:#333;
+	line-height:20px;
+	font-weight:bold;
+}
+.debtor-cont dl dd {
+	font-size:15px;
+	color:#666;
+	line-height:22px;
+}
+.propa-box {
+	margin-top:16px;
+	padding:16px 0;
+	border-top:2px solid #eee;
+	border-bottom:2px solid #eee;
+}
+.orien-list {}
+.orien-list .item {
+	margin-top:6px;
+	font-size:15px;
+	color:#666;
+	line-height:22px;
+}
+.orien-list .item:first-child {margin-top:0;}
+.orien-list .item .number {
+	display:inline-block;
+	width:15px;
+	height:15px;
+	border:1px solid #747474;
+	border-radius:50%;
+	line-height:15px;
+	text-align:center;
+}
+
 @media only screen and (max-width:320px) {
 	.step-wrap p {
 		font-size:14px;
