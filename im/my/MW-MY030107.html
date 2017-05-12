@@ -400,6 +400,20 @@ $(window).load(function(){
 		$(this).find('.list').hide();
 	});
 
+	/* num-select */
+	$('.num-sel').change(function(){
+		$(this).each(function(){
+			var val = $(this).find('option:selected').val();
+			if(val == 'write'){
+				$(this).siblings('.inp-box').addClass('on').find('input').focus();
+			}
+		});
+	});
+
+	$('.num-select .btn-cancle').click(function(){
+		$(this).parents('.inp-box').removeClass('on');
+		$(this).parents('.num-select').find('.num-sel option:eq(0)').prop('selected', true);
+	});
 
 });
 </script>
