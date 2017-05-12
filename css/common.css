@@ -9689,7 +9689,7 @@ label.important:before {
 }
 .recipe-wrap .tab-content.list  .cook-list2 .text-area .name {font-size:18px;}
 .recipe-wrap .tab-content.list .cook-list2 .text-area .material {
-	display:inherit;
+	display:block;
 	height:30px;
 	padding:10px 65px 0 0;
 	box-sizing:border-box;
