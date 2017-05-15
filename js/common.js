@@ -23,9 +23,9 @@ $(window).load(function(){
 	$('.head-menu .swiper-container').each(function(){
 		var swiper = new Swiper(this, {
 			slidesPerView:'auto',
-			nextButton: '.head-menu .btn-next',
-			prevButton: '.head-menu .btn-prev',
-			pagination: '.head-menu .swiper-pagination',
+			nextButton:'.head-menu .btn-next',
+			prevButton:'.head-menu .btn-prev',
+			pagination:'.head-menu .swiper-pagination',
 			paginationClickable: true
 		});
 
@@ -89,8 +89,8 @@ $(window).load(function(){
 	// 이미지 슬라이드 01
 	$('.visual-slide1 .swiper-container').each(function(){
 		var swiper = new Swiper(this, {
-			pagination: '.visual-slide1 .swiper-pagination',
-			paginationType: 'fraction'
+			pagination:'.visual-slide1 .swiper-pagination',
+			paginationType:'fraction'
 		});
 	});
 
@@ -324,12 +324,12 @@ $(window).load(function(){
 	$('.datepicker1').each(function(){
 		$(this).datepicker({
 			dateFormat:'yy/mm/dd',
-			monthNames :['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			monthNames:['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
 			showMonthAfterYear:true,
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
-			firstDay: 0,
-			showOtherMonths: true,
-			yearSuffix: '.'
+			firstDay:0,
+			showOtherMonths:true,
+			yearSuffix:'.'
 		});
 	});
 
@@ -337,12 +337,12 @@ $(window).load(function(){
 	$('.datepicker2').each(function(){
 		$(this).datepicker({
 			dateFormat:'yy/mm/dd',
-			monthNames :['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			monthNames:['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
 			showMonthAfterYear:true,
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
-			firstDay: 0,
-			showOtherMonths: true,
-			yearSuffix: '.',
+			firstDay:0,
+			showOtherMonths:true,
+			yearSuffix:'.',
 			onSelect: function() {
 				dateSetting();
 			}
