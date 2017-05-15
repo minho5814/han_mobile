@@ -2824,6 +2824,7 @@ html {
 	padding-top:20px;
 }
 .gnb-layer .slide-menu .slide-area .depth-box .title {
+	display: block;
 	padding:0 10px;
 	border-top:1px solid #666;
 	color:#333;
