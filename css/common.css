@@ -12017,3 +12017,33 @@ label.important:before {
 	top:10px;
 	width:68px;
 }
+.cs-area .accordion-list1 {border-top:1px solid #ddd;}
+.cs-area .accordion-list1 .title-area {padding-left:40px;}
+.cs-area .accordion-list1 .item .title {margin-left:-40px; font-size: 15px; color: #333;}
+.cs-area .accordion-list1 .link {
+	display: table;
+	position:relative;
+	width: 100%;
+	padding:12px 0;
+	border-top:1px solid #eee;
+}
+.cs-area .accordion-list1 .link .img-area {
+	display: table-cell;
+	vertical-align: middle;
+	width:90px;
+	height: 90px;
+	border:1px solid #ccc;
+}
+
+.cs-area .accordion-list1 .link .name {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left:10px;
+	font-size: 14px;
+	color:#666;
+}
+.cs-area .accordion-list1 .item {border-color:#eee;}
+.cs-area .accordion-list1 .item:first-child{border:0}
+.cs-area .accordion-list1 .item:last-child {
+	border-bottom:1px solid #eee;
+}
