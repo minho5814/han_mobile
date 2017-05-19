@@ -4043,6 +4043,92 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	border:1px solid #239bd2;
 }
 
+
+/* 09 */
+
+.thumb-list9 {
+	overflow:hidden;
+	width:100%;
+
+}
+.thumb-list9 .box {
+	position:relative;
+	margin-top:7px;
+	border:1px solid #eee;
+
+}
+
+.thumb-list9 .box .cont-area {
+	position:relative;
+	padding:15px 17px 0 17px;
+	min-height: 130px;
+}
+.thumb-list9 .box .cont-area .link {
+	display: block;
+	float:left;
+}
+.thumb-list9 .box .img-area {
+	width:90px;
+	height:90px;
+}
+.thumb-list9 .box .ico-label {
+	position: absolute;
+	left:15px;
+	top:15px;
+}
+
+.thumb-list9 .box .name {
+	width:90px;
+	margin:0 auto;
+	text-align: center;
+}
+
+
+
+.thumb-list9 .box .text-area {margin-top:0; padding-left:110px;}
+.thumb-list9 .box .text-area .writer {
+	display: block;
+	padding:12px 0;
+	border-top:1px solid #eee;
+}
+.thumb-list9 .box .text-area .cont {padding-bottom:12px;}
+.thumb-list9 .box .text-area .cont .btn-box {margin-top:12px;}
+.thumb-list9 .box .float-area .title:before {
+	content:'';
+	position:absolute;
+	left:16px;
+	top:12px;
+	width:21px;
+	height:21px;
+	background-image:url(../img/sprite_ico.png);
+	background-repeat:no-repeat;
+	background-size:40px 500px;
+}
+.thumb-list9 .box .float-area .title.good:before {
+	background-position:0 -381px;
+}
+.thumb-list9 .box .float-area .title.bad:before {
+	background-position:0 -403px;
+}
+.thumb-list9 .box .float-area {
+	overflow: hidden;
+	height:45px;
+	line-height: 45px;
+	padding:0 15px;
+	border-bottom:1px solid #eee;
+	box-sizing: border-box;
+}
+.thumb-list9 .box .float-area .title {
+	padding-left:27px;
+	font-size: 15px;
+	color:#333;
+	font-weight: bold;
+}
+.thumb-list9 .box .float-area .date {
+	font-size: 13px;
+	color: #666;
+}
+
 /* --------------------------------------------------------------------------------------------
 	로그인
 -------------------------------------------------------------------------------------------- */
@@ -11762,3 +11848,21 @@ label.important:before {
 .cs-area .gray-content1 .box-content1 {background-color: #fff; border-color:#eee}
 .cs-area .gray-content1 .box-content1 .box-title {border-color:#eee;}
 .cs-area .gray-content1 .box-content1 .item {letter-spacing: -0.5px;}
+
+.cs-area .search-area {
+	position:relative;
+	padding: 10px 82px 10px 102px;
+}
+.cs-area .search-area select {
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:87px;
+}
+.cs-area .search-area input  {}
+.cs-area .search-area button {
+	position:absolute;
+	right:10px;
+	top:10px;
+	width:68px;
+}
