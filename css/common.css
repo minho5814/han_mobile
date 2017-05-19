@@ -2824,6 +2824,7 @@ html {
 	padding-top:20px;
 }
 .gnb-layer .slide-menu .slide-area .depth-box .title {
+	display: block;
 	padding:0 10px;
 	border-top:1px solid #666;
 	color:#333;
@@ -9440,7 +9441,7 @@ label.important:before {
 	margin:0 auto;
 	border:3px solid #fff;
 	box-sizing:border-box;
-	z-index:100;
+	z-index:2;
 }
 .theme-area .simple-search .form-button-type1 {
 	padding-right:65px;
