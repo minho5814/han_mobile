@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">주문완료</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="../../im/co/MW-CO0301.html" class="btn-image btn-search">통합검색</a>
+	</div>
+
+	<div class="container">
+		<div class="white-content2">
+			<div class="complete-area type2">
+				<p class="text-green">주문이 완료되었습니다.</p>
+				<p class="text-grey mgT20">주문하신 내역 확인 및 주문수정은<br>주문 조회를 통해 가능합니다.</p>
+			</div>
+			<ul class="result-info mgT30">
+				<li>
+					<dl>
+						<dt>주문마감일</dt>
+						<dd>2017년 03월 13일 (월)<p class="order-goods"><span>유기농면침구커버세트(슈퍼싱글/하늘색)</span> 외 1건</p></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>공급예정일</dt>
+						<dd class="fColor06">2017년 03월 16일 (목)<br>~ 2017년 03월 31일 (금)</dd>
+					</dl>
+				</li>
+			</ul>
+			<div class="btn-area mgT25">
+				<ul class="btn-list1">
+					<li class="item"><a href="../../im/sh/MW-SH01.html" class="btn-text btn-h55 btn-text-line1">이전</a></li>
+					<li class="item"><a href="../../im/my/MW-MY030101.html" class="btn-text btn-h55 btn-text-orange1">주문조회</a></li>
+				</ul>
+			</div>
+			<div class="text-box mgT30">
+				<p class="text">한살림은 내 몸과 지구에 이로운 물품만 취급합니다.</p>
+				<p class="text">한살림 물품에는 생산자와 소비자가 서로를 지켜주고, 다음 세대가 안전하게 살아가게 하겠다는 생각이 담겨 있습니다.</p>
+				<p class="text">생명을 살리고 지구의 뜻 깊은 생활실천에 함께하여 주셔서 감사합니다.</p>
+			</div>
+		</div>
+	</div>
+	<div class="btm-fix-menu">
+		<div class="btn-list">
+			<a href="../../main.html" class="btn btn1">홈</a>
+			<button type="button" class="btn btn2">카테고리</button>
+			<a href="../../im/sh/MW-SH01.html" class="btn btn3">장바구니<span class="len">19</span></a>
+		</div>
+		<div class="category-layer">
+			<div class="inner">
+				<h2 class="cTitle05">서브 브랜드</h2>
+				<div class="category-box-list">
+					<a href="../../im/pd/MW-PD040101.html" class="link link01"><span class="text">토박이씨앗살림</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link02"><span class="text">가까이愛</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link03"><span class="text">우리보리 살림돼지</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link04"><span class="text">가까운 먹을거리</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link05"><span class="text">병 재사용</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link06"><span class="text">농지살림</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link07"><span class="text">우리밀 살리기</span></a>
+				</div>
+				<h2 class="cTitle05">물품 카테고리</h2>
+				<div class="category-box-list">
+					<a href="../../im/pd/MW-PD0202.html" class="link link08"><span class="text">쌀/잡곡</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link09"><span class="text">채소/버섯</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link10"><span class="text">과일/견과</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link11"><span class="text">축산/가공</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link12"><span class="text">수산/수산가공</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link13"><span class="text">반찬/양념/가루</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link14"><span class="text">식사대용/간편식</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link15"><span class="text">건강/차</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link16"><span class="text">화장품</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link17"><span class="text">주방/욕실/세정</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link18"><span class="text">휴지/위생/환경</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link19"><span class="text">대용량/어린이집</span></a>
+				</div>
+				<ul class="btn-list2">
+					<li class="item"><a href="../../im/pd/MW-PD0501.html" class="btn-link-more3">기획전</a></li>
+					<li class="item"><a href="../../im/pd/MW-PD030101.html" class="btn-link-more3">신규물품</a></li>
+					<li class="item"><a href="../../im/pd/MW-PD030102.html" class="btn-link-more3">추천물품</a></li>
+				</ul>
+			</div>
+			<button type="button" class="btn-close-category">닫기</button>
+		</div>
+	</div>
+	<div class="floating-btn-area">
+		<a href="#" class="btn btn-image btn-prev">이전</a>
+		<div class="right-area">
+			<a href="../../im/my/MW-MY060101.html" class="btn btn-link">1:1<br>상담</a>
+			<a href="../../im/qc/MW-QC02.html" class="btn btn-link">최근<br>이력</a>
+			<button type="button" class="btn btn-top">TOP</button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+</body>
+</html>

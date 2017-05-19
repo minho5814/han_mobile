@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">주소록 관리</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="../../im/co/MW-CO0301.html" class="btn-image btn-search">통합검색</a>
+	</div>
+
+	<div class="container">
+		<ul class="tab-list1 two">
+			<li class="item on"><span class="text">공급지 정보</span></li>
+			<li class="item"><a href="MW-MY02030201.html" class="text"><em>선물택배 배송지</em></a></li>
+		</ul>
+		<div class="tab-cont on">
+			<div class="white-content2">
+				<div class="my-area">
+					<div class="board1">
+						<table>
+							<colgroup>
+								<col style="width:95px;">
+								<col style="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">소속한살림</th>
+									<td><span class="fColor02">한살림서울</span> (공급요일 : 매주 월, 수요일)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="form-list1 mgT15">
+						<div class="form-item">
+							<h3 class="cTitle02">공급주소</h3>
+							<div class="form-button-type1">
+								<input type="tel" value="12345" class="text">
+								<a href="../jo/MW-JO020101.html" target="_blank" class="btn-text btn-h42 btn-text-gray1 btn">우편번호</a>
+							</div>
+						</div>
+						<div class="form-item mgT5">
+							<input type="text" placeholder="이름" value="서울시 강남구 삼성동">
+						</div>
+						<div class="form-item mgT5">
+							<input type="text" placeholder="이름" value="123-45번지 abc아파트 340동 1210호">
+						</div>
+					</div>
+					<div class="btn-area mgT30">
+						<ul class="btn-list1">
+							<li class="item"><a href="MW-MY02030101.html" class="btn-text btn-h55 btn-text-line1">취소</a></li>
+							<li class="item"><button type="button" class="btn-text btn-h55 btn-text-green1">확인</button></li>
+						</ul>
+					</div>
+					<div class="box-content1 mgT30">
+						<h3 class="box-title">공급지정보 안내</h3>
+						<ul class="box-cont">
+							<li class="item">공급지정보의 주소 변경이 가능하며, 조합원님이 소속된 한살림 관할구역 내에서만 주소변경이 가능합니다.</li>
+							<li class="item">공급지 주소를 변경하시면 평일을 기준으로 1일이 소요됩니다. 단, 주말과 공휴일은 다음날 근무일을 기준으로 1일이 소요됩니다.</li>
+							<li class="item">공급지 변경소요시간으로 인해 주문마감일에 변경하시면 변경된 주소로 물품을 받지 못하실 수도 있습니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="btm-fix-menu">
+		<div class="btn-list">
+			<a href="../../main.html" class="btn btn1">홈</a>
+			<button type="button" class="btn btn2">카테고리</button>
+			<a href="../../im/sh/MW-SH01.html" class="btn btn3">장바구니<span class="len">19</span></a>
+		</div>
+		<div class="category-layer">
+			<div class="inner">
+				<h2 class="cTitle05">서브 브랜드</h2>
+				<div class="category-box-list">
+					<a href="../../im/pd/MW-PD040101.html" class="link link01"><span class="text">토박이씨앗살림</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link02"><span class="text">가까이愛</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link03"><span class="text">우리보리 살림돼지</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link04"><span class="text">가까운 먹을거리</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link05"><span class="text">병 재사용</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link06"><span class="text">농지살림</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link07"><span class="text">우리밀 살리기</span></a>
+				</div>
+				<h2 class="cTitle05">물품 카테고리</h2>
+				<div class="category-box-list">
+					<a href="../../im/pd/MW-PD0202.html" class="link link08"><span class="text">쌀/잡곡</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link09"><span class="text">채소/버섯</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link10"><span class="text">과일/견과</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link11"><span class="text">축산/가공</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link12"><span class="text">수산/수산가공</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link13"><span class="text">반찬/양념/가루</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link14"><span class="text">식사대용/간편식</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link15"><span class="text">건강/차</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link16"><span class="text">화장품</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link17"><span class="text">주방/욕실/세정</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link18"><span class="text">휴지/위생/환경</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link19"><span class="text">대용량/어린이집</span></a>
+				</div>
+				<ul class="btn-list2">
+					<li class="item"><a href="../../im/pd/MW-PD0501.html" class="btn-link-more3">기획전</a></li>
+					<li class="item"><a href="../../im/pd/MW-PD030101.html" class="btn-link-more3">신규물품</a></li>
+					<li class="item"><a href="../../im/pd/MW-PD030102.html" class="btn-link-more3">추천물품</a></li>
+				</ul>
+			</div>
+			<button type="button" class="btn-close-category">닫기</button>
+		</div>
+	</div>
+	<div class="floating-btn-area">
+		<a href="#" class="btn btn-image btn-prev">이전</a>
+		<div class="right-area">
+			<a href="../../im/my/MW-MY060101.html" class="btn btn-link">1:1<br>상담</a>
+			<a href="../../im/qc/MW-QC02.html" class="btn btn-link">최근<br>이력</a>
+			<button type="button" class="btn btn-top">TOP</button>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+
+	/*  개선필요,공지사항탭 */
+	$('.tab-list1 li').click(function(){
+		var idx = $(this).index();
+		$(this).addClass('on').siblings('li').removeClass('on');
+		$('.tab-cont').removeClass('on').eq(idx).addClass('on');
+	});
+
+});
+</script>
+</body>
+</html>

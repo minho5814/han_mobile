@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">주문조회</h1>
+		<button type="button" class="btn-image btn-back">이전</button>
+		<a href="../../im/co/MW-CO0301.html" class="btn-image btn-search">통합검색</a>
+	</div>
+
+
+	<div class="container store-wrap">
+		<div class="white-content1 pdB0">
+			<div class="float-area">
+				<p class="cTitle05 floatL"><em class="bold">홍길동(652275)</em>님의 주문내역입니다.</p>
+				<span class="flag bg3 floatR mgT5">선물택배</span>
+			</div>
+		</div>
+		<div class="white-content3 change-wrap pdT10">
+			<div class="accordion-list">
+				<div class="list-group on">
+					<div class="list-title">
+						<div class="left-area">
+							<p>주문정보</p>
+						</div>
+						<div class="right-area">
+							<button type="button" class="btn-aco">닫기</button>
+						</div>
+					</div>
+					<div class="list-cont">
+						<ul>
+							<li class="row">
+								<span class="title">주문번호</span>
+								<div class="cont bold">20170227134121797<a href="#" class="btn-text btn-h30 btn-text-line1 btn-way-look btn-waybill">운송장조회</a></div>
+							</li>
+							<li class="row">
+								<span class="title">주문일</span>
+								<div class="cont">2017년 02월 27일 (월) 13:41</div>
+							</li>
+							<li class="row">
+								<span class="title">희망배송일</span>
+								<div class="cont"><span class="fColor02">2017년 03월 02일 (목)</span></div>
+							</li>
+							<li class="row">
+								<span class="title">상태</span>
+								<div class="cont">공급준비중</div>
+							</li>
+							<li class="row">
+								<span class="title">공급자</span>
+								<div class="cont">
+									<span class="txt"><em class="fColor02">한살림서울</em> : 이인균(실무자)</span>
+									<div class="btn-box call">
+										<a href="tel:1661-0800" class="btn-call"><span class="text">010-1234-4567</span></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white-content3 change-wrap">
+			<div class="accordion-list">
+				<div class="list-group on">
+					<div class="list-title">
+						<div class="left-area">
+							<p>받는 분(1)</p>
+						</div>
+						<div class="right-area">
+							<button type="button" class="btn-aco">닫기</button>
+						</div>
+					</div>
+					<div class="list-cont">
+						<ul>
+							<li class="row">
+								<span class="title">이름</span>
+								<div class="cont">홍길동</div>
+							</li>
+							<li class="row">
+								<span class="title">주소</span>
+								<div class="cont">(12345) 서울 송파구 잠실동 123-456번지<br>ABC아파트 120동 1501호</div>
+							</li>
+							<li class="row">
+								<span class="title">연락처1</span>
+								<div class="cont">010-1234-5678</div>
+							</li>
+							<li class="row">
+								<span class="title">연락처2</span>
+								<div class="cont">010-1234-5678</div>
+							</li>
+							<li class="row">
+								<span class="title">배송자에게<br>전할 말</span>
+								<div class="cont">문 앞에 놓아주세요</div>
+							</li>
+						</ul>
+					</div>
+					<div class="bar-box mgT0 mgB0"></div>
+					<div class="list-cont">
+						<h3 class="cTitle02 bold line-h34 mgT15">물품 및 수량</h3>
+						<div class="order-list">
+							<div class="box">
+								<a href="../../im/pd/MW-PD1001.html">
+									<div class="img-area">
+										<img src="../../img/temp/img_goods01.jpg" alt="물품 이미지">
+										<span class="ico-label label01">햇물품</span>
+									</div>
+									<div class="goods-cont">
+										<div class="inner">
+											<p class="name ellipsis-line">닭고기볶음밥(300g)</p>
+											<p class="count">수량: <span class="fColor03">1</span></p>
+											<div class="price-wrap">
+												<p class="price"><span class="number">3,000</span>원</p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="gun-payment">
+							<div class="gun-area">
+								<ul class="gun-list">
+									<li class="item">합계금액(<strong>2</strong>)<span class="price"><span class="number">3,000</span>원</span></li>
+									<li class="item">택배비<span class="price"><span class="number">3,000</span>원</span></li>
+									<li class="item gun-item">합계<span class="price"><span class="gun-number fColor03">6,850</span>원</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-cont">
+							<h3 class="cTitle02 bold line-h34 mgT15">보내는 분</h3>
+							<ul>
+								<li class="row border01">
+									<span class="title">이름</span>
+									<div class="cont">홍길동</div>
+								</li>
+								<li class="row">
+									<span class="title">주소</span>
+									<div class="cont">(12345) 서울 송파구 잠실동 123-456번지<br>ABC아파트 120동 1501호</div>
+								</li>
+								<li class="row">
+									<span class="title">연락처1</span>
+									<div class="cont">010-1234-5678</div>
+								</li>
+								<li class="row">
+									<span class="title">연락처2</span>
+									<div class="cont">010-1234-5678</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white-content3 change-wrap">
+			<div class="accordion-list">
+				<div class="list-group on">
+					<div class="list-title">
+						<div class="left-area">
+							<p>받는 분(2)</p>
+						</div>
+						<div class="right-area">
+							<button type="button" class="btn-aco">닫기</button>
+						</div>
+					</div>
+					<div class="list-cont">
+						<ul>
+							<li class="row">
+								<span class="title">이름</span>
+								<div class="cont">홍길동</div>
+							</li>
+							<li class="row">
+								<span class="title">주소</span>
+								<div class="cont">(12345) 서울 송파구 잠실동 123-456번지<br>ABC아파트 120동 1501호</div>
+							</li>
+							<li class="row">
+								<span class="title">연락처1</span>
+								<div class="cont">010-1234-5678</div>
+							</li>
+							<li class="row">
+								<span class="title">연락처2</span>
+								<div class="cont">010-1234-5678</div>
+							</li>
+							<li class="row">
+								<span class="title">배송자에게<br>전할 말</span>
+								<div class="cont">문 앞에 놓아주세요</div>
+							</li>
+						</ul>
+					</div>
+					<div class="bar-box mgT0 mgB0"></div>
+					<div class="list-cont">
+						<h3 class="cTitle02 bold line-h34 mgT15">물품 및 수량</h3>
+						<div class="order-list">
+							<div class="box">
+								<a href="../../im/pd/MW-PD1001.html">
+									<div class="img-area">
+										<img src="../../img/temp/img_goods01.jpg" alt="물품 이미지">
+										<span class="ico-label label01">햇물품</span>
+									</div>
+									<div class="goods-cont">
+										<div class="inner">
+											<p class="name ellipsis-line">닭고기볶음밥(300g)</p>
+											<p class="count">수량: <span class="fColor03">1</span></p>
+											<div class="price-wrap">
+												<p class="price"><span class="number">3,000</span>원</p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="gun-payment">
+							<div class="gun-area">
+								<ul class="gun-list">
+									<li class="item">합계금액(<strong>2</strong>)<span class="price"><span class="number">3,000</span>원</span></li>
+									<li class="item">택배비<span class="price"><span class="number">3,000</span>원</span></li>
+									<li class="item gun-item">합계<span class="price"><span class="gun-number fColor03">6,850</span>원</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-cont">
+							<h3 class="cTitle02 bold line-h34 mgT15">보내는 분</h3>
+							<ul>
+								<li class="row border01">
+									<span class="title">이름</span>
+									<div class="cont">홍길동</div>
+								</li>
+								<li class="row">
+									<span class="title">주소</span>
+									<div class="cont">(12345) 서울 송파구 잠실동 123-456번지<br>ABC아파트 120동 1501호</div>
+								</li>
+								<li class="row">
+									<span class="title">연락처1</span>
+									<div class="cont">010-1234-5678</div>
+								</li>
+								<li class="row">
+									<span class="title">연락처2</span>
+									<div class="cont">010-1234-5678</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white-content3 change-wrap">
+			<div class="accordion-list">
+				<div class="list-group on">
+					<div class="list-title">
+						<div class="left-area">
+							<p>결제금액</p>
+						</div>
+						<div class="right-area">
+							<button type="button" class="btn-aco">닫기</button>
+						</div>
+					</div>
+					<div class="list-cont">
+						<div class="gun-box">
+							<div class="gun-payment">
+								<div class="gun-area">
+									<ul class="gun-list">
+										<li class="item">합계금액(<strong>2</strong>종)<span class="price"><span class="number">213,500</span>원</span></li>
+										<li class="item">기타(<strong>0</strong>종)<span class="price"><span class="number">0</span>원</span></li>
+										<li class="item">출자금 자동증자금
+											<button type="button" class="btn-popup btn-image btn-tooltip btn-capital-increase"><span class="hide">출자금 자동증자금</span></button>
+											<span class="price"><span class="number">1,000</span>원</span>
+										</li>
+										<li class="item">택배비
+											<button type="button" class="btn-popup btn-image btn-tooltip btn-delivery"><span class="hide">택배비</span></button>
+											<span class="price"><span class="number fColor04">6,000</span>원</span>
+										</li>
+										<li class="item">적립금 사용<span class="price"><span class="number">-1,000</span>원</span></li>
+										<li class="item">쿠폰 할인<span class="price"><span class="number">-0</span>원</span></li>
+										<li class="item gun-item">최종 결제금액<span class="price"><span class="gun-number fColor03">15,050</span>원</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white-content3 change-wrap">
+			<div class="accordion-list">
+				<div class="list-group on">
+					<div class="list-title">
+						<div class="left-area">
+							<p>결제정보</p>
+						</div>
+						<div class="right-area">
+							<button type="button" class="btn-aco">닫기</button>
+						</div>
+					</div>
+					<div class="list-cont ty03">
+						<ul>
+							<li class="row">
+								<span class="title">CMS</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white-content6 pdB0">
+			<div class="btn-wrap">
+				<ul class="btn-list1">
+					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">주문취소</a></li>
+					<li class="item"><a href="../../im/my/MW-MY030101.html" class="btn-text btn-h55 btn-text-green1">목록</a></li>
+				</ul>
+			</div>
+			<div class="box-content1 mgT30">
+				<h3 class="box-title">선물택배 주문조회 안내</h3>
+				<ul class="box-cont">
+					<li class="item">안내문구 수급 예정</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="btm-fix-menu">
+		<div class="btn-list">
+			<a href="../../main.html" class="btn btn1">홈</a>
+			<button type="button" class="btn btn2">카테고리</button>
+			<a href="../../im/sh/MW-SH01.html" class="btn btn3">장바구니<span class="len">19</span></a>
+		</div>
+		<div class="category-layer">
+			<div class="inner">
+				<h2 class="cTitle05">서브 브랜드</h2>
+				<div class="category-box-list">
+					<a href="../../im/pd/MW-PD040101.html" class="link link01"><span class="text">토박이씨앗살림</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link02"><span class="text">가까이愛</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link03"><span class="text">우리보리 살림돼지</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link04"><span class="text">가까운 먹을거리</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link05"><span class="text">병 재사용</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link06"><span class="text">농지살림</span></a>
+					<a href="../../im/pd/MW-PD040101.html" class="link link07"><span class="text">우리밀 살리기</span></a>
+				</div>
+				<h2 class="cTitle05">물품 카테고리</h2>
+				<div class="category-box-list">
+					<a href="../../im/pd/MW-PD0202.html" class="link link08"><span class="text">쌀/잡곡</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link09"><span class="text">채소/버섯</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link10"><span class="text">과일/견과</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link11"><span class="text">축산/가공</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link12"><span class="text">수산/수산가공</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link13"><span class="text">반찬/양념/가루</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link14"><span class="text">식사대용/간편식</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link15"><span class="text">건강/차</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link16"><span class="text">화장품</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link17"><span class="text">주방/욕실/세정</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link18"><span class="text">휴지/위생/환경</span></a>
+					<a href="../../im/pd/MW-PD0202.html" class="link link19"><span class="text">대용량/어린이집</span></a>
+				</div>
+				<ul class="btn-list2">
+					<li class="item"><a href="../../im/pd/MW-PD0501.html" class="btn-link-more3">기획전</a></li>
+					<li class="item"><a href="../../im/pd/MW-PD030101.html" class="btn-link-more3">신규물품</a></li>
+					<li class="item"><a href="../../im/pd/MW-PD030102.html" class="btn-link-more3">추천물품</a></li>
+				</ul>
+			</div>
+			<button type="button" class="btn-close-category">닫기</button>
+		</div>
+	</div>
+	<div class="floating-btn-area">
+		<a href="#" class="btn btn-image btn-prev">이전</a>
+		<div class="right-area">
+			<a href="../../im/my/MW-MY060101.html" class="btn btn-link">1:1<br>상담</a>
+			<a href="../../im/qc/MW-QC02.html" class="btn btn-link">최근<br>이력</a>
+			<button type="button" class="btn btn-top">TOP</button>
+		</div>
+	</div>
+</div>
+
+<!-- 출자금 자동증자금 팝업 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-capital-increase">
+	<div class="pop-head">
+		<h1 class="pop-title">출자금 자동증자금</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등
+						조직 운영에 사용되며 물품구입시마다 의무자동출자되며 이는 탈퇴 시 환불됩니다.
+						* 출자금 등은 부가세 매입세액 및 연말정산 공제대상이 아닙니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 백배비 팝업 -->
+<div class="layer-popup pop-delivery">
+	<div class="pop-head">
+		<h1 class="pop-title">백배비</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="cont-area">
+					<p class="pop-txt mgT10">
+						도서, 산간, 제주 등 항만이나 항공으로 택배를 배송하는 지역은 기본택배료 외에 추가정산료가 발생할 수 있습니다.<br>
+						지역생협에 따라 기본택배료가 다를 수 있습니다.
+						선물택배의 경우 배송지별 주문총액이 3만원 미만이면 택배비 3천원이 부과됩니다.
+					</p>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 운송장 팝업 -->
+<div class="layer-popup pop-waybill">
+	<div class="pop-head">
+		<h1 class="pop-title">운송장조회</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<!-- <h3 class="cTitle01">결제방법 선택</h3> -->
+				<div class="radio-list">
+					<label><input type="radio" name="choice" class="styled1" checked>홍길동 [123456789152]</label>
+					<label><input type="radio" name="choice" class="styled1">홍길순 [123456789152]</label>
+					<label><input type="radio" name="choice" class="styled1">김길동 [123456789152]</label>
+				</div>
+			</div>
+			<div class="btn-area">
+				<ul class="btn-list1">
+					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-line1">취소</a></li>
+					<li class="item"><a href="#" class="btn-text btn-h55 btn-text-green1">확인</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+
+	/* 아코디언 기능 */
+	$('.list-group.on .list-cont').slideDown(200);
+	$('.list-group .btn-aco').click(function(){
+		if($(this).parents('.list-group').hasClass('on')){
+			$(this).parents('.list-group').removeClass('on').find('.list-cont').slideUp();
+		}else{
+			$(this).parents('.list-group').addClass('on').find('.list-cont').slideDown();
+		}
+	});
+
+	/* 팝업*/
+	/*툴팁 팝업*/
+	/*출자금 자동증자금 팝업*/
+	$('.btn-capital-increase').click(function(){
+		$('.pop-capital-increase').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+	/*택배비*/
+	$('.btn-delivery').click(function(){
+		$('.pop-delivery').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+	/*운송장조회*/
+	$('.btn-waybill').click(function(){
+		$('.pop-waybill').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+
+});
+</script>
+</body>
+</html>
