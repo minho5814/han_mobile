@@ -2748,7 +2748,7 @@ html {
 	width:19px;
 	height:19px;
 	background:url(../img/sprite_ico.png) no-repeat 0 -63px;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .gnb-layer .my-menu dd {
 	float:left;
@@ -2792,7 +2792,7 @@ html {
 	height:20px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .gnb-layer .slide-menu .menu-list .item1:before {background-position:0 -103px;}
 .gnb-layer .slide-menu .menu-list .item2:before {background-position:0 -145px;}
@@ -2800,6 +2800,7 @@ html {
 .gnb-layer .slide-menu .menu-list .item4:before {background-position:0 -229px;}
 .gnb-layer .slide-menu .menu-list .item5:before {background-position:0 -271px;}
 .gnb-layer .slide-menu .menu-list .item6:before {background-position:0 -313px;}
+.gnb-layer .slide-menu .menu-list .item7:before {background-position:0 -469px;}
 /* on */
 .gnb-layer .slide-menu .menu-list .item1.on:before {background-position:0 -124px;}
 .gnb-layer .slide-menu .menu-list .item2.on:before {background-position:0 -166px;}
@@ -2807,6 +2808,7 @@ html {
 .gnb-layer .slide-menu .menu-list .item4.on:before {background-position:0 -250px;}
 .gnb-layer .slide-menu .menu-list .item5.on:before {background-position:0 -292px;}
 .gnb-layer .slide-menu .menu-list .item6.on:before {background-position:0 -334px;}
+.gnb-layer .slide-menu .menu-list .item7.on:before {background-position:0 -490px;}
 
 .gnb-layer .slide-menu .menu-list .item.on {
 	background-color:#fff;
@@ -2831,7 +2833,7 @@ html {
 	font-size:15px;
 	line-height:45px;
 }
-.gnb-layer .slide-menu .slide-area .depth-box:last-child .title {border-bottom:1px solid #666;}
+.gnb-layer .slide-menu .slide-area .depth-box:last-child .list {border-bottom:1px solid #666;}
 .gnb-layer .slide-menu .slide-area .depth-box .list {
 	border-top:1px solid #e4e4e4;
 	padding:10px 0;
@@ -3158,7 +3160,7 @@ html.down .btm-fix-menu {bottom:-55px;}/* scroll down */
 	height:20px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .btm-fix-menu .btnmmm-list .btn:nth-child(2) {width:34%;}
 .btm-fix-menu .btn-list .btn1:before {background-position:0 0;}
@@ -3825,7 +3827,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:21px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .thumb-list5 .box .text-area .name.good:before {
 	background-position:0 -381px;
@@ -5438,7 +5440,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:12px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .thumb-box1 .icon-area .join:before {background-position:0 -355px;}
 .thumb-box1 .icon-area .date:before {background-position:0 -368px;}
@@ -6461,7 +6463,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:21px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .good.postscript-box .title-box .title:before {background-position:0 -381px;}/* 좋아요 */
 .bad.postscript-box .title-box .title:before {background-position:0 -403px;}/* 개선필요 */
@@ -6498,7 +6500,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:21px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .postscript-list .postscript-box.good:before {background-position:0 -381px;}/* 좋아요 */
 .postscript-list .postscript-box.bad:before {background-position:0 -403px;}/* 개선필요 */
@@ -6547,7 +6549,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:21px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .btn-goods.btn-good .text:before {background-position:0 -425px;}
 .btn-goods.btn-bad .text:before {background-position:0 -447px;}
@@ -7467,7 +7469,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	height:21px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .my-reivew .item .title-area .title.good:before {
 	background-position:0 -381px;
@@ -9818,7 +9820,7 @@ label.important:before {
 	height:12px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .campaign-list .thumb-box .icon-area .join:before {background-position:0 -355px;}
 .campaign-list .thumb-box .icon-area .date:before {background-position:0 -368px;}
@@ -11586,7 +11588,7 @@ label.important:before {
 	height:21px;
 	background-image:url(../img/sprite_ico.png);
 	background-repeat:no-repeat;
-	background-size:40px 500px;
+	background-size:40px 520px;
 }
 .review-slide .item .text-wrap .review-icon.good:before {background-position:0 -381px;}/* 좋아요 */
 .review-slide .item .text-wrap .review-icon.bad:before {background-position:0 -403px;}/* 개선필요 */
