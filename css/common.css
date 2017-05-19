@@ -512,7 +512,7 @@ html.no-scroll {
 }
 
 /* --------------------------------------------------------------------------------------------
-	캠페인 마크
+	가치살림 마크
 -------------------------------------------------------------------------------------------- */
 .campaign-mark {
 	position:relative;
@@ -5463,7 +5463,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	.store-tab .item:nth-child(2) {width:35%;}
 	.store-tab .item:last-child {width:25%;}
 }
-/* 캠페인 */
+/* 가치살림 */
 .thumb-box1 {
 	width:220px;
 	padding-top:15px;
@@ -9945,7 +9945,7 @@ label.important:before {
 .recipe-wrap .tab-content.list  .cook-list2 .text-area .btn-like {right:16px; top:17px;}
 
 /* --------------------------------------------------------------------------------------------
-	캠페인
+	가치살림
 -------------------------------------------------------------------------------------------- */
 .campaign-wrap {}
 .campaign-wrap .gray-border .align-center {border-bottom:1px solid #bbb;}
@@ -9971,7 +9971,7 @@ label.important:before {
 
 .campaign-wrap .white-content3.gray-border {border-top:10px solid #eee}
 
-/* 캠페인 */
+/* 가치살림 */
 .campaign-list li {
 	border-bottom:1px solid #eee;
 }
@@ -10137,7 +10137,7 @@ label.important:before {
 	background-color:#60b015;
 }
 
-/*캠페인 sub*/
+/*가치살림 sub*/
 .campaign-sub .thumb-box {
 	position:relative;
 	background-color:#f7f7f7;
