@@ -4107,10 +4107,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	background-size:40px 500px;
 }
 .thumb-list9 .box .float-area .title.good:before {
-	background-position:0 -381px;
+	background-position:0 -366px;
 }
 .thumb-list9 .box .float-area .title.bad:before {
-	background-position:0 -403px;
+	background-position:0 -387px;
 }
 .thumb-list9 .box .float-area {
 	overflow: hidden;
@@ -11994,11 +11994,11 @@ label.important:before {
 	font-size:15px;
 	font-weight: bold;
 	color:#333;
-	line-height: 30px;
+	line-height: 45px;
 }
-.cs-area .gray-content1 .box-content1 {background-color: #fff; border-color:#eee}
-.cs-area .gray-content1 .box-content1 .box-title {border-color:#eee;}
-.cs-area .gray-content1 .box-content1 .item {letter-spacing: -0.5px;}
+.cs-area .box-content1 {background-color: #fff; border-color:#eee}
+.cs-area .box-content1 .box-title {border-color:#eee;}
+.cs-area  .box-content1 .item {letter-spacing: -0.5px;}
 
 .cs-area .search-area {
 	position:relative;
