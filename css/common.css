@@ -7130,6 +7130,12 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
+.detail-area .question .writer {
+	display: block;
+	margin-top:5px;
+	font-size: 13px;
+	color:#666;
+}
 .detail-cont {padding-top:10px;}
 .detail-cont .detail-text {
 	font-size:15px;
@@ -7152,6 +7158,35 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .btn-modifie {
 	padding:15px 0;
 	border-bottom:1px solid #eee;
+}
+
+.page-area {
+	margin-top:30px;
+}
+.page-area li {
+	position: relative;
+	height: 48px;
+	line-height: 48px;
+	border-top:1px solid #eee;
+	color:#333;
+}
+.page-area li:last-child {
+	border-bottom:1px solid #eee;
+}
+.page-area li span {
+	position:absolute;
+	left:0;
+	top:0;
+}
+.page-area li a {
+	display: inline-block;
+	overflow:hidden;
+	width:100%;
+	padding:0 10px 0 50px;
+	color:#666;
+	box-sizing: border-box;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 
 /* 적립금 적립제도 이용안내 팝업 */
@@ -7831,6 +7866,20 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
+.qna-list .item.secret .question .title {
+	position: relative;
+	padding-left:17px;
+}
+.qna-list .item.secret .question .title:before {
+	content:'';
+	position:absolute;
+	top:50%; left:0;
+	width:10px; height:13px;
+	margin-top:-7px;
+	background:url(../img/ico/ico_secret.png) 0 0 no-repeat;
+	background-size:10px 13px;
+}
+
 .qna-list .item.on .question .title {
 	white-space:normal;
 }
