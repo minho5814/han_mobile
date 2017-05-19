@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="head-title">상담문의</h1>
+		<button type="button" class="btn-image btn-close">닫기</button>
+	</div>
+
+	<div class="container">
+		<div class="white-content2">
+			<div class="consul-area">
+				<div class="form-list1">
+					<div class="form-item">
+						<h3 class="cTitle02 mgT0">제목</h3>
+						<input type="text" value="곡물세안제 이제 구입 못하나요?" class="text">
+					</div>
+					<div class="form-item">
+						<h3 class="cTitle02">공개설정</h3>
+						<div class="radio-list">
+							<label><input type="radio" name="Receipt" class="styled1" checked>비밀글</label>
+							<label><input type="radio" name="Receipt" class="styled1">공개글</label>
+						</div>
+					</div>
+					<div class="form-item">
+						<h3 class="cTitle02">상담유형</h3>
+						<select class="styled1">
+							<option>물품주문</opstion>
+							<option>물품주문</opstion>
+						</select>
+					</div>
+					<div class="form-item">
+						<h3 class="cTitle02">상담내용</h3>
+						<textarea cols="" rows="" maxlength="500" placeholder="내용을 입력하세요." class="hei175"></textarea>
+					</div>
+					<div class="form-item">
+						<h3 class="cTitle02">파일첨부</h3>
+						<div class="attach-box">
+							<div class="file-box">
+								<input type="text" id="fileName" class="file_input_textbox" readonly="readonly">
+								<div class="file_input_div">
+									<input type="button" value="파일찾기" class="file_input_button">
+									<input type="file" class="file_input_hidden" onchange="javascript:document.getElementById('fileName').value = this.value">
+								</div>
+							</div>
+							<div class="attach-img">
+								<img src="../../img/temp/@temp_attach02.jpg" alt="">
+								<button type="button" class="btn-close"><span class="hide">닫기</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-area">
+					<ul class="btn-list1">
+						<li class="item"><a href="MW-MY060101.html" class="btn-text btn-h55 btn-text-line1">취소</a></li>
+						<!-- <li class="item"><a href="MW-MY060101.html" class="btn-text btn-h55 btn-text-line1">삭제</a></li> -->
+						<li class="item"><a href="MW-MY060101.html" class="btn-text btn-h55 btn-text-green1">등록</a></li>
+						<!-- <li class="item"><a href="MW-MY060101.html" class="btn-text btn-h55 btn-text-green1">수정</a></li> -->
+					</ul>
+				</div>
+				<div class="box-content1 mgT30">
+					<h3 class="box-title">상담문의 안내</h3>
+					<ul class="box-cont">
+						<li class="item fColor02">상담글을 공개로 설정하실 경우 개인정보가 노출 될 수 있습니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+</body>
+</html>

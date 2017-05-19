@@ -18,27 +18,28 @@
 
 	<div class="container">
 		<div class="white-content1">
-			<div class="title-wrap">
-				<h3 class="cTitle01">상담내역</h3>
-				<div class="btn-wrap">
-					<a href="MW-MY060102_popup.html" target="_blank" class="btn-text btn-h30 btn-text-line1">상담문의</a>
+			<div class="detail-area">
+				<div class="question">
+					<span class="history-date">
+						<span>2017-02-27(수)</span>
+						<span>물품상담</span>
+					</span>
+					<span class="state state01">상담중</span>
+					<span class="title">곡물세안제 이제 구입 못하나요?</span>
+				</div>
+				<div class="detail-cont">
+					<p class="detail-text">
+						빈혈때문에 말려 볶은걸 구매해 차로마시고있는데요..<br>이것도 차로 가능한가요? 말리기만했으니 제가 볶아서 차로 끓여 마셔야할까요? 아님 반찬용인가요?
+					</p>
+					<div class="detail-img"><img src="../../img/temp/@temp_attach01.jpg" alt=""></div>
+					<div class="btn-modifie">
+						<a href="#" class="btn-text btn-h30 btn-text-line1">수정</a>
+						<a href="#" class="btn-text btn-h30 btn-text-line1">삭제</a>
+					</div>
 				</div>
 			</div>
-			<div class="history-calendar">
-				<ul class="month-btn-area">
-					<li class="item"><button type="button" class="btn-month on">1개월</button></li>
-					<li class="item"><button type="button" class="btn-month">2개월</button></li>
-					<li class="item"><button type="button" class="btn-month">3개월</button></li>
-				</ul>
-				<div class="date-textbox">
-					<div class="box"><button type="button" class="btn-calendar">2017/4/1(월)</button></div>
-					<div class="hyphen">~</div>
-					<div class="box"><button type="button" class="btn-calendar">2017/4/31(일)</button></div>
-				</div>
-			</div>
-
-			<div class="qna-cont">
-				<p class="no-result-box">상담내역이 존재하지 않습니다.</p>
+			<div class="btn-wrap mgT30">
+				<a href="#" class="btn-text btn-h55 btn-text-line1">목록</a>
 			</div>
 		</div>
 	</div>
@@ -111,13 +112,6 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script><!-- 달력 -->
 <script type="text/javascript" src="../../js/common.js"></script>
-<script>
-$(window).load(function(){
-	/* 1:1 상담 내용 아코디언 */
-	$('.question .title').click(function(){
-		$(this).parents('.item').toggleClass('on');
-	});
-});
-</script>
+
 </body>
 </html>
