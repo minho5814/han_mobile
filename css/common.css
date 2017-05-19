@@ -7834,6 +7834,12 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .qna-list .item.on .question .title {
 	white-space:normal;
 }
+.qna-list .item .question .writer {
+	display: block;
+	font-size: 13px;
+	color:#666;
+	margin-top:5px;
+}
 .qna-list .item .detail {
 	display:none;
 	margin-top:10px;
@@ -11996,6 +12002,7 @@ label.important:before {
 	color:#333;
 	line-height: 45px;
 }
+.cs-area .float-area.title .floatL {line-height: 30px;}
 .cs-area .box-content1 {background-color: #fff; border-color:#eee}
 .cs-area .box-content1 .box-title {border-color:#eee;}
 .cs-area  .box-content1 .item {letter-spacing: -0.5px;}
@@ -12041,7 +12048,7 @@ label.important:before {
 	padding-left:10px;
 	font-size: 14px;
 	color:#666;
-}
+}f.cs-area .float-area .floatL
 .cs-area .accordion-list1 .item {border-color:#eee;}
 .cs-area .accordion-list1 .item:first-child{border:0}
 .cs-area .accordion-list1 .item:last-child {
