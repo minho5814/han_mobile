@@ -1982,6 +1982,7 @@ select.styled1:disabled {
 	color:#60b015;
 	font-weight:bold;
 }
+.tab-list1 .item.on .text em {font-weight:bold;}
 
 .tab-list1.two .item {width:50%}
 .tab-list1.two .item.new span em {position:relative;}
@@ -2205,6 +2206,62 @@ select.styled1:disabled {
 	background-color:#fff;
 }
 
+/* 탭 06 */
+.tab-list6 {
+	overflow:hidden;
+}
+.tab-list6 .item {
+	float:left;
+	width:25%;
+}
+.tab-list6 .item .text {
+	display:block;
+	position:relative;
+	height:55px;
+	background-color:#f7f7f7;
+}
+.tab-list6 .item .text em {
+	position:absolute;
+	left:50%;top:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	color:#333;
+	font-size:15px;
+	text-align:center;
+	line-height:17px;
+	white-space:nowrap;
+}
+.tab-list6 .item.on .text:before {
+	content:'';
+	position:absolute;
+	left:0;right:0;bottom:0;
+	height:2px;
+	background-color:#60b015;
+}
+.tab-list6 .item.on .text em {
+	color:#60b015;
+	font-weight:bold;
+}
+.tab-list6 .item.new .text em {padding-right:22px;}
+.tab-list6 .item.new .text em:before {
+	content:'N';
+	position:absolute;
+	right:0;top:0;
+	width:17px;
+	height:17px;
+	box-sizing:border-box;
+	border-radius:2px;
+	border:1px solid #f04114;
+	color:#f04114;
+	font-size:11px;
+	font-weight:bold;
+	text-align:center;
+	line-height:15px;
+}
+
+.tab-list6 {}
+
 /* 탭영역 감추기 */
 .tab-hide-box {}
 .tab-hide-box .tab-list4 {
@@ -2214,7 +2271,6 @@ select.styled1:disabled {
 	margin-top:0;
 	border-top:0;
 }
-.tab-hide-box {}
 
 /* ============================================================================================
 	게시판
@@ -8350,7 +8406,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 
 /* 축산물 이력검사 */
 .livestock-box {
-	margin-top:10px;
 	padding:32px 24px 31px 20px;
 	background:url(../img/img/img_livest.png) no-repeat right center;
 	background-size:142px 147px;

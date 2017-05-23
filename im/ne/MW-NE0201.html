@@ -11,16 +11,20 @@
 <body>
 <div class="wrapper">
 	<div class="header">
-		<h1 class="head-title">물품소식과 공지사항</h1>
+		<h1 class="head-title">물품소식</h1><!-- 2017-05-23 문구수정 -->
 		<button type="button" class="btn-image btn-back">이전</button>
 		<a href="../co/MW-CO0301.html" class="btn-image btn-search">통합검색</a>
 	</div>
 
 	<div class="container">
-		<ul class="tab-list1 two">
-			<li class="item on"><span class="text">오늘의 물품소식</span></li>
+		<!-- 2017-05-23 탭 수정 -->
+		<ul class="tab-list6">
+			<li class="item on"><span class="text"><em>물품소식</em></span></li>
 			<li class="item new"><span class="text"><em>공지사항</em></span></li>
+			<li class="item"><span class="text"><em>방사능<br>안전검사</em></span></li>
+			<li class="item"><span class="text"><em>축산물<br>이력검사</em></span></li>
 		</ul>
+		<!-- // 2017-05-23 탭 수정 -->
 
 		<div class="white-content1 qna-area on">
 			<div class="form-button-type1">
@@ -232,6 +236,101 @@
 				</ul>
 			</div>
 		</div>
+
+		<!-- 방사능 안전검사 (2017-05-23 추가) -->
+		<div class="white-content1 qna-area">
+			<div class="safety-area">
+				<div class="form-button-type1">
+					<ul class="select-list1">
+						<li class="item">
+							<select class="styled1">
+								<option>2017</option>
+								<option>2018</option>
+								<option>2019</option>
+							</select>
+						</li>
+						<li class="item">
+							<select class="styled1">
+								<option>4월</option>
+								<option>2월</option>
+								<option>3월</option>
+							</select>
+						</li>
+					</ul>
+					<button type="button" class="btn-text btn-h42 btn-text-gray1 btn">조회</button>
+				</div>
+				<p class="radia-txt">
+					<span class="radia-serve">2017년 01월 방사능 검사결과</span>
+					불검출 <em class="fColor03">80</em>건, 검출 <em class="fColor03">2</em>건 검출 총량 <em class="fColor03">4.6Bg/kg</em> 입니다.
+				</p>
+				<div class="radia-area">
+					<div class="radia-box first">
+						<dl>
+							<dt>표고버섯 사각칩</dt>
+							<dd>검출, 검출 총량 : 2.3 Bq/kg</dd>
+							<dd class="radia-date">2017-03-27 (목)</dd>
+						</dl>
+					</div>
+					<div class="radia-box">
+						<dl>
+							<dt>전어</dt>
+							<dd>불검출</dd>
+							<dd class="radia-date">2017-03-27 (목)</dd>
+						</dl>
+					</div>
+					<div class="radia-box">
+						<dl>
+							<dt>황새치</dt>
+							<dd class="dete">검출, 검출 총량 : 2.3 Bq/kg</dd>
+							<dd class="radia-date">2017-03-27 (목)</dd>
+						</dl>
+					</div>
+					<div class="radia-box">
+						<dl>
+							<dt>시금치</dt>
+							<dd>불검출</dd>
+							<dd class="radia-date">2017-03-27 (목)</dd>
+						</dl>
+					</div>
+					<div class="radia-box">
+						<dl>
+							<dt>전어</dt>
+							<dd>불검출</dd>
+							<dd class="radia-date">2017-03-27 (목)</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="box-content1 mgT20">
+				<h3 class="box-title">방사능 검사 안내</h3>
+				<ul class="box-cont">
+					<li class="item">방사능 검사결과 전체 내역은 한살림 장보기 PC웹사이트에서 확인 가능합니다.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- // 방사능 안전검사 (2017-05-23 추가) -->
+
+		<!-- 축산물 이력검사 (2017-05-23 추가) -->
+		<div class="white-content1 qna-area">
+			<div class="safety-area">
+				<div class="livestock-box">
+					<h4 class="livestock-tit">한살림 축산물<br>그 안전함을 확인하세요.</h4>
+					<p class="livestock-txt">한살림 축산 생산자들이<br> 생명을 존중하며 키운<br> 한살림 축산물 생산이력을<br> 확인하실 수 있습니다.</p>
+				</div>
+				<h3 class="cTitle01 mgT15 mgB0">이력(묶음)번호 정보조회</h3>
+				<div class="search-livesto">
+					<div class="form-button-type1">
+						<input type="text" placeholder="이력(묶음)번호를 입력하세요.">
+						<button type="button" class="btn-text btn-h42 btn-text-gray1 btn">검색</button>
+						<button type="button" class="btn-barcode btn-text btn-h42"><span class="hide">바코드</span></button>
+					</div>
+				</div>
+				<ul class="bullet-list1">
+					<li class="item ty03">L자를 포함한 묶음번호 15자리 또는 12자리 개체식별번호를 입력 또는 바코드 스캔 후 조회하세요.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- // 축산물 이력검사 (2017-05-23 추가) -->
 	</div>
 	<div class="btm-fix-menu">
 		<div class="btn-list">
@@ -298,8 +397,8 @@ $(window).load(function(){
 		}
 	});
 
-	/*  개선필요,공지사항탭 */
-	$('.tab-list1 li').click(function(){
+	/*  개선필요,공지사항탭 (2017-05-23 수정) */
+	$('.tab-list6 li').click(function(){
 		var idx = $(this).index();
 		$(this).addClass('on').siblings('li').removeClass('on');
 		$('.qna-area').removeClass('on').eq(idx).addClass('on');
