@@ -8097,7 +8097,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	vertical-align:top;
 }
 .special-goods {
-	margin:0 10px 10px;
+	margin:0 10px 30px;
 	border:1px solid #eee;
 }
 .special-goods .img-wrap {
@@ -9800,7 +9800,7 @@ label.important:before {
 }
 /* 신규 요리 */
 .new-cont {padding:0 10px 20px;}
-.new-cont .new-box {margin-top:10px;}
+.new-cont .new-box {margin-top:30px;}
 .new-cont .new-box:first-child {margin-top:0;}
 .new-cont .new-box .new-img img {width:100%; height:auto; vertical-align:middle;}
 .new-cont .new-box .new-text {
