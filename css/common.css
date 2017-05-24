@@ -2829,13 +2829,19 @@ html {
 .gnb-layer .slide-menu .menu-list .item {
 	position:relative;
 	width:112px;
-	height:40px;
+	height:45px;
 	padding-left:38px;
 	box-sizing:border-box;
 	background-color:#f7f7f7;
 	color:#aaa;
 	font-size:13px;
-	line-height:40px;
+	line-height:45px;
+}
+@media only screen and (max-width:320px) {
+	.gnb-layer .slide-menu .menu-list .item {
+		height:40px;
+		line-height: 40px;
+	}
 }
 .gnb-layer .slide-menu .menu-list .item:before {
 	content:'';
@@ -2881,7 +2887,7 @@ html {
 }
 .gnb-layer .slide-menu .slide-area .depth-box {}
 .gnb-layer .slide-menu .slide-area .depth-box:first-child {
-	padding-top:20px;
+	padding-top:15px;
 }
 .gnb-layer .slide-menu .slide-area .depth-box .title {
 	display: block;
