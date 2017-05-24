@@ -521,23 +521,10 @@ html.no-scroll {
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-size:105px 105px;
+	overflow: hidden;
 }
-.campaign-mark .label {
-	position:absolute;
-	left:0;right:0;top:50%;
-	-webkit-transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	transform:translateY(-50%);
-	color:#fff;
-	font-size:15px;
-	text-align:center;
-	font-weight:bold;
-	line-height:17px;
-}
-.campaign-mark .label:before {
-	content:'';
-	display:block;
-}
+.campaign-mark img {width: 100%;}
+
 /* 배경 종류 */
 .bg1.campaign-mark {background-image:url(../img/ico/campaign/bg_campaign01.png);}
 /* 아이콘 종류 */
