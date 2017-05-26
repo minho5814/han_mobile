@@ -12097,6 +12097,9 @@ label.important:before {
 
 /*물품이야기*/
 .category.item-area {}
+.category.item-area .btn-prev,
+.category.item-area .btn-next,
+.category.item-area .swiper-pagination-bullets {display: none;}
 .category.item-area .all-menu ul li {
 	float:left;
 	margin:5px 0 0 2%;
