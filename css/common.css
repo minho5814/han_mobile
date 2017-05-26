@@ -8333,6 +8333,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	margin-top:7px;
 	color:#aaa;
 }
+.goods-safety .certifi-box .bullet-list2 .item:before {
+	background-color:#aaa;
+}
 .goods-safety .certifi-box .board3 tr:first-child td {
 	border-top:1px solid #ccc;
 }
