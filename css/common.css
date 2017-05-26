@@ -8275,7 +8275,64 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:15px;
 	line-height: 22px;
 }
+.goods-safety .safety-list dt {
+	position:relative;
+	margin-top:22px;
+	padding:5px 0 5px 48px;
+	color:#333;
+	font-size:16px;
+	font-weight: bold;
+	line-height: 22px;
+}
+.goods-safety .safety-list dt:before {
+	content: '';
+	position: absolute;
+	top:50%; left:0;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:48px; height:31px;
+	background-image: url(../img/ico/safety_list.png);
+	background-repeat: no-repeat;
+	background-size:34px 287px;
+}
+.goods-safety .safety-list .item01:before {background-position:center 0;}
+.goods-safety .safety-list .item02:before {background-position:center -32px;}
+.goods-safety .safety-list .item03:before {background-position:center -64px;}
+.goods-safety .safety-list .item04:before {background-position:center -96px;}
+.goods-safety .safety-list .item05:before {background-position:center -128px;}
+.goods-safety .safety-list .item06:before {background-position:center -160px;}
+.goods-safety .safety-list .item07:before {background-position:center -192px;}
+.goods-safety .safety-list .item08:before {background-position:center -224px;}
+.goods-safety .safety-list .item09:before {background-position:center -256px;}
 
+.goods-safety .safety-list dd {
+	margin-top:12px;
+	color:#666;
+	font-size:15px;
+	line-height: 22px;
+}
+.goods-safety .certifi-box .cTitle01 {
+	line-height:22px;
+}
+.goods-safety .certifi-box .ceritfi-list {margin-top:5px;}
+.goods-safety .certifi-box .ceritfi-list .item {
+	position:relative;
+	margin-top:2px;
+	padding-left:15px;
+	font-size:15px;
+	color:#666;
+	line-height:20px;
+}
+.goods-safety .certifi-box .ceritfi-list .item .number {
+	position:absolute;
+	left:1px; top:0;
+}
+.goods-safety .certifi-box .ceritfi-list .item:first-child {margin-top:0px;}
+.goods-safety .certifi-box .bullet-list2.type05 {
+	margin-top:7px;
+	color:#aaa;
+}
 
 /* 축산물 이력검사 */
 .livestock-box {
