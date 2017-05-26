@@ -8306,6 +8306,27 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:15px;
 	line-height: 22px;
 }
+.goods-safety .certifi-box .cTitle01 {
+	line-height:22px;
+}
+.goods-safety .certifi-box .ceritfi-list {margin-top:5px;}
+.goods-safety .certifi-box .ceritfi-list .item {
+	position:relative;
+	margin-top:2px;
+	padding-left:15px;
+	font-size:15px;
+	color:#666;
+	line-height:20px;
+}
+.goods-safety .certifi-box .ceritfi-list .item .number {
+	position:absolute;
+	left:1px; top:0;
+}
+.goods-safety .certifi-box .ceritfi-list .item:first-child {margin-top:0px;}
+.goods-safety .certifi-box .bullet-list2.type05 {
+	margin-top:7px;
+	color:#aaa;
+}
 
 /* 축산물 이력검사 */
 .livestock-box {
