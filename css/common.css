@@ -521,7 +521,7 @@ html.no-scroll {
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-size:105px 105px;
-	overflow: hidden;
+	display:
 }
 .campaign-mark img {width: 100%;}
 
@@ -12019,9 +12019,20 @@ label.important:before {
 	padding-left:10px;
 	font-size: 14px;
 	color:#666;
-}f.cs-area .float-area .floatL
+}
 .cs-area .accordion-list1 .item {border-color:#eee;}
 .cs-area .accordion-list1 .item:first-child{border:0}
 .cs-area .accordion-list1 .item:last-child {
 	border-bottom:1px solid #eee;
+}
+
+/*물품이야기*/
+.category.item-area {}
+.category.item-area .all-menu ul li {
+	float:left;
+	margin:5px 0 0 2%;
+	width:49%;
+}
+.category.item-area .all-menu ul li:nth-child(2n+1) {
+	margin-left:0;
 }
