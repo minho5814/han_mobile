@@ -6165,6 +6165,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .top-gray-box2 .thumb-list1 .box {margin:0 10px;}
 .top-gray-box2 .thumb-wrap .thumb-list1 .box {margin:0;}
 
+.top-gray-box3 {padding:0 10px 30px; border-top:10px solid #eee;}
+.top-gray-box3:first-child {border-top:0;}
+
+
 .select-btn {
 	position:relative;
 	overflow:hidden;
@@ -8250,154 +8254,22 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#666;
 	line-height:13px;
 }
-.safety-area .green-img {margin-top:15px;}
-.safety-area .green-img img {width:100%; height:auto; vertical-align:middle;}
 
-.analy-list {overflow:hidden; width:100%;}
-.analy-list .item {
-	float:left;
-	width:50%;
-	padding-left:22px;
-	font-size:13px;
+.goods-safety {padding-top:30px;}
+.goods-safety .cTitle01 {
+	line-height: 26px;
+}
+.goods-safety .img-wrap img {
+	width:100%;
+	vertical-align: top;
+}
+.goods-safety .text-wrap {
+	margin-top:5px;
 	color:#666;
-	line-height:22px;
-	box-sizing:border-box;
-}
-.analy-list .item.item-analy01 {
-	background:url(../img/ico/ico_analy01.gif) no-repeat 0 center;
-	background-size:17px 17px;
-}
-.analy-list .item.item-analy02 {
-	background:url(../img/ico/ico_analy02.gif) no-repeat 0 center;
-	background-size:17px 17px;
-}
-.analy-list .item.item-analy03 {
-	background:url(../img/ico/ico_analy03.gif) no-repeat 0 center;
-	background-size:17px 17px;
-}
-.analy-list .item.item-analy04 {
-	background:url(../img/ico/ico_analy04.gif) no-repeat 0 center;
-	background-size:17px 17px;
-}
-.analy-list .item.item-analy05 {
-	background:url(../img/ico/ico_analy05.gif) no-repeat 0 center;
-	background-size:17px 17px;
-}
-.analy-list .item.item-analy06 {
-	background:url(../img/ico/ico_analy06.gif) no-repeat 0 center;
-	background-size:17px 17px;
-}
-
-.safety-area .board1 th .ico-bot {
-	display:block;
-	position:relative;
-}
-.safety-area .board1 th .ico-bot:before {
-	content:'';
-	display:block;
-	position:absolute;
-	left:50%; top:-22px;
-	width:15px;
-	height:15px;
-	margin-left:-7.5px;
-	background:url(../img/ico/ico_bot.png) no-repeat 0 0;
-	background-size:15px 15px;
-}
-
-.process-list {
-	border:1px solid #ccc;
-	box-sizing:border-box;
-}
-.process-list .item {
-	position:relative;
-	border-top:1px solid #eee;
-}
-.process-list .item:before {
-	content:'';
-	display:block;
-	position:absolute;
-	left:30px; bottom:-8px;
-	width:15px;
-	height:15px;
-	background:url(../img/ico/ico_bot.png) no-repeat 0 0;
-	background-size:15px 15px;
-	z-index:10;
-}
-.process-list .item:last-child:before {display:none;}
-.process-list .item:first-child {border-top:0;}
-.process-list .item dl {display:table; width:100%;}
-.process-list .item dl dt,
-.process-list .item dl dd  {
-	display:table-cell;
-	padding:13px 15px;
-	background-color:#f7f7f7;
-	box-sizing:border-box;
 	font-size:15px;
-	color:#666;
-	line-height:19px;
-	vertical-align:middle;
-	text-align:center;
-}
-.process-list .item dl dt {width:75px;}
-.process-list .item dl dd {
-	background-color:#fff;
-	text-align:left;
+	line-height: 22px;
 }
 
-.h-title {line-height:20px !important;}
-.safety-area .cTitle06 {
-	margin:20px 0 5px;
-}
-.safety-area .check-tit02 {
-	margin:12px 0;
-	text-align:center;
-}
-.safety-area .check-txt {
-	font-size:15px;
-	color:#333;
-	line-height:18px;
-}
-.safety-area .bullet-list1 .item {
-	margin-top:3px;
-	font-size:15px;
-	color:#666;
-	line-height:19px;
-}
-.safety-area .bullet-list1 .item:first-child {margin-top:0;}
-.safety-area .check-txt {
-	font-size:15px;
-	color:#666;
-	line-height:19px;
-}
-.safety-area .notice-txt {
-	padding-left:8px;
-	font-size:13px;
-	color:#aaa;
-	line-height:19px;
-	text-indent:-8px;
-}
-
-.manage-check {
-	margin-top:12px;
-	border:1px solid #bbb;
-	box-sizing:border-box;
-}
-
-.check-list02 {margin-top:7px;}
-.check-list02 .item {
-	position:relative;
-	padding-left:14px;
-	font-size:15px;
-	color:#666;
-	line-height:19px;
-}
-.check-list02 .item .number {
-	position:absolute;
-	left:0; top:0;
-}
-
-.certifi-img img {width:100%; height:auto; vertical-align:middle;}
-.manage-check img {width:100%; height:auto; vertical-align:middle;}
 
 /* 축산물 이력검사 */
 .livestock-box {
