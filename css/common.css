@@ -8327,6 +8327,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	margin-top:7px;
 	color:#aaa;
 }
+.goods-safety .certifi-box .board3 tr:first-child td {
+	border-top:1px solid #ccc;
+}
 
 /* 축산물 이력검사 */
 .livestock-box {
