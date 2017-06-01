@@ -5063,7 +5063,10 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .store-cont .sub-cont {display:none;}
 .store-cont .sub-cont.on {display:block;}
 .map-area {
-	position:fixed;top:112px; bottom:0;}
+	position:fixed;
+	top:112px;bottom:0;
+	width:100%;
+}
 .map-area .map-search {
 	position:absolute;
 	top:0; left:0;
