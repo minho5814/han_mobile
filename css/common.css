@@ -600,6 +600,10 @@ html.no-scroll {
 .btn-h30.btn-text-line1 {line-height:30px;}
 .btn-h30.type2 {padding:0 10px;}
 
+.btn-h35 {
+	line-height:35px;
+}
+
 /* height 24 */
 .btn-h24 {
 	height:24px;
@@ -876,8 +880,13 @@ html.no-scroll {
 	height:42px;
 	background-position:0 -1045px;
 }
-.btn-view.on {
-	background-position:0 -1002px;
+.btn-view.on {background-position:0 -1002px;}
+
+/* 알림 버튼 */
+.btn-notice2 {
+	width:35px;
+	height:35px;
+	background-position:0 -1203px;
 }
 /* --------------------------------------------------------------------------------------------
 	아이콘
@@ -8137,6 +8146,39 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:90px;
 	font-weight:bold;
 	vertical-align:top;
+}
+
+.special-list {}
+.special-box {
+	border-top:7px solid #eee;
+}
+.special-box:first-child {border-top:0;}
+.special-box .cTitle01 {
+	line-height:50px;
+	border-bottom:1px solid #ccc;
+	margin-bottom:10px;
+}
+.special-box-list .btn-area {
+	margin:0 10px;
+	padding-top:10px;
+	border-top:1px solid #eee;
+}
+.special-box .top-gray-box2 .thumb-list1 .box:last-child {border-bottom:0;}
+.special-box .info-area {background-color:#fff;}
+.special-box .info-area .btn-notice2 {
+	position:absolute;
+	right:10px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+@media only screen and (max-width:320px) {
+	.special-box .info-area {
+		padding:10px 5px;
+		letter-spacing:-1px;
+	}
+	.special-box .special-goods .info-area li .title {width:80px;}
+	.special-box .info-area .btn-notice2 {right:5px;}
 }
 
 /* 기획전 (MW-PD0501.html) */
