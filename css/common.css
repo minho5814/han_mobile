@@ -10982,21 +10982,12 @@ label.important:before {
 	width:68px;
 	height:25px;
 	line-height:25px;
-	color:#fff;
-
+	color:#f04114;
 	font-size:12px;
 	font-weight:bold;
 	text-align:center;
+	border:1px solid #f04114;
 	border-radius:15px;
-}
-.flag.bg1 {
-	background-color:#5bb4ba;
-}
-.flag.bg4 {
-	background-color:#ff9c00;
-}
-.flag.bg5 {
-	background-color:#6bc31c;
 }
 
 .change-wrap .order-list {border-top:1px solid #eee; padding:0;}
