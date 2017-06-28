@@ -9868,7 +9868,13 @@ label.important:before {
 	width:75px;
 	height:60px;
 }
-.brand-wrap ul li:before {
+.brand-wrap ul li img {
+	width:100%;
+	height:auto;
+	vertical-align:top;
+}
+
+/*.brand-wrap ul li:before {
 	content:'';
 	position:absolute;
 	width:75px;
@@ -9897,7 +9903,7 @@ label.important:before {
 }
 .brand-wrap ul li:nth-child(7):before{
 	background-position:-450px 0;
-}
+}*/
 .brand-wrap ul li.on:after {
 	content:'';
 	position:absolute;
