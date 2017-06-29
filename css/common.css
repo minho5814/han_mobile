@@ -6820,6 +6820,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	color:#aaa;
 	line-height:17px;
 }
+.layer-popup .pop-cont .notice-box {padding:20px 0;}
+.layer-popup .pop-cont .notice-txt {
+	padding-left:10px;
+	font-size:15px;
+	color:#666;
+	line-height:20px;
+	text-align:center;
+}
 
 /* 나의 알림 */
 .btn-notice-set {

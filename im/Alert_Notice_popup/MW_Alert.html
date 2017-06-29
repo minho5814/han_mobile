@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>한살림 장보기</title>
+<link rel="stylesheet" href="../../css/common.css">
+</head>
+
+<body>
+<button class="btn-text btn-h55 btn-text-green1 btn-popup btn-alert">Alert</button>
+<button class="btn-text btn-h55 btn-text-green1 btn-popup btn-notice mgT10">Notice</button>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
+<script type="text/javascript" src="../../js/common.js"></script>
+<!-- 메인 안내 팝업 -->
+<div class="block-ui"></div>
+<div class="layer-popup pop-alert">
+	<div class="pop-head">
+		<h1 class="pop-title">확인</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="notice-box">
+					<p class="notice-txt">선택된 장바구니에 내역을 삭제 하시겠습니까?</p>
+				</div>
+			</div>
+			<div class="btn-area mgT10">
+				<ul class="btn-list1">
+					<li class="item"><button type="button" class="btn-text btn-h55 btn-text-green1">확인</button></li>
+					<li class="item"><button type="button" class="btn-text btn-h55 btn-text-line1">취소</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="layer-popup pop-notice">
+	<div class="pop-head">
+		<h1 class="pop-title">알림</h1>
+		<button type="button" class="popup-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="pop-area">
+			<div class="pop-cont">
+				<div class="notice-box">
+					<p class="notice-txt">장바구니에 담을 물품을 하나 이상 선택해 주십시오.</p>
+				</div>
+			</div>
+			<div class="btn-area mgT10">
+				<button type="button" class="btn-text btn-h55 btn-text-green1">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+$(window).load(function(){
+	/* Alert */
+	$('.btn-alert').click(function(){
+		$('.pop-notice').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+	/* Notice */
+	$('.btn-notice').click(function(){
+		$('.pop-notice').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
+
+});
+</script>
+</body>
+</html>
