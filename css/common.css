@@ -6824,12 +6824,11 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .layer-popup .pop-cont .notice-txt {
 	display:block;
 	position:relative;
-	min-height:40px;
+	min-height:20px;
 	padding-left:53px;
 	font-size:15px;
 	color:#666;
 	line-height:20px;
-	text-align:center;
 }
 .layer-popup .pop-cont .notice-txt .ico-area {
 	position:absolute;
