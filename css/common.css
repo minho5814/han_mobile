@@ -6822,13 +6822,27 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 }
 .layer-popup .pop-cont .notice-box {padding:20px 0;}
 .layer-popup .pop-cont .notice-txt {
-	padding-left:10px;
+	display:block;
+	position:relative;
+	min-height:40px;
+	padding-left:53px;
 	font-size:15px;
 	color:#666;
 	line-height:20px;
 	text-align:center;
 }
-
+.layer-popup .pop-cont .notice-txt .ico-area {
+	position:absolute;
+	left:0; top:50%;
+	width:40px;
+	height:40px;
+	margin-top:-20px;
+}
+.layer-popup .pop-cont .notice-txt .ico-area img {
+	width:100%;
+	height:auto;
+	vertical-align:top;
+}
 /* 나의 알림 */
 .btn-notice-set {
 	width:99px;

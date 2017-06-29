@@ -9,15 +9,15 @@
 </head>
 
 <body>
-<button class="btn-text btn-h55 btn-text-green1 btn-popup btn-alert">Alert</button>
-<button class="btn-text btn-h55 btn-text-green1 btn-popup btn-notice mgT10">Notice</button>
+<button class="btn-text btn-h55 btn-text-green1 btn-popup btn-confirm">Alert</button>
+<button class="btn-text btn-h55 btn-text-green1 btn-popup btn-alert mgT10">Notice</button>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/swiper.min.js"></script><!-- 슬라이드 -->
 <script type="text/javascript" src="../../js/common.js"></script>
 <!-- 메인 안내 팝업 -->
 <div class="block-ui"></div>
-<div class="layer-popup pop-alert">
+<div class="layer-popup pop-confirm">
 	<div class="pop-head">
 		<h1 class="pop-title">확인</h1>
 		<button type="button" class="popup-close">닫기</button>
@@ -26,7 +26,7 @@
 		<div class="pop-area">
 			<div class="pop-cont">
 				<div class="notice-box">
-					<p class="notice-txt">선택된 장바구니에 내역을 삭제 하시겠습니까?</p>
+					<span class="notice-txt"><span class="ico-area"><img src="../../img/temp/pop_notice.jpg" alt="아이콘"></span>선택된 장바구니에 내역을 삭제 하시겠습니까?</span>
 				</div>
 			</div>
 			<div class="btn-area mgT10">
@@ -39,7 +39,7 @@
 	</div>
 </div>
 
-<div class="layer-popup pop-notice">
+<div class="layer-popup pop-alert">
 	<div class="pop-head">
 		<h1 class="pop-title">알림</h1>
 		<button type="button" class="popup-close">닫기</button>
@@ -48,7 +48,7 @@
 		<div class="pop-area">
 			<div class="pop-cont">
 				<div class="notice-box">
-					<p class="notice-txt">장바구니에 담을 물품을 하나 이상 선택해 주십시오.</p>
+					<span class="notice-txt"><span class="ico-area"><img src="../../img/temp/pop_notice.jpg" alt="아이콘"></span>장바구니에 담을 물품을 하나 이상 선택해 주십시오.</span>
 				</div>
 			</div>
 			<div class="btn-area mgT10">
@@ -59,15 +59,15 @@
 </div>
 <script>
 $(window).load(function(){
-	/* Alert */
-	$('.btn-alert').click(function(){
-		$('.pop-notice').fadeIn(200);
+	/* confirm */
+	$('.btn-confirm').click(function(){
+		$('.pop-confirm').fadeIn(200);
 		$('.block-ui').fadeIn();
 	});
 
 	/* Notice */
-	$('.btn-notice').click(function(){
-		$('.pop-notice').fadeIn(200);
+	$('.btn-alert').click(function(){
+		$('.pop-alert').fadeIn(200);
 		$('.block-ui').fadeIn();
 	});
 
