@@ -4485,7 +4485,8 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 
 .text-box04 {
 	padding:18px 15px 15px;
-	background-color:#eee;
+	background-color:#f7f7f7;
+	border:1px solid #eee;
 }
 
 .text-box04 dl .title {
