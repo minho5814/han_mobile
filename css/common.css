@@ -8352,6 +8352,25 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	z-index:20;
 }
 
+.top-title-info {padding:25px 10px 15px;}
+.top-title-info .text {
+	color:#60b015;
+	font-size:16px;
+	font-weight:600;
+}
+.top-title-info .title {
+	margin-top:3px;
+	color:#000;
+	font-size:21px;
+	font-weight:600;
+}
+.top-title-info .date {
+	margin-top:7px;
+	color:#999;
+	font-size:13px;
+}
+.top-title-info select.styled1 {margin-top:15px;}
+
 /* 물품안전 */
 .safety-area {}
 .safety-area .cTitle01 {
