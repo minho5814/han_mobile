@@ -1348,12 +1348,12 @@ html.no-scroll {
 	left:10px;top:2px;
 }
 .order-floating-box .order-layer .all-price .text .number {
-	color:#60b015;
+	color:#f56d24;
 	font-weight:bold;
 }
 .order-floating-box .order-layer .all-price .title {}
 .order-floating-box .order-layer .all-price .price {
-	color:#f04114;
+	color:#f56d24;
 	margin-left:5px;
 }
 .order-floating-box .order-layer .all-price .price .number {
@@ -6324,13 +6324,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .goods-info-box .order-volume {
 	height:35px;
 	margin:0 -10px;
-	background-color:#fff046;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
 	color:#333;
 	font-size:13px;
 	text-align:center;
 	line-height:35px;
 }
-.view-content .goods-info-box .order-volume .fColor02 {font-weight:bold;}
+.view-content .goods-info-box .order-volume .fColor06 {font-weight:bold;}
 .view-content .goods-info-box .goods-info {position:relative;}
 .view-content .goods-info-box .goods-info .goods-name {
 	color:#333;
@@ -6349,7 +6350,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .goods-info-box .goods-info .price-area .title {float:left;}
 .view-content .goods-info-box .goods-info .price-area .price {float:right;}
 .view-content .goods-info-box .goods-info .price-area .price .number {
-	color:#f04114;
+	color:#000;
 	font-size:21px;
 	font-weight:bold;
 }
@@ -6369,6 +6370,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	left:0;top:4px;
 	width:105px;
 	color:#333;
+	font-weight:600;
 }
 .view-content .goods-info-box .goods-list .item .title .btn-tooltip {margin-left:4px;}
 .view-content .goods-info-box .goods-list .item .text {color:#666;}
