@@ -8370,6 +8370,17 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:13px;
 }
 .top-title-info select.styled1 {margin-top:15px;}
+.top-title-info .list {margin-top:7px;}
+.top-title-info .list li {
+	color:#999;
+	font-size:13px;
+}
+.top-title-info .list li .tit {
+	display:inline-block;
+	min-width:84px;
+	color:#333;
+
+}
 
 /* 물품안전 */
 .safety-area {}
