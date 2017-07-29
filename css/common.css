@@ -384,6 +384,7 @@ html.no-scroll {
 	top:2px;right:0;
 }
 .title-wrap .text {font-size:15px;}
+.title-wrap .right,
 .tit-wrap .right {position:absolute; right:0; bottom:0;}
 .tit-wrap .right.check-list label{line-height:25px;}
 .tit-wrap .right.check-list label input {margin-right:7px}
@@ -615,6 +616,18 @@ html.no-scroll {
 	background-color:#60b015;
 	color:#fff;
 }
+.btn-text-green2 {
+	display:inline-block;
+	height:30px;
+	padding:0 13px;
+	border-radius:3px;
+	background-color:#60b015;
+	color:#fff;
+	font-size:13px;
+	text-align:center;
+	line-height:30px;
+}
+
 /* gray */
 .btn-text-gray1 {
 	background-color:#82828c;
