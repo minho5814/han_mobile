@@ -9042,15 +9042,20 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:15px 10px 25px 10px;
 	border-top:1px solid #ddd;
 }
-.board-view-area .gray-content2 .hashtag-area {
-	padding:0;
+.board-view-area .line-box {
+	margin:0 -12px;
+	padding:15px 10px 25px 10px;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #ddd;
 }
-.board-view-area .gray-content2 .hashtag-area a {
-	background-color:#fff;
+.board-view-area .line-box .hashtag-area {padding:0;}
+.board-view-area .line-box .hashtag-area a {
+	border:0;
+	background-color:#eee;
 }
-.board-view-area .thumb-wrap {
-    padding:0 0 30px;
-}
+.board-view-area .gray-content2 .hashtag-area {padding:0;}
+.board-view-area .gray-content2 .hashtag-area a {background-color:#fff;}
+.board-view-area .thumb-wrap {padding:0 0 30px;}
 .direction-area{
 	margin-top:30px;
 	border-top:1px solid #eee;
