@@ -4426,7 +4426,6 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:15px;
 	background-color:#eee;
 }
-
 .text-box02 dl .title {
 	margin:-2px 0 5px;
 	font-size:15px;
@@ -4452,9 +4451,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:2px; height:2px;
 	background-color:#666;
 }
-.text-box02 .btn-box {
-	margin-top:8px;
-}
+.text-box02 .btn-box {margin-top:8px;}
 .survey-txt {
 	margin-top:15px;
 	font-size:13px;
@@ -4462,12 +4459,47 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:20px;
 }
 .text-box02 .price-info .item {margin-left:15px;}
-.text-box02 .price-info .item:first-child {
-	margin-left:0;
+.text-box02 .price-info .item:first-child {margin-left:0;}
+.text-box02 .price-info .item em {font-weight:bold;}
+
+.text-box04 {
+	padding:20px 15px 15px;
+	background-color:#f7f7f7;
+	border:1px solid #eee;
 }
-.text-box02 .price-info .item em {
+.text-box04 dl .title {
+	margin:-2px 0 5px;
+	padding-left:21px;
+	background:url(../img/ico/ico_noti.png) no-repeat 0 50%;
+	background-size:17px 17px;
+	font-size:15px;
+	color:#60b015;
 	font-weight:bold;
 }
+.text-box04 dl .text {
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+}
+.text-box04 .bullet-text {
+	position:relative;
+	margin-bottom:6px;
+	padding-left:6px;
+	font-size:13px;
+	color:#666;
+}
+.text-box04 .bullet-text:before {
+	content:'';
+	position:absolute;
+	top:6px; left:0;
+	width:2px; height:2px;
+	background-color:#666;
+}
+.text-box04 .btn-box {margin-top:8px;}
+.text-box04 .price-info .item {margin-left:15px;}
+.text-box04 .price-info .item:first-child {margin-left:0;}
+.text-box04 .price-info .item em {font-weight:bold;}
+
 .list-box .title {
 	position:relative;
 	margin-top:10px;
