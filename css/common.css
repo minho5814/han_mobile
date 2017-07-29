@@ -384,6 +384,7 @@ html.no-scroll {
 	top:2px;right:0;
 }
 .title-wrap .text {font-size:15px;}
+.title-wrap .right,
 .tit-wrap .right {position:absolute; right:0; bottom:0;}
 .tit-wrap .right.check-list label{line-height:25px;}
 .tit-wrap .right.check-list label input {margin-right:7px}
@@ -615,6 +616,18 @@ html.no-scroll {
 	background-color:#60b015;
 	color:#fff;
 }
+.btn-text-green2 {
+	display:inline-block;
+	height:30px;
+	padding:0 13px;
+	border-radius:3px;
+	background-color:#60b015;
+	color:#fff;
+	font-size:13px;
+	text-align:center;
+	line-height:30px;
+}
+
 /* gray */
 .btn-text-gray1 {
 	background-color:#82828c;
@@ -1335,12 +1348,12 @@ html.no-scroll {
 	left:10px;top:2px;
 }
 .order-floating-box .order-layer .all-price .text .number {
-	color:#60b015;
+	color:#f56d24;
 	font-weight:bold;
 }
 .order-floating-box .order-layer .all-price .title {}
 .order-floating-box .order-layer .all-price .price {
-	color:#f04114;
+	color:#f56d24;
 	margin-left:5px;
 }
 .order-floating-box .order-layer .all-price .price .number {
@@ -1707,7 +1720,7 @@ select.styled1:disabled {
 	폰트 스타일/컬러
 ============================================================================================ */
 .fColor01 {color:#333 !important;}/* 진한 회색 */
-.fColor02 {color:#60b015 !important;}/* 녹색 */
+.fColor02 {color:#60b015  !important;}/* 녹색 */
 .fColor03 {color:#f04114 !important;}/* 빨강 */
 .fColor04 {color:#239bd2 !important;}/* 파랑 */
 .fColor05 {color:#aaa !important;}/* 연한회색 */
@@ -4426,6 +4439,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:15px;
 	background-color:#eee;
 }
+
 .text-box02 dl .title {
 	margin:-2px 0 5px;
 	font-size:15px;
@@ -4451,7 +4465,9 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	width:2px; height:2px;
 	background-color:#666;
 }
-.text-box02 .btn-box {margin-top:8px;}
+.text-box02 .btn-box {
+	margin-top:8px;
+}
 .survey-txt {
 	margin-top:15px;
 	font-size:13px;
@@ -4459,47 +4475,12 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	line-height:20px;
 }
 .text-box02 .price-info .item {margin-left:15px;}
-.text-box02 .price-info .item:first-child {margin-left:0;}
-.text-box02 .price-info .item em {font-weight:bold;}
-
-.text-box04 {
-	padding:20px 15px 15px;
-	background-color:#f7f7f7;
-	border:1px solid #eee;
+.text-box02 .price-info .item:first-child {
+	margin-left:0;
 }
-.text-box04 dl .title {
-	margin:-2px 0 5px;
-	padding-left:21px;
-	background:url(../img/ico/ico_noti.png) no-repeat 0 50%;
-	background-size:17px 17px;
-	font-size:15px;
-	color:#60b015;
+.text-box02 .price-info .item em {
 	font-weight:bold;
 }
-.text-box04 dl .text {
-	font-size:13px;
-	color:#666;
-	line-height:18px;
-}
-.text-box04 .bullet-text {
-	position:relative;
-	margin-bottom:6px;
-	padding-left:6px;
-	font-size:13px;
-	color:#666;
-}
-.text-box04 .bullet-text:before {
-	content:'';
-	position:absolute;
-	top:6px; left:0;
-	width:2px; height:2px;
-	background-color:#666;
-}
-.text-box04 .btn-box {margin-top:8px;}
-.text-box04 .price-info .item {margin-left:15px;}
-.text-box04 .price-info .item:first-child {margin-left:0;}
-.text-box04 .price-info .item em {font-weight:bold;}
-
 .list-box .title {
 	position:relative;
 	margin-top:10px;
@@ -6343,13 +6324,14 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .goods-info-box .order-volume {
 	height:35px;
 	margin:0 -10px;
-	background-color:#fff046;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
 	color:#333;
 	font-size:13px;
 	text-align:center;
 	line-height:35px;
 }
-.view-content .goods-info-box .order-volume .fColor02 {font-weight:bold;}
+.view-content .goods-info-box .order-volume .fColor06 {font-weight:bold;}
 .view-content .goods-info-box .goods-info {position:relative;}
 .view-content .goods-info-box .goods-info .goods-name {
 	color:#333;
@@ -6368,7 +6350,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .view-content .goods-info-box .goods-info .price-area .title {float:left;}
 .view-content .goods-info-box .goods-info .price-area .price {float:right;}
 .view-content .goods-info-box .goods-info .price-area .price .number {
-	color:#f04114;
+	color:#000;
 	font-size:21px;
 	font-weight:bold;
 }
@@ -6388,6 +6370,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	left:0;top:4px;
 	width:105px;
 	color:#333;
+	font-weight:600;
 }
 .view-content .goods-info-box .goods-list .item .title .btn-tooltip {margin-left:4px;}
 .view-content .goods-info-box .goods-list .item .text {color:#666;}
@@ -9042,15 +9025,20 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	padding:15px 10px 25px 10px;
 	border-top:1px solid #ddd;
 }
-.board-view-area .gray-content2 .hashtag-area {
-	padding:0;
+.board-view-area .line-box {
+	margin:0 -12px;
+	padding:15px 10px 25px 10px;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #ddd;
 }
-.board-view-area .gray-content2 .hashtag-area a {
-	background-color:#fff;
+.board-view-area .line-box .hashtag-area {padding:0;}
+.board-view-area .line-box .hashtag-area a {
+	border:0;
+	background-color:#eee;
 }
-.board-view-area .thumb-wrap {
-    padding:0 0 30px;
-}
+.board-view-area .gray-content2 .hashtag-area {padding:0;}
+.board-view-area .gray-content2 .hashtag-area a {background-color:#fff;}
+.board-view-area .thumb-wrap {padding:0 0 30px;}
 .direction-area{
 	margin-top:30px;
 	border-top:1px solid #eee;
