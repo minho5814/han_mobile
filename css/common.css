@@ -1725,6 +1725,7 @@ select.styled1:disabled {
 .fColor04 {color:#239bd2 !important;}/* 파랑 */
 .fColor05 {color:#aaa !important;}/* 연한회색 */
 .fColor06 {color:#ec7015 !important;}/* 주황 */
+.fColor07 {color:#f56d24 !important;}/* 연한  */
 /* ============================================================================================
 	리스트/탭
 ============================================================================================ */
@@ -1957,7 +1958,7 @@ select.styled1:disabled {
 	height:24px;
 	margin:4px 0 0 4px;
 	padding:0 7px;
-	border:1px solid #ddd;
+	background-color:#eee;
 	color:#666;
 	font-size:13px;
 	line-height:26px;
@@ -4481,6 +4482,58 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 .text-box02 .price-info .item em {
 	font-weight:bold;
 }
+
+.text-box04 {
+	padding:18px 15px 15px;
+	background-color:#f7f7f7;
+	border:1px solid #eee;
+}
+
+.text-box04 dl .title {
+	margin:-2px 0 5px;
+	padding-left:21px;
+	background:url(../img/ico/ico_noti.png) no-repeat 0 50%;
+	background-size:17px 17px;
+	font-size:15px;
+	color:#60b015;
+	font-weight:bold;
+}
+.text-box04 dl .text {
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+}
+.text-box04 .bullet-text {
+	position:relative;
+	margin-bottom:6px;
+	padding-left:6px;
+	font-size:13px;
+	color:#666;
+}
+.text-box04 .bullet-text:before {
+	content:'';
+	position:absolute;
+	top:6px; left:0;
+	width:2px; height:2px;
+	background-color:#666;
+}
+.text-box04 .btn-box {
+	margin-top:8px;
+}
+.survey-txt {
+	margin-top:15px;
+	font-size:13px;
+	color:#aaa;
+	line-height:20px;
+}
+.text-box04 .price-info .item {margin-left:15px;}
+.text-box04 .price-info .item:first-child {
+	margin-left:0;
+}
+.text-box04 .price-info .item em {
+	font-weight:bold;
+}
+
 .list-box .title {
 	position:relative;
 	margin-top:10px;
@@ -7593,6 +7646,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:14px;
 	line-height:19px;
 }
+
 
 /* 공유하기 팝업 */
 .share-list {
@@ -11198,17 +11252,15 @@ label.important:before {
 }
 .order-cart-list .list-cont .result .total dt {
 	float:left;
-	color:#f04114;
+	color:#333;
 	font-size:15px;
 	line-height:33px;
 }
-.order-cart-list .list-cont .result .total dt em {
-	font-weight:bold;
-}
+.order-cart-list .list-cont .result .total dt em {font-weight:bold;}
 .order-cart-list .list-cont .result .total dd {
 	float:right;
 	font-size:13px;
-	color:#f04114;
+	color:#ec7015;
 	line-height:33px;
 }
 .order-cart-list .list-cont .result .total dd .number {
@@ -11220,16 +11272,10 @@ label.important:before {
 	overflow:hidden;
 	padding-bottom:20px;
 }
-.order-cart-list .list-cont .result .btn-group .fl {
-	float:left;
-}
-.order-cart-list .list-cont .result .btn-group .fr {
-	float:right;
-}
+.order-cart-list .list-cont .result .btn-group .fl {float:left;}
+.order-cart-list .list-cont .result .btn-group .fr {float:right;}
 
-.order-cart-list .list-cont .btn-area {
-	padding:0 10px;
-}
+.order-cart-list .list-cont .btn-area {padding:0 10px;}
 
 /* 장바구니 상세페이지 */
 .cart-wrap {}
@@ -11240,15 +11286,9 @@ label.important:before {
 	font-size:14px;
 	line-height:48px;
 }
-.cart-wrap .order-day span {
-	color:#60b015;
-}
-.cart-wrap .section {
-	margin-bottom:0;
-}
-.cart-wrap .section.on {
-	margin-bottom:30px;
-}
+.cart-wrap .order-day span {color:#60b015;}
+.cart-wrap .section {margin-bottom:0;}
+.cart-wrap .section.on {margin-bottom:30px;}
 .cart-wrap .section .title-wrap {
 	position:relative;
 	padding:0 49px 0 10px;
