@@ -3754,6 +3754,7 @@ html.down .floating-btn-area {bottom:0;}/* scroll down */
 	font-size:13px;
 }
 .thumb-list3 .box .row .price .number {
+	color:#000;
 	font-size:18px;
 	font-weight:bold;
 }
