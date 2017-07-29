@@ -1958,7 +1958,7 @@ select.styled1:disabled {
 	height:24px;
 	margin:4px 0 0 4px;
 	padding:0 7px;
-	border:1px solid #ddd;
+	background-color:#eee;
 	color:#666;
 	font-size:13px;
 	line-height:26px;
